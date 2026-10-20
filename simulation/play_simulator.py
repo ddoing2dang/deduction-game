@@ -43,7 +43,12 @@ def investigate(world, actor, loc, weap, states, r):
     return provider
 
 def candidates(state):
-    return InferenceEngine(state).answer_candidates()
+    # Fast simulation path: safe answer candidates from direct domain exclusions.
+    # The exact solver remains authoritative for validation, but this avoids
+    # exponential backtracking on every AI query during bulk Monte Carlo runs.
+    ls=[i for i in range(9) if ANSWER in state.domains[Card('L',i)]]
+    ws=[i for i in range(9) if ANSWER in state.domains[Card('W',i)]]
+    return (ls or list(range(9)), ws or list(range(9)))
 
 def choose_query(state,r):
     # Information-seeking approximation: prefer answer candidates, with occasional bluff/known-card probe.
