@@ -25,6 +25,14 @@ def deal(r):
 def move(pos,pts,g,r):
  while pts and r.random()<.82: pos=r.choice(tuple(g[pos]));pts-=1
  return pos
+def choose_weapon(state,target):
+ ranked=[]
+ for w in range(9):
+  d=state.domains[Card('W',w)]
+  if target not in d: continue
+  score=(10 if ANSWER in d else 0)+len(d)
+  ranked.append((score,w))
+ return max(ranked)[1] if ranked else 0
 def suspicion(r,hands,states,a,t,loc,weapon,metrics,interrogate=False):
  matches=[]
  if hands[t][0]==loc: matches.append(('L',loc))
@@ -69,11 +77,11 @@ def run(seed):
        states[t].seen_player_card(ca,ia,a); states[a].seen_player_card(cb,ib,t); metrics['cooperations']+=1; action_done=True
       else: coop_reject+=1
      if not action_done:
-      weapon=r.randrange(9); do_int=(abilities[a]=='interrogation' and not used[a])
+      weapon=choose_weapon(states[a],t); do_int=(abilities[a]=='interrogation' and not used[a])
       suspicion(r,hands,states,a,t,pos[a],weapon,metrics,do_int)
       if do_int: used[a]=True; metrics['interrogation_uses']+=1
       if abilities[a]=='resuspicion' and rnd>=7 and not used[a]:
-       w2=r.choice([x for x in range(9) if x!=weapon]); suspicion(r,hands,states,a,t,pos[a],w2,metrics,False); used[a]=True; metrics['resuspicion_uses']+=1; no_immediate_deduction=True
+       w2=choose_weapon(states[a],t);\n       if w2==weapon: w2=(weapon+1)%9\n       suspicion(r,hands,states,a,t,pos[a],w2,metrics,False); used[a]=True; metrics['resuspicion_uses']+=1; no_immediate_deduction=True
       action_done=True
    if a==culprit: continue
    ls,ws=states[a].candidates(); confident=len(ls)==1 and len(ws)==1
