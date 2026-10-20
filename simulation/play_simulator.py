@@ -58,20 +58,27 @@ def choose_query(state,r):
         weap=r.randrange(9)
     return loc,weap
 
-def _move(pos, points, graph, r, blocked=None, surcharge=None, bypass=False):
-    blocked=blocked or set(); surcharge=surcharge or set()
-    cur=pos
+def _move(pos, points, graph, r, route_block_edge=None, surcharge=None, free_door=False, bypass_available=False):
+    surcharge=surcharge or set(); cur=pos; spent=0; block=route_block_edge; bypass_used=False; free_used=False
     while points>0:
         opts=[]
         for n in graph[cur]:
             edge=tuple(sorted((cur,n)))
-            if edge in blocked: continue
-            cost=1+(1 if edge in surcharge and not bypass else 0)
-            if cost<=points: opts.append((n,cost))
+            # Route Block consumes itself on the first attempted traversal and that attempt fails.
+            if block is not None and edge==block:
+                block=None
+                continue
+            extra=1 if edge in surcharge else 0
+            use_bypass=bypass_available and extra and not bypass_used
+            cost=1+extra-(1 if use_bypass else 0)
+            use_free=free_door and not free_used
+            if use_free: cost=max(0,cost-1)
+            if cost<=points: opts.append((n,cost,use_bypass,use_free))
         if not opts: break
-        n,cost=r.choice(opts); cur=n; points-=cost
+        n,cost,ub,uf=r.choice(opts); cur=n; points-=cost; spent+=cost
+        bypass_used|=ub; free_used|=uf
         if r.random()<.30: break
-    return cur
+    return cur,spent,block,bypass_used,free_used
 
 def run_game(seed, chest=True):
     r=random.Random(seed); w=deal(r)
@@ -125,14 +132,16 @@ def run_game(seed, chest=True):
             elif ab=='return' and uses[actor]<limits[ab] and r.random()<.18: pos[actor]=prev_start[actor]; uses[actor]+=1
             else:
                 free=(ab in ('gatekeeper','tracking') and uses[actor]<limits[ab] and r.random()<.25)
-                by=(ab=='bypass' and uses[actor]<limits[ab] and r.random()<.30)
-                if free: pts+=1; uses[actor]+=1
-                if by: uses[actor]+=1
-                before=pos[actor]; pos[actor]=_move(pos[actor],pts,graph,r,blocked,surcharge,by)
-                if route_block_edge is not None and route_block_edge in blocked:
-                    # One-shot route block: first attempted traversal consumes it. Approximation: consume when actor starts adjacent.
-                    if route_block_edge[0]==before or route_block_edge[1]==before: route_block_edge=None; blocked.discard(next(iter(blocked)) if blocked else (-1,-1))
-            if ab=='stockpile' and uses[actor]<limits[ab] and pos[actor]==turn_start and r.random()<.20: carry[actor]=1; uses[actor]+=1
+                by=(ab=='bypass' and uses[actor]<limits[ab])
+                pos[actor],spent,route_block_edge,bypass_used,free_used=_move(pos[actor],pts,graph,r,route_block_edge,surcharge,free,by)
+                if free_used: uses[actor]+=1
+                if bypass_used: uses[actor]+=1
+            if ab=='stockpile' and uses[actor]<limits[ab]:
+                # Carry exactly one genuinely unused movement point.
+                base_available=(3 if rnd==1 else 2)
+                if actor==disrupted: base_available=max(1,base_available-1)
+                unused=max(0,base_available-spent) if 'spent' in locals() else 0
+                if unused>=1: carry[actor]=1; uses[actor]+=1
             prev_start[actor]=turn_start
             action_blocked=pos[actor] in blackout
             if action_blocked and rnd!=12: continue
