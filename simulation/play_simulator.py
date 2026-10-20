@@ -86,15 +86,16 @@ def run_game(seed, chest=True):
     culprit_left={'lock':2,'disrupt':2,'route_block':1,'smoke':1}[culprit_ability]
     event=r.choice(('blackout','broken_door','secret_passage')); event_round=r.randint(6,11)
     culprit_rounds=set(r.sample(range(1,12),culprit_left))
-    prev=pos[:]; carry=[0]*6
+    prev_start=pos[:]; carry=[0]*6; fake_deduction_done=False; route_block_edge=None; blackout_room=None
     chest_round=r.randint(4,9) if chest else None
     chest_owner=r.randrange(6) if chest else None
     for rnd in range(1,ROUNDS+1):
         if chest and rnd==chest_round:
             states[chest_owner].add_chest(r.choice(tuple(w.undealt_l)),r.choice(tuple(w.undealt_w)))
         blackout=set(); surcharge=set(); blocked=set(); secret=None; disrupted=None
+        if blackout_room is not None and event_round <= rnd <= event_round+1: blackout.add(blackout_room)
         if rnd==event_round:
-            if event=='blackout': blackout={r.randrange(9)}
+            if event=='blackout': blackout_room=r.randrange(9); blackout.add(blackout_room)
             elif event=='broken_door':
                 edges=[tuple(sorted((a,b))) for a in graph for b in graph[a] if a<b]; surcharge.add(r.choice(edges))
             else:
@@ -105,28 +106,36 @@ def run_game(seed, chest=True):
                 edges=[tuple(sorted((a,b))) for a in graph for b in graph[a] if a<b]; surcharge.add(r.choice(edges))
             elif culprit_ability=='disrupt': disrupted=r.choice([x for x in range(6) if x!=w.culprit])
             elif culprit_ability=='route_block':
-                edges=[tuple(sorted((a,b))) for a in graph for b in graph[a] if a<b]; blocked.add(r.choice(edges))
+                edges=[tuple(sorted((a,b))) for a in graph for b in graph[a] if a<b]; route_block_edge=r.choice(edges); blocked.add(route_block_edge)
             elif culprit_ability=='smoke':
                 # Simulation-only assumption until exact Smoke effect is finalized: two rooms lose non-movement action this round.
                 blackout.update(r.sample([x for x in range(9) if x not in blackout],2))
+        round_graph={k:set(v) for k,v in MAPS[map_name].items()}
         if secret:
-            a,b=secret; graph={k:set(v) for k,v in graph.items()}; graph[a].add(b); graph[b].add(a)
+            a,b=secret; round_graph[a].add(b); round_graph[b].add(a)
+        graph=round_graph
+        if route_block_edge is not None: blocked.add(route_block_edge)
         for actor in range(6):
             if not active[actor]: continue
             # Movement + mobility abilities. Ability use is heuristic and simulation-only.
-            ab=inv_ability[actor]; pts=(3 if rnd==1 else 2)+carry[actor]; carry[actor]=0; prev[actor]=pos[actor]
+            ab=inv_ability[actor]; pts=(3 if rnd==1 else 2)+carry[actor]; carry[actor]=0; turn_start=pos[actor]
             if actor==disrupted: pts=max(1,pts-1)
             if ab=='sprint' and uses[actor]<limits[ab] and r.random()<.35: pts+=1; uses[actor]+=1
             if ab=='jump' and uses[actor]<1 and r.random()<.12: pos[actor]=r.randrange(9); uses[actor]+=1
-            elif ab=='return' and uses[actor]<limits[ab] and r.random()<.18: pos[actor]=prev[actor]; uses[actor]+=1
+            elif ab=='return' and uses[actor]<limits[ab] and r.random()<.18: pos[actor]=prev_start[actor]; uses[actor]+=1
             else:
                 free=(ab in ('gatekeeper','tracking') and uses[actor]<limits[ab] and r.random()<.25)
                 by=(ab=='bypass' and uses[actor]<limits[ab] and r.random()<.30)
                 if free: pts+=1; uses[actor]+=1
                 if by: uses[actor]+=1
-                pos[actor]=_move(pos[actor],pts,graph,r,blocked,surcharge,by)
-            if ab=='stockpile' and uses[actor]<limits[ab] and r.random()<.20: carry[actor]=1; uses[actor]+=1
-            if pos[actor] in blackout: continue
+                before=pos[actor]; pos[actor]=_move(pos[actor],pts,graph,r,blocked,surcharge,by)
+                if route_block_edge is not None and route_block_edge in blocked:
+                    # One-shot route block: first attempted traversal consumes it. Approximation: consume when actor starts adjacent.
+                    if route_block_edge[0]==before or route_block_edge[1]==before: route_block_edge=None; blocked.discard(next(iter(blocked)) if blocked else (-1,-1))
+            if ab=='stockpile' and uses[actor]<limits[ab] and pos[actor]==turn_start and r.random()<.20: carry[actor]=1; uses[actor]+=1
+            prev_start[actor]=turn_start
+            action_blocked=pos[actor] in blackout
+            if action_blocked and rnd!=12: continue
             loc=pos[actor]; _,weaps=choose_query(states[actor],r); weap=weaps
             provider=investigate(w,actor,loc,weap,states,r)
             if provider is not None and ab=='interrogation' and uses[actor]<1 and r.random()<.55:
@@ -137,16 +146,19 @@ def run_game(seed, chest=True):
                 if provider is not None:
                     kind='L' if w.hands[provider][0]==loc else 'W'
                     states[actor].observe_investigation(Investigation(actor,loc,weap,order_after(actor),provider,observed_kind=kind)); uses[actor]+=1
+            reinvestigated=False
             if ab=='reinvestigation' and rnd>=7 and uses[actor]<1 and r.random()<.30:
-                _,w2=choose_query(states[actor],r); investigate(w,actor,pos[actor],w2,states,r); uses[actor]+=1
-            if actor==w.culprit: continue
+                _,w2=choose_query(states[actor],r); investigate(w,actor,pos[actor],w2,states,r); uses[actor]+=1; reinvestigated=True
+            if actor==w.culprit:
+                if rnd>=6 and not fake_deduction_done and (rnd==12 or r.random()<.12): fake_deduction_done=True
+                continue
             ls,ws=candidates(states[actor])
             must=(rnd==12)
             confident=(len(ls)==1 and len(ws)==1)
             # Character identity is not derivable from card ownership. Model suspicion separately:
             # absent behavioral evidence, investigator has all six character candidates.
             char_guess=r.randrange(6)
-            if rnd>=6 and deduction_used[actor]<2 and (must or confident):
+            if rnd>=6 and deduction_used[actor]<2 and not reinvestigated and (must or confident):
                 deduction_used[actor]+=1
                 lguess=ls[0] if len(ls)==1 else r.choice(ls)
                 wguess=ws[0] if len(ws)==1 else r.choice(ws)
