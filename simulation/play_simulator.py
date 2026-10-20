@@ -81,7 +81,9 @@ def run(seed):
       suspicion(r,hands,states,a,t,pos[a],weapon,metrics,do_int)
       if do_int: used[a]=True; metrics['interrogation_uses']+=1
       if abilities[a]=='resuspicion' and rnd>=7 and not used[a]:
-       w2=choose_weapon(states[a],t);\n       if w2==weapon: w2=(weapon+1)%9\n       suspicion(r,hands,states,a,t,pos[a],w2,metrics,False); used[a]=True; metrics['resuspicion_uses']+=1; no_immediate_deduction=True
+       w2=choose_weapon(states[a],t);
+       if w2==weapon: w2=(weapon+1)%9
+       suspicion(r,hands,states,a,t,pos[a],w2,metrics,False); used[a]=True; metrics['resuspicion_uses']+=1; no_immediate_deduction=True
       action_done=True
    if a==culprit: continue
    ls,ws=states[a].candidates(); confident=len(ls)==1 and len(ws)==1
