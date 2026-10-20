@@ -94,18 +94,18 @@ class InferenceEngine:
     def feasible(self,forced=None):
         self._reset_cache()
         forced=forced or {}
-        key=tuple(sorted((c.kind,c.idx,o) for c,o in forced.items()))
-        if key in self._cache:return self._cache[key]
+        cache_key=tuple(sorted((c.kind,c.idx,o) for c,o in forced.items()))
+        if cache_key in self._cache:return self._cache[cache_key]
         cards=[Card(k,i) for k in ('L','W') for i in range(9)]
         caps={(k,o):(2 if o==UNDEALT else 1) for k in ('L','W') for o in OWNERS}
         assign={}; used={x:0 for x in caps}
         for c in cards:
             d=set(self.s.domains[c])
             if c in forced:d&={forced[c]}
-            if not d:return False
+            if not d:self._cache[cache_key]=False; return False
             if len(d)==1:
                 o=next(iter(d)); assign[c]=o; used[(c.kind,o)]+=1
-                if used[(c.kind,o)]>caps[(c.kind,o)]:return False
+                if used[(c.kind,o)]>caps[(c.kind,o)]:self._cache[cache_key]=False; return False
         un=[c for c in cards if c not in assign]
         un.sort(key=lambda c:len(self.s.domains[c]&({forced[c]} if c in forced else OWNERS)))
         def bt(i):
@@ -120,7 +120,7 @@ class InferenceEngine:
                     used[key]-=1; del assign[c]
             return False
         result=bt(0)
-        self._cache[key]=result
+        self._cache[cache_key]=result
         return result
 
     def possible_owners(self,c):
