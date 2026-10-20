@@ -40,7 +40,7 @@ def investigate(world, actor, loc, weap, states, r):
     for s in states: s.observe_investigation(public)
     if provider is not None:
         states[actor].know_owner(shown,provider)
-    return provider
+    return provider, shown
 
 def candidates(state):
     # Fast simulation path: safe answer candidates from direct domain exclusions.
@@ -137,15 +137,15 @@ def run_game(seed, chest=True):
             action_blocked=pos[actor] in blackout
             if action_blocked and rnd!=12: continue
             loc=pos[actor]; _,weaps=choose_query(states[actor],r); weap=weaps
-            provider=investigate(w,actor,loc,weap,states,r)
+            provider,shown=investigate(w,actor,loc,weap,states,r)
+            # Observation reacts to another player's successful investigation.
+            if provider is not None and shown is not None:
+                for observer in range(6):
+                    if observer!=actor and active[observer] and inv_ability[observer]=='observation' and uses[observer]<1 and r.random()<.25:
+                        states[observer].observe_investigation(Investigation(actor,loc,weap,order_after(actor),provider,observed_kind=shown.kind)); uses[observer]+=1
             if provider is not None and ab=='interrogation' and uses[actor]<1 and r.random()<.55:
                 both=(w.hands[provider][0]==loc and w.hands[provider][1]==weap)
                 states[actor].observe_investigation(Investigation(actor,loc,weap,order_after(actor),provider,interrogation_both=both)); uses[actor]+=1
-            if ab=='observation' and uses[actor]<1 and r.random()<.25:
-                # Observation requires another player's shown evidence; approximated when a provider exists on a public investigation.
-                if provider is not None:
-                    kind='L' if w.hands[provider][0]==loc else 'W'
-                    states[actor].observe_investigation(Investigation(actor,loc,weap,order_after(actor),provider,observed_kind=kind)); uses[actor]+=1
             reinvestigated=False
             if ab=='reinvestigation' and rnd>=7 and uses[actor]<1 and r.random()<.30:
                 _,w2=choose_query(states[actor],r); investigate(w,actor,pos[actor],w2,states,r); uses[actor]+=1; reinvestigated=True
