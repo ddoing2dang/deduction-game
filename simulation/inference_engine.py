@@ -1,6 +1,7 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Dict, List, Set, Tuple, Optional
+from collections import Counter
 
 PLAYERS=tuple(range(6)); ANSWER=6; UNDEALT=7; OWNERS=set(range(8))
 
@@ -25,14 +26,18 @@ class KnowledgeState:
     viewer:int
     domains:Dict[Card,Set[int]]=field(default_factory=dict)
     clauses:List[Tuple[Tuple[Card,int],...]]=field(default_factory=list)
+    version:int=0
 
     @classmethod
     def fresh(cls,viewer:int):
         return cls(viewer,{Card(k,i):set(OWNERS) for k in ('L','W') for i in range(9)},[])
 
-    def know_owner(self,c,o): self.domains[c]={o}
-    def exclude_owner(self,c,o): self.domains[c].discard(o)
-    def add_or(self,*lits): self.clauses.append(tuple(lits))
+    def _touch(self): self.version+=1
+    def know_owner(self,c,o):
+        if self.domains[c]!={o}: self.domains[c]={o}; self._touch()
+    def exclude_owner(self,c,o):
+        if o in self.domains[c]: self.domains[c].discard(o); self._touch()
+    def add_or(self,*lits): self.clauses.append(tuple(lits)); self._touch()
     def add_own_hand(self,l,w):
         self.know_owner(Card('L',l),self.viewer); self.know_owner(Card('W',w),self.viewer)
     def add_chest(self,l,w):
@@ -55,14 +60,19 @@ class KnowledgeState:
         if inv.interrogation_both is True:
             self.know_owner(L,inv.provider); self.know_owner(W,inv.provider)
         elif inv.interrogation_both is False:
-            self.clauses.append(((L,-inv.provider-1),(W,-inv.provider-1)))
+            self.add_or((L,-inv.provider-1),(W,-inv.provider-1))
 
 class InferenceEngine:
     """Exact constraint solver for one player's legitimate knowledge.
     Each category has capacities: six players x1, answer x1, undealt x2.
     Positive literal=(card==owner); negative literal uses owner=-player-1.
     """
-    def __init__(self,state): self.s=state
+    def __init__(self,state):
+        self.s=state; self._cache={}; self._answer_cache=None; self._version=state.version
+
+    def _reset_cache(self):
+        if self._version!=self.s.version:
+            self._cache.clear(); self._answer_cache=None; self._version=self.s.version
 
     def _lit_status(self,lit,assign):
         c,o=lit; neg=o<0; owner=(-o-1) if neg else o
@@ -82,7 +92,10 @@ class InferenceEngine:
         return all(not all(self._lit_status(x,assign)==-1 for x in clause) for clause in self.s.clauses)
 
     def feasible(self,forced=None):
+        self._reset_cache()
         forced=forced or {}
+        key=tuple(sorted((c.kind,c.idx,o) for c,o in forced.items()))
+        if key in self._cache:return self._cache[key]
         cards=[Card(k,i) for k in ('L','W') for i in range(9)]
         caps={(k,o):(2 if o==UNDEALT else 1) for k in ('L','W') for o in OWNERS}
         assign={}; used={x:0 for x in caps}
@@ -106,14 +119,19 @@ class InferenceEngine:
                     if bt(i+1):return True
                     used[key]-=1; del assign[c]
             return False
-        return bt(0)
+        result=bt(0)
+        self._cache[key]=result
+        return result
 
     def possible_owners(self,c):
         return {o for o in self.s.domains[c] if self.feasible({c:o})}
 
     def answer_candidates(self):
-        return ([i for i in range(9) if self.feasible({Card('L',i):ANSWER})],
-                [i for i in range(9) if self.feasible({Card('W',i):ANSWER})])
+        self._reset_cache()
+        if self._answer_cache is None:
+            self._answer_cache=([i for i in range(9) if self.feasible({Card('L',i):ANSWER})],
+                                [i for i in range(9) if self.feasible({Card('W',i):ANSWER})])
+        return self._answer_cache
 
     def infer_fixed(self):
         out={}
