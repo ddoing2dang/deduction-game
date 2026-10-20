@@ -18,3 +18,12 @@ Character/culprit inference is intentionally separate because character cards ar
 
 Run: `python simulation/inference_engine.py`
 Expected sanity-test output begins with `PASS`.
+
+
+## Play simulator
+`play_simulator.py` connects the exact card inference engine to a six-seat, twelve-round executable match loop: deal, investigations, first-provider evidence, private shown cards, inference updates, chest knowledge, R6+ deductions, two-attempt elimination, and R12 forced deduction.
+
+Important modeling boundary: culprit-character inference is deliberately not faked. Character cards do not exist, so until behavioral/ability evidence is modeled, character guesses remain uncertain. Movement, map topology, investigator abilities, culprit abilities, and the three additional events are not yet claimed as simulated by this runner.
+
+Run from the simulation directory:
+`python play_simulator.py -n 1000`
