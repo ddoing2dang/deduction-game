@@ -12,7 +12,7 @@ def move(pos,pts,g,r):
 def run(seed):
  r=random.Random(seed); culprit,al,aw,hands,ul,uw=deal(r); states=[KnowledgeState.fresh(i) for i in range(6)]
  for i,(l,w) in enumerate(hands): states[i].own(l,w)
- pos=[r.randrange(6) for _ in range(6)]; active=[True]*6; ded=[0]*6; forensic=[False]*6
+ pos=[r.randrange(6) for _ in range(6)]; active=[True]*6; ded=[0]*6; forensic=[False]*6; abilities=[r.choice(('gatekeeper','sprint','jump','tracking','interrogation','analysis','resuspicion','return','stockpile','bypass')) for _ in range(6)]; used=[False]*6
  fl=r.choice(tuple(ul)); fw=r.choice(tuple(uw)); chest_owner=r.randrange(6); chest_round=r.randint(4,9)
  metrics=Counter(); coop_accept=coop_reject=0
  for rnd in range(1,13):
@@ -52,6 +52,6 @@ def sim(n,seed=20261021):
  wins=Counter(); rounds=[]; m=Counter(); fr=[];ca=cr=0
  for i in range(n):
   w,rd,x,f,a,b=run(seed+i);wins[w]+=1;rounds.append(rd);m.update(x);fr.append(sum(f));ca+=a;cr+=b
- return {'games':n,'investigator_wins':wins['investigators'],'culprit_wins':wins['culprit'],'investigator_rate':wins['investigators']/n,'avg_end_round':round(statistics.mean(rounds),3),'avg_forensic_readers':round(statistics.mean(fr),3),'forensic_reads':m['forensic_reads'],'forensic_turns_spent':m['forensic_turns_spent'],'cooperations':m['cooperations'],'coop_rejects':cr,'suspicion_hits':m['suspicion_hits'],'suspicion_misses':m['suspicion_misses']}
+ return {'games':n,'investigator_wins':wins['investigators'],'culprit_wins':wins['culprit'],'investigator_rate':wins['investigators']/n,'avg_end_round':round(statistics.mean(rounds),3),'avg_forensic_readers':round(statistics.mean(fr),3),'forensic_reads':m['forensic_reads'],'forensic_turns_spent':m['forensic_turns_spent'],'cooperations':m['cooperations'],'coop_rejects':cr,'suspicion_hits':m['suspicion_hits'],'suspicion_misses':m['suspicion_misses'],'analysis_uses':m['analysis_uses'],'interrogation_yes':m['interrogation_yes'],'interrogation_no':m['interrogation_no'],'resuspicion_hits':m['resuspicion_hits'],'resuspicion_misses':m['resuspicion_misses']}
 if __name__=='__main__':
  ap=argparse.ArgumentParser();ap.add_argument('-n',type=int,default=1000);a=ap.parse_args();print(sim(a.n))
