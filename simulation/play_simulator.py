@@ -61,17 +61,17 @@ def run(seed):
    pos[a]=move(pos[a],3 if rnd==1 else 2,MAPS['mansion'],r); action_done=False; no_immediate_deduction=False
    if rnd>=7 and not forensic[a] and pos[a]==LOBBY and r.random()<.62:
     states[a].seen_undealt(fl,fw); forensic[a]=True; metrics['forensic_reads']+=1; metrics['forensic_turns_spent']+=1; action_done=True
-   if not action_done and abilities[a]=='analysis' and not used[a] and r.random()<.18:
-    kind=r.choice(('L','W')); idx=r.randrange(9); held=any((h[0] if kind=='L' else h[1])==idx for h in hands)
+   if not action_done and abilities[a]=='analysis' and not used[a] and r.random()<.35:
+    kind=r.choice(('L','W')); cand=[i for i in range(9) if ANSWER in states[a].domains[Card(kind,i)]]; idx=r.choice(cand) if cand else r.randrange(9); held=any((h[0] if kind=='L' else h[1])==idx for h in hands)
     metrics['analysis_yes' if held else 'analysis_no']+=1; metrics['analysis_uses']+=1; used[a]=True; action_done=True
     if not held:
      for p in range(6): states[a].exclude(Card(kind,idx),p)
    if not action_done:
     mates=[p for p in range(6) if p!=a and active[p] and pos[p]==pos[a]]
     if mates:
-     t=r.choice(mates)
+     t=max(mates,key=lambda p: sum(p in states[a].domains[Card(k,i)] for k in 'LW' for i in range(9)))
      if r.random()<.38:
-      accept=r.random()<(.42 if t==culprit else .68)
+      accept=r.random()<(.42 if t==culprit else .78)
       if accept:
        ca=r.choice(('L','W')); cb=r.choice(('L','W')); ia=hands[a][0 if ca=='L' else 1]; ib=hands[t][0 if cb=='L' else 1]
        states[t].seen_player_card(ca,ia,a); states[a].seen_player_card(cb,ib,t); metrics['cooperations']+=1; action_done=True
