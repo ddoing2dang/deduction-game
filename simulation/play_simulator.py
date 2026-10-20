@@ -125,7 +125,7 @@ def run_game(seed, chest=True):
         for actor in range(6):
             if not active[actor]: continue
             # Movement + mobility abilities. Ability use is heuristic and simulation-only.
-            ab=inv_ability[actor]; pts=(3 if rnd==1 else 2)+carry[actor]; carry[actor]=0; turn_start=pos[actor]
+            ab=inv_ability[actor]; pts=(3 if rnd==1 else 2)+carry[actor]; carry[actor]=0; turn_start=pos[actor]; spent=0
             if actor==disrupted: pts=max(1,pts-1)
             if ab=='sprint' and uses[actor]<limits[ab] and r.random()<.35: pts+=1; uses[actor]+=1
             if ab=='jump' and uses[actor]<1 and r.random()<.12: pos[actor]=r.randrange(9); uses[actor]+=1
@@ -140,7 +140,7 @@ def run_game(seed, chest=True):
                 # Carry exactly one genuinely unused movement point.
                 base_available=(3 if rnd==1 else 2)
                 if actor==disrupted: base_available=max(1,base_available-1)
-                unused=max(0,base_available-spent) if 'spent' in locals() else 0
+                unused=max(0,base_available-spent)
                 if unused>=1: carry[actor]=1; uses[actor]+=1
             prev_start[actor]=turn_start
             action_blocked=pos[actor] in blackout
