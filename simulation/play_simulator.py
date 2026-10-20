@@ -22,8 +22,21 @@ def witness_candidates(culprit, revealed_fields):
 def deal(r):
  c=r.randrange(6); al=r.randrange(9); aw=r.randrange(9); ls=[i for i in range(9) if i!=al]; ws=[i for i in range(9) if i!=aw]; r.shuffle(ls);r.shuffle(ws)
  return c,al,aw,[(ls[i],ws[i]) for i in range(6)],set(ls[6:]),set(ws[6:])
-def move(pos,pts,g,r):
- while pts and r.random()<.82: pos=r.choice(tuple(g[pos]));pts-=1
+def move(pos,pts,g,r,target=None):
+ while pts:
+  if target is not None and pos!=target:
+   q=[pos]; prev={pos:None}
+   for x in q:
+    for y in g[x]:
+     if y not in prev: prev[y]=x; q.append(y)
+     if y==target: break
+    if target in prev: break
+   y=target
+   while prev.get(y)!=pos and prev.get(y) is not None: y=prev[y]
+   pos=y
+  elif r.random()<.82: pos=r.choice(tuple(g[pos]))
+  else: break
+  pts-=1
  return pos
 def choose_weapon(state,target):
  ranked=[]
@@ -58,8 +71,8 @@ def run(seed):
   if rnd==chest_round: states[chest_owner].seen_undealt(r.choice(tuple(ul)),r.choice(tuple(uw))); metrics['chest_open']+=1
   for a in range(6):
    if not active[a]: continue
-   pos[a]=move(pos[a],3 if rnd==1 else 2,MAPS['mansion'],r); action_done=False; no_immediate_deduction=False
-   if rnd>=7 and not forensic[a] and pos[a]==LOBBY and r.random()<.62:
+   pos[a]=move(pos[a],3 if rnd==1 else 2,MAPS['mansion'],r,LOBBY if rnd>=7 and not forensic[a] else None); action_done=False; no_immediate_deduction=False
+   if rnd>=7 and not forensic[a] and pos[a]==LOBBY:
     states[a].seen_undealt(fl,fw); forensic[a]=True; metrics['forensic_reads']+=1; metrics['forensic_turns_spent']+=1; action_done=True
    if not action_done and abilities[a]=='analysis' and not used[a] and r.random()<.35:
     kind=r.choice(('L','W')); cand=[i for i in range(9) if ANSWER in states[a].domains[Card(kind,i)]]; idx=r.choice(cand) if cand else r.randrange(9); held=any((h[0] if kind=='L' else h[1])==idx for h in hands)
@@ -70,10 +83,13 @@ def run(seed):
     mates=[p for p in range(6) if p!=a and active[p] and pos[p]==pos[a]]
     if mates:
      t=max(mates,key=lambda p: sum(p in states[a].domains[Card(k,i)] for k in 'LW' for i in range(9)))
-     if r.random()<.38:
-      accept=r.random()<(.42 if t==culprit else .78)
+     if r.random()<.70:
+      accept=r.random()<(.42 if t==culprit else .88)
       if accept:
-       ca=r.choice(('L','W')); cb=r.choice(('L','W')); ia=hands[a][0 if ca=='L' else 1]; ib=hands[t][0 if cb=='L' else 1]
+       opts_a=[('L',hands[a][0]),('W',hands[a][1])]; opts_b=[('L',hands[t][0]),('W',hands[t][1])]
+       ca,ia=max(opts_a,key=lambda x: len(states[t].domains[Card(*x)]))
+       if t==culprit: cb,ib=min(opts_b,key=lambda x: len(states[a].domains[Card(*x)]))
+       else: cb,ib=max(opts_b,key=lambda x: len(states[a].domains[Card(*x)]))
        states[t].seen_player_card(ca,ia,a); states[a].seen_player_card(cb,ib,t); metrics['cooperations']+=1; action_done=True
       else: coop_reject+=1
      if not action_done:
@@ -86,8 +102,9 @@ def run(seed):
        suspicion(r,hands,states,a,t,pos[a],w2,metrics,False); used[a]=True; metrics['resuspicion_uses']+=1; no_immediate_deduction=True
       action_done=True
    if a==culprit: continue
-   ls,ws=states[a].candidates(); confident=len(ls)==1 and len(ws)==1
-   if rnd>=6 and ded[a]<2 and not no_immediate_deduction and (rnd==12 or confident):
+   ls,ws=states[a].candidates(); confident=len(ls)==1 and len(ws)==1; combos=len(culprit_candidates)*len(ls)*len(ws)
+   calculated=(rnd>=9 and combos<=9) or (rnd>=11 and combos<=36)
+   if rnd>=6 and ded[a]<2 and not no_immediate_deduction and (rnd==12 or confident or calculated):
     ded[a]+=1; lg=ls[0] if len(ls)==1 else r.choice(ls); wg=ws[0] if len(ws)==1 else r.choice(ws); cg=r.choice(tuple(culprit_candidates))
     if (cg,lg,wg)==(culprit,al,aw): return 'investigators',rnd,metrics,forensic,coop_reject,abilities
     if ded[a]>=2: active[a]=False
