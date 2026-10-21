@@ -171,3 +171,13 @@
 - Smirk, Suspicious 등 의미심장한 표정도 6명 모두 사용할 수 있다.
 - 캐릭터별 차이는 BlendShape 이름/구조 변경이 아니라 각 얼굴형에 맞는 변형량 조정으로 표현한다.
 - Unity에서 동일 표정/연출 코드를 모든 캐릭터에 재사용할 수 있어야 한다.
+
+
+## Blender/Unity 캐릭터 네이밍 규격 LOCK
+- 캐릭터 루트: CHR_NAZ, CHR_JIRO, CHR_MARIHI, CHR_MATTO, CHR_BOKI, CHR_MUNIRE.
+- 공통 하위 오브젝트: Body, Face, Hair_Main, Hair_Sub, Outfit, Shoes, Accessory.
+- Armature 명칭은 모든 캐릭터에서 Armature로 통일한다.
+- 대표 전용 파츠 예시: ACC_NAZ_Ribbon, ACC_JIRO_Flower, ACC_MARIHI_Ribbon, ACC_MATTO_Beret, ACC_BOKI_Sleeves, ACC_MUNIRE_Butterfly.
+- Blender/FBX 파일명은 동일 캐릭터 코드를 사용한다. 예: CHR_NAZ.blend / CHR_NAZ.fbx.
+- Unity 캐릭터 폴더는 Characters/<CHARACTER>/Model, Materials, Textures, Animations, Prefabs 구조를 기준으로 한다.
+- 자동 생성/수정/내보내기 스크립트가 캐릭터별 예외 처리 없이 공통 규칙으로 접근할 수 있도록 명칭을 유지한다.
