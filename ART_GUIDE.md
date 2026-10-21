@@ -151,3 +151,13 @@
 - Blender 작업 스케일은 1 Blender Unit = 1 meter, 적용 전 Transform 정리 후 Unity로 내보낸다.
 - FBX 내보내기는 캐릭터 루트, Armature, Mesh만 포함하고 불필요한 카메라/라이트/헬퍼 오브젝트는 제외한다.
 - 최종 목표는 PC와 Android에서 동일 캐릭터 자산을 LOD/품질 설정으로 공유하는 것이다.
+
+
+## 공통 캐릭터 애니메이션 세트 LOCK
+- 6명은 동일 Unity Humanoid 기반 기본 애니메이션을 공유한다.
+- 기본 18개 클립: Idle_A, Idle_B, Walk, Walk_Fast, Enter, Investigate, Suspect, Cooperate, Deduction, Think, Surprise, Annoyed, Blocked, UseAbility, Examine, Win, Lose, Spectator.
+- 캐릭터마다 18개를 중복 제작하지 않고 공통 클립 + 캐릭터별 BlendShape 표정 + 일부 Idle 차별화 방식으로 구성한다.
+- 맵 3D에서는 Idle / Walk / Walk_Fast / Enter를 중심으로 사용한다.
+- Suspect / Cooperate / Deduction 등 감정 전달이 중요한 동작은 방 화면 및 캐릭터 연출과 연계한다.
+- 전투 게임이 아니므로 불필요한 전투 모션은 제작하지 않는다.
+- PC/Android 공용 애니메이션 자산을 사용하여 용량과 유지보수 비용을 줄인다.
