@@ -161,3 +161,13 @@
 - Suspect / Cooperate / Deduction 등 감정 전달이 중요한 동작은 방 화면 및 캐릭터 연출과 연계한다.
 - 전투 게임이 아니므로 불필요한 전투 모션은 제작하지 않는다.
 - PC/Android 공용 애니메이션 자산을 사용하여 용량과 유지보수 비용을 줄인다.
+
+
+## 캐릭터 표정 BlendShape 공통 규격 LOCK
+- 6명 모두 동일한 얼굴 BlendShape 명칭과 기본 구조를 사용한다.
+- 기본 표정 10종: Neutral, Smile, Happy, Suspicious, Angry, Surprised, Worried, Thinking, Smirk, Sad.
+- 얼굴 동작용 보조 BlendShape: Blink_L, Blink_R, EyeLook_L, EyeLook_R, EyeLook_Up, EyeLook_Down, Brow_Up, Brow_Down, Mouth_Open.
+- 범인 여부가 얼굴 자산만으로 드러나지 않도록 범인 전용 표정은 제작하지 않는다.
+- Smirk, Suspicious 등 의미심장한 표정도 6명 모두 사용할 수 있다.
+- 캐릭터별 차이는 BlendShape 이름/구조 변경이 아니라 각 얼굴형에 맞는 변형량 조정으로 표현한다.
+- Unity에서 동일 표정/연출 코드를 모든 캐릭터에 재사용할 수 있어야 한다.
