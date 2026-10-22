@@ -23,6 +23,7 @@ namespace DeductionGame
         public bool HasKey;
         public bool FakeDeductionUsed;
         public int DeductionAttempts;
+        public int LastDeductionRound;
         public int DisruptionPenaltyNextTurn;
 
         public string LocationCard;
@@ -32,6 +33,8 @@ namespace DeductionGame
         public int AbilityUsesLeft;
 
         public readonly List<string> PrivateNotes = new();
+        public readonly List<string> KnownNotLocations = new();
+        public readonly List<string> KnownNotWeapons = new();
 
         public PlayerState(int id, string name, bool isHuman, int roomId)
         {
