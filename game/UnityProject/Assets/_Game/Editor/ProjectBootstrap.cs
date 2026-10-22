@@ -26,6 +26,7 @@ public static class ProjectBootstrap
     {
         if (Application.isPlaying || EditorApplication.isCompiling) return;
 
+        ConfigurePcProject();
         Directory.CreateDirectory("Assets/_Game/Scenes");
 
         if (File.Exists(ScenePath))
@@ -51,6 +52,18 @@ public static class ProjectBootstrap
         EditorSceneManager.OpenScene(ScenePath);
 
         Debug.Log("[DeductionGame] Game scene 자동 생성 완료. Play를 누르면 바로 시작됩니다.");
+    }
+
+    private static void ConfigurePcProject()
+    {
+        PlayerSettings.productName = "Deduction Game";
+        PlayerSettings.companyName = "ddoing2dang";
+        PlayerSettings.defaultScreenWidth = 1920;
+        PlayerSettings.defaultScreenHeight = 1080;
+        PlayerSettings.fullScreenMode = FullScreenMode.FullScreenWindow;
+        PlayerSettings.runInBackground = true;
+        PlayerSettings.colorSpace = ColorSpace.Linear;
+        EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64);
     }
 
     private static void CreateCamera()
