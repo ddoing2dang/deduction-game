@@ -21,6 +21,7 @@ namespace DeductionGame
 
         private CaseAnswer answer;
         private int selectedWeaponIndex;
+        private bool humanInfoActionUsed;
 
         public GamePhase Phase { get; private set; } = GamePhase.Boot;
         public int Round { get; private set; }
@@ -163,6 +164,7 @@ namespace DeductionGame
         {
             if (Phase != GamePhase.Round) return;
 
+            if (TurnIndex == 0) humanInfoActionUsed = false;
             var player = players[TurnIndex];
             player.MovementPoints = 2;
             AddPublic($"R{Round} · {player.Name} 턴 시작 · 2P");
@@ -175,6 +177,7 @@ namespace DeductionGame
             var target = players[targetPlayerId];
             string location = CardRules.Locations[Mathf.Clamp(Human.RoomId - 1, 0, CardRules.Locations.Length - 1)];
             ResolveSuspicion(Human, target, location, weapon);
+            humanInfoActionUsed = true;
         }
 
         public void HumanCooperation(int targetPlayerId)
@@ -190,11 +193,12 @@ namespace DeductionGame
             target.PrivateNotes.Add($"협조 · {Human.Name}에게서 확인: {shownToTarget}");
 
             AddPublic($"{Human.Name} ↔ {target.Name} 협조 성공 · 공개된 카드 내용은 당사자만 확인");
+            humanInfoActionUsed = true;
         }
 
         private bool CanHumanActWith(int targetPlayerId)
         {
-            if (Phase != GamePhase.Round || TurnIndex != 0) return false;
+            if (Phase != GamePhase.Round || TurnIndex != 0 || humanInfoActionUsed) return false;
             if (targetPlayerId <= 0 || targetPlayerId >= players.Count) return false;
             return players[targetPlayerId].RoomId == Human.RoomId && players[targetPlayerId].Active;
         }
@@ -334,7 +338,7 @@ namespace DeductionGame
                 else if (Phase == GamePhase.Round && TurnIndex == 0)
                 {
                     GUILayout.Space(8);
-                    GUILayout.Label("<b>같은 방 플레이어에게 정보 행동</b>", RichLabel());
+                    GUILayout.Label($"<b>같은 방 플레이어에게 정보 행동</b> {(humanInfoActionUsed ? "(사용 완료)" : "")}", RichLabel());
 
                     selectedWeaponIndex = Mathf.Clamp(selectedWeaponIndex, 0, CardRules.Weapons.Length - 1);
                     GUILayout.BeginHorizontal();
