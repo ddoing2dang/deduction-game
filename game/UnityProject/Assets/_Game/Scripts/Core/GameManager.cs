@@ -845,9 +845,8 @@ namespace DeductionGame
         public void HumanCulpritLock()
         {
             if (!CanHumanUseCulpritPower() || culpritPowerUses.Lock <= 0) return;
-            int[] next = MapGraph.GetConnections(Human.RoomId);
-            if (next.Length == 0) return;
-            culpritLockEdge = EdgeKey(Human.RoomId, next[0]);
+            if (!MapGraph.IsConnected(Human.RoomId, selectedAbilityRoom)) return;
+            culpritLockEdge = EdgeKey(Human.RoomId, selectedAbilityRoom);
             culpritLockUntilRound = Round;
             culpritPowerUses.Lock--;
             AddPublic("라운드 사건 · 특정 연결 잠금 발생 · 이번 라운드 +1P");
@@ -866,9 +865,8 @@ namespace DeductionGame
         public void HumanCulpritRouteBlock()
         {
             if (!CanHumanUseCulpritPower() || culpritPowerUses.RouteBlock <= 0) return;
-            int[] next = MapGraph.GetConnections(Human.RoomId);
-            if (next.Length == 0) return;
-            routeBlockedEdge = EdgeKey(Human.RoomId, next[0]);
+            if (!MapGraph.IsConnected(Human.RoomId, selectedAbilityRoom)) return;
+            routeBlockedEdge = EdgeKey(Human.RoomId, selectedAbilityRoom);
             culpritPowerUses.RouteBlock--;
             AddPublic("라운드 사건 · 특정 연결의 다음 통과 시도 1회가 차단됩니다.");
         }
@@ -931,8 +929,7 @@ namespace DeductionGame
                     Human.PrivateNotes.Add("심문 준비 · 다음 의심에 추가 YES/NO 확인");
                     break;
                 case InvestigatorAbility.Analysis:
-                    AnalyzeCard(Human, CardRules.Weapons[selectedWeaponIndex]);
-                    ConsumeAbility(Human);
+                    Human.PrivateNotes.Add("정보분석은 아래 장소/무기 버튼 중 하나를 선택하세요.");
                     break;
                 case InvestigatorAbility.ReSuspicion:
                     HumanReSuspicion();
@@ -953,6 +950,20 @@ namespace DeductionGame
                     Human.PrivateNotes.Add("우회 준비 · 다음 추가 +1P 비용 1회 무시");
                     break;
             }
+        }
+
+        public void HumanAnalyzeLocation()
+        {
+            if (TurnIndex != 0 || Human.IsCulprit || Human.Ability != InvestigatorAbility.Analysis || Human.AbilityUsesLeft <= 0) return;
+            AnalyzeCard(Human, CardRules.Locations[selectedLocationIndex]);
+            ConsumeAbility(Human);
+        }
+
+        public void HumanAnalyzeWeapon()
+        {
+            if (TurnIndex != 0 || Human.IsCulprit || Human.Ability != InvestigatorAbility.Analysis || Human.AbilityUsesLeft <= 0) return;
+            AnalyzeCard(Human, CardRules.Weapons[selectedWeaponIndex]);
+            ConsumeAbility(Human);
         }
 
         private void AnalyzeCard(PlayerState p, string card)
@@ -1234,8 +1245,17 @@ namespace DeductionGame
             GUILayout.EndHorizontal();
 
             GUI.enabled = Human.AbilityUsesLeft > 0 && CanActInRoom(Human.RoomId);
-            if (GUILayout.Button($"{GameDefinitions.AbilityNames[(int)Human.Ability]} 사용/준비", GUILayout.Height(30)))
+            if (Human.Ability == InvestigatorAbility.Analysis)
+            {
+                if (GUILayout.Button($"정보분석 · 장소 {CardRules.Locations[selectedLocationIndex]}", GUILayout.Height(30)))
+                    HumanAnalyzeLocation();
+                if (GUILayout.Button($"정보분석 · 무기 {CardRules.Weapons[selectedWeaponIndex]}", GUILayout.Height(30)))
+                    HumanAnalyzeWeapon();
+            }
+            else if (GUILayout.Button($"{GameDefinitions.AbilityNames[(int)Human.Ability]} 사용/준비", GUILayout.Height(30)))
+            {
                 HumanUseAbilityPrimary();
+            }
             GUI.enabled = true;
         }
 
@@ -1243,6 +1263,11 @@ namespace DeductionGame
         {
             GUILayout.Space(6);
             GUILayout.Label("<b>범인 능력 · R11까지</b>", RichLabel());
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button("연결방 -", GUILayout.Width(70))) selectedAbilityRoom = selectedAbilityRoom == 1 ? 9 : selectedAbilityRoom - 1;
+            GUILayout.Label($"잠금/차단 대상: {RoomName(selectedAbilityRoom)}", GUILayout.Width(210));
+            if (GUILayout.Button("연결방 +", GUILayout.Width(70))) selectedAbilityRoom = selectedAbilityRoom == 9 ? 1 : selectedAbilityRoom + 1;
+            GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("대상 -", GUILayout.Width(70))) selectedTargetPlayer = selectedTargetPlayer <= 1 ? 5 : selectedTargetPlayer - 1;
