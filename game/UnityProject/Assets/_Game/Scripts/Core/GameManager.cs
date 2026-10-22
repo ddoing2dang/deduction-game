@@ -87,7 +87,13 @@ namespace DeductionGame
             DontDestroyOnLoad(gameObject);
         }
 
-        private void Start() => StartNewGame();
+        private void Start()
+        {
+            RuntimeBoardView.Ensure(this);
+            StartNewGame();
+        }
+
+        public IReadOnlyList<PlayerState> Players => players;
 
         public void StartNewGame()
         {
@@ -416,6 +422,12 @@ namespace DeductionGame
 
             if (p.IsCulprit && !p.FakeDeductionUsed && Round >= 6 && !p.IsHuman && Round >= 10)
                 RunAiFakeDeduction(p);
+
+            if (p.IsCulprit && p.IsHuman && Round == 12 && !p.FakeDeductionUsed)
+            {
+                p.PrivateNotes.Add("R12 종료 전 가짜추리 1회를 반드시 사용해야 합니다.");
+                return;
+            }
 
             AdvanceTurn();
         }
@@ -1205,8 +1217,7 @@ namespace DeductionGame
             GUILayout.Space(6);
             GUILayout.Label("<b>능력</b>", RichLabel());
 
-            if (Human.Ability == InvestigatorAbility.Leap ||
-                Human.Ability == InvestigatorAbility.Smoke)
+            if (Human.Ability == InvestigatorAbility.Leap)
             {
                 // reserved
             }
