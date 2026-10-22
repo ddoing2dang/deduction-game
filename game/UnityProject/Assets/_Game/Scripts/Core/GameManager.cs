@@ -89,6 +89,10 @@ namespace DeductionGame
 
         private void Start()
         {
+            Application.targetFrameRate = 120;
+            QualitySettings.vSyncCount = 1;
+            QualitySettings.antiAliasing = 4;
+            QualitySettings.shadowDistance = 100f;
             RuntimeBoardView.Ensure(this);
             StartNewGame();
         }
@@ -133,6 +137,7 @@ namespace DeductionGame
             Human.MovementPoints = 3;
 
             AddPublic("초기 배치 시작 · 전원 3P 이동 후 R1 시작");
+            RuntimeBoardView.RefreshAll();
         }
 
         private void CreateCaseAndDeal()
