@@ -9,20 +9,6 @@ namespace DeductionGame
         private GameManager manager;
         private readonly Dictionary<int, GameObject> tokens = new();
 
-        private static readonly Vector3[] RoomPositions =
-        {
-            Vector3.zero,
-            new Vector3(0, 0.55f, 0),
-            new Vector3(-5, 0.55f, 2.5f),
-            new Vector3(5, 0.55f, 2.5f),
-            new Vector3(-5, 0.55f, -2.5f),
-            new Vector3(0, 0.55f, -3.5f),
-            new Vector3(0, 0.55f, 5f),
-            new Vector3(-5, 0.55f, -7f),
-            new Vector3(0, 0.55f, -7f),
-            new Vector3(5, 0.55f, -7f)
-        };
-
         public static void Ensure(GameManager gm)
         {
             if (instance == null)
@@ -77,11 +63,7 @@ namespace DeductionGame
                     roomCounts[p.RoomId] = 0;
 
                 int slot = roomCounts[p.RoomId]++;
-                float x = (slot % 3 - 1) * 0.65f;
-                float z = (slot / 3) * 0.65f;
-
-                Vector3 basePos = RoomPositions[Mathf.Clamp(p.RoomId, 1, 9)];
-                token.transform.position = basePos + new Vector3(x, 0, z);
+                token.transform.position = MansionLayout.GetStandPoint(p.RoomId, slot);
                 token.SetActive(true);
             }
         }
