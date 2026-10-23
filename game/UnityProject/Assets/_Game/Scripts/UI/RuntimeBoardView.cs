@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace DeductionGame
 {
@@ -11,6 +12,8 @@ namespace DeductionGame
 
         public static void Ensure(GameManager gm)
         {
+            RuntimeNavMesh.EnsureBuilt();
+
             if (instance == null)
             {
                 var go = new GameObject("RuntimeBoardView");
@@ -39,6 +42,23 @@ namespace DeductionGame
                 var token = GameObject.CreatePrimitive(PrimitiveType.Capsule);
                 token.name = $"Token_{p.Id}_{p.Name}";
                 token.transform.localScale = new Vector3(0.45f, 0.55f, 0.45f);
+                token.transform.position = MansionLayout.GetStandPoint(p.RoomId, p.Id % 6);
+
+                var collider = token.GetComponent<Collider>();
+                if (collider != null)
+                    collider.enabled = false;
+
+                var agent = token.AddComponent<NavMeshAgent>();
+                agent.radius = 0.3f;
+                agent.height = 1.1f;
+                agent.baseOffset = 0.55f;
+                agent.speed = 4.2f;
+                agent.acceleration = 14f;
+                agent.angularSpeed = 720f;
+                agent.stoppingDistance = 0.05f;
+                agent.autoBraking = true;
+                agent.autoRepath = true;
+                agent.avoidancePriority = Mathf.Clamp(30 + p.Id * 5, 0, 99);
 
                 var label = token.AddComponent<TokenLabel>();
                 label.PlayerId = p.Id;
@@ -63,7 +83,26 @@ namespace DeductionGame
                     roomCounts[p.RoomId] = 0;
 
                 int slot = roomCounts[p.RoomId]++;
-                token.transform.position = MansionLayout.GetStandPoint(p.RoomId, slot);
+                Vector3 target = MansionLayout.GetStandPoint(p.RoomId, slot);
+
+                var agent = token.GetComponent<NavMeshAgent>();
+                if (agent != null &&
+                    NavMesh.SamplePosition(target, out NavMeshHit hit, 2.5f, NavMesh.AllAreas))
+                {
+                    if (agent.isOnNavMesh)
+                    {
+                        agent.SetDestination(hit.position);
+                    }
+                    else
+                    {
+                        agent.Warp(hit.position);
+                    }
+                }
+                else
+                {
+                    token.transform.position = target;
+                }
+
                 token.SetActive(true);
             }
         }
