@@ -73,6 +73,17 @@ namespace DeductionGame
         public int TurnIndex { get; private set; }
         public PlayerState Human => players.Count > 0 ? players[0] : null;
 
+        // Read-only public map state for 3D presentation. Game rules remain owned here.
+        public int ActiveBlackoutRoom => Round <= blackoutUntilRound ? blackoutRoom : 0;
+        public int ActiveSmokeRoomA => Round <= smokeUntilRound ? smokeRoomA : 0;
+        public int ActiveSmokeRoomB => Round <= smokeUntilRound ? smokeRoomB : 0;
+        public string ActiveBrokenDoorEdge => brokenDoorEdge;
+        public string ActiveLockedEdge => Round <= culpritLockUntilRound ? culpritLockEdge : null;
+        public string ActiveRouteBlockedEdge => routeBlockedEdge;
+        public bool SecretPassageActive =>
+            Round <= secretPassageUntilRound &&
+            ((secretPassageA == 6 && secretPassageB == 9) || (secretPassageA == 9 && secretPassageB == 6));
+
         private static readonly string[] RoomNames = CardRules.Locations;
 
         private void Awake()
