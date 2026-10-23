@@ -22,7 +22,7 @@ namespace DeductionGame
                 if (point != null) return point.position - Vector3.up * 0.55f;
                 break;
             }
-            return MansionLayout.GetStandPoint(roomId, slot) - Vector3.up * 0.55f;
+            return MapData.GetStandPoint(roomId, slot) - Vector3.up * 0.55f;
         }
 
         public static void Install(GameObject room, int roomId, PresentationCatalog catalog)
@@ -35,7 +35,7 @@ namespace DeductionGame
                 1f / room.transform.lossyScale.x,
                 1f / room.transform.lossyScale.y,
                 1f / room.transform.lossyScale.z);
-            visual.transform.position = MansionLayout.GetRoom(roomId).Center;
+            visual.transform.position = MapData.GetRoom(roomId).Center;
             var floor = room.GetComponent<Renderer>();
             if (floor != null) floor.enabled = false;
         }

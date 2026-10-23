@@ -112,7 +112,7 @@ namespace DeductionGame
                     if (!agent.isOnNavMesh) agent.Warp(hit.position);
                     // Secret passage is a transition, not a walk through intervening rooms.
                     if (displayedRooms.TryGetValue(p.Id, out int fromRoom) && manager.SecretPassageActive &&
-                        ((fromRoom == 9 && p.RoomId == 6) || (fromRoom == 6 && p.RoomId == 9)))
+                        MapData.IsSecretPair(fromRoom, p.RoomId))
                         agent.Warp(hit.position);
                     else if (agent.isOnNavMesh) agent.SetDestination(hit.position);
                 }

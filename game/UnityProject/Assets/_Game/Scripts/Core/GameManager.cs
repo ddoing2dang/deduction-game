@@ -82,7 +82,7 @@ namespace DeductionGame
         public string ActiveRouteBlockedEdge => routeBlockedEdge;
         public bool SecretPassageActive =>
             Round <= secretPassageUntilRound &&
-            ((secretPassageA == 6 && secretPassageB == 9) || (secretPassageA == 9 && secretPassageB == 6));
+            MapData.IsSecretPair(secretPassageA, secretPassageB);
 
         private static readonly string[] RoomNames = CardRules.Locations;
 
@@ -802,8 +802,8 @@ namespace DeductionGame
             }
             else if (extraEvent == ExtraEventType.SecretPassage)
             {
-                secretPassageA = 6;
-                secretPassageB = 9;
+                secretPassageA = MapData.SecretB;
+                secretPassageB = MapData.SecretA;
                 secretPassageUntilRound = Round;
                 AddPublic($"추가 이벤트 · 비밀통로: {RoomName(secretPassageA)} ↔ {RoomName(secretPassageB)} · 이번 라운드");
             }

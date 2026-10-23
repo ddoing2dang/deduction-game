@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public static class ProjectBootstrap
 {
     private const string ScenePath = "Assets/_Game/Scenes/Game.unity";
-    private const int SceneLayoutVersion = 4;
+    private const int SceneLayoutVersion = 5;
     // A validation copy or another checkout must not suppress this project's upgrade.
     private static readonly string SceneVersionKey = "DeductionGame.SceneLayoutVersion:" + Application.dataPath;
 
@@ -20,11 +20,16 @@ public static class ProjectBootstrap
     private const float DoorHeight = 2.6f;
     private const float PassageWidth = 2.0f;
 
-    private static readonly int[,] MansionLinks =
-    {
-        {1,2},{1,3},{1,5},{1,6},{2,4},{3,5},
-        {4,5},{4,7},{5,8},{7,8},{8,9}
-    };
+    [MenuItem("Deduction Game/Map/Mansion")] public static void Mansion() => Select(MapTheme.Mansion);
+    [MenuItem("Deduction Game/Map/Cruise")] public static void Cruise() => Select(MapTheme.Cruise);
+    [MenuItem("Deduction Game/Map/Museum")] public static void Museum() => Select(MapTheme.Museum);
+    private static void Select(MapTheme theme) {
+        if (Application.isPlaying) return;
+        if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        EditorPrefs.SetInt(SceneVersionKey + ".Theme", (int)theme);
+        EditorPrefs.SetInt(SceneVersionKey, 0);
+        EnsureProject();
+    }
 
     static ProjectBootstrap()
     {
@@ -44,6 +49,9 @@ public static class ProjectBootstrap
             return;
 
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+
+        var selection = new GameObject("MapTheme").AddComponent<MapThemeSettings>();
+        selection.Theme = (MapTheme)EditorPrefs.GetInt(SceneVersionKey + ".Theme", 0);
 
         var manager = new GameObject("GameManager");
         manager.AddComponent<GameManager>();
@@ -102,9 +110,9 @@ public static class ProjectBootstrap
 
     private static void CreateRooms()
     {
-        var root = new GameObject("Mansion_Graybox").transform;
+        var root = new GameObject(MapData.RootName).transform;
 
-        foreach (var layout in MansionLayout.Rooms)
+        foreach (var layout in MapData.Rooms)
         {
             var roomRoot = new GameObject($"Room_{layout.Id:00}_{layout.Name}").transform;
             roomRoot.SetParent(root);
@@ -129,7 +137,7 @@ public static class ProjectBootstrap
             {
                 var point = new GameObject($"Stand_{slot + 1:00}").transform;
                 point.SetParent(points);
-                point.position = MansionLayout.GetStandPoint(layout.Id, slot);
+                point.position = MapData.GetStandPoint(layout.Id, slot);
             }
 
             var actionPoint = new GameObject("Action_Point").transform;
@@ -140,7 +148,7 @@ public static class ProjectBootstrap
             for (int i = 0; i < neighbors.Length; i++)
             {
                 int neighborId = neighbors[i];
-                var neighbor = MansionLayout.GetRoom(neighborId);
+                var neighbor = MapData.GetRoom(neighborId);
                 Vector3 anchor = GetDoorAnchor(layout, neighbor);
                 Vector3 outward = FlatDirection(layout.Center, neighbor.Center);
 
@@ -179,7 +187,7 @@ public static class ProjectBootstrap
         for (int i = 0; i < neighbors.Length; i++)
         {
             int neighborId = neighbors[i];
-            var neighbor = MansionLayout.GetRoom(neighborId);
+            var neighbor = MapData.GetRoom(neighborId);
             Vector3 anchor = GetDoorAnchor(room, neighbor);
             Vector3 local = anchor - room.Center;
 
@@ -307,14 +315,14 @@ public static class ProjectBootstrap
 
     private static void CreateConnections()
     {
-        var root = new GameObject("Mansion_Connections").transform;
+        var root = new GameObject(MapData.ConnectionsName).transform;
 
-        for (int i = 0; i < MansionLinks.GetLength(0); i++)
+        for (int i = 0; i < MapData.Links.GetLength(0); i++)
         {
-            int a = MansionLinks[i, 0];
-            int b = MansionLinks[i, 1];
-            var roomA = MansionLayout.GetRoom(a);
-            var roomB = MansionLayout.GetRoom(b);
+            int a = MapData.Links[i, 0];
+            int b = MapData.Links[i, 1];
+            var roomA = MapData.GetRoom(a);
+            var roomB = MapData.GetRoom(b);
 
             Vector3 from = GetDoorAnchor(roomA, roomB);
             Vector3 to = GetDoorAnchor(roomB, roomA);
@@ -367,10 +375,10 @@ public static class ProjectBootstrap
 
     private static void CreateSecretPassagePlaceholder(Transform root)
     {
-        var room9 = MansionLayout.GetRoom(9);
-        var room6 = MansionLayout.GetRoom(6);
+        var room9 = MapData.GetRoom(MapData.SecretA);
+        var room6 = MapData.GetRoom(MapData.SecretB);
 
-        var secret = new GameObject("DOOR_09_06_SECRET");
+        var secret = new GameObject(MapData.SecretName);
         secret.transform.SetParent(root);
 
         var from = GetDoorAnchor(room9, room6);

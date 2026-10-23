@@ -15,7 +15,7 @@ namespace DeductionGame
         public static PresentationCatalog Load() => Resources.Load<PresentationCatalog>("PresentationCatalog");
 
         public GameObject Character(int id) => Get(CharacterPrefabs, id);
-        public GameObject Room(int id) => Get(MansionRoomPrefabs, id - 1);
+        public GameObject Room(int id) => MapData.Theme == MapTheme.Mansion ? Get(MansionRoomPrefabs, id - 1) : null;
 
         private static GameObject Get(GameObject[] items, int index) =>
             items != null && index >= 0 && index < items.Length ? items[index] : null;

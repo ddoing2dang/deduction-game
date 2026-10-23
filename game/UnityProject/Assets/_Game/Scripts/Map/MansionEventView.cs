@@ -70,13 +70,13 @@ namespace DeductionGame
 
         private bool Build()
         {
-            var connections = GameObject.Find("Mansion_Connections");
-            var mansion = GameObject.Find("Mansion_Graybox");
+            var connections = GameObject.Find(MapData.ConnectionsName);
+            var mansion = GameObject.Find(MapData.RootName);
             if (connections == null || mansion == null) return false;
             for (int i = 0; i < connections.transform.childCount; i++)
             {
                 var door = connections.transform.GetChild(i);
-                if (door.name == "DOOR_09_06_SECRET")
+                if (door.name == MapData.SecretName)
                 {
                     secret = door;
                     foreach (Transform anchor in door)
@@ -110,7 +110,7 @@ namespace DeductionGame
                 for (int i = 0; i < lights.Length; i++) enabled[i] = lights[i].enabled;
                 var smokeRoot = new GameObject($"Room_{node.RoomId:00}_EventVisuals").transform;
                 smokeRoot.SetParent(transform, false);
-                smokeRoot.position = MansionLayout.GetRoom(node.RoomId).Center;
+                smokeRoot.position = MapData.GetRoom(node.RoomId).Center;
                 rooms.Add(new RoomVisual
                 {
                     Id = node.RoomId, Floor = floor, Original = original, Lights = lights, LightEnabled = enabled,
@@ -146,7 +146,7 @@ namespace DeductionGame
         {
             foreach (var door in doors)
             {
-                door.Locked.SetActive(false); door.Blocked.SetActive(false); door.Broken.SetActive(false);
+                if (door.Locked != null) door.Locked.SetActive(false); if (door.Blocked != null) door.Blocked.SetActive(false); if (door.Broken != null) door.Broken.SetActive(false);
             }
             foreach (var room in rooms)
             {

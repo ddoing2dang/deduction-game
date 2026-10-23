@@ -19,13 +19,20 @@ namespace DeductionGame
 
         public static bool IsConnected(int from, int to)
         {
-            if (!Connections.TryGetValue(from, out var list)) return false;
+            var list = GetConnections(from);
             for (int i = 0; i < list.Length; i++)
                 if (list[i] == to) return true;
             return false;
         }
 
-        public static int[] GetConnections(int roomId) =>
-            Connections.TryGetValue(roomId, out var list) ? list : System.Array.Empty<int>();
+        public static int[] GetConnections(int roomId) {
+            if (MapData.Theme == MapTheme.Mansion) return Connections.TryGetValue(roomId, out var list) ? list : System.Array.Empty<int>();
+            var result = new List<int>(); var links = MapData.Links;
+            for(int i=0;i<links.GetLength(0);i++) {
+                if(links[i,0]==roomId) result.Add(links[i,1]);
+                if(links[i,1]==roomId) result.Add(links[i,0]);
+            }
+            return result.ToArray();
+        }
     }
 }

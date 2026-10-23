@@ -19,7 +19,7 @@ public static class MansionEventVerification
     {
         SessionState.SetBool("MansionEventVerification.Running", true);
         string versionKey = (string)typeof(ProjectBootstrap).GetField("SceneVersionKey", BindingFlags.NonPublic | BindingFlags.Static).GetValue(null);
-        EditorPrefs.SetInt(versionKey, 3);
+        EditorPrefs.SetInt(versionKey + ".Theme", 0); EditorPrefs.SetInt(versionKey, 3);
         typeof(ProjectBootstrap).GetMethod("EnsureProject", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, null);
         EditorApplication.isPlaying = true;
     }

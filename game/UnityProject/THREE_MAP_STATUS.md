@@ -1,0 +1,11 @@
+# Three-theme graybox checkpoint
+
+Use Deduction Game > Map > Mansion / Cruise / Museum outside Play Mode. The shared generator rebuilds Game.unity using the selected theme, prompts to save dirty scenes and persists the selection in the scene. Back up custom scene edits before regenerating; imported art belongs in replaceable prefabs. Scene layout version is 5.
+
+Cruise: nine LOCK rooms, eleven undirected edges, long two-axis deck and lower cargo bypass. Museum: nine LOCK rooms, thirteen edges, floors at 0/4/8m. Coordinates for these two grayboxes are provisional production meters; room identities and topology follow ART_GUIDE.md exactly. Older MAPS.md descriptions conflict with the explicit newer theme LOCK sections; no new topology was invented.
+
+Existing wall/opening/corridor/service-ramp builder is shared. All rooms have six Stand points, Action_Point and one Entry per neighbor, plus DoorID groups. NavMesh links provide simple transitions where graybox ramps do not form a traversable surface; new themes explicitly link their graph edges. These are temporary movement transitions, not finished stair animations. Camera, zoom, cutaway and event view read MapData; upper floors are hidden only when overlapping the active lower room. Secret endpoints are Mansion 9/6, Cruise 8/2, Museum 2/7. GameManager keeps all event decisions; only endpoint data is theme-dependent.
+
+Card content, AI and deduction algorithms were not redesigned. Existing card strings remain the original prototype content; themed card artwork/content is a later task. Final models/materials/VFX and Android device rendering were not produced or tested.
+
+Verification: Unity 6000.3.26f1 compiled and ran all checks in the isolated verification copy. MapThemeVerification.Cruise and .Museum exited 0: exact graph, nine rooms, walls, Entries, six Stands, ActionPoints, DoorIDs, complete NavMesh paths on every locked edge, six agents, setup movement, camera/cutaway attachment. After switching back, MansionEventVerification.Run exited 0, preserving the previous event/movement regression suite. Original working scene was not overwritten. Unity's unrelated editor search-index startup exception can still appear in batch logs.

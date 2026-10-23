@@ -84,9 +84,9 @@ namespace DeductionGame
         {
             GameManager gm = GameManager.Instance;
             if (gm == null || gm.Human == null)
-                return MansionLayout.GetRoom(1).Center;
+                return MapData.GetRoom(1).Center;
 
-            return MansionLayout.GetRoom(gm.Human.RoomId).Center;
+            return MapData.GetRoom(gm.Human.RoomId).Center;
         }
     }
 }

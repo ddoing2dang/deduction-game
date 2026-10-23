@@ -22,7 +22,7 @@ namespace DeductionGame
 
             if (mansionRoot == null)
             {
-                GameObject root = GameObject.Find("Mansion_Graybox");
+                GameObject root = GameObject.Find(MapData.RootName);
                 if (root == null) return;
                 mansionRoot = root.transform;
                 lastRoomId = -1;
@@ -38,9 +38,9 @@ namespace DeductionGame
 
         private void ApplyCutaway(int activeRoomId)
         {
-            var activeRoom = MansionLayout.GetRoom(activeRoomId);
+            var activeRoom = MapData.GetRoom(activeRoomId);
 
-            foreach (var layout in MansionLayout.Rooms)
+            foreach (var layout in MapData.Rooms)
             {
                 Transform roomRoot = FindRoomRoot(layout.Id);
                 if (roomRoot == null) continue;
@@ -53,11 +53,11 @@ namespace DeductionGame
             if (activeRoot != null)
                 SetForegroundWallVisible(activeRoot, false);
 
-            if (!activeRoom.IsBasement) return;
+            
 
-            foreach (var layout in MansionLayout.Rooms)
+            foreach (var layout in MapData.Rooms)
             {
-                if (layout.IsBasement) continue;
+                if (layout.Center.y <= activeRoom.Center.y) continue;
                 if (!FootprintsOverlap(activeRoom, layout)) continue;
 
                 Transform coveringRoom = FindRoomRoot(layout.Id);

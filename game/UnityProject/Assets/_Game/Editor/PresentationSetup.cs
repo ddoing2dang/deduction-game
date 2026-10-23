@@ -42,12 +42,12 @@ public static class PresentationSetup
         {
             var point = new GameObject($"Stand_{slot + 1:00}").transform;
             point.SetParent(root.transform);
-            point.position = MansionLayout.GetStandPoint(room.RoomId, slot) - Vector3.up * 0.55f;
+            point.position = MapData.GetStandPoint(room.RoomId, slot) - Vector3.up * 0.55f;
             anchors.StandPoints[slot] = point;
         }
         anchors.ActionPoint = new GameObject("Action_Point").transform;
         anchors.ActionPoint.SetParent(root.transform);
-        anchors.ActionPoint.position = MansionLayout.GetRoom(room.RoomId).Center;
+        anchors.ActionPoint.position = MapData.GetRoom(room.RoomId).Center;
         EditorUtility.SetDirty(anchors);
     }
 }
