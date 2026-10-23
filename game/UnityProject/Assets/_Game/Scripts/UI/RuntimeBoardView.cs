@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace DeductionGame
 {
@@ -11,9 +12,11 @@ namespace DeductionGame
         private readonly Dictionary<int, int> tokenRooms = new();
         private readonly Dictionary<int, int> tokenSlots = new();
         private readonly Dictionary<int, float> pivotOffsets = new();
+        private readonly Dictionary<int, int> displayedRooms = new();
 
         public static void Ensure(GameManager gm)
         {
+            RuntimeNavMesh.EnsureBuilt();
             if (instance == null)
             {
                 var go = new GameObject("RuntimeBoardView");
@@ -46,6 +49,17 @@ namespace DeductionGame
                 token.name = $"Token_{p.Id}_{p.Name}";
                 if (prefab == null)
                     token.transform.localScale = new Vector3(0.45f, 0.55f, 0.45f);
+                foreach (var collider in token.GetComponentsInChildren<Collider>()) collider.enabled = false;
+                token.transform.position = RoomPresentation.Stand(p.RoomId, p.Id % 6);
+                var agent = token.GetComponent<NavMeshAgent>();
+                if (agent == null) agent = token.AddComponent<NavMeshAgent>();
+                agent.radius = 0.3f;
+                agent.height = 1.1f;
+                agent.baseOffset = prefab == null ? 0.55f : 0f;
+                agent.speed = 4.2f;
+                agent.acceleration = 14f;
+                agent.angularSpeed = 720f;
+                agent.stoppingDistance = 0.05f;
 
                 var label = token.AddComponent<TokenLabel>();
                 label.PlayerId = p.Id;
@@ -91,7 +105,19 @@ namespace DeductionGame
                     tokenRooms[p.Id] = p.RoomId;
                     tokenSlots[p.Id] = slot;
                 }
-                token.transform.position = RoomPresentation.Stand(p.RoomId, slot) + Vector3.up * pivotOffsets[p.Id];
+                Vector3 target = RoomPresentation.Stand(p.RoomId, slot);
+                var agent = token.GetComponent<NavMeshAgent>();
+                if (agent != null && NavMesh.SamplePosition(target, out var hit, 1f, NavMesh.AllAreas))
+                {
+                    if (!agent.isOnNavMesh) agent.Warp(hit.position);
+                    // Secret passage is a transition, not a walk through intervening rooms.
+                    if (displayedRooms.TryGetValue(p.Id, out int fromRoom) && manager.SecretPassageActive &&
+                        ((fromRoom == 9 && p.RoomId == 6) || (fromRoom == 6 && p.RoomId == 9)))
+                        agent.Warp(hit.position);
+                    else if (agent.isOnNavMesh) agent.SetDestination(hit.position);
+                }
+                else token.transform.position = target + Vector3.up * pivotOffsets[p.Id];
+                displayedRooms[p.Id] = p.RoomId;
                 token.SetActive(true);
             }
         }

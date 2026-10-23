@@ -17,6 +17,9 @@ namespace DeductionGame
                 if (anchors != null && anchors.StandPoints != null && slot >= 0 &&
                     slot < anchors.StandPoints.Length && anchors.StandPoints[slot] != null)
                     return anchors.StandPoints[slot].position;
+                var point = room.transform.parent != null
+                    ? room.transform.parent.Find($"NavigationPoints/Stand_{slot + 1:00}") : null;
+                if (point != null) return point.position - Vector3.up * 0.55f;
                 break;
             }
             return MansionLayout.GetStandPoint(roomId, slot) - Vector3.up * 0.55f;

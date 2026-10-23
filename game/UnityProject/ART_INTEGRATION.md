@@ -14,8 +14,8 @@
 Use ART_GUIDE.md for all character/model/animation naming and budgets. Assign finished prefabs in the catalog before Play. Room visuals must not add gameplay logic or input-intercepting colliders. Portrait/background slots are reserved for the future room UI; they are not yet rendered.
 
 ## Remaining production order
-1. Mansion environment and character assets following the selected reference designs.
-2. DoorID/Entry anchors, NavMesh travel, front-wall cutaway and event visuals, validated on the mansion before reusing them on the cruise/museum.
+1. Mansion physical route and camera visual review on Windows/Android before final Blender assets. Upstream v4 room walls, DoorID/Entry/StandPoint/ActionPoint, runtime NavMesh, three zoom levels and cutaway are now integrated without removing the catalog or stable seats.
+2. Final environment/character assets and replacement VFX after the mansion systems are validated; reuse them on the cruise/museum.
 3. Room-action 2D UI using catalog portraits/backgrounds; replace debug OnGUI after the complete UI flow is connected.
 4. Full single-player verification on Windows/Android before room-code multiplayer.
 
@@ -25,4 +25,11 @@ Use ART_GUIDE.md for all character/model/animation naming and budgets. Assign fi
 - ARCHITECTURE.md describes R1 3P; the implemented and locked flow is pre-round setup 3P, then R1 onward 2P.
 
 ## Validation
-All runtime and editor C# sources compile together against the installed Unity 6000.3.26f1 reference assemblies with UNITY_EDITOR enabled (zero errors/warnings). Unity batch startup exited with code 1 during licensing/WMI initialization before script compilation; Play mode, visual layout and imported assets remain unverified.
+Unity 6000.3.26f1 batch Play Mode verification ran in a separate project copy to preserve the original scene. `MansionEventVerification.Run` passed door marker mapping, blackout/smoke restoration, route-block consumption, existing lock/broken-door costs, secret 1P travel and agent transition, expiry/rejection and restart reset. Log result: `MANSION_EVENT_VERIFICATION: OK`, process exit 0. Full runtime/editor reference compilation also passed. Unity's separate SearchDatabase startup indexer emitted an editor exception; the game checks still ran and passed. Final rendering and Android remain outside this automated check.
+
+## Event presentation
+- `MansionEventView` reads GameManager's public state each LateUpdate. It never calculates durations, costs, roles or private information.
+- Door markers are children of their existing DOOR IDs. Markers have disabled/removed colliders; the existing rule owner decides whether a move succeeds.
+- Blackout restores the original floor property block/light enabled flags; smoke uses a lightweight translucent placeholder. Expired/consumed effects and component disable restore the visual state.
+- The existing inactive 9↔6 secret placeholder gains endpoint markers. GameManager alone authorizes the connection; RuntimeBoardView transitions the agent on that approved move instead of walking through unrelated rooms.
+- StartNewGame now clears stale public map effects. SceneLayoutVersion stays 4; its preference key is scoped to the project path so validation copies cannot prevent another checkout's scene upgrade.

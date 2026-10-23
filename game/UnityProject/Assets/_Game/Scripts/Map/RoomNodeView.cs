@@ -18,7 +18,8 @@ namespace DeductionGame
         {
             roomId = id;
             roomName = displayName;
-            gameObject.name = $"Room_{id}_{displayName}";
+            if (transform.parent == null)
+                gameObject.name = $"Room_{id}_{displayName}";
         }
 
         private void OnMouseDown()
