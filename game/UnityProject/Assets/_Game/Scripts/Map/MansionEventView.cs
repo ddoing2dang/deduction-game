@@ -79,8 +79,9 @@ namespace DeductionGame
                 if (door.name == MapData.SecretName)
                 {
                     secret = door;
-                    foreach (Transform anchor in door)
-                        Marker(anchor, "SecretEntrance", Vector3.up, new Vector3(1f, 2f, 0.15f), Color.cyan);
+                    if(FindFirstObjectByType<MansionSecretPanel>()==null)
+                        foreach (Transform anchor in door)
+                            Marker(anchor, "SecretEntrance", Vector3.up, new Vector3(1f, 2f, 0.15f), Color.cyan);
                     continue;
                 }
                 string[] parts = door.name.Split('_');

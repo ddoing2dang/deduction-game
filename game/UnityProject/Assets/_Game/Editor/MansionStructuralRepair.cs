@@ -18,6 +18,7 @@ public static class MansionStructuralRepair
     public static void ApplyToScene()
     {
         if (MapData.Theme != MapTheme.Mansion) return;
+        if(File.Exists(Folder+"/environment_manifest.json")){MansionEnvironmentCleanup.Apply();return;}
         var model=AssetDatabase.LoadAssetAtPath<GameObject>(Folder+"/Mansion_Environment_Pass01.fbx");
         if(model==null) throw new InvalidOperationException("Repaired Mansion FBX is missing.");
         var manifest=JsonUtility.FromJson<Manifest>(File.ReadAllText(Folder+"/structural_patch.json"));

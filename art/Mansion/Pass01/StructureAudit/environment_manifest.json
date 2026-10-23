@@ -1,0 +1,8879 @@
+{
+ "version": 1,
+ "parts": [
+  {
+   "name": "R01_Floor",
+   "role": "Floor",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.41999998688697815,
+    "g": 0.36000001430511475,
+    "b": 0.25,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_Chandelier",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_00",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_00",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_01",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_01",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_02",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_02",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_03",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_03",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_04",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_04",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_05",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_05",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_06",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_06",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Arm_07",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Candle_07",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Chandelier_Stem",
+   "role": "Room",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_04",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_05",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_06",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_07",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_08",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_09",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_10",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_GrandStair_11",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Hero_Gallery",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_RearWing",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_04",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_05",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_06",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_07",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_08",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_0_Post_09",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_04",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_05",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_06",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_07",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_08",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_1_Post_09",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_2_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_2_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_2_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_2_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_3_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_3_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_3_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_3_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_3_Post_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_04",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_05",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_06",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_4_Post_07",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_5_Cap",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_5_Post_00",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_5_Post_01",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_5_Post_02",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Balustrade_5_Post_03",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Pier_4.1",
+   "role": "Support",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_Pier_6.9",
+   "role": "Support",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Gallery_RearFascia",
+   "role": "Gallery",
+   "room": 1,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_North_Lintel_01",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_North_Pier_02",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_South_Lintel_01",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R01_Wall_South_Pier_02",
+   "role": "Wall",
+   "room": 1,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Floor",
+   "role": "Floor",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.2199999988079071,
+    "g": 0.12999999523162842,
+    "b": 0.07000000029802322,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_BookcaseBack",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_Bookshelf_0",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_Bookshelf_1",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_Bookshelf_2",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_Bookshelf_3",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Hero_Bookshelf_4",
+   "role": "Room",
+   "room": 2,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_South_Lintel_01",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R02_Wall_South_Pier_02",
+   "role": "Wall",
+   "room": 2,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Floor",
+   "role": "Floor",
+   "room": 3,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.2199999988079071,
+    "g": 0.2800000011920929,
+    "b": 0.3400000035762787,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Hero_Fireplace",
+   "role": "Room",
+   "room": 3,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Hero_Mantel",
+   "role": "Room",
+   "room": 3,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Hero_Portrait",
+   "role": "Room",
+   "room": 3,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_South_Lintel_01",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R03_Wall_South_Pier_02",
+   "role": "Wall",
+   "room": 3,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Hero_BanquetSideboard",
+   "role": "Room",
+   "room": 4,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Hero_SideboardMarble",
+   "role": "Room",
+   "room": 4,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Floor",
+   "role": "Floor",
+   "room": 4,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.3499999940395355,
+    "g": 0.1899999976158142,
+    "b": 0.10000000149011612,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_North_Lintel_01",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_North_Pier_02",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R04_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 4,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Hero_Range",
+   "role": "Room",
+   "room": 5,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Hero_Hood",
+   "role": "Room",
+   "room": 5,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Floor",
+   "role": "Floor",
+   "room": 5,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.5400000214576721,
+    "g": 0.5799999833106995,
+    "b": 0.5299999713897705,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_North_Lintel_01",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_North_Pier_02",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R05_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 5,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Floor",
+   "role": "Floor",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.30000001192092896,
+    "g": 0.4000000059604645,
+    "b": 0.3199999928474426,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_-4.7_-3",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_-4.7_0",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_-4.7_3",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_4.7_-3",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_4.7_0",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_GlassMullion_4.7_3",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_Planter",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Hero_Topiary",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.20000000298023224,
+    "g": 0.4300000071525574,
+    "b": 0.3700000047683716,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_-5_10.8",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_-5_12.6",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_-5_14.4",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_-5_1.1",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_-5_2.6",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_-5_3.95",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_5_10.8",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_5_12.6",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowMullion_5_14.4",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_5_1.1",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_5_2.6",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_WindowRail_5_3.95",
+   "role": "Room",
+   "room": 6,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_South_Lintel_01",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Wall_South_Pier_02",
+   "role": "Wall",
+   "room": 6,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Floor",
+   "role": "Floor",
+   "room": 7,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.20000000298023224,
+    "g": 0.23000000417232513,
+    "b": 0.25,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Hero_Boiler",
+   "role": "Room",
+   "room": 7,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Hero_Pipe_0",
+   "role": "Room",
+   "room": 7,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Hero_Pipe_1",
+   "role": "Room",
+   "room": 7,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Hero_Pipe_2",
+   "role": "Room",
+   "room": 7,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.4699999988079071,
+    "g": 0.28999999165534973,
+    "b": 0.09000000357627869,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_South_Lintel_01",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R07_Wall_South_Pier_02",
+   "role": "Wall",
+   "room": 7,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Floor",
+   "role": "Floor",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.2800000011920929,
+    "g": 0.1899999976158142,
+    "b": 0.14000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_WineRack_0",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_WineRack_1",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_WineRack_2",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_WineRack_3",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_0",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_1",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_2",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_3",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_4",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Hero_RackDivider_5",
+   "role": "Room",
+   "room": 8,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_East_Lintel_01",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_East_Pier_02",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R08_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 8,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Floor",
+   "role": "Floor",
+   "room": 9,
+   "door": "",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.4000000059604645,
+    "g": 0.3499999940395355,
+    "b": 0.27000001072883606,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Hero_Locker",
+   "role": "Room",
+   "room": 9,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Hero_BedFrame",
+   "role": "Room",
+   "room": 9,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Hero_Mattress",
+   "role": "Room",
+   "room": 9,
+   "door": "",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_East_Pier_00",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "East",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_West_Pier_00",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_West_Lintel_01",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_West_Pier_02",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_North_Pier_00",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_North_Lintel_01",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_North_Pier_02",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Wall_South_Pier_00",
+   "role": "Wall",
+   "room": 9,
+   "door": "",
+   "side": "South",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_02_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_02",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_03_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_03",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_05_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_01_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_05_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_05_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_05_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_01_06_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_01_06",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_-1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_02_04_Railing_0_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_02_04",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_-1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_10",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_0_1_Post_11",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_03_05_Railing_1_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_03_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_-1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_05_Railing_0_1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_05",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_00",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_01",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_02",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_03",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_04",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_05",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_06",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_07",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_08",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_09",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_10",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_11",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_12",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_13",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_14",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_15",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_16",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_17",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_18",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_19",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_20",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_21",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_Step_22",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_COLLISION_Flight",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.6,
+    "g": 0.55,
+    "b": 0.45,
+    "a": 1
+   },
+   "hidden": true
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_10",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_11",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_12",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_13",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_14",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_15",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_16",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_17",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_-1_Post_18",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_10",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_11",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_12",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_13",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_14",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_15",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_16",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_17",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_A_SideRail_1_Post_18",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomLanding",
+   "role": "Floor",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibule",
+   "role": "Floor",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_GuardWall",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_GuardCap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomEndRail_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomVestibuleRail_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomReturnRail_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomReturnRail_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomReturnRail_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_04_07_BottomReturnRail_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_04_07",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_00",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_01",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_02",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_03",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_04",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_05",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_06",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_07",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_08",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_09",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_10",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_11",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_12",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_13",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_14",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_15",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_16",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_17",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_18",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_19",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_20",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_21",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_Step_22",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": false,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_COLLISION_Flight",
+   "role": "Stair",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.6,
+    "g": 0.55,
+    "b": 0.45,
+    "a": 1
+   },
+   "hidden": true
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_10",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_11",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_12",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_13",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_14",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_15",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_16",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_17",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_-1_Post_18",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_10",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_11",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_12",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_13",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_14",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_15",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_16",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_17",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_A_SideRail_1_Post_18",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomLanding",
+   "role": "Floor",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibule",
+   "role": "Floor",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_GuardWall",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.6200000047683716,
+    "g": 0.550000011920929,
+    "b": 0.4000000059604645,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_GuardCap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_06",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_07",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_08",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomEndRail_Post_09",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomVestibuleRail_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomReturnRail_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomReturnRail_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomReturnRail_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_05_08_BottomReturnRail_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_05_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_-1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Cap",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_00",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_01",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_02",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_03",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_04",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_07_08_Railing_0_1_Post_05",
+   "role": "Railing",
+   "room": 0,
+   "door": "DOOR_07_08",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.06499999761581421,
+    "g": 0.09000000357627869,
+    "b": 0.10499999672174454,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_08_09_Passage_Floor",
+   "role": "Passage",
+   "room": 0,
+   "door": "DOOR_08_09",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.23999999463558197,
+    "g": 0.25999999046325684,
+    "b": 0.2800000011920929,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_08_09_Door_Jamb_-1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_08_09",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_08_09_Door_Jamb_1",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_08_09",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "DOOR_08_09_Door_Header",
+   "role": "Door",
+   "room": 0,
+   "door": "DOOR_08_09",
+   "side": "",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R09_Door_09_06_SECRET_Panel",
+   "role": "Door",
+   "room": 9,
+   "door": "DOOR_09_06_SECRET",
+   "side": "North",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  },
+  {
+   "name": "R06_Door_09_06_SECRET_Panel",
+   "role": "Door",
+   "room": 6,
+   "door": "DOOR_09_06_SECRET",
+   "side": "West",
+   "collision": true,
+   "color": {
+    "r": 0.1599999964237213,
+    "g": 0.07500000298023224,
+    "b": 0.03500000014901161,
+    "a": 1.0
+   },
+   "hidden": false
+  }
+ ],
+ "layout": {
+  "routes": [
+   {
+    "door": "DOOR_01_02",
+    "a": 1,
+    "b": 2,
+    "points": [
+     {
+      "x": -6.0,
+      "y": 0.0,
+      "z": 3.0
+     },
+     {
+      "x": -7.5,
+      "y": 0.0,
+      "z": 3.0
+     }
+    ]
+   },
+   {
+    "door": "DOOR_01_03",
+    "a": 1,
+    "b": 3,
+    "points": [
+     {
+      "x": 6.0,
+      "y": 0.0,
+      "z": 3.0
+     },
+     {
+      "x": 7.5,
+      "y": 0.0,
+      "z": 3.0
+     }
+    ]
+   },
+   {
+    "door": "DOOR_01_05",
+    "a": 1,
+    "b": 5,
+    "points": [
+     {
+      "x": 1.2999999523162842,
+      "y": 0.0,
+      "z": -3.5
+     },
+     {
+      "x": 1.2999999523162842,
+      "y": 0.0,
+      "z": -4.0
+     }
+    ]
+   },
+   {
+    "door": "DOOR_01_06",
+    "a": 1,
+    "b": 6,
+    "points": [
+     {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 7.5
+     },
+     {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 9.0
+     }
+    ]
+   },
+   {
+    "door": "DOOR_02_04",
+    "a": 2,
+    "b": 4,
+    "points": [
+     {
+      "x": -11.5,
+      "y": 0.0,
+      "z": 0.0
+     },
+     {
+      "x": -11.5,
+      "y": 0.0,
+      "z": -3.0
+     }
+    ]
+   },
+   {
+    "door": "DOOR_03_05",
+    "a": 3,
+    "b": 5,
+    "points": [
+     {
+      "x": 9.5,
+      "y": 0.0,
+      "z": 0.0
+     },
+     {
+      "x": 9.5,
+      "y": 0.0,
+      "z": -4.900000095367432
+     },
+     {
+      "x": 6.5,
+      "y": 0.0,
+      "z": -4.900000095367432
+     }
+    ]
+   },
+   {
+    "door": "DOOR_04_05",
+    "a": 4,
+    "b": 5,
+    "points": [
+     {
+      "x": -6.0,
+      "y": 0.0,
+      "z": -7.5
+     },
+     {
+      "x": -2.5,
+      "y": 0.0,
+      "z": -7.5
+     }
+    ]
+   },
+   {
+    "door": "DOOR_07_08",
+    "a": 7,
+    "b": 8,
+    "points": [
+     {
+      "x": -6.0,
+      "y": -4.0,
+      "z": -6.599999904632568
+     },
+     {
+      "x": -3.5,
+      "y": -4.0,
+      "z": -6.599999904632568
+     }
+    ]
+   },
+   {
+    "door": "DOOR_08_09",
+    "a": 8,
+    "b": 9,
+    "points": [
+     {
+      "x": 5.5,
+      "y": -4.0,
+      "z": -4.400000095367432
+     },
+     {
+      "x": 6.0,
+      "y": -4.0,
+      "z": -4.400000095367432
+     }
+    ]
+   },
+   {
+    "door": "DOOR_04_07",
+    "a": 4,
+    "b": 7,
+    "points": [
+     {
+      "x": -13.75,
+      "y": 0,
+      "z": -4.9
+     },
+     {
+      "x": -15.06,
+      "y": 0,
+      "z": -4.4
+     },
+     {
+      "x": -15.06,
+      "y": 0,
+      "z": -5.2
+     },
+     {
+      "x": -15.06,
+      "y": -4,
+      "z": -11.8
+     },
+     {
+      "x": -15.06,
+      "y": -4,
+      "z": -12.6
+     },
+     {
+      "x": -12.7,
+      "y": -4,
+      "z": -12.6
+     },
+     {
+      "x": -12.7,
+      "y": -4,
+      "z": -9.5
+     },
+     {
+      "x": -12.7,
+      "y": -4,
+      "z": -8.6
+     }
+    ]
+   },
+   {
+    "door": "DOOR_05_08",
+    "a": 5,
+    "b": 8,
+    "points": [
+     {
+      "x": 3.6,
+      "y": 0,
+      "z": -5
+     },
+     {
+      "x": 4.95,
+      "y": 0,
+      "z": -4.9
+     },
+     {
+      "x": 4.95,
+      "y": 0,
+      "z": -5.7
+     },
+     {
+      "x": 4.95,
+      "y": -4,
+      "z": -12.3
+     },
+     {
+      "x": 4.95,
+      "y": -4,
+      "z": -13.1
+     },
+     {
+      "x": 2.8,
+      "y": -4,
+      "z": -13.1
+     },
+     {
+      "x": 2.8,
+      "y": -4,
+      "z": -11
+     },
+     {
+      "x": 2.8,
+      "y": -4,
+      "z": -10
+     }
+    ]
+   }
+  ],
+  "entries": [
+   {
+    "room": 1,
+    "to": 2,
+    "position": {
+     "x": -4.767007827758789,
+     "y": 0.05000000074505806,
+     "z": 2.794501304626465
+    }
+   },
+   {
+    "room": 1,
+    "to": 3,
+    "position": {
+     "x": 4.767007827758789,
+     "y": 0.05000000074505806,
+     "z": 2.794501304626465
+    }
+   },
+   {
+    "room": 1,
+    "to": 5,
+    "position": {
+     "x": 0.8548548221588135,
+     "y": 0.05000000074505806,
+     "z": -2.2742741107940674
+    }
+   },
+   {
+    "room": 1,
+    "to": 6,
+    "position": {
+     "x": 0.0,
+     "y": 0.05000000074505806,
+     "z": 6.25
+    }
+   },
+   {
+    "room": 2,
+    "to": 1,
+    "position": {
+     "x": -8.732992172241211,
+     "y": 0.05000000074505806,
+     "z": 3.455498695373535
+    }
+   },
+   {
+    "room": 2,
+    "to": 4,
+    "position": {
+     "x": -11.749533653259277,
+     "y": 0.05000000074505806,
+     "z": 1.2448666095733643
+    }
+   },
+   {
+    "room": 3,
+    "to": 1,
+    "position": {
+     "x": 8.732992172241211,
+     "y": 0.05000000074505806,
+     "z": 3.455498695373535
+    }
+   },
+   {
+    "room": 3,
+    "to": 5,
+    "position": {
+     "x": 9.5,
+     "y": 0.05,
+     "z": 1.1
+    }
+   },
+   {
+    "room": 4,
+    "to": 2,
+    "position": {
+     "x": -11.250466346740723,
+     "y": 0.05000000074505806,
+     "z": -4.244866371154785
+    }
+   },
+   {
+    "room": 4,
+    "to": 5,
+    "position": {
+     "x": -7.2463178634643555,
+     "y": 0.05000000074505806,
+     "z": -7.288744926452637
+    }
+   },
+   {
+    "room": 4,
+    "to": 7,
+    "position": {
+     "x": -13.75,
+     "y": 0.05000000074505806,
+     "z": -4.900000095367432
+    }
+   },
+   {
+    "room": 5,
+    "to": 1,
+    "position": {
+     "x": 1.4451452493667603,
+     "y": 0.05000000074505806,
+     "z": -5.225726127624512
+    }
+   },
+   {
+    "room": 5,
+    "to": 3,
+    "position": {
+     "x": 5.25,
+     "y": 0.05,
+     "z": -4.9
+    }
+   },
+   {
+    "room": 5,
+    "to": 4,
+    "position": {
+     "x": -1.2536818981170654,
+     "y": 0.05000000074505806,
+     "z": -7.749716758728027
+    }
+   },
+   {
+    "room": 5,
+    "to": 8,
+    "position": {
+     "x": 3.5999999046325684,
+     "y": 0.05000000074505806,
+     "z": -5.0
+    }
+   },
+   {
+    "room": 6,
+    "to": 1,
+    "position": {
+     "x": 0.0,
+     "y": 0.05000000074505806,
+     "z": 10.25
+    }
+   },
+   {
+    "room": 7,
+    "to": 4,
+    "position": {
+     "x": -12.699999809265137,
+     "y": -3.950000047683716,
+     "z": -8.600000381469727
+    }
+   },
+   {
+    "room": 7,
+    "to": 8,
+    "position": {
+     "x": -7.244866371154785,
+     "y": -3.950000047683716,
+     "z": -6.250466823577881
+    }
+   },
+   {
+    "room": 8,
+    "to": 5,
+    "position": {
+     "x": 2.799999952316284,
+     "y": -3.950000047683716,
+     "z": -10.0
+    }
+   },
+   {
+    "room": 8,
+    "to": 7,
+    "position": {
+     "x": -2.2551333904266357,
+     "y": -3.950000047683716,
+     "z": -6.704078674316406
+    }
+   },
+   {
+    "room": 8,
+    "to": 9,
+    "position": {
+     "x": 4.35,
+     "y": -3.95,
+     "z": -4.4
+    }
+   },
+   {
+    "room": 9,
+    "to": 8,
+    "position": {
+     "x": 7.15,
+     "y": -3.95,
+     "z": -4.4
+    }
+   }
+  ],
+  "secret": [
+   {
+    "room": 9,
+    "position": {
+     "x": 7.4,
+     "y": -3.95,
+     "z": -2.8
+    }
+   },
+   {
+    "room": 6,
+    "position": {
+     "x": -3.7,
+     "y": 0.05,
+     "z": 13
+    }
+   }
+  ]
+ }
+}

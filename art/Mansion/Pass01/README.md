@@ -1,3 +1,7 @@
+# Current full environment pass (2026-10-24)
+
+The complete environment is now imported into Unity at SceneLayoutVersion 8. See [StructureAudit/REPORT.md](StructureAudit/REPORT.md) for the current structural inventory, deletion list, FBX workflow, all-link physical traversal results and Blender/Unity camera evidence. Earlier partial stair/repair reports below are historical and do not supersede this audit.
+
 # Mansion stair architecture revision — 2026-10-24
 
 Current geometry, Entry changes, visual assessment and verification evidence are documented in [STAIR_ARCHITECTURE_REPORT.md](STAIR_ARCHITECTURE_REPORT.md).

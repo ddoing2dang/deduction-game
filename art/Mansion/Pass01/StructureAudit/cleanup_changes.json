@@ -1,0 +1,3052 @@
+{
+  "deleted": [
+    {
+      "name": "DOOR_01_02_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R01_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R01_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R01_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R02_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R02_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_R02_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_02_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R01_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R01_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R01_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R03_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R03_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_R03_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_03_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R01_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R01_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R01_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R05_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R05_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_R05_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_05_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R01_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R01_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R01_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R06_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R06_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_R06_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_01_06_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R02_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R02_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R02_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R04_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R04_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_R04_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_02_04_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R03_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R03_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R03_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R05_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R05_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_R05_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Skirt_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_UnderBeam_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Rail_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_1_0",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_1_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_1_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Skirt_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_UnderBeam_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Rail_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_2_0",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_2_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_2_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Skirt_4",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_UnderBeam_4",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Rail_4",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_4_0",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_4_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_4_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Skirt_5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_UnderBeam_5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Rail_5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_5_0",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_5_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Post_5_2",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Support_0",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_03_05_Support_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R04_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R04_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R04_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R05_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R05_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_R05_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_04_05_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R07_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R07_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R07_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R08_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R08_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_R08_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_07_08_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Passage",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R08_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R08_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R08_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R09_Jamb_-1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R09_Jamb_1",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_R09_Header",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_-1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_-1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_-1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_1_0.05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_1_0.5",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_RailPost_1_0.95",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_-1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_00",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_01",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_02",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_03",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_04",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_05",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_06",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_07",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_08",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_09",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_10",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "DOOR_08_09_Handrail_1_11",
+      "reason": "replace duplicate end frames/rails and oversized connection geometry with one mapped portal and compact passage"
+    },
+    {
+      "name": "R01_Pilaster_-1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R01_Pilaster_1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R01_FloorBorderX_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R01_FloorBorderY_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R01_FloorBorderX_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R01_FloorBorderY_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R01_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_00_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_East_Pier_05_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_00_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_West_Pier_05_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_00_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_North_Pier_05_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_00_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R01_South_Pier_05_Trim_7.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_Pilaster_-1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R02_Pilaster_1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R02_FloorBorderX_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R02_FloorBorderY_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R02_FloorBorderX_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R02_FloorBorderY_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R02_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_East_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_West_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_North_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R02_South_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_Pilaster_-1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R03_Pilaster_1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R03_FloorBorderX_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R03_FloorBorderY_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R03_FloorBorderX_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R03_FloorBorderY_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R03_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_East_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_West_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_North_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R03_South_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_Pilaster_-1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R04_Pilaster_1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R04_FloorBorderX_-1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R04_FloorBorderX_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R04_FloorBorderY_1",
+      "reason": "thin nonfunctional floor strip"
+    },
+    {
+      "name": "R04_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_East_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_West_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_Lintel_09",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_North_FormerStairInfill",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R04_South_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_Pilaster_-1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R05_Pilaster_1",
+      "reason": "unnecessary corner column"
+    },
+    {
+      "name": "R05_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_East_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_West_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Lintel_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_01",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_01_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_01_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_01_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Lintel_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_06",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_06_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_06_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_06_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Lintel_10",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_11",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_11_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_11_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_Pier_11_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_North_FormerStairInfill",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R05_South_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_East_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_West_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_North_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_00_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R06_South_Pier_05_Trim_3.88",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_East_Pier_05_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_West_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_North_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_South_StairReturn_West",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_South_StairReturn_East",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R07_South_StairLintel",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_East_Pier_05_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_West_Pier_05_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_North_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_South_StairReturn_West",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R08_South_StairLintel",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_East_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_East_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_East_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_East_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Lintel_04",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_05_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_05_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_West_Pier_05_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_North_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_North_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_North_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_North_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_South_Pier_00",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_South_Pier_00_Trim_0.16",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_South_Pier_00_Trim_1.05",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "R09_South_Pier_00_Trim_3.38",
+      "reason": "reconcile all wall openings with current LOCK portals"
+    },
+    {
+      "name": "HiddenPanel_09",
+      "reason": "replace unaligned secret panels with wall-aligned mapped panels"
+    },
+    {
+      "name": "HiddenPanel_06",
+      "reason": "replace unaligned secret panels with wall-aligned mapped panels"
+    },
+    {
+      "name": "DOOR_04_07_A_Stringer_-1",
+      "reason": "redundant exposed stair underside strip; solid stair collision slab retained"
+    },
+    {
+      "name": "DOOR_04_07_A_Stringer_1",
+      "reason": "redundant exposed stair underside strip; solid stair collision slab retained"
+    },
+    {
+      "name": "DOOR_04_07_TopLanding",
+      "reason": "duplicate coplanar slab over the existing room floor; original floor is the upper landing"
+    },
+    {
+      "name": "DOOR_05_08_A_Stringer_-1",
+      "reason": "redundant exposed stair underside strip; solid stair collision slab retained"
+    },
+    {
+      "name": "DOOR_05_08_A_Stringer_1",
+      "reason": "redundant exposed stair underside strip; solid stair collision slab retained"
+    },
+    {
+      "name": "DOOR_05_08_TopLanding",
+      "reason": "duplicate coplanar slab over the existing room floor; original floor is the upper landing"
+    }
+  ],
+  "references_before": {
+    "REF_Room_01": [
+      0.0,
+      2.0,
+      0.0
+    ],
+    "REF_R01_Stand_01": [
+      -1.5,
+      3.0999999046325684,
+      0.550000011920929
+    ],
+    "REF_R01_Stand_02": [
+      0.0,
+      3.4000000953674316,
+      0.550000011920929
+    ],
+    "REF_R01_Stand_03": [
+      1.5,
+      3.0999999046325684,
+      0.550000011920929
+    ],
+    "REF_R01_Stand_04": [
+      -1.5,
+      0.8999999761581421,
+      0.550000011920929
+    ],
+    "REF_R01_Stand_05": [
+      0.0,
+      0.6000000238418579,
+      0.550000011920929
+    ],
+    "REF_R01_Stand_06": [
+      1.5,
+      0.8999999761581421,
+      0.550000011920929
+    ],
+    "REF_R01_Action_Point": [
+      0.0,
+      2.0,
+      0.05000000074505806
+    ],
+    "REF_R01_Entry_To_02": [
+      -4.767007827758789,
+      2.794501304626465,
+      0.05000000074505806
+    ],
+    "REF_R01_Entry_To_03": [
+      4.767007827758789,
+      2.794501304626465,
+      0.05000000074505806
+    ],
+    "REF_R01_Entry_To_05": [
+      0.8548548221588135,
+      -2.2742741107940674,
+      0.05000000074505806
+    ],
+    "REF_R01_Entry_To_06": [
+      0.0,
+      6.25,
+      0.05000000074505806
+    ],
+    "REF_Room_02": [
+      -12.0,
+      4.0,
+      0.0
+    ],
+    "REF_R02_Stand_01": [
+      -13.5,
+      5.099999904632568,
+      0.550000011920929
+    ],
+    "REF_R02_Stand_02": [
+      -12.0,
+      5.400000095367432,
+      0.550000011920929
+    ],
+    "REF_R02_Stand_03": [
+      -10.5,
+      5.099999904632568,
+      0.550000011920929
+    ],
+    "REF_R02_Stand_04": [
+      -13.5,
+      2.9000000953674316,
+      0.550000011920929
+    ],
+    "REF_R02_Stand_05": [
+      -12.0,
+      2.5999999046325684,
+      0.550000011920929
+    ],
+    "REF_R02_Stand_06": [
+      -10.5,
+      2.9000000953674316,
+      0.550000011920929
+    ],
+    "REF_R02_Action_Point": [
+      -12.0,
+      4.0,
+      0.05000000074505806
+    ],
+    "REF_R02_Entry_To_01": [
+      -8.732992172241211,
+      3.455498695373535,
+      0.05000000074505806
+    ],
+    "REF_R02_Entry_To_04": [
+      -11.749533653259277,
+      1.2448666095733643,
+      0.05000000074505806
+    ],
+    "REF_Room_03": [
+      12.0,
+      4.0,
+      0.0
+    ],
+    "REF_R03_Stand_01": [
+      10.5,
+      5.099999904632568,
+      0.550000011920929
+    ],
+    "REF_R03_Stand_02": [
+      12.0,
+      5.400000095367432,
+      0.550000011920929
+    ],
+    "REF_R03_Stand_03": [
+      13.5,
+      5.099999904632568,
+      0.550000011920929
+    ],
+    "REF_R03_Stand_04": [
+      10.5,
+      2.9000000953674316,
+      0.550000011920929
+    ],
+    "REF_R03_Stand_05": [
+      12.0,
+      2.5999999046325684,
+      0.550000011920929
+    ],
+    "REF_R03_Stand_06": [
+      13.5,
+      2.9000000953674316,
+      0.550000011920929
+    ],
+    "REF_R03_Action_Point": [
+      12.0,
+      4.0,
+      0.05000000074505806
+    ],
+    "REF_R03_Entry_To_01": [
+      8.732992172241211,
+      3.455498695373535,
+      0.05000000074505806
+    ],
+    "REF_R03_Entry_To_05": [
+      9.466897010803223,
+      0.9602766036987305,
+      0.05000000074505806
+    ],
+    "REF_Room_04": [
+      -11.0,
+      -7.0,
+      0.0
+    ],
+    "REF_R04_Stand_01": [
+      -12.5,
+      -5.900000095367432,
+      0.550000011920929
+    ],
+    "REF_R04_Stand_02": [
+      -11.0,
+      -5.599999904632568,
+      0.550000011920929
+    ],
+    "REF_R04_Stand_03": [
+      -9.5,
+      -5.900000095367432,
+      0.550000011920929
+    ],
+    "REF_R04_Stand_04": [
+      -12.5,
+      -8.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R04_Stand_05": [
+      -11.0,
+      -8.399999618530273,
+      0.550000011920929
+    ],
+    "REF_R04_Stand_06": [
+      -9.5,
+      -8.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R04_Action_Point": [
+      -11.0,
+      -7.0,
+      0.05000000074505806
+    ],
+    "REF_R04_Entry_To_02": [
+      -11.250466346740723,
+      -4.244866371154785,
+      0.05000000074505806
+    ],
+    "REF_R04_Entry_To_05": [
+      -7.2463178634643555,
+      -7.288744926452637,
+      0.05000000074505806
+    ],
+    "REF_R04_Entry_To_07": [
+      -13.75,
+      -4.900000095367432,
+      0.05000000074505806
+    ],
+    "REF_Room_05": [
+      2.0,
+      -8.0,
+      0.0
+    ],
+    "REF_R05_Stand_01": [
+      0.5,
+      -6.900000095367432,
+      0.550000011920929
+    ],
+    "REF_R05_Stand_02": [
+      2.0,
+      -6.599999904632568,
+      0.550000011920929
+    ],
+    "REF_R05_Stand_03": [
+      3.5,
+      -6.900000095367432,
+      0.550000011920929
+    ],
+    "REF_R05_Stand_04": [
+      0.5,
+      -9.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R05_Stand_05": [
+      2.0,
+      -9.399999618530273,
+      0.550000011920929
+    ],
+    "REF_R05_Stand_06": [
+      3.5,
+      -9.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R05_Action_Point": [
+      2.0,
+      -8.0,
+      0.05000000074505806
+    ],
+    "REF_R05_Entry_To_01": [
+      1.4451452493667603,
+      -5.225726127624512,
+      0.05000000074505806
+    ],
+    "REF_R05_Entry_To_03": [
+      4.533102989196777,
+      -4.9602766036987305,
+      0.05000000074505806
+    ],
+    "REF_R05_Entry_To_04": [
+      -1.2536818981170654,
+      -7.749716758728027,
+      0.05000000074505806
+    ],
+    "REF_R05_Entry_To_08": [
+      3.5999999046325684,
+      -5.0,
+      0.05000000074505806
+    ],
+    "REF_Room_06": [
+      0.0,
+      13.0,
+      0.0
+    ],
+    "REF_R06_Stand_01": [
+      -1.5,
+      14.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R06_Stand_02": [
+      0.0,
+      14.399999618530273,
+      0.550000011920929
+    ],
+    "REF_R06_Stand_03": [
+      1.5,
+      14.100000381469727,
+      0.550000011920929
+    ],
+    "REF_R06_Stand_04": [
+      -1.5,
+      11.899999618530273,
+      0.550000011920929
+    ],
+    "REF_R06_Stand_05": [
+      0.0,
+      11.600000381469727,
+      0.550000011920929
+    ],
+    "REF_R06_Stand_06": [
+      1.5,
+      11.899999618530273,
+      0.550000011920929
+    ],
+    "REF_R06_Action_Point": [
+      0.0,
+      13.0,
+      0.05000000074505806
+    ],
+    "REF_R06_Entry_To_01": [
+      0.0,
+      10.25,
+      0.05000000074505806
+    ],
+    "REF_Room_07": [
+      -10.0,
+      -6.0,
+      -4.0
+    ],
+    "REF_R07_Stand_01": [
+      -11.5,
+      -4.900000095367432,
+      -3.450000047683716
+    ],
+    "REF_R07_Stand_02": [
+      -10.0,
+      -4.599999904632568,
+      -3.450000047683716
+    ],
+    "REF_R07_Stand_03": [
+      -8.5,
+      -4.900000095367432,
+      -3.450000047683716
+    ],
+    "REF_R07_Stand_04": [
+      -11.5,
+      -7.099999904632568,
+      -3.450000047683716
+    ],
+    "REF_R07_Stand_05": [
+      -10.0,
+      -7.400000095367432,
+      -3.450000047683716
+    ],
+    "REF_R07_Stand_06": [
+      -8.5,
+      -7.099999904632568,
+      -3.450000047683716
+    ],
+    "REF_R07_Action_Point": [
+      -10.0,
+      -6.0,
+      -3.950000047683716
+    ],
+    "REF_R07_Entry_To_04": [
+      -12.699999809265137,
+      -8.600000381469727,
+      -3.950000047683716
+    ],
+    "REF_R07_Entry_To_08": [
+      -7.244866371154785,
+      -6.250466823577881,
+      -3.950000047683716
+    ],
+    "REF_Room_08": [
+      1.0,
+      -7.0,
+      -4.0
+    ],
+    "REF_R08_Stand_01": [
+      -0.5,
+      -5.900000095367432,
+      -3.450000047683716
+    ],
+    "REF_R08_Stand_02": [
+      1.0,
+      -5.599999904632568,
+      -3.450000047683716
+    ],
+    "REF_R08_Stand_03": [
+      2.5,
+      -5.900000095367432,
+      -3.450000047683716
+    ],
+    "REF_R08_Stand_04": [
+      -0.5,
+      -8.100000381469727,
+      -3.450000047683716
+    ],
+    "REF_R08_Stand_05": [
+      1.0,
+      -8.399999618530273,
+      -3.450000047683716
+    ],
+    "REF_R08_Stand_06": [
+      2.5,
+      -8.100000381469727,
+      -3.450000047683716
+    ],
+    "REF_R08_Action_Point": [
+      1.0,
+      -7.0,
+      -3.950000047683716
+    ],
+    "REF_R08_Entry_To_05": [
+      2.799999952316284,
+      -10.0,
+      -3.950000047683716
+    ],
+    "REF_R08_Entry_To_07": [
+      -2.2551333904266357,
+      -6.704078674316406,
+      -3.950000047683716
+    ],
+    "REF_R08_Entry_To_09": [
+      4.279766082763672,
+      -6.271162986755371,
+      -3.950000047683716
+    ],
+    "REF_Room_09": [
+      10.0,
+      -5.0,
+      -4.0
+    ],
+    "REF_R09_Stand_01": [
+      8.5,
+      -3.9000000953674316,
+      -3.450000047683716
+    ],
+    "REF_R09_Stand_02": [
+      10.0,
+      -3.5999999046325684,
+      -3.450000047683716
+    ],
+    "REF_R09_Stand_03": [
+      11.5,
+      -3.9000000953674316,
+      -3.450000047683716
+    ],
+    "REF_R09_Stand_04": [
+      8.5,
+      -6.099999904632568,
+      -3.450000047683716
+    ],
+    "REF_R09_Stand_05": [
+      10.0,
+      -6.400000095367432,
+      -3.450000047683716
+    ],
+    "REF_R09_Stand_06": [
+      11.5,
+      -6.099999904632568,
+      -3.450000047683716
+    ],
+    "REF_R09_Action_Point": [
+      10.0,
+      -5.0,
+      -3.950000047683716
+    ],
+    "REF_R09_Entry_To_08": [
+      7.220233917236328,
+      -5.617725849151611,
+      -3.950000047683716
+    ]
+  },
+  "openings": {
+    "1": {
+      "North": [
+        {
+          "at": 0,
+          "width": 2.3200000000000003,
+          "door": "DOOR_01_06"
+        }
+      ],
+      "South": [
+        {
+          "at": 1.3,
+          "width": 1.42,
+          "door": "DOOR_01_05"
+        }
+      ],
+      "East": [
+        {
+          "at": 3,
+          "width": 1.92,
+          "door": "DOOR_01_03"
+        }
+      ],
+      "West": [
+        {
+          "at": 3,
+          "width": 1.52,
+          "door": "DOOR_01_02"
+        }
+      ]
+    },
+    "2": {
+      "North": [],
+      "South": [
+        {
+          "at": -11.5,
+          "width": 2.12,
+          "door": "DOOR_02_04"
+        }
+      ],
+      "East": [
+        {
+          "at": 3,
+          "width": 1.52,
+          "door": "DOOR_01_02"
+        }
+      ],
+      "West": []
+    },
+    "3": {
+      "North": [],
+      "South": [
+        {
+          "at": 9.5,
+          "width": 1.7200000000000002,
+          "door": "DOOR_03_05"
+        }
+      ],
+      "East": [],
+      "West": [
+        {
+          "at": 3,
+          "width": 1.92,
+          "door": "DOOR_01_03"
+        }
+      ]
+    },
+    "4": {
+      "North": [
+        {
+          "at": -11.5,
+          "width": 2.12,
+          "door": "DOOR_02_04"
+        }
+      ],
+      "South": [],
+      "East": [
+        {
+          "at": -7.5,
+          "width": 1.7200000000000002,
+          "door": "DOOR_04_05"
+        }
+      ],
+      "West": []
+    },
+    "5": {
+      "North": [
+        {
+          "at": 1.3,
+          "width": 1.42,
+          "door": "DOOR_01_05"
+        }
+      ],
+      "South": [],
+      "East": [
+        {
+          "at": -4.9,
+          "width": 1.7200000000000002,
+          "door": "DOOR_03_05"
+        }
+      ],
+      "West": [
+        {
+          "at": -7.5,
+          "width": 1.7200000000000002,
+          "door": "DOOR_04_05"
+        }
+      ]
+    },
+    "6": {
+      "North": [],
+      "South": [
+        {
+          "at": 0,
+          "width": 2.3200000000000003,
+          "door": "DOOR_01_06"
+        }
+      ],
+      "East": [],
+      "West": [
+        {
+          "at": 13,
+          "width": 1.4,
+          "door": "DOOR_09_06_SECRET"
+        }
+      ]
+    },
+    "7": {
+      "North": [],
+      "South": [
+        {
+          "at": -12.699999809265137,
+          "width": 1.9,
+          "door": "DOOR_04_07"
+        }
+      ],
+      "East": [
+        {
+          "at": -6.6,
+          "width": 2.12,
+          "door": "DOOR_07_08"
+        }
+      ],
+      "West": []
+    },
+    "8": {
+      "North": [],
+      "South": [
+        {
+          "at": 2.799999952316284,
+          "width": 1.9,
+          "door": "DOOR_05_08"
+        }
+      ],
+      "East": [
+        {
+          "at": -4.4,
+          "width": 1.7200000000000002,
+          "door": "DOOR_08_09"
+        }
+      ],
+      "West": [
+        {
+          "at": -6.6,
+          "width": 2.12,
+          "door": "DOOR_07_08"
+        }
+      ]
+    },
+    "9": {
+      "North": [
+        {
+          "at": 7.4,
+          "width": 1.4,
+          "door": "DOOR_09_06_SECRET"
+        }
+      ],
+      "South": [],
+      "East": [],
+      "West": [
+        {
+          "at": -4.4,
+          "width": 1.7200000000000002,
+          "door": "DOOR_08_09"
+        }
+      ]
+    }
+  }
+}

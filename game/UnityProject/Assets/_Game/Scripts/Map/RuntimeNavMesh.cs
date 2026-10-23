@@ -57,7 +57,7 @@ namespace DeductionGame
 
             navMeshInstance = NavMesh.AddNavMeshData(navMeshData);
             built = navMeshInstance.valid;
-            if (built) {
+            if (built && MapData.Theme != MapTheme.Mansion) {
                 var links = MapData.Links;
                 for(int i=0;i<links.GetLength(0);i++) {
                     int a=links[i,0], b=links[i,1];

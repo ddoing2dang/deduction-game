@@ -1,0 +1,18 @@
+{
+  "reviewer": "Codex",
+  "date": "2026-10-24",
+  "blenderConnection": "OK",
+  "blenderMeshes": 560,
+  "removedOrReplacedPieces": 597,
+  "basicLinks": 11,
+  "physicalDirectionalTraversals": 22,
+  "secretDirections": 2,
+  "standPointsPreserved": 54,
+  "actionPointsPreserved": 9,
+  "singlePlayerAssertions": 2461,
+  "visualAssessment": "Directly reviewed Blender isolated-room top/front/side/iso and global model; Unity fixed play camera zooms 9/19/32, ground/basement cutaway, and UI capture. Remaining structures serve the locked links or the decorative Hall gallery; no orphan door, duplicate stair, disconnected platform or airborne movement found.",
+  "cameraRegressionFix": "Hide physical wall renderers that occlude active room; retain colliders and original camera controls/offset/zoom.",
+  "fbxSHA256": "232A361AE50AE7E20C2819A2A0C6DD677D75B0E904344C95D324CFE581184755",
+  "multiplayer": "No changes",
+  "status": "OK"
+}

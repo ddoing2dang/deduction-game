@@ -6,6 +6,7 @@ namespace DeductionGame
     {
         private Transform mansionRoot;
         private int lastRoomId = -1;
+        private Vector3 lastCutawayCameraPosition;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Attach()
@@ -29,10 +30,12 @@ namespace DeductionGame
             }
 
             int roomId = gm.Human.RoomId;
-            if (roomId != lastRoomId)
+            if (roomId != lastRoomId || (MapData.Theme == MapTheme.Mansion &&
+                (transform.position - lastCutawayCameraPosition).sqrMagnitude > .0025f))
             {
                 ApplyCutaway(roomId);
                 lastRoomId = roomId;
+                lastCutawayCameraPosition = transform.position;
             }
         }
 
@@ -65,6 +68,30 @@ namespace DeductionGame
                 {
                     SetFloorVisible(coveringRoom, false);
                     SetForegroundWallVisible(coveringRoom, false);
+                }
+            }
+            if (MapData.Theme == MapTheme.Mansion)
+                HideWallsOccludingRoom(activeRoom);
+        }
+
+        private void HideWallsOccludingRoom(MansionRoomLayout room)
+        {
+            Camera camera = GetComponent<Camera>();
+            if (camera == null) return;
+            // Orthographic rays match the fixed play camera. Other rooms' tall walls
+            // can obscure the active room even when their floor footprints do not overlap.
+            for (int x = -1; x <= 1; x++)
+            for (int z = -1; z <= 1; z++)
+            {
+                Vector3 point = room.Center + new Vector3(x * room.Size.x * .35f, .1f, z * room.Size.y * .35f);
+                Ray ray = camera.ScreenPointToRay(camera.WorldToScreenPoint(point));
+                float distance = Vector3.Dot(point - ray.origin, ray.direction);
+                foreach (RaycastHit hit in Physics.RaycastAll(ray, distance - .05f, ~0, QueryTriggerInteraction.Ignore))
+                {
+                    Transform wall = hit.collider.transform;
+                    if (wall.parent == null || wall.parent.name != "Walls") continue;
+                    Renderer renderer = wall.GetComponent<Renderer>();
+                    if (renderer != null) renderer.enabled = false;
                 }
             }
         }
