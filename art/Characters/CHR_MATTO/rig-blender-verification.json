@@ -1,0 +1,9 @@
+{
+  "stage": "technical_rig_only",
+  "bones": 57,
+  "zero_length_bones": false,
+  "finger_joint_gaps": false,
+  "body_height_m": 1.568,
+  "character_visual_verified": false,
+  "source_mansion_untouched": true
+}

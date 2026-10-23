@@ -1,0 +1,936 @@
+{
+  "version": "Humanoid_v1_draft",
+  "units": "meter",
+  "forward": "-Y",
+  "up": "+Z",
+  "height_m": 1.568,
+  "head_ratio": 5.6,
+  "bones": [
+    {
+      "name": "Root",
+      "parent": null,
+      "head": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        0.11999999731779099
+      ],
+      "human": null,
+      "deform": false
+    },
+    {
+      "name": "Hips",
+      "parent": "Root",
+      "head": [
+        0.0,
+        0.0,
+        0.800000011920929
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        0.8999999761581421
+      ],
+      "human": "Hips",
+      "deform": true
+    },
+    {
+      "name": "Spine",
+      "parent": "Hips",
+      "head": [
+        0.0,
+        0.0,
+        0.8999999761581421
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.0399999618530273
+      ],
+      "human": "Spine",
+      "deform": true
+    },
+    {
+      "name": "Chest",
+      "parent": "Spine",
+      "head": [
+        0.0,
+        0.0,
+        1.0399999618530273
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.159999966621399
+      ],
+      "human": "Chest",
+      "deform": true
+    },
+    {
+      "name": "UpperChest",
+      "parent": "Chest",
+      "head": [
+        0.0,
+        0.0,
+        1.159999966621399
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.225000023841858
+      ],
+      "human": "UpperChest",
+      "deform": true
+    },
+    {
+      "name": "Neck",
+      "parent": "UpperChest",
+      "head": [
+        0.0,
+        0.0,
+        1.225000023841858
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.2899999618530273
+      ],
+      "human": "Neck",
+      "deform": true
+    },
+    {
+      "name": "Head",
+      "parent": "Neck",
+      "head": [
+        0.0,
+        0.0,
+        1.2899999618530273
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.5449999570846558
+      ],
+      "human": "Head",
+      "deform": true
+    },
+    {
+      "name": "LeftEye",
+      "parent": "Head",
+      "head": [
+        0.04899999871850014,
+        -0.11100000143051147,
+        1.4249999523162842
+      ],
+      "tail": [
+        0.04899999871850014,
+        -0.14000000059604645,
+        1.4249999523162842
+      ],
+      "human": "LeftEye",
+      "deform": true
+    },
+    {
+      "name": "LeftShoulder",
+      "parent": "UpperChest",
+      "head": [
+        0.03500000014901161,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.1550000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "LeftShoulder",
+      "deform": true
+    },
+    {
+      "name": "LeftUpperArm",
+      "parent": "LeftShoulder",
+      "head": [
+        0.1550000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.4050000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "LeftUpperArm",
+      "deform": true
+    },
+    {
+      "name": "LeftLowerArm",
+      "parent": "LeftUpperArm",
+      "head": [
+        0.4050000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.625,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "LeftLowerArm",
+      "deform": true
+    },
+    {
+      "name": "LeftHand",
+      "parent": "LeftLowerArm",
+      "head": [
+        0.625,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.6970000267028809,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "LeftHand",
+      "deform": true
+    },
+    {
+      "name": "LeftThumbProximal",
+      "parent": "LeftHand",
+      "head": [
+        0.6589999794960022,
+        -0.028999999165534973,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.6753333210945129,
+        -0.04100000113248825,
+        1.2050000429153442
+      ],
+      "human": "Left Thumb Proximal",
+      "deform": true
+    },
+    {
+      "name": "LeftThumbIntermediate",
+      "parent": "LeftThumbProximal",
+      "head": [
+        0.6753333210945129,
+        -0.04100000113248825,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.6916666626930237,
+        -0.05299999937415123,
+        1.2050000429153442
+      ],
+      "human": "Left Thumb Intermediate",
+      "deform": true
+    },
+    {
+      "name": "LeftThumbDistal",
+      "parent": "LeftThumbIntermediate",
+      "head": [
+        0.6916666626930237,
+        -0.05299999937415123,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7080000042915344,
+        -0.06499999761581421,
+        1.2050000429153442
+      ],
+      "human": "Left Thumb Distal",
+      "deform": true
+    },
+    {
+      "name": "LeftIndexProximal",
+      "parent": "LeftHand",
+      "head": [
+        0.6909999847412109,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7120000123977661,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Left Index Proximal",
+      "deform": true
+    },
+    {
+      "name": "LeftIndexIntermediate",
+      "parent": "LeftIndexProximal",
+      "head": [
+        0.7120000123977661,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7329999804496765,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Left Index Intermediate",
+      "deform": true
+    },
+    {
+      "name": "LeftIndexDistal",
+      "parent": "LeftIndexIntermediate",
+      "head": [
+        0.7329999804496765,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7540000081062317,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Left Index Distal",
+      "deform": true
+    },
+    {
+      "name": "LeftMiddleProximal",
+      "parent": "LeftHand",
+      "head": [
+        0.6909999847412109,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7139999866485596,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Left Middle Proximal",
+      "deform": true
+    },
+    {
+      "name": "LeftMiddleIntermediate",
+      "parent": "LeftMiddleProximal",
+      "head": [
+        0.7139999866485596,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7369999885559082,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Left Middle Intermediate",
+      "deform": true
+    },
+    {
+      "name": "LeftMiddleDistal",
+      "parent": "LeftMiddleIntermediate",
+      "head": [
+        0.7369999885559082,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7599999904632568,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Left Middle Distal",
+      "deform": true
+    },
+    {
+      "name": "LeftRingProximal",
+      "parent": "LeftHand",
+      "head": [
+        0.6909999847412109,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7123333215713501,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Left Ring Proximal",
+      "deform": true
+    },
+    {
+      "name": "LeftRingIntermediate",
+      "parent": "LeftRingProximal",
+      "head": [
+        0.7123333215713501,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7336666584014893,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Left Ring Intermediate",
+      "deform": true
+    },
+    {
+      "name": "LeftRingDistal",
+      "parent": "LeftRingIntermediate",
+      "head": [
+        0.7336666584014893,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7549999952316284,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Left Ring Distal",
+      "deform": true
+    },
+    {
+      "name": "LeftLittleProximal",
+      "parent": "LeftHand",
+      "head": [
+        0.6909999847412109,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7076666951179504,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Left Little Proximal",
+      "deform": true
+    },
+    {
+      "name": "LeftLittleIntermediate",
+      "parent": "LeftLittleProximal",
+      "head": [
+        0.7076666951179504,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7243333458900452,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Left Little Intermediate",
+      "deform": true
+    },
+    {
+      "name": "LeftLittleDistal",
+      "parent": "LeftLittleIntermediate",
+      "head": [
+        0.7243333458900452,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        0.7409999966621399,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Left Little Distal",
+      "deform": true
+    },
+    {
+      "name": "LeftUpperLeg",
+      "parent": "Hips",
+      "head": [
+        0.07900000363588333,
+        0.0,
+        0.800000011920929
+      ],
+      "tail": [
+        0.07900000363588333,
+        -0.00800000037997961,
+        0.4300000071525574
+      ],
+      "human": "LeftUpperLeg",
+      "deform": true
+    },
+    {
+      "name": "LeftLowerLeg",
+      "parent": "LeftUpperLeg",
+      "head": [
+        0.07900000363588333,
+        -0.00800000037997961,
+        0.4300000071525574
+      ],
+      "tail": [
+        0.07900000363588333,
+        0.0,
+        0.08500000089406967
+      ],
+      "human": "LeftLowerLeg",
+      "deform": true
+    },
+    {
+      "name": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "head": [
+        0.07900000363588333,
+        0.0,
+        0.08500000089406967
+      ],
+      "tail": [
+        0.07900000363588333,
+        -0.0949999988079071,
+        0.03500000014901161
+      ],
+      "human": "LeftFoot",
+      "deform": true
+    },
+    {
+      "name": "LeftToes",
+      "parent": "LeftFoot",
+      "head": [
+        0.07900000363588333,
+        -0.0949999988079071,
+        0.03500000014901161
+      ],
+      "tail": [
+        0.07900000363588333,
+        -0.1550000011920929,
+        0.03500000014901161
+      ],
+      "human": "LeftToes",
+      "deform": true
+    },
+    {
+      "name": "RightEye",
+      "parent": "Head",
+      "head": [
+        -0.04899999871850014,
+        -0.11100000143051147,
+        1.4249999523162842
+      ],
+      "tail": [
+        -0.04899999871850014,
+        -0.14000000059604645,
+        1.4249999523162842
+      ],
+      "human": "RightEye",
+      "deform": true
+    },
+    {
+      "name": "RightShoulder",
+      "parent": "UpperChest",
+      "head": [
+        -0.03500000014901161,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.1550000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "RightShoulder",
+      "deform": true
+    },
+    {
+      "name": "RightUpperArm",
+      "parent": "RightShoulder",
+      "head": [
+        -0.1550000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.4050000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "RightUpperArm",
+      "deform": true
+    },
+    {
+      "name": "RightLowerArm",
+      "parent": "RightUpperArm",
+      "head": [
+        -0.4050000011920929,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.625,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "RightLowerArm",
+      "deform": true
+    },
+    {
+      "name": "RightHand",
+      "parent": "RightLowerArm",
+      "head": [
+        -0.625,
+        0.0,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.6970000267028809,
+        0.0,
+        1.2050000429153442
+      ],
+      "human": "RightHand",
+      "deform": true
+    },
+    {
+      "name": "RightThumbProximal",
+      "parent": "RightHand",
+      "head": [
+        -0.6589999794960022,
+        -0.028999999165534973,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.6753333210945129,
+        -0.04100000113248825,
+        1.2050000429153442
+      ],
+      "human": "Right Thumb Proximal",
+      "deform": true
+    },
+    {
+      "name": "RightThumbIntermediate",
+      "parent": "RightThumbProximal",
+      "head": [
+        -0.6753333210945129,
+        -0.04100000113248825,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.6916666626930237,
+        -0.05299999937415123,
+        1.2050000429153442
+      ],
+      "human": "Right Thumb Intermediate",
+      "deform": true
+    },
+    {
+      "name": "RightThumbDistal",
+      "parent": "RightThumbIntermediate",
+      "head": [
+        -0.6916666626930237,
+        -0.05299999937415123,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7080000042915344,
+        -0.06499999761581421,
+        1.2050000429153442
+      ],
+      "human": "Right Thumb Distal",
+      "deform": true
+    },
+    {
+      "name": "RightIndexProximal",
+      "parent": "RightHand",
+      "head": [
+        -0.6909999847412109,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7120000123977661,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Right Index Proximal",
+      "deform": true
+    },
+    {
+      "name": "RightIndexIntermediate",
+      "parent": "RightIndexProximal",
+      "head": [
+        -0.7120000123977661,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7329999804496765,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Right Index Intermediate",
+      "deform": true
+    },
+    {
+      "name": "RightIndexDistal",
+      "parent": "RightIndexIntermediate",
+      "head": [
+        -0.7329999804496765,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7540000081062317,
+        -0.020999999716877937,
+        1.2050000429153442
+      ],
+      "human": "Right Index Distal",
+      "deform": true
+    },
+    {
+      "name": "RightMiddleProximal",
+      "parent": "RightHand",
+      "head": [
+        -0.6909999847412109,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7139999866485596,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Right Middle Proximal",
+      "deform": true
+    },
+    {
+      "name": "RightMiddleIntermediate",
+      "parent": "RightMiddleProximal",
+      "head": [
+        -0.7139999866485596,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7369999885559082,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Right Middle Intermediate",
+      "deform": true
+    },
+    {
+      "name": "RightMiddleDistal",
+      "parent": "RightMiddleIntermediate",
+      "head": [
+        -0.7369999885559082,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7599999904632568,
+        -0.004999999888241291,
+        1.2050000429153442
+      ],
+      "human": "Right Middle Distal",
+      "deform": true
+    },
+    {
+      "name": "RightRingProximal",
+      "parent": "RightHand",
+      "head": [
+        -0.6909999847412109,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7123333215713501,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Right Ring Proximal",
+      "deform": true
+    },
+    {
+      "name": "RightRingIntermediate",
+      "parent": "RightRingProximal",
+      "head": [
+        -0.7123333215713501,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7336666584014893,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Right Ring Intermediate",
+      "deform": true
+    },
+    {
+      "name": "RightRingDistal",
+      "parent": "RightRingIntermediate",
+      "head": [
+        -0.7336666584014893,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7549999952316284,
+        0.012000000104308128,
+        1.2050000429153442
+      ],
+      "human": "Right Ring Distal",
+      "deform": true
+    },
+    {
+      "name": "RightLittleProximal",
+      "parent": "RightHand",
+      "head": [
+        -0.6909999847412109,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7076666951179504,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Right Little Proximal",
+      "deform": true
+    },
+    {
+      "name": "RightLittleIntermediate",
+      "parent": "RightLittleProximal",
+      "head": [
+        -0.7076666951179504,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7243333458900452,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Right Little Intermediate",
+      "deform": true
+    },
+    {
+      "name": "RightLittleDistal",
+      "parent": "RightLittleIntermediate",
+      "head": [
+        -0.7243333458900452,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "tail": [
+        -0.7409999966621399,
+        0.027000000700354576,
+        1.2050000429153442
+      ],
+      "human": "Right Little Distal",
+      "deform": true
+    },
+    {
+      "name": "RightUpperLeg",
+      "parent": "Hips",
+      "head": [
+        -0.07900000363588333,
+        0.0,
+        0.800000011920929
+      ],
+      "tail": [
+        -0.07900000363588333,
+        -0.00800000037997961,
+        0.4300000071525574
+      ],
+      "human": "RightUpperLeg",
+      "deform": true
+    },
+    {
+      "name": "RightLowerLeg",
+      "parent": "RightUpperLeg",
+      "head": [
+        -0.07900000363588333,
+        -0.00800000037997961,
+        0.4300000071525574
+      ],
+      "tail": [
+        -0.07900000363588333,
+        0.0,
+        0.08500000089406967
+      ],
+      "human": "RightLowerLeg",
+      "deform": true
+    },
+    {
+      "name": "RightFoot",
+      "parent": "RightLowerLeg",
+      "head": [
+        -0.07900000363588333,
+        0.0,
+        0.08500000089406967
+      ],
+      "tail": [
+        -0.07900000363588333,
+        -0.0949999988079071,
+        0.03500000014901161
+      ],
+      "human": "RightFoot",
+      "deform": true
+    },
+    {
+      "name": "RightToes",
+      "parent": "RightFoot",
+      "head": [
+        -0.07900000363588333,
+        -0.0949999988079071,
+        0.03500000014901161
+      ],
+      "tail": [
+        -0.07900000363588333,
+        -0.1550000011920929,
+        0.03500000014901161
+      ],
+      "human": "RightToes",
+      "deform": true
+    },
+    {
+      "name": "Hair_Back_01",
+      "parent": "Head",
+      "head": [
+        0.0,
+        0.0949999988079071,
+        1.4600000381469727
+      ],
+      "tail": [
+        0.0,
+        0.11999999731779099,
+        1.149999976158142
+      ],
+      "human": null,
+      "deform": true
+    },
+    {
+      "name": "Hair_Back_02",
+      "parent": "Hair_Back_01",
+      "head": [
+        0.0,
+        0.11999999731779099,
+        1.149999976158142
+      ],
+      "tail": [
+        0.0,
+        0.13500000536441803,
+        0.8399999737739563
+      ],
+      "human": null,
+      "deform": true
+    }
+  ],
+  "required_shapes": [
+    "Blink_L",
+    "Blink_R",
+    "Smile",
+    "Angry",
+    "Sad",
+    "Surprise",
+    "Mouth_A",
+    "Mouth_I",
+    "Mouth_U",
+    "Mouth_E",
+    "Mouth_O"
+  ],
+  "status": "Technical skeleton only. Awaiting locked design reference before visual production."
+}
