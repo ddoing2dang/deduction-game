@@ -1,0 +1,23 @@
+{
+  "headroom_obstructions": [],
+  "wall_intersections": [],
+  "stand_interferences": [],
+  "changed_references": [],
+  "flights": [
+    {
+      "name": "DOOR_04_07_A_COLLISION_Flight",
+      "width": 1.6,
+      "run": 6.6,
+      "rise": 4.0
+    },
+    {
+      "name": "DOOR_05_08_A_COLLISION_Flight",
+      "width": 1.6,
+      "run": 6.6,
+      "rise": 4.0
+    }
+  ],
+  "stands_checked": 54,
+  "minimum_clear_headroom_tested_m": 2.05,
+  "status": "OK"
+}

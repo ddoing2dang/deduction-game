@@ -10,7 +10,8 @@ public static class MansionRepairVerification
  static readonly List<string> Results=new();
  static NavMeshAgent actor; static int test=-1,point; static float deadline; static bool started;
  static Vector3[] targets; static string snapshot; static int waitFrames; static float previousMaximumDelta;
- static readonly int[,] Edges={{3,5},{5,3},{4,7},{7,4},{5,8},{8,5}};
+ static Quaternion previousRotation;static int previousFrame;static float maximumTurn;
+ static readonly int[,] Edges={{1,1},{1,1},{3,5},{5,3},{4,7},{7,4},{5,8},{8,5}};
  static MansionRepairVerification(){EditorApplication.update+=Poll;EditorApplication.playModeStateChanged+=State;}
  [MenuItem("Deduction Game/Verify Mansion Structural Repair")]
  public static void Run(){
@@ -23,7 +24,7 @@ public static class MansionRepairVerification
   EditorApplication.isPlaying=true;
  }
  static void Poll(){
-  if(!EditorApplication.isCompiling&&!EditorApplication.isUpdating&&!EditorApplication.isPlaying&&File.Exists(Request)){
+  if(!EditorApplication.isCompiling&&!EditorApplication.isUpdating&&!EditorApplication.isPlayingOrWillChangePlaymode&&File.Exists(Request)){
    SessionState.SetBool("MansionRepair.KitchenOnly",File.ReadAllText(Request).Trim()=="kitchen");
    File.Delete(Request);try{Run();}catch(Exception ex){Fail(ex);}
   }
@@ -53,7 +54,10 @@ public static class MansionRepairVerification
     Require(Camera.main.GetComponent<MansionCutawayView>()!=null&&Camera.main.GetComponent<PcCameraController>()!=null,"Camera/cutaway attached");
     foreach(var i in Enumerable.Range(1,9)){
      var room=MapData.GetRoom(i);Require(NavMesh.SamplePosition(room.Center,out _,1,NavMesh.AllAreas),"Room floor baked "+i);
+     var roomRoot=rooms.Cast<Transform>().Single(t=>t.name.StartsWith($"Room_{i:00}_"));
+     Require(Vector3.Distance(roomRoot.Find("NavigationPoints/Action_Point").position,room.Center+Vector3.up*.05f)<.00001f,"ActionPoint unchanged "+i);
      for(int slot=0;slot<6;slot++){
+      Require(Vector3.Distance(roomRoot.Find($"NavigationPoints/Stand_{slot+1:00}").position,MapData.GetStandPoint(i,slot))<.00001f,"StandPoint position unchanged "+i+"/"+(slot+1));
       Vector3 stand=RoomPresentation.Stand(i,slot);
       Require(NavMesh.SamplePosition(stand,out var standHit,.35f,NavMesh.AllAreas) && Vector3.Distance(stand,standHit.position)<.35f,"StandPoint baked and preserved "+i+"/"+(slot+1));
      }
@@ -63,13 +67,13 @@ public static class MansionRepairVerification
     }
     actor=UnityEngine.Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None).Single(a=>a.PlayerId==0).Agent;
     var diagnostics=new List<string>();
-    foreach(int flight in new[]{4,5}){
-     float x=flight==4?-7.1f:-1.3f;float top=flight==4?-6.02f:-6.82f;float bottom=flight==4?-12:-12.8f;float drop=flight==4?3:3.4f;
+    foreach(var route in MansionStairArchitecture.Load().routes){
+     var start=route.points[2];var end=route.points[3];
      Vector3? prev=null;
      for(int n=0;n<=10;n++){
-      float t=n/10f;Vector3 pos=new Vector3(x,-drop*t,Mathf.Lerp(top,bottom,t));
+      float t=n/10f;Vector3 pos=Vector3.Lerp(start,end,t);
       bool found=NavMesh.SamplePosition(pos,out var h,.8f,NavMesh.AllAreas);
-      diagnostics.Add(flight+" sample "+pos+" -> "+found+" "+h.position+" physics "+string.Join(";",Physics.RaycastAll(pos+Vector3.up*1.5f,Vector3.down,3).Select(z=>z.collider.name+":"+z.point.y)));
+      diagnostics.Add(route.door+" sample "+pos+" -> "+found+" "+h.position+" physics "+string.Join(";",Physics.RaycastAll(pos+Vector3.up*1.5f,Vector3.down,3).Select(z=>z.collider.name+":"+z.point.y)));
       if(found&&prev.HasValue){var pp=new NavMeshPath();NavMesh.CalculatePath(prev.Value,h.position,NavMesh.AllAreas,pp);diagnostics.Add(" corners "+string.Join(";",pp.corners.Select(v=>v.ToString())));}
       prev=found?h.position:(Vector3?)null;
      }
@@ -78,6 +82,11 @@ public static class MansionRepairVerification
     StartNext();return;
    }
    if(actor.isOnOffMeshLink)throw new Exception("Fallback off-mesh link used for repaired route "+Label());
+   if(Time.frameCount!=previousFrame){
+    float angle=Quaternion.Angle(previousRotation,actor.transform.rotation);maximumTurn=Mathf.Max(maximumTurn,angle);
+    if(angle>720f*Time.deltaTime+1f)throw new Exception("Actor rotation discontinuity "+Label()+" degrees="+angle);
+    previousRotation=actor.transform.rotation;previousFrame=Time.frameCount;
+   }
    if(Time.realtimeSinceStartup>deadline)throw new Exception("Actor movement timeout "+Label()+" waypoint "+point+" at "+actor.transform.position+" target "+targets[point]+" path "+actor.pathStatus+" destination "+actor.destination+" remaining "+actor.remainingDistance+" velocity "+actor.velocity+" desired "+actor.desiredVelocity+" stopped "+actor.isStopped+" corners "+string.Join(";",actor.path.corners.Select(v=>v.ToString())));
    if(actor.pathPending)return;
    if(actor.pathStatus!=NavMeshPathStatus.PathComplete)throw new Exception("Incomplete NavMesh path "+Label()+" waypoint "+point);
@@ -89,23 +98,24 @@ public static class MansionRepairVerification
    }else CheckBody();
   }catch(Exception ex){Fail(ex);}
  }
- static string Label()=>Edges[test,0]+"->"+Edges[test,1];
+ static string Label()=>Edges[test,0]==Edges[test,1] ? "Hall decorative stair ground approach "+(test==0?"westbound":"eastbound") : Edges[test,0]+"->"+Edges[test,1];
  static void StartNext(){
   test++;
   if(test>=Edges.GetLength(0)){Finish();return;}
   int a=Edges[test,0],b=Edges[test,1];
   var rooms=GameObject.Find(MapData.RootName).transform;
   Transform Room(int id)=>rooms.Cast<Transform>().Single(t=>t.name.StartsWith($"Room_{id:00}_"));
-  var start=Room(a).Find($"NavigationPoints/Entry_To_{b:00}").position;
-  var end=Room(b).Find($"NavigationPoints/Entry_To_{a:00}").position;
+  var start=a==b?new Vector3(-1.3f,0,4.1f):Room(a).Find($"NavigationPoints/Entry_To_{b:00}").position;
+  var end=a==b?new Vector3(-4.9f,0,3.5f):Room(b).Find($"NavigationPoints/Entry_To_{a:00}").position;
+  if(test==1)(start,end)=(end,start);
   var mids=new List<Vector3>();
   int min=Math.Min(a,b),max=Math.Max(a,b);
   if(min==3)mids.AddRange(new[]{new Vector3(8.66f,0,-.4f),new Vector3(8.66f,0,-4.6f),new Vector3(5.4f,0,-4.6f)});
-  if(min==4)mids.AddRange(new[]{new Vector3(-7.1f,0,-5.7f),new Vector3(-7.1f,-3,-12),new Vector3(-13.3f,-4,-12),new Vector3(-13.3f,-4,-9.5f)});
-  if(min==5&&max==8)mids.AddRange(new[]{new Vector3(-1.3f,0,-6.5f),new Vector3(-1.3f,-3.4f,-12.8f),new Vector3(5,-4,-12.8f),new Vector3(5,-4,-11)});
+  // Service stairs must work as one natural NavMesh path, with no forced turn waypoints.
   if(a>b)mids.Reverse();mids.Add(end);
   Require(NavMesh.SamplePosition(start,out var begin,.7f,NavMesh.AllAreas),"Start Entry sampled "+Label());
   actor.ResetPath();Require(actor.Warp(begin.position),"Existing actor warped to source Entry "+Label());
+  previousRotation=actor.transform.rotation;previousFrame=Time.frameCount;
   targets=mids.Select(p=>{if(!NavMesh.SamplePosition(p,out var hit,.85f,NavMesh.AllAreas)){
    NavMesh.SamplePosition(p,out var near,4,NavMesh.AllAreas);
    var phys=Physics.RaycastAll(p+Vector3.up*2,Vector3.down,6).Select(h=>h.collider.name+" at "+h.point);
@@ -118,7 +128,23 @@ public static class MansionRepairVerification
   var path=new NavMeshPath();
   Require(NavMesh.CalculatePath(actor.transform.position,targets[point],NavMesh.AllAreas,path)&&path.status==NavMeshPathStatus.PathComplete,"Complete path "+Label()+" segment "+point);
   float length=0;for(int i=1;i<path.corners.Length;i++)length+=Vector3.Distance(path.corners[i-1],path.corners[i]);
-  Require(length<Vector3.Distance(actor.transform.position,targets[point])*2.5f+1f,"Route follows repaired corridor without other-room detour "+Label()+" segment "+point+" length="+length.ToString("F2")+" corners="+string.Join(";",path.corners.Select(v=>v.ToString())));
+  int min=Math.Min(Edges[test,0],Edges[test,1]);
+  float limit=Vector3.Distance(actor.transform.position,targets[point])*2.5f+1f;
+  if(min==4||min==5){
+   var route=MansionStairArchitecture.Load().routes.Single(r=>r.door==$"DOOR_{min:00}_{(min==4?7:8):00}").points;
+   limit=2f;for(int i=1;i<route.Length;i++)limit+=Vector3.Distance(route[i-1],route[i]);
+   foreach(var corner in path.corners){
+    float nearest=float.PositiveInfinity;
+    for(int i=1;i<route.Length;i++){
+     Vector3 delta=route[i]-route[i-1];float t=Mathf.Clamp01(Vector3.Dot(corner-route[i-1],delta)/delta.sqrMagnitude);
+     nearest=Mathf.Min(nearest,Vector3.Distance(corner,route[i-1]+delta*t));
+    }
+    Require(nearest<1.1f,"NavMesh corner remains inside architectural stair/landing corridor "+Label()+" corner="+corner+" deviation="+nearest.ToString("F2"));
+   }
+  }
+  Require(length<limit,"Route follows repaired corridor without other-room detour "+Label()+" segment "+point+" length="+length.ToString("F2")+" corners="+string.Join(";",path.corners.Select(v=>v.ToString())));
+  if(Math.Min(Edges[test,0],Edges[test,1])==4)Require(path.corners.Any(v=>v.x<-14.5f)&&path.corners.All(v=>v.x<-12f),"Dining path follows west wall stair and bottom landing");
+  if(Math.Min(Edges[test,0],Edges[test,1])==5)Require(path.corners.Any(v=>v.x>4.5f)&&path.corners.All(v=>v.x>2.3f),"Kitchen path follows east wall stair and bottom landing");
   actor.SetPath(path);deadline=Time.realtimeSinceStartup+45;
  }
  static void CheckBody(){
@@ -127,8 +153,12 @@ public static class MansionRepairVerification
    if(c.transform.IsChildOf(actor.transform)||c.name=="Model"||c.bounds.max.y<p.y+.25f)continue;
    // Physics overlap checks actual wall/rail/overhead geometry, not only path status.
    if(c is MeshCollider meshCollider && !meshCollider.convex){
-    var cp=c.ClosestPointOnBounds(p+Vector3.up*.6f);
-    if(Vector3.Distance(cp,p+Vector3.up*.6f)>.32f)continue;
+    // Test real triangle geometry with a convex capsule; bounds alone are not collision proof.
+    var probe=new GameObject("VerificationCapsule");var capsule=probe.AddComponent<CapsuleCollider>();
+    capsule.radius=.3f;capsule.height=1.0f;capsule.center=Vector3.up*.6f;capsule.enabled=false;
+    bool penetrates=Physics.ComputePenetration(capsule,p,Quaternion.identity,c,c.transform.position,c.transform.rotation,out _,out float depth);
+    UnityEngine.Object.DestroyImmediate(probe);
+    if(!penetrates||depth<.015f)continue;
    }
    if(c.name.Contains("Event")||c.name.Contains("Hint"))continue;
    throw new Exception("Character body obstruction "+Label()+" "+c.name+" at "+p);
@@ -158,6 +188,7 @@ public static class MansionRepairVerification
    NavMesh.SamplePosition(MapData.GetRoom(links[i,1]).Center,out var b,1,NavMesh.AllAreas);
    var path=new NavMeshPath();Require(NavMesh.CalculatePath(a.position,b.position,NavMesh.AllAreas,path)&&path.status==NavMeshPathStatus.PathComplete,"Locked connection regression "+links[i,0]+"-"+links[i,1]);
   }
+  Results.Add("Maximum observed actor turn per rendered frame: "+maximumTurn.ToString("F2")+" degrees; no discontinuities above CharacterActor's 720 degrees/second");
   Results.Add("MANSION_STRUCTURAL_PLAYMODE: OK");Save();Stop();
  }
  static void Fail(Exception ex){Directory.CreateDirectory(Out);Results.Add("FAILED "+ex);Save();Debug.LogException(ex);Stop();}

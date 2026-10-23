@@ -5,67 +5,130 @@ OK 6 existing CharacterActors
 OK Decorative gallery excluded from NavMesh collision sources
 OK Camera/cutaway attached
 OK Room floor baked 1
+OK ActionPoint unchanged 1
+OK StandPoint position unchanged 1/1
 OK StandPoint baked and preserved 1/1
+OK StandPoint position unchanged 1/2
 OK StandPoint baked and preserved 1/2
+OK StandPoint position unchanged 1/3
 OK StandPoint baked and preserved 1/3
+OK StandPoint position unchanged 1/4
 OK StandPoint baked and preserved 1/4
+OK StandPoint position unchanged 1/5
 OK StandPoint baked and preserved 1/5
+OK StandPoint position unchanged 1/6
 OK StandPoint baked and preserved 1/6
 OK Room floor baked 2
+OK ActionPoint unchanged 2
+OK StandPoint position unchanged 2/1
 OK StandPoint baked and preserved 2/1
+OK StandPoint position unchanged 2/2
 OK StandPoint baked and preserved 2/2
+OK StandPoint position unchanged 2/3
 OK StandPoint baked and preserved 2/3
+OK StandPoint position unchanged 2/4
 OK StandPoint baked and preserved 2/4
+OK StandPoint position unchanged 2/5
 OK StandPoint baked and preserved 2/5
+OK StandPoint position unchanged 2/6
 OK StandPoint baked and preserved 2/6
 OK Room floor baked 3
+OK ActionPoint unchanged 3
+OK StandPoint position unchanged 3/1
 OK StandPoint baked and preserved 3/1
+OK StandPoint position unchanged 3/2
 OK StandPoint baked and preserved 3/2
+OK StandPoint position unchanged 3/3
 OK StandPoint baked and preserved 3/3
+OK StandPoint position unchanged 3/4
 OK StandPoint baked and preserved 3/4
+OK StandPoint position unchanged 3/5
 OK StandPoint baked and preserved 3/5
+OK StandPoint position unchanged 3/6
 OK StandPoint baked and preserved 3/6
 OK Room floor baked 4
+OK ActionPoint unchanged 4
+OK StandPoint position unchanged 4/1
 OK StandPoint baked and preserved 4/1
+OK StandPoint position unchanged 4/2
 OK StandPoint baked and preserved 4/2
+OK StandPoint position unchanged 4/3
 OK StandPoint baked and preserved 4/3
+OK StandPoint position unchanged 4/4
 OK StandPoint baked and preserved 4/4
+OK StandPoint position unchanged 4/5
 OK StandPoint baked and preserved 4/5
+OK StandPoint position unchanged 4/6
 OK StandPoint baked and preserved 4/6
 OK Room floor baked 5
+OK ActionPoint unchanged 5
+OK StandPoint position unchanged 5/1
 OK StandPoint baked and preserved 5/1
+OK StandPoint position unchanged 5/2
 OK StandPoint baked and preserved 5/2
+OK StandPoint position unchanged 5/3
 OK StandPoint baked and preserved 5/3
+OK StandPoint position unchanged 5/4
 OK StandPoint baked and preserved 5/4
+OK StandPoint position unchanged 5/5
 OK StandPoint baked and preserved 5/5
+OK StandPoint position unchanged 5/6
 OK StandPoint baked and preserved 5/6
 OK Room floor baked 6
+OK ActionPoint unchanged 6
+OK StandPoint position unchanged 6/1
 OK StandPoint baked and preserved 6/1
+OK StandPoint position unchanged 6/2
 OK StandPoint baked and preserved 6/2
+OK StandPoint position unchanged 6/3
 OK StandPoint baked and preserved 6/3
+OK StandPoint position unchanged 6/4
 OK StandPoint baked and preserved 6/4
+OK StandPoint position unchanged 6/5
 OK StandPoint baked and preserved 6/5
+OK StandPoint position unchanged 6/6
 OK StandPoint baked and preserved 6/6
 OK Room floor baked 7
+OK ActionPoint unchanged 7
+OK StandPoint position unchanged 7/1
 OK StandPoint baked and preserved 7/1
+OK StandPoint position unchanged 7/2
 OK StandPoint baked and preserved 7/2
+OK StandPoint position unchanged 7/3
 OK StandPoint baked and preserved 7/3
+OK StandPoint position unchanged 7/4
 OK StandPoint baked and preserved 7/4
+OK StandPoint position unchanged 7/5
 OK StandPoint baked and preserved 7/5
+OK StandPoint position unchanged 7/6
 OK StandPoint baked and preserved 7/6
 OK Room floor baked 8
+OK ActionPoint unchanged 8
+OK StandPoint position unchanged 8/1
 OK StandPoint baked and preserved 8/1
+OK StandPoint position unchanged 8/2
 OK StandPoint baked and preserved 8/2
+OK StandPoint position unchanged 8/3
 OK StandPoint baked and preserved 8/3
+OK StandPoint position unchanged 8/4
 OK StandPoint baked and preserved 8/4
+OK StandPoint position unchanged 8/5
 OK StandPoint baked and preserved 8/5
+OK StandPoint position unchanged 8/6
 OK StandPoint baked and preserved 8/6
 OK Room floor baked 9
+OK ActionPoint unchanged 9
+OK StandPoint position unchanged 9/1
 OK StandPoint baked and preserved 9/1
+OK StandPoint position unchanged 9/2
 OK StandPoint baked and preserved 9/2
+OK StandPoint position unchanged 9/3
 OK StandPoint baked and preserved 9/3
+OK StandPoint position unchanged 9/4
 OK StandPoint baked and preserved 9/4
+OK StandPoint position unchanged 9/5
 OK StandPoint baked and preserved 9/5
+OK StandPoint position unchanged 9/6
 OK StandPoint baked and preserved 9/6
 OK Existing event hierarchy DOOR_01_02
 OK Existing event hierarchy DOOR_01_03
@@ -78,84 +141,102 @@ OK Existing event hierarchy DOOR_04_07
 OK Existing event hierarchy DOOR_05_08
 OK Existing event hierarchy DOOR_07_08
 OK Existing event hierarchy DOOR_08_09
+OK Start Entry sampled Hall decorative stair ground approach westbound
+OK Existing actor warped to source Entry Hall decorative stair ground approach westbound
+OK Complete path Hall decorative stair ground approach westbound segment 0
+OK Route follows repaired corridor without other-room detour Hall decorative stair ground approach westbound segment 0 length=3.65 corners=(-1.30, 0.01, 4.10);(-4.90, 0.01, 3.50)
+OK CharacterActor physically traversed Hall decorative stair ground approach westbound without off-mesh links
+OK Cutaway retains physical floor 1
+OK Start Entry sampled Hall decorative stair ground approach eastbound
+OK Existing actor warped to source Entry Hall decorative stair ground approach eastbound
+OK Complete path Hall decorative stair ground approach eastbound segment 0
+OK Route follows repaired corridor without other-room detour Hall decorative stair ground approach eastbound segment 0 length=3.65 corners=(-4.90, 0.01, 3.50);(-1.30, 0.01, 4.10)
+OK CharacterActor physically traversed Hall decorative stair ground approach eastbound without off-mesh links
+OK Cutaway retains physical floor 1
 OK Start Entry sampled 3->5
 OK Existing actor warped to source Entry 3->5
 OK Complete path 3->5 segment 0
-OK Route follows repaired corridor without other-room detour 3->5 segment 0 length=1.60 corners=(9.47, 0.03, 0.96);(9.17, 0.03, 0.67);(8.83, 0.03, 0.00);(8.66, 0.03, -0.40)
+OK Route follows repaired corridor without other-room detour 3->5 segment 0 length=1.60 corners=(9.47, 0.01, 0.96);(9.17, 0.01, 0.67);(8.83, 0.01, 0.00);(8.66, 0.01, -0.40)
 OK Complete path 3->5 segment 1
-OK Route follows repaired corridor without other-room detour 3->5 segment 1 length=4.38 corners=(8.75, 0.03, -0.22);(8.66, 0.03, -4.60)
+OK Route follows repaired corridor without other-room detour 3->5 segment 1 length=4.40 corners=(8.75, 0.01, -0.20);(8.66, 0.01, -4.60)
 OK Complete path 3->5 segment 2
-OK Route follows repaired corridor without other-room detour 3->5 segment 2 length=3.28 corners=(8.66, 0.03, -4.38);(6.50, 0.03, -4.67);(5.83, 0.03, -4.67);(5.40, 0.03, -4.60)
+OK Route follows repaired corridor without other-room detour 3->5 segment 2 length=3.28 corners=(8.66, 0.01, -4.39);(6.50, 0.01, -4.67);(5.83, 0.01, -4.67);(5.40, 0.01, -4.60)
 OK Complete path 3->5 segment 3
-OK Route follows repaired corridor without other-room detour 3->5 segment 3 length=1.12 corners=(5.61, 0.03, -4.64);(4.53, 0.03, -4.96)
+OK Route follows repaired corridor without other-room detour 3->5 segment 3 length=1.12 corners=(5.60, 0.01, -4.63);(4.53, 0.01, -4.96)
 OK CharacterActor physically traversed 3->5 without off-mesh links
 OK Cutaway retains physical floor 5
 OK Start Entry sampled 5->3
 OK Existing actor warped to source Entry 5->3
 OK Complete path 5->3 segment 0
-OK Route follows repaired corridor without other-room detour 5->3 segment 0 length=0.94 corners=(4.53, 0.03, -4.96);(5.40, 0.03, -4.60)
+OK Route follows repaired corridor without other-room detour 5->3 segment 0 length=0.94 corners=(4.53, 0.01, -4.96);(5.40, 0.01, -4.60)
 OK Complete path 5->3 segment 1
-OK Route follows repaired corridor without other-room detour 5->3 segment 1 length=3.45 corners=(5.21, 0.03, -4.68);(6.50, 0.03, -4.67);(8.66, 0.03, -4.60)
+OK Route follows repaired corridor without other-room detour 5->3 segment 1 length=3.45 corners=(5.21, 0.01, -4.68);(6.50, 0.01, -4.67);(8.66, 0.01, -4.60)
 OK Complete path 5->3 segment 2
-OK Route follows repaired corridor without other-room detour 5->3 segment 2 length=4.21 corners=(8.45, 0.03, -4.61);(8.66, 0.03, -0.40)
+OK Route follows repaired corridor without other-room detour 5->3 segment 2 length=4.21 corners=(8.46, 0.01, -4.61);(8.66, 0.01, -0.40)
 OK Complete path 5->3 segment 3
-OK Route follows repaired corridor without other-room detour 5->3 segment 3 length=1.79 corners=(8.67, 0.03, -0.60);(8.83, 0.03, 0.00);(9.17, 0.03, 0.67);(9.47, 0.03, 0.96)
+OK Route follows repaired corridor without other-room detour 5->3 segment 3 length=1.79 corners=(8.67, 0.01, -0.60);(8.83, 0.01, 0.00);(9.17, 0.01, 0.67);(9.47, 0.01, 0.96)
 OK CharacterActor physically traversed 5->3 without off-mesh links
 OK Cutaway retains physical floor 3
 OK Start Entry sampled 4->7
 OK Existing actor warped to source Entry 4->7
 OK Complete path 4->7 segment 0
-OK Route follows repaired corridor without other-room detour 4->7 segment 0 length=1.98 corners=(-7.88, 0.03, -3.88);(-7.10, 0.03, -5.70)
-OK Complete path 4->7 segment 1
-OK Route follows repaired corridor without other-room detour 4->7 segment 1 length=7.09 corners=(-7.18, 0.03, -5.51);(-7.10, -2.83, -12.00)
-OK Complete path 4->7 segment 2
-OK Route follows repaired corridor without other-room detour 4->7 segment 2 length=6.30 corners=(-7.10, -2.76, -11.82);(-13.30, -3.89, -12.00)
-OK Complete path 4->7 segment 3
-OK Route follows repaired corridor without other-room detour 4->7 segment 3 length=2.52 corners=(-13.09, -3.85, -12.01);(-13.30, -3.96, -9.50)
-OK Complete path 4->7 segment 4
-OK Route follows repaired corridor without other-room detour 4->7 segment 4 length=1.31 corners=(-13.33, -3.95, -9.72);(-13.00, -3.97, -9.17);(-12.62, -3.97, -8.62)
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-13.68, 0.01, -4.83) deviation=0.11
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-13.83, 0.01, -4.67) deviation=0.19
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-14.50, 0.01, -4.67) deviation=0.05
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-14.83, 0.01, -5.00) deviation=0.23
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-14.83, -3.99, -12.17) deviation=0.23
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-14.50, -3.99, -12.50) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-13.17, -3.99, -12.50) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-12.83, -3.99, -11.50) deviation=0.13
+OK NavMesh corner remains inside architectural stair/landing corridor 4->7 corner=(-12.70, -3.99, -8.60) deviation=0.01
+OK Route follows repaired corridor without other-room detour 4->7 segment 0 length=15.33 corners=(-13.68, 0.01, -4.83);(-13.83, 0.01, -4.67);(-14.50, 0.01, -4.67);(-14.83, 0.01, -5.00);(-14.83, -3.99, -12.17);(-14.50, -3.99, -12.50);(-13.17, -3.99, -12.50);(-12.83, -3.99, -11.50);(-12.70, -3.99, -8.60)
+OK Dining path follows west wall stair and bottom landing
 OK CharacterActor physically traversed 4->7 without off-mesh links
 OK Cutaway retains physical floor 7
 OK Start Entry sampled 7->4
 OK Existing actor warped to source Entry 7->4
 OK Complete path 7->4 segment 0
-OK Route follows repaired corridor without other-room detour 7->4 segment 0 length=1.12 corners=(-12.62, -3.97, -8.62);(-13.30, -3.96, -9.50)
-OK Complete path 7->4 segment 1
-OK Route follows repaired corridor without other-room detour 7->4 segment 1 length=2.67 corners=(-13.17, -3.97, -9.33);(-13.30, -3.89, -12.00)
-OK Complete path 7->4 segment 2
-OK Route follows repaired corridor without other-room detour 7->4 segment 2 length=6.30 corners=(-13.30, -3.89, -11.79);(-7.10, -2.83, -12.00)
-OK Complete path 7->4 segment 3
-OK Route follows repaired corridor without other-room detour 7->4 segment 3 length=6.93 corners=(-7.30, -2.83, -12.01);(-7.10, 0.03, -5.70)
-OK Complete path 7->4 segment 4
-OK Route follows repaired corridor without other-room detour 7->4 segment 4 length=2.17 corners=(-7.09, -0.06, -5.91);(-7.88, 0.03, -3.88)
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-12.70, -3.99, -8.60) deviation=0.01
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-12.83, -3.99, -11.50) deviation=0.13
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-13.17, -3.99, -12.50) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-14.50, -3.99, -12.50) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-14.83, -3.99, -12.17) deviation=0.23
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-14.83, 0.01, -5.00) deviation=0.23
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-14.50, 0.01, -4.67) deviation=0.05
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-13.83, 0.01, -4.67) deviation=0.19
+OK NavMesh corner remains inside architectural stair/landing corridor 7->4 corner=(-13.68, 0.01, -4.83) deviation=0.11
+OK Route follows repaired corridor without other-room detour 7->4 segment 0 length=15.33 corners=(-12.70, -3.99, -8.60);(-12.83, -3.99, -11.50);(-13.17, -3.99, -12.50);(-14.50, -3.99, -12.50);(-14.83, -3.99, -12.17);(-14.83, 0.01, -5.00);(-14.50, 0.01, -4.67);(-13.83, 0.01, -4.67);(-13.68, 0.01, -4.83)
+OK Dining path follows west wall stair and bottom landing
 OK CharacterActor physically traversed 7->4 without off-mesh links
 OK Cutaway retains physical floor 4
 OK Start Entry sampled 5->8
 OK Existing actor warped to source Entry 5->8
 OK Complete path 5->8 segment 0
-OK Route follows repaired corridor without other-room detour 5->8 segment 0 length=1.63 corners=(-1.12, 0.03, -4.88);(-1.30, 0.03, -6.50)
-OK Complete path 5->8 segment 1
-OK Route follows repaired corridor without other-room detour 5->8 segment 1 length=7.27 corners=(-1.28, 0.03, -6.29);(-1.30, -3.20, -12.80)
-OK Complete path 5->8 segment 2
-OK Route follows repaired corridor without other-room detour 5->8 segment 2 length=6.36 corners=(-1.30, -3.11, -12.62);(5.00, -3.94, -12.80)
-OK Complete path 5->8 segment 3
-OK Route follows repaired corridor without other-room detour 5->8 segment 3 length=1.82 corners=(4.80, -3.93, -12.81);(5.00, -3.97, -11.00)
-OK Complete path 5->8 segment 4
-OK Route follows repaired corridor without other-room detour 5->8 segment 4 length=1.43 corners=(5.04, -3.97, -11.21);(4.12, -3.97, -10.12)
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(3.60, 0.01, -5.00) deviation=0.01
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(4.33, 0.01, -5.17) deviation=0.22
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(4.67, 0.01, -5.50) deviation=0.28
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(4.83, -3.99, -12.50) deviation=0.12
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(4.33, -3.99, -13.00) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(3.33, -3.99, -13.00) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(3.00, -3.99, -12.67) deviation=0.20
+OK NavMesh corner remains inside architectural stair/landing corridor 5->8 corner=(2.80, -3.99, -10.00) deviation=0.01
+OK Route follows repaired corridor without other-room detour 5->8 segment 0 length=14.14 corners=(3.60, 0.01, -5.00);(4.33, 0.01, -5.17);(4.67, 0.01, -5.50);(4.83, -3.99, -12.50);(4.33, -3.99, -13.00);(3.33, -3.99, -13.00);(3.00, -3.99, -12.67);(2.80, -3.99, -10.00)
+OK Kitchen path follows east wall stair and bottom landing
 OK CharacterActor physically traversed 5->8 without off-mesh links
 OK Cutaway retains physical floor 8
 OK Start Entry sampled 8->5
 OK Existing actor warped to source Entry 8->5
 OK Complete path 8->5 segment 0
-OK Route follows repaired corridor without other-room detour 8->5 segment 0 length=1.25 corners=(4.12, -3.97, -10.12);(5.00, -3.97, -11.00)
-OK Complete path 8->5 segment 1
-OK Route follows repaired corridor without other-room detour 8->5 segment 1 length=1.95 corners=(4.85, -3.95, -10.85);(5.00, -3.94, -12.80)
-OK Complete path 8->5 segment 2
-OK Route follows repaired corridor without other-room detour 8->5 segment 2 length=6.35 corners=(5.01, -3.94, -12.60);(-1.30, -3.20, -12.80)
-OK Complete path 8->5 segment 3
-OK Route follows repaired corridor without other-room detour 8->5 segment 3 length=7.09 corners=(-1.08, -3.20, -12.81);(-1.30, 0.03, -6.50)
-OK Complete path 8->5 segment 4
-OK Route follows repaired corridor without other-room detour 8->5 segment 4 length=1.83 corners=(-1.31, 0.02, -6.70);(-1.12, 0.03, -4.88)
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(2.80, -3.99, -10.00) deviation=0.01
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(3.00, -3.99, -12.67) deviation=0.20
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(3.33, -3.99, -13.00) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(4.33, -3.99, -13.00) deviation=0.10
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(4.83, -3.99, -12.50) deviation=0.12
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(4.67, 0.01, -5.50) deviation=0.28
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(4.33, 0.01, -5.17) deviation=0.22
+OK NavMesh corner remains inside architectural stair/landing corridor 8->5 corner=(3.60, 0.01, -5.00) deviation=0.01
+OK Route follows repaired corridor without other-room detour 8->5 segment 0 length=14.14 corners=(2.80, -3.99, -10.00);(3.00, -3.99, -12.67);(3.33, -3.99, -13.00);(4.33, -3.99, -13.00);(4.83, -3.99, -12.50);(4.67, 0.01, -5.50);(4.33, 0.01, -5.17);(3.60, 0.01, -5.00)
+OK Kitchen path follows east wall stair and bottom landing
 OK CharacterActor physically traversed 8->5 without off-mesh links
 OK Cutaway retains physical floor 5
 OK Cutaway retains physical floor 1
@@ -170,4 +251,5 @@ OK Locked connection regression 4-7
 OK Locked connection regression 5-8
 OK Locked connection regression 7-8
 OK Locked connection regression 8-9
+Maximum observed actor turn per rendered frame: 14.40 degrees; no discontinuities above CharacterActor's 720 degrees/second
 MANSION_STRUCTURAL_PLAYMODE: OK

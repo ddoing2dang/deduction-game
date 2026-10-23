@@ -1,42 +1,42 @@
-4 sample (-7.10, 0.00, -6.02) -> True (-7.10, 0.00, -6.02) physics DOOR_04_07_Stringer_1:-0.6739476;DOOR_04_07_COLLISION_Flight_1:2.392081E-07
-4 sample (-7.10, -0.30, -6.62) -> True (-7.10, -0.22, -6.62) physics DOOR_04_07_Stringer_1:-0.9302333;DOOR_04_07_COLLISION_Flight_1:-0.2999997
- corners (-7.10, -0.11, -6.02);(-7.10, -0.39, -6.62)
-4 sample (-7.10, -0.60, -7.22) -> True (-7.10, -0.52, -7.22) physics DOOR_04_07_Stringer_1:-1.186519;DOOR_04_07_COLLISION_Flight_1:-0.5999997
- corners (-7.10, -0.39, -6.62);(-7.10, -0.67, -7.22)
-4 sample (-7.10, -0.90, -7.81) -> True (-7.10, -0.82, -7.81) physics DOOR_04_07_Stringer_1:-1.442805;DOOR_04_07_COLLISION_Flight_1:-0.8999997
- corners (-7.10, -0.67, -7.22);(-7.10, -0.95, -7.81)
-4 sample (-7.10, -1.20, -8.41) -> True (-7.10, -1.12, -8.41) physics DOOR_04_07_Stringer_1:-1.69909;DOOR_04_07_COLLISION_Flight_1:-1.199999
- corners (-7.10, -0.95, -7.81);(-7.10, -1.23, -8.41)
-4 sample (-7.10, -1.50, -9.01) -> True (-7.10, -1.42, -9.01) physics DOOR_04_07_Stringer_1:-1.955376;DOOR_04_07_COLLISION_Flight_1:-1.5
- corners (-7.10, -1.23, -8.41);(-7.10, -1.51, -9.01)
-4 sample (-7.10, -1.80, -9.61) -> True (-7.10, -1.72, -9.61) physics DOOR_04_07_Stringer_1:-2.211661;DOOR_04_07_COLLISION_Flight_1:-1.799999;South_Pier_01:-3.199999
- corners (-7.10, -1.51, -9.01);(-7.10, -1.68, -9.61)
-4 sample (-7.10, -2.10, -10.21) -> True (-7.10, -2.02, -10.21) physics DOOR_04_07_Stringer_1:-2.467947;DOOR_04_07_COLLISION_Flight_1:-2.1
- corners (-7.10, -1.68, -9.61);(-7.10, -1.98, -10.21)
-4 sample (-7.10, -2.40, -10.80) -> True (-7.10, -2.32, -10.80) physics DOOR_04_07_Stringer_1:-2.724233;DOOR_04_07_COLLISION_Flight_1:-2.399999
- corners (-7.10, -1.98, -10.21);(-7.10, -2.28, -10.80)
-4 sample (-7.10, -2.70, -11.40) -> True (-7.10, -2.62, -11.40) physics DOOR_04_07_Stringer_1:-2.980518;DOOR_04_07_COLLISION_Flight_1:-2.699999;DOOR_04_07_TurnLanding_1:-2.999999
- corners (-7.10, -2.28, -10.80);(-7.10, -2.58, -11.40)
-4 sample (-7.10, -3.00, -12.00) -> True (-7.10, -2.92, -12.00) physics DOOR_04_07_Stringer_1:-3.236804;DOOR_04_07_COLLISION_Flight_1:-2.999999;DOOR_04_07_TurnLanding_1:-2.999999;DOOR_04_07_Stringer_2:-3.400003
- corners (-7.10, -2.58, -11.40);(-7.10, -2.83, -12.00)
-5 sample (-1.30, 0.00, -6.82) -> True (-1.30, 0.00, -6.82) physics DOOR_05_08_COLLISION_Flight_1:2.707846E-07;DOOR_05_08_Stringer_1:-0.7286706
-5 sample (-1.30, -0.34, -7.42) -> True (-1.30, -0.25, -7.42) physics DOOR_05_08_COLLISION_Flight_1:-0.3399996;DOOR_05_08_Stringer_1:-1.019128
- corners (-1.30, -0.05, -6.82);(-1.30, -0.37, -7.42)
-5 sample (-1.30, -0.68, -8.02) -> True (-1.30, -0.59, -8.02) physics DOOR_05_08_COLLISION_Flight_1:-0.6799994;DOOR_05_08_Stringer_1:-1.309584
- corners (-1.30, -0.37, -7.42);(-1.30, -0.68, -8.02)
-5 sample (-1.30, -1.02, -8.61) -> True (-1.30, -0.93, -8.61) physics DOOR_05_08_COLLISION_Flight_1:-1.02;DOOR_05_08_Stringer_1:-1.600042
- corners (-1.30, -0.68, -8.02);(-1.30, -1.00, -8.61)
-5 sample (-1.30, -1.36, -9.21) -> True (-1.30, -1.27, -9.21) physics DOOR_05_08_COLLISION_Flight_1:-1.359999;DOOR_05_08_Stringer_1:-1.890499
- corners (-1.30, -1.00, -8.61);(-1.30, -1.32, -9.21)
-5 sample (-1.30, -1.70, -9.81) -> True (-1.30, -1.61, -9.81) physics DOOR_05_08_COLLISION_Flight_1:-1.699999;DOOR_05_08_Stringer_1:-2.180956
- corners (-1.30, -1.32, -9.21);(-1.30, -1.63, -9.81)
-5 sample (-1.30, -2.04, -10.41) -> True (-1.30, -1.95, -10.41) physics DOOR_05_08_COLLISION_Flight_1:-2.039999;DOOR_05_08_Stringer_1:-2.471412
- corners (-1.30, -1.63, -9.81);(-1.30, -1.95, -10.41)
-5 sample (-1.30, -2.38, -11.01) -> True (-1.30, -2.29, -11.01) physics South_Pier_00_Trim_0.16:-3.749998;South_Pier_00:-3.199999;DOOR_05_08_COLLISION_Flight_1:-2.379999;DOOR_05_08_Stringer_1:-2.76187
- corners (-1.30, -1.95, -10.41);(-1.30, -2.26, -11.01)
-5 sample (-1.30, -2.72, -11.60) -> True (-1.30, -2.63, -11.60) physics DOOR_05_08_COLLISION_Flight_1:-2.719999;DOOR_05_08_Stringer_1:-3.052327
- corners (-1.30, -2.26, -11.01);(-1.30, -2.58, -11.60)
-5 sample (-1.30, -3.06, -12.20) -> True (-1.30, -2.97, -12.20) physics DOOR_05_08_COLLISION_Flight_1:-3.059999;DOOR_05_08_TurnLanding_1:-3.399999;DOOR_05_08_Stringer_1:-3.342783
- corners (-1.30, -2.58, -11.60);(-1.30, -2.89, -12.20)
-5 sample (-1.30, -3.40, -12.80) -> True (-1.30, -3.31, -12.80) physics DOOR_05_08_Stringer_2:-3.799986;DOOR_05_08_COLLISION_Flight_1:-3.399999;DOOR_05_08_TurnLanding_1:-3.399998;DOOR_05_08_Stringer_1:-3.633241
- corners (-1.30, -2.89, -12.20);(-1.30, -3.20, -12.80)
+DOOR_04_07 sample (-15.06, 0.00, -5.20) -> True (-15.06, 0.00, -5.20) physics DOOR_04_07_TopLanding:6.109478E-07;Floor:-2.384186E-07;DOOR_04_07_A_COLLISION_Flight:-5.360801E-07
+DOOR_04_07 sample (-15.06, -0.40, -5.86) -> True (-15.06, -0.30, -5.86) physics DOOR_04_07_A_COLLISION_Flight:-0.4000003
+ corners (-15.06, -0.02, -5.20);(-15.06, -0.21, -5.86)
+DOOR_04_07 sample (-15.06, -0.80, -6.52) -> True (-15.06, -0.70, -6.52) physics DOOR_04_07_A_COLLISION_Flight:-0.8000003
+ corners (-15.06, -0.21, -5.86);(-15.06, -0.61, -6.52)
+DOOR_04_07 sample (-15.06, -1.20, -7.18) -> True (-15.06, -1.10, -7.18) physics DOOR_04_07_A_COLLISION_Flight:-1.2
+ corners (-15.06, -0.61, -6.52);(-15.06, -1.01, -7.18)
+DOOR_04_07 sample (-15.06, -1.60, -7.84) -> True (-15.06, -1.50, -7.84) physics DOOR_04_07_A_COLLISION_Flight:-1.6
+ corners (-15.06, -1.01, -7.18);(-15.06, -1.42, -7.84)
+DOOR_04_07 sample (-15.06, -2.00, -8.50) -> True (-15.06, -1.90, -8.50) physics DOOR_04_07_A_COLLISION_Flight:-2
+ corners (-15.06, -1.42, -7.84);(-15.06, -1.82, -8.50)
+DOOR_04_07 sample (-15.06, -2.40, -9.16) -> True (-15.06, -2.30, -9.16) physics DOOR_04_07_A_COLLISION_Flight:-2.399999
+ corners (-15.06, -1.82, -8.50);(-15.06, -2.22, -9.16)
+DOOR_04_07 sample (-15.06, -2.80, -9.82) -> True (-15.06, -2.70, -9.82) physics DOOR_04_07_A_COLLISION_Flight:-2.799999
+ corners (-15.06, -2.22, -9.16);(-15.06, -2.63, -9.82)
+DOOR_04_07 sample (-15.06, -3.20, -10.48) -> True (-15.06, -3.10, -10.48) physics DOOR_04_07_A_COLLISION_Flight:-3.199999
+ corners (-15.06, -2.63, -9.82);(-15.06, -3.03, -10.48)
+DOOR_04_07 sample (-15.06, -3.60, -11.14) -> True (-15.06, -3.50, -11.14) physics DOOR_04_07_A_COLLISION_Flight:-3.599999
+ corners (-15.06, -3.03, -10.48);(-15.06, -3.43, -11.14)
+DOOR_04_07 sample (-15.06, -4.00, -11.80) -> True (-15.06, -3.90, -11.80) physics DOOR_04_07_BottomLanding:-3.999998;DOOR_04_07_A_COLLISION_Flight:-3.999998
+ corners (-15.06, -3.43, -11.14);(-15.06, -3.79, -11.80)
+DOOR_05_08 sample (4.95, 0.00, -5.70) -> True (4.95, 0.00, -5.70) physics DOOR_05_08_TopLanding:6.705522E-07;Floor:-2.980232E-07;DOOR_05_08_A_COLLISION_Flight:6.794929E-07
+DOOR_05_08 sample (4.95, -0.40, -6.36) -> True (4.95, -0.30, -6.36) physics DOOR_05_08_A_COLLISION_Flight:-0.3999991
+ corners (4.95, -0.04, -5.70);(4.95, -0.22, -6.36)
+DOOR_05_08 sample (4.95, -0.80, -7.02) -> True (4.95, -0.70, -7.02) physics DOOR_05_08_A_COLLISION_Flight:-0.7999993
+ corners (4.95, -0.22, -6.36);(4.95, -0.59, -7.02)
+DOOR_05_08 sample (4.95, -1.20, -7.68) -> True (4.95, -1.10, -7.68) physics DOOR_05_08_A_COLLISION_Flight:-1.199999
+ corners (4.95, -0.59, -7.02);(4.95, -0.96, -7.68)
+DOOR_05_08 sample (4.95, -1.60, -8.34) -> True (4.95, -1.50, -8.34) physics DOOR_05_08_A_COLLISION_Flight:-1.599999
+ corners (4.95, -0.96, -7.68);(4.95, -1.43, -8.34)
+DOOR_05_08 sample (4.95, -2.00, -9.00) -> True (4.95, -1.90, -9.00) physics DOOR_05_08_A_COLLISION_Flight:-1.999999
+ corners (4.95, -1.43, -8.34);(4.95, -1.84, -9.00)
+DOOR_05_08 sample (4.95, -2.40, -9.66) -> True (4.95, -2.30, -9.66) physics DOOR_05_08_A_COLLISION_Flight:-2.399999
+ corners (4.95, -1.84, -9.00);(4.95, -2.24, -9.66)
+DOOR_05_08 sample (4.95, -2.80, -10.32) -> True (4.95, -2.70, -10.32) physics Floor:-4;DOOR_05_08_A_COLLISION_Flight:-2.799999
+ corners (4.95, -2.24, -9.66);(4.95, -2.64, -10.32)
+DOOR_05_08 sample (4.95, -3.20, -10.98) -> True (4.95, -3.10, -10.98) physics Floor:-4;DOOR_05_08_A_COLLISION_Flight:-3.199999
+ corners (4.95, -2.64, -10.32);(4.95, -3.04, -10.98)
+DOOR_05_08 sample (4.95, -3.60, -11.64) -> True (4.95, -3.50, -11.64) physics DOOR_05_08_A_COLLISION_Flight:-3.599999
+ corners (4.95, -3.04, -10.98);(4.95, -3.44, -11.64)
+DOOR_05_08 sample (4.95, -4.00, -12.30) -> True (4.95, -3.90, -12.30) physics DOOR_05_08_BottomLanding:-3.999998;DOOR_05_08_A_COLLISION_Flight:-3.999999
+ corners (4.95, -3.44, -11.64);(4.95, -3.84, -12.30)

@@ -1,4 +1,11 @@
-# Mansion structural repair — 2026-10-24
+# Mansion stair architecture revision — 2026-10-24
+
+Current geometry, Entry changes, visual assessment and verification evidence are documented in [STAIR_ARCHITECTURE_REPORT.md](STAIR_ARCHITECTURE_REPORT.md).
+The current stair source is `redesign_stairs.py`; run it only through Blender MCP. It uses `Mansion_BeforeStairArchitecture.blend` as the local revision baseline, followed by `verify_stair_architecture.py`, `export_repair.py` and `capture_stair_architecture.py`.
+
+The section below records the **previous structural repair**, before the current architectural redesign. Its unchanged-Entry assertions and old verification JSON do not describe the current four revised stair Entries, and its movement success is not visual approval.
+
+## Previous structural repair (historical)
 
 Editable source: Mansion_Environment_Pass01.blend.
 Export: Mansion_Environment_Pass01.fbx.

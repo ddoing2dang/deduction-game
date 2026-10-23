@@ -24,6 +24,7 @@ public static class MansionStructuralRepair
         var source=model.GetComponentsInChildren<MeshFilter>(true).ToDictionary(m=>m.name);
         var rooms=GameObject.Find(MapData.RootName).transform;
         var connections=GameObject.Find(MapData.ConnectionsName).transform;
+        MansionStairArchitecture.Load().ApplyEntries(rooms);
         var navigation=Snapshot(rooms,connections);
         Directory.CreateDirectory(Folder+"/RepairMeshes");
         var rotate=Matrix4x4.Rotate(Quaternion.Euler(0,180,0));
@@ -38,7 +39,7 @@ public static class MansionStructuralRepair
                 if(child.name.StartsWith("DOOR_")) UnityEngine.Object.DestroyImmediate(child.gameObject);
         }
         // Replace only the wall faces adjoining the two repaired openings.
-        foreach(var pair in new[]{(5,"North"),(5,"East"),(7,"South"),(7,"West"),(8,"South"),(8,"East")}){
+        foreach(var pair in new[]{(4,"North"),(4,"West"),(5,"North"),(5,"East"),(7,"South"),(7,"West"),(8,"South"),(8,"East")}){
             var walls=Room(rooms,pair.Item1).Find("Walls");
             foreach(Transform wall in walls.Cast<Transform>().ToArray())
                 if(wall.name.StartsWith(pair.Item2+"_")) UnityEngine.Object.DestroyImmediate(wall.gameObject);
@@ -72,7 +73,16 @@ public static class MansionStructuralRepair
             baked.RecalculateNormals();baked.RecalculateBounds();
             string path=Folder+"/RepairMeshes/"+part.name+".asset";
             var existing=AssetDatabase.LoadAssetAtPath<Mesh>(path);
-            if(existing!=null){EditorUtility.CopySerialized(baked,existing);UnityEngine.Object.DestroyImmediate(baked);baked=existing;EditorUtility.SetDirty(existing);}
+            if(existing!=null){
+                // Rebuild native vertex/index buffers too; CopySerialized alone can leave
+                // rendered geometry and collision cooking on the previous mesh revision.
+                existing.Clear();existing.indexFormat=baked.indexFormat;
+                existing.vertices=baked.vertices;existing.normals=baked.normals;existing.uv=baked.uv;
+                existing.subMeshCount=baked.subMeshCount;
+                for(int sub=0;sub<baked.subMeshCount;sub++)existing.SetTriangles(baked.GetTriangles(sub),sub);
+                existing.RecalculateBounds();existing.UploadMeshData(false);
+                UnityEngine.Object.DestroyImmediate(baked);baked=existing;EditorUtility.SetDirty(existing);
+            }
             else AssetDatabase.CreateAsset(baked,path);
             var mf=target.GetComponent<MeshFilter>();if(mf==null)mf=target.gameObject.AddComponent<MeshFilter>();mf.sharedMesh=baked;
             var mr=target.GetComponent<MeshRenderer>();if(mr==null)mr=target.gameObject.AddComponent<MeshRenderer>();mr.sharedMaterials=src.GetComponent<MeshRenderer>().sharedMaterials;
@@ -80,7 +90,7 @@ public static class MansionStructuralRepair
             foreach(var old in target.GetComponents<Collider>())UnityEngine.Object.DestroyImmediate(old);
             // Decorative gallery never contributes walkable surfaces or upper-level exits.
             if(!part.decorative && !part.name.Contains("_Step_")){var collider=target.gameObject.AddComponent<MeshCollider>();collider.sharedMesh=baked;}
-            if(part.name.StartsWith("DOOR_") && new[]{"Rail","_Post","_Jamb","_Header","Skirt","UnderBeam","Support"}.Any(part.name.Contains))
+            if(part.name.StartsWith("DOOR_") && new[]{"Rail","_Post","_Jamb","_Header","Skirt","UnderBeam","Support","GuardWall","OuterWall"}.Any(part.name.Contains))
                 target.gameObject.AddComponent<MansionRepairObstacle>();
         }
         if(Snapshot(rooms,connections)!=navigation)throw new InvalidOperationException("Navigation reference regression");

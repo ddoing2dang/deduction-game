@@ -125,8 +125,12 @@ namespace DeductionGame
         {
             float dx = Mathf.Abs(a.Center.x - b.Center.x);
             float dz = Mathf.Abs(a.Center.z - b.Center.z);
-            return dx < (a.Size.x + b.Size.x) * 0.5f &&
-                   dz < (a.Size.y + b.Size.y) * 0.5f;
+            float overlapX=(a.Size.x+b.Size.x)*.5f-dx;
+            float overlapZ=(a.Size.y+b.Size.y)*.5f-dz;
+            // A half-metre perimeter overlap must not erase the entire Hall floor
+            // while viewing the cellar under the kitchen. Keep adjacent-room context.
+            float minimumOverlap=MapData.Theme==MapTheme.Mansion?.75f:0f;
+            return overlapX>minimumOverlap && overlapZ>minimumOverlap;
         }
     }
 }
