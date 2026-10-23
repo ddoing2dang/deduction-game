@@ -28,6 +28,15 @@ namespace DeductionGame
             instance.Refresh();
         }
 
+        public static void ResetMatch() {
+            if (instance == null) return;
+            instance.tokenRooms.Clear(); instance.tokenSlots.Clear(); instance.displayedRooms.Clear();
+            foreach (var pair in instance.tokens) {
+                var agent = pair.Value.GetComponent<NavMeshAgent>();
+                if (agent != null && agent.isOnNavMesh) {agent.ResetPath(); agent.Warp(RoomPresentation.Stand(1,pair.Key));}
+            }
+        }
+
         public static void RefreshAll()
         {
             if (instance != null)

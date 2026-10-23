@@ -29,7 +29,7 @@ public static class CharacterActorVerification {
  for(int a=0;a<6;a++)for(int b=a+1;b<6;b++)
  Assert(Vector3.Distance(actors[a].transform.position,actors[b].transform.position)>0.6f,"Six occupied stands remain separate");
  Vector3 start=mover.transform.position;
- Vector3 destination=start+Vector3.back*2f;
+ Vector3 destination=MapData.GetRoom(1).Center+Vector3.forward*2.8f;
  mover.Agent.SetDestination(destination);
  bool sawMove=false; bool sawFacing=false;
  float deadline=Time.time+5f;
@@ -62,10 +62,3 @@ public static class CharacterActorVerification {
  }
 }
 #endif
-
-
-
-
-
-
-

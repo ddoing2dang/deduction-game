@@ -15,6 +15,7 @@ namespace DeductionGame
 
         public int RoomId;
         public int PreviousTurnStartRoomId;
+        public int TurnStartRoomId;
         public int MovementPoints;
         public int ReservedPoint;
         public bool SetupComplete;
@@ -43,6 +44,7 @@ namespace DeductionGame
             IsHuman = isHuman;
             RoomId = roomId;
             PreviousTurnStartRoomId = roomId;
+            TurnStartRoomId = roomId;
         }
 
         public bool Holds(string card) => LocationCard == card || WeaponCard == card;

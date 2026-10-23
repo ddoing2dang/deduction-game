@@ -14,6 +14,7 @@ namespace DeductionGame {
  int weapon,suspect,location,room=1,target=1;
  Font font;
  public bool Ready => status!=null;
+ public void ResetSelections(){weapon=suspect=location=0;room=target=1;}
  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
  static void Attach(){if(FindFirstObjectByType<RuntimeGameUI>()==null)new GameObject("RuntimeGameUI").AddComponent<RuntimeGameUI>();}
  void Start(){

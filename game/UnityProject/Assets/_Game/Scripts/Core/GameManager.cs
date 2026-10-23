@@ -28,6 +28,7 @@ namespace DeductionGame
         private bool detourArmed;
         private bool reserveArmed;
         private bool interrogationArmed;
+        private bool reSuspicionUsedThisTurn;
 
         private int lastSuspicionTargetId = -1;
         private string lastSuspicionWeapon;
@@ -108,6 +109,7 @@ namespace DeductionGame
             StartNewGame();
         }
 
+        private bool HumanCanAct => Phase == GamePhase.Round && TurnIndex == 0 && Human != null && Human.Active && !Human.Spectating && !gameFinished;
         public IReadOnlyList<PlayerState> Players => players;
         public IReadOnlyList<string> PublicLog => publicLog;
         public string Result => gameResult;
@@ -132,6 +134,7 @@ namespace DeductionGame
             aiCulpritPowerRounds.Clear();
 
             gatekeeperArmed = trackingArmed = detourArmed = reserveArmed = interrogationArmed = false;
+            reSuspicionUsedThisTurn = false;
             lastSuspicionTargetId = -1;
             lastSuspicionWeapon = null;
 
@@ -163,6 +166,10 @@ namespace DeductionGame
             TurnIndex = 0;
             Phase = GamePhase.SetupMove;
             Human.MovementPoints = 3;
+            selectedWeaponIndex = selectedSuspectIndex = selectedLocationIndex = 0;
+            selectedAbilityRoom = selectedTargetPlayer = 1;
+            RuntimeBoardView.ResetMatch();
+            var ui = FindFirstObjectByType<RuntimeGameUI>(); if (ui != null) ui.ResetSelections();
 
             AddPublic("초기 배치 시작 · 전원 3P 이동 후 R1 시작");
             RuntimeBoardView.RefreshAll();
@@ -289,18 +296,17 @@ namespace DeductionGame
 
             int baseCost = 1;
             bool zeroBase = false;
+            bool useGatekeeper = false, useTracking = false, useDetour = false;
 
             if (!setupMove && gatekeeperArmed && player == Human && Human.Ability == InvestigatorAbility.Gatekeeper)
             {
                 zeroBase = true;
-                gatekeeperArmed = false;
-                ConsumeAbility(Human);
+                useGatekeeper = true;
             }
             else if (!setupMove && trackingArmed && player == Human && Human.Ability == InvestigatorAbility.Tracking && RoomHasOtherPlayer(targetRoom, player.Id))
             {
                 zeroBase = true;
-                trackingArmed = false;
-                ConsumeAbility(Human);
+                useTracking = true;
             }
 
             int extra = 0;
@@ -312,13 +318,15 @@ namespace DeductionGame
             if (!setupMove && detourArmed && player == Human && extra > 0)
             {
                 extra--;
-                detourArmed = false;
-                ConsumeAbility(Human);
+                useDetour = true;
             }
 
             int cost = (zeroBase ? 0 : baseCost) + extra;
             if (player.MovementPoints < cost) return false;
 
+            if (useGatekeeper) { gatekeeperArmed = false; ConsumeAbility(Human); }
+            if (useTracking) { trackingArmed = false; ConsumeAbility(Human); }
+            if (useDetour) { detourArmed = false; ConsumeAbility(Human); }
             player.MovementPoints -= cost;
             player.RoomId = targetRoom;
 
@@ -411,7 +419,8 @@ namespace DeductionGame
                 return;
             }
 
-            p.PreviousTurnStartRoomId = p.RoomId;
+            p.PreviousTurnStartRoomId = p.TurnStartRoomId;
+            p.TurnStartRoomId = p.RoomId;
             p.InfoActionUsed = false;
 
             int baseMove = 2 + p.ReservedPoint;
@@ -426,6 +435,7 @@ namespace DeductionGame
             p.MovementPoints = baseMove;
 
             gatekeeperArmed = trackingArmed = detourArmed = reserveArmed = interrogationArmed = false;
+            reSuspicionUsedThisTurn = false;
             lastSuspicionTargetId = -1;
             lastSuspicionWeapon = null;
 
@@ -525,7 +535,7 @@ namespace DeductionGame
                     RunAiInfoAction(p);
             }
 
-            if (!p.IsCulprit && Round >= 6 && p.DeductionAttempts < 2 && p.LastDeductionRound != Round)
+            if (!p.IsCulprit && Round >= 6 && p.DeductionAttempts < 2 && p.LastDeductionRound != Round && (Round == 12 || CanActInRoom(p.RoomId)))
             {
                 double chance = Round >= 10 ? 0.45 : 0.12;
                 if (rng.NextDouble() < chance)
@@ -658,6 +668,7 @@ namespace DeductionGame
 
         public void HumanCheckForensics()
         {
+            if (!HumanCanAct) return;
             if (TurnIndex != 0 || !forensicsReady || Human.ForensicsChecked || Human.RoomId != 1 || Human.InfoActionUsed) return;
             if (!CanActInRoom(Human.RoomId)) return;
             CheckForensics(Human);
@@ -675,9 +686,10 @@ namespace DeductionGame
 
         public void HumanDeduction()
         {
+            if (!HumanCanAct) return;
             if (TurnIndex != 0 || Human.IsCulprit || Human.Spectating || Round < 6) return;
             if (Human.DeductionAttempts >= 2 || Human.LastDeductionRound == Round) return;
-            if (!CanActInRoom(Human.RoomId)) return;
+            if (Round != 12 && (!CanActInRoom(Human.RoomId) || reSuspicionUsedThisTurn)) return;
 
             ResolveDeduction(Human,
                 selectedSuspectIndex,
@@ -688,7 +700,9 @@ namespace DeductionGame
 
         public void HumanFakeDeduction()
         {
+            if (!HumanCanAct) return;
             if (TurnIndex != 0 || !Human.IsCulprit || Human.FakeDeductionUsed || Round < 6) return;
+            if (Round != 12 && !CanActInRoom(Human.RoomId)) return;
             CharacterPresentation.Play(Human.Id, CharacterState.Deduction);
             Human.FakeDeductionUsed = true;
             AddPublic($"{Human.Name}이(가) 추리를 선언했다 · 결과 실패");
@@ -910,9 +924,10 @@ namespace DeductionGame
         public void HumanCulpritSmoke()
         {
             if (!CanHumanUseCulpritPower() || culpritPowerUses.Smoke <= 0) return;
-            smokeRoomA = Human.RoomId;
-            smokeRoomB = selectedAbilityRoom == Human.RoomId ? ((Human.RoomId % 9) + 1) : selectedAbilityRoom;
-            if (smokeRoomA == blackoutRoom || smokeRoomB == blackoutRoom) return;
+            int candidateA = Human.RoomId;
+            int candidateB = selectedAbilityRoom == Human.RoomId ? ((Human.RoomId % 9) + 1) : selectedAbilityRoom;
+            if (candidateA == blackoutRoom || candidateB == blackoutRoom) return;
+            smokeRoomA = candidateA; smokeRoomB = candidateB;
             smokeUntilRound = Round;
             culpritPowerUses.Smoke--;
             AddPublic($"라운드 사건 · 연막 발생: {RoomName(smokeRoomA)}, {RoomName(smokeRoomB)}");
@@ -936,6 +951,7 @@ namespace DeductionGame
 
         public void HumanUseAbilityPrimary()
         {
+            if (!HumanCanAct) return;
             if (TurnIndex != 0 || Human.IsCulprit || Human.AbilityUsesLeft <= 0 || !CanActInRoom(Human.RoomId)) return;
 
             switch (Human.Ability)
@@ -990,6 +1006,8 @@ namespace DeductionGame
 
         public void HumanAnalyzeLocation()
         {
+            if (!HumanCanAct) return;
+            if (!CanActInRoom(Human.RoomId)) return;
             if (TurnIndex != 0 || Human.IsCulprit || Human.Ability != InvestigatorAbility.Analysis || Human.AbilityUsesLeft <= 0) return;
             AnalyzeCard(Human, CardRules.Locations[selectedLocationIndex]);
             ConsumeAbility(Human);
@@ -997,6 +1015,8 @@ namespace DeductionGame
 
         public void HumanAnalyzeWeapon()
         {
+            if (!HumanCanAct) return;
+            if (!CanActInRoom(Human.RoomId)) return;
             if (TurnIndex != 0 || Human.IsCulprit || Human.Ability != InvestigatorAbility.Analysis || Human.AbilityUsesLeft <= 0) return;
             AnalyzeCard(Human, CardRules.Weapons[selectedWeaponIndex]);
             ConsumeAbility(Human);
@@ -1027,6 +1047,7 @@ namespace DeductionGame
             ResolveSuspicion(Human, target, RoomName(Human.RoomId), weapon, false);
             Human.InfoActionUsed = previousAction || Human.InfoActionUsed;
             ConsumeAbility(Human);
+            reSuspicionUsedThisTurn = true;
             Human.PrivateNotes.Add("재의심 사용 완료");
         }
 
