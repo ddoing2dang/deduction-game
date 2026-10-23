@@ -6,6 +6,13 @@ namespace DeductionGame
     {
         [SerializeField] private int roomId;
         [SerializeField] private string roomName;
+        public int RoomId => roomId;
+
+        private void Start()
+        {
+            RoomPresentation.Install(gameObject, roomId, PresentationCatalog.Load());
+            RuntimeBoardView.RefreshAll();
+        }
 
         public void Configure(int id, string displayName)
         {

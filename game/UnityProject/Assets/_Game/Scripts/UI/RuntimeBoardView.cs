@@ -8,6 +8,9 @@ namespace DeductionGame
         private static RuntimeBoardView instance;
         private GameManager manager;
         private readonly Dictionary<int, GameObject> tokens = new();
+        private readonly Dictionary<int, int> tokenRooms = new();
+        private readonly Dictionary<int, int> tokenSlots = new();
+        private readonly Dictionary<int, float> pivotOffsets = new();
 
         public static void Ensure(GameManager gm)
         {
@@ -36,15 +39,20 @@ namespace DeductionGame
             {
                 if (tokens.ContainsKey(p.Id)) continue;
 
-                var token = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+                var catalog = PresentationCatalog.Load();
+                var prefab = catalog != null ? catalog.Character(p.Id) : null;
+                var token = prefab != null ? Instantiate(prefab) : GameObject.CreatePrimitive(PrimitiveType.Capsule);
+                token.transform.SetParent(transform);
                 token.name = $"Token_{p.Id}_{p.Name}";
-                token.transform.localScale = new Vector3(0.45f, 0.55f, 0.45f);
+                if (prefab == null)
+                    token.transform.localScale = new Vector3(0.45f, 0.55f, 0.45f);
 
                 var label = token.AddComponent<TokenLabel>();
                 label.PlayerId = p.Id;
                 label.DisplayName = p.Name;
 
                 tokens[p.Id] = token;
+                pivotOffsets[p.Id] = prefab == null ? 0.55f : 0f;
             }
         }
 
@@ -53,17 +61,37 @@ namespace DeductionGame
             if (manager == null) return;
             BuildTokens();
 
-            var roomCounts = new Dictionary<int, int>();
+            // Release only departed seats; other occupants keep their current stand point.
+            foreach (var p in manager.Players)
+                if (tokenRooms.TryGetValue(p.Id, out int oldRoom) && oldRoom != p.RoomId)
+                {
+                    tokenRooms.Remove(p.Id);
+                    tokenSlots.Remove(p.Id);
+                }
 
             foreach (var p in manager.Players)
             {
                 if (!tokens.TryGetValue(p.Id, out var token)) continue;
 
-                if (!roomCounts.ContainsKey(p.RoomId))
-                    roomCounts[p.RoomId] = 0;
-
-                int slot = roomCounts[p.RoomId]++;
-                token.transform.position = MansionLayout.GetStandPoint(p.RoomId, slot);
+                if (!tokenSlots.TryGetValue(p.Id, out int slot))
+                {
+                    float bestDistance = float.PositiveInfinity;
+                    slot = 0;
+                    for (int candidate = 0; candidate < 6; candidate++)
+                    {
+                        bool occupied = false;
+                        foreach (var seat in tokenRooms)
+                            if (seat.Value == p.RoomId && tokenSlots[seat.Key] == candidate) occupied = true;
+                        if (occupied) continue;
+                        float distance = (token.transform.position - RoomPresentation.Stand(p.RoomId, candidate)).sqrMagnitude;
+                        if (distance >= bestDistance) continue;
+                        bestDistance = distance;
+                        slot = candidate;
+                    }
+                    tokenRooms[p.Id] = p.RoomId;
+                    tokenSlots[p.Id] = slot;
+                }
+                token.transform.position = RoomPresentation.Stand(p.RoomId, slot) + Vector3.up * pivotOffsets[p.Id];
                 token.SetActive(true);
             }
         }
