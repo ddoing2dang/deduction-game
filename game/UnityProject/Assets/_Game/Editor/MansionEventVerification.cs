@@ -96,7 +96,7 @@ public static class MansionEventVerification
             Require(gm.ActiveBlackoutRoom == 0 && gm.ActiveRouteBlockedEdge == null && !gm.SecretPassageActive,
                 "Restart clears public map effects");
             Debug.Log("MANSION_EVENT_VERIFICATION: OK");
-            EditorApplication.Exit(0);
+            CharacterActorVerification.Begin();
         }
         catch (Exception error)
         {

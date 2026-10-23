@@ -44,29 +44,26 @@ namespace DeductionGame
 
                 var catalog = PresentationCatalog.Load();
                 var prefab = catalog != null ? catalog.Character(p.Id) : null;
-                var token = prefab != null ? Instantiate(prefab) : GameObject.CreatePrimitive(PrimitiveType.Capsule);
+                var token = new GameObject($"Token_{p.Id}_{p.Name}");
                 token.transform.SetParent(transform);
-                token.name = $"Token_{p.Id}_{p.Name}";
-                if (prefab == null)
-                    token.transform.localScale = new Vector3(0.45f, 0.55f, 0.45f);
-                foreach (var collider in token.GetComponentsInChildren<Collider>()) collider.enabled = false;
                 token.transform.position = RoomPresentation.Stand(p.RoomId, p.Id % 6);
-                var agent = token.GetComponent<NavMeshAgent>();
-                if (agent == null) agent = token.AddComponent<NavMeshAgent>();
+                var agent = token.AddComponent<NavMeshAgent>();
                 agent.radius = 0.3f;
                 agent.height = 1.1f;
-                agent.baseOffset = prefab == null ? 0.55f : 0f;
+                agent.baseOffset = 0f;
                 agent.speed = 4.2f;
                 agent.acceleration = 14f;
                 agent.angularSpeed = 720f;
                 agent.stoppingDistance = 0.05f;
 
+                var actor = token.AddComponent<CharacterActor>();
+                actor.Initialize(p.Id, prefab);
                 var label = token.AddComponent<TokenLabel>();
                 label.PlayerId = p.Id;
                 label.DisplayName = p.Name;
 
                 tokens[p.Id] = token;
-                pivotOffsets[p.Id] = prefab == null ? 0.55f : 0f;
+                pivotOffsets[p.Id] = 0f;
             }
         }
 
@@ -106,6 +103,7 @@ namespace DeductionGame
                     tokenSlots[p.Id] = slot;
                 }
                 Vector3 target = RoomPresentation.Stand(p.RoomId, slot);
+                token.GetComponent<CharacterActor>().AlignAtStand(Quaternion.identity);
                 var agent = token.GetComponent<NavMeshAgent>();
                 if (agent != null && NavMesh.SamplePosition(target, out var hit, 1f, NavMesh.AllAreas))
                 {

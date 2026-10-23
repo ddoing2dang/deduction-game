@@ -38,7 +38,7 @@ public static class MapThemeVerification {
  var gm=GameManager.Instance;gm.Human.MovementPoints=3;int next=MapGraph.GetConnections(1)[0];
  Assert(gm.TryMoveHuman(next) && gm.Human.RoomId==next,"Existing setup movement");
  Assert(UnityEngine.Object.FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None).Length==6,"Six agents");
- Debug.Log("MAP_THEME_VERIFICATION: OK "+MapData.Theme);EditorApplication.Exit(0);
+ Debug.Log("MAP_THEME_VERIFICATION: OK "+MapData.Theme);CharacterActorVerification.Begin();
  }catch(Exception e){Debug.LogException(e);EditorApplication.Exit(1);}
  }
 }

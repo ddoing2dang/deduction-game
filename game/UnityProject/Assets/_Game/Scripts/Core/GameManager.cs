@@ -112,6 +112,7 @@ namespace DeductionGame
 
         public void StartNewGame()
         {
+            CharacterPresentation.Play(-1, CharacterState.Idle);
             players.Clear();
             publicLog.Clear();
             undealtLocations.Clear();
@@ -580,6 +581,8 @@ namespace DeductionGame
 
         private void ResolveSuspicion(PlayerState requester, PlayerState target, string location, string weapon, bool interrogation)
         {
+            CharacterPresentation.Play(requester.Id, CharacterState.Suspect, target.Id);
+            CharacterPresentation.Play(target.Id, CharacterState.Idle, requester.Id);
             string shownCard = null;
             if (target.LocationCard == location) shownCard = target.LocationCard;
             else if (target.WeaponCard == weapon) shownCard = target.WeaponCard;
@@ -622,6 +625,8 @@ namespace DeductionGame
 
         private void ResolveCooperation(PlayerState a, PlayerState b)
         {
+            CharacterPresentation.Play(a.Id, CharacterState.Cooperate, b.Id);
+            CharacterPresentation.Play(b.Id, CharacterState.Cooperate, a.Id);
             string shownToA = rng.Next(2) == 0 ? b.LocationCard : b.WeaponCard;
             string shownToB = rng.Next(2) == 0 ? a.LocationCard : a.WeaponCard;
 
@@ -649,6 +654,7 @@ namespace DeductionGame
 
         private void CheckForensics(PlayerState p)
         {
+            CharacterPresentation.Play(p.Id, CharacterState.Investigate);
             p.ForensicsChecked = true;
             p.InfoActionUsed = true;
             p.PrivateNotes.Add($"과학수사 결과 · 미배분 장소: {forensicsLocation}");
@@ -672,6 +678,7 @@ namespace DeductionGame
         public void HumanFakeDeduction()
         {
             if (TurnIndex != 0 || !Human.IsCulprit || Human.FakeDeductionUsed || Round < 6) return;
+            CharacterPresentation.Play(Human.Id, CharacterState.Deduction);
             Human.FakeDeductionUsed = true;
             AddPublic($"{Human.Name}이(가) 추리를 선언했다 · 결과 실패");
             Human.PrivateNotes.Add("가짜추리 1회 사용 완료");
@@ -679,6 +686,7 @@ namespace DeductionGame
 
         private void ResolveDeduction(PlayerState p, int suspectId, string location, string weapon, bool forced)
         {
+            CharacterPresentation.Play(p.Id, CharacterState.Deduction);
             p.LastDeductionRound = Round;
             p.DeductionAttempts++;
 
@@ -691,7 +699,7 @@ namespace DeductionGame
 
             if (correct)
             {
-                FinishGame($"{p.Name} 정답 성공 · 수사자 승리");
+                FinishGame($"{p.Name} 정답 성공 · 수사자 승리", p.Id);
                 return;
             }
 
@@ -763,6 +771,7 @@ namespace DeductionGame
 
         private void RunAiFakeDeduction(PlayerState culprit)
         {
+            CharacterPresentation.Play(culprit.Id, CharacterState.Deduction);
             culprit.FakeDeductionUsed = true;
             AddPublic($"{culprit.Name}이(가) 추리를 선언했다 · 결과 실패");
             culprit.PrivateNotes.Add("가짜추리 1회 사용 완료");
@@ -1012,6 +1021,7 @@ namespace DeductionGame
 
         private void ConsumeAbility(PlayerState p)
         {
+            CharacterPresentation.Play(p.Id, CharacterState.UseAbility);
             p.AbilityUsesLeft = Mathf.Max(0, p.AbilityUsesLeft - 1);
         }
 
@@ -1100,8 +1110,10 @@ namespace DeductionGame
             return RoomNames[Mathf.Clamp(id - 1, 0, RoomNames.Length - 1)];
         }
 
-        private void FinishGame(string result)
+        private void FinishGame(string result, int winnerId = -1)
         {
+            foreach (var participant in players)
+                CharacterPresentation.Play(participant.Id, participant.Id == (winnerId < 0 ? answer.CulpritPlayerId : winnerId) ? CharacterState.Win : CharacterState.Lose);
             gameFinished = true;
             gameResult = result;
             Phase = GamePhase.GameOver;
