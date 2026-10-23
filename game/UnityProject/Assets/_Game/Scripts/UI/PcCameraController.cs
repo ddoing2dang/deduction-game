@@ -4,11 +4,16 @@ namespace DeductionGame
 {
     public sealed class PcCameraController : MonoBehaviour
     {
-        [SerializeField] private float moveSpeed = 12f;
-        [SerializeField] private float rotateSpeed = 70f;
-        [SerializeField] private float zoomSpeed = 12f;
-        [SerializeField] private float minHeight = 7f;
-        [SerializeField] private float maxHeight = 22f;
+        private static readonly float[] ZoomLevels = { 9f, 19f, 32f };
+
+        [SerializeField] private Vector3 cameraOffset = new Vector3(0f, 28f, -24f);
+        [SerializeField] private float followSmoothTime = 0.22f;
+        [SerializeField] private float zoomSmoothTime = 0.18f;
+
+        private Vector3 focus;
+        private Vector3 focusVelocity;
+        private float zoomVelocity;
+        private int zoomIndex = 1;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Attach()
@@ -18,45 +23,70 @@ namespace DeductionGame
                 cam.gameObject.AddComponent<PcCameraController>();
         }
 
-        private void Update()
+        private void Start()
         {
-            float dt = Time.unscaledDeltaTime;
-
-            Vector3 forward = transform.forward;
-            forward.y = 0;
-            forward.Normalize();
-
-            Vector3 right = transform.right;
-            right.y = 0;
-            right.Normalize();
-
-            Vector3 delta = Vector3.zero;
-            if (Input.GetKey(KeyCode.W)) delta += forward;
-            if (Input.GetKey(KeyCode.S)) delta -= forward;
-            if (Input.GetKey(KeyCode.D)) delta += right;
-            if (Input.GetKey(KeyCode.A)) delta -= right;
-
-            transform.position += delta * moveSpeed * dt;
-
-            if (Input.GetMouseButton(2))
+            var cam = GetComponent<Camera>();
+            if (cam != null)
             {
-                float yaw = Input.GetAxis("Mouse X") * rotateSpeed * dt;
-                transform.RotateAround(Vector3.zero, Vector3.up, yaw);
+                cam.orthographic = true;
+                cam.orthographicSize = ZoomLevels[zoomIndex];
             }
+
+            transform.rotation = Quaternion.Euler(42f, 0f, 0f);
+            focus = ResolveTarget();
+            transform.position = focus + cameraOffset;
+        }
+
+        private void LateUpdate()
+        {
+            Camera cam = GetComponent<Camera>();
+            if (cam == null) return;
+
+            HandleZoomInput();
+
+            Vector3 target = ResolveTarget();
+            focus = Vector3.SmoothDamp(
+                focus,
+                target,
+                ref focusVelocity,
+                followSmoothTime,
+                Mathf.Infinity,
+                Time.unscaledDeltaTime);
+
+            transform.position = focus + cameraOffset;
+            transform.rotation = Quaternion.Euler(42f, 0f, 0f);
+            cam.orthographicSize = Mathf.SmoothDamp(
+                cam.orthographicSize,
+                ZoomLevels[zoomIndex],
+                ref zoomVelocity,
+                zoomSmoothTime,
+                Mathf.Infinity,
+                Time.unscaledDeltaTime);
+        }
+
+        private void HandleZoomInput()
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1)) zoomIndex = 0;
+            if (Input.GetKeyDown(KeyCode.Alpha2)) zoomIndex = 1;
+            if (Input.GetKeyDown(KeyCode.Alpha3)) zoomIndex = 2;
 
             float scroll = Input.mouseScrollDelta.y;
-            if (Mathf.Abs(scroll) > 0.01f)
-            {
-                Vector3 pos = transform.position + transform.forward * (scroll * zoomSpeed * dt * 8f);
-                pos.y = Mathf.Clamp(pos.y, minHeight, maxHeight);
-                transform.position = pos;
-            }
+            if (scroll > 0.05f)
+                zoomIndex = Mathf.Max(0, zoomIndex - 1);
+            else if (scroll < -0.05f)
+                zoomIndex = Mathf.Min(ZoomLevels.Length - 1, zoomIndex + 1);
 
             if (Input.GetKeyDown(KeyCode.F))
-            {
-                transform.position = new Vector3(0f, 13f, -12f);
-                transform.rotation = Quaternion.Euler(48f, 0f, 0f);
-            }
+                zoomIndex = 2;
+        }
+
+        private static Vector3 ResolveTarget()
+        {
+            GameManager gm = GameManager.Instance;
+            if (gm == null || gm.Human == null)
+                return MansionLayout.GetRoom(1).Center;
+
+            return MansionLayout.GetRoom(gm.Human.RoomId).Center;
         }
     }
 }
