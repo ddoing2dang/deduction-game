@@ -24,6 +24,9 @@ namespace DeductionGame
 
         private void OnMouseDown()
         {
+            if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) return;
+            foreach (var touch in Input.touches)
+                if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.fingerId)) return;
             if (GameManager.Instance != null)
                 GameManager.Instance.TryMoveHuman(roomId);
         }

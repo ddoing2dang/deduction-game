@@ -6,6 +6,7 @@ namespace DeductionGame {
  // Stateless cue boundary: receives only already-public actions, never cards or roles.
  public static class CharacterPresentation {
  public static void Play(int id,CharacterState state,int target=-1) {
+ GameplayPresentation.Cue(id,state,target);
  foreach(var actor in Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))
  if(id<0 || actor.PlayerId==id) actor.Play(state,target);
  }

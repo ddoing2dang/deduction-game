@@ -44,7 +44,7 @@ namespace DeductionGame
 
             HandleZoomInput();
 
-            Vector3 target = ResolveTarget();
+            Vector3 target = GameplayPresentation.Active ? GameplayPresentation.Focus : ResolveTarget();
             focus = Vector3.SmoothDamp(
                 focus,
                 target,
@@ -57,7 +57,7 @@ namespace DeductionGame
             transform.rotation = Quaternion.Euler(42f, 0f, 0f);
             cam.orthographicSize = Mathf.SmoothDamp(
                 cam.orthographicSize,
-                ZoomLevels[zoomIndex],
+                GameplayPresentation.Active ? GameplayPresentation.Zoom : ZoomLevels[zoomIndex],
                 ref zoomVelocity,
                 zoomSmoothTime,
                 Mathf.Infinity,
@@ -70,7 +70,7 @@ namespace DeductionGame
             if (Input.GetKeyDown(KeyCode.Alpha2)) zoomIndex = 1;
             if (Input.GetKeyDown(KeyCode.Alpha3)) zoomIndex = 2;
 
-            float scroll = Input.mouseScrollDelta.y;
+            float scroll = UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() ? 0f : Input.mouseScrollDelta.y;
             if (scroll > 0.05f)
                 zoomIndex = Mathf.Max(0, zoomIndex - 1);
             else if (scroll < -0.05f)

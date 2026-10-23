@@ -109,6 +109,17 @@ namespace DeductionGame
         }
 
         public IReadOnlyList<PlayerState> Players => players;
+        public IReadOnlyList<string> PublicLog => publicLog;
+        public string Result => gameResult;
+        public bool DebugUI = true;
+        public void SetUISelection(int weapon, int suspect, int location, int room, int target) {
+            selectedWeaponIndex = Mathf.Clamp(weapon,0,CardRules.Weapons.Length-1);
+            selectedSuspectIndex = Mathf.Clamp(suspect,0,5);
+            selectedLocationIndex = Mathf.Clamp(location,0,CardRules.Locations.Length-1);
+            selectedAbilityRoom = Mathf.Clamp(room,1,9);
+            selectedTargetPlayer = Mathf.Clamp(target,1,5);
+        }
+
 
         public void StartNewGame()
         {
@@ -1129,6 +1140,7 @@ namespace DeductionGame
 
         private void OnGUI()
         {
+            if (!DebugUI) return;
             float panelWidth = Mathf.Min(520, Screen.width * 0.42f);
             GUILayout.BeginArea(new Rect(14, 14, panelWidth, Screen.height - 28), GUI.skin.box);
 

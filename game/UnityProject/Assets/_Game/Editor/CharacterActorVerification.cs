@@ -57,7 +57,7 @@ public static class CharacterActorVerification {
  Invoke(gm,"ResolveDeduction",gm.Players[0],0,"invalid","invalid",false);Assert(mover.State==CharacterState.Deduction,"Real deduction cue");
  Invoke(gm,"FinishGame","test",0);Assert(mover.State==CharacterState.Win && other.State==CharacterState.Lose,"Win and Lose cues");
  Debug.Log("CHARACTER_ACTOR_VERIFICATION: OK "+MapData.Theme);
- EditorApplication.Exit(0);
+ PresentationVerification.Begin();
  }catch(Exception e){Debug.LogException(e);EditorApplication.Exit(1);}
  }
 }
