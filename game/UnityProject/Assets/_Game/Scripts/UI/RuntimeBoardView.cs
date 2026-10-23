@@ -137,15 +137,15 @@ namespace DeductionGame
 
         private void OnGUI()
         {
-            if (!gameObject.activeInHierarchy) return;
+            if (!gameObject.activeInHierarchy || GameManager.Instance != null && GameManager.Instance.Phase == GamePhase.GameOver) return;
             var cam = Camera.main;
             if (cam == null) return;
 
             Vector3 screen = cam.WorldToScreenPoint(transform.position + Vector3.up * 1.3f);
-            if (screen.z <= 0) return;
+            if (screen.z <= 0 || screen.x-50 < Screen.width*0.27f || screen.x+50 > Screen.width*0.76f || screen.y < Screen.height*0.23f || screen.y > Screen.height*0.81f) return;
 
-            GUI.Label(
-                new Rect(screen.x - 45, Screen.height - screen.y - 12, 90, 22),
+            GUI.Box(
+                new Rect(screen.x - 30 + (PlayerId % 3 - 1) * 18, Screen.height - screen.y - 12 - (PlayerId / 3) * 14, 60, 22),
                 DisplayName
             );
         }

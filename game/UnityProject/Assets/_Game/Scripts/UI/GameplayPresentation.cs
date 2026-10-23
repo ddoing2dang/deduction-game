@@ -5,6 +5,7 @@ namespace DeductionGame {
  static Transform actor,target;
  static float until;
  static bool winning;
+ public static void Cancel(){actor=null;target=null;winning=false;until=0;}
  public static bool Active => actor!=null && Time.unscaledTime<until;
  public static Vector3 Focus => target!=null ? (actor.position+target.position)*0.5f : actor.position;
  public static float Zoom => target!=null ? Mathf.Max(9f,Vector3.Distance(actor.position,target.position)*0.7f+4f) : 9f;

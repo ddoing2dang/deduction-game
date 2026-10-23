@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DeductionGame
 {
-    public sealed class GameManager : MonoBehaviour
+    public sealed partial class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
 
@@ -125,6 +125,8 @@ namespace DeductionGame
 
         public void StartNewGame()
         {
+            LastFeedback = "초기 배치: 연결 방으로 최대 3P 이동 후 [초기 배치 완료]를 누르세요.";
+            LastAITurnCount = 0;
             CharacterPresentation.Play(-1, CharacterState.Idle);
             players.Clear();
             publicLog.Clear();
@@ -173,6 +175,7 @@ namespace DeductionGame
 
             AddPublic("초기 배치 시작 · 전원 3P 이동 후 R1 시작");
             RuntimeBoardView.RefreshAll();
+            var camera = Camera.main != null ? Camera.main.GetComponent<PcCameraController>() : null; if (camera != null) camera.ResetView();
         }
 
         private void CreateCaseAndDeal()
@@ -266,7 +269,15 @@ namespace DeductionGame
                 forensicsWeapon = undealtWeapons[rng.Next(undealtWeapons.Count)];
         }
 
-        public bool TryMoveHuman(int targetRoom)
+        public bool TryMoveHuman(int targetRoom) {
+            string reason = MoveReason(targetRoom);
+            bool moved = TryMoveHumanCore(targetRoom);
+            LastFeedback = moved ? $"이동 완료: {MapData.GetRoom(targetRoom).Name} / 남은 {Human.MovementPoints}P" : reason;
+            if (moved) GameplayPresentation.Cancel();
+            return moved;
+        }
+
+        private bool TryMoveHumanCore(int targetRoom)
         {
             if (Human == null || gameFinished) return false;
             if (Phase == GamePhase.Round && TurnIndex != 0) return false;
@@ -294,34 +305,7 @@ namespace DeductionGame
                 return false;
             }
 
-            int baseCost = 1;
-            bool zeroBase = false;
-            bool useGatekeeper = false, useTracking = false, useDetour = false;
-
-            if (!setupMove && gatekeeperArmed && player == Human && Human.Ability == InvestigatorAbility.Gatekeeper)
-            {
-                zeroBase = true;
-                useGatekeeper = true;
-            }
-            else if (!setupMove && trackingArmed && player == Human && Human.Ability == InvestigatorAbility.Tracking && RoomHasOtherPlayer(targetRoom, player.Id))
-            {
-                zeroBase = true;
-                useTracking = true;
-            }
-
-            int extra = 0;
-            if (!setupMove && brokenDoorEdge == edge && Round == extraEventRound)
-                extra++;
-            if (!setupMove && culpritLockEdge == edge && Round <= culpritLockUntilRound)
-                extra++;
-
-            if (!setupMove && detourArmed && player == Human && extra > 0)
-            {
-                extra--;
-                useDetour = true;
-            }
-
-            int cost = (zeroBase ? 0 : baseCost) + extra;
+            int cost = MovementCost(player, targetRoom, setupMove, out bool useGatekeeper, out bool useTracking, out bool useDetour);
             if (player.MovementPoints < cost) return false;
 
             if (useGatekeeper) { gatekeeperArmed = false; ConsumeAbility(Human); }
@@ -478,12 +462,14 @@ namespace DeductionGame
         public void EndHumanTurn()
         {
             if (Phase != GamePhase.Round || TurnIndex != 0 || gameFinished) return;
+            LastAITurnCount = 0;
             EndTurn(Human);
 
             while (!gameFinished && Phase == GamePhase.Round && TurnIndex != 0)
             {
                 PlayerState ai = players[TurnIndex];
                 RunAiTurn(ai);
+                LastAITurnCount++;
                 if (!gameFinished && TurnIndex != 0)
                     EndTurn(ai);
             }
@@ -1157,6 +1143,7 @@ namespace DeductionGame
             publicLog.Add(message);
             if (publicLog.Count > 18) publicLog.RemoveAt(0);
             Debug.Log(message);
+            PublicMessage?.Invoke(message);
         }
 
         private void OnGUI()

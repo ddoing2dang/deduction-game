@@ -64,6 +64,12 @@ namespace DeductionGame
                 Time.unscaledDeltaTime);
         }
 
+        public void ResetView() {
+            zoomIndex=1; focusVelocity=Vector3.zero; zoomVelocity=0; focus=ResolveTarget();
+            transform.position=focus+cameraOffset;
+            var camera=GetComponent<Camera>(); if(camera!=null) camera.orthographicSize=ZoomLevels[1];
+        }
+
         private void HandleZoomInput()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1)) zoomIndex = 0;

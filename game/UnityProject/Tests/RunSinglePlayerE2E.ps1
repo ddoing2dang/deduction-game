@@ -24,7 +24,7 @@ foreach ($case in $cases) {
         }
     }
     $process.Refresh()
-    $marker = if ($case.StartsWith('SinglePlayerE2E')) {'SINGLE_PLAYER_E2E: OK'} else {'GAMEPLAY_PRESENTATION_VERIFICATION: OK'}
+    $marker = if ($case.StartsWith('SinglePlayerE2E')) {'SINGLE_PLAYER_E2E: OK'} else {'USABILITY_VERIFICATION: OK'}
     if ($process.ExitCode -ne 0 -or -not (Select-String -LiteralPath $log -SimpleMatch $marker)) {
         throw "Failed: $case. Log: $log"
     }

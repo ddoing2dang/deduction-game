@@ -52,7 +52,7 @@ public static class PresentationVerification {
  typeof(GameManager).GetField("<Round>k__BackingField",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).SetValue(gm,6);
  ui.transform.Find("Actions/Viewport/Content/Deduction").GetComponent<Button>().onClick.Invoke();
  Assert(gm.Human.IsCulprit ? gm.Human.FakeDeductionUsed : gm.Human.DeductionAttempts>0,"Canvas deduction executes");
- Debug.Log("GAMEPLAY_PRESENTATION_VERIFICATION: OK "+MapData.Theme);EditorApplication.Exit(0);
+ Debug.Log("GAMEPLAY_PRESENTATION_VERIFICATION: OK "+MapData.Theme);UsabilityVerification.Begin();
  }catch(Exception e){Debug.LogException(e);EditorApplication.Exit(1);}
  }
 }
