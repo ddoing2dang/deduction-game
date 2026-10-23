@@ -7,11 +7,18 @@ namespace DeductionGame
         [SerializeField] private int roomId;
         [SerializeField] private string roomName;
 
+        public int RoomId => roomId;
+        public string RoomName => roomName;
+
         public void Configure(int id, string displayName)
         {
             roomId = id;
             roomName = displayName;
-            gameObject.name = $"Room_{id}_{displayName}";
+
+            // New production graybox keeps a named room root and a stable Floor child.
+            // Preserve the Floor name so camera/cutaway/navigation systems can find it.
+            if (transform.parent == null)
+                gameObject.name = $"Room_{id}_{displayName}";
         }
 
         private void OnMouseDown()
