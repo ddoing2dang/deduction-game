@@ -2812,7 +2812,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2827,7 +2827,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2842,7 +2842,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2857,7 +2857,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2872,7 +2872,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2887,7 +2887,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2902,7 +2902,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2917,7 +2917,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2932,7 +2932,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,
@@ -2947,7 +2947,7 @@
    "room": 8,
    "door": "",
    "side": "",
-   "collision": false,
+   "collision": true,
    "color": {
     "r": 0.1599999964237213,
     "g": 0.07500000298023224,

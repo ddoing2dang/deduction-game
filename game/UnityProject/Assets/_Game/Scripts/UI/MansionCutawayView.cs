@@ -80,15 +80,22 @@ namespace DeductionGame
             if (camera == null) return;
             // Orthographic rays match the fixed play camera. Other rooms' tall walls
             // can obscure the active room even when their floor footprints do not overlap.
+            var targets=new System.Collections.Generic.List<Vector3>();
             for (int x = -1; x <= 1; x++)
             for (int z = -1; z <= 1; z++)
+                targets.Add(room.Center + new Vector3(x * room.Size.x * .35f, .1f, z * room.Size.y * .35f));
+            for(int slot=0;slot<6;slot++)targets.Add(RoomPresentation.Stand(room.Id,slot)+Vector3.up*.8f);
+            int targetIndex=0;
+            foreach(Vector3 point in targets)
             {
-                Vector3 point = room.Center + new Vector3(x * room.Size.x * .35f, .1f, z * room.Size.y * .35f);
+                bool actorTarget=targetIndex++>=9;
                 Ray ray = camera.ScreenPointToRay(camera.WorldToScreenPoint(point));
                 float distance = Vector3.Dot(point - ray.origin, ray.direction);
                 foreach (RaycastHit hit in Physics.RaycastAll(ray, distance - .05f, ~0, QueryTriggerInteraction.Ignore))
                 {
                     Transform wall = hit.collider.transform;
+                    var art=wall.GetComponentInParent<MansionArtOccluder>();
+                    if(art!=null){if(actorTarget)foreach(var item in art.GetComponentsInChildren<Renderer>())item.enabled=false;continue;}
                     if (wall.parent == null || wall.parent.name != "Walls") continue;
                     Renderer renderer = wall.GetComponent<Renderer>();
                     if (renderer != null) renderer.enabled = false;
@@ -140,6 +147,10 @@ namespace DeductionGame
 
         private static void SetFloorVisible(Transform roomRoot, bool visible)
         {
+            if(MapData.Theme==MapTheme.Mansion){
+                var art=roomRoot.Find("EnvironmentArt");
+                if(art!=null)foreach(var item in art.GetComponentsInChildren<Renderer>())item.enabled=visible;
+            }
             Transform floor = roomRoot.Find("Floor");
             if (floor == null) return;
 

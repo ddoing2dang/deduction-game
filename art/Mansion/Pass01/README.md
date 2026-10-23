@@ -1,4 +1,8 @@
-# Current full environment pass (2026-10-24)
+# Current environment: Pass02 (2026-10-24)
+
+The current full model is Mansion_Environment_Pass02.blend / .fbx, installed at SceneLayoutVersion 9. See [Pass02 report](../Pass02/README.md) for the Wine entrance correction, room art, shared geometry and final Play Mode verification. The Pass01 structural report below is historical; its old visual approval does not cover the subsequently corrected Wine rack obstruction.
+
+## Previous full structure pass
 
 The complete environment is now imported into Unity at SceneLayoutVersion 8. See [StructureAudit/REPORT.md](StructureAudit/REPORT.md) for the current structural inventory, deletion list, FBX workflow, all-link physical traversal results and Blender/Unity camera evidence. Earlier partial stair/repair reports below are historical and do not supersede this audit.
 

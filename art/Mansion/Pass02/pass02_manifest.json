@@ -1,0 +1,810 @@
+{
+ "added": [
+  "R01_P02_HallRug_Border",
+  "R01_P02_HallRug_Field",
+  "R01_P02_HallRug_Motif-1.7",
+  "R01_P02_HallRug_Motif0",
+  "R01_P02_HallRug_Motif1.7",
+  "R01_P02_Console_Top",
+  "R01_P02_Console_Leg0",
+  "R01_P02_Console_Leg1",
+  "R01_P02_Console_Leg2",
+  "R01_P02_Console_Leg3",
+  "R01_P02_ConsoleLamp_Foot",
+  "R01_P02_ConsoleLamp_Stem",
+  "R01_P02_ConsoleLamp_Shade",
+  "R01_P02_Moulding_R01_Wall_East_Pier_00",
+  "R01_P02_Moulding_R01_Wall_East_Pier_02",
+  "R01_P02_Moulding_R01_Wall_West_Pier_00",
+  "R01_P02_Moulding_R01_Wall_West_Pier_02",
+  "R01_P02_Moulding_R01_Wall_North_Pier_00",
+  "R01_P02_Moulding_R01_Wall_North_Pier_02",
+  "R01_P02_Moulding_R01_Wall_South_Pier_00",
+  "R01_P02_Moulding_R01_Wall_South_Pier_02",
+  "R02_P02_Moulding_R02_Wall_East_Pier_00",
+  "R02_P02_Moulding_R02_Wall_East_Pier_02",
+  "R02_P02_Moulding_R02_Wall_West_Pier_00",
+  "R02_P02_Moulding_R02_Wall_North_Pier_00",
+  "R02_P02_Moulding_R02_Wall_South_Pier_00",
+  "R02_P02_Moulding_R02_Wall_South_Pier_02",
+  "R03_P02_Moulding_R03_Wall_East_Pier_00",
+  "R03_P02_Moulding_R03_Wall_West_Pier_00",
+  "R03_P02_Moulding_R03_Wall_West_Pier_02",
+  "R03_P02_Moulding_R03_Wall_North_Pier_00",
+  "R03_P02_Moulding_R03_Wall_South_Pier_00",
+  "R03_P02_Moulding_R03_Wall_South_Pier_02",
+  "R04_P02_Moulding_R04_Wall_East_Pier_00",
+  "R04_P02_Moulding_R04_Wall_East_Pier_02",
+  "R04_P02_Moulding_R04_Wall_West_Pier_00",
+  "R04_P02_Moulding_R04_Wall_North_Pier_00",
+  "R04_P02_Moulding_R04_Wall_North_Pier_02",
+  "R04_P02_Moulding_R04_Wall_South_Pier_00",
+  "R05_P02_Moulding_R05_Wall_East_Pier_00",
+  "R05_P02_Moulding_R05_Wall_East_Pier_02",
+  "R05_P02_Moulding_R05_Wall_West_Pier_00",
+  "R05_P02_Moulding_R05_Wall_West_Pier_02",
+  "R05_P02_Moulding_R05_Wall_North_Pier_00",
+  "R05_P02_Moulding_R05_Wall_North_Pier_02",
+  "R05_P02_Moulding_R05_Wall_South_Pier_00",
+  "R06_P02_Moulding_R06_Wall_East_Pier_00",
+  "R06_P02_Moulding_R06_Wall_West_Pier_00",
+  "R06_P02_Moulding_R06_Wall_West_Pier_02",
+  "R06_P02_Moulding_R06_Wall_North_Pier_00",
+  "R06_P02_Moulding_R06_Wall_South_Pier_00",
+  "R06_P02_Moulding_R06_Wall_South_Pier_02",
+  "R02_P02_Bookcase_Book0_0",
+  "R02_P02_Bookcase_Book0_1",
+  "R02_P02_Bookcase_Book0_2",
+  "R02_P02_Bookcase_Book0_3",
+  "R02_P02_Bookcase_Book0_4",
+  "R02_P02_Bookcase_Book0_5",
+  "R02_P02_Bookcase_Book0_6",
+  "R02_P02_Bookcase_Book0_7",
+  "R02_P02_Bookcase_Book0_8",
+  "R02_P02_Bookcase_Book0_9",
+  "R02_P02_Bookcase_Book1_0",
+  "R02_P02_Bookcase_Book1_1",
+  "R02_P02_Bookcase_Book1_2",
+  "R02_P02_Bookcase_Book1_3",
+  "R02_P02_Bookcase_Book1_4",
+  "R02_P02_Bookcase_Book1_5",
+  "R02_P02_Bookcase_Book1_6",
+  "R02_P02_Bookcase_Book1_7",
+  "R02_P02_Bookcase_Book1_8",
+  "R02_P02_Bookcase_Book1_9",
+  "R02_P02_Bookcase_Book2_0",
+  "R02_P02_Bookcase_Book2_1",
+  "R02_P02_Bookcase_Book2_2",
+  "R02_P02_Bookcase_Book2_3",
+  "R02_P02_Bookcase_Book2_4",
+  "R02_P02_Bookcase_Book2_5",
+  "R02_P02_Bookcase_Book2_6",
+  "R02_P02_Bookcase_Book2_7",
+  "R02_P02_Bookcase_Book2_8",
+  "R02_P02_Bookcase_Book2_9",
+  "R02_P02_Bookcase_Book3_0",
+  "R02_P02_Bookcase_Book3_1",
+  "R02_P02_Bookcase_Book3_2",
+  "R02_P02_Bookcase_Book3_3",
+  "R02_P02_Bookcase_Book3_4",
+  "R02_P02_Bookcase_Book3_5",
+  "R02_P02_Bookcase_Book3_6",
+  "R02_P02_Bookcase_Book3_7",
+  "R02_P02_Bookcase_Book3_8",
+  "R02_P02_Bookcase_Book3_9",
+  "R02_P02_Bookcase_Book4_0",
+  "R02_P02_Bookcase_Book4_1",
+  "R02_P02_Bookcase_Book4_2",
+  "R02_P02_Bookcase_Book4_3",
+  "R02_P02_Bookcase_Book4_4",
+  "R02_P02_Bookcase_Book4_5",
+  "R02_P02_Bookcase_Book4_6",
+  "R02_P02_Bookcase_Book4_7",
+  "R02_P02_Bookcase_Book4_8",
+  "R02_P02_Bookcase_Book4_9",
+  "R02_P02_Desk_Top",
+  "R02_P02_Desk_Leg0",
+  "R02_P02_Desk_Leg1",
+  "R02_P02_Desk_Leg2",
+  "R02_P02_Desk_Leg3",
+  "R02_P02_DeskChair_Seat",
+  "R02_P02_DeskChair_Leg0",
+  "R02_P02_DeskChair_Leg1",
+  "R02_P02_DeskChair_Leg2",
+  "R02_P02_DeskChair_Leg3",
+  "R02_P02_DeskChair_Back",
+  "R02_P02_ReadingLamp_Foot",
+  "R02_P02_ReadingLamp_Stem",
+  "R02_P02_ReadingLamp_Shade",
+  "R02_P02_Desk_OpenBook",
+  "R02_P02_Desk_Drawer",
+  "R03_P02_SeatingRug_Border",
+  "R03_P02_SeatingRug_Field",
+  "R03_P02_Sofa_Plinth",
+  "R03_P02_Sofa_Back",
+  "R03_P02_Sofa_Cushion0",
+  "R03_P02_Sofa_Cushion1",
+  "R03_P02_Sofa_Cushion2",
+  "R03_P02_Sofa_Arm0",
+  "R03_P02_Sofa_Arm1",
+  "R03_P02_CoffeeTable_Top",
+  "R03_P02_CoffeeTable_Leg0",
+  "R03_P02_CoffeeTable_Leg1",
+  "R03_P02_CoffeeTable_Leg2",
+  "R03_P02_CoffeeTable_Leg3",
+  "R03_P02_CoffeeTable_Tray",
+  "R03_P02_Portrait_Inner",
+  "R03_P02_Portrait_Frame0",
+  "R03_P02_Portrait_Frame1",
+  "R03_P02_Portrait_Frame2",
+  "R03_P02_Portrait_Frame3",
+  "R04_P02_DiningTable_Top",
+  "R04_P02_DiningTable_Leg0",
+  "R04_P02_DiningTable_Leg1",
+  "R04_P02_DiningTable_Leg2",
+  "R04_P02_DiningTable_Leg3",
+  "R04_P02_DiningTable_Runner",
+  "R04_P02_DiningChair0_-1_Seat",
+  "R04_P02_DiningChair0_-1_Leg0",
+  "R04_P02_DiningChair0_-1_Leg1",
+  "R04_P02_DiningChair0_-1_Leg2",
+  "R04_P02_DiningChair0_-1_Leg3",
+  "R04_P02_DiningChair0_-1_Back",
+  "R04_P02_DiningTable_Plate0_-1",
+  "R04_P02_DiningChair0_1_Seat",
+  "R04_P02_DiningChair0_1_Leg0",
+  "R04_P02_DiningChair0_1_Leg1",
+  "R04_P02_DiningChair0_1_Leg2",
+  "R04_P02_DiningChair0_1_Leg3",
+  "R04_P02_DiningChair0_1_Back",
+  "R04_P02_DiningTable_Plate0_1",
+  "R04_P02_DiningChair1_-1_Seat",
+  "R04_P02_DiningChair1_-1_Leg0",
+  "R04_P02_DiningChair1_-1_Leg1",
+  "R04_P02_DiningChair1_-1_Leg2",
+  "R04_P02_DiningChair1_-1_Leg3",
+  "R04_P02_DiningChair1_-1_Back",
+  "R04_P02_DiningTable_Plate1_-1",
+  "R04_P02_DiningChair1_1_Seat",
+  "R04_P02_DiningChair1_1_Leg0",
+  "R04_P02_DiningChair1_1_Leg1",
+  "R04_P02_DiningChair1_1_Leg2",
+  "R04_P02_DiningChair1_1_Leg3",
+  "R04_P02_DiningChair1_1_Back",
+  "R04_P02_DiningTable_Plate1_1",
+  "R04_P02_DiningChair2_-1_Seat",
+  "R04_P02_DiningChair2_-1_Leg0",
+  "R04_P02_DiningChair2_-1_Leg1",
+  "R04_P02_DiningChair2_-1_Leg2",
+  "R04_P02_DiningChair2_-1_Leg3",
+  "R04_P02_DiningChair2_-1_Back",
+  "R04_P02_DiningTable_Plate2_-1",
+  "R04_P02_DiningChair2_1_Seat",
+  "R04_P02_DiningChair2_1_Leg0",
+  "R04_P02_DiningChair2_1_Leg1",
+  "R04_P02_DiningChair2_1_Leg2",
+  "R04_P02_DiningChair2_1_Leg3",
+  "R04_P02_DiningChair2_1_Back",
+  "R04_P02_DiningTable_Plate2_1",
+  "R04_P02_DiningTable_CandleBase0",
+  "R04_P02_DiningTable_Candle0",
+  "R04_P02_DiningTable_CandleBase1",
+  "R04_P02_DiningTable_Candle1",
+  "R05_P02_Sink_Cabinet",
+  "R05_P02_Sink_Counter",
+  "R05_P02_Sink_Basin",
+  "R05_P02_Sink_Tap",
+  "R05_P02_Sink_Door0",
+  "R05_P02_Sink_Door1",
+  "R05_P02_Sink_Door2",
+  "R05_P02_Cooker_Burner0_0",
+  "R05_P02_Cooker_Burner0_1",
+  "R05_P02_Cooker_Burner1_0",
+  "R05_P02_Cooker_Burner1_1",
+  "R05_P02_Shelves_Shelf0",
+  "R05_P02_Shelves_Shelf1",
+  "R05_P02_Shelves_Jar0",
+  "R05_P02_Shelves_Jar1",
+  "R05_P02_Shelves_Jar2",
+  "R06_P02_Plant0_Leaf0",
+  "R06_P02_Plant0_Leaf1",
+  "R06_P02_Plant0_Leaf2",
+  "R06_P02_Plant0_Leaf3",
+  "R06_P02_Plant0_Leaf4",
+  "R06_P02_Plant0_Leaf5",
+  "R06_P02_Plant0_Leaf6",
+  "R06_P02_Plant1_Pot",
+  "R06_P02_Plant1_Leaf0",
+  "R06_P02_Plant1_Leaf1",
+  "R06_P02_Plant1_Leaf2",
+  "R06_P02_Plant1_Leaf3",
+  "R06_P02_Plant1_Leaf4",
+  "R06_P02_Plant1_Leaf5",
+  "R06_P02_Plant1_Leaf6",
+  "R06_P02_Plant2_Pot",
+  "R06_P02_Plant2_Leaf0",
+  "R06_P02_Plant2_Leaf1",
+  "R06_P02_Plant2_Leaf2",
+  "R06_P02_Plant2_Leaf3",
+  "R06_P02_Plant2_Leaf4",
+  "R06_P02_Plant2_Leaf5",
+  "R06_P02_Plant2_Leaf6",
+  "R06_P02_PottingShelf_Top",
+  "R06_P02_PottingShelf_Leg0",
+  "R06_P02_PottingShelf_Leg1",
+  "R06_P02_PottingShelf_Leg2",
+  "R06_P02_PottingShelf_Leg3",
+  "R06_P02_PottingShelf_Pot0",
+  "R06_P02_PottingShelf_Pot1",
+  "R06_P02_PottingShelf_Pot2",
+  "R07_P02_Boiler_Vessel",
+  "R07_P02_Boiler_Band0",
+  "R07_P02_Boiler_Band1",
+  "R07_P02_Boiler_Flue",
+  "R07_P02_PipeBank_Pipe0",
+  "R07_P02_PipeBank_Branch0",
+  "R07_P02_PipeBank_Valve0",
+  "R07_P02_PipeBank_Pipe1",
+  "R07_P02_PipeBank_Branch1",
+  "R07_P02_PipeBank_Valve1",
+  "R07_P02_PipeBank_Pipe2",
+  "R07_P02_PipeBank_Branch2",
+  "R07_P02_PipeBank_Valve2",
+  "R07_P02_Boiler_GaugePlate",
+  "R08_P02_RackBacking_Panel",
+  "R08_P02_WineBottles_Body0_0",
+  "R08_P02_WineBottles_Neck0_0",
+  "R08_P02_WineBottles_Label0_0",
+  "R08_P02_WineBottles_Body0_1",
+  "R08_P02_WineBottles_Neck0_1",
+  "R08_P02_WineBottles_Label0_1",
+  "R08_P02_WineBottles_Body0_2",
+  "R08_P02_WineBottles_Neck0_2",
+  "R08_P02_WineBottles_Label0_2",
+  "R08_P02_WineBottles_Body0_3",
+  "R08_P02_WineBottles_Neck0_3",
+  "R08_P02_WineBottles_Label0_3",
+  "R08_P02_WineBottles_Body0_4",
+  "R08_P02_WineBottles_Neck0_4",
+  "R08_P02_WineBottles_Label0_4",
+  "R08_P02_WineBottles_Body0_5",
+  "R08_P02_WineBottles_Neck0_5",
+  "R08_P02_WineBottles_Label0_5",
+  "R08_P02_WineBottles_Body1_0",
+  "R08_P02_WineBottles_Neck1_0",
+  "R08_P02_WineBottles_Label1_0",
+  "R08_P02_WineBottles_Body1_1",
+  "R08_P02_WineBottles_Neck1_1",
+  "R08_P02_WineBottles_Label1_1",
+  "R08_P02_WineBottles_Body1_2",
+  "R08_P02_WineBottles_Neck1_2",
+  "R08_P02_WineBottles_Label1_2",
+  "R08_P02_WineBottles_Body1_3",
+  "R08_P02_WineBottles_Neck1_3",
+  "R08_P02_WineBottles_Label1_3",
+  "R08_P02_WineBottles_Body1_4",
+  "R08_P02_WineBottles_Neck1_4",
+  "R08_P02_WineBottles_Label1_4",
+  "R08_P02_WineBottles_Body1_5",
+  "R08_P02_WineBottles_Neck1_5",
+  "R08_P02_WineBottles_Label1_5",
+  "R08_P02_WineBottles_Body2_0",
+  "R08_P02_WineBottles_Neck2_0",
+  "R08_P02_WineBottles_Label2_0",
+  "R08_P02_WineBottles_Body2_1",
+  "R08_P02_WineBottles_Neck2_1",
+  "R08_P02_WineBottles_Label2_1",
+  "R08_P02_WineBottles_Body2_2",
+  "R08_P02_WineBottles_Neck2_2",
+  "R08_P02_WineBottles_Label2_2",
+  "R08_P02_WineBottles_Body2_3",
+  "R08_P02_WineBottles_Neck2_3",
+  "R08_P02_WineBottles_Label2_3",
+  "R08_P02_WineBottles_Body2_4",
+  "R08_P02_WineBottles_Neck2_4",
+  "R08_P02_WineBottles_Label2_4",
+  "R08_P02_WineBottles_Body2_5",
+  "R08_P02_WineBottles_Neck2_5",
+  "R08_P02_WineBottles_Label2_5",
+  "R08_P02_Barrel0_Body",
+  "R08_P02_Barrel0_Hoop0",
+  "R08_P02_Barrel0_Hoop1",
+  "R08_P02_Barrel1_Body",
+  "R08_P02_Barrel1_Hoop0",
+  "R08_P02_Barrel1_Hoop1",
+  "R08_P02_Crate_Body",
+  "R08_P02_Crate_Band0",
+  "R08_P02_Crate_Band1",
+  "R09_P02_Bed_Blanket",
+  "R09_P02_Bed_Pillow",
+  "R09_P02_Bedside_Cabinet",
+  "R09_P02_BedsideLamp_Foot",
+  "R09_P02_BedsideLamp_Stem",
+  "R09_P02_BedsideLamp_Shade",
+  "R09_P02_Locker_Handle0",
+  "R09_P02_Locker_Handle1"
+ ],
+ "replaced": [
+  "R06_Hero_Topiary",
+  "R07_Hero_Boiler",
+  "R07_Hero_Pipe_0",
+  "R07_Hero_Pipe_1",
+  "R07_Hero_Pipe_2"
+ ],
+ "tris_before": 6796,
+ "tris_after": 13980,
+ "unique_new_meshes": 23,
+ "shared_instances": 323,
+ "protected_references": {
+  "REF_Room_01": [
+   0.0,
+   2.0,
+   0.0
+  ],
+  "REF_R01_Stand_01": [
+   -1.5,
+   3.0999999046325684,
+   0.550000011920929
+  ],
+  "REF_R01_Stand_02": [
+   0.0,
+   3.4000000953674316,
+   0.550000011920929
+  ],
+  "REF_R01_Stand_03": [
+   1.5,
+   3.0999999046325684,
+   0.550000011920929
+  ],
+  "REF_R01_Stand_04": [
+   -1.5,
+   0.8999999761581421,
+   0.550000011920929
+  ],
+  "REF_R01_Stand_05": [
+   0.0,
+   0.6000000238418579,
+   0.550000011920929
+  ],
+  "REF_R01_Stand_06": [
+   1.5,
+   0.8999999761581421,
+   0.550000011920929
+  ],
+  "REF_R01_Action_Point": [
+   0.0,
+   2.0,
+   0.05000000074505806
+  ],
+  "REF_R01_Entry_To_02": [
+   -4.767007827758789,
+   2.794501304626465,
+   0.05000000074505806
+  ],
+  "REF_R01_Entry_To_03": [
+   4.767007827758789,
+   2.794501304626465,
+   0.05000000074505806
+  ],
+  "REF_R01_Entry_To_05": [
+   0.8548548221588135,
+   -2.2742741107940674,
+   0.05000000074505806
+  ],
+  "REF_R01_Entry_To_06": [
+   0.0,
+   6.25,
+   0.05000000074505806
+  ],
+  "REF_Room_02": [
+   -12.0,
+   4.0,
+   0.0
+  ],
+  "REF_R02_Stand_01": [
+   -13.5,
+   5.099999904632568,
+   0.550000011920929
+  ],
+  "REF_R02_Stand_02": [
+   -12.0,
+   5.400000095367432,
+   0.550000011920929
+  ],
+  "REF_R02_Stand_03": [
+   -10.5,
+   5.099999904632568,
+   0.550000011920929
+  ],
+  "REF_R02_Stand_04": [
+   -13.5,
+   2.9000000953674316,
+   0.550000011920929
+  ],
+  "REF_R02_Stand_05": [
+   -12.0,
+   2.5999999046325684,
+   0.550000011920929
+  ],
+  "REF_R02_Stand_06": [
+   -10.5,
+   2.9000000953674316,
+   0.550000011920929
+  ],
+  "REF_R02_Action_Point": [
+   -12.0,
+   4.0,
+   0.05000000074505806
+  ],
+  "REF_R02_Entry_To_01": [
+   -8.732992172241211,
+   3.455498695373535,
+   0.05000000074505806
+  ],
+  "REF_R02_Entry_To_04": [
+   -11.749533653259277,
+   1.2448666095733643,
+   0.05000000074505806
+  ],
+  "REF_Room_03": [
+   12.0,
+   4.0,
+   0.0
+  ],
+  "REF_R03_Stand_01": [
+   10.5,
+   5.099999904632568,
+   0.550000011920929
+  ],
+  "REF_R03_Stand_02": [
+   12.0,
+   5.400000095367432,
+   0.550000011920929
+  ],
+  "REF_R03_Stand_03": [
+   13.5,
+   5.099999904632568,
+   0.550000011920929
+  ],
+  "REF_R03_Stand_04": [
+   10.5,
+   2.9000000953674316,
+   0.550000011920929
+  ],
+  "REF_R03_Stand_05": [
+   12.0,
+   2.5999999046325684,
+   0.550000011920929
+  ],
+  "REF_R03_Stand_06": [
+   13.5,
+   2.9000000953674316,
+   0.550000011920929
+  ],
+  "REF_R03_Action_Point": [
+   12.0,
+   4.0,
+   0.05000000074505806
+  ],
+  "REF_R03_Entry_To_01": [
+   8.732992172241211,
+   3.455498695373535,
+   0.05000000074505806
+  ],
+  "REF_R03_Entry_To_05": [
+   9.5,
+   1.100000023841858,
+   0.05000000074505806
+  ],
+  "REF_Room_04": [
+   -11.0,
+   -7.0,
+   0.0
+  ],
+  "REF_R04_Stand_01": [
+   -12.5,
+   -5.900000095367432,
+   0.550000011920929
+  ],
+  "REF_R04_Stand_02": [
+   -11.0,
+   -5.599999904632568,
+   0.550000011920929
+  ],
+  "REF_R04_Stand_03": [
+   -9.5,
+   -5.900000095367432,
+   0.550000011920929
+  ],
+  "REF_R04_Stand_04": [
+   -12.5,
+   -8.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R04_Stand_05": [
+   -11.0,
+   -8.399999618530273,
+   0.550000011920929
+  ],
+  "REF_R04_Stand_06": [
+   -9.5,
+   -8.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R04_Action_Point": [
+   -11.0,
+   -7.0,
+   0.05000000074505806
+  ],
+  "REF_R04_Entry_To_02": [
+   -11.250466346740723,
+   -4.244866371154785,
+   0.05000000074505806
+  ],
+  "REF_R04_Entry_To_05": [
+   -7.2463178634643555,
+   -7.288744926452637,
+   0.05000000074505806
+  ],
+  "REF_R04_Entry_To_07": [
+   -13.75,
+   -4.900000095367432,
+   0.05000000074505806
+  ],
+  "REF_Room_05": [
+   2.0,
+   -8.0,
+   0.0
+  ],
+  "REF_R05_Stand_01": [
+   0.5,
+   -6.900000095367432,
+   0.550000011920929
+  ],
+  "REF_R05_Stand_02": [
+   2.0,
+   -6.599999904632568,
+   0.550000011920929
+  ],
+  "REF_R05_Stand_03": [
+   3.5,
+   -6.900000095367432,
+   0.550000011920929
+  ],
+  "REF_R05_Stand_04": [
+   0.5,
+   -9.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R05_Stand_05": [
+   2.0,
+   -9.399999618530273,
+   0.550000011920929
+  ],
+  "REF_R05_Stand_06": [
+   3.5,
+   -9.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R05_Action_Point": [
+   2.0,
+   -8.0,
+   0.05000000074505806
+  ],
+  "REF_R05_Entry_To_01": [
+   1.4451452493667603,
+   -5.225726127624512,
+   0.05000000074505806
+  ],
+  "REF_R05_Entry_To_03": [
+   5.25,
+   -4.900000095367432,
+   0.05000000074505806
+  ],
+  "REF_R05_Entry_To_04": [
+   -1.2536818981170654,
+   -7.749716758728027,
+   0.05000000074505806
+  ],
+  "REF_R05_Entry_To_08": [
+   3.5999999046325684,
+   -5.0,
+   0.05000000074505806
+  ],
+  "REF_Room_06": [
+   0.0,
+   13.0,
+   0.0
+  ],
+  "REF_R06_Stand_01": [
+   -1.5,
+   14.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R06_Stand_02": [
+   0.0,
+   14.399999618530273,
+   0.550000011920929
+  ],
+  "REF_R06_Stand_03": [
+   1.5,
+   14.100000381469727,
+   0.550000011920929
+  ],
+  "REF_R06_Stand_04": [
+   -1.5,
+   11.899999618530273,
+   0.550000011920929
+  ],
+  "REF_R06_Stand_05": [
+   0.0,
+   11.600000381469727,
+   0.550000011920929
+  ],
+  "REF_R06_Stand_06": [
+   1.5,
+   11.899999618530273,
+   0.550000011920929
+  ],
+  "REF_R06_Action_Point": [
+   0.0,
+   13.0,
+   0.05000000074505806
+  ],
+  "REF_R06_Entry_To_01": [
+   0.0,
+   10.25,
+   0.05000000074505806
+  ],
+  "REF_Room_07": [
+   -10.0,
+   -6.0,
+   -4.0
+  ],
+  "REF_R07_Stand_01": [
+   -11.5,
+   -4.900000095367432,
+   -3.450000047683716
+  ],
+  "REF_R07_Stand_02": [
+   -10.0,
+   -4.599999904632568,
+   -3.450000047683716
+  ],
+  "REF_R07_Stand_03": [
+   -8.5,
+   -4.900000095367432,
+   -3.450000047683716
+  ],
+  "REF_R07_Stand_04": [
+   -11.5,
+   -7.099999904632568,
+   -3.450000047683716
+  ],
+  "REF_R07_Stand_05": [
+   -10.0,
+   -7.400000095367432,
+   -3.450000047683716
+  ],
+  "REF_R07_Stand_06": [
+   -8.5,
+   -7.099999904632568,
+   -3.450000047683716
+  ],
+  "REF_R07_Action_Point": [
+   -10.0,
+   -6.0,
+   -3.950000047683716
+  ],
+  "REF_R07_Entry_To_04": [
+   -12.699999809265137,
+   -8.600000381469727,
+   -3.950000047683716
+  ],
+  "REF_R07_Entry_To_08": [
+   -7.244866371154785,
+   -6.250466823577881,
+   -3.950000047683716
+  ],
+  "REF_Room_08": [
+   1.0,
+   -7.0,
+   -4.0
+  ],
+  "REF_R08_Stand_01": [
+   -0.5,
+   -5.900000095367432,
+   -3.450000047683716
+  ],
+  "REF_R08_Stand_02": [
+   1.0,
+   -5.599999904632568,
+   -3.450000047683716
+  ],
+  "REF_R08_Stand_03": [
+   2.5,
+   -5.900000095367432,
+   -3.450000047683716
+  ],
+  "REF_R08_Stand_04": [
+   -0.5,
+   -8.100000381469727,
+   -3.450000047683716
+  ],
+  "REF_R08_Stand_05": [
+   1.0,
+   -8.399999618530273,
+   -3.450000047683716
+  ],
+  "REF_R08_Stand_06": [
+   2.5,
+   -8.100000381469727,
+   -3.450000047683716
+  ],
+  "REF_R08_Action_Point": [
+   1.0,
+   -7.0,
+   -3.950000047683716
+  ],
+  "REF_R08_Entry_To_05": [
+   2.799999952316284,
+   -10.0,
+   -3.950000047683716
+  ],
+  "REF_R08_Entry_To_07": [
+   -2.2551333904266357,
+   -6.704078674316406,
+   -3.950000047683716
+  ],
+  "REF_R08_Entry_To_09": [
+   4.349999904632568,
+   -4.400000095367432,
+   -3.950000047683716
+  ],
+  "REF_Room_09": [
+   10.0,
+   -5.0,
+   -4.0
+  ],
+  "REF_R09_Stand_01": [
+   8.5,
+   -3.9000000953674316,
+   -3.450000047683716
+  ],
+  "REF_R09_Stand_02": [
+   10.0,
+   -3.5999999046325684,
+   -3.450000047683716
+  ],
+  "REF_R09_Stand_03": [
+   11.5,
+   -3.9000000953674316,
+   -3.450000047683716
+  ],
+  "REF_R09_Stand_04": [
+   8.5,
+   -6.099999904632568,
+   -3.450000047683716
+  ],
+  "REF_R09_Stand_05": [
+   10.0,
+   -6.400000095367432,
+   -3.450000047683716
+  ],
+  "REF_R09_Stand_06": [
+   11.5,
+   -6.099999904632568,
+   -3.450000047683716
+  ],
+  "REF_R09_Action_Point": [
+   10.0,
+   -5.0,
+   -3.950000047683716
+  ],
+  "REF_R09_Entry_To_08": [
+   7.150000095367432,
+   -4.400000095367432,
+   -3.950000047683716
+  ]
+ }
+}

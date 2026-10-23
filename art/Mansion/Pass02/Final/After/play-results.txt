@@ -1,0 +1,400 @@
+OK 9 RoomNodes
+OK 11 LOCK DoorIDs
+OK 6 CharacterActors
+OK existing camera and cutaway
+OK ActionPoint unchanged 1
+OK StandPoint unchanged 1/0
+OK StandPoint baked 1/0 at=(-1.50, 0.00, 3.10) hit=(-1.50, 0.00, 3.10)
+OK StandPoint unchanged 1/1
+OK StandPoint baked 1/1 at=(0.00, 0.00, 3.40) hit=(0.00, 0.00, 3.40)
+OK StandPoint unchanged 1/2
+OK StandPoint baked 1/2 at=(1.50, 0.00, 3.10) hit=(1.50, 0.00, 3.10)
+OK StandPoint unchanged 1/3
+OK StandPoint baked 1/3 at=(-1.50, 0.00, 0.90) hit=(-1.50, 0.00, 0.90)
+OK StandPoint unchanged 1/4
+OK StandPoint baked 1/4 at=(0.00, 0.00, 0.60) hit=(0.00, 0.00, 0.60)
+OK StandPoint unchanged 1/5
+OK StandPoint baked 1/5 at=(1.50, 0.00, 0.90) hit=(1.50, 0.00, 0.90)
+OK physical room floor enabled 1
+OK ActionPoint unchanged 2
+OK StandPoint unchanged 2/0
+OK StandPoint baked 2/0 at=(-13.50, 0.00, 5.10) hit=(-13.50, 0.00, 5.10)
+OK StandPoint unchanged 2/1
+OK StandPoint baked 2/1 at=(-12.00, 0.00, 5.40) hit=(-12.00, 0.00, 5.33)
+OK StandPoint unchanged 2/2
+OK StandPoint baked 2/2 at=(-10.50, 0.00, 5.10) hit=(-10.50, 0.00, 5.10)
+OK StandPoint unchanged 2/3
+OK StandPoint baked 2/3 at=(-13.50, 0.00, 2.90) hit=(-13.50, 0.00, 2.90)
+OK StandPoint unchanged 2/4
+OK StandPoint baked 2/4 at=(-12.00, 0.00, 2.60) hit=(-12.00, 0.00, 2.60)
+OK StandPoint unchanged 2/5
+OK StandPoint baked 2/5 at=(-10.50, 0.00, 2.90) hit=(-10.50, 0.00, 2.90)
+OK physical room floor enabled 2
+OK ActionPoint unchanged 3
+OK StandPoint unchanged 3/0
+OK StandPoint baked 3/0 at=(10.50, 0.00, 5.10) hit=(10.50, 0.00, 5.10)
+OK StandPoint unchanged 3/1
+OK StandPoint baked 3/1 at=(12.00, 0.00, 5.40) hit=(12.00, 0.00, 5.40)
+OK StandPoint unchanged 3/2
+OK StandPoint baked 3/2 at=(13.50, 0.00, 5.10) hit=(13.50, 0.00, 5.10)
+OK StandPoint unchanged 3/3
+OK StandPoint baked 3/3 at=(10.50, 0.00, 2.90) hit=(10.50, 0.00, 2.90)
+OK StandPoint unchanged 3/4
+OK StandPoint baked 3/4 at=(12.00, 0.00, 2.60) hit=(12.00, 0.00, 2.60)
+OK StandPoint unchanged 3/5
+OK StandPoint baked 3/5 at=(13.50, 0.00, 2.90) hit=(13.50, 0.00, 2.90)
+OK physical room floor enabled 3
+OK ActionPoint unchanged 4
+OK StandPoint unchanged 4/0
+OK StandPoint baked 4/0 at=(-12.50, 0.00, -5.90) hit=(-12.50, 0.00, -5.90)
+OK StandPoint unchanged 4/1
+OK StandPoint baked 4/1 at=(-11.00, 0.00, -5.60) hit=(-11.00, 0.00, -5.60)
+OK StandPoint unchanged 4/2
+OK StandPoint baked 4/2 at=(-9.50, 0.00, -5.90) hit=(-9.50, 0.00, -5.90)
+OK StandPoint unchanged 4/3
+OK StandPoint baked 4/3 at=(-12.50, 0.00, -8.10) hit=(-12.50, 0.00, -8.10)
+OK StandPoint unchanged 4/4
+OK StandPoint baked 4/4 at=(-11.00, 0.00, -8.40) hit=(-11.00, 0.00, -8.40)
+OK StandPoint unchanged 4/5
+OK StandPoint baked 4/5 at=(-9.50, 0.00, -8.10) hit=(-9.50, 0.00, -8.10)
+OK physical room floor enabled 4
+OK ActionPoint unchanged 5
+OK StandPoint unchanged 5/0
+OK StandPoint baked 5/0 at=(0.50, 0.00, -6.90) hit=(0.50, 0.00, -6.90)
+OK StandPoint unchanged 5/1
+OK StandPoint baked 5/1 at=(2.00, 0.00, -6.60) hit=(2.00, 0.00, -6.60)
+OK StandPoint unchanged 5/2
+OK StandPoint baked 5/2 at=(3.50, 0.00, -6.90) hit=(3.33, 0.00, -6.90)
+OK StandPoint unchanged 5/3
+OK StandPoint baked 5/3 at=(0.50, 0.00, -9.10) hit=(0.50, 0.00, -9.10)
+OK StandPoint unchanged 5/4
+OK StandPoint baked 5/4 at=(2.00, 0.00, -9.40) hit=(2.00, 0.00, -9.40)
+OK StandPoint unchanged 5/5
+OK StandPoint baked 5/5 at=(3.50, 0.00, -9.10) hit=(3.33, 0.00, -9.10)
+OK physical room floor enabled 5
+OK ActionPoint unchanged 6
+OK StandPoint unchanged 6/0
+OK StandPoint baked 6/0 at=(-1.50, 0.00, 14.10) hit=(-1.50, 0.00, 14.10)
+OK StandPoint unchanged 6/1
+OK StandPoint baked 6/1 at=(0.00, 0.00, 14.40) hit=(0.00, 0.00, 14.40)
+OK StandPoint unchanged 6/2
+OK StandPoint baked 6/2 at=(1.50, 0.00, 14.10) hit=(1.50, 0.00, 14.10)
+OK StandPoint unchanged 6/3
+OK StandPoint baked 6/3 at=(-1.50, 0.00, 11.90) hit=(-1.50, 0.00, 11.90)
+OK StandPoint unchanged 6/4
+OK StandPoint baked 6/4 at=(0.00, 0.00, 11.60) hit=(0.00, 0.00, 11.60)
+OK StandPoint unchanged 6/5
+OK StandPoint baked 6/5 at=(1.50, 0.00, 11.90) hit=(1.50, 0.00, 11.90)
+OK physical room floor enabled 6
+OK ActionPoint unchanged 7
+OK StandPoint unchanged 7/0
+OK StandPoint baked 7/0 at=(-11.50, -4.00, -4.90) hit=(-11.50, -4.00, -4.90)
+OK StandPoint unchanged 7/1
+OK StandPoint baked 7/1 at=(-10.00, -4.00, -4.60) hit=(-10.00, -4.00, -4.60)
+OK StandPoint unchanged 7/2
+OK StandPoint baked 7/2 at=(-8.50, -4.00, -4.90) hit=(-8.50, -4.00, -4.90)
+OK StandPoint unchanged 7/3
+OK StandPoint baked 7/3 at=(-11.50, -4.00, -7.10) hit=(-11.50, -4.00, -7.10)
+OK StandPoint unchanged 7/4
+OK StandPoint baked 7/4 at=(-10.00, -4.00, -7.40) hit=(-10.00, -4.00, -7.40)
+OK StandPoint unchanged 7/5
+OK StandPoint baked 7/5 at=(-8.50, -4.00, -7.10) hit=(-8.50, -4.00, -7.10)
+OK physical room floor enabled 7
+OK ActionPoint unchanged 8
+OK StandPoint unchanged 8/0
+OK StandPoint baked 8/0 at=(-0.50, -4.00, -5.90) hit=(-0.50, -4.00, -5.90)
+OK StandPoint unchanged 8/1
+OK StandPoint baked 8/1 at=(1.00, -4.00, -5.60) hit=(1.00, -4.00, -5.60)
+OK StandPoint unchanged 8/2
+OK StandPoint baked 8/2 at=(2.50, -4.00, -5.90) hit=(2.50, -4.00, -5.90)
+OK StandPoint unchanged 8/3
+OK StandPoint baked 8/3 at=(-0.50, -4.00, -8.10) hit=(-0.50, -4.00, -8.10)
+OK StandPoint unchanged 8/4
+OK StandPoint baked 8/4 at=(1.00, -4.00, -8.40) hit=(1.00, -4.00, -8.40)
+OK StandPoint unchanged 8/5
+OK StandPoint baked 8/5 at=(2.50, -4.00, -8.10) hit=(2.50, -4.00, -8.10)
+OK physical room floor enabled 8
+OK ActionPoint unchanged 9
+OK StandPoint unchanged 9/0
+OK StandPoint baked 9/0 at=(8.50, -4.00, -3.90) hit=(8.50, -4.00, -3.90)
+OK StandPoint unchanged 9/1
+OK StandPoint baked 9/1 at=(10.00, -4.00, -3.60) hit=(10.00, -4.00, -3.60)
+OK StandPoint unchanged 9/2
+OK StandPoint baked 9/2 at=(11.50, -4.00, -3.90) hit=(11.50, -4.00, -3.90)
+OK StandPoint unchanged 9/3
+OK StandPoint baked 9/3 at=(8.50, -4.00, -6.10) hit=(8.50, -4.00, -6.10)
+OK StandPoint unchanged 9/4
+OK StandPoint baked 9/4 at=(10.00, -4.00, -6.40) hit=(10.00, -4.00, -6.40)
+OK StandPoint unchanged 9/5
+OK StandPoint baked 9/5 at=(11.50, -4.00, -6.10) hit=(11.50, -4.00, -6.10)
+OK physical room floor enabled 9
+OK Blender/Unity Entry alignment 1->2
+OK Blender/Unity Entry alignment 1->3
+OK Blender/Unity Entry alignment 1->5
+OK Blender/Unity Entry alignment 1->6
+OK Blender/Unity Entry alignment 2->1
+OK Blender/Unity Entry alignment 2->4
+OK Blender/Unity Entry alignment 3->1
+OK Blender/Unity Entry alignment 3->5
+OK Blender/Unity Entry alignment 4->2
+OK Blender/Unity Entry alignment 4->5
+OK Blender/Unity Entry alignment 4->7
+OK Blender/Unity Entry alignment 5->1
+OK Blender/Unity Entry alignment 5->3
+OK Blender/Unity Entry alignment 5->4
+OK Blender/Unity Entry alignment 5->8
+OK Blender/Unity Entry alignment 6->1
+OK Blender/Unity Entry alignment 7->4
+OK Blender/Unity Entry alignment 7->8
+OK Blender/Unity Entry alignment 8->5
+OK Blender/Unity Entry alignment 8->7
+OK Blender/Unity Entry alignment 8->9
+OK Blender/Unity Entry alignment 9->8
+OK Gallery is decorative, no extra movement node
+OK start Entry sampled 1->2
+OK end Entry sampled 1->2
+OK actual CharacterActor positioned 1->2
+OK complete single NavMesh path 1->2
+OK no long detour 1->2 length=4.03 corners=(-4.77, 0.01, 2.79);(-7.83, 0.01, 3.17);(-8.73, 0.01, 3.46)
+OK path stays in own rooms/corridor 1->2 (-4.77, 0.01, 2.79)
+OK path stays in own rooms/corridor 1->2 (-7.83, 0.01, 3.17)
+OK path stays in own rooms/corridor 1->2 (-8.73, 0.01, 3.46)
+OK actual agent accepted path 1->2
+OK CharacterActor physically traversed 1->2 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 2->1
+OK end Entry sampled 2->1
+OK actual CharacterActor positioned 2->1
+OK complete single NavMesh path 2->1
+OK no long detour 2->1 length=4.03 corners=(-8.73, 0.01, 3.46);(-7.83, 0.01, 3.17);(-4.77, 0.01, 2.79)
+OK path stays in own rooms/corridor 2->1 (-8.73, 0.01, 3.46)
+OK path stays in own rooms/corridor 2->1 (-7.83, 0.01, 3.17)
+OK path stays in own rooms/corridor 2->1 (-4.77, 0.01, 2.79)
+OK actual agent accepted path 2->1
+OK CharacterActor physically traversed 2->1 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 1->3
+OK end Entry sampled 1->3
+OK actual CharacterActor positioned 1->3
+OK complete single NavMesh path 1->3
+OK no long detour 1->3 length=4.02 corners=(4.77, 0.01, 2.79);(8.73, 0.01, 3.46)
+OK path stays in own rooms/corridor 1->3 (4.77, 0.01, 2.79)
+OK path stays in own rooms/corridor 1->3 (8.73, 0.01, 3.46)
+OK actual agent accepted path 1->3
+OK CharacterActor physically traversed 1->3 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 3->1
+OK end Entry sampled 3->1
+OK actual CharacterActor positioned 3->1
+OK complete single NavMesh path 3->1
+OK no long detour 3->1 length=4.02 corners=(8.73, 0.01, 3.46);(4.77, 0.01, 2.79)
+OK path stays in own rooms/corridor 3->1 (8.73, 0.01, 3.46)
+OK path stays in own rooms/corridor 3->1 (4.77, 0.01, 2.79)
+OK actual agent accepted path 3->1
+OK CharacterActor physically traversed 3->1 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 1->5
+OK end Entry sampled 1->5
+OK actual CharacterActor positioned 1->5
+OK complete single NavMesh path 1->5
+OK no long detour 1->5 length=3.02 corners=(0.85, 0.01, -2.27);(1.17, 0.01, -3.17);(1.45, 0.01, -5.23)
+OK path stays in own rooms/corridor 1->5 (0.85, 0.01, -2.27)
+OK path stays in own rooms/corridor 1->5 (1.17, 0.01, -3.17)
+OK path stays in own rooms/corridor 1->5 (1.45, 0.01, -5.23)
+OK actual agent accepted path 1->5
+OK CharacterActor physically traversed 1->5 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 5->1
+OK end Entry sampled 5->1
+OK actual CharacterActor positioned 5->1
+OK complete single NavMesh path 5->1
+OK no long detour 5->1 length=3.02 corners=(1.45, 0.01, -5.23);(1.17, 0.01, -3.17);(0.85, 0.01, -2.27)
+OK path stays in own rooms/corridor 5->1 (1.45, 0.01, -5.23)
+OK path stays in own rooms/corridor 5->1 (1.17, 0.01, -3.17)
+OK path stays in own rooms/corridor 5->1 (0.85, 0.01, -2.27)
+OK actual agent accepted path 5->1
+OK CharacterActor physically traversed 5->1 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 1->6
+OK end Entry sampled 1->6
+OK actual CharacterActor positioned 1->6
+OK complete single NavMesh path 1->6
+OK no long detour 1->6 length=4.00 corners=(0.00, 0.01, 6.25);(0.00, 0.01, 10.25)
+OK path stays in own rooms/corridor 1->6 (0.00, 0.01, 6.25)
+OK path stays in own rooms/corridor 1->6 (0.00, 0.01, 10.25)
+OK actual agent accepted path 1->6
+OK CharacterActor physically traversed 1->6 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 6->1
+OK end Entry sampled 6->1
+OK actual CharacterActor positioned 6->1
+OK complete single NavMesh path 6->1
+OK no long detour 6->1 length=4.00 corners=(0.00, 0.01, 10.25);(0.00, 0.01, 6.25)
+OK path stays in own rooms/corridor 6->1 (0.00, 0.01, 10.25)
+OK path stays in own rooms/corridor 6->1 (0.00, 0.01, 6.25)
+OK actual agent accepted path 6->1
+OK CharacterActor physically traversed 6->1 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 2->4
+OK end Entry sampled 2->4
+OK actual CharacterActor positioned 2->4
+OK complete single NavMesh path 2->4
+OK no long detour 2->4 length=5.51 corners=(-11.75, 0.01, 1.24);(-11.25, 0.01, -4.24)
+OK path stays in own rooms/corridor 2->4 (-11.75, 0.01, 1.24)
+OK path stays in own rooms/corridor 2->4 (-11.25, 0.01, -4.24)
+OK actual agent accepted path 2->4
+OK CharacterActor physically traversed 2->4 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 4->2
+OK end Entry sampled 4->2
+OK actual CharacterActor positioned 4->2
+OK complete single NavMesh path 4->2
+OK no long detour 4->2 length=5.51 corners=(-11.25, 0.01, -4.24);(-11.75, 0.01, 1.24)
+OK path stays in own rooms/corridor 4->2 (-11.25, 0.01, -4.24)
+OK path stays in own rooms/corridor 4->2 (-11.75, 0.01, 1.24)
+OK actual agent accepted path 4->2
+OK CharacterActor physically traversed 4->2 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 3->5
+OK end Entry sampled 3->5
+OK actual CharacterActor positioned 3->5
+OK complete single NavMesh path 3->5
+OK no long detour 3->5 length=9.57 corners=(9.50, 0.01, 1.10);(9.33, 0.01, -4.17);(8.83, 0.01, -4.67);(5.25, 0.01, -4.90)
+OK path stays in own rooms/corridor 3->5 (9.50, 0.01, 1.10)
+OK path stays in own rooms/corridor 3->5 (9.33, 0.01, -4.17)
+OK path stays in own rooms/corridor 3->5 (8.83, 0.01, -4.67)
+OK path stays in own rooms/corridor 3->5 (5.25, 0.01, -4.90)
+OK actual agent accepted path 3->5
+OK CharacterActor physically traversed 3->5 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 5->3
+OK end Entry sampled 5->3
+OK actual CharacterActor positioned 5->3
+OK complete single NavMesh path 5->3
+OK no long detour 5->3 length=9.57 corners=(5.25, 0.01, -4.90);(8.83, 0.01, -4.67);(9.33, 0.01, -4.17);(9.50, 0.01, 1.10)
+OK path stays in own rooms/corridor 5->3 (5.25, 0.01, -4.90)
+OK path stays in own rooms/corridor 5->3 (8.83, 0.01, -4.67)
+OK path stays in own rooms/corridor 5->3 (9.33, 0.01, -4.17)
+OK path stays in own rooms/corridor 5->3 (9.50, 0.01, 1.10)
+OK actual agent accepted path 5->3
+OK CharacterActor physically traversed 5->3 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 4->5
+OK end Entry sampled 4->5
+OK actual CharacterActor positioned 4->5
+OK complete single NavMesh path 4->5
+OK no long detour 4->5 length=6.01 corners=(-7.25, 0.01, -7.29);(-2.33, 0.01, -7.67);(-1.25, 0.01, -7.75)
+OK path stays in own rooms/corridor 4->5 (-7.25, 0.01, -7.29)
+OK path stays in own rooms/corridor 4->5 (-2.33, 0.01, -7.67)
+OK path stays in own rooms/corridor 4->5 (-1.25, 0.01, -7.75)
+OK actual agent accepted path 4->5
+OK CharacterActor physically traversed 4->5 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 5->4
+OK end Entry sampled 5->4
+OK actual CharacterActor positioned 5->4
+OK complete single NavMesh path 5->4
+OK no long detour 5->4 length=6.01 corners=(-1.25, 0.01, -7.75);(-2.33, 0.01, -7.67);(-7.25, 0.01, -7.29)
+OK path stays in own rooms/corridor 5->4 (-1.25, 0.01, -7.75)
+OK path stays in own rooms/corridor 5->4 (-2.33, 0.01, -7.67)
+OK path stays in own rooms/corridor 5->4 (-7.25, 0.01, -7.29)
+OK actual agent accepted path 5->4
+OK CharacterActor physically traversed 5->4 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 7->8
+OK end Entry sampled 7->8
+OK actual CharacterActor positioned 7->8
+OK complete single NavMesh path 7->8
+OK no long detour 7->8 length=5.01 corners=(-7.24, -3.99, -6.25);(-2.26, -3.99, -6.70)
+OK path stays in own rooms/corridor 7->8 (-7.24, -3.99, -6.25)
+OK path stays in own rooms/corridor 7->8 (-2.26, -3.99, -6.70)
+OK actual agent accepted path 7->8
+OK CharacterActor physically traversed 7->8 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 8->7
+OK end Entry sampled 8->7
+OK actual CharacterActor positioned 8->7
+OK complete single NavMesh path 8->7
+OK no long detour 8->7 length=5.01 corners=(-2.26, -3.99, -6.70);(-7.24, -3.99, -6.25)
+OK path stays in own rooms/corridor 8->7 (-2.26, -3.99, -6.70)
+OK path stays in own rooms/corridor 8->7 (-7.24, -3.99, -6.25)
+OK actual agent accepted path 8->7
+OK CharacterActor physically traversed 8->7 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 8->9
+OK end Entry sampled 8->9
+OK actual CharacterActor positioned 8->9
+OK complete single NavMesh path 8->9
+OK no long detour 8->9 length=2.80 corners=(4.35, -3.99, -4.40);(7.15, -3.99, -4.40)
+OK path stays in own rooms/corridor 8->9 (4.35, -3.99, -4.40)
+OK path stays in own rooms/corridor 8->9 (7.15, -3.99, -4.40)
+OK actual agent accepted path 8->9
+OK CharacterActor physically traversed 8->9 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 9->8
+OK end Entry sampled 9->8
+OK actual CharacterActor positioned 9->8
+OK complete single NavMesh path 9->8
+OK no long detour 9->8 length=2.80 corners=(7.15, -3.99, -4.40);(4.35, -3.99, -4.40)
+OK path stays in own rooms/corridor 9->8 (7.15, -3.99, -4.40)
+OK path stays in own rooms/corridor 9->8 (4.35, -3.99, -4.40)
+OK actual agent accepted path 9->8
+OK CharacterActor physically traversed 9->8 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 4->7
+OK end Entry sampled 4->7
+OK actual CharacterActor positioned 4->7
+OK complete single NavMesh path 4->7
+OK no long detour 4->7 length=15.33 corners=(-13.68, 0.01, -4.83);(-13.83, 0.01, -4.67);(-14.50, 0.01, -4.67);(-14.83, 0.01, -5.00);(-14.83, -3.99, -12.17);(-14.50, -3.99, -12.50);(-13.17, -3.99, -12.50);(-12.83, -3.99, -11.50);(-12.70, -3.99, -8.60)
+OK path stays in own rooms/corridor 4->7 (-13.68, 0.01, -4.83)
+OK path stays in own rooms/corridor 4->7 (-13.83, 0.01, -4.67)
+OK path stays in own rooms/corridor 4->7 (-14.50, 0.01, -4.67)
+OK path stays in own rooms/corridor 4->7 (-14.83, 0.01, -5.00)
+OK path stays in own rooms/corridor 4->7 (-14.83, -3.99, -12.17)
+OK path stays in own rooms/corridor 4->7 (-14.50, -3.99, -12.50)
+OK path stays in own rooms/corridor 4->7 (-13.17, -3.99, -12.50)
+OK path stays in own rooms/corridor 4->7 (-12.83, -3.99, -11.50)
+OK path stays in own rooms/corridor 4->7 (-12.70, -3.99, -8.60)
+OK actual agent accepted path 4->7
+OK CharacterActor physically traversed 4->7 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 7->4
+OK end Entry sampled 7->4
+OK actual CharacterActor positioned 7->4
+OK complete single NavMesh path 7->4
+OK no long detour 7->4 length=15.33 corners=(-12.70, -3.99, -8.60);(-12.83, -3.99, -11.50);(-13.17, -3.99, -12.50);(-14.50, -3.99, -12.50);(-14.83, -3.99, -12.17);(-14.83, 0.01, -5.00);(-14.50, 0.01, -4.67);(-13.83, 0.01, -4.67);(-13.68, 0.01, -4.83)
+OK path stays in own rooms/corridor 7->4 (-12.70, -3.99, -8.60)
+OK path stays in own rooms/corridor 7->4 (-12.83, -3.99, -11.50)
+OK path stays in own rooms/corridor 7->4 (-13.17, -3.99, -12.50)
+OK path stays in own rooms/corridor 7->4 (-14.50, -3.99, -12.50)
+OK path stays in own rooms/corridor 7->4 (-14.83, -3.99, -12.17)
+OK path stays in own rooms/corridor 7->4 (-14.83, 0.01, -5.00)
+OK path stays in own rooms/corridor 7->4 (-14.50, 0.01, -4.67)
+OK path stays in own rooms/corridor 7->4 (-13.83, 0.01, -4.67)
+OK path stays in own rooms/corridor 7->4 (-13.68, 0.01, -4.83)
+OK actual agent accepted path 7->4
+OK CharacterActor physically traversed 7->4 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 5->8
+OK end Entry sampled 5->8
+OK actual CharacterActor positioned 5->8
+OK complete single NavMesh path 5->8
+OK no long detour 5->8 length=14.14 corners=(3.60, 0.01, -5.00);(4.33, 0.01, -5.17);(4.67, 0.01, -5.50);(4.83, -3.99, -12.50);(4.33, -3.99, -13.00);(3.33, -3.99, -13.00);(3.00, -3.99, -12.67);(2.80, -3.99, -10.00)
+OK path stays in own rooms/corridor 5->8 (3.60, 0.01, -5.00)
+OK path stays in own rooms/corridor 5->8 (4.33, 0.01, -5.17)
+OK path stays in own rooms/corridor 5->8 (4.67, 0.01, -5.50)
+OK path stays in own rooms/corridor 5->8 (4.83, -3.99, -12.50)
+OK path stays in own rooms/corridor 5->8 (4.33, -3.99, -13.00)
+OK path stays in own rooms/corridor 5->8 (3.33, -3.99, -13.00)
+OK path stays in own rooms/corridor 5->8 (3.00, -3.99, -12.67)
+OK path stays in own rooms/corridor 5->8 (2.80, -3.99, -10.00)
+OK actual agent accepted path 5->8
+OK CharacterActor physically traversed 5->8 without wall penetration, unsupported steps or fallback
+OK start Entry sampled 8->5
+OK end Entry sampled 8->5
+OK actual CharacterActor positioned 8->5
+OK complete single NavMesh path 8->5
+OK no long detour 8->5 length=14.14 corners=(2.80, -3.99, -10.00);(3.00, -3.99, -12.67);(3.33, -3.99, -13.00);(4.33, -3.99, -13.00);(4.83, -3.99, -12.50);(4.67, 0.01, -5.50);(4.33, 0.01, -5.17);(3.60, 0.01, -5.00)
+OK path stays in own rooms/corridor 8->5 (2.80, -3.99, -10.00)
+OK path stays in own rooms/corridor 8->5 (3.00, -3.99, -12.67)
+OK path stays in own rooms/corridor 8->5 (3.33, -3.99, -13.00)
+OK path stays in own rooms/corridor 8->5 (4.33, -3.99, -13.00)
+OK path stays in own rooms/corridor 8->5 (4.83, -3.99, -12.50)
+OK path stays in own rooms/corridor 8->5 (4.67, 0.01, -5.50)
+OK path stays in own rooms/corridor 8->5 (4.33, 0.01, -5.17)
+OK path stays in own rooms/corridor 8->5 (3.60, 0.01, -5.00)
+OK actual agent accepted path 8->5
+OK CharacterActor physically traversed 8->5 without wall penetration, unsupported steps or fallback
+OK secret event active
+OK secret logical 1P transition 9->6
+OK actual CharacterActor secret transition, no airborne tunnel 9->6
+OK secret logical 1P transition 6->9
+OK actual CharacterActor secret transition, no airborne tunnel 6->9
+OK active secret wall opening clears panel collider
+OK active secret wall opening clears panel collider
+OK door event state visuals preserved
+OK smoke event preserved
+OK restart clears all public effects
+OK existing single-player E2E assertions=2461
+OK actual play camera final 27 zoom captures and 9 top views
+MANSION_ENVIRONMENT_STRUCTURE_FINAL: OK

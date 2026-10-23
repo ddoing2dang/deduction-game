@@ -1,0 +1,1 @@
+63 actual Unity Play camera captures; nine rooms x (3 zooms, top/front/side/iso); UI rendered through existing Canvas with modes restored.

@@ -1,0 +1,10 @@
+OK 878 Blender/Unity visible mesh bounds aligned; 13980 tris; 323 new instances use 23 shared meshes
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 1
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 2
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 3
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 4
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 5
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 6
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 7
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 8
+OK six actual CharacterActors visible with no furniture/door/stair occlusion in Room 9
