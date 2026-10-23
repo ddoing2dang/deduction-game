@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public static class ProjectBootstrap
 {
     private const string ScenePath = "Assets/_Game/Scenes/Game.unity";
-    private const int SceneLayoutVersion = 2;
+    private const int SceneLayoutVersion = 3;
     private const string SceneVersionKey = "DeductionGame.SceneLayoutVersion";
 
     private static readonly string[] RoomNames =
@@ -44,6 +44,7 @@ public static class ProjectBootstrap
         CreateCamera();
         CreateLight();
         CreateRooms();
+        CreateConnections();
 
         EditorSceneManager.SaveScene(scene, ScenePath);
         EditorBuildSettings.scenes = new[]
@@ -90,6 +91,55 @@ public static class ProjectBootstrap
         light.type = LightType.Directional;
         light.intensity = 1.2f;
         go.transform.rotation = Quaternion.Euler(50f, -30f, 0f);
+    }
+
+    private static void CreateConnections()
+    {
+        var root = new GameObject("Mansion_Connections").transform;
+        int[,] links =
+        {
+            {1,2},{1,3},{1,5},{1,6},{2,4},{3,5},
+            {4,5},{4,7},{5,8},{7,8},{8,9}
+        };
+
+        for (int i = 0; i < links.GetLength(0); i++)
+        {
+            int a = links[i,0], b = links[i,1];
+            Vector3 from = MansionLayout.GetRoom(a).Center;
+            Vector3 to = MansionLayout.GetRoom(b).Center;
+            CreateConnection(root, a, b, from, to);
+        }
+
+        var secret = new GameObject("DOOR_09_06_SECRET");
+        secret.transform.SetParent(root);
+        secret.transform.position = (MansionLayout.GetRoom(9).Center + MansionLayout.GetRoom(6).Center) * 0.5f;
+        secret.SetActive(false);
+    }
+
+    private static void CreateConnection(Transform root, int a, int b, Vector3 from, Vector3 to)
+    {
+        var group = new GameObject($"DOOR_{a:00}_{b:00}").transform;
+        group.SetParent(root);
+
+        Vector3 delta = to - from;
+        bool changesFloor = Mathf.Abs(delta.y) > 1f;
+
+        var passage = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        passage.name = changesFloor ? "ServiceStair" : "Passage";
+        passage.transform.SetParent(group);
+        passage.transform.position = (from + to) * 0.5f + Vector3.up * 0.08f;
+        passage.transform.localScale = new Vector3(2f, 0.16f, Mathf.Max(2f, new Vector2(delta.x, delta.z).magnitude));
+        passage.transform.rotation = Quaternion.Euler(
+            changesFloor ? Mathf.Atan2(delta.y, new Vector2(delta.x, delta.z).magnitude) * Mathf.Rad2Deg : 0f,
+            Mathf.Atan2(delta.x, delta.z) * Mathf.Rad2Deg,
+            0f);
+
+        var door = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        door.name = "DoorMarker";
+        door.transform.SetParent(group);
+        door.transform.position = Vector3.Lerp(from, to, 0.5f) + Vector3.up * 1.1f;
+        door.transform.localScale = new Vector3(1.6f, 2.2f, 0.18f);
+        door.transform.rotation = Quaternion.Euler(0f, Mathf.Atan2(delta.x, delta.z) * Mathf.Rad2Deg, 0f);
     }
 
     private static void CreateRooms()
