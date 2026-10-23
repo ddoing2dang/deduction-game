@@ -27,6 +27,9 @@ namespace DeductionGame
 
             var sources = new List<NavMeshBuildSource>();
             var markups = new List<NavMeshBuildMarkup>();
+            foreach (var obstacle in Object.FindObjectsByType<MansionRepairObstacle>(FindObjectsSortMode.None))
+                markups.Add(new NavMeshBuildMarkup { root = obstacle.transform, overrideArea = true,
+                    area = NavMesh.GetAreaFromName("Not Walkable") });
 
             NavMeshBuilder.CollectSources(
                 bounds,
@@ -37,6 +40,8 @@ namespace DeductionGame
                 sources);
 
             NavMeshBuildSettings settings = NavMesh.GetSettingsByIndex(0);
+            // Detail heights keep actor feet on the actual sloped stair colliders.
+            if (MapData.Theme == MapTheme.Mansion) settings.buildHeightMesh = true;
             navMeshData = NavMeshBuilder.BuildNavMeshData(
                 settings,
                 sources,

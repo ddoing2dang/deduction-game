@@ -1,0 +1,25 @@
+{
+  "passage_intersections": [],
+  "headroom": [
+    {
+      "door": [
+        4,
+        7
+      ],
+      "obstructions": []
+    },
+    {
+      "door": [
+        5,
+        8
+      ],
+      "obstructions": []
+    }
+  ],
+  "stand_issues": [],
+  "stair_wall_intersections": [],
+  "collision_envelope_headroom_obstructions": [],
+  "references_preserved": true,
+  "gallery_step_difference": -0.0,
+  "status": "OK"
+}

@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public static class ProjectBootstrap
 {
     private const string ScenePath = "Assets/_Game/Scenes/Game.unity";
-    private const int SceneLayoutVersion = 5;
+    private const int SceneLayoutVersion = 6;
     // A validation copy or another checkout must not suppress this project's upgrade.
     private static readonly string SceneVersionKey = "DeductionGame.SceneLayoutVersion:" + Application.dataPath;
 
@@ -48,6 +48,15 @@ public static class ProjectBootstrap
         if (sceneExists && appliedVersion >= SceneLayoutVersion)
             return;
 
+        if (sceneExists && appliedVersion == 5 && EditorPrefs.GetInt(SceneVersionKey + ".Theme", 0) == 0)
+        {
+            var existing = EditorSceneManager.OpenScene(ScenePath);
+            MansionStructuralRepair.ApplyToScene();
+            EditorSceneManager.SaveScene(existing);
+            EditorPrefs.SetInt(SceneVersionKey, SceneLayoutVersion);
+            return;
+        }
+
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
         var selection = new GameObject("MapTheme").AddComponent<MapThemeSettings>();
@@ -60,6 +69,7 @@ public static class ProjectBootstrap
         CreateLight();
         CreateRooms();
         CreateConnections();
+        MansionStructuralRepair.ApplyToScene();
 
         EditorSceneManager.SaveScene(scene, ScenePath);
         EditorBuildSettings.scenes = new[]

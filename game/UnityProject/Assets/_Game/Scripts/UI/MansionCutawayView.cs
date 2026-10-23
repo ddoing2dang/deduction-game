@@ -62,7 +62,10 @@ namespace DeductionGame
 
                 Transform coveringRoom = FindRoomRoot(layout.Id);
                 if (coveringRoom != null)
+                {
                     SetFloorVisible(coveringRoom, false);
+                    SetForegroundWallVisible(coveringRoom, false);
+                }
             }
         }
 
@@ -89,7 +92,6 @@ namespace DeductionGame
             Renderer[] renderers = walls.GetComponentsInChildren<Renderer>(true);
             for (int i = 0; i < renderers.Length; i++) {
                 renderers[i].enabled = visible;
-                var collider=renderers[i].GetComponent<Collider>(); if(collider!=null)collider.enabled=visible;
             }
         }
 
@@ -106,7 +108,6 @@ namespace DeductionGame
                 Renderer renderer = wall.GetComponent<Renderer>();
                 if (renderer != null)
                     renderer.enabled = visible;
-                var collider=wall.GetComponent<Collider>(); if(collider!=null)collider.enabled=visible;
             }
         }
 
@@ -118,7 +119,6 @@ namespace DeductionGame
             Renderer renderer = floor.GetComponent<Renderer>();
             if (renderer != null)
                 renderer.enabled = visible;
-            var collider=floor.GetComponent<Collider>(); if(collider!=null)collider.enabled=visible;
         }
 
         private static bool FootprintsOverlap(MansionRoomLayout a, MansionRoomLayout b)
