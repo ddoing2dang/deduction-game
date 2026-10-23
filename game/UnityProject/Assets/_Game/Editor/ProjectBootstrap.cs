@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public static class ProjectBootstrap
 {
     private const string ScenePath = "Assets/_Game/Scenes/Game.unity";
+    private const int SceneLayoutVersion = 2;
+    private const string SceneVersionKey = "DeductionGame.SceneLayoutVersion";
 
     private static readonly string[] RoomNames =
     {
@@ -29,7 +31,9 @@ public static class ProjectBootstrap
         ConfigurePcProject();
         Directory.CreateDirectory("Assets/_Game/Scenes");
 
-        if (File.Exists(ScenePath))
+        bool sceneExists = File.Exists(ScenePath);
+        int appliedVersion = EditorPrefs.GetInt(SceneVersionKey, 0);
+        if (sceneExists && appliedVersion >= SceneLayoutVersion)
             return;
 
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
@@ -49,9 +53,10 @@ public static class ProjectBootstrap
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+        EditorPrefs.SetInt(SceneVersionKey, SceneLayoutVersion);
         EditorSceneManager.OpenScene(ScenePath);
 
-        Debug.Log("[DeductionGame] Game scene 자동 생성 완료. Play를 누르면 바로 시작됩니다.");
+        Debug.Log($"[DeductionGame] Game scene layout v{SceneLayoutVersion} 자동 갱신 완료.");
     }
 
     private static void ConfigurePcProject()
