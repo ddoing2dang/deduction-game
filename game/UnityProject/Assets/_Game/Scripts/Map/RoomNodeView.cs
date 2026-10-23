@@ -8,6 +8,7 @@ namespace DeductionGame
         [SerializeField] private string roomName;
         public int RoomId => roomId;
 
+        private readonly ScreenLabel label = new();
         private LineRenderer hint;
         private void LateUpdate(){
             var gm=GameManager.Instance; if(gm==null || gm.Human==null)return;
@@ -20,8 +21,9 @@ namespace DeductionGame
             var ui=FindFirstObjectByType<RuntimeGameUI>();
             Color color=gm.Human.RoomId==roomId?Color.cyan:ui!=null && ui.SelectedRoom==roomId?Color.yellow:gm.MoveReason(roomId)==""?Color.green:new Color(0.4f,0.4f,0.4f,0.3f);
             hint.startColor=hint.endColor=color;var floor=GetComponent<Renderer>();hint.enabled=floor==null || floor.enabled;
+            UpdateLabel();
         }
-        private void OnDestroy(){if(hint!=null){Destroy(hint.sharedMaterial);Destroy(hint.gameObject);}}
+        private void OnDestroy(){label.Dispose();if(hint!=null){Destroy(hint.sharedMaterial);Destroy(hint.gameObject);}}
 
         private void Start()
         {
@@ -46,8 +48,9 @@ namespace DeductionGame
                 { var ui=FindFirstObjectByType<RuntimeGameUI>();if(ui!=null)ui.SelectRoom(roomId); GameManager.Instance.TryMoveHuman(roomId); }
         }
 
-        private void OnGUI()
+        private void UpdateLabel()
         {
+            label.Hide();
             var cam = Camera.main;
             if (cam == null || GameManager.Instance != null && GameManager.Instance.Phase == GamePhase.GameOver) return;
             var renderer=GetComponent<Renderer>();if(renderer!=null && !renderer.enabled)return;
@@ -57,7 +60,7 @@ namespace DeductionGame
             var rect = new Rect(screen.x - 60, Screen.height - screen.y + 25, 120, 24);
             var gm=GameManager.Instance;
             string state=gm!=null && gm.Human!=null ? gm.Human.RoomId==roomId?" [현재]":gm.MoveReason(roomId)==""?$" [{gm.PreviewMovementCost(roomId)}P 이동가능]":"" : "";
-            rect.width=210;GUI.Box(rect, $"{roomId}. {roomName}"+(MapData.Theme==MapTheme.Mansion?"":" / "+CardRules.Locations[roomId-1])+state);
+            label.Draw(screen,$"{roomId}. {roomName}"+(MapData.Theme==MapTheme.Mansion?"":" / "+CardRules.Locations[roomId-1])+state,300,new Vector2(45,-37));
         }
     }
 }

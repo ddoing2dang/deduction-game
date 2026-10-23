@@ -29,7 +29,7 @@ namespace DeductionGame
         private bool initialized;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-        private static void Attach()
+        public static void Attach()
         {
             if (FindFirstObjectByType<MansionEventView>() == null)
                 new GameObject("MansionEventView").AddComponent<MansionEventView>();

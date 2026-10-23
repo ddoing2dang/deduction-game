@@ -16,7 +16,7 @@ namespace DeductionGame
         private int zoomIndex = 1;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-        private static void Attach()
+        public static void Attach()
         {
             Camera cam = Camera.main;
             if (cam != null && cam.GetComponent<PcCameraController>() == null)

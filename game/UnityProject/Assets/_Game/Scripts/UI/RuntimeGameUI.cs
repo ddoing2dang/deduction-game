@@ -35,7 +35,7 @@ namespace DeductionGame {
  public bool Ready => status!=null;
  public void ResetSelections(){weapon=suspect=location=0;room=target=1;history.Clear();important.Clear();readNotes=0;notice="";noticeUntil=0;lastEvents="";if(Ready){transform.Find("Actions").GetComponent<ScrollRect>().verticalNormalizedPosition=1;}}
  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
- static void Attach(){if(FindFirstObjectByType<RuntimeGameUI>()==null)new GameObject("RuntimeGameUI").AddComponent<RuntimeGameUI>();}
+ public static void Attach(){if(FindFirstObjectByType<RuntimeGameUI>()==null)new GameObject("RuntimeGameUI").AddComponent<RuntimeGameUI>();}
  void Start(){
  gm=GameManager.Instance;if(gm==null)return;
  history.AddRange(gm.PublicLog);gm.PublicMessage+=ReceivePublic;
@@ -45,7 +45,7 @@ namespace DeductionGame {
  gameObject.AddComponent<GraphicRaycaster>();
  if(EventSystem.current==null)new GameObject("EventSystem",typeof(EventSystem),typeof(StandaloneInputModule));
  var left=Panel("Actions",new Vector2(0,0),new Vector2(0.26f,1));
- var scroll=left.gameObject.AddComponent<ScrollRect>();scroll.horizontal=false;
+ var scroll=left.gameObject.AddComponent<ScrollRect>();scroll.horizontal=false;scroll.scrollSensitivity=40f;
  var viewport=Node("Viewport",left);Stretch(viewport);viewport.gameObject.AddComponent<RectMask2D>();scroll.viewport=viewport;
  var content=Node("Content",viewport);content.anchorMin=new Vector2(0,1);content.anchorMax=Vector2.one;content.pivot=new Vector2(0.5f,1);content.offsetMin=Vector2.zero;content.offsetMax=Vector2.zero;
  var layout=content.gameObject.AddComponent<VerticalLayoutGroup>();layout.padding=new RectOffset(12,12,12,12);layout.spacing=5;layout.childControlHeight=true;layout.childForceExpandHeight=false;
@@ -90,7 +90,7 @@ namespace DeductionGame {
  Refresh();
  }
  Text ScrollableText(string id,RectTransform panel) {
- var scroll=panel.gameObject.AddComponent<ScrollRect>();scroll.horizontal=false;
+ var scroll=panel.gameObject.AddComponent<ScrollRect>();scroll.horizontal=false;scroll.scrollSensitivity=40f;
  var viewport=Node("Viewport",panel);Stretch(viewport);viewport.gameObject.AddComponent<RectMask2D>();scroll.viewport=viewport;
  var text=Label(id,viewport,0);var rect=text.rectTransform;rect.anchorMin=new Vector2(0,1);rect.anchorMax=Vector2.one;rect.pivot=new Vector2(0.5f,1);rect.offsetMin=Vector2.zero;rect.offsetMax=Vector2.zero;
  text.verticalOverflow=VerticalWrapMode.Overflow;text.gameObject.AddComponent<ContentSizeFitter>().verticalFit=ContentSizeFitter.FitMode.PreferredSize;scroll.content=rect;return text;

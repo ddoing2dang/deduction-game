@@ -134,9 +134,12 @@ namespace DeductionGame
     {
         public int PlayerId;
         public string DisplayName;
+        private readonly ScreenLabel label = new();
+        private void OnDestroy(){label.Dispose();}
 
-        private void OnGUI()
+        private void LateUpdate()
         {
+            label.Hide();
             if (!gameObject.activeInHierarchy || GameManager.Instance != null && GameManager.Instance.Phase == GamePhase.GameOver) return;
             var cam = Camera.main;
             if (cam == null) return;
@@ -144,10 +147,7 @@ namespace DeductionGame
             Vector3 screen = cam.WorldToScreenPoint(transform.position + Vector3.up * 1.3f);
             if (screen.z <= 0 || screen.x-50 < Screen.width*0.27f || screen.x+50 > Screen.width*0.76f || screen.y < Screen.height*0.23f || screen.y > Screen.height*0.81f) return;
 
-            GUI.Box(
-                new Rect(screen.x - 30 + (PlayerId % 3 - 1) * 18, Screen.height - screen.y - 12 - (PlayerId / 3) * 14, 60, 22),
-                DisplayName
-            );
+            label.Draw(screen,DisplayName,85,new Vector2((PlayerId%3-1)*18,10+(PlayerId/3)*14));
         }
     }
 }

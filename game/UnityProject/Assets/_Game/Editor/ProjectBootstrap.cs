@@ -83,6 +83,7 @@ public static class ProjectBootstrap
         PlayerSettings.defaultScreenHeight = 1080;
         PlayerSettings.fullScreenMode = FullScreenMode.FullScreenWindow;
         PlayerSettings.runInBackground = true;
+        PlayerSettings.resizableWindow = true;
         PlayerSettings.colorSpace = ColorSpace.Linear;
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64);
     }

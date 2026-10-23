@@ -7,6 +7,7 @@ namespace DeductionGame
     public sealed partial class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
+        private bool sceneRestorePending;
 
         private readonly List<PlayerState> players = new();
         private readonly List<string> publicLog = new();
@@ -91,12 +92,20 @@ namespace DeductionGame
         {
             if (Instance != null && Instance != this)
             {
+                Instance.sceneRestorePending = true;
                 Destroy(gameObject);
                 return;
             }
 
             Instance = this;
             DontDestroyOnLoad(gameObject);
+        }
+
+        public void RestoreAfterSceneReload() {
+            if (!sceneRestorePending) return;
+            sceneRestorePending = false;
+            RuntimeBoardView.Ensure(this);
+            StartNewGame();
         }
 
         private void Start()
