@@ -1,0 +1,33 @@
+{
+  "approved_source_sha256": "145420f730c065b405198f761e8e618b8b29c063428fae2b3c46225a4918a71a",
+  "approved_source_unchanged": true,
+  "face_lod0_basis_max_delta": 0.0,
+  "lod_tris": [
+    30385,
+    16539,
+    9059
+  ],
+  "bones": 102,
+  "humanoid_mappings": 54,
+  "avatar_valid": true,
+  "avatar_human": true,
+  "smr_stored": 21,
+  "smr_active_per_lod": 7,
+  "materials": 9,
+  "textures": 10,
+  "texture_max_dimension": 2048,
+  "required_shapes": 11,
+  "shared_shapes_per_face_lod": 25,
+  "representative_clips": 5,
+  "animator_states_passed": 9,
+  "basic_traversals_passed": 22,
+  "standpoints_passed": 54,
+  "actionpoints_passed": 9,
+  "singleplayer_assertions": 2461,
+  "room_zoom_captures": 27,
+  "action_camera_close_and_return_passed": true,
+  "direct_visual_review": "PASSED",
+  "saved_game_blend_reopened": true,
+  "android_device_fps_measured": false,
+  "final_editor_api": "ApprovedVRoidGame_v12"
+}

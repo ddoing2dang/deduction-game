@@ -1,0 +1,71 @@
+{
+  "Neutral": {},
+  "Smile": {
+    "Fcl_ALL_Fun": 0.75
+  },
+  "Happy": {
+    "Fcl_ALL_Joy": 0.8
+  },
+  "Suspicious": {
+    "Fcl_EYE_Angry": 0.3,
+    "Fcl_BRW_Angry": 0.25,
+    "Fcl_MTH_Small": 0.15
+  },
+  "Angry": {
+    "Fcl_ALL_Angry": 1
+  },
+  "Surprised": {
+    "Fcl_ALL_Surprised": 1
+  },
+  "Worried": {
+    "Fcl_BRW_Sorrow": 0.7,
+    "Fcl_MTH_Sorrow": 0.4
+  },
+  "Thinking": {
+    "Fcl_EYE_Angry": 0.2,
+    "Fcl_BRW_Sorrow": 0.25
+  },
+  "Smirk": {
+    "Fcl_MTH_Fun": 0.6
+  },
+  "Sad": {
+    "Fcl_ALL_Sorrow": 1
+  },
+  "Blink_L": {
+    "Fcl_EYE_Close_L": 1
+  },
+  "Blink_R": {
+    "Fcl_EYE_Close_R": 1
+  },
+  "EyeLook_L": {},
+  "EyeLook_R": {},
+  "EyeLook_Up": {},
+  "EyeLook_Down": {},
+  "Brow_Up": {
+    "Fcl_BRW_Surprised": 1
+  },
+  "Brow_Down": {
+    "Fcl_BRW_Angry": 1
+  },
+  "Mouth_Open": {
+    "Fcl_MTH_A": 1
+  },
+  "Surprise": {
+    "Fcl_ALL_Surprised": 1
+  },
+  "Mouth_A": {
+    "Fcl_MTH_A": 1
+  },
+  "Mouth_I": {
+    "Fcl_MTH_I": 1
+  },
+  "Mouth_U": {
+    "Fcl_MTH_U": 1
+  },
+  "Mouth_E": {
+    "Fcl_MTH_E": 1
+  },
+  "Mouth_O": {
+    "Fcl_MTH_O": 1
+  }
+}

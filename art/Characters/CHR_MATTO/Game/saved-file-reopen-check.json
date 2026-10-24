@@ -1,0 +1,11 @@
+{
+  "reopen_success": true,
+  "bones": 102,
+  "meshes": 21,
+  "tris": {
+    "0": 30385,
+    "1": 16539,
+    "2": 9059
+  },
+  "nonzero_shape_defaults": []
+}

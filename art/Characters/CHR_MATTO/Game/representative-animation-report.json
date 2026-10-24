@@ -1,0 +1,11 @@
+{
+  "clips": [
+    "MATTO_Idle",
+    "MATTO_Walk",
+    "MATTO_Investigate",
+    "MATTO_Suspect",
+    "MATTO_Deduction"
+  ],
+  "source": "Current approved VRoid skeleton; five representative roles only",
+  "new_final_18_clip_library": false
+}

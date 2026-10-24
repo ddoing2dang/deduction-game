@@ -1,0 +1,23 @@
+ACC_MATTO_Beret_LOD0 vertices=1685 tris=2200 weightedBones=1 shapes=0
+ACC_MATTO_Beret_LOD1 vertices=905 tris=1100 weightedBones=1 shapes=0
+ACC_MATTO_Beret_LOD2 vertices=419 tris=462 weightedBones=1 shapes=0
+Accessory_LOD0 vertices=2891 tris=1300 weightedBones=5 shapes=0
+Accessory_LOD1 vertices=1556 tris=650 weightedBones=5 shapes=0
+Accessory_LOD2 vertices=678 tris=272 weightedBones=5 shapes=0
+Body_LOD0 vertices=2649 tris=3900 weightedBones=56 shapes=0
+Body_LOD1 vertices=1516 tris=1950 weightedBones=54 shapes=0
+Body_LOD2 vertices=764 tris=818 weightedBones=54 shapes=0
+Face_LOD0 vertices=4420 tris=7485 weightedBones=3 shapes=25
+Face_LOD1 vertices=3184 tris=5089 weightedBones=3 shapes=25
+Face_LOD2 vertices=1951 tris=2619 weightedBones=3 shapes=25
+Hair_Main_LOD0 vertices=5229 tris=7200 weightedBones=40 shapes=0
+Hair_Main_LOD1 vertices=2898 tris=3600 weightedBones=40 shapes=0
+Hair_Main_LOD2 vertices=1387 tris=1512 weightedBones=40 shapes=0
+Outfit_LOD0 vertices=4351 tris=6400 weightedBones=15 shapes=0
+Outfit_LOD1 vertices=2587 tris=3200 weightedBones=17 shapes=0
+Outfit_LOD2 vertices=2372 tris=2978 weightedBones=17 shapes=0
+Shoes_LOD0 vertices=1325 tris=1900 weightedBones=4 shapes=0
+Shoes_LOD1 vertices=733 tris=950 weightedBones=4 shapes=0
+Shoes_LOD2 vertices=390 tris=398 weightedBones=4 shapes=0
+Stored SMRs=21; active LOD SMRs=7; authored bones=102; unique weighted transforms=101
+Materials=9 mainTextures=6; total referenced textures including normals/emission/matcap=10

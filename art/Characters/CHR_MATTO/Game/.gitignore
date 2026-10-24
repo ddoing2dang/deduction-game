@@ -1,0 +1,6 @@
+*.blend1
+*.log
+Verification/**/*.png
+!Verification/Review/*.png
+Verification/**/error.txt
+Verification/**/final-capture-error.txt

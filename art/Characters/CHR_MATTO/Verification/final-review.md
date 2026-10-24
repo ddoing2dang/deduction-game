@@ -1,5 +1,10 @@
 # CHR_MATTO pilot final self-review — 2026-10-24
 
+> Historical report for the discarded procedural pilot. This is not acceptance
+> of the approved VRoid character. Current source/specification and verification
+> are in ../Game/CHR_MATTO_GAME.blend, ../CHARACTER_STANDARD.md and
+> ../Game/Verification/final-review.md. Do not restore or apply the old model.
+
 **검증: OK** — pilot character and reusable Humanoid contract v1.
 
 The user-provided Matto turnaround, actual Blender renders, and actual Unity

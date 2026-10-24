@@ -1,0 +1,392 @@
+{
+  "materials": [
+    {
+      "name": "MAT_MATTO_Body",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        0.9301108717918396,
+        0.6239604353904724,
+        0.7083759307861328,
+        1
+      ],
+      "texture": "MATTO__10.png",
+      "normal": "MATTO__11.png",
+      "emission": null,
+      "matcap": "MATTO_MatcapWarp.png",
+      "emissionColor": [
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "matcapColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "cutoff": 0.5,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_Brass",
+      "baseColor": [
+        0.4300000071525574,
+        0.25,
+        0.11500000208616257,
+        1.0
+      ],
+      "shadeColor": [
+        0.61,
+        0.61,
+        0.61,
+        1
+      ],
+      "texture": null,
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0.6499999761581421,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_ColorPalette",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.61,
+        0.61,
+        0.61,
+        1
+      ],
+      "texture": "MATTO_LinearPalette.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true
+    },
+    {
+      "name": "MAT_MATTO_FaceHighlight",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "texture": "MATTO_FaceAtlas.png",
+      "normal": "MATTO_FaceNormalAtlas.png",
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "matcapColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "cutoff": 0.20000000298023224,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_FaceInk",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "texture": "MATTO_FaceAtlas.png",
+      "normal": "MATTO_FaceNormalAtlas.png",
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "matcapColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "cutoff": 0.3499999940395355,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_FaceWarm",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        0.9100000262260437,
+        0.7699999809265137,
+        0.8100000023841858,
+        1
+      ],
+      "texture": "MATTO_FaceAtlas.png",
+      "normal": "MATTO_FaceNormalAtlas.png",
+      "emission": null,
+      "matcap": "MATTO_MatcapWarp.png",
+      "emissionColor": [
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "matcapColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "cutoff": 0.5,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_FaceWhite",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "texture": "MATTO_FaceAtlas.png",
+      "normal": "MATTO_FaceNormalAtlas.png",
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "matcapColor": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "cutoff": 0.5,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_Hair",
+      "baseColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColor": [
+        0.7400000095367432,
+        0.7200000286102295,
+        0.800000011920929,
+        1
+      ],
+      "texture": "MATTO__16.png",
+      "normal": "MATTO_N00_000_Hair_00_nml.png",
+      "emission": "MATTO__17.png",
+      "matcap": "MATTO_MatcapWarp.png",
+      "emissionColor": [
+        0.8588235378265381,
+        0.5411764979362488,
+        0.23137255012989044,
+        1
+      ],
+      "matcapColor": [
+        0.2199999988079071,
+        0.2199999988079071,
+        0.23999999463558197,
+        1
+      ],
+      "cutoff": 0.5,
+      "metallic": 0,
+      "linear": false
+    },
+    {
+      "name": "MAT_MATTO_Tartan",
+      "baseColor": [
+        0.037,
+        0.032,
+        0.043,
+        1
+      ],
+      "shadeColor": [
+        0.61,
+        0.61,
+        0.61,
+        1
+      ],
+      "texture": "MATTO_MATTO_Subtle_Tartan.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": false
+    }
+  ],
+  "images": [
+    {
+      "name": "_10",
+      "file": "MATTO__10.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "_11",
+      "file": "MATTO__11.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MatcapWarp",
+      "file": "MATTO_MatcapWarp.png",
+      "size": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "MATTO_Linear_Palette",
+      "file": "MATTO_LinearPalette.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "MATTO_FaceAtlas_2K",
+      "file": "MATTO_FaceAtlas.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "_16",
+      "file": "MATTO__16.png",
+      "size": [
+        512,
+        1024
+      ]
+    },
+    {
+      "name": "N00_000_Hair_00_nml",
+      "file": "MATTO_N00_000_Hair_00_nml.png",
+      "size": [
+        512,
+        1024
+      ]
+    },
+    {
+      "name": "_17",
+      "file": "MATTO__17.png",
+      "size": [
+        512,
+        1024
+      ]
+    },
+    {
+      "name": "MATTO_Subtle_Tartan",
+      "file": "MATTO_MATTO_Subtle_Tartan.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "MATTO_Face_NormalAtlas",
+      "file": "MATTO_FaceNormalAtlas.png",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ]
+}

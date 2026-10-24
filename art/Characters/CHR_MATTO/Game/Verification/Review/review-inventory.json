@@ -1,0 +1,36 @@
+{
+  "poses": [
+    "T_Pose",
+    "A_Pose",
+    "Idle",
+    "Walk",
+    "Arms_Up",
+    "Arms_Forward",
+    "Knee_Bend",
+    "Sit"
+  ],
+  "faces": [
+    "Neutral",
+    "Blink_L",
+    "Blink_R",
+    "Smile",
+    "Angry",
+    "Sad",
+    "Surprise",
+    "Mouth_A",
+    "Mouth_I",
+    "Mouth_U",
+    "Mouth_E",
+    "Mouth_O"
+  ],
+  "unity_zoom_rooms": 9,
+  "zoom_levels": [
+    9,
+    19,
+    32
+  ],
+  "standpoints": 54,
+  "bidirectional_routes": 22,
+  "status": "DIRECTLY REVIEWED: approved/game/Unity appearance, poses, expressions, three LODs, nine rooms at three zooms, service stairs, nine ActionPoints, actual action camera and return",
+  "actionpoints": 9
+}

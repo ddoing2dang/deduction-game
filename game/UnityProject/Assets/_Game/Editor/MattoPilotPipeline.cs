@@ -11,10 +11,11 @@ public static class MattoPilotPipeline
  static string Request=>Path.GetFullPath("../../../matto-pilot.request");
  [Serializable] class Spec{public Bone[] bones;} [Serializable] class Bone{public string name,human;}
  static MattoPilotPipeline(){EditorApplication.update+=Poll;}
- static void Poll(){if(EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlayingOrWillChangePlaymode||!File.Exists(Request))return;string action=File.ReadAllText(Request).Trim();File.Delete(Request);if(action=="Setup")Setup();else MattoPilotAudit.Begin(action);}
+ static void Poll(){if(EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlayingOrWillChangePlaymode||!File.Exists(Request))return;string action=File.ReadAllText(Request).Trim();File.Delete(Request);if(action=="Setup")Setup();else if(File.Exists(Path.Combine(Root,"Game/approved-source.sha256")))MattoGameAudit.Begin(action);else MattoPilotAudit.Begin(action);}
  static void Need(bool ok,string message){if(!ok)throw new Exception(message);}
  static void Ensure(string folder){Directory.CreateDirectory(folder);AssetDatabase.Refresh();}
  public static void Setup(){
+  if(File.Exists(Path.Combine(Root,"Game/approved-source.sha256"))){MattoGamePipeline.RunBatchSetup();return;}
   try{
    Ensure(Folder+"/Materials");Ensure(Folder+"/Prefabs");
    var spec=JsonUtility.FromJson<Spec>(File.ReadAllText(Path.Combine(Root,"humanoid_v1.json")));
