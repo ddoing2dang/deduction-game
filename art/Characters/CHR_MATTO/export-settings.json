@@ -1,0 +1,27 @@
+{
+  "model": "C:\\UnityProjects\\DeductionGame\\deduction-game\\game\\UnityProject\\Assets\\_Game\\Characters\\CHR_MATTO\\Model\\CHR_MATTO.fbx",
+  "animations": "C:\\UnityProjects\\DeductionGame\\deduction-game\\game\\UnityProject\\Assets\\_Game\\Characters\\CHR_MATTO\\Animations\\MATTO_PilotActions.fbx",
+  "settings": {
+    "use_selection": true,
+    "global_scale": 1.0,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "axis_forward": "-Z",
+    "axis_up": "Y",
+    "add_leaf_bones": false,
+    "use_armature_deform_only": false,
+    "armature_nodetype": "NULL",
+    "path_mode": "RELATIVE",
+    "use_mesh_modifiers": false
+  },
+  "animation_actions": [
+    "MATTO_Idle",
+    "MATTO_Walk",
+    "MATTO_Investigate",
+    "MATTO_Suspect",
+    "MATTO_Deduction"
+  ],
+  "model_animation_import": false,
+  "forward": "-Z",
+  "up": "Y"
+}

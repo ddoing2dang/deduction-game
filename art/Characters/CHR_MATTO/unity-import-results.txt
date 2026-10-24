@@ -1,0 +1,11 @@
+LOD0 tris=25610
+LOD1 tris=15261
+LOD2 tris=6280
+Avatar valid=True human=True
+54 explicit human mappings; 57 authored bones; 1 atlas material; 1024x1024 texture; seven active SMRs per LOD
+Armature|MATTO_Deduction humanMotion=True length=2
+Armature|MATTO_Idle humanMotion=True length=2
+Armature|MATTO_Investigate humanMotion=True length=2
+Armature|MATTO_Suspect humanMotion=True length=2
+Armature|MATTO_Walk humanMotion=True length=0.8000001
+Only PresentationCatalog.CharacterPrefabs[3] replaced; gameplay code unchanged.

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "Idle frame 1: finite skin, stable silhouette",
+    "Idle frame 16: finite skin, stable silhouette",
+    "Idle frame 31: finite skin, stable silhouette",
+    "Walk frame 1: finite skin, stable silhouette",
+    "Walk frame 7: finite skin, stable silhouette",
+    "Walk frame 13: finite skin, stable silhouette",
+    "Walk frame 19: finite skin, stable silhouette",
+    "Investigate frame 16: finite skin, stable silhouette",
+    "Suspect frame 16: finite skin, stable silhouette",
+    "Deduction frame 16: finite skin, stable silhouette"
+  ],
+  "captures": 23,
+  "mesh_parts": [
+    "Body",
+    "Face",
+    "Hair_Main",
+    "Outfit",
+    "ACC_MATTO_Beret",
+    "Shoes",
+    "Accessory"
+  ],
+  "note": "Finite skin checks do not replace direct visual intersection review."
+}

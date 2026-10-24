@@ -1,0 +1,58 @@
+{
+  "lods": [
+    {
+      "lod": 0,
+      "tris": 25610,
+      "vertices": 13345,
+      "renderers": 7
+    },
+    {
+      "lod": 1,
+      "tris": 15261,
+      "vertices": 8090,
+      "renderers": 7
+    },
+    {
+      "lod": 2,
+      "tris": 6280,
+      "vertices": 3551,
+      "renderers": 7
+    }
+  ],
+  "bones": 57,
+  "materials": 1,
+  "textures": [
+    {
+      "name": "MATTO_Atlas.png",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "shapes": [
+    "Neutral",
+    "Smile",
+    "Happy",
+    "Suspicious",
+    "Angry",
+    "Surprised",
+    "Worried",
+    "Thinking",
+    "Smirk",
+    "Sad",
+    "Blink_L",
+    "Blink_R",
+    "EyeLook_L",
+    "EyeLook_R",
+    "EyeLook_Up",
+    "EyeLook_Down",
+    "Brow_Up",
+    "Brow_Down",
+    "Mouth_Open",
+    "Surprise",
+    "Mouth_A",
+    "Mouth_I",
+    "Mouth_U",
+    "Mouth_E",
+    "Mouth_O"
+  ]
+}

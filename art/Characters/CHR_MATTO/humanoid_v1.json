@@ -1,5 +1,5 @@
 {
-  "version": "Humanoid_v1_draft",
+  "version": "Humanoid_v1",
   "units": "meter",
   "forward": "-Y",
   "up": "+Z",
@@ -932,5 +932,34 @@
     "Mouth_E",
     "Mouth_O"
   ],
-  "status": "Technical skeleton only. Awaiting locked design reference before visual production."
+  "status": "Pilot validated in Blender and actual Unity Play Mode; common contract v1 frozen.",
+  "source_reference": "Matto_Turnaround.png",
+  "source_reference_sha256": "21b035035e81a52f54726e6f209f2a17dd12bc7bb2e95d9226900fa1fe58ca15",
+  "shared_shapes": [
+    "Neutral",
+    "Smile",
+    "Happy",
+    "Suspicious",
+    "Angry",
+    "Surprised",
+    "Worried",
+    "Thinking",
+    "Smirk",
+    "Sad",
+    "Blink_L",
+    "Blink_R",
+    "EyeLook_L",
+    "EyeLook_R",
+    "EyeLook_Up",
+    "EyeLook_Down",
+    "Brow_Up",
+    "Brow_Down",
+    "Mouth_Open",
+    "Surprise",
+    "Mouth_A",
+    "Mouth_I",
+    "Mouth_U",
+    "Mouth_E",
+    "Mouth_O"
+  ]
 }

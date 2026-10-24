@@ -1,0 +1,5 @@
+Recovery/
+*.blend1
+Verification/*.png
+Verification/Blender/*.png
+blender-render-error.txt
