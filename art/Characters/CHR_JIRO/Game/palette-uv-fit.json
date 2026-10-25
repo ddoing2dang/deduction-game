@@ -1,0 +1,21 @@
+{
+  "polygons": 14009,
+  "palette_materials": [
+    "JIRO_Blouse_SoftShaded",
+    "JIRO_Brass.001",
+    "JIRO_Cardigan.001",
+    "JIRO_CharcoalSock.001",
+    "JIRO_ClothRibbon_Edge",
+    "JIRO_Flower_Centre",
+    "JIRO_Forest_Ribbon.001",
+    "JIRO_Hair_Ribbon",
+    "JIRO_IvorySock.001",
+    "JIRO_KnitRib.001",
+    "JIRO_Loafers.001",
+    "JIRO_Petal_Blush",
+    "JIRO_Petal_Ivory",
+    "JIRO_Ribbon_Light.001",
+    "JIRO_Skirt.001"
+  ],
+  "reason": "UV references are reacquired after adding corner colour attributes in Blender 5"
+}

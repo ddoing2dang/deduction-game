@@ -1,0 +1,23 @@
+ACC_JIRO_Flower_LOD0 vertices=600 tris=700 weightedBones=1 shapes=0
+ACC_JIRO_Flower_LOD1 vertices=600 tris=700 weightedBones=1 shapes=0
+ACC_JIRO_Flower_LOD2 vertices=600 tris=700 weightedBones=1 shapes=0
+Accessory_LOD0 vertices=417 tris=550 weightedBones=9 shapes=0
+Accessory_LOD1 vertices=417 tris=550 weightedBones=9 shapes=0
+Accessory_LOD2 vertices=417 tris=550 weightedBones=9 shapes=0
+Body_LOD0 vertices=2531 tris=3657 weightedBones=54 shapes=0
+Body_LOD1 vertices=1576 tris=2023 weightedBones=54 shapes=0
+Body_LOD2 vertices=854 tris=962 weightedBones=54 shapes=0
+Face_LOD0 vertices=4152 tris=7090 weightedBones=3 shapes=25
+Face_LOD1 vertices=3008 tris=4820 weightedBones=3 shapes=25
+Face_LOD2 vertices=1848 tris=2480 weightedBones=3 shapes=25
+Hair_Main_LOD0 vertices=6521 tris=10290 weightedBones=7 shapes=0
+Hair_Main_LOD1 vertices=3646 tris=5144 weightedBones=7 shapes=0
+Hair_Main_LOD2 vertices=1747 tris=2054 weightedBones=7 shapes=0
+Outfit_LOD0 vertices=5096 tris=5936 weightedBones=12 shapes=0
+Outfit_LOD1 vertices=3058 tris=2964 weightedBones=12 shapes=0
+Outfit_LOD2 vertices=1241 tris=1179 weightedBones=12 shapes=0
+Shoes_LOD0 vertices=1026 tris=1899 weightedBones=4 shapes=0
+Shoes_LOD1 vertices=797 tris=1423 weightedBones=4 shapes=0
+Shoes_LOD2 vertices=566 tris=948 weightedBones=4 shapes=0
+Stored SMRs=21; active LOD SMRs=7; authored bones=69; unique weighted transforms=66
+Materials=7 mainTextures=5

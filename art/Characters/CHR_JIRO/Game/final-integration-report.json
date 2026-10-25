@@ -1,0 +1,44 @@
+{
+  "original_visual_tris": 35922,
+  "blender_lod_tris": {
+    "0": 30140,
+    "1": 17638,
+    "2": 8887
+  },
+  "unity_lod_tris": [
+    30122,
+    17624,
+    8873
+  ],
+  "bones": 69,
+  "humanoid_mappings": 54,
+  "Humanoid_Valid": true,
+  "SMRs_stored": 21,
+  "SMRs_per_LOD": 7,
+  "materials_used_Unity": 7,
+  "textures_total": 7,
+  "albedo_textures": 5,
+  "maximum_texture_resolution": 2048,
+  "required_expression_count": 11,
+  "checks": {
+    "routes": 22,
+    "states": 9,
+    "stands": 54,
+    "actionPoints": 9
+  },
+  "singleplayer_regression_assertions": 2461,
+  "visual_original_sha256": "7b8358a9566fdf7176228c182c919d70c36a952c8af92b6af017662c554584d3",
+  "visual_original_unchanged": true,
+  "direct_visual_review_completed": [
+    "8 Blender views",
+    "before/refined/Unity face and silhouette",
+    "9 states",
+    "11 expressions plus neutral",
+    "9 rooms x 3 zooms",
+    "2 stairs x 2 directions x 3 zooms",
+    "action camera and return",
+    "MATTO NAZ JIRO real-runtime comparison"
+  ],
+  "LOD2_purpose": "Overall zoom; small garment folds and cap highlights are simplified when forcibly enlarged",
+  "operating_method": "Blender MCP; Unity project-local Editor/runtime APIs; no OS input or GUI automation"
+}

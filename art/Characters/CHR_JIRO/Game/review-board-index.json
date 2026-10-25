@@ -1,0 +1,99 @@
+{
+  "Before_Refined_Unity_LODs": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\Before_01_Front.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\01_Front.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Preservation_LOD0.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Preservation_LOD2.png"
+  ],
+  "Face_Before_Refined_Unity": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\Before_05_FaceFront.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\05_FaceFront.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Preservation_Face.png"
+  ],
+  "Side_Before_After": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\Before_03_Side90.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\03_Side90.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\Before_02_ThreeQuarter.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Comparison\\02_ThreeQuarter.png"
+  ],
+  "Rooms_Zoom_9": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_1_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_2_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_3_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_4_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_5_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_6_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_7_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_8_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_9_Zoom_9.png"
+  ],
+  "Stairs_Zoom_9": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_0_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_1_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_0_Zoom_9.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_1_Zoom_9.png"
+  ],
+  "Rooms_Zoom_19": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_1_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_2_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_3_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_4_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_5_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_6_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_7_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_8_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_9_Zoom_19.png"
+  ],
+  "Stairs_Zoom_19": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_0_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_1_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_0_Zoom_19.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_1_Zoom_19.png"
+  ],
+  "Rooms_Zoom_32": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_1_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_2_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_3_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_4_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_5_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_6_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_7_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_8_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Room_9_Zoom_32.png"
+  ],
+  "Stairs_Zoom_32": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_0_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_04_07_Direction_1_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_0_Zoom_32.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Stair_DOOR_05_08_Direction_1_Zoom_32.png"
+  ],
+  "Nine_States": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Idle.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Move.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Investigate.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Suspect.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Cooperate.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Deduction.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_UseAbility.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Win.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Action_Lose.png"
+  ],
+  "Expressions": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Neutral.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Blink_L.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Blink_R.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Smile.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Angry.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Sad.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Surprise.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Mouth_A.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Mouth_I.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Mouth_U.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Mouth_E.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Face_Mouth_O.png"
+  ],
+  "ActionCamera": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Actual_ActionCamera.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Game\\Verification\\Actual_ActionCamera_Return.png"
+  ]
+}

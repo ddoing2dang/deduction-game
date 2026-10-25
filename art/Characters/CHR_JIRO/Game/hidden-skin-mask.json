@@ -1,0 +1,8 @@
+{
+  "removed_polygons": {
+    "Body_LOD0": 243,
+    "Body_LOD1": 122,
+    "Body_LOD2": 50
+  },
+  "scope": "Only fully covered torso and calf interiors, each LOD; editable visual original unchanged"
+}

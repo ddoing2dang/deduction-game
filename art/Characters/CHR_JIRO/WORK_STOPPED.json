@@ -1,0 +1,31 @@
+{
+  "scope": "rejected old Visual only",
+  "old_model_still_rejected": true,
+  "new_work_authorized": true,
+  "authorization": "Latest user instruction: rebuild only Jiro appearance using approved Matto GAME clean technical base; no rejected model reuse",
+  "active_candidate": "Game/CHR_JIRO_GAME.blend",
+  "user_appearance_approval_pending": false,
+  "unity_and_LOD_prohibited_before_approval": false,
+  "historical_stop_record": {
+    "status": "REJECTED_PRESERVED",
+    "work": "STOPPED_BY_USER",
+    "user_appearance_approval": "REJECTED",
+    "previous_visual_OK_withdrawn": true,
+    "reasons": [
+      "Twin-tails read as thick cylinders/sticks rather than the reference hair silhouette.",
+      "Face does not sufficiently resemble the Jiro reference.",
+      "Clothing reads as simplified blocks.",
+      "58,295 source / 88,063 evaluated triangles do not deliver acceptable visual quality."
+    ],
+    "backup": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Characters\\CHR_JIRO\\Archive\\Rejected_Visual_20261025_180140",
+    "preserved_blend_sha256": "6a9881ec623acb792e6f80409c1376333529a2c885524bc8a5822cad23ee83c3",
+    "model_geometry_modified": false,
+    "Unity_permitted": false,
+    "LOD_permitted": false,
+    "other_character_production_permitted": false,
+    "next_base_required": "user-created CHR_JIRO_BASE.vrm",
+    "next_scope": "clothing and accessories after new user authorization"
+  },
+  "current_integrated_pass": "COMPLETE",
+  "unity_and_LOD_authorized_by_latest_user_request": true
+}

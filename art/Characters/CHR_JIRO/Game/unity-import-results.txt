@@ -1,0 +1,37 @@
+API=JiroApprovedGame_v3
+Avatar valid=True human=True
+Mappings=54
+SMRs=21 selected per LOD=7
+Materials=7
+Textures=7 max=2048; Android ASTC4x4 except the small linear palette
+Animation source=Assets/_Game/Characters/CHR_MATTO/Animations/MATTO_VRoid_Actions.fbx
+Source=approved VRoid; no discarded pilot mesh
+LOD0 tris=30122
+LOD1 tris=17624
+LOD2 tris=8873
+ACC_JIRO_Flower_LOD0 bone palette=1
+ACC_JIRO_Flower_LOD1 bone palette=1
+ACC_JIRO_Flower_LOD2 bone palette=1
+Accessory_LOD0 bone palette=9
+Accessory_LOD1 bone palette=9
+Accessory_LOD2 bone palette=9
+Body_LOD0 bone palette=54
+Body_LOD1 bone palette=54
+Body_LOD2 bone palette=54
+Face_LOD0 bone palette=3
+Face_LOD1 bone palette=3
+Face_LOD2 bone palette=3
+Hair_Main_LOD0 bone palette=7
+Hair_Main_LOD1 bone palette=7
+Hair_Main_LOD2 bone palette=7
+Outfit_LOD0 bone palette=12
+Outfit_LOD1 bone palette=12
+Outfit_LOD2 bone palette=12
+Shoes_LOD0 bone palette=4
+Shoes_LOD1 bone palette=4
+Shoes_LOD2 bone palette=4
+Armature|MATTO_Deduction human=True length=2
+Armature|MATTO_Idle human=True length=2
+Armature|MATTO_Investigate human=True length=2
+Armature|MATTO_Suspect human=True length=2
+Armature|MATTO_Walk human=True length=0.8000001
