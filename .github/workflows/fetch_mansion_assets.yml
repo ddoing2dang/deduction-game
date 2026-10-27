@@ -1,0 +1,146 @@
+name: Build Mansion CC0 Asset Pack
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fetch_mansion_assets.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Poly Haven CC0 mansion assets
+        shell: bash
+        run: |
+          cat > /tmp/fetch_assets.py <<'PY'
+          import json, os, pathlib, urllib.request, hashlib
+
+          ASSETS = [
+              "Chandelier_01",
+              "Chandelier_02",
+              "GothicCabinet_01",
+              "GothicCommode_01",
+              "GothicBed_01",
+              "ArmChair_01",
+              "ClassicConsole_01",
+              "vintage_grandfather_clock_01",
+              "fancy_picture_frame_02",
+              "wine_barrel_01",
+              "marble_bust_01",
+          ]
+          ROOT = pathlib.Path("Mansion_CC0_AssetPack")
+          ROOT.mkdir(exist_ok=True)
+          UA = {"User-Agent": "DeductionGame-MansionAssetFetcher/1.0"}
+
+          def get_json(url):
+              req = urllib.request.Request(url, headers=UA)
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return json.load(r)
+
+          def iter_records(obj, path=()):
+              if isinstance(obj, dict):
+                  if "url" in obj and isinstance(obj["url"], str):
+                      yield path, obj
+                  for k, v in obj.items():
+                      if k != "include":
+                          yield from iter_records(v, path + (str(k),))
+              elif isinstance(obj, list):
+                  for i, v in enumerate(obj):
+                      yield from iter_records(v, path + (str(i),))
+
+          def download(url, dest, expected_md5=None):
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              req = urllib.request.Request(url, headers=UA)
+              with urllib.request.urlopen(req, timeout=180) as r, open(dest, "wb") as f:
+                  data = r.read()
+                  f.write(data)
+              if expected_md5:
+                  got = hashlib.md5(data).hexdigest()
+                  if got.lower() != expected_md5.lower():
+                      raise RuntimeError(f"MD5 mismatch for {dest}: {got} != {expected_md5}")
+
+          credits = [
+              "# Mansion CC0 Asset Pack",
+              "",
+              "Source: Poly Haven (https://polyhaven.com)",
+              "License: CC0 for downloaded assets.",
+              "Downloaded via the Poly Haven public API.",
+              "",
+              "| Asset | Author(s) | Source |",
+              "|---|---|---|",
+          ]
+          manifest = {}
+
+          for slug in ASSETS:
+              info = get_json(f"https://api.polyhaven.com/info/{slug}")
+              files = get_json(f"https://api.polyhaven.com/files/{slug}")
+              records = list(iter_records(files))
+
+              candidates = []
+              for p, rec in records:
+                  u = rec.get("url", "")
+                  low = u.lower()
+                  if low.endswith(".blend"):
+                      score = 0
+                      joined = "/".join(p).lower() + " " + low
+                      if "/1k/" in low or "1k" in joined: score += 100
+                      if "/2k/" in low or "2k" in joined: score += 50
+                      candidates.append((score, p, rec))
+              if not candidates:
+                  raise RuntimeError(f"No .blend file found for {slug}")
+              candidates.sort(key=lambda x: x[0], reverse=True)
+              _, path_tokens, rec = candidates[0]
+
+              asset_dir = ROOT / slug
+              asset_dir.mkdir(exist_ok=True)
+              url = rec["url"]
+              main_name = pathlib.Path(url.split("?")[0]).name
+              download(url, asset_dir / main_name, rec.get("md5"))
+
+              include = rec.get("include", {})
+              if isinstance(include, dict):
+                  for rel, inc in include.items():
+                      if not isinstance(inc, dict) or "url" not in inc:
+                          continue
+                      safe_rel = pathlib.Path(rel)
+                      download(inc["url"], asset_dir / safe_rel, inc.get("md5"))
+
+              authors = info.get("authors", {})
+              names = []
+              if isinstance(authors, dict):
+                  for a in authors.values():
+                      if isinstance(a, dict):
+                          names.append(a.get("name") or a.get("user") or "Unknown")
+                      elif isinstance(a, str):
+                          names.append(a)
+              author_text = ", ".join(dict.fromkeys(names)) or "See Poly Haven asset page"
+              credits.append(f"| {info.get('name', slug)} | {author_text} | https://polyhaven.com/a/{slug} |")
+              manifest[slug] = {
+                  "name": info.get("name", slug),
+                  "main_blend": str((asset_dir / main_name).relative_to(ROOT)),
+                  "source": f"https://polyhaven.com/a/{slug}",
+                  "license": "CC0",
+              }
+
+          (ROOT / "CREDITS.md").write_text("\n".join(credits) + "\n", encoding="utf-8")
+          (ROOT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+          (ROOT / "README_KO.txt").write_text(
+              "대저택 비주얼 골드용 1차 CC0 에셋 팩입니다.\n"
+              "Blender에서 각 폴더의 .blend 파일을 File > Append로 불러오세요.\n"
+              "원본 구조/이동/충돌은 유지하고 가구·장식·조명용으로 사용합니다.\n"
+              "Poly Haven 에셋은 CC0입니다.\n",
+              encoding="utf-8",
+          )
+          print("Downloaded", len(ASSETS), "assets")
+          PY
+          python /tmp/fetch_assets.py
+          find Mansion_CC0_AssetPack -maxdepth 3 -type f -printf "%p %k KB\n" | sort
+
+      - name: Upload mansion asset pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mansion_CC0_AssetPack
+          path: Mansion_CC0_AssetPack
+          compression-level: 6
+          retention-days: 30
