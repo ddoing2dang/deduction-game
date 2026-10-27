@@ -1,5 +1,8 @@
 name: Build Mansion CC0 Full Pack
 
+permissions:
+  contents: write
+
 on:
   push:
     paths:
@@ -338,3 +341,21 @@ jobs:
           path: Mansion_CC0_FullPack
           compression-level: 6
           retention-days: 30
+
+
+      - name: Zip full pack
+        shell: bash
+        run: |
+          zip -r -9 Mansion_CC0_FullPack.zip Mansion_CC0_FullPack
+
+      - name: Publish persistent GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="mansion-cc0-fullpack-v1"
+          gh release delete "$TAG" --yes --cleanup-tag || true
+          gh release create "$TAG" Mansion_CC0_FullPack.zip \
+            --repo "${{ github.repository }}" \
+            --title "Mansion CC0 Full Pack v1" \
+            --notes "대저택 Visual Gold용 전체 CC0 에셋팩. Poly Haven CC0 모델/텍스처와 Blender 자동 적용 스크립트 포함."
