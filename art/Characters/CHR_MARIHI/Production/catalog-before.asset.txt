@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be4368f29d7425897000da2bfba9fff, type: 3}
+  m_Name: PresentationCatalog
+  m_EditorClassIdentifier: 
+  CharacterPrefabs:
+  - {fileID: 1128401162151607957, guid: 9f19d2a4486347c4a849bca64efccb84, type: 3}
+  - {fileID: 4537925841253268344, guid: 8633d0fcbe8a816449e75334584f474b, type: 3}
+  - {fileID: 0}
+  - {fileID: 7608573430934429926, guid: 2835aa4b0163bb849baf8d60d7cdc7e5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  CharacterPortraits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MansionRoomPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MansionRoomBackgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

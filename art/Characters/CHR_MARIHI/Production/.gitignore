@@ -1,0 +1,7 @@
+Backup/
+**/*.blend1
+**/__pycache__/
+Review/*.png
+!Review/Blender_*.png
+!Review/Unity_*.png
+!Review/Reference_Model.png

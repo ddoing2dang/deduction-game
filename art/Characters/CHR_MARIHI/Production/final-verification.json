@@ -1,0 +1,48 @@
+{
+  "status": "OK",
+  "designApproval": "PENDING_USER_REVIEW",
+  "mainMerged": false,
+  "baseMansionCommit": "0425d680bbb8802e7e46598900f19c69340e3b57",
+  "branch": "codex/chr-marihi-production",
+  "unityLODTris": [
+    30679,
+    18094,
+    9092
+  ],
+  "blenderLODTris": [
+    30703,
+    18118,
+    9116
+  ],
+  "bones": 69,
+  "humanoidMappings": 54,
+  "humanoidValid": true,
+  "materials": 9,
+  "textures": 6,
+  "maxTextureDimension": 2048,
+  "storedSMRs": 21,
+  "activeLODRenderers": 7,
+  "expressions": 25,
+  "requiredExpressions": 11,
+  "actualBidirectionalTraversals": 22,
+  "standPoints": 54,
+  "actionPoints": 9,
+  "animatorStates": 9,
+  "roomsAtThreeZooms": 9,
+  "singlePlayerAssertions": 2461,
+  "actualActionCameraSourceId": 2,
+  "protectedFiles": 3758,
+  "changedProtectedFiles": [],
+  "gameSceneUnchanged": true,
+  "catalogChangedSlot": 2,
+  "blenderConnection": "OK",
+  "visualReview": "Actual Blender views/expressions/deformation/LODs; Unity nine-room three-zoom frames, states, face, trio, service stairs and actual slot-2 action camera directly reviewed",
+  "deviceFPSBenchmark": false,
+  "files": {
+    "art/Characters/CHR_MARIHI/Production/CHR_MARIHI.blend": "3e1edb4193fa9b2c888d82f1d2f4c1797e88773952492a1ced208acf90d0924a",
+    "art/Characters/CHR_MARIHI/Production/Game/CHR_MARIHI_GAME.blend": "7c3ed1d398d4ee80288e55c655677ad0b4ac31e125848554da91fa04116d38ce",
+    "game/UnityProject/Assets/_Game/Characters/CHR_MARIHI/Model/CHR_MARIHI.fbx": "46e5d94aa1c986482f2b6abda498e6be8df6073b7a893b8d0903951b64ace934"
+  },
+  "playLogSHA256": "6d8503f946c96b5157a0ebef7a60bea2ee91bb5d91b03f42577a08049af858eb",
+  "cameraLogSHA256": "23f83208f53a8e095bbcaa993a61d91080edd533d67d6c006ac97a9910e064b9"
+}

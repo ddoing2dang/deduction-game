@@ -1,0 +1,23 @@
+ACC_MARIHI_Ribbon_LOD0 vertices=338 tris=550 weightedBones=1 shapes=0
+ACC_MARIHI_Ribbon_LOD1 vertices=338 tris=550 weightedBones=1 shapes=0
+ACC_MARIHI_Ribbon_LOD2 vertices=338 tris=550 weightedBones=1 shapes=0
+Accessory_LOD0 vertices=609 tris=950 weightedBones=10 shapes=0
+Accessory_LOD1 vertices=609 tris=950 weightedBones=10 shapes=0
+Accessory_LOD2 vertices=504 tris=760 weightedBones=10 shapes=0
+Body_LOD0 vertices=2649 tris=3900 weightedBones=56 shapes=0
+Body_LOD1 vertices=1638 tris=2145 weightedBones=56 shapes=0
+Body_LOD2 vertices=883 tris=1012 weightedBones=54 shapes=0
+Face_LOD0 vertices=4413 tris=7485 weightedBones=1 shapes=25
+Face_LOD1 vertices=3197 tris=5088 weightedBones=1 shapes=25
+Face_LOD2 vertices=1914 tris=2619 weightedBones=1 shapes=25
+Hair_Main_LOD0 vertices=6116 tris=9499 weightedBones=7 shapes=0
+Hair_Main_LOD1 vertices=3507 tris=4750 weightedBones=7 shapes=0
+Hair_Main_LOD2 vertices=1642 tris=1897 weightedBones=7 shapes=0
+Outfit_LOD0 vertices=5047 tris=6396 weightedBones=12 shapes=0
+Outfit_LOD1 vertices=3179 tris=3187 weightedBones=12 shapes=0
+Outfit_LOD2 vertices=1249 tris=1305 weightedBones=12 shapes=0
+Shoes_LOD0 vertices=1021 tris=1899 weightedBones=4 shapes=0
+Shoes_LOD1 vertices=777 tris=1424 weightedBones=4 shapes=0
+Shoes_LOD2 vertices=530 tris=949 weightedBones=4 shapes=0
+Stored SMRs=21; active LOD SMRs=7; authored bones=69; unique weighted transforms=66
+Materials=9 mainTextures=6

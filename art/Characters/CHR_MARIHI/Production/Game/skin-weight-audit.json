@@ -1,0 +1,107 @@
+{
+  "Body_LOD0": {
+    "bone_groups": 56,
+    "max_influences": 3,
+    "maximum_sum_error": 4.470348358154297e-08
+  },
+  "Face_LOD0": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "ACC_MARIHI_Ribbon_LOD0": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Outfit_LOD0": {
+    "bone_groups": 12,
+    "max_influences": 3,
+    "maximum_sum_error": 2.9802322387695312e-08
+  },
+  "Accessory_LOD0": {
+    "bone_groups": 10,
+    "max_influences": 3,
+    "maximum_sum_error": 3.259629011154175e-08
+  },
+  "Shoes_LOD0": {
+    "bone_groups": 4,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Body_LOD1": {
+    "bone_groups": 56,
+    "max_influences": 4,
+    "maximum_sum_error": 4.470348358154297e-08
+  },
+  "Face_LOD1": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "ACC_MARIHI_Ribbon_LOD1": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Outfit_LOD1": {
+    "bone_groups": 12,
+    "max_influences": 3,
+    "maximum_sum_error": 3.818422555923462e-08
+  },
+  "Accessory_LOD1": {
+    "bone_groups": 10,
+    "max_influences": 3,
+    "maximum_sum_error": 3.259629011154175e-08
+  },
+  "Shoes_LOD1": {
+    "bone_groups": 4,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Body_LOD2": {
+    "bone_groups": 56,
+    "max_influences": 4,
+    "maximum_sum_error": 4.470348358154297e-08
+  },
+  "Face_LOD2": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "ACC_MARIHI_Ribbon_LOD2": {
+    "bone_groups": 1,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Outfit_LOD2": {
+    "bone_groups": 12,
+    "max_influences": 3,
+    "maximum_sum_error": 2.9802322387695312e-08
+  },
+  "Accessory_LOD2": {
+    "bone_groups": 10,
+    "max_influences": 3,
+    "maximum_sum_error": 3.259629011154175e-08
+  },
+  "Shoes_LOD2": {
+    "bone_groups": 4,
+    "max_influences": 1,
+    "maximum_sum_error": 0.0
+  },
+  "Hair_Main_LOD0": {
+    "bone_groups": 7,
+    "max_influences": 2,
+    "maximum_sum_error": 2.9802322387695312e-08
+  },
+  "Hair_Main_LOD1": {
+    "bone_groups": 7,
+    "max_influences": 3,
+    "maximum_sum_error": 2.9802322387695312e-08
+  },
+  "Hair_Main_LOD2": {
+    "bone_groups": 7,
+    "max_influences": 3,
+    "maximum_sum_error": 2.9802322387695312e-08
+  }
+}

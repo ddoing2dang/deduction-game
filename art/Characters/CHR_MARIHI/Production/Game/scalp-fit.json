@@ -1,0 +1,6 @@
+{
+  "body_scale_correction": 1.0,
+  "rig_scale_already_applied": true,
+  "crown_offset_m": 0.0032,
+  "reason": "Historical technical source head was unscaled; scalp reconstructed exclusively from current matching body and face"
+}

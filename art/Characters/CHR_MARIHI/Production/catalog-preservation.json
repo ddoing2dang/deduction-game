@@ -1,0 +1,21 @@
+{
+  "updatedSlot": 2,
+  "otherSlotsUnchanged": true,
+  "localNazPreserved": true,
+  "before": [
+    "- {fileID: 1128401162151607957, guid: 9f19d2a4486347c4a849bca64efccb84, type: 3}",
+    "  - {fileID: 4537925841253268344, guid: 8633d0fcbe8a816449e75334584f474b, type: 3}",
+    "  - {fileID: 0}",
+    "  - {fileID: 7608573430934429926, guid: 2835aa4b0163bb849baf8d60d7cdc7e5, type: 3}",
+    "  - {fileID: 0}",
+    "  - {fileID: 0}"
+  ],
+  "after": [
+    "- {fileID: 1128401162151607957, guid: 9f19d2a4486347c4a849bca64efccb84, type: 3}",
+    "  - {fileID: 4537925841253268344, guid: 8633d0fcbe8a816449e75334584f474b, type: 3}",
+    "  - {fileID: 3765820303590416737, guid: 1fad3f167421d77439398ca353f00321, type: 3}",
+    "  - {fileID: 7608573430934429926, guid: 2835aa4b0163bb849baf8d60d7cdc7e5, type: 3}",
+    "  - {fileID: 0}",
+    "  - {fileID: 0}"
+  ]
+}

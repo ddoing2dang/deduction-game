@@ -1,0 +1,11 @@
+*.png
+!01_Front.png
+!02_45.png
+!03_Side90.png
+!04_Back.png
+!05_Face.png
+!06_Face45.png
+!07_Root.png
+!Expression_*.png
+!Pose_*.png
+!LOD?.png

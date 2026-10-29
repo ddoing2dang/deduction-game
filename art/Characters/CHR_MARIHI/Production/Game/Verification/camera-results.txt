@@ -1,0 +1,87 @@
+OK actual Marihi CharacterActor uses valid Humanoid Avatar
+OK model root axis conversion baked; local rotation identity
+OK body GPU bone palette bounded for Android: 56
+OK face GPU bone palettes bounded without deleting skeleton transforms
+OK actual skinned body remains upright after Animator evaluation
+OK model prefab LODGroup installed
+OK six CharacterActors retained
+OK nine Mansion RoomNodes retained
+OK eleven basic LOCK routes retained
+OK 54 StandPoints and nine ActionPoints unchanged
+OK LOD0 budget 30679
+OK LOD1 ratio 0.5897846
+OK LOD2 ratio 0.2963591
+OK Face_LOD0 shape Blink_L
+OK authored deformation Face_LOD0/Blink_L
+OK Face_LOD0 shape Blink_R
+OK authored deformation Face_LOD0/Blink_R
+OK Face_LOD0 shape Smile
+OK authored deformation Face_LOD0/Smile
+OK Face_LOD0 shape Angry
+OK authored deformation Face_LOD0/Angry
+OK Face_LOD0 shape Sad
+OK authored deformation Face_LOD0/Sad
+OK Face_LOD0 shape Surprise
+OK authored deformation Face_LOD0/Surprise
+OK Face_LOD0 shape Mouth_A
+OK authored deformation Face_LOD0/Mouth_A
+OK Face_LOD0 shape Mouth_I
+OK authored deformation Face_LOD0/Mouth_I
+OK Face_LOD0 shape Mouth_U
+OK authored deformation Face_LOD0/Mouth_U
+OK Face_LOD0 shape Mouth_E
+OK authored deformation Face_LOD0/Mouth_E
+OK Face_LOD0 shape Mouth_O
+OK authored deformation Face_LOD0/Mouth_O
+OK Face_LOD1 shape Blink_L
+OK authored deformation Face_LOD1/Blink_L
+OK Face_LOD1 shape Blink_R
+OK authored deformation Face_LOD1/Blink_R
+OK Face_LOD1 shape Smile
+OK authored deformation Face_LOD1/Smile
+OK Face_LOD1 shape Angry
+OK authored deformation Face_LOD1/Angry
+OK Face_LOD1 shape Sad
+OK authored deformation Face_LOD1/Sad
+OK Face_LOD1 shape Surprise
+OK authored deformation Face_LOD1/Surprise
+OK Face_LOD1 shape Mouth_A
+OK authored deformation Face_LOD1/Mouth_A
+OK Face_LOD1 shape Mouth_I
+OK authored deformation Face_LOD1/Mouth_I
+OK Face_LOD1 shape Mouth_U
+OK authored deformation Face_LOD1/Mouth_U
+OK Face_LOD1 shape Mouth_E
+OK authored deformation Face_LOD1/Mouth_E
+OK Face_LOD1 shape Mouth_O
+OK authored deformation Face_LOD1/Mouth_O
+OK Face_LOD2 shape Blink_L
+OK authored deformation Face_LOD2/Blink_L
+OK Face_LOD2 shape Blink_R
+OK authored deformation Face_LOD2/Blink_R
+OK Face_LOD2 shape Smile
+OK authored deformation Face_LOD2/Smile
+OK Face_LOD2 shape Angry
+OK authored deformation Face_LOD2/Angry
+OK Face_LOD2 shape Sad
+OK authored deformation Face_LOD2/Sad
+OK Face_LOD2 shape Surprise
+OK authored deformation Face_LOD2/Surprise
+OK Face_LOD2 shape Mouth_A
+OK authored deformation Face_LOD2/Mouth_A
+OK Face_LOD2 shape Mouth_I
+OK authored deformation Face_LOD2/Mouth_I
+OK Face_LOD2 shape Mouth_U
+OK authored deformation Face_LOD2/Mouth_U
+OK Face_LOD2 shape Mouth_E
+OK authored deformation Face_LOD2/Mouth_E
+OK Face_LOD2 shape Mouth_O
+OK authored deformation Face_LOD2/Mouth_O
+OK actual imported neutral face and forced LOD captures for Blender candidate comparison
+OK MATTO JIRO MARIHI coexist with valid original Humanoid Avatars
+OK actual Marihi slot 2 deduction action camera cue active
+OK actual action camera reaches existing Visual Gold 3D side view
+OK Marihi visible in actual action camera framing
+OK actual Marihi Deduction Animator during side view
+OK existing camera returns to default zoom after action cue
+CAMERA CHECKS PASSED; SOURCE ID 2 CONFIRMED
