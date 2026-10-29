@@ -24,6 +24,10 @@ Blender 원본은 보존됐고, 변경은 별도 Mansion_VisualGold.blend에 있
 원시 검증: Verification/play-results.txt
 요약/기록 해시: final-verification.json
 최종 검토판: Review/Unity_NineRooms_9.png, _19.png, _32.png, _Side.png
+# Entrance repair and luxury refinement — 2026-10-29
+
+Latest saved source and fresh Play Mode verification are documented in `LUXURY_REVIEW.md` and `luxury-final-verification.json`. The active 4-to-5 bridge is preserved, its tall visual rails become low stone edging, and the exterior ground no longer has basement-projection holes. Current totals: 550,557 tris / 809 render parts / 56 materials / 117 game textures. The final run passes 22 traversals, secret passage both ways and 2,461 single-player assertions after direct render review. Earlier-stage records follow.
+
 # Decorative front door follow-up — 2026-10-29
 
 Final saved Blender/FBX and full fresh Play Mode audit now include the decorative double front door. See `FRONT_DOOR_REVIEW.md` and `front-door-final-verification.json` for current totals, exact file hashes, direct render review and preservation checks. The latest environment is 471,948 tris / 779 render parts / 50 materials / 112 game textures. Existing 778 parts and gameplay layout remain unchanged.

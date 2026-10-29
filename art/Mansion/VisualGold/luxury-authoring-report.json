@@ -1,0 +1,95 @@
+{
+  "bridgeRole": "DOOR_04_05 active dining-kitchen route; physics/entries unchanged",
+  "visualRailComponentsRefined": [
+    "DOOR_04_05_Railing_0_-1_Cap",
+    "DOOR_04_05_Railing_0_-1_Post_00",
+    "DOOR_04_05_Railing_0_-1_Post_01",
+    "DOOR_04_05_Railing_0_-1_Post_02",
+    "DOOR_04_05_Railing_0_-1_Post_03",
+    "DOOR_04_05_Railing_0_-1_Post_04",
+    "DOOR_04_05_Railing_0_-1_Post_05",
+    "DOOR_04_05_Railing_0_-1_Post_06",
+    "DOOR_04_05_Railing_0_-1_Post_07",
+    "DOOR_04_05_Railing_0_1_Cap",
+    "DOOR_04_05_Railing_0_1_Post_00",
+    "DOOR_04_05_Railing_0_1_Post_01",
+    "DOOR_04_05_Railing_0_1_Post_02",
+    "DOOR_04_05_Railing_0_1_Post_03",
+    "DOOR_04_05_Railing_0_1_Post_04",
+    "DOOR_04_05_Railing_0_1_Post_05",
+    "DOOR_04_05_Railing_0_1_Post_06",
+    "DOOR_04_05_Railing_0_1_Post_07"
+  ],
+  "groundFix": "Only ground-level floors and actual stairs subtract exterior ground; basement floors no longer cause permanent holes",
+  "groundCells": 7102,
+  "newObjects": [
+    "VG_Lux_HallWestConsole",
+    "VG_Lux_HallWestBust",
+    "VG_Lux_HallWestLamp",
+    "VG_Lux_HallOvalMirror",
+    "VG_Lux_R02_WallPortrait",
+    "VG_Lux_R02_PortraitDrapery",
+    "VG_Lux_R03_WallPortrait",
+    "VG_Lux_R03_PortraitDrapery",
+    "VG_Lux_R04_WallPortrait",
+    "VG_Lux_EntranceUrn-1",
+    "VG_Lux_EntranceUrn1",
+    "VG_Lux_EntranceHeraldicCrest",
+    "VG_Lux_R02_CentreChandelier",
+    "VG_Lux_R03_CentreChandelier",
+    "VG_Lux_EntranceRunner",
+    "VG_Lux_R02_CentralRug",
+    "VG_Lux_R04_CentralRug",
+    "VG_Lux_R06_CentralRug",
+    "VG_Lux_R09_CentralRug",
+    "VG_Lux_R01_RugBraid",
+    "VG_Lux_R03_RugBraid",
+    "VG_Lux_R02_UpperPanel",
+    "VG_Lux_R03_UpperPanel",
+    "VG_Lux_R04_UpperPanel",
+    "VG_Lux_R05_UpperPanel",
+    "VG_Lux_R06_UpperPanel",
+    "VG_Lux_R09_UpperPanel",
+    "VG_Lux_GalleryCoffer_R01_Wall_North_Pier_00",
+    "VG_Lux_GalleryCoffer_R01_Wall_North_Pier_02",
+    "VG_Lux_HallStoneTreads"
+  ],
+  "protectedPlacementChecks": [
+    {
+      "object": "VG_Lux_HallWestConsole",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_HallWestBust",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_HallWestLamp",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_R02_WallPortrait",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_R03_WallPortrait",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_R04_WallPortrait",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_EntranceUrn-1",
+      "protectedConflicts": []
+    },
+    {
+      "object": "VG_Lux_EntranceUrn1",
+      "protectedConflicts": []
+    }
+  ],
+  "referenceCountUnchanged": 94,
+  "cc0Placements": 60,
+  "noNewTraversalLinks": true,
+  "hallStairFinish": "Original stair mesh and physics retained; polished dark walnut, thin stone treads and brass nosings"
+}

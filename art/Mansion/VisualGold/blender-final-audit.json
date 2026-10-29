@@ -1,6 +1,134 @@
 {
   "furniture": [
     {
+      "name": "VG_Lux_HallWestConsole",
+      "room": 1,
+      "source": "ClassicConsole_01",
+      "min": [
+        -5.78617000579834,
+        -1.0234705209732056,
+        0.0
+      ],
+      "max": [
+        -5.233829498291016,
+        0.42347049713134766,
+        0.8899999856948853
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_HallWestBust",
+      "room": 1,
+      "source": "marble_bust_01",
+      "min": [
+        -5.626467704772949,
+        -0.08555389940738678,
+        0.8930000066757202
+      ],
+      "max": [
+        -5.393531799316406,
+        0.1255539059638977,
+        1.2929999828338623
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_HallWestLamp",
+      "room": 1,
+      "source": "vintage_oil_lamp",
+      "min": [
+        -5.599192142486572,
+        -0.7591925263404846,
+        0.8899999856948853
+      ],
+      "max": [
+        -5.420807361602783,
+        -0.5808075666427612,
+        1.5399999618530273
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_R02_WallPortrait",
+      "room": 2,
+      "source": "fancy_picture_frame_02",
+      "min": [
+        -10.0159912109375,
+        7.718554496765137,
+        1.75
+      ],
+      "max": [
+        -8.944007873535156,
+        7.861444473266602,
+        3.0
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_R03_WallPortrait",
+      "room": 3,
+      "source": "fancy_picture_frame_02",
+      "min": [
+        13.9840087890625,
+        7.718554496765137,
+        1.75
+      ],
+      "max": [
+        15.055992126464844,
+        7.861444473266602,
+        3.0
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_R04_WallPortrait",
+      "room": 4,
+      "source": "fancy_picture_frame_02",
+      "min": [
+        -8.75599193572998,
+        -3.281444787979126,
+        1.75
+      ],
+      "max": [
+        -7.684008598327637,
+        -3.138554811477661,
+        3.0
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_R02_CentreChandelier",
+      "room": 2,
+      "source": "Chandelier_02",
+      "min": [
+        -12.280065536499023,
+        3.7447633743286133,
+        2.9000000953674316
+      ],
+      "max": [
+        -11.719934463500977,
+        4.255236625671387,
+        3.6000001430511475
+      ],
+      "protectedConflicts": []
+    },
+    {
+      "name": "VG_Lux_R03_CentreChandelier",
+      "room": 3,
+      "source": "Chandelier_02",
+      "min": [
+        11.719934463500977,
+        3.7447633743286133,
+        2.9000000953674316
+      ],
+      "max": [
+        12.280065536499023,
+        4.255236625671387,
+        3.6000001430511475
+      ],
+      "protectedConflicts": []
+    },
+    {
       "name": "VG_R01_HallConsole",
       "room": 1,
       "source": "ClassicConsole_01",
@@ -38,12 +166,12 @@
       "source": "Chandelier_01",
       "min": [
         -0.7951310276985168,
-        3.1326866149902344,
+        0.6326865553855896,
         5.150000095367432
       ],
       "max": [
         0.7951310276985168,
-        4.867313385009766,
+        2.3673133850097656,
         6.849999904632568
       ],
       "protectedConflicts": []

@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public static class ProjectBootstrap
 {
     private const string ScenePath = "Assets/_Game/Scenes/Game.unity";
-    private const int SceneLayoutVersion = 11;
+    private const int SceneLayoutVersion = 12;
     // A validation copy or another checkout must not suppress this project's upgrade.
     private static readonly string SceneVersionKey = "DeductionGame.SceneLayoutVersion:" + Application.dataPath;
 

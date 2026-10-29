@@ -50,8 +50,8 @@
 
 ## 에셋 예산과 파이프라인
 
-- 정문 후속 작업 포함 최종 배치 471,948 tris / 779 render mesh parts / 50 materials. 장식 전용 정문 세부 내용과 실제 렌더는 `FRONT_DOOR_REVIEW.md` 참조.
-- Unity 텍스처 112개, 모두 최대 2048. Android ASTC 6x6, mipmap 적용. PC 압축도 활성화.
+- 정문 구조 정리·고급화 포함 최종 배치 550,557 tris / 809 render mesh parts / 56 materials. 최신 실제 렌더와 보존 검증은 `LUXURY_REVIEW.md` 참조. 이전 정문 단계는 `FRONT_DOOR_REVIEW.md`에 기록했다.
+- Unity 텍스처 117개, 모두 최대 2048. Android ASTC 6x6, mipmap 적용. PC 압축도 활성화.
 - 원본 모델별 과한 디테일만 제한하고, 실루엣과 UV/재질은 유지했다. 전체 저택 일괄 Decimate를 하지 않았다.
 - 모서리/몰딩/외부 창틀은 실제 벽 단위로 합쳐 컷어웨이 단위를 유지했다.
 - FBX 재질 순서는 이름으로 대조한다. Unity import 순서를 Blender 슬롯 순서로 추정하지 않는다.

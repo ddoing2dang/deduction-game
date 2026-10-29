@@ -10,7 +10,8 @@ def png(im,linear=False,normal=False,alpha=None):
  if im is None:return None
  key=(bpy.path.abspath(im.filepath),im.name if not im.filepath else '',linear,normal,alpha.name if alpha else '')
  if key in images:return images[key]['file']
- name=safe(Path(im.filepath.replace('\\','/')).stem if im.filepath else im.name);fn='Gold_'+name+('_Linear'if linear else '')+('_N'if normal else '')+('_Alpha'if alpha else '')+'.png'
+ # Blender // relative paths must be expanded before WindowsPath interprets them as UNC shares.
+ name=safe(Path(bpy.path.abspath(im.filepath)).stem if im.filepath else im.name);fn='Gold_'+name+('_Linear'if linear else '')+('_N'if normal else '')+('_Alpha'if alpha else '')+'.png'
  if any(d['file']==fn for d in images.values()):fn='Gold_'+str(len(images))+'_'+fn
  w,h=im.size;assert max(w,h)<=2048,(im.name,im.size)
  if alpha:

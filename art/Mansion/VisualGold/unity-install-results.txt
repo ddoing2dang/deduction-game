@@ -1,1 +1,1 @@
-Gold parts=779; mesh assets=779; materials=50; textures=112; protected points=85; all visible bounds aligned; original graph retained
+Gold parts=809; mesh assets=809; materials=56; textures=117; protected points=85; all visible bounds aligned; original graph retained

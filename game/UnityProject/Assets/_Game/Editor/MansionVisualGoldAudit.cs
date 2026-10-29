@@ -27,7 +27,14 @@ public static class MansionVisualGoldAudit
   if(state==PlayModeStateChange.ExitingPlayMode){EditorApplication.update-=Tick;running=false;}
  }
  static void Check(bool ok,string message){if(!ok)throw new Exception(message);Results.Add("OK "+message);Flush();}
- static void Flush(){var path=Path.Combine(Root,"play-results.txt");var temporary=path+".tmp";File.WriteAllLines(temporary,Results);if(File.Exists(path))File.Replace(temporary,path,null);else File.Move(temporary,path);}
+ static void Flush(){
+  var path=Path.Combine(Root,"play-results.txt");var temporary=path+".tmp";File.WriteAllLines(temporary,Results);
+  // Windows readers may briefly omit delete-sharing. Keep atomic snapshots without failing gameplay checks on a transient reader.
+  for(int attempt=0;;attempt++){
+   try{if(File.Exists(path))File.Replace(temporary,path,null);else File.Move(temporary,path);return;}
+   catch(IOException)when(attempt<19){System.Threading.Thread.Sleep(10);}
+  }
+ }
  static void Tick(){
   if(!running)return;EditorApplication.QueuePlayerLoopUpdate();
   try{
@@ -86,6 +93,11 @@ public static class MansionVisualGoldAudit
   Check(front.GetComponents<MonoBehaviour>().All(c=>c is MansionArtOccluder),"decorative front door has only environment art marker, no interaction");
   var frontPart=MansionVisualGoldPipeline.Read().parts.Single(p=>p.name==front.name);
   Check(string.IsNullOrEmpty(frontPart.door)&&!frontPart.collision&&string.IsNullOrEmpty(frontPart.parent),"decorative front door has no DoorID and retains original solid hall wall");
+  foreach(var rail in MansionVisualGoldPipeline.Read().parts.Where(p=>p.name.StartsWith("DOOR_04_05_Railing_"))){
+   var go=GameObject.Find(rail.name);Check(go.GetComponent<Renderer>().bounds.max.y<.09f,"entrance sightline cleared by low stone edging "+rail.name);
+   Check(go.GetComponent<MeshCollider>()!=null&&go.GetComponent<MeshCollider>().bounds.max.y>.9f,"original dining-kitchen navigation boundary retained "+rail.name);
+  }
+  foreach(var part in MansionVisualGoldPipeline.Read().parts.Where(p=>p.name.StartsWith("VG_Lux_Entrance")))Check(string.IsNullOrEmpty(part.door)&&!part.collision,"entrance ornament remains decorative-only "+part.name);
   DumpSpatial();room=1;phase=1;PlaceRoom(room);
  }
  static void CheckEventHeads(){
@@ -142,16 +154,17 @@ public static class MansionVisualGoldAudit
   var door=GameObject.Find("VG_DecorativeFrontDoor_ClosedDoubleLeaf").GetComponent<Renderer>();
   var source=GameObject.Find("South_R01_Wall_South_Pier_00").GetComponent<Renderer>();
   try{
-   foreach(bool inside in new[]{false,true}){
+   foreach(int view in new[]{0,1,2}){
+    bool inside=view==1;
     foreach(var pair in visible)pair.Key.enabled=pair.Value;
     foreach(var r in Room(1).GetComponentsInChildren<Renderer>(true))r.enabled=true;
     foreach(var a in UnityEngine.Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))foreach(var r in a.GetComponentsInChildren<Renderer>(true))r.enabled=false;
     source.enabled=true;door.enabled=true;
-    camera.transform.position=inside?new Vector3(-.5f,3.3f,2.8f):new Vector3(-4.5f,3.2f,-6.1f);
-    camera.transform.LookAt(new Vector3(-4.2f,1.95f,inside?-3.25f:-3.75f));
-    camera.orthographicSize=3.1f;
+    camera.transform.position=inside?new Vector3(-.5f,3.3f,2.8f):view==2?new Vector3(-4.2f,6f,-13.6f):new Vector3(-4.5f,3.2f,-6.1f);
+    camera.transform.LookAt(new Vector3(-4.2f,view==2?1.3f:1.95f,inside?-3.25f:-3.75f));
+    camera.orthographicSize=view==2?5.3f:3.1f;
     var rt=new RenderTexture(1400,1050,24);var old=camera.targetTexture;var active=RenderTexture.active;
-    try{camera.targetTexture=rt;camera.Render();RenderTexture.active=rt;var im=new Texture2D(1400,1050,TextureFormat.RGB24,false);im.ReadPixels(new Rect(0,0,1400,1050),0,0);im.Apply();File.WriteAllBytes(Path.Combine(Root,inside?"FrontDoor_Interior.png":"FrontDoor_Exterior.png"),im.EncodeToPNG());UnityEngine.Object.DestroyImmediate(im);}
+    try{camera.targetTexture=rt;camera.Render();RenderTexture.active=rt;var im=new Texture2D(1400,1050,TextureFormat.RGB24,false);im.ReadPixels(new Rect(0,0,1400,1050),0,0);im.Apply();File.WriteAllBytes(Path.Combine(Root,inside?"FrontDoor_Interior.png":view==2?"FrontDoor_Forecourt.png":"FrontDoor_Exterior.png"),im.EncodeToPNG());UnityEngine.Object.DestroyImmediate(im);}
     finally{camera.targetTexture=old;RenderTexture.active=active;UnityEngine.Object.DestroyImmediate(rt);}
    }
    source.enabled=false;Check(door.enabled,"decorative front door remains visible when foreground wall cuts away");
