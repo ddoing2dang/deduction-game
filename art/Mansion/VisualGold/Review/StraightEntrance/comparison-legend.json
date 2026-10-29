@@ -1,0 +1,12 @@
+{
+  "left": "Before, base ee4064f",
+  "right": "After, same camera and render dimensions; images resized only",
+  "images": [
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_Front.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_Inside.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_HalfTop.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_LeftWall.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_RightWall.png",
+    "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Review\\StraightEntrance\\Compare_Door.png"
+  ]
+}

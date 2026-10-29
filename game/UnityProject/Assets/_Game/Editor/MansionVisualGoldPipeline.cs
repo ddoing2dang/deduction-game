@@ -145,13 +145,19 @@ public static class MansionVisualGoldPipeline
    Need(renderer.sharedMaterials.Length==mesh.subMeshCount,"Material/submesh mismatch "+p.name+" materials="+renderer.sharedMaterials.Length+" submeshes="+mesh.subMeshCount);
    if(!existing&&!string.IsNullOrEmpty(p.parent)){
     var follow=t.gameObject.AddComponent<MansionGoldRendererFollower>();follow.Source=targets[p.parent].GetComponent<Renderer>();
+   }else if(!existing&&p.role=="EntranceScreen"){
+    Need(!p.collision&&string.IsNullOrEmpty(p.door),"Service cutaway infill must preserve its physical crossover");var screen=t.gameObject.AddComponent<MansionEntranceScreen>();var crossing=d.parts.Single(item=>item.name=="DOOR_04_05_Passage_Floor");screen.CrossingMin=new Vector3(crossing.min.x-1.2f,-.5f,crossing.min.z-.35f);screen.CrossingMax=new Vector3(crossing.max.x+1.3f,.5f,crossing.max.z+.35f);
+   }else if(!existing&&p.role=="EntranceBoundary"){
+    Need(p.room==0&&string.IsNullOrEmpty(p.door),"Entrance side boundary must not become a gameplay door or room");
+    var collider=t.gameObject.AddComponent<MeshCollider>();collider.sharedMesh=mesh;collider.convex=false;collider.isTrigger=false;
+    t.gameObject.AddComponent<MansionEntranceBoundary>();t.gameObject.AddComponent<MansionRepairObstacle>();
    }else if(!existing&&p.room>0){
     t.gameObject.AddComponent<MansionArtOccluder>();
     if(p.collision||!string.IsNullOrEmpty(p.asset)){var box=t.gameObject.AddComponent<BoxCollider>();box.center=mesh.bounds.center;box.size=mesh.bounds.size;t.gameObject.AddComponent<MansionRepairObstacle>();}
    }
    var b=renderer.bounds;if(Vector3.Distance(b.min,p.min)>.025f||Vector3.Distance(b.max,p.max)>.025f)boundsErrors.Add(p.name+" actual="+b+" expected="+p.min+".."+p.max);
   }
-  foreach(var l in d.lights){var go=new GameObject(l.name);go.transform.SetParent(Room(l.room).Find("EnvironmentArt"),false);go.transform.position=l.position;var light=go.AddComponent<Light>();light.type=LightType.Point;light.color=l.color;light.intensity=l.intensity;light.range=l.range;light.shadows=LightShadows.None;}
+  foreach(var l in d.lights){var go=new GameObject(l.name);go.transform.SetParent(l.room>0?Room(l.room).Find("EnvironmentArt"):outside,false);go.transform.position=l.position;var light=go.AddComponent<Light>();light.type=LightType.Point;light.color=l.color;light.intensity=l.intensity;light.range=l.range;light.shadows=LightShadows.None;}
   var sun=UnityEngine.Object.FindObjectsByType<Light>(FindObjectsSortMode.None).FirstOrDefault(l=>l.type==LightType.Directional);if(sun!=null){sun.intensity=.9f;sun.color=new Color(1,.92f,.81f);sun.transform.rotation=Quaternion.Euler(48,-32,0);sun.shadows=LightShadows.Soft;sun.shadowStrength=.65f;}
   RenderSettings.ambientMode=AmbientMode.Trilight;RenderSettings.ambientSkyColor=new Color(.40f,.46f,.55f);RenderSettings.ambientEquatorColor=new Color(.26f,.25f,.23f);RenderSettings.ambientGroundColor=new Color(.12f,.13f,.14f);RenderSettings.reflectionIntensity=.65f;
   var camera=Camera.main;if(camera!=null){camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.12f,.16f,.20f);if(camera.GetComponent<MansionGoldCinematicDirector>()==null)camera.gameObject.AddComponent<MansionGoldCinematicDirector>();}

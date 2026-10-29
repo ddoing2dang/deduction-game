@@ -61,13 +61,13 @@ parts=[];meshkeys={};tri=0
 for o in objects:
  if o.data not in meshkeys:meshkeys[o.data]='GoldMesh_%04d'%len(meshkeys)
  ps=[o.matrix_world@Vector(v)for v in o.bound_box];lo=[min(v[i]for v in ps)for i in range(3)];hi=[max(v[i]for v in ps)for i in range(3)];o.data.calc_loop_triangles();tri+=len(o.data.loop_triangles)
- parts.append({'name':o.name,'role':o['StructureRole'],'room':int(o.get('StructureRoom',0)),'door':o.get('StructureDoor',''),'side':o.get('StructureSide',''),'parent':o.get('GoldParent',''),'assembly':o.get('ArtAssembly',''),'meshKey':meshkeys[o.data],'materials':[material_names[m]for m in o.data.materials if m],'asset':o.get('GoldAsset',''),'collision':bool(o.get('StructureCollision',False)),'hidden':'_COLLISION_'in o.name,'min':{'x':lo[0],'y':lo[2],'z':lo[1]},'max':{'x':hi[0],'y':hi[2],'z':hi[1]}})
+ parts.append({'name':o.name,'role':o['StructureRole'],'room':int(o.get('StructureRoom',0)),'door':o.get('StructureDoor',''),'side':o.get('StructureSide',''),'parent':o.get('GoldParent',''),'assembly':o.get('ArtAssembly',''),'meshKey':meshkeys[o.data],'materials':[material_names[m]for m in o.data.materials if m],'asset':o.get('GoldAsset',''),'collision':bool(o.get('StructureCollision',False)),'hidden':bool(o.get('GoldRenderHidden',False))or'_COLLISION_'in o.name,'min':{'x':lo[0],'y':lo[2],'z':lo[1]},'max':{'x':hi[0],'y':hi[2],'z':hi[1]}})
 layout=json.loads((P.parent/'Pass02/environment_manifest.json').read_text())['layout']
 doc={'version':1,'modelFile':'Mansion_VisualGold.fbx','parts':parts,'materials':materials,'images':list(images.values()),'retired':json.loads((P/'retired-placeholders.json').read_text()),'layout':layout,'sourceRelease':'mansion-cc0-fullpack-v1','sourcePackSHA256':'71720193c0030977b446e520bb5c3a51e1ca644219b5117645f8b7ba971d11ba'}
 doc['lights']=[]
 for light in scene.objects:
  if light.type=='LIGHT'and'GoldRoom'in light:
-  v=light.matrix_world.translation;c=light.data.color;doc['lights'].append({'name':light.name,'room':int(light['GoldRoom']),'position':{'x':v.x,'y':v.z-.3,'z':v.y},'color':{'r':c.r,'g':c.g,'b':c.b,'a':1},'intensity':2.0 if light['GoldRoom']<7 else 1.6,'range':9})
+  v=light.matrix_world.translation;c=light.data.color;doc['lights'].append({'name':light.name,'room':int(light['GoldRoom']),'position':{'x':v.x,'y':v.z-.3,'z':v.y},'color':{'r':c.r,'g':c.g,'b':c.b,'a':1},'intensity':float(light.get('GoldIntensity',2.0 if light['GoldRoom']<7 else 1.6)),'range':float(light.get('GoldRange',9))})
 (P/'gold-manifest.json').write_text(json.dumps(doc,indent=1));(U/'gold-manifest.json').write_text(json.dumps(doc,indent=1))
 # Selection-only export includes render geometry and retained hidden stair envelopes; references/lights/templates are excluded.
 states={c:c.hide_viewport for c in bpy.data.collections}

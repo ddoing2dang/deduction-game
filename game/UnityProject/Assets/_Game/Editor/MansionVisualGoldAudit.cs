@@ -98,6 +98,7 @@ public static class MansionVisualGoldAudit
    Check(go.GetComponent<MeshCollider>()!=null&&go.GetComponent<MeshCollider>().bounds.max.y>.9f,"original dining-kitchen navigation boundary retained "+rail.name);
   }
   foreach(var part in MansionVisualGoldPipeline.Read().parts.Where(p=>p.name.StartsWith("VG_Lux_Entrance")))Check(string.IsNullOrEmpty(part.door)&&!part.collision,"entrance ornament remains decorative-only "+part.name);
+  CheckEntranceBoundaries();
   DumpSpatial();room=1;phase=1;PlaceRoom(room);
  }
  static void CheckEventHeads(){
@@ -142,6 +143,7 @@ public static class MansionVisualGoldAudit
   if(room==6)Check(GameObject.Find("DOOR_01_05_Door_Header").GetComponent<Renderer>().enabled,"camera-occluded doorway restores when the view moves away");
   CaptureComposition(room);
   if(room==1)CaptureFrontDoor();
+  if(room==1)CaptureStraightEntrance();
   Check(actor.GetComponentsInChildren<SkinnedMeshRenderer>().Any(r=>r.enabled&&r.isVisible),"Jiro rendered in Room "+room);
   GroundCheck("Stand Room "+room,true);
   if(++room<=9){PlaceRoom(room);return;}
@@ -172,6 +174,44 @@ public static class MansionVisualGoldAudit
   }finally{foreach(var pair in visible)if(pair.Key!=null)pair.Key.enabled=pair.Value;camera.transform.SetPositionAndRotation(p,q);camera.orthographicSize=z;camera.Render();}
  }
  [Serializable] class Anchor {public string name;public Vector3 world,viewport;}
+ static void CheckEntranceBoundaries(){
+  var boundaries=UnityEngine.Object.FindObjectsByType<MansionEntranceBoundary>(FindObjectsSortMode.None);
+  Check(boundaries.Length==11,"eleven separately tagged exterior entrance boundary pieces retained");
+  var screens=UnityEngine.Object.FindObjectsByType<MansionEntranceScreen>(FindObjectsSortMode.None);Check(screens.Length==2,"two thick service cutaway infills close static entrance sightlines");foreach(var screen in screens)Check(screen.GetComponent<Collider>()==null,"service visual infill preserves original physical crossover");
+  foreach(var b in boundaries){var c=b.GetComponent<MeshCollider>();Check(c!=null&&!c.isTrigger,"solid entrance side boundary "+b.name);Check(!b.transform.IsChildOf(GameObject.Find(MapData.ConnectionsName).transform),"entrance collision separated from gameplay connections "+b.name);}
+  foreach(float y in new[]{-11.5f,-10f,-9f,-5.5f,-4.25f})foreach(float side in new[]{-1f,1f}){
+   var hits=Physics.RaycastAll(new Vector3(-4.2f,.9f,y),Vector3.right*side,2.3f,~0,QueryTriggerInteraction.Ignore);
+   Check(hits.Any(h=>h.collider.GetComponent<MansionEntranceBoundary>()!=null),"entrance lateral exit blocked side="+side+" at="+y);
+  }
+  Check(Physics.OverlapCapsule(new Vector3(-6.3f,1f,-7.5f),new Vector3(-2.1f,1f,-7.5f),.28f).All(c=>c.GetComponent<MansionEntranceBoundary>()==null),"service crossover clear of all new entrance boundaries");
+  Check(GameObject.Find("VG_Entry_Floor").GetComponent<Collider>()==null,"entrance floor adds no navigation collider");
+  Check(!NavMesh.SamplePosition(new Vector3(-4.2f,0,-11.5f),out var _,.12f,NavMesh.AllAreas),"decorative entrance does not add a traversable map route");
+  foreach(var p in MansionVisualGoldPipeline.Read().parts.Where(p=>p.name.StartsWith("VG_Entry_")))Check(string.IsNullOrEmpty(p.door),"no new DoorID on entrance part "+p.name);
+ }
+ static void CaptureStraightEntrance(){
+  var p=camera.transform.position;var q=camera.transform.rotation;float zoom=camera.orthographicSize,fov=camera.fieldOfView,aspect=camera.aspect;bool ortho=camera.orthographic;
+  var states=UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include,FindObjectsSortMode.None).ToDictionary(r=>r,r=>r.enabled);
+  try{
+   foreach(var b in UnityEngine.Object.FindObjectsByType<MansionEntranceBoundary>(FindObjectsSortMode.None))b.GetComponent<Renderer>().enabled=true;
+   foreach(var a in UnityEngine.Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))foreach(var r in a.GetComponentsInChildren<Renderer>(true))r.enabled=false;
+   foreach(var roomNode in UnityEngine.Object.FindObjectsByType<RoomNodeView>(FindObjectsSortMode.None)){var walls=roomNode.transform.parent.Find("Walls");if(walls!=null)foreach(var r in walls.GetComponentsInChildren<Renderer>())r.enabled=true;}
+   camera.aspect=4f/3f;
+   foreach(string view in new[]{"Front","Inside","HalfTop","LeftWall","RightWall"}){
+    camera.orthographic=view=="Front"||view=="HalfTop";camera.fieldOfView=2*Mathf.Atan(13.5f/28f)*Mathf.Rad2Deg;
+    Vector3 target;
+    switch(view){
+     case "Front":camera.transform.position=new Vector3(-4.2f,5,-20);target=new Vector3(-4.2f,1.8f,-6);camera.orthographicSize=6;break;
+     case "HalfTop":camera.transform.position=new Vector3(-4.2f,11,-18);target=new Vector3(-4.2f,1,-7.5f);camera.orthographicSize=7.5f;break;
+     case "LeftWall":camera.transform.position=new Vector3(-3.4f,2.4f,-11.7f);target=new Vector3(-5.5f,2,-6.7f);break;
+     case "RightWall":camera.transform.position=new Vector3(-5,2.4f,-11.7f);target=new Vector3(-2.9f,2,-6.7f);break;
+     default:camera.transform.position=new Vector3(-4.2f,1.7f,-12.9f);target=new Vector3(-4.2f,1.9f,-3.7f);break;
+    }
+    camera.transform.LookAt(target);var rt=new RenderTexture(1440,1080,24);var prev=camera.targetTexture;var active=RenderTexture.active;
+    try{camera.targetTexture=rt;camera.Render();RenderTexture.active=rt;var im=new Texture2D(1440,1080,TextureFormat.RGB24,false);im.ReadPixels(new Rect(0,0,1440,1080),0,0);im.Apply();File.WriteAllBytes(Path.Combine(Root,"StraightEntrance_"+view+".png"),im.EncodeToPNG());UnityEngine.Object.DestroyImmediate(im);}
+    finally{camera.targetTexture=prev;RenderTexture.active=active;UnityEngine.Object.DestroyImmediate(rt);}
+   }
+  }finally{foreach(var pair in states)if(pair.Key!=null)pair.Key.enabled=pair.Value;camera.transform.SetPositionAndRotation(p,q);camera.orthographic=ortho;camera.orthographicSize=zoom;camera.fieldOfView=fov;camera.aspect=aspect;camera.Render();}
+ }
  static void CaptureComposition(int id){
   var p=camera.transform.position;var r=camera.transform.rotation;float z=camera.orthographicSize,oldAspect=camera.aspect;camera.aspect=1.6f;var focus=MapData.GetRoom(id).Center;
   camera.transform.SetPositionAndRotation(MansionGoldCinematicDirector.SidePosition(focus),MansionGoldCinematicDirector.SideRotation(focus));camera.orthographicSize=4.4f;
@@ -309,6 +349,7 @@ public static class MansionVisualGoldAudit
   lastFrame=Time.frameCount;oldRotation=actor.transform.rotation;
   if(actor.State==CharacterState.Move&&actor.Animator.GetCurrentAnimatorStateInfo(0).IsName("Move"))sawWalk=true;
   var current=MansionEnvironmentCleanup.Read().layout.routes[route/2];
+  if(current.door=="DOOR_04_05"&&actor.transform.position.x> -6.4f&&actor.transform.position.x< -2.1f){foreach(var screen in UnityEngine.Object.FindObjectsByType<MansionEntranceScreen>(FindObjectsSortMode.None)){screen.RefreshVisibility();if(screen.GetComponent<Renderer>().enabled)throw new Exception("service cutaway infill remains visible over actual bridge traversal");}}
   if(!capturedStair&&sawWalk&&(current.door=="DOOR_04_07"||current.door=="DOOR_05_08")&&actor.Agent.remainingDistance<routeLength*.55f){
    int active=actor.transform.position.y< -1?current.b:current.a;GameManager.Instance.Human.RoomId=active;
    var offset=(Vector3)typeof(PcCameraController).GetField("cameraOffset",F).GetValue(camera.GetComponent<PcCameraController>());

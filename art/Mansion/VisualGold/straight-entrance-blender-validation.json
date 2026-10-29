@@ -1,0 +1,15 @@
+{
+  "floorSamples": 405,
+  "missingFloor": [],
+  "visualSideSamples": 90,
+  "visualSideGaps": [],
+  "physicalSideSamplesOutsideProtectedCrossover": 68,
+  "physicalSideGaps": [],
+  "newBoundaryPenetrationsInBridgeSamples": [],
+  "unchangedRefs": 94,
+  "changedRefs": [],
+  "staticBoundaryMeshes": 11,
+  "cutawayInfillMeshes": 2,
+  "axisDeviation": 0,
+  "serviceCrossoverIntentionallyPhysicallyOpen": true
+}

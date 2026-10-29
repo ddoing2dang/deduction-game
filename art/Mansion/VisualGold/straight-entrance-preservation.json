@@ -1,0 +1,10 @@
+{
+  "basicConnections": 11,
+  "newRoomConnections": 0,
+  "newDoorIDs": 0,
+  "baselineColliderAssetsUnchanged": true,
+  "doorIDsUnchanged": true,
+  "sourceCommit": "ee4064fffbb25d33143f6074811de597bc911f12",
+  "roomCount": 9,
+  "layoutUnchanged": true
+}
