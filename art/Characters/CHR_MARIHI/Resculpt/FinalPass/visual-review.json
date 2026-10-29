@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex",
+  "evidence": "Actual Blender renders and Unity Camera.main renders; no AI concept substitution",
+  "directlyReviewed": [
+    "Comparison/Face_Front.png", "Comparison/Face_45.png", "Comparison/Face_Side90.png",
+    "Comparison/Upper_Front.png", "Comparison/Upper_45.png", "Comparison/Upper_Side90.png",
+    "After/Full_Front.png", "After/Full_45.png", "After/Raised_Shoulder.png", "After/Pose_Sit.png", "After/Pose_Walk.png",
+    "Comparison/Expressions_After.png", "Comparison/Unity_Expressions.png", "Comparison/Unity_States.png",
+    "Comparison/Unity_LODs.png", "Comparison/Blender_Unity_Full.png",
+    "Comparison/Unity_Rooms_9.png", "Comparison/Unity_Rooms_19.png", "Comparison/Unity_Rooms_32.png",
+    "Comparison/Unity_Stairs.png", "Verification/Actual_ActionCamera.png", "Verification/Trio_MATTO_JIRO_MARIHI.png"
+  ],
+  "findings": {
+    "upperBody": "The previous detached oversized chest/shoulder plates were replaced by anatomy-following continuous cloth. Side and 45-degree silhouettes no longer show those plate protrusions.",
+    "shoulder": "Raised-arm render shows connected shoulder/underarm/sleeve fabric without the previous open gap or skin patch.",
+    "bodice": "Overlapping black/white surfaces that produced poke-through were removed. Sewn colour regions share the fitted surface.",
+    "face": "Cheek, jaw, orbital and nose/lip volume changed through Basis vertices with matching expression and LOD edits; identity and gold eyes remain.",
+    "hair": "Blonde wave tails and black bows remain. Fringe end and tail end shaping was edited with roots retained.",
+    "lods": "Discovered jagged skirt hem in forced LOD views was repaired; final Unity forced LOD captures have continuous hems.",
+    "unity": "Imported face, hair, costume and identity remain recognisable in the actual game, action camera and three-character comparison. No severe cloth break or blocking obstruction was observed in the reviewed poses/captures."
+  },
+  "limitations": [
+    "Blender and Unity use different real lighting and Idle evaluation; cross-engine boards are not same-light comparisons.",
+    "Far LODs simplify small fabric, collar, pleat and hair details.",
+    "Android device FPS was not measured."
+  ],
+  "productionVerification": "OK for the recorded model, poses and game checks",
+  "finalUserAppearanceApproval": "Pending; no main merge"
+}

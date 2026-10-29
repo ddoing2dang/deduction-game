@@ -1,0 +1,34 @@
+{
+  "Body_LOD0": {
+    "moved": 49,
+    "maxDelta": 0.002360339827004146
+  },
+  "Face_LOD0": {
+    "moved": 3686,
+    "maxDelta": 0.005112020695700152
+  },
+  "Body_LOD1": {
+    "moved": 30,
+    "maxDelta": 0.0023676873617071944
+  },
+  "Face_LOD1": {
+    "moved": 2500,
+    "maxDelta": 0.005117591428608709
+  },
+  "Body_LOD2": {
+    "moved": 15,
+    "maxDelta": 0.0023676873617071944
+  },
+  "Face_LOD2": {
+    "moved": 1410,
+    "maxDelta": 0.005048292831063028
+  },
+  "Face": {
+    "moved": 3686,
+    "maxDelta": 0.005112020695700152
+  },
+  "Body": {
+    "moved": 49,
+    "maxDelta": 0.002360339827004146
+  }
+}

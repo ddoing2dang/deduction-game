@@ -1,0 +1,56 @@
+{
+  "bones": 69,
+  "tris": {
+    "0": 31733,
+    "1": 18721,
+    "2": 9513
+  },
+  "parts": {
+    "Body_LOD0": 3900,
+    "Face_LOD0": 7485,
+    "ACC_MARIHI_Ribbon_LOD0": 550,
+    "Outfit_LOD0": 7952,
+    "Accessory_LOD0": 448,
+    "Shoes_LOD0": 1899,
+    "Body_LOD1": 2145,
+    "Face_LOD1": 5088,
+    "ACC_MARIHI_Ribbon_LOD1": 550,
+    "Outfit_LOD1": 4316,
+    "Accessory_LOD1": 448,
+    "Shoes_LOD1": 1424,
+    "Body_LOD2": 1012,
+    "Face_LOD2": 2619,
+    "ACC_MARIHI_Ribbon_LOD2": 550,
+    "Outfit_LOD2": 2141,
+    "Shoes_LOD2": 949,
+    "Hair_Main_LOD0": 9499,
+    "Hair_Main_LOD1": 4750,
+    "Hair_Main_LOD2": 1897,
+    "Accessory_LOD2": 345
+  },
+  "expressions": [
+    "Blink_L",
+    "Blink_R",
+    "Smile",
+    "Angry",
+    "Sad",
+    "Surprise",
+    "Mouth_A",
+    "Mouth_I",
+    "Mouth_U",
+    "Mouth_E",
+    "Mouth_O"
+  ],
+  "allThreeFaceLODsNonzero": true,
+  "maxInfluences": 4,
+  "unweighted": 0,
+  "maxWeightSumError": 4.842877388000488e-08,
+  "poses": [
+    "T",
+    "Walk",
+    "Arms Up",
+    "Arms Forward",
+    "Sit"
+  ],
+  "appearanceApproval": "Pending user review"
+}

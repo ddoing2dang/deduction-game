@@ -49,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: MAT_MARIHI_SleevePrint
     second: {fileID: 2100000, guid: ffe580d14fea5614c83156b1197cfd3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_MARIHI_TailoredCloth
+    second: {fileID: 2100000, guid: e77d8a23f552da847b1ecc6bb4095521, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

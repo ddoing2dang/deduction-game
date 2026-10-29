@@ -1,0 +1,8 @@
+{
+  "construction": "Connected anatomy-following cloth mesh, true inherited shoulder weights, shared armhole/sleeve vertices, curved clavicle collar, 1mm edge thickness, attached gold binding",
+  "outfitTris": {
+    "Outfit_LOD0": 7952,
+    "Outfit_LOD1": 4508,
+    "Outfit_LOD2": 2095
+  }
+}

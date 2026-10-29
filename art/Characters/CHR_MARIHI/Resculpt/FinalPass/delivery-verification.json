@@ -1,0 +1,76 @@
+{
+  "sameBlenderCaptureConditions": true,
+  "Blender": {
+    "bones": 69,
+    "tris": {
+      "0": 31733,
+      "1": 18721,
+      "2": 9513
+    },
+    "parts": {
+      "Body_LOD0": 3900,
+      "Face_LOD0": 7485,
+      "ACC_MARIHI_Ribbon_LOD0": 550,
+      "Outfit_LOD0": 7952,
+      "Accessory_LOD0": 448,
+      "Shoes_LOD0": 1899,
+      "Body_LOD1": 2145,
+      "Face_LOD1": 5088,
+      "ACC_MARIHI_Ribbon_LOD1": 550,
+      "Outfit_LOD1": 4316,
+      "Accessory_LOD1": 448,
+      "Shoes_LOD1": 1424,
+      "Body_LOD2": 1012,
+      "Face_LOD2": 2619,
+      "ACC_MARIHI_Ribbon_LOD2": 550,
+      "Outfit_LOD2": 2141,
+      "Shoes_LOD2": 949,
+      "Hair_Main_LOD0": 9499,
+      "Hair_Main_LOD1": 4750,
+      "Hair_Main_LOD2": 1897,
+      "Accessory_LOD2": 345
+    },
+    "expressions": [
+      "Blink_L",
+      "Blink_R",
+      "Smile",
+      "Angry",
+      "Sad",
+      "Surprise",
+      "Mouth_A",
+      "Mouth_I",
+      "Mouth_U",
+      "Mouth_E",
+      "Mouth_O"
+    ],
+    "allThreeFaceLODsNonzero": true,
+    "maxInfluences": 4,
+    "unweighted": 0,
+    "maxWeightSumError": 4.842877388000488e-08,
+    "poses": [
+      "T",
+      "Walk",
+      "Arms Up",
+      "Arms Forward",
+      "Sit"
+    ],
+    "appearanceApproval": "Pending user review"
+  },
+  "UnityHumanoid": "Valid human Avatar; 54 mappings",
+  "traversals": 22,
+  "StandPoints": 54,
+  "ActionPoints": 9,
+  "AnimatorStates": 9,
+  "singlePlayerAssertions": 2461,
+  "actionCamera": "Actual SourceId 2, side view and return checked",
+  "files": {
+    "art\\Characters\\CHR_MARIHI\\Production\\CHR_MARIHI.blend": "3e1edb4193fa9b2c888d82f1d2f4c1797e88773952492a1ced208acf90d0924a",
+    "art\\Characters\\CHR_MARIHI\\Resculpt\\CHR_MARIHI_RESCULPT.blend": "c61cd5a24cff7918c2846221560c3d728bef3eeb92dfd9d54478bf8a1cecafd2",
+    "art\\Characters\\CHR_MARIHI\\Resculpt\\FinalPass\\CHR_MARIHI_FINAL_REVIEW.blend": "d55a7018b4aa364bfea0e6d465b45993f96a1a09b3b621cf95eed1e26362875d",
+    "art\\Characters\\CHR_MARIHI\\Resculpt\\FinalPass\\CHR_MARIHI_GAME.blend": "dc6fbcb1ab72c4007effcfe12a8c70f8fdb14a612977aaffa5f6f4587077e9af",
+    "game\\UnityProject\\Assets\\_Game\\Characters\\CHR_MARIHI\\Model\\CHR_MARIHI.fbx": "7d35f66a525299204f91e1f8e63a3649e28eb4b808b9ef61940d58bde65dbc5f"
+  },
+  "originalProductionAndPreviousResculptPreserved": true,
+  "userAppearanceApproval": "Pending; no main merge",
+  "platformLimit": "No Android device performance benchmark"
+}

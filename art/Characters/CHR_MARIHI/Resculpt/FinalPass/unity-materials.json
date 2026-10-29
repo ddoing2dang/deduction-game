@@ -1,0 +1,412 @@
+{
+  "materials": [
+    {
+      "name": "MAT_MARIHI_Hair",
+      "baseColor": [
+        0.93,
+        0.82,
+        0.62,
+        1.0
+      ],
+      "shadeColor": [
+        0.7,
+        0.61,
+        0.47,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_HairStroke.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true,
+      "vertexColor": true
+    },
+    {
+      "name": "MAT_MARIHI_SkirtPrint",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_Skirt_Check.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_SleevePrint",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_SleeveJacquard.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_Body",
+      "baseColor": [
+        0.96,
+        0.81,
+        0.72,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_BodySkin.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": false,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_FaceHighlight",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_FaceAtlas_Painted.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0.20000000298023224,
+      "metallic": 0,
+      "linear": false,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_FaceInk",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_FaceAtlas_Painted.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0.3499999940395355,
+      "metallic": 0,
+      "linear": false,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_FaceWarm",
+      "baseColor": [
+        0.96,
+        0.81,
+        0.72,
+        1.0
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_FaceAtlas_Painted.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0.3499999940395355,
+      "metallic": 0,
+      "linear": false,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_FaceWhite",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_FaceAtlas_Painted.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0.3499999940395355,
+      "metallic": 0,
+      "linear": false,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_Palette",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_MARIHI_LinearPalette.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true,
+      "vertexColor": false
+    },
+    {
+      "name": "MAT_MARIHI_TailoredCloth",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadeColor": [
+        0.67,
+        0.63,
+        0.62,
+        1
+      ],
+      "texture": "MARIHI_TailoredCloth.png",
+      "normal": null,
+      "emission": null,
+      "matcap": null,
+      "emissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "matcapColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cutoff": 0,
+      "metallic": 0,
+      "linear": true,
+      "vertexColor": false
+    }
+  ],
+  "images": [
+    {
+      "name": "MARIHI_HairStroke",
+      "file": "MARIHI_MARIHI_HairStroke.png",
+      "size": [
+        512,
+        1024
+      ]
+    },
+    {
+      "name": "MARIHI_Skirt_Check",
+      "file": "MARIHI_MARIHI_Skirt_Check.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "MARIHI_SleeveJacquard",
+      "file": "MARIHI_MARIHI_SleeveJacquard.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "MARIHI_BodySkin",
+      "file": "MARIHI_MARIHI_BodySkin.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MARIHI_FaceAtlas_Painted",
+      "file": "MARIHI_MARIHI_FaceAtlas_Painted.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MARIHI_LinearPalette",
+      "file": "MARIHI_MARIHI_LinearPalette.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "MARIHI_TailoredCloth",
+      "file": "MARIHI_TailoredCloth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ]
+}

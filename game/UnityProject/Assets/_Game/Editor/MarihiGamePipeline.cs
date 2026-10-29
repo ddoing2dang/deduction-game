@@ -22,10 +22,14 @@ public static class MarihiGamePipeline
   else if(action=="Refresh")AssetDatabase.Refresh();
   else if(action=="Audit")MarihiGameAudit.Begin("Game");
   else if(action=="CameraAudit")MarihiGameAudit.Begin("Camera");
+  else if(action=="ResculptSetup")MarihiResculptBatch.Setup();
+  else if(action=="ResculptAudit")MarihiResculptBatch.Audit();
+  else if(action=="ResculptCameraAudit")MarihiResculptBatch.CameraAudit();
+  else if(action=="ResculptFinish")SessionState.EraseString("MarihiArtifactRoot");
  }
  public const string Folder="Assets/_Game/Characters/CHR_MARIHI";
  public const string Model=Folder+"/Model/CHR_MARIHI.fbx";
- public static string Root=>Path.GetFullPath("../../art/Characters/CHR_MARIHI/Production/Game");
+ public static string Root=>SessionState.GetString("MarihiArtifactRoot",Path.GetFullPath("../../art/Characters/CHR_MARIHI/Production/Game"));
  [Serializable] class Materials {public Mat[] materials;public Image[] images;}
  [Serializable] class Image {public string name,file;public int[] size;}
  [Serializable] class Mat {public string name,texture,normal,emission,matcap;public float[] baseColor,shadeColor,emissionColor,matcapColor;public float cutoff,metallic;public bool linear,vertexColor;}
