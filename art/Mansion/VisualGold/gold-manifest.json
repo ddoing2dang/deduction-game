@@ -3,6 +3,37 @@
  "modelFile": "Mansion_VisualGold.fbx",
  "parts": [
   {
+   "name": "VG_DecorativeFrontDoor_ClosedDoubleLeaf",
+   "role": "Trim",
+   "room": 1,
+   "door": "",
+   "side": "South",
+   "parent": "",
+   "assembly": "DecorativeFrontDoor",
+   "meshKey": "GoldMesh_0000",
+   "materials": [
+    "GoldMat_Gold_Walnut",
+    "GoldMat_Gold_MahoganyPanelling",
+    "GoldMat_Gold_AgedBrass",
+    "GoldMat_Gold_Limestone",
+    "GoldMat_Gold_FrontDoorLampGlass",
+    "GoldMat_Gold_BlackenedIron"
+   ],
+   "asset": "",
+   "collision": false,
+   "hidden": false,
+   "min": {
+    "x": -5.845000267028809,
+    "y": -0.1099998950958252,
+    "z": -4.544999599456787
+   },
+   "max": {
+    "x": -2.555000066757202,
+    "y": 3.9499998092651367,
+    "z": -2.8949999809265137
+   }
+  },
+  {
    "name": "R01_Floor",
    "role": "Floor",
    "room": 1,
@@ -10,7 +41,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0000",
+   "meshKey": "GoldMesh_0001",
    "materials": [
     "GoldMat_Gold_HallMarble"
    ],
@@ -36,7 +67,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0001",
+   "meshKey": "GoldMesh_0002",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -62,7 +93,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0002",
+   "meshKey": "GoldMesh_0003",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -88,7 +119,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0003",
+   "meshKey": "GoldMesh_0004",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -114,7 +145,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0004",
+   "meshKey": "GoldMesh_0005",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -140,7 +171,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0005",
+   "meshKey": "GoldMesh_0006",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -166,7 +197,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0006",
+   "meshKey": "GoldMesh_0007",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -192,7 +223,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0007",
+   "meshKey": "GoldMesh_0008",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -218,7 +249,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0008",
+   "meshKey": "GoldMesh_0009",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -244,7 +275,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0009",
+   "meshKey": "GoldMesh_0010",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -270,7 +301,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0010",
+   "meshKey": "GoldMesh_0011",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -296,7 +327,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0011",
+   "meshKey": "GoldMesh_0012",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -322,7 +353,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0012",
+   "meshKey": "GoldMesh_0013",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -348,7 +379,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0013",
+   "meshKey": "GoldMesh_0014",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -374,7 +405,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0014",
+   "meshKey": "GoldMesh_0015",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -400,7 +431,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0015",
+   "meshKey": "GoldMesh_0016",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -426,7 +457,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0016",
+   "meshKey": "GoldMesh_0017",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -452,7 +483,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0017",
+   "meshKey": "GoldMesh_0018",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -478,7 +509,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0018",
+   "meshKey": "GoldMesh_0019",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -504,7 +535,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0019",
+   "meshKey": "GoldMesh_0020",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -530,7 +561,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0020",
+   "meshKey": "GoldMesh_0021",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -556,7 +587,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0021",
+   "meshKey": "GoldMesh_0022",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -582,7 +613,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0022",
+   "meshKey": "GoldMesh_0023",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -608,7 +639,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0023",
+   "meshKey": "GoldMesh_0024",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -634,7 +665,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0024",
+   "meshKey": "GoldMesh_0025",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -660,7 +691,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0025",
+   "meshKey": "GoldMesh_0026",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -686,7 +717,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0026",
+   "meshKey": "GoldMesh_0027",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -712,7 +743,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0027",
+   "meshKey": "GoldMesh_0028",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -738,7 +769,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0028",
+   "meshKey": "GoldMesh_0029",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -764,7 +795,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0029",
+   "meshKey": "GoldMesh_0030",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -790,7 +821,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0030",
+   "meshKey": "GoldMesh_0031",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -816,7 +847,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0031",
+   "meshKey": "GoldMesh_0032",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -842,7 +873,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0032",
+   "meshKey": "GoldMesh_0033",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -868,7 +899,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0033",
+   "meshKey": "GoldMesh_0034",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -894,7 +925,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0034",
+   "meshKey": "GoldMesh_0035",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -920,7 +951,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0035",
+   "meshKey": "GoldMesh_0036",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -946,7 +977,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0036",
+   "meshKey": "GoldMesh_0037",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -972,7 +1003,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0037",
+   "meshKey": "GoldMesh_0038",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -998,7 +1029,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0038",
+   "meshKey": "GoldMesh_0039",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1024,7 +1055,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0039",
+   "meshKey": "GoldMesh_0040",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1050,7 +1081,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0040",
+   "meshKey": "GoldMesh_0041",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1076,7 +1107,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0041",
+   "meshKey": "GoldMesh_0042",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1102,7 +1133,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0042",
+   "meshKey": "GoldMesh_0043",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1128,7 +1159,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0043",
+   "meshKey": "GoldMesh_0044",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1154,7 +1185,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0044",
+   "meshKey": "GoldMesh_0045",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1180,7 +1211,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0045",
+   "meshKey": "GoldMesh_0046",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1206,7 +1237,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0046",
+   "meshKey": "GoldMesh_0047",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1232,7 +1263,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0047",
+   "meshKey": "GoldMesh_0048",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1258,7 +1289,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0048",
+   "meshKey": "GoldMesh_0049",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1284,7 +1315,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0049",
+   "meshKey": "GoldMesh_0050",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1310,7 +1341,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0050",
+   "meshKey": "GoldMesh_0051",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1336,7 +1367,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0051",
+   "meshKey": "GoldMesh_0052",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1362,7 +1393,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0052",
+   "meshKey": "GoldMesh_0053",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1388,7 +1419,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0053",
+   "meshKey": "GoldMesh_0054",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1414,7 +1445,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0054",
+   "meshKey": "GoldMesh_0055",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1440,7 +1471,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0055",
+   "meshKey": "GoldMesh_0056",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1466,7 +1497,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0056",
+   "meshKey": "GoldMesh_0057",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1492,7 +1523,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0057",
+   "meshKey": "GoldMesh_0058",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1518,7 +1549,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0058",
+   "meshKey": "GoldMesh_0059",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1544,7 +1575,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0059",
+   "meshKey": "GoldMesh_0060",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1570,7 +1601,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0060",
+   "meshKey": "GoldMesh_0061",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -1596,7 +1627,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0061",
+   "meshKey": "GoldMesh_0062",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -1622,7 +1653,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0062",
+   "meshKey": "GoldMesh_0063",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -1648,7 +1679,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0063",
+   "meshKey": "GoldMesh_0064",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1675,7 +1706,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0064",
+   "meshKey": "GoldMesh_0065",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1702,7 +1733,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0065",
+   "meshKey": "GoldMesh_0066",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1729,7 +1760,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0066",
+   "meshKey": "GoldMesh_0067",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1756,7 +1787,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0067",
+   "meshKey": "GoldMesh_0068",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1783,7 +1814,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0068",
+   "meshKey": "GoldMesh_0069",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1810,7 +1841,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0069",
+   "meshKey": "GoldMesh_0070",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1837,7 +1868,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0070",
+   "meshKey": "GoldMesh_0071",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1864,7 +1895,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0071",
+   "meshKey": "GoldMesh_0072",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1891,7 +1922,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0072",
+   "meshKey": "GoldMesh_0073",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1918,7 +1949,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0073",
+   "meshKey": "GoldMesh_0074",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1945,7 +1976,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0074",
+   "meshKey": "GoldMesh_0075",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -1972,7 +2003,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0075",
+   "meshKey": "GoldMesh_0076",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -1998,7 +2029,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0076",
+   "meshKey": "GoldMesh_0077",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2025,7 +2056,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0077",
+   "meshKey": "GoldMesh_0078",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2052,7 +2083,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0078",
+   "meshKey": "GoldMesh_0079",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2079,7 +2110,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0079",
+   "meshKey": "GoldMesh_0080",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2106,7 +2137,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0080",
+   "meshKey": "GoldMesh_0081",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2133,7 +2164,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0081",
+   "meshKey": "GoldMesh_0082",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2160,7 +2191,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0082",
+   "meshKey": "GoldMesh_0083",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2187,7 +2218,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0083",
+   "meshKey": "GoldMesh_0084",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2214,7 +2245,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0084",
+   "meshKey": "GoldMesh_0085",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -2240,7 +2271,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0085",
+   "meshKey": "GoldMesh_0086",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2267,7 +2298,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0086",
+   "meshKey": "GoldMesh_0087",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2294,7 +2325,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0087",
+   "meshKey": "GoldMesh_0088",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2321,7 +2352,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0088",
+   "meshKey": "GoldMesh_0089",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2348,7 +2379,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0089",
+   "meshKey": "GoldMesh_0090",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2375,7 +2406,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0090",
+   "meshKey": "GoldMesh_0091",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2402,7 +2433,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0091",
+   "meshKey": "GoldMesh_0092",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2429,7 +2460,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0092",
+   "meshKey": "GoldMesh_0093",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2456,7 +2487,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0093",
+   "meshKey": "GoldMesh_0094",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -2482,7 +2513,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0094",
+   "meshKey": "GoldMesh_0095",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2509,7 +2540,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0095",
+   "meshKey": "GoldMesh_0096",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2536,7 +2567,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0096",
+   "meshKey": "GoldMesh_0097",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2563,7 +2594,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0097",
+   "meshKey": "GoldMesh_0098",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2590,7 +2621,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0098",
+   "meshKey": "GoldMesh_0099",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2617,7 +2648,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0099",
+   "meshKey": "GoldMesh_0100",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2644,7 +2675,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0100",
+   "meshKey": "GoldMesh_0101",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2671,7 +2702,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0101",
+   "meshKey": "GoldMesh_0102",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2698,7 +2729,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0102",
+   "meshKey": "GoldMesh_0103",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -2724,7 +2755,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0103",
+   "meshKey": "GoldMesh_0104",
    "materials": [
     "GoldMat_Gold_KitchenStone"
    ],
@@ -2750,7 +2781,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0104",
+   "meshKey": "GoldMesh_0105",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2777,7 +2808,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0105",
+   "meshKey": "GoldMesh_0106",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2804,7 +2835,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0106",
+   "meshKey": "GoldMesh_0107",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2831,7 +2862,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0107",
+   "meshKey": "GoldMesh_0108",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2858,7 +2889,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0108",
+   "meshKey": "GoldMesh_0109",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2885,7 +2916,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0109",
+   "meshKey": "GoldMesh_0110",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2912,7 +2943,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0110",
+   "meshKey": "GoldMesh_0111",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2939,7 +2970,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0111",
+   "meshKey": "GoldMesh_0112",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2966,7 +2997,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0112",
+   "meshKey": "GoldMesh_0113",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -2993,7 +3024,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0113",
+   "meshKey": "GoldMesh_0114",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3020,7 +3051,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0114",
+   "meshKey": "GoldMesh_0115",
    "materials": [
     "GoldMat_Gold_HallMarble"
    ],
@@ -3046,7 +3077,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0115",
+   "meshKey": "GoldMesh_0116",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3072,7 +3103,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0116",
+   "meshKey": "GoldMesh_0117",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3098,7 +3129,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0117",
+   "meshKey": "GoldMesh_0118",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3124,7 +3155,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0118",
+   "meshKey": "GoldMesh_0119",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3150,7 +3181,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0119",
+   "meshKey": "GoldMesh_0120",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3176,7 +3207,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0120",
+   "meshKey": "GoldMesh_0121",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3202,7 +3233,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0121",
+   "meshKey": "GoldMesh_0122",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3228,7 +3259,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0122",
+   "meshKey": "GoldMesh_0123",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3254,7 +3285,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0123",
+   "meshKey": "GoldMesh_0124",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3280,7 +3311,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0124",
+   "meshKey": "GoldMesh_0125",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3306,7 +3337,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0125",
+   "meshKey": "GoldMesh_0126",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3332,7 +3363,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0126",
+   "meshKey": "GoldMesh_0127",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3358,7 +3389,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0127",
+   "meshKey": "GoldMesh_0128",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3384,7 +3415,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0128",
+   "meshKey": "GoldMesh_0129",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3410,7 +3441,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0129",
+   "meshKey": "GoldMesh_0130",
    "materials": [
     "GoldMat_Iron"
    ],
@@ -3436,7 +3467,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0130",
+   "meshKey": "GoldMesh_0131",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3462,7 +3493,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0131",
+   "meshKey": "GoldMesh_0132",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3488,7 +3519,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0132",
+   "meshKey": "GoldMesh_0133",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -3514,7 +3545,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0133",
+   "meshKey": "GoldMesh_0134",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3541,7 +3572,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0134",
+   "meshKey": "GoldMesh_0135",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3568,7 +3599,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0135",
+   "meshKey": "GoldMesh_0136",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3595,7 +3626,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0136",
+   "meshKey": "GoldMesh_0137",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3622,7 +3653,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0137",
+   "meshKey": "GoldMesh_0138",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3649,7 +3680,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0138",
+   "meshKey": "GoldMesh_0139",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3676,7 +3707,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0139",
+   "meshKey": "GoldMesh_0140",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3703,7 +3734,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0140",
+   "meshKey": "GoldMesh_0141",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -3730,7 +3761,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0141",
+   "meshKey": "GoldMesh_0142",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -3756,7 +3787,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0142",
+   "meshKey": "GoldMesh_0143",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3783,7 +3814,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0143",
+   "meshKey": "GoldMesh_0144",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3810,7 +3841,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0144",
+   "meshKey": "GoldMesh_0145",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3837,7 +3868,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0145",
+   "meshKey": "GoldMesh_0146",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3864,7 +3895,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0146",
+   "meshKey": "GoldMesh_0147",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3891,7 +3922,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0147",
+   "meshKey": "GoldMesh_0148",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3918,7 +3949,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0148",
+   "meshKey": "GoldMesh_0149",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3945,7 +3976,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0149",
+   "meshKey": "GoldMesh_0150",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -3972,7 +4003,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0150",
+   "meshKey": "GoldMesh_0151",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -3998,7 +4029,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0151",
+   "meshKey": "GoldMesh_0152",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4024,7 +4055,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0152",
+   "meshKey": "GoldMesh_0153",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4050,7 +4081,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0153",
+   "meshKey": "GoldMesh_0154",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4076,7 +4107,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0154",
+   "meshKey": "GoldMesh_0155",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4102,7 +4133,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0155",
+   "meshKey": "GoldMesh_0156",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4128,7 +4159,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0156",
+   "meshKey": "GoldMesh_0157",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4154,7 +4185,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0157",
+   "meshKey": "GoldMesh_0158",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4180,7 +4211,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0158",
+   "meshKey": "GoldMesh_0159",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4206,7 +4237,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0159",
+   "meshKey": "GoldMesh_0160",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4232,7 +4263,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0160",
+   "meshKey": "GoldMesh_0161",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4258,7 +4289,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0161",
+   "meshKey": "GoldMesh_0162",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4285,7 +4316,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0162",
+   "meshKey": "GoldMesh_0163",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4312,7 +4343,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0163",
+   "meshKey": "GoldMesh_0164",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4339,7 +4370,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0164",
+   "meshKey": "GoldMesh_0165",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4366,7 +4397,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0165",
+   "meshKey": "GoldMesh_0166",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4393,7 +4424,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0166",
+   "meshKey": "GoldMesh_0167",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4420,7 +4451,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0167",
+   "meshKey": "GoldMesh_0168",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4447,7 +4478,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0168",
+   "meshKey": "GoldMesh_0169",
    "materials": [
     "GoldMat_Gold_CellarStone",
     "GoldMat_Gold_EstateBrick"
@@ -4474,7 +4505,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0169",
+   "meshKey": "GoldMesh_0170",
    "materials": [
     "GoldMat_Gold_ServiceTimber"
    ],
@@ -4500,7 +4531,7 @@
    "side": "East",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0170",
+   "meshKey": "GoldMesh_0171",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4527,7 +4558,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0171",
+   "meshKey": "GoldMesh_0172",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4554,7 +4585,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0172",
+   "meshKey": "GoldMesh_0173",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4581,7 +4612,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0173",
+   "meshKey": "GoldMesh_0174",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4608,7 +4639,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0174",
+   "meshKey": "GoldMesh_0175",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4635,7 +4666,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0175",
+   "meshKey": "GoldMesh_0176",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4662,7 +4693,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0176",
+   "meshKey": "GoldMesh_0177",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4689,7 +4720,7 @@
    "side": "South",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0177",
+   "meshKey": "GoldMesh_0178",
    "materials": [
     "GoldMat_Gold_WarmPlaster",
     "GoldMat_Gold_EstateBrick"
@@ -4716,7 +4747,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0178",
+   "meshKey": "GoldMesh_0179",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -4742,7 +4773,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0179",
+   "meshKey": "GoldMesh_0180",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4768,7 +4799,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0180",
+   "meshKey": "GoldMesh_0181",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4794,7 +4825,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0181",
+   "meshKey": "GoldMesh_0182",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4820,7 +4851,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0182",
+   "meshKey": "GoldMesh_0183",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4846,7 +4877,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0183",
+   "meshKey": "GoldMesh_0184",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4872,7 +4903,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0184",
+   "meshKey": "GoldMesh_0185",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4898,7 +4929,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0185",
+   "meshKey": "GoldMesh_0186",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4924,7 +4955,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0186",
+   "meshKey": "GoldMesh_0187",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4950,7 +4981,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0187",
+   "meshKey": "GoldMesh_0188",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -4976,7 +5007,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0188",
+   "meshKey": "GoldMesh_0189",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5002,7 +5033,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0189",
+   "meshKey": "GoldMesh_0190",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5028,7 +5059,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0190",
+   "meshKey": "GoldMesh_0191",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5054,7 +5085,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0191",
+   "meshKey": "GoldMesh_0192",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5080,7 +5111,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0192",
+   "meshKey": "GoldMesh_0193",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -5106,7 +5137,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0193",
+   "meshKey": "GoldMesh_0194",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5132,7 +5163,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0194",
+   "meshKey": "GoldMesh_0195",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5158,7 +5189,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0195",
+   "meshKey": "GoldMesh_0196",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5184,7 +5215,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0196",
+   "meshKey": "GoldMesh_0197",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5210,7 +5241,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0197",
+   "meshKey": "GoldMesh_0198",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5236,7 +5267,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0198",
+   "meshKey": "GoldMesh_0199",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5262,7 +5293,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0199",
+   "meshKey": "GoldMesh_0200",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5288,7 +5319,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0200",
+   "meshKey": "GoldMesh_0201",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5314,7 +5345,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0201",
+   "meshKey": "GoldMesh_0202",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5340,7 +5371,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0202",
+   "meshKey": "GoldMesh_0203",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5366,7 +5397,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0203",
+   "meshKey": "GoldMesh_0204",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5392,7 +5423,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0204",
+   "meshKey": "GoldMesh_0205",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5418,7 +5449,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0205",
+   "meshKey": "GoldMesh_0206",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5444,7 +5475,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0206",
+   "meshKey": "GoldMesh_0207",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -5470,7 +5501,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0207",
+   "meshKey": "GoldMesh_0208",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5496,7 +5527,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0208",
+   "meshKey": "GoldMesh_0209",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5522,7 +5553,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0209",
+   "meshKey": "GoldMesh_0210",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5548,7 +5579,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0210",
+   "meshKey": "GoldMesh_0211",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -5574,7 +5605,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0211",
+   "meshKey": "GoldMesh_0212",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5600,7 +5631,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0212",
+   "meshKey": "GoldMesh_0213",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5626,7 +5657,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0213",
+   "meshKey": "GoldMesh_0214",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5652,7 +5683,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0214",
+   "meshKey": "GoldMesh_0215",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5678,7 +5709,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0215",
+   "meshKey": "GoldMesh_0216",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5704,7 +5735,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0216",
+   "meshKey": "GoldMesh_0217",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5730,7 +5761,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0217",
+   "meshKey": "GoldMesh_0218",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5756,7 +5787,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0218",
+   "meshKey": "GoldMesh_0219",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5782,7 +5813,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0219",
+   "meshKey": "GoldMesh_0220",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5808,7 +5839,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0220",
+   "meshKey": "GoldMesh_0221",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5834,7 +5865,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0221",
+   "meshKey": "GoldMesh_0222",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5860,7 +5891,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0222",
+   "meshKey": "GoldMesh_0223",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5886,7 +5917,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0223",
+   "meshKey": "GoldMesh_0224",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5912,7 +5943,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0224",
+   "meshKey": "GoldMesh_0225",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -5938,7 +5969,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0225",
+   "meshKey": "GoldMesh_0226",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5964,7 +5995,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0226",
+   "meshKey": "GoldMesh_0227",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -5990,7 +6021,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0227",
+   "meshKey": "GoldMesh_0228",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6016,7 +6047,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0228",
+   "meshKey": "GoldMesh_0229",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6042,7 +6073,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0229",
+   "meshKey": "GoldMesh_0230",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6068,7 +6099,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0230",
+   "meshKey": "GoldMesh_0231",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6094,7 +6125,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0231",
+   "meshKey": "GoldMesh_0232",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6120,7 +6151,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0232",
+   "meshKey": "GoldMesh_0233",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6146,7 +6177,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0233",
+   "meshKey": "GoldMesh_0234",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6172,7 +6203,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0234",
+   "meshKey": "GoldMesh_0235",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6198,7 +6229,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0235",
+   "meshKey": "GoldMesh_0236",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6224,7 +6255,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0236",
+   "meshKey": "GoldMesh_0237",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6250,7 +6281,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0237",
+   "meshKey": "GoldMesh_0238",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6276,7 +6307,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0238",
+   "meshKey": "GoldMesh_0239",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6302,7 +6333,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0239",
+   "meshKey": "GoldMesh_0240",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6328,7 +6359,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0240",
+   "meshKey": "GoldMesh_0241",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6354,7 +6385,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0241",
+   "meshKey": "GoldMesh_0242",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6380,7 +6411,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0242",
+   "meshKey": "GoldMesh_0243",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6406,7 +6437,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0243",
+   "meshKey": "GoldMesh_0244",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6432,7 +6463,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0244",
+   "meshKey": "GoldMesh_0245",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -6458,7 +6489,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0245",
+   "meshKey": "GoldMesh_0246",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6484,7 +6515,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0246",
+   "meshKey": "GoldMesh_0247",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6510,7 +6541,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0247",
+   "meshKey": "GoldMesh_0248",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6536,7 +6567,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0248",
+   "meshKey": "GoldMesh_0249",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6562,7 +6593,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0249",
+   "meshKey": "GoldMesh_0250",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6588,7 +6619,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0250",
+   "meshKey": "GoldMesh_0251",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6614,7 +6645,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0251",
+   "meshKey": "GoldMesh_0252",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6640,7 +6671,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0252",
+   "meshKey": "GoldMesh_0253",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6666,7 +6697,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0253",
+   "meshKey": "GoldMesh_0254",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6692,7 +6723,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0254",
+   "meshKey": "GoldMesh_0255",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6718,7 +6749,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0255",
+   "meshKey": "GoldMesh_0256",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6744,7 +6775,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0256",
+   "meshKey": "GoldMesh_0257",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6770,7 +6801,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0257",
+   "meshKey": "GoldMesh_0258",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6796,7 +6827,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0258",
+   "meshKey": "GoldMesh_0259",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6822,7 +6853,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0259",
+   "meshKey": "GoldMesh_0260",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6848,7 +6879,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0260",
+   "meshKey": "GoldMesh_0261",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6874,7 +6905,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0261",
+   "meshKey": "GoldMesh_0262",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6900,7 +6931,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0262",
+   "meshKey": "GoldMesh_0263",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6926,7 +6957,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0263",
+   "meshKey": "GoldMesh_0264",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6952,7 +6983,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0264",
+   "meshKey": "GoldMesh_0265",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -6978,7 +7009,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0265",
+   "meshKey": "GoldMesh_0266",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7004,7 +7035,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0266",
+   "meshKey": "GoldMesh_0267",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7030,7 +7061,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0267",
+   "meshKey": "GoldMesh_0268",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7056,7 +7087,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0268",
+   "meshKey": "GoldMesh_0269",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7082,7 +7113,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0269",
+   "meshKey": "GoldMesh_0270",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7108,7 +7139,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0270",
+   "meshKey": "GoldMesh_0271",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7134,7 +7165,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0271",
+   "meshKey": "GoldMesh_0272",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7160,7 +7191,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0272",
+   "meshKey": "GoldMesh_0273",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7186,7 +7217,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0273",
+   "meshKey": "GoldMesh_0274",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7212,7 +7243,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0274",
+   "meshKey": "GoldMesh_0275",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7238,7 +7269,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0275",
+   "meshKey": "GoldMesh_0276",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7264,7 +7295,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0276",
+   "meshKey": "GoldMesh_0277",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7290,7 +7321,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0277",
+   "meshKey": "GoldMesh_0278",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7316,7 +7347,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0278",
+   "meshKey": "GoldMesh_0279",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7342,7 +7373,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0279",
+   "meshKey": "GoldMesh_0280",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7368,7 +7399,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0280",
+   "meshKey": "GoldMesh_0281",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7394,7 +7425,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0281",
+   "meshKey": "GoldMesh_0282",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7420,7 +7451,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0282",
+   "meshKey": "GoldMesh_0283",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7446,7 +7477,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0283",
+   "meshKey": "GoldMesh_0284",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7472,7 +7503,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0284",
+   "meshKey": "GoldMesh_0285",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7498,7 +7529,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0285",
+   "meshKey": "GoldMesh_0286",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -7524,7 +7555,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0286",
+   "meshKey": "GoldMesh_0287",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7550,7 +7581,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0287",
+   "meshKey": "GoldMesh_0288",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7576,7 +7607,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0288",
+   "meshKey": "GoldMesh_0289",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7602,7 +7633,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0289",
+   "meshKey": "GoldMesh_0290",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7628,7 +7659,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0290",
+   "meshKey": "GoldMesh_0291",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7654,7 +7685,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0291",
+   "meshKey": "GoldMesh_0292",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7680,7 +7711,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0292",
+   "meshKey": "GoldMesh_0293",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7706,7 +7737,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0293",
+   "meshKey": "GoldMesh_0294",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7732,7 +7763,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0294",
+   "meshKey": "GoldMesh_0295",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7758,7 +7789,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0295",
+   "meshKey": "GoldMesh_0296",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7784,7 +7815,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0296",
+   "meshKey": "GoldMesh_0297",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7810,7 +7841,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0297",
+   "meshKey": "GoldMesh_0298",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7836,7 +7867,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0298",
+   "meshKey": "GoldMesh_0299",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7862,7 +7893,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0299",
+   "meshKey": "GoldMesh_0300",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7888,7 +7919,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0300",
+   "meshKey": "GoldMesh_0301",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7914,7 +7945,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0301",
+   "meshKey": "GoldMesh_0302",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7940,7 +7971,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0302",
+   "meshKey": "GoldMesh_0303",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7966,7 +7997,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0303",
+   "meshKey": "GoldMesh_0304",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -7992,7 +8023,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0304",
+   "meshKey": "GoldMesh_0305",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8018,7 +8049,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0305",
+   "meshKey": "GoldMesh_0306",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8044,7 +8075,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0306",
+   "meshKey": "GoldMesh_0307",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8070,7 +8101,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0307",
+   "meshKey": "GoldMesh_0308",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8096,7 +8127,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0308",
+   "meshKey": "GoldMesh_0309",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8122,7 +8153,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0309",
+   "meshKey": "GoldMesh_0310",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8148,7 +8179,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0310",
+   "meshKey": "GoldMesh_0311",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8174,7 +8205,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0311",
+   "meshKey": "GoldMesh_0312",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8200,7 +8231,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0312",
+   "meshKey": "GoldMesh_0313",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8226,7 +8257,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0313",
+   "meshKey": "GoldMesh_0314",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8252,7 +8283,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0314",
+   "meshKey": "GoldMesh_0315",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8278,7 +8309,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0315",
+   "meshKey": "GoldMesh_0316",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8304,7 +8335,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0316",
+   "meshKey": "GoldMesh_0317",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8330,7 +8361,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0317",
+   "meshKey": "GoldMesh_0318",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8356,7 +8387,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0318",
+   "meshKey": "GoldMesh_0319",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8382,7 +8413,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0319",
+   "meshKey": "GoldMesh_0320",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8408,7 +8439,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0320",
+   "meshKey": "GoldMesh_0321",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8434,7 +8465,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0321",
+   "meshKey": "GoldMesh_0322",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8460,7 +8491,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0322",
+   "meshKey": "GoldMesh_0323",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8486,7 +8517,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0323",
+   "meshKey": "GoldMesh_0324",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8512,7 +8543,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0324",
+   "meshKey": "GoldMesh_0325",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8538,7 +8569,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0325",
+   "meshKey": "GoldMesh_0326",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8564,7 +8595,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0326",
+   "meshKey": "GoldMesh_0327",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8590,7 +8621,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0327",
+   "meshKey": "GoldMesh_0328",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8616,7 +8647,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0328",
+   "meshKey": "GoldMesh_0329",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8642,7 +8673,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0329",
+   "meshKey": "GoldMesh_0330",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8668,7 +8699,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0330",
+   "meshKey": "GoldMesh_0331",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8694,7 +8725,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0331",
+   "meshKey": "GoldMesh_0332",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8720,7 +8751,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0332",
+   "meshKey": "GoldMesh_0333",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8746,7 +8777,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0333",
+   "meshKey": "GoldMesh_0334",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8772,7 +8803,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0334",
+   "meshKey": "GoldMesh_0335",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8798,7 +8829,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0335",
+   "meshKey": "GoldMesh_0336",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8824,7 +8855,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0336",
+   "meshKey": "GoldMesh_0337",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8850,7 +8881,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0337",
+   "meshKey": "GoldMesh_0338",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8876,7 +8907,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0338",
+   "meshKey": "GoldMesh_0339",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8902,7 +8933,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0339",
+   "meshKey": "GoldMesh_0340",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8928,7 +8959,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0340",
+   "meshKey": "GoldMesh_0341",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8954,7 +8985,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0341",
+   "meshKey": "GoldMesh_0342",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -8980,7 +9011,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0342",
+   "meshKey": "GoldMesh_0343",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9006,7 +9037,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0343",
+   "meshKey": "GoldMesh_0344",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9032,7 +9063,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0344",
+   "meshKey": "GoldMesh_0345",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9058,7 +9089,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0345",
+   "meshKey": "GoldMesh_0346",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9084,7 +9115,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0346",
+   "meshKey": "GoldMesh_0347",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9110,7 +9141,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0347",
+   "meshKey": "GoldMesh_0348",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9136,7 +9167,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0348",
+   "meshKey": "GoldMesh_0349",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9162,7 +9193,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0349",
+   "meshKey": "GoldMesh_0350",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9188,7 +9219,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0350",
+   "meshKey": "GoldMesh_0351",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9214,7 +9245,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0351",
+   "meshKey": "GoldMesh_0352",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9240,7 +9271,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0352",
+   "meshKey": "GoldMesh_0353",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9266,7 +9297,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0353",
+   "meshKey": "GoldMesh_0354",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9292,7 +9323,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0354",
+   "meshKey": "GoldMesh_0355",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9318,7 +9349,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0355",
+   "meshKey": "GoldMesh_0356",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9344,7 +9375,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0356",
+   "meshKey": "GoldMesh_0357",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9370,7 +9401,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0357",
+   "meshKey": "GoldMesh_0358",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9396,7 +9427,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0358",
+   "meshKey": "GoldMesh_0359",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9422,7 +9453,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0359",
+   "meshKey": "GoldMesh_0360",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9448,7 +9479,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0360",
+   "meshKey": "GoldMesh_0361",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9474,7 +9505,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0361",
+   "meshKey": "GoldMesh_0362",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9500,7 +9531,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0362",
+   "meshKey": "GoldMesh_0363",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9526,7 +9557,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0363",
+   "meshKey": "GoldMesh_0364",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9552,7 +9583,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0364",
+   "meshKey": "GoldMesh_0365",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9578,7 +9609,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0365",
+   "meshKey": "GoldMesh_0366",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9604,7 +9635,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0366",
+   "meshKey": "GoldMesh_0367",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9630,7 +9661,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0367",
+   "meshKey": "GoldMesh_0368",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9656,7 +9687,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0368",
+   "meshKey": "GoldMesh_0369",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9682,7 +9713,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0369",
+   "meshKey": "GoldMesh_0370",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9708,7 +9739,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0370",
+   "meshKey": "GoldMesh_0371",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9734,7 +9765,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0371",
+   "meshKey": "GoldMesh_0372",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -9760,7 +9791,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0372",
+   "meshKey": "GoldMesh_0373",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -9786,7 +9817,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0373",
+   "meshKey": "GoldMesh_0374",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9812,7 +9843,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0374",
+   "meshKey": "GoldMesh_0375",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9838,7 +9869,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0375",
+   "meshKey": "GoldMesh_0376",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9864,7 +9895,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0376",
+   "meshKey": "GoldMesh_0377",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9890,7 +9921,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0377",
+   "meshKey": "GoldMesh_0378",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9916,7 +9947,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0378",
+   "meshKey": "GoldMesh_0379",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9942,7 +9973,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0379",
+   "meshKey": "GoldMesh_0380",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9968,7 +9999,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0380",
+   "meshKey": "GoldMesh_0381",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -9994,7 +10025,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0381",
+   "meshKey": "GoldMesh_0382",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10020,7 +10051,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0382",
+   "meshKey": "GoldMesh_0383",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10046,7 +10077,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0383",
+   "meshKey": "GoldMesh_0384",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10072,7 +10103,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0384",
+   "meshKey": "GoldMesh_0385",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10098,7 +10129,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0385",
+   "meshKey": "GoldMesh_0386",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10124,7 +10155,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0386",
+   "meshKey": "GoldMesh_0387",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10150,7 +10181,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0387",
+   "meshKey": "GoldMesh_0388",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10176,7 +10207,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0388",
+   "meshKey": "GoldMesh_0389",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10202,7 +10233,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0389",
+   "meshKey": "GoldMesh_0390",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10228,7 +10259,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0390",
+   "meshKey": "GoldMesh_0391",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10254,7 +10285,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0391",
+   "meshKey": "GoldMesh_0392",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10280,7 +10311,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0392",
+   "meshKey": "GoldMesh_0393",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10306,7 +10337,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0393",
+   "meshKey": "GoldMesh_0394",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10332,7 +10363,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0394",
+   "meshKey": "GoldMesh_0395",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10358,7 +10389,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0395",
+   "meshKey": "GoldMesh_0396",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10384,7 +10415,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0396",
+   "meshKey": "GoldMesh_0397",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10410,7 +10441,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0397",
+   "meshKey": "GoldMesh_0398",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10436,7 +10467,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0398",
+   "meshKey": "GoldMesh_0399",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10462,7 +10493,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0399",
+   "meshKey": "GoldMesh_0400",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10488,7 +10519,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0400",
+   "meshKey": "GoldMesh_0401",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10514,7 +10545,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0401",
+   "meshKey": "GoldMesh_0402",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10540,7 +10571,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0402",
+   "meshKey": "GoldMesh_0403",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10566,7 +10597,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0403",
+   "meshKey": "GoldMesh_0404",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10592,7 +10623,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0404",
+   "meshKey": "GoldMesh_0405",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10618,7 +10649,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0405",
+   "meshKey": "GoldMesh_0406",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10644,7 +10675,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0406",
+   "meshKey": "GoldMesh_0407",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10670,7 +10701,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0407",
+   "meshKey": "GoldMesh_0408",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10696,7 +10727,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0408",
+   "meshKey": "GoldMesh_0409",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10722,7 +10753,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0409",
+   "meshKey": "GoldMesh_0410",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10748,7 +10779,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0410",
+   "meshKey": "GoldMesh_0411",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10774,7 +10805,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0411",
+   "meshKey": "GoldMesh_0412",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10800,7 +10831,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0412",
+   "meshKey": "GoldMesh_0413",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10826,7 +10857,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0413",
+   "meshKey": "GoldMesh_0414",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10852,7 +10883,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0414",
+   "meshKey": "GoldMesh_0415",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10878,7 +10909,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0415",
+   "meshKey": "GoldMesh_0416",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10904,7 +10935,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0416",
+   "meshKey": "GoldMesh_0417",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10930,7 +10961,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0417",
+   "meshKey": "GoldMesh_0418",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10956,7 +10987,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0418",
+   "meshKey": "GoldMesh_0419",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -10982,7 +11013,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0419",
+   "meshKey": "GoldMesh_0420",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11008,7 +11039,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0420",
+   "meshKey": "GoldMesh_0421",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11034,7 +11065,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0421",
+   "meshKey": "GoldMesh_0422",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11060,7 +11091,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0422",
+   "meshKey": "GoldMesh_0423",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11086,7 +11117,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0423",
+   "meshKey": "GoldMesh_0424",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11112,7 +11143,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0424",
+   "meshKey": "GoldMesh_0425",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11138,7 +11169,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0425",
+   "meshKey": "GoldMesh_0426",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11164,7 +11195,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0426",
+   "meshKey": "GoldMesh_0427",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11190,7 +11221,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0427",
+   "meshKey": "GoldMesh_0428",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11216,7 +11247,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0428",
+   "meshKey": "GoldMesh_0429",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11242,7 +11273,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0429",
+   "meshKey": "GoldMesh_0430",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11268,7 +11299,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0430",
+   "meshKey": "GoldMesh_0431",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11294,7 +11325,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0431",
+   "meshKey": "GoldMesh_0432",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11320,7 +11351,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0432",
+   "meshKey": "GoldMesh_0433",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11346,7 +11377,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0433",
+   "meshKey": "GoldMesh_0434",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11372,7 +11403,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0434",
+   "meshKey": "GoldMesh_0435",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11398,7 +11429,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0435",
+   "meshKey": "GoldMesh_0436",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11424,7 +11455,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0436",
+   "meshKey": "GoldMesh_0437",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11450,7 +11481,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0437",
+   "meshKey": "GoldMesh_0438",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11476,7 +11507,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0438",
+   "meshKey": "GoldMesh_0439",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11502,7 +11533,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0439",
+   "meshKey": "GoldMesh_0440",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11528,7 +11559,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0440",
+   "meshKey": "GoldMesh_0441",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11554,7 +11585,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0441",
+   "meshKey": "GoldMesh_0442",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11580,7 +11611,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0442",
+   "meshKey": "GoldMesh_0443",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11606,7 +11637,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0443",
+   "meshKey": "GoldMesh_0444",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11632,7 +11663,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0444",
+   "meshKey": "GoldMesh_0445",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11658,7 +11689,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0445",
+   "meshKey": "GoldMesh_0446",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11684,7 +11715,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0446",
+   "meshKey": "GoldMesh_0447",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11710,7 +11741,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0447",
+   "meshKey": "GoldMesh_0448",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11736,7 +11767,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0448",
+   "meshKey": "GoldMesh_0449",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11762,7 +11793,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0449",
+   "meshKey": "GoldMesh_0450",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11788,7 +11819,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0450",
+   "meshKey": "GoldMesh_0451",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11814,7 +11845,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0451",
+   "meshKey": "GoldMesh_0452",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11840,7 +11871,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0452",
+   "meshKey": "GoldMesh_0453",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11866,7 +11897,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0453",
+   "meshKey": "GoldMesh_0454",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11892,7 +11923,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0454",
+   "meshKey": "GoldMesh_0455",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11918,7 +11949,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0455",
+   "meshKey": "GoldMesh_0456",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11944,7 +11975,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0456",
+   "meshKey": "GoldMesh_0457",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11970,7 +12001,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0457",
+   "meshKey": "GoldMesh_0458",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -11996,7 +12027,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0458",
+   "meshKey": "GoldMesh_0459",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12022,7 +12053,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0459",
+   "meshKey": "GoldMesh_0460",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12048,7 +12079,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0460",
+   "meshKey": "GoldMesh_0461",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12074,7 +12105,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0461",
+   "meshKey": "GoldMesh_0462",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12100,7 +12131,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0462",
+   "meshKey": "GoldMesh_0463",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12126,7 +12157,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0463",
+   "meshKey": "GoldMesh_0464",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12152,7 +12183,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0464",
+   "meshKey": "GoldMesh_0465",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12178,7 +12209,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0465",
+   "meshKey": "GoldMesh_0466",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12204,7 +12235,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0466",
+   "meshKey": "GoldMesh_0467",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12230,7 +12261,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0467",
+   "meshKey": "GoldMesh_0468",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12256,7 +12287,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0468",
+   "meshKey": "GoldMesh_0469",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -12282,7 +12313,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0469",
+   "meshKey": "GoldMesh_0470",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -12308,7 +12339,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0470",
+   "meshKey": "GoldMesh_0471",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12334,7 +12365,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0471",
+   "meshKey": "GoldMesh_0472",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12360,7 +12391,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0472",
+   "meshKey": "GoldMesh_0473",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12386,7 +12417,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0473",
+   "meshKey": "GoldMesh_0474",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12412,7 +12443,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0474",
+   "meshKey": "GoldMesh_0475",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12438,7 +12469,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0475",
+   "meshKey": "GoldMesh_0476",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12464,7 +12495,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0476",
+   "meshKey": "GoldMesh_0477",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12490,7 +12521,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0477",
+   "meshKey": "GoldMesh_0478",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12516,7 +12547,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0478",
+   "meshKey": "GoldMesh_0479",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12542,7 +12573,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0479",
+   "meshKey": "GoldMesh_0480",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12568,7 +12599,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0480",
+   "meshKey": "GoldMesh_0481",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12594,7 +12625,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0481",
+   "meshKey": "GoldMesh_0482",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12620,7 +12651,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0482",
+   "meshKey": "GoldMesh_0483",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12646,7 +12677,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0483",
+   "meshKey": "GoldMesh_0484",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12672,7 +12703,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0484",
+   "meshKey": "GoldMesh_0485",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12698,7 +12729,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0485",
+   "meshKey": "GoldMesh_0486",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12724,7 +12755,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0486",
+   "meshKey": "GoldMesh_0487",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12750,7 +12781,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0487",
+   "meshKey": "GoldMesh_0488",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12776,7 +12807,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0488",
+   "meshKey": "GoldMesh_0489",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12802,7 +12833,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0489",
+   "meshKey": "GoldMesh_0490",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12828,7 +12859,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0490",
+   "meshKey": "GoldMesh_0491",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12854,7 +12885,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0491",
+   "meshKey": "GoldMesh_0492",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12880,7 +12911,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0492",
+   "meshKey": "GoldMesh_0493",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12906,7 +12937,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0493",
+   "meshKey": "GoldMesh_0494",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12932,7 +12963,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0494",
+   "meshKey": "GoldMesh_0495",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12958,7 +12989,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0495",
+   "meshKey": "GoldMesh_0496",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -12984,7 +13015,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0496",
+   "meshKey": "GoldMesh_0497",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13010,7 +13041,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0497",
+   "meshKey": "GoldMesh_0498",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -13036,7 +13067,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0498",
+   "meshKey": "GoldMesh_0499",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13062,7 +13093,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0499",
+   "meshKey": "GoldMesh_0500",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13088,7 +13119,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0500",
+   "meshKey": "GoldMesh_0501",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13114,7 +13145,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0501",
+   "meshKey": "GoldMesh_0502",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13140,7 +13171,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0502",
+   "meshKey": "GoldMesh_0503",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13166,7 +13197,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0503",
+   "meshKey": "GoldMesh_0504",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13192,7 +13223,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0504",
+   "meshKey": "GoldMesh_0505",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13218,7 +13249,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0505",
+   "meshKey": "GoldMesh_0506",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13244,7 +13275,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0506",
+   "meshKey": "GoldMesh_0507",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13270,7 +13301,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0507",
+   "meshKey": "GoldMesh_0508",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13296,7 +13327,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0508",
+   "meshKey": "GoldMesh_0509",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13322,7 +13353,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0509",
+   "meshKey": "GoldMesh_0510",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13348,7 +13379,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0510",
+   "meshKey": "GoldMesh_0511",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13374,7 +13405,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0511",
+   "meshKey": "GoldMesh_0512",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13400,7 +13431,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0512",
+   "meshKey": "GoldMesh_0513",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13426,7 +13457,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0513",
+   "meshKey": "GoldMesh_0514",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13452,7 +13483,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0514",
+   "meshKey": "GoldMesh_0515",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13478,7 +13509,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0515",
+   "meshKey": "GoldMesh_0516",
    "materials": [
     "GoldMat_Gold_Parquet"
    ],
@@ -13504,7 +13535,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0516",
+   "meshKey": "GoldMesh_0517",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13530,7 +13561,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0517",
+   "meshKey": "GoldMesh_0518",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13556,7 +13587,7 @@
    "side": "",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0518",
+   "meshKey": "GoldMesh_0519",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13582,7 +13613,7 @@
    "side": "North",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0519",
+   "meshKey": "GoldMesh_0520",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13608,7 +13639,7 @@
    "side": "West",
    "parent": "",
    "assembly": "",
-   "meshKey": "GoldMesh_0520",
+   "meshKey": "GoldMesh_0521",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13634,7 +13665,7 @@
    "side": "",
    "parent": "",
    "assembly": "R01_P02_HallRug",
-   "meshKey": "GoldMesh_0521",
+   "meshKey": "GoldMesh_0522",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13660,7 +13691,7 @@
    "side": "",
    "parent": "",
    "assembly": "R01_P02_HallRug",
-   "meshKey": "GoldMesh_0522",
+   "meshKey": "GoldMesh_0523",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13686,7 +13717,7 @@
    "side": "",
    "parent": "",
    "assembly": "R01_P02_HallRug",
-   "meshKey": "GoldMesh_0523",
+   "meshKey": "GoldMesh_0524",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13712,7 +13743,7 @@
    "side": "",
    "parent": "",
    "assembly": "R01_P02_HallRug",
-   "meshKey": "GoldMesh_0524",
+   "meshKey": "GoldMesh_0525",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13738,7 +13769,7 @@
    "side": "",
    "parent": "",
    "assembly": "R01_P02_HallRug",
-   "meshKey": "GoldMesh_0525",
+   "meshKey": "GoldMesh_0526",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13764,7 +13795,7 @@
    "side": "",
    "parent": "",
    "assembly": "R03_P02_SeatingRug",
-   "meshKey": "GoldMesh_0526",
+   "meshKey": "GoldMesh_0527",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13790,7 +13821,7 @@
    "side": "",
    "parent": "",
    "assembly": "R03_P02_SeatingRug",
-   "meshKey": "GoldMesh_0527",
+   "meshKey": "GoldMesh_0528",
    "materials": [
     "GoldMat_Gold_CrimsonJacquard"
    ],
@@ -13816,7 +13847,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0528",
+   "meshKey": "GoldMesh_0529",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -13842,7 +13873,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0529",
+   "meshKey": "GoldMesh_0530",
    "materials": [
     "GoldMat_Gold_KitchenStone"
    ],
@@ -13868,7 +13899,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0530",
+   "meshKey": "GoldMesh_0531",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -13894,7 +13925,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0531",
+   "meshKey": "GoldMesh_0532",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -13920,7 +13951,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0532",
+   "meshKey": "GoldMesh_0533",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -13946,7 +13977,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0533",
+   "meshKey": "GoldMesh_0534",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -13972,7 +14003,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Sink",
-   "meshKey": "GoldMesh_0534",
+   "meshKey": "GoldMesh_0535",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -13998,7 +14029,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Cooker",
-   "meshKey": "GoldMesh_0535",
+   "meshKey": "GoldMesh_0536",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14024,7 +14055,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Cooker",
-   "meshKey": "GoldMesh_0536",
+   "meshKey": "GoldMesh_0537",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14050,7 +14081,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Cooker",
-   "meshKey": "GoldMesh_0537",
+   "meshKey": "GoldMesh_0538",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14076,7 +14107,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Cooker",
-   "meshKey": "GoldMesh_0538",
+   "meshKey": "GoldMesh_0539",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14102,7 +14133,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Shelves",
-   "meshKey": "GoldMesh_0539",
+   "meshKey": "GoldMesh_0540",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14128,7 +14159,7 @@
    "side": "",
    "parent": "",
    "assembly": "R05_P02_Shelves",
-   "meshKey": "GoldMesh_0540",
+   "meshKey": "GoldMesh_0541",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14154,7 +14185,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0541",
+   "meshKey": "GoldMesh_0542",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14180,7 +14211,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0542",
+   "meshKey": "GoldMesh_0543",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14206,7 +14237,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0543",
+   "meshKey": "GoldMesh_0544",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14232,7 +14263,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0544",
+   "meshKey": "GoldMesh_0545",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14258,7 +14289,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0545",
+   "meshKey": "GoldMesh_0546",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14284,7 +14315,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0546",
+   "meshKey": "GoldMesh_0547",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14310,7 +14341,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0547",
+   "meshKey": "GoldMesh_0548",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14336,7 +14367,7 @@
    "side": "",
    "parent": "",
    "assembly": "R06_P02_PottingShelf",
-   "meshKey": "GoldMesh_0548",
+   "meshKey": "GoldMesh_0549",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14362,7 +14393,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_Boiler",
-   "meshKey": "GoldMesh_0549",
+   "meshKey": "GoldMesh_0550",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -14388,7 +14419,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_Boiler",
-   "meshKey": "GoldMesh_0550",
+   "meshKey": "GoldMesh_0551",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -14414,7 +14445,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_Boiler",
-   "meshKey": "GoldMesh_0551",
+   "meshKey": "GoldMesh_0552",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -14440,7 +14471,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_Boiler",
-   "meshKey": "GoldMesh_0552",
+   "meshKey": "GoldMesh_0553",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -14466,7 +14497,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0553",
+   "meshKey": "GoldMesh_0554",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14492,7 +14523,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0554",
+   "meshKey": "GoldMesh_0555",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14518,7 +14549,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0555",
+   "meshKey": "GoldMesh_0556",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14544,7 +14575,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0556",
+   "meshKey": "GoldMesh_0557",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14570,7 +14601,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0557",
+   "meshKey": "GoldMesh_0558",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14596,7 +14627,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0558",
+   "meshKey": "GoldMesh_0559",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14622,7 +14653,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0559",
+   "meshKey": "GoldMesh_0560",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14648,7 +14679,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0560",
+   "meshKey": "GoldMesh_0561",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14674,7 +14705,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_PipeBank",
-   "meshKey": "GoldMesh_0561",
+   "meshKey": "GoldMesh_0562",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -14700,7 +14731,7 @@
    "side": "",
    "parent": "",
    "assembly": "R07_P02_Boiler",
-   "meshKey": "GoldMesh_0562",
+   "meshKey": "GoldMesh_0563",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -14726,7 +14757,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_RackBacking",
-   "meshKey": "GoldMesh_0563",
+   "meshKey": "GoldMesh_0564",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -14752,7 +14783,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14778,7 +14809,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14804,7 +14835,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -14830,7 +14861,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14856,7 +14887,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14882,7 +14913,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -14908,7 +14939,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14934,7 +14965,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -14960,7 +14991,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -14986,7 +15017,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15012,7 +15043,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15038,7 +15069,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15064,7 +15095,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15090,7 +15121,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15116,7 +15147,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15142,7 +15173,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15168,7 +15199,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15194,7 +15225,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15220,7 +15251,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15246,7 +15277,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15272,7 +15303,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15298,7 +15329,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15324,7 +15355,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15350,7 +15381,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15376,7 +15407,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15402,7 +15433,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15428,7 +15459,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15454,7 +15485,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15480,7 +15511,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15506,7 +15537,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15532,7 +15563,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15558,7 +15589,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15584,7 +15615,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15610,7 +15641,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15636,7 +15667,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15662,7 +15693,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15688,7 +15719,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15714,7 +15745,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15740,7 +15771,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15766,7 +15797,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15792,7 +15823,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15818,7 +15849,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15844,7 +15875,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15870,7 +15901,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15896,7 +15927,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -15922,7 +15953,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15948,7 +15979,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -15974,7 +16005,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -16000,7 +16031,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -16026,7 +16057,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -16052,7 +16083,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -16078,7 +16109,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -16104,7 +16135,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0564",
+   "meshKey": "GoldMesh_0565",
    "materials": [
     "GoldMat_P02_Green"
    ],
@@ -16130,7 +16161,7 @@
    "side": "",
    "parent": "",
    "assembly": "R08_P02_WineBottles",
-   "meshKey": "GoldMesh_0565",
+   "meshKey": "GoldMesh_0566",
    "materials": [
     "GoldMat_P02_Paper"
    ],
@@ -16156,7 +16187,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R01_HallConsole",
-   "meshKey": "GoldMesh_0566",
+   "meshKey": "GoldMesh_0567",
    "materials": [
     "GoldMat_Gold_CC0_ClassicConsole_01_0"
    ],
@@ -16182,7 +16213,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R01_HallConsoleLamp",
-   "meshKey": "GoldMesh_0567",
+   "meshKey": "GoldMesh_0568",
    "materials": [
     "GoldMat_Gold_CC0_vintage_oil_lamp_0",
     "GoldMat_Gold_CC0_vintage_oil_lamp_1",
@@ -16210,7 +16241,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R01_HallChandelier",
-   "meshKey": "GoldMesh_0568",
+   "meshKey": "GoldMesh_0569",
    "materials": [
     "GoldMat_Gold_CC0_Chandelier_01_0",
     "GoldMat_Gold_CC0_Chandelier_01_1"
@@ -16237,7 +16268,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R02_LibraryWritingDesk",
-   "meshKey": "GoldMesh_0566",
+   "meshKey": "GoldMesh_0567",
    "materials": [
     "GoldMat_Gold_CC0_ClassicConsole_01_0"
    ],
@@ -16263,7 +16294,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R02_LibraryArmchair",
-   "meshKey": "GoldMesh_0569",
+   "meshKey": "GoldMesh_0570",
    "materials": [
     "GoldMat_Gold_CC0_ArmChair_01_0"
    ],
@@ -16289,7 +16320,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R02_LibraryReadingLamp",
-   "meshKey": "GoldMesh_0567",
+   "meshKey": "GoldMesh_0568",
    "materials": [
     "GoldMat_Gold_CC0_vintage_oil_lamp_0",
     "GoldMat_Gold_CC0_vintage_oil_lamp_1",
@@ -16317,7 +16348,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R02_LibraryBookCabinet",
-   "meshKey": "GoldMesh_0570",
+   "meshKey": "GoldMesh_0571",
    "materials": [
     "GoldMat_Gold_CC0_GothicCabinet_01_0"
    ],
@@ -16343,7 +16374,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_LoungeSofa",
-   "meshKey": "GoldMesh_0571",
+   "meshKey": "GoldMesh_0572",
    "materials": [
     "GoldMat_Gold_CC0_painted_wooden_sofa_0"
    ],
@@ -16369,7 +16400,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_LoungeCarvedTable",
-   "meshKey": "GoldMesh_0572",
+   "meshKey": "GoldMesh_0573",
    "materials": [
     "GoldMat_Gold_CC0_gothic_coffee_table_0"
    ],
@@ -16395,7 +16426,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_LoungeGiltFrame",
-   "meshKey": "GoldMesh_0573",
+   "meshKey": "GoldMesh_0574",
    "materials": [
     "GoldMat_Gold_CC0_fancy_picture_frame_02_0",
     "GoldMat_Gold_CC0_fancy_picture_frame_02_1"
@@ -16422,7 +16453,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningBanquetTable",
-   "meshKey": "GoldMesh_0574",
+   "meshKey": "GoldMesh_0575",
    "materials": [
     "GoldMat_Gold_CC0_dining_table_0"
    ],
@@ -16448,7 +16479,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningChair0",
-   "meshKey": "GoldMesh_0569",
+   "meshKey": "GoldMesh_0570",
    "materials": [
     "GoldMat_Gold_CC0_ArmChair_01_0"
    ],
@@ -16474,7 +16505,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningChair1",
-   "meshKey": "GoldMesh_0569",
+   "meshKey": "GoldMesh_0570",
    "materials": [
     "GoldMat_Gold_CC0_ArmChair_01_0"
    ],
@@ -16500,7 +16531,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningChair2",
-   "meshKey": "GoldMesh_0569",
+   "meshKey": "GoldMesh_0570",
    "materials": [
     "GoldMat_Gold_CC0_ArmChair_01_0"
    ],
@@ -16526,7 +16557,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningChandelier",
-   "meshKey": "GoldMesh_0575",
+   "meshKey": "GoldMesh_0576",
    "materials": [
     "GoldMat_Gold_CC0_Chandelier_02_0",
     "GoldMat_Gold_CC0_Chandelier_02_1"
@@ -16553,7 +16584,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R06_ConservatoryPlant1",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -16580,7 +16611,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R06_ConservatoryPlant2",
-   "meshKey": "GoldMesh_0577",
+   "meshKey": "GoldMesh_0578",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_01_0",
     "GoldMat_Gold_CC0_potted_plant_01_1"
@@ -16607,7 +16638,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R08_CellarOakBarrel0",
-   "meshKey": "GoldMesh_0578",
+   "meshKey": "GoldMesh_0579",
    "materials": [
     "GoldMat_Gold_CC0_wine_barrel_01_0"
    ],
@@ -16633,7 +16664,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R08_CellarOakBarrel1",
-   "meshKey": "GoldMesh_0578",
+   "meshKey": "GoldMesh_0579",
    "materials": [
     "GoldMat_Gold_CC0_wine_barrel_01_0"
    ],
@@ -16659,7 +16690,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R09_ServantTimberBed",
-   "meshKey": "GoldMesh_0579",
+   "meshKey": "GoldMesh_0580",
    "materials": [
     "GoldMat_Gold_CC0_GothicBed_01_0"
    ],
@@ -16685,7 +16716,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R09_ServantNightstand",
-   "meshKey": "GoldMesh_0580",
+   "meshKey": "GoldMesh_0581",
    "materials": [
     "GoldMat_Gold_CC0_ClassicNightstand_01_0"
    ],
@@ -16711,7 +16742,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R09_ServantOilLamp",
-   "meshKey": "GoldMesh_0567",
+   "meshKey": "GoldMesh_0568",
    "materials": [
     "GoldMat_Gold_CC0_vintage_oil_lamp_0",
     "GoldMat_Gold_CC0_vintage_oil_lamp_1",
@@ -16739,7 +16770,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R09_ServantDresser",
-   "meshKey": "GoldMesh_0581",
+   "meshKey": "GoldMesh_0582",
    "materials": [
     "GoldMat_Gold_CC0_GothicCommode_01_0"
    ],
@@ -16765,7 +16796,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_KitchenCeramicJar0",
-   "meshKey": "GoldMesh_0582",
+   "meshKey": "GoldMesh_0583",
    "materials": [
     "GoldMat_Gold_CC0_antique_ceramic_vase_01_0"
    ],
@@ -16791,7 +16822,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_KitchenCeramicJar1",
-   "meshKey": "GoldMesh_0582",
+   "meshKey": "GoldMesh_0583",
    "materials": [
     "GoldMat_Gold_CC0_antique_ceramic_vase_01_0"
    ],
@@ -16817,7 +16848,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_KitchenCeramicJar2",
-   "meshKey": "GoldMesh_0582",
+   "meshKey": "GoldMesh_0583",
    "materials": [
     "GoldMat_Gold_CC0_antique_ceramic_vase_01_0"
    ],
@@ -16843,7 +16874,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R07_ServiceLantern",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -16871,7 +16902,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R08_ServiceLantern",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -16899,7 +16930,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_GateLantern-1",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -16927,7 +16958,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_GardenBench-1",
-   "meshKey": "GoldMesh_0584",
+   "meshKey": "GoldMesh_0585",
    "materials": [
     "GoldMat_Gold_CC0_painted_wooden_bench_0"
    ],
@@ -16953,7 +16984,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ForecourtPot_-1_0",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -16980,7 +17011,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ForecourtPot_-1_1",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -17007,7 +17038,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_GateLantern1",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17035,7 +17066,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_GardenBench1",
-   "meshKey": "GoldMesh_0584",
+   "meshKey": "GoldMesh_0585",
    "materials": [
     "GoldMat_Gold_CC0_painted_wooden_bench_0"
    ],
@@ -17061,7 +17092,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ForecourtPot_1_0",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -17088,7 +17119,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ForecourtPot_1_1",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -17115,7 +17146,7 @@
    "side": "",
    "parent": "R01_Wall_North_Pier_00",
    "assembly": "VG_R01_WallSconce_01_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17143,7 +17174,7 @@
    "side": "",
    "parent": "R01_Wall_North_Pier_00",
    "assembly": "VG_R01_WallSconce_01_1",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17171,7 +17202,7 @@
    "side": "",
    "parent": "R01_Wall_North_Pier_00",
    "assembly": "VG_R01_HallGalleryPainting",
-   "meshKey": "GoldMesh_0573",
+   "meshKey": "GoldMesh_0574",
    "materials": [
     "GoldMat_Gold_CC0_fancy_picture_frame_02_0",
     "GoldMat_Gold_CC0_fancy_picture_frame_02_1"
@@ -17198,7 +17229,7 @@
    "side": "",
    "parent": "R02_Wall_North_Pier_00",
    "assembly": "VG_R02_WallSconce_02_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17226,7 +17257,7 @@
    "side": "",
    "parent": "R03_Wall_North_Pier_00",
    "assembly": "VG_R03_WallSconce_03_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17254,7 +17285,7 @@
    "side": "",
    "parent": "R04_Wall_North_Pier_02",
    "assembly": "VG_R04_WallSconce_04_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17282,7 +17313,7 @@
    "side": "",
    "parent": "R05_Wall_North_Pier_02",
    "assembly": "VG_R05_WallSconce_05_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17310,7 +17341,7 @@
    "side": "",
    "parent": "R06_Wall_North_Pier_00",
    "assembly": "VG_R06_WallSconce_06_0",
-   "meshKey": "GoldMesh_0583",
+   "meshKey": "GoldMesh_0584",
    "materials": [
     "GoldMat_Gold_CC0_lantern_chandelier_01_0",
     "GoldMat_Gold_CC0_lantern_chandelier_01_1",
@@ -17338,7 +17369,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_LoungeTeaService",
-   "meshKey": "GoldMesh_0585",
+   "meshKey": "GoldMesh_0586",
    "materials": [
     "GoldMat_Gold_CC0_tea_set_01_0"
    ],
@@ -17364,7 +17395,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ArrivalMarbleBust-1",
-   "meshKey": "GoldMesh_0586",
+   "meshKey": "GoldMesh_0587",
    "materials": [
     "GoldMat_Gold_CC0_marble_bust_01_0"
    ],
@@ -17390,7 +17421,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R00_ArrivalMarbleBust1",
-   "meshKey": "GoldMesh_0586",
+   "meshKey": "GoldMesh_0587",
    "materials": [
     "GoldMat_Gold_CC0_marble_bust_01_0"
    ],
@@ -17416,7 +17447,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R01_HallConsoleBust",
-   "meshKey": "GoldMesh_0586",
+   "meshKey": "GoldMesh_0587",
    "materials": [
     "GoldMat_Gold_CC0_marble_bust_01_0"
    ],
@@ -17442,7 +17473,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R04_DiningCarvedSideboard",
-   "meshKey": "GoldMesh_0581",
+   "meshKey": "GoldMesh_0582",
    "materials": [
     "GoldMat_Gold_CC0_GothicCommode_01_0"
    ],
@@ -17468,7 +17499,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R06_ConservatoryHeroPlant",
-   "meshKey": "GoldMesh_0576",
+   "meshKey": "GoldMesh_0577",
    "materials": [
     "GoldMat_Gold_CC0_potted_plant_02_0",
     "GoldMat_Gold_CC0_potted_plant_02_1"
@@ -17495,7 +17526,7 @@
    "side": "",
    "parent": "R01_Wall_East_Pier_00",
    "assembly": "VG_R01_Skirting_R01_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0587",
+   "meshKey": "GoldMesh_0588",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17525,7 +17556,7 @@
    "side": "",
    "parent": "R01_Wall_East_Lintel_01",
    "assembly": "VG_R01_Skirting_R01_Wall_East_Lintel_01",
-   "meshKey": "GoldMesh_0588",
+   "meshKey": "GoldMesh_0589",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17553,7 +17584,7 @@
    "side": "",
    "parent": "R01_Wall_East_Pier_02",
    "assembly": "VG_R01_Skirting_R01_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0589",
+   "meshKey": "GoldMesh_0590",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17583,7 +17614,7 @@
    "side": "",
    "parent": "R01_Wall_West_Pier_00",
    "assembly": "VG_R01_Skirting_R01_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0590",
+   "meshKey": "GoldMesh_0591",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17613,7 +17644,7 @@
    "side": "",
    "parent": "R01_Wall_West_Pier_02",
    "assembly": "VG_R01_Skirting_R01_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0591",
+   "meshKey": "GoldMesh_0592",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17643,7 +17674,7 @@
    "side": "",
    "parent": "R01_Wall_North_Pier_00",
    "assembly": "VG_R01_Skirting_R01_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0592",
+   "meshKey": "GoldMesh_0593",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17673,7 +17704,7 @@
    "side": "",
    "parent": "R01_Wall_North_Pier_02",
    "assembly": "VG_R01_Skirting_R01_Wall_North_Pier_02",
-   "meshKey": "GoldMesh_0593",
+   "meshKey": "GoldMesh_0594",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17703,7 +17734,7 @@
    "side": "",
    "parent": "R01_Wall_South_Pier_00",
    "assembly": "VG_R01_Skirting_R01_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0594",
+   "meshKey": "GoldMesh_0595",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17733,7 +17764,7 @@
    "side": "",
    "parent": "R01_Wall_South_Lintel_01",
    "assembly": "VG_R01_Skirting_R01_Wall_South_Lintel_01",
-   "meshKey": "GoldMesh_0595",
+   "meshKey": "GoldMesh_0596",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17761,7 +17792,7 @@
    "side": "",
    "parent": "R01_Wall_South_Pier_02",
    "assembly": "VG_R01_Skirting_R01_Wall_South_Pier_02",
-   "meshKey": "GoldMesh_0596",
+   "meshKey": "GoldMesh_0597",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17791,7 +17822,7 @@
    "side": "",
    "parent": "R02_Wall_East_Pier_00",
    "assembly": "VG_R02_Skirting_R02_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0597",
+   "meshKey": "GoldMesh_0598",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17821,7 +17852,7 @@
    "side": "",
    "parent": "R02_Wall_East_Pier_02",
    "assembly": "VG_R02_Skirting_R02_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0598",
+   "meshKey": "GoldMesh_0599",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17851,7 +17882,7 @@
    "side": "",
    "parent": "R02_Wall_West_Pier_00",
    "assembly": "VG_R02_Skirting_R02_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0599",
+   "meshKey": "GoldMesh_0600",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17881,7 +17912,7 @@
    "side": "",
    "parent": "R02_Wall_North_Pier_00",
    "assembly": "VG_R02_Skirting_R02_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0600",
+   "meshKey": "GoldMesh_0601",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17911,7 +17942,7 @@
    "side": "",
    "parent": "R02_Wall_South_Pier_00",
    "assembly": "VG_R02_Skirting_R02_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0601",
+   "meshKey": "GoldMesh_0602",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17941,7 +17972,7 @@
    "side": "",
    "parent": "R02_Wall_South_Pier_02",
    "assembly": "VG_R02_Skirting_R02_Wall_South_Pier_02",
-   "meshKey": "GoldMesh_0602",
+   "meshKey": "GoldMesh_0603",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -17971,7 +18002,7 @@
    "side": "",
    "parent": "R03_Wall_East_Pier_00",
    "assembly": "VG_R03_Skirting_R03_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0603",
+   "meshKey": "GoldMesh_0604",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18001,7 +18032,7 @@
    "side": "",
    "parent": "R03_Wall_West_Pier_00",
    "assembly": "VG_R03_Skirting_R03_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0604",
+   "meshKey": "GoldMesh_0605",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18029,7 +18060,7 @@
    "side": "",
    "parent": "R03_Wall_West_Pier_02",
    "assembly": "VG_R03_Skirting_R03_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0605",
+   "meshKey": "GoldMesh_0606",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18059,7 +18090,7 @@
    "side": "",
    "parent": "R03_Wall_North_Pier_00",
    "assembly": "VG_R03_Skirting_R03_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0606",
+   "meshKey": "GoldMesh_0607",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18089,7 +18120,7 @@
    "side": "",
    "parent": "R03_Wall_South_Pier_00",
    "assembly": "VG_R03_Skirting_R03_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0607",
+   "meshKey": "GoldMesh_0608",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -18116,7 +18147,7 @@
    "side": "",
    "parent": "R03_Wall_South_Pier_02",
    "assembly": "VG_R03_Skirting_R03_Wall_South_Pier_02",
-   "meshKey": "GoldMesh_0608",
+   "meshKey": "GoldMesh_0609",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18146,7 +18177,7 @@
    "side": "",
    "parent": "R04_Wall_East_Pier_00",
    "assembly": "VG_R04_Skirting_R04_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0609",
+   "meshKey": "GoldMesh_0610",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18176,7 +18207,7 @@
    "side": "",
    "parent": "R04_Wall_East_Pier_02",
    "assembly": "VG_R04_Skirting_R04_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0610",
+   "meshKey": "GoldMesh_0611",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18206,7 +18237,7 @@
    "side": "",
    "parent": "R04_Wall_West_Pier_00",
    "assembly": "VG_R04_Skirting_R04_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0611",
+   "meshKey": "GoldMesh_0612",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18236,7 +18267,7 @@
    "side": "",
    "parent": "R04_Wall_North_Pier_00",
    "assembly": "VG_R04_Skirting_R04_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0612",
+   "meshKey": "GoldMesh_0613",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18266,7 +18297,7 @@
    "side": "",
    "parent": "R04_Wall_North_Pier_02",
    "assembly": "VG_R04_Skirting_R04_Wall_North_Pier_02",
-   "meshKey": "GoldMesh_0613",
+   "meshKey": "GoldMesh_0614",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18296,7 +18327,7 @@
    "side": "",
    "parent": "R04_Wall_South_Pier_00",
    "assembly": "VG_R04_Skirting_R04_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0614",
+   "meshKey": "GoldMesh_0615",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18326,7 +18357,7 @@
    "side": "",
    "parent": "R05_Wall_East_Pier_00",
    "assembly": "VG_R05_Skirting_R05_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0615",
+   "meshKey": "GoldMesh_0616",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18356,7 +18387,7 @@
    "side": "",
    "parent": "R05_Wall_East_Pier_02",
    "assembly": "VG_R05_Skirting_R05_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0616",
+   "meshKey": "GoldMesh_0617",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -18383,7 +18414,7 @@
    "side": "",
    "parent": "R05_Wall_West_Pier_00",
    "assembly": "VG_R05_Skirting_R05_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0617",
+   "meshKey": "GoldMesh_0618",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18413,7 +18444,7 @@
    "side": "",
    "parent": "R05_Wall_West_Pier_02",
    "assembly": "VG_R05_Skirting_R05_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0618",
+   "meshKey": "GoldMesh_0619",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18443,7 +18474,7 @@
    "side": "",
    "parent": "R05_Wall_North_Pier_00",
    "assembly": "VG_R05_Skirting_R05_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0619",
+   "meshKey": "GoldMesh_0620",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18473,7 +18504,7 @@
    "side": "",
    "parent": "R05_Wall_North_Pier_02",
    "assembly": "VG_R05_Skirting_R05_Wall_North_Pier_02",
-   "meshKey": "GoldMesh_0620",
+   "meshKey": "GoldMesh_0621",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18503,7 +18534,7 @@
    "side": "",
    "parent": "R05_Wall_South_Pier_00",
    "assembly": "VG_R05_Skirting_R05_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0621",
+   "meshKey": "GoldMesh_0622",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18533,7 +18564,7 @@
    "side": "",
    "parent": "R06_Wall_East_Pier_00",
    "assembly": "VG_R06_Skirting_R06_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0622",
+   "meshKey": "GoldMesh_0623",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18563,7 +18594,7 @@
    "side": "",
    "parent": "R06_Wall_West_Pier_00",
    "assembly": "VG_R06_Skirting_R06_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0623",
+   "meshKey": "GoldMesh_0624",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18593,7 +18624,7 @@
    "side": "",
    "parent": "R06_Wall_West_Pier_02",
    "assembly": "VG_R06_Skirting_R06_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0624",
+   "meshKey": "GoldMesh_0625",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18623,7 +18654,7 @@
    "side": "",
    "parent": "R06_Wall_North_Pier_00",
    "assembly": "VG_R06_Skirting_R06_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0625",
+   "meshKey": "GoldMesh_0626",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18653,7 +18684,7 @@
    "side": "",
    "parent": "R06_Wall_South_Pier_00",
    "assembly": "VG_R06_Skirting_R06_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0626",
+   "meshKey": "GoldMesh_0627",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18683,7 +18714,7 @@
    "side": "",
    "parent": "R06_Wall_South_Pier_02",
    "assembly": "VG_R06_Skirting_R06_Wall_South_Pier_02",
-   "meshKey": "GoldMesh_0627",
+   "meshKey": "GoldMesh_0628",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18713,7 +18744,7 @@
    "side": "",
    "parent": "R07_Wall_East_Pier_00",
    "assembly": "VG_R07_Skirting_R07_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0628",
+   "meshKey": "GoldMesh_0629",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18741,7 +18772,7 @@
    "side": "",
    "parent": "R07_Wall_East_Pier_02",
    "assembly": "VG_R07_Skirting_R07_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0629",
+   "meshKey": "GoldMesh_0630",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18771,7 +18802,7 @@
    "side": "",
    "parent": "R07_Wall_West_Pier_00",
    "assembly": "VG_R07_Skirting_R07_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0630",
+   "meshKey": "GoldMesh_0631",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18801,7 +18832,7 @@
    "side": "",
    "parent": "R07_Wall_North_Pier_00",
    "assembly": "VG_R07_Skirting_R07_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0631",
+   "meshKey": "GoldMesh_0632",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18831,7 +18862,7 @@
    "side": "",
    "parent": "R07_Wall_South_Pier_00",
    "assembly": "VG_R07_Skirting_R07_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0632",
+   "meshKey": "GoldMesh_0633",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -18858,7 +18889,7 @@
    "side": "",
    "parent": "R07_Wall_South_Pier_02",
    "assembly": "VG_R07_Skirting_R07_Wall_South_Pier_02",
-   "meshKey": "GoldMesh_0633",
+   "meshKey": "GoldMesh_0634",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18888,7 +18919,7 @@
    "side": "",
    "parent": "R08_Wall_East_Pier_00",
    "assembly": "VG_R08_Skirting_R08_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0634",
+   "meshKey": "GoldMesh_0635",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -18915,7 +18946,7 @@
    "side": "",
    "parent": "R08_Wall_East_Pier_02",
    "assembly": "VG_R08_Skirting_R08_Wall_East_Pier_02",
-   "meshKey": "GoldMesh_0635",
+   "meshKey": "GoldMesh_0636",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -18942,7 +18973,7 @@
    "side": "",
    "parent": "R08_Wall_West_Pier_00",
    "assembly": "VG_R08_Skirting_R08_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0636",
+   "meshKey": "GoldMesh_0637",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -18972,7 +19003,7 @@
    "side": "",
    "parent": "R08_Wall_West_Pier_02",
    "assembly": "VG_R08_Skirting_R08_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0637",
+   "meshKey": "GoldMesh_0638",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19002,7 +19033,7 @@
    "side": "",
    "parent": "R08_Wall_North_Pier_00",
    "assembly": "VG_R08_Skirting_R08_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0638",
+   "meshKey": "GoldMesh_0639",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19032,7 +19063,7 @@
    "side": "",
    "parent": "R08_Wall_South_Pier_00",
    "assembly": "VG_R08_Skirting_R08_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0639",
+   "meshKey": "GoldMesh_0640",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19062,7 +19093,7 @@
    "side": "",
    "parent": "R09_Wall_East_Pier_00",
    "assembly": "VG_R09_Skirting_R09_Wall_East_Pier_00",
-   "meshKey": "GoldMesh_0640",
+   "meshKey": "GoldMesh_0641",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19092,7 +19123,7 @@
    "side": "",
    "parent": "R09_Wall_West_Pier_00",
    "assembly": "VG_R09_Skirting_R09_Wall_West_Pier_00",
-   "meshKey": "GoldMesh_0641",
+   "meshKey": "GoldMesh_0642",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19122,7 +19153,7 @@
    "side": "",
    "parent": "R09_Wall_West_Pier_02",
    "assembly": "VG_R09_Skirting_R09_Wall_West_Pier_02",
-   "meshKey": "GoldMesh_0642",
+   "meshKey": "GoldMesh_0643",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19150,7 +19181,7 @@
    "side": "",
    "parent": "R09_Wall_North_Pier_00",
    "assembly": "VG_R09_Skirting_R09_Wall_North_Pier_00",
-   "meshKey": "GoldMesh_0643",
+   "meshKey": "GoldMesh_0644",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass"
@@ -19177,7 +19208,7 @@
    "side": "",
    "parent": "R09_Wall_North_Pier_02",
    "assembly": "VG_R09_Skirting_R09_Wall_North_Pier_02",
-   "meshKey": "GoldMesh_0644",
+   "meshKey": "GoldMesh_0645",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19207,7 +19238,7 @@
    "side": "",
    "parent": "R09_Wall_South_Pier_00",
    "assembly": "VG_R09_Skirting_R09_Wall_South_Pier_00",
-   "meshKey": "GoldMesh_0645",
+   "meshKey": "GoldMesh_0646",
    "materials": [
     "GoldMat_Gold_Walnut",
     "GoldMat_Gold_AgedBrass",
@@ -19237,7 +19268,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_EstateDriveway",
-   "meshKey": "GoldMesh_0646",
+   "meshKey": "GoldMesh_0647",
    "materials": [
     "GoldMat_Gold_DrivewayStone"
    ],
@@ -19263,7 +19294,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_DrivewayStoneEdging",
-   "meshKey": "GoldMesh_0647",
+   "meshKey": "GoldMesh_0648",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19289,7 +19320,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_DrivewayStoneEdging.001",
-   "meshKey": "GoldMesh_0648",
+   "meshKey": "GoldMesh_0649",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19315,7 +19346,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GateStonePier_-1",
-   "meshKey": "GoldMesh_0649",
+   "meshKey": "GoldMesh_0650",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19341,7 +19372,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GatePierCap_-1",
-   "meshKey": "GoldMesh_0650",
+   "meshKey": "GoldMesh_0651",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19367,7 +19398,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GateStonePier_1",
-   "meshKey": "GoldMesh_0651",
+   "meshKey": "GoldMesh_0652",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19393,7 +19424,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GatePierCap_1",
-   "meshKey": "GoldMesh_0652",
+   "meshKey": "GoldMesh_0653",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19419,7 +19450,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_-1_0",
-   "meshKey": "GoldMesh_0653",
+   "meshKey": "GoldMesh_0654",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19445,7 +19476,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_-1_1",
-   "meshKey": "GoldMesh_0654",
+   "meshKey": "GoldMesh_0655",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19471,7 +19502,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_-1_2",
-   "meshKey": "GoldMesh_0655",
+   "meshKey": "GoldMesh_0656",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19497,7 +19528,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_1_0",
-   "meshKey": "GoldMesh_0656",
+   "meshKey": "GoldMesh_0657",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19523,7 +19554,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_1_1",
-   "meshKey": "GoldMesh_0657",
+   "meshKey": "GoldMesh_0658",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19549,7 +19580,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_GardenBed_1_2",
-   "meshKey": "GoldMesh_0658",
+   "meshKey": "GoldMesh_0659",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19575,7 +19606,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Fireplace_Pier-1",
-   "meshKey": "GoldMesh_0659",
+   "meshKey": "GoldMesh_0660",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19601,7 +19632,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Fireplace_Pier1",
-   "meshKey": "GoldMesh_0660",
+   "meshKey": "GoldMesh_0661",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19627,7 +19658,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Fireplace_Entablature",
-   "meshKey": "GoldMesh_0661",
+   "meshKey": "GoldMesh_0662",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19653,7 +19684,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Fireplace_Mantel",
-   "meshKey": "GoldMesh_0662",
+   "meshKey": "GoldMesh_0663",
    "materials": [
     "GoldMat_Gold_Walnut"
    ],
@@ -19679,7 +19710,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Firebox_Back",
-   "meshKey": "GoldMesh_0663",
+   "meshKey": "GoldMesh_0664",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -19705,7 +19736,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R03_Firebox_Hearth",
-   "meshKey": "GoldMesh_0664",
+   "meshKey": "GoldMesh_0665",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19731,7 +19762,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenDoor0",
-   "meshKey": "GoldMesh_0665",
+   "meshKey": "GoldMesh_0666",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -19757,7 +19788,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenHandle0",
-   "meshKey": "GoldMesh_0666",
+   "meshKey": "GoldMesh_0667",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -19783,7 +19814,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenDoor1",
-   "meshKey": "GoldMesh_0667",
+   "meshKey": "GoldMesh_0668",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -19809,7 +19840,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenHandle1",
-   "meshKey": "GoldMesh_0668",
+   "meshKey": "GoldMesh_0669",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -19835,7 +19866,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenDoor2",
-   "meshKey": "GoldMesh_0669",
+   "meshKey": "GoldMesh_0670",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -19861,7 +19892,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_OvenHandle2",
-   "meshKey": "GoldMesh_0670",
+   "meshKey": "GoldMesh_0671",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -19887,7 +19918,7 @@
    "side": "",
    "parent": "",
    "assembly": "KitchenRangeHood",
-   "meshKey": "GoldMesh_0671",
+   "meshKey": "GoldMesh_0672",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -19913,7 +19944,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_R05_RangeCanopyBand",
-   "meshKey": "GoldMesh_0672",
+   "meshKey": "GoldMesh_0673",
    "materials": [
     "GoldMat_Gold_AgedBrass"
    ],
@@ -19939,7 +19970,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_ArrivalBustPedestal-1",
-   "meshKey": "GoldMesh_0673",
+   "meshKey": "GoldMesh_0674",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19965,7 +19996,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_ArrivalBustCap-1",
-   "meshKey": "GoldMesh_0674",
+   "meshKey": "GoldMesh_0675",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -19991,7 +20022,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_ArrivalBustPedestal1",
-   "meshKey": "GoldMesh_0675",
+   "meshKey": "GoldMesh_0676",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -20017,7 +20048,7 @@
    "side": "",
    "parent": "",
    "assembly": "VG_ArrivalBustCap1",
-   "meshKey": "GoldMesh_0676",
+   "meshKey": "GoldMesh_0677",
    "materials": [
     "GoldMat_Gold_Limestone"
    ],
@@ -20043,7 +20074,7 @@
    "side": "",
    "parent": "",
    "assembly": "EstateGround",
-   "meshKey": "GoldMesh_0677",
+   "meshKey": "GoldMesh_0678",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20069,7 +20100,7 @@
    "side": "",
    "parent": "",
    "assembly": "EstateFence",
-   "meshKey": "GoldMesh_0678",
+   "meshKey": "GoldMesh_0679",
    "materials": [
     "GoldMat_Gold_BlackenedIron"
    ],
@@ -20095,7 +20126,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0679",
+   "meshKey": "GoldMesh_0680",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20121,7 +20152,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0680",
+   "meshKey": "GoldMesh_0681",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20147,7 +20178,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0681",
+   "meshKey": "GoldMesh_0682",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20173,7 +20204,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0682",
+   "meshKey": "GoldMesh_0683",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20199,7 +20230,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0683",
+   "meshKey": "GoldMesh_0684",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20225,7 +20256,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0684",
+   "meshKey": "GoldMesh_0685",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20251,7 +20282,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0685",
+   "meshKey": "GoldMesh_0686",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20277,7 +20308,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0686",
+   "meshKey": "GoldMesh_0687",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20303,7 +20334,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0687",
+   "meshKey": "GoldMesh_0688",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20329,7 +20360,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0688",
+   "meshKey": "GoldMesh_0689",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20355,7 +20386,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0689",
+   "meshKey": "GoldMesh_0690",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20381,7 +20412,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0690",
+   "meshKey": "GoldMesh_0691",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20407,7 +20438,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0691",
+   "meshKey": "GoldMesh_0692",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20433,7 +20464,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0692",
+   "meshKey": "GoldMesh_0693",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20459,7 +20490,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0693",
+   "meshKey": "GoldMesh_0694",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20485,7 +20516,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0694",
+   "meshKey": "GoldMesh_0695",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20511,7 +20542,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0695",
+   "meshKey": "GoldMesh_0696",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20537,7 +20568,7 @@
    "side": "",
    "parent": "",
    "assembly": "GardenTopiary",
-   "meshKey": "GoldMesh_0696",
+   "meshKey": "GoldMesh_0697",
    "materials": [
     "GoldMat_Gold_GardenEvergreen"
    ],
@@ -20611,8 +20642,8 @@
     1,
     1
    ],
-   "albedo": "Gold_Armchair_01_diff_1k.png",
-   "normal": "Gold_Armchair_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_.png",
+   "normal": "Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_ArmChair_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20634,8 +20665,8 @@
     1,
     1
    ],
-   "albedo": "Gold_Chandelier_01_diff_1k.png",
-   "normal": "Gold_Chandelier_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_4_Gold_.png",
+   "normal": "Gold_3_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_Chandelier_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20680,8 +20711,8 @@
     1,
     1
    ],
-   "albedo": "Gold_Chandelier_02_diff_1k.png",
-   "normal": "Gold_Chandelier_02_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_7_Gold_.png",
+   "normal": "Gold_6_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_Chandelier_02_0_Linear.png",
    "emission": [
     0.0,
@@ -20726,8 +20757,8 @@
     1,
     1
    ],
-   "albedo": "Gold_ClassicConsole_01_diff_1k.png",
-   "normal": "Gold_ClassicConsole_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_10_Gold_.png",
+   "normal": "Gold_9_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_ClassicConsole_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20749,8 +20780,8 @@
     1,
     1
    ],
-   "albedo": "Gold_ClassicNightstand_01_diff_1k.png",
-   "normal": "Gold_ClassicNightstand_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_13_Gold_.png",
+   "normal": "Gold_12_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_ClassicNightstand_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20772,8 +20803,8 @@
     1,
     1
    ],
-   "albedo": "Gold_GothicBed_01_diff_1k.png",
-   "normal": "Gold_GothicBed_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_16_Gold_.png",
+   "normal": "Gold_15_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_GothicBed_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20795,8 +20826,8 @@
     1,
     1
    ],
-   "albedo": "Gold_GothicCabinet_01_diff_1k.png",
-   "normal": "Gold_GothicCabinet_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_19_Gold_.png",
+   "normal": "Gold_18_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_GothicCabinet_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20818,8 +20849,8 @@
     1,
     1
    ],
-   "albedo": "Gold_GothicCommode_01_diff_1k.png",
-   "normal": "Gold_GothicCommode_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_22_Gold_.png",
+   "normal": "Gold_21_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_GothicCommode_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20841,8 +20872,8 @@
     1,
     1
    ],
-   "albedo": "Gold_antique_ceramic_vase_01_diff_1k.png",
-   "normal": "Gold_antique_ceramic_vase_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_25_Gold_.png",
+   "normal": "Gold_24_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_antique_ceramic_vase_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20864,8 +20895,8 @@
     1,
     1
    ],
-   "albedo": "Gold_dining_table_diff_1k.png",
-   "normal": "Gold_dining_table_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_28_Gold_.png",
+   "normal": "Gold_27_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_dining_table_0_Linear.png",
    "emission": [
     0.0,
@@ -20887,8 +20918,8 @@
     1,
     1
    ],
-   "albedo": "Gold_fancy_picture_frame_02_canvas_diff_1k.png",
-   "normal": "Gold_fancy_picture_frame_02_canvas_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_31_Gold_.png",
+   "normal": "Gold_30_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_fancy_picture_frame_02_0_Linear.png",
    "emission": [
     0.0,
@@ -20910,8 +20941,8 @@
     1,
     1
    ],
-   "albedo": "Gold_fancy_picture_frame_02_diff_1k.png",
-   "normal": "Gold_fancy_picture_frame_02_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_34_Gold_.png",
+   "normal": "Gold_33_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_fancy_picture_frame_02_1_Linear.png",
    "emission": [
     0.0,
@@ -20933,8 +20964,8 @@
     1,
     1
    ],
-   "albedo": "Gold_gothic_coffee_table_diff_1k.png",
-   "normal": "Gold_gothic_coffee_table_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_37_Gold_.png",
+   "normal": "Gold_36_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_gothic_coffee_table_0_Linear.png",
    "emission": [
     0.0,
@@ -20956,8 +20987,8 @@
     1,
     1
    ],
-   "albedo": "Gold_lantern_chandelier_01_diff_1k.png",
-   "normal": "Gold_lantern_chandelier_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_40_Gold_.png",
+   "normal": "Gold_39_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_lantern_chandelier_01_0_Linear.png",
    "emission": [
     0.0,
@@ -20979,8 +21010,8 @@
     1,
     1
    ],
-   "albedo": "Gold_lantern_chandelier_01_glass_diff_1k.png",
-   "normal": "Gold_lantern_chandelier_01_glass_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_43_Gold_.png",
+   "normal": "Gold_42_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_lantern_chandelier_01_1_Linear.png",
    "emission": [
     0.0,
@@ -21025,8 +21056,8 @@
     1,
     1
    ],
-   "albedo": "Gold_marble_bust_01_mask_1k_Linear.png",
-   "normal": "Gold_marble_bust_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold__Linear.png",
+   "normal": "Gold_45_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_marble_bust_01_0_Linear.png",
    "emission": [
     0.0,
@@ -21048,8 +21079,8 @@
     1,
     1
    ],
-   "albedo": "Gold_painted_wooden_bench_diff_1k.png",
-   "normal": "Gold_painted_wooden_bench_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_49_Gold_.png",
+   "normal": "Gold_48_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_painted_wooden_bench_0_Linear.png",
    "emission": [
     0.0,
@@ -21071,8 +21102,8 @@
     1,
     1
    ],
-   "albedo": "Gold_painted_wooden_sofa_diff_1k.png",
-   "normal": "Gold_painted_wooden_sofa_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_52_Gold_.png",
+   "normal": "Gold_51_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_painted_wooden_sofa_0_Linear.png",
    "emission": [
     0.0,
@@ -21094,8 +21125,8 @@
     1,
     1
    ],
-   "albedo": "Gold_potted_plant_01_pot_diff_1k.png",
-   "normal": "Gold_potted_plant_01_pot_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_55_Gold_.png",
+   "normal": "Gold_54_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_potted_plant_01_0_Linear.png",
    "emission": [
     0.0,
@@ -21117,8 +21148,8 @@
     1,
     1
    ],
-   "albedo": "Gold_potted_plant_01_leaves_diff_1k.png",
-   "normal": "Gold_potted_plant_01_leaves_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_58_Gold_.png",
+   "normal": "Gold_57_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_potted_plant_01_1_Linear.png",
    "emission": [
     0.0,
@@ -21140,8 +21171,8 @@
     1,
     1
    ],
-   "albedo": "Gold_potted_plant_02_pot_diff_1k.png",
-   "normal": "Gold_potted_plant_02_pot_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_61_Gold_.png",
+   "normal": "Gold_60_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_potted_plant_02_0_Linear.png",
    "emission": [
     0.0,
@@ -21163,8 +21194,8 @@
     1,
     1
    ],
-   "albedo": "Gold_potted_plant_02_leaves_diff_1k.png",
-   "normal": "Gold_potted_plant_02_leaves_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_64_Gold_.png",
+   "normal": "Gold_63_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_potted_plant_02_1_Linear.png",
    "emission": [
     0.0,
@@ -21186,8 +21217,8 @@
     1,
     1
    ],
-   "albedo": "Gold_tea_set_01_diff_1k.png",
-   "normal": "Gold_tea_set_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_67_Gold_.png",
+   "normal": "Gold_66_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_tea_set_01_0_Linear.png",
    "emission": [
     0.0,
@@ -21209,8 +21240,8 @@
     1,
     1
    ],
-   "albedo": "Gold_vintage_oil_lamp_glass_diff_1k_Alpha.png",
-   "normal": "Gold_vintage_oil_lamp_glass_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold__Alpha.png",
+   "normal": "Gold_69_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_vintage_oil_lamp_0_Linear.png",
    "emission": [
     0.0,
@@ -21232,7 +21263,7 @@
     1,
     1
    ],
-   "albedo": "Gold_vintage_oil_lamp_flame_diff_1k_Alpha.png",
+   "albedo": "Gold_72_Gold__Alpha.png",
    "normal": null,
    "metalGloss": null,
    "emission": [
@@ -21255,8 +21286,8 @@
     1,
     1
    ],
-   "albedo": "Gold_vintage_oil_lamp_diff_1k.png",
-   "normal": "Gold_vintage_oil_lamp_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_74_Gold_.png",
+   "normal": "Gold_73_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_vintage_oil_lamp_2_Linear.png",
    "emission": [
     0.0,
@@ -21278,8 +21309,8 @@
     1,
     1
    ],
-   "albedo": "Gold_wine_barrel_01_diff_1k.png",
-   "normal": "Gold_wine_barrel_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_77_Gold_.png",
+   "normal": "Gold_76_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CC0_wine_barrel_01_0_Linear.png",
    "emission": [
     0.0,
@@ -21301,8 +21332,8 @@
     0.39,
     1
    ],
-   "albedo": "Gold_old_stone_wall_02_diff_1k.png",
-   "normal": "Gold_old_stone_wall_02_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_80_Gold_.png",
+   "normal": "Gold_79_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CellarStone_Linear.png",
    "emission": [
     0.0,
@@ -21324,8 +21355,8 @@
     0.052,
     1
    ],
-   "albedo": "Gold_floral_jacquard_diff_1k.png",
-   "normal": "Gold_floral_jacquard_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_83_Gold_.png",
+   "normal": "Gold_82_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_CrimsonJacquard_Linear.png",
    "emission": [
     0.0,
@@ -21347,8 +21378,8 @@
     0.45,
     1
    ],
-   "albedo": "Gold_cobblestone_floor_01_diff_2k.png",
-   "normal": "Gold_cobblestone_floor_01_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_86_Gold_.png",
+   "normal": "Gold_85_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_DrivewayStone_Linear.png",
    "emission": [
     0.0,
@@ -21370,8 +21401,8 @@
     0.34,
     1
    ],
-   "albedo": "Gold_castle_brick_02_red_diff_2k.png",
-   "normal": "Gold_castle_brick_02_red_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_89_Gold_.png",
+   "normal": "Gold_88_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_EstateBrick_Linear.png",
    "emission": [
     0.0,
@@ -21409,6 +21440,29 @@
    "smoothness": 0.8199999928474426
   },
   {
+   "name": "GoldMat_Gold_FrontDoorLampGlass",
+   "color": [
+    1.0,
+    0.6499999761581421,
+    0.2800000011920929,
+    1.0
+   ],
+   "albedo": null,
+   "normal": null,
+   "metalGloss": null,
+   "emission": [
+    2.0,
+    1.159999966621399,
+    0.4000000059604645,
+    1
+   ],
+   "cutoff": 0.01,
+   "transparent": false,
+   "normalStrength": 0.45,
+   "metallic": 0.0,
+   "smoothness": 0.6500000059604645
+  },
+  {
    "name": "GoldMat_Gold_GardenEvergreen",
    "color": [
     0.07000000029802322,
@@ -21439,8 +21493,8 @@
     0.72,
     1
    ],
-   "albedo": "Gold_marble_01_diff_2k.png",
-   "normal": "Gold_marble_01_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_92_Gold_.png",
+   "normal": "Gold_91_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_HallMarble_Linear.png",
    "emission": [
     0.0,
@@ -21462,8 +21516,8 @@
     0.62,
     1
    ],
-   "albedo": "Gold_marble_01_diff_2k.png",
-   "normal": "Gold_marble_01_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_92_Gold_.png",
+   "normal": "Gold_91_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_KitchenStone_Linear.png",
    "emission": [
     0.0,
@@ -21485,8 +21539,8 @@
     0.57,
     1
    ],
-   "albedo": "Gold_monastery_stone_floor_diff_2k.png",
-   "normal": "Gold_monastery_stone_floor_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_96_Gold_.png",
+   "normal": "Gold_95_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_Limestone_Linear.png",
    "emission": [
     0.0,
@@ -21508,8 +21562,8 @@
     0.3,
     1
    ],
-   "albedo": "Gold_dark_paneled_wood_diff_1k.png",
-   "normal": "Gold_dark_paneled_wood_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_99_Gold_.png",
+   "normal": "Gold_98_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_MahoganyPanelling_Linear.png",
    "emission": [
     0.0,
@@ -21531,8 +21585,8 @@
     0.28,
     1
    ],
-   "albedo": "Gold_diagonal_parquet_diff_2k.png",
-   "normal": "Gold_diagonal_parquet_nor_gl_2k_Linear_N.png",
+   "albedo": "Gold_102_Gold_.png",
+   "normal": "Gold_101_Gold__Linear_N.png",
    "metalGloss": null,
    "emission": [
     0.0,
@@ -21554,8 +21608,8 @@
     0.32,
     1
    ],
-   "albedo": "Gold_raw_wooden_floor_01_diff_1k.png",
-   "normal": "Gold_raw_wooden_floor_01_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_104_Gold_.png",
+   "normal": "Gold_103_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_ServiceTimber_Linear.png",
    "emission": [
     0.0,
@@ -21577,8 +21631,8 @@
     0.43,
     1
    ],
-   "albedo": "Gold_black_walnut_veneer_03_diff_1k.png",
-   "normal": "Gold_black_walnut_veneer_03_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_107_Gold_.png",
+   "normal": "Gold_106_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_Walnut_Linear.png",
    "emission": [
     0.0,
@@ -21600,8 +21654,8 @@
     0.6,
     1
    ],
-   "albedo": "Gold_plastered_wall_04_diff_1k.png",
-   "normal": "Gold_plastered_wall_04_nor_gl_1k_Linear_N.png",
+   "albedo": "Gold_110_Gold_.png",
+   "normal": "Gold_109_Gold__Linear_N.png",
    "metalGloss": "Gold_MG_GoldMat_Gold_WarmPlaster_Linear.png",
    "emission": [
     0.0,
@@ -21687,7 +21741,7 @@
  ],
  "images": [
   {
-   "file": "Gold_Armchair_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21696,7 +21750,7 @@
    ]
   },
   {
-   "file": "Gold_Armchair_01_diff_1k.png",
+   "file": "Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21714,7 +21768,7 @@
    ]
   },
   {
-   "file": "Gold_Chandelier_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_3_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21723,7 +21777,7 @@
    ]
   },
   {
-   "file": "Gold_Chandelier_01_diff_1k.png",
+   "file": "Gold_4_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21741,7 +21795,7 @@
    ]
   },
   {
-   "file": "Gold_Chandelier_02_nor_gl_1k_Linear_N.png",
+   "file": "Gold_6_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21750,7 +21804,7 @@
    ]
   },
   {
-   "file": "Gold_Chandelier_02_diff_1k.png",
+   "file": "Gold_7_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21768,7 +21822,7 @@
    ]
   },
   {
-   "file": "Gold_ClassicConsole_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_9_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21777,7 +21831,7 @@
    ]
   },
   {
-   "file": "Gold_ClassicConsole_01_diff_1k.png",
+   "file": "Gold_10_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21795,7 +21849,7 @@
    ]
   },
   {
-   "file": "Gold_ClassicNightstand_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_12_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21804,7 +21858,7 @@
    ]
   },
   {
-   "file": "Gold_ClassicNightstand_01_diff_1k.png",
+   "file": "Gold_13_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21822,7 +21876,7 @@
    ]
   },
   {
-   "file": "Gold_GothicBed_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_15_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21831,7 +21885,7 @@
    ]
   },
   {
-   "file": "Gold_GothicBed_01_diff_1k.png",
+   "file": "Gold_16_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21849,7 +21903,7 @@
    ]
   },
   {
-   "file": "Gold_GothicCabinet_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_18_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21858,7 +21912,7 @@
    ]
   },
   {
-   "file": "Gold_GothicCabinet_01_diff_1k.png",
+   "file": "Gold_19_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21876,7 +21930,7 @@
    ]
   },
   {
-   "file": "Gold_GothicCommode_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_21_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21885,7 +21939,7 @@
    ]
   },
   {
-   "file": "Gold_GothicCommode_01_diff_1k.png",
+   "file": "Gold_22_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21903,7 +21957,7 @@
    ]
   },
   {
-   "file": "Gold_antique_ceramic_vase_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_24_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21912,7 +21966,7 @@
    ]
   },
   {
-   "file": "Gold_antique_ceramic_vase_01_diff_1k.png",
+   "file": "Gold_25_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21930,7 +21984,7 @@
    ]
   },
   {
-   "file": "Gold_dining_table_nor_gl_1k_Linear_N.png",
+   "file": "Gold_27_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21939,7 +21993,7 @@
    ]
   },
   {
-   "file": "Gold_dining_table_diff_1k.png",
+   "file": "Gold_28_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21957,7 +22011,7 @@
    ]
   },
   {
-   "file": "Gold_fancy_picture_frame_02_canvas_nor_gl_1k_Linear_N.png",
+   "file": "Gold_30_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21966,7 +22020,7 @@
    ]
   },
   {
-   "file": "Gold_fancy_picture_frame_02_canvas_diff_1k.png",
+   "file": "Gold_31_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -21984,7 +22038,7 @@
    ]
   },
   {
-   "file": "Gold_fancy_picture_frame_02_nor_gl_1k_Linear_N.png",
+   "file": "Gold_33_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -21993,7 +22047,7 @@
    ]
   },
   {
-   "file": "Gold_fancy_picture_frame_02_diff_1k.png",
+   "file": "Gold_34_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22011,7 +22065,7 @@
    ]
   },
   {
-   "file": "Gold_gothic_coffee_table_nor_gl_1k_Linear_N.png",
+   "file": "Gold_36_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22020,7 +22074,7 @@
    ]
   },
   {
-   "file": "Gold_gothic_coffee_table_diff_1k.png",
+   "file": "Gold_37_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22038,7 +22092,7 @@
    ]
   },
   {
-   "file": "Gold_lantern_chandelier_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_39_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22047,7 +22101,7 @@
    ]
   },
   {
-   "file": "Gold_lantern_chandelier_01_diff_1k.png",
+   "file": "Gold_40_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22065,7 +22119,7 @@
    ]
   },
   {
-   "file": "Gold_lantern_chandelier_01_glass_nor_gl_1k_Linear_N.png",
+   "file": "Gold_42_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22074,7 +22128,7 @@
    ]
   },
   {
-   "file": "Gold_lantern_chandelier_01_glass_diff_1k.png",
+   "file": "Gold_43_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22092,7 +22146,7 @@
    ]
   },
   {
-   "file": "Gold_marble_bust_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_45_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22101,7 +22155,7 @@
    ]
   },
   {
-   "file": "Gold_marble_bust_01_mask_1k_Linear.png",
+   "file": "Gold__Linear.png",
    "linear": true,
    "normal": false,
    "size": [
@@ -22119,7 +22173,7 @@
    ]
   },
   {
-   "file": "Gold_painted_wooden_bench_nor_gl_1k_Linear_N.png",
+   "file": "Gold_48_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22128,7 +22182,7 @@
    ]
   },
   {
-   "file": "Gold_painted_wooden_bench_diff_1k.png",
+   "file": "Gold_49_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22146,7 +22200,7 @@
    ]
   },
   {
-   "file": "Gold_painted_wooden_sofa_nor_gl_1k_Linear_N.png",
+   "file": "Gold_51_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22155,7 +22209,7 @@
    ]
   },
   {
-   "file": "Gold_painted_wooden_sofa_diff_1k.png",
+   "file": "Gold_52_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22173,7 +22227,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_01_pot_nor_gl_1k_Linear_N.png",
+   "file": "Gold_54_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22182,7 +22236,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_01_pot_diff_1k.png",
+   "file": "Gold_55_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22200,7 +22254,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_01_leaves_nor_gl_1k_Linear_N.png",
+   "file": "Gold_57_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22209,7 +22263,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_01_leaves_diff_1k.png",
+   "file": "Gold_58_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22227,7 +22281,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_02_pot_nor_gl_1k_Linear_N.png",
+   "file": "Gold_60_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22236,7 +22290,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_02_pot_diff_1k.png",
+   "file": "Gold_61_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22254,7 +22308,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_02_leaves_nor_gl_1k_Linear_N.png",
+   "file": "Gold_63_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22263,7 +22317,7 @@
    ]
   },
   {
-   "file": "Gold_potted_plant_02_leaves_diff_1k.png",
+   "file": "Gold_64_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22281,7 +22335,7 @@
    ]
   },
   {
-   "file": "Gold_tea_set_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_66_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22290,7 +22344,7 @@
    ]
   },
   {
-   "file": "Gold_tea_set_01_diff_1k.png",
+   "file": "Gold_67_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22308,7 +22362,7 @@
    ]
   },
   {
-   "file": "Gold_vintage_oil_lamp_glass_nor_gl_1k_Linear_N.png",
+   "file": "Gold_69_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22317,7 +22371,7 @@
    ]
   },
   {
-   "file": "Gold_vintage_oil_lamp_glass_diff_1k_Alpha.png",
+   "file": "Gold__Alpha.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22335,7 +22389,7 @@
    ]
   },
   {
-   "file": "Gold_vintage_oil_lamp_flame_diff_1k_Alpha.png",
+   "file": "Gold_72_Gold__Alpha.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22344,7 +22398,7 @@
    ]
   },
   {
-   "file": "Gold_vintage_oil_lamp_nor_gl_1k_Linear_N.png",
+   "file": "Gold_73_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22353,7 +22407,7 @@
    ]
   },
   {
-   "file": "Gold_vintage_oil_lamp_diff_1k.png",
+   "file": "Gold_74_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22371,7 +22425,7 @@
    ]
   },
   {
-   "file": "Gold_wine_barrel_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_76_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22380,7 +22434,7 @@
    ]
   },
   {
-   "file": "Gold_wine_barrel_01_diff_1k.png",
+   "file": "Gold_77_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22398,7 +22452,7 @@
    ]
   },
   {
-   "file": "Gold_old_stone_wall_02_nor_gl_1k_Linear_N.png",
+   "file": "Gold_79_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22407,7 +22461,7 @@
    ]
   },
   {
-   "file": "Gold_old_stone_wall_02_diff_1k.png",
+   "file": "Gold_80_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22425,7 +22479,7 @@
    ]
   },
   {
-   "file": "Gold_floral_jacquard_nor_gl_1k_Linear_N.png",
+   "file": "Gold_82_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22434,7 +22488,7 @@
    ]
   },
   {
-   "file": "Gold_floral_jacquard_diff_1k.png",
+   "file": "Gold_83_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22452,7 +22506,7 @@
    ]
   },
   {
-   "file": "Gold_cobblestone_floor_01_nor_gl_2k_Linear_N.png",
+   "file": "Gold_85_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22461,7 +22515,7 @@
    ]
   },
   {
-   "file": "Gold_cobblestone_floor_01_diff_2k.png",
+   "file": "Gold_86_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22479,7 +22533,7 @@
    ]
   },
   {
-   "file": "Gold_castle_brick_02_red_nor_gl_2k_Linear_N.png",
+   "file": "Gold_88_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22488,7 +22542,7 @@
    ]
   },
   {
-   "file": "Gold_castle_brick_02_red_diff_2k.png",
+   "file": "Gold_89_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22506,7 +22560,7 @@
    ]
   },
   {
-   "file": "Gold_marble_01_nor_gl_2k_Linear_N.png",
+   "file": "Gold_91_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22515,7 +22569,7 @@
    ]
   },
   {
-   "file": "Gold_marble_01_diff_2k.png",
+   "file": "Gold_92_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22542,7 +22596,7 @@
    ]
   },
   {
-   "file": "Gold_monastery_stone_floor_nor_gl_2k_Linear_N.png",
+   "file": "Gold_95_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22551,7 +22605,7 @@
    ]
   },
   {
-   "file": "Gold_monastery_stone_floor_diff_2k.png",
+   "file": "Gold_96_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22569,7 +22623,7 @@
    ]
   },
   {
-   "file": "Gold_dark_paneled_wood_nor_gl_1k_Linear_N.png",
+   "file": "Gold_98_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22578,7 +22632,7 @@
    ]
   },
   {
-   "file": "Gold_dark_paneled_wood_diff_1k.png",
+   "file": "Gold_99_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22596,7 +22650,7 @@
    ]
   },
   {
-   "file": "Gold_diagonal_parquet_nor_gl_2k_Linear_N.png",
+   "file": "Gold_101_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22605,7 +22659,7 @@
    ]
   },
   {
-   "file": "Gold_diagonal_parquet_diff_2k.png",
+   "file": "Gold_102_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22614,7 +22668,7 @@
    ]
   },
   {
-   "file": "Gold_raw_wooden_floor_01_nor_gl_1k_Linear_N.png",
+   "file": "Gold_103_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22623,7 +22677,7 @@
    ]
   },
   {
-   "file": "Gold_raw_wooden_floor_01_diff_1k.png",
+   "file": "Gold_104_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22641,7 +22695,7 @@
    ]
   },
   {
-   "file": "Gold_black_walnut_veneer_03_nor_gl_1k_Linear_N.png",
+   "file": "Gold_106_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22650,7 +22704,7 @@
    ]
   },
   {
-   "file": "Gold_black_walnut_veneer_03_diff_1k.png",
+   "file": "Gold_107_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [
@@ -22668,7 +22722,7 @@
    ]
   },
   {
-   "file": "Gold_plastered_wall_04_nor_gl_1k_Linear_N.png",
+   "file": "Gold_109_Gold__Linear_N.png",
    "linear": true,
    "normal": true,
    "size": [
@@ -22677,7 +22731,7 @@
    ]
   },
   {
-   "file": "Gold_plastered_wall_04_diff_1k.png",
+   "file": "Gold_110_Gold_.png",
    "linear": false,
    "normal": false,
    "size": [

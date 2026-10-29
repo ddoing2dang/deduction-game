@@ -1,0 +1,23 @@
+{
+  "wall": "R01_Wall_South_Pier_00",
+  "centerBlender": [
+    -4.2,
+    -3.5,
+    0
+  ],
+  "leafWidth": 2.22,
+  "height": 3.95,
+  "decorativeOnly": true,
+  "newDoorIDs": 0,
+  "newColliders": 0,
+  "newPaths": 0,
+  "referenceCountUnchanged": 94,
+  "cc0Types": 21,
+  "cc0Placements": 50,
+  "addedTris": 19064,
+  "backup": "Backup/FrontDoorFollowup",
+  "parts": [
+    "VG_DecorativeFrontDoor_ClosedDoubleLeaf"
+  ],
+  "apron": "Noncolliding shallow stone threshold support, not a new gameplay route"
+}

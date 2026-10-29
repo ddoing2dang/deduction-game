@@ -24,3 +24,6 @@ Blender 원본은 보존됐고, 변경은 별도 Mansion_VisualGold.blend에 있
 원시 검증: Verification/play-results.txt
 요약/기록 해시: final-verification.json
 최종 검토판: Review/Unity_NineRooms_9.png, _19.png, _32.png, _Side.png
+# Decorative front door follow-up — 2026-10-29
+
+Final saved Blender/FBX and full fresh Play Mode audit now include the decorative double front door. See `FRONT_DOOR_REVIEW.md` and `front-door-final-verification.json` for current totals, exact file hashes, direct render review and preservation checks. The latest environment is 471,948 tris / 779 render parts / 50 materials / 112 game textures. Existing 778 parts and gameplay layout remain unchanged.

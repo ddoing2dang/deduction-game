@@ -79,6 +79,13 @@ public static class MansionVisualGoldAudit
    }
   }
   Check(UnityEngine.Object.FindObjectsByType<MansionGoldRendererFollower>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length==MansionVisualGoldPipeline.Read().parts.Count(p=>!string.IsNullOrEmpty(p.parent)),"all wall-linked art followers survive saved-scene reload");
+  var front=GameObject.Find("VG_DecorativeFrontDoor_ClosedDoubleLeaf");
+  Check(front!=null,"decorative front door imported from final Blender model");
+  Check(front.GetComponentsInChildren<Collider>(true).Length==0,"decorative front door has no collider or trigger");
+  Check(front.GetComponentsInChildren<Component>(true).All(c=>!c.GetType().Name.Contains("NavMeshLink")&&!(c is OffMeshLink)),"decorative front door adds no NavMesh link");
+  Check(front.GetComponents<MonoBehaviour>().All(c=>c is MansionArtOccluder),"decorative front door has only environment art marker, no interaction");
+  var frontPart=MansionVisualGoldPipeline.Read().parts.Single(p=>p.name==front.name);
+  Check(string.IsNullOrEmpty(frontPart.door)&&!frontPart.collision&&string.IsNullOrEmpty(frontPart.parent),"decorative front door has no DoorID and retains original solid hall wall");
   DumpSpatial();room=1;phase=1;PlaceRoom(room);
  }
  static void CheckEventHeads(){
@@ -112,6 +119,7 @@ public static class MansionVisualGoldAudit
   typeof(MansionCutawayView).GetMethod("LateUpdate",F).Invoke(camera.GetComponent<MansionCutawayView>(),null);
   foreach(float zoom in new[]{9f,19f,32f}){
    camera.orthographicSize=zoom;Save($"Room_{room}_Zoom_{zoom}");
+   if(room==1){var front=GameObject.Find("VG_DecorativeFrontDoor_ClosedDoubleLeaf").GetComponent<Renderer>();var v=camera.WorldToViewportPoint(front.bounds.center);Check(front.enabled&&v.z>0&&v.x>0&&v.x<1&&v.y>0&&v.y<1,"decorative front door retained in actual half-top camera zoom="+zoom);}
    foreach(var a in UnityEngine.Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))foreach(float height in new[]{0f,1.8f}){var v=camera.WorldToViewportPoint(a.transform.position+Vector3.up*height);Check(v.x>.05f&&v.x<.95f&&v.y>.05f&&v.y<.95f,"six-actor framing Room "+room+" zoom="+zoom+" player="+a.PlayerId);}
    Vector3 head=actor.transform.position+Vector3.up*1.45f;Ray ray=camera.ScreenPointToRay(camera.WorldToScreenPoint(head));float distance=Vector3.Dot(head-ray.origin,ray.direction);
    foreach(var hit in Physics.RaycastAll(ray,distance-.05f,~0,QueryTriggerInteraction.Ignore)){
@@ -121,12 +129,35 @@ public static class MansionVisualGoldAudit
   }
   if(room==6)Check(GameObject.Find("DOOR_01_05_Door_Header").GetComponent<Renderer>().enabled,"camera-occluded doorway restores when the view moves away");
   CaptureComposition(room);
+  if(room==1)CaptureFrontDoor();
   Check(actor.GetComponentsInChildren<SkinnedMeshRenderer>().Any(r=>r.enabled&&r.isVisible),"Jiro rendered in Room "+room);
   GroundCheck("Stand Room "+room,true);
   if(++room<=9){PlaceRoom(room);return;}
   standRoom=1;standSlot=0;phase=7;PrepareStand();
  }
  [Serializable] class Composition {public int room;public Vector3 cameraPosition;public Quaternion cameraRotation;public float orthographicSize,aspect;public Anchor[] anchors;}
+ static void CaptureFrontDoor(){
+  var p=camera.transform.position;var q=camera.transform.rotation;float z=camera.orthographicSize;
+  var visible=UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include,FindObjectsSortMode.None).ToDictionary(r=>r,r=>r.enabled);
+  var door=GameObject.Find("VG_DecorativeFrontDoor_ClosedDoubleLeaf").GetComponent<Renderer>();
+  var source=GameObject.Find("South_R01_Wall_South_Pier_00").GetComponent<Renderer>();
+  try{
+   foreach(bool inside in new[]{false,true}){
+    foreach(var pair in visible)pair.Key.enabled=pair.Value;
+    foreach(var r in Room(1).GetComponentsInChildren<Renderer>(true))r.enabled=true;
+    foreach(var a in UnityEngine.Object.FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))foreach(var r in a.GetComponentsInChildren<Renderer>(true))r.enabled=false;
+    source.enabled=true;door.enabled=true;
+    camera.transform.position=inside?new Vector3(-.5f,3.3f,2.8f):new Vector3(-4.5f,3.2f,-6.1f);
+    camera.transform.LookAt(new Vector3(-4.2f,1.95f,inside?-3.25f:-3.75f));
+    camera.orthographicSize=3.1f;
+    var rt=new RenderTexture(1400,1050,24);var old=camera.targetTexture;var active=RenderTexture.active;
+    try{camera.targetTexture=rt;camera.Render();RenderTexture.active=rt;var im=new Texture2D(1400,1050,TextureFormat.RGB24,false);im.ReadPixels(new Rect(0,0,1400,1050),0,0);im.Apply();File.WriteAllBytes(Path.Combine(Root,inside?"FrontDoor_Interior.png":"FrontDoor_Exterior.png"),im.EncodeToPNG());UnityEngine.Object.DestroyImmediate(im);}
+    finally{camera.targetTexture=old;RenderTexture.active=active;UnityEngine.Object.DestroyImmediate(rt);}
+   }
+   source.enabled=false;Check(door.enabled,"decorative front door remains visible when foreground wall cuts away");
+   source.enabled=true;Check(door.enabled,"decorative door remains visible with restored wall");
+  }finally{foreach(var pair in visible)if(pair.Key!=null)pair.Key.enabled=pair.Value;camera.transform.SetPositionAndRotation(p,q);camera.orthographicSize=z;camera.Render();}
+ }
  [Serializable] class Anchor {public string name;public Vector3 world,viewport;}
  static void CaptureComposition(int id){
   var p=camera.transform.position;var r=camera.transform.rotation;float z=camera.orthographicSize,oldAspect=camera.aspect;camera.aspect=1.6f;var focus=MapData.GetRoom(id).Center;

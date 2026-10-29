@@ -1,0 +1,9 @@
+{
+  "layoutUnchanged": true,
+  "changedExistingParts": [],
+  "addedParts": [
+    "VG_DecorativeFrontDoor_ClosedDoubleLeaf"
+  ],
+  "comparison": "All geometry bounds, materials, assembly, role, DoorID, room, collider and parent unchanged; internal mesh allocation keys ignored",
+  "existingParts": 778
+}
