@@ -1,0 +1,302 @@
+[
+  {
+    "name": "VG_Trim_R01_Wall_East_Pier_00",
+    "merged_parts": 46,
+    "parent": "R01_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_East_Lintel_01",
+    "merged_parts": 6,
+    "parent": "R01_Wall_East_Lintel_01"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_East_Pier_02",
+    "merged_parts": 26,
+    "parent": "R01_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_West_Pier_00",
+    "merged_parts": 46,
+    "parent": "R01_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_West_Pier_02",
+    "merged_parts": 26,
+    "parent": "R01_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_North_Pier_00",
+    "merged_parts": 43,
+    "parent": "R01_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_North_Pier_02",
+    "merged_parts": 43,
+    "parent": "R01_Wall_North_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_South_Pier_00",
+    "merged_parts": 49,
+    "parent": "R01_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_South_Lintel_01",
+    "merged_parts": 6,
+    "parent": "R01_Wall_South_Lintel_01"
+  },
+  {
+    "name": "VG_Trim_R01_Wall_South_Pier_02",
+    "merged_parts": 26,
+    "parent": "R01_Wall_South_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_East_Pier_00",
+    "merged_parts": 16,
+    "parent": "R02_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_East_Pier_02",
+    "merged_parts": 22,
+    "parent": "R02_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_West_Pier_00",
+    "merged_parts": 45,
+    "parent": "R02_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_North_Pier_00",
+    "merged_parts": 48,
+    "parent": "R02_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_South_Pier_00",
+    "merged_parts": 19,
+    "parent": "R02_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R02_Wall_South_Pier_02",
+    "merged_parts": 16,
+    "parent": "R02_Wall_South_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_East_Pier_00",
+    "merged_parts": 45,
+    "parent": "R03_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_West_Pier_00",
+    "merged_parts": 6,
+    "parent": "R03_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_West_Pier_02",
+    "merged_parts": 19,
+    "parent": "R03_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_North_Pier_00",
+    "merged_parts": 48,
+    "parent": "R03_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_South_Pier_00",
+    "merged_parts": 3,
+    "parent": "R03_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R03_Wall_South_Pier_02",
+    "merged_parts": 32,
+    "parent": "R03_Wall_South_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_East_Pier_00",
+    "merged_parts": 16,
+    "parent": "R04_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_East_Pier_02",
+    "merged_parts": 19,
+    "parent": "R04_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_West_Pier_00",
+    "merged_parts": 45,
+    "parent": "R04_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_North_Pier_00",
+    "merged_parts": 19,
+    "parent": "R04_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_North_Pier_02",
+    "merged_parts": 22,
+    "parent": "R04_Wall_North_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R04_Wall_South_Pier_00",
+    "merged_parts": 58,
+    "parent": "R04_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_East_Pier_00",
+    "merged_parts": 32,
+    "parent": "R05_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_East_Pier_02",
+    "merged_parts": 3,
+    "parent": "R05_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_West_Pier_00",
+    "merged_parts": 19,
+    "parent": "R05_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_West_Pier_02",
+    "merged_parts": 16,
+    "parent": "R05_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_North_Pier_00",
+    "merged_parts": 16,
+    "parent": "R05_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_North_Pier_02",
+    "merged_parts": 22,
+    "parent": "R05_Wall_North_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R05_Wall_South_Pier_00",
+    "merged_parts": 48,
+    "parent": "R05_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_East_Pier_00",
+    "merged_parts": 45,
+    "parent": "R06_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_West_Pier_00",
+    "merged_parts": 19,
+    "parent": "R06_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_West_Pier_02",
+    "merged_parts": 19,
+    "parent": "R06_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_North_Pier_00",
+    "merged_parts": 58,
+    "parent": "R06_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_South_Pier_00",
+    "merged_parts": 19,
+    "parent": "R06_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R06_Wall_South_Pier_02",
+    "merged_parts": 19,
+    "parent": "R06_Wall_South_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_East_Pier_00",
+    "merged_parts": 6,
+    "parent": "R07_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_East_Pier_02",
+    "merged_parts": 16,
+    "parent": "R07_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_West_Pier_00",
+    "merged_parts": 35,
+    "parent": "R07_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_North_Pier_00",
+    "merged_parts": 45,
+    "parent": "R07_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_South_Pier_00",
+    "merged_parts": 3,
+    "parent": "R07_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R07_Wall_South_Pier_02",
+    "merged_parts": 32,
+    "parent": "R07_Wall_South_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_East_Pier_00",
+    "merged_parts": 3,
+    "parent": "R08_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_East_Pier_02",
+    "merged_parts": 3,
+    "parent": "R08_Wall_East_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_West_Pier_00",
+    "merged_parts": 19,
+    "parent": "R08_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_West_Pier_02",
+    "merged_parts": 16,
+    "parent": "R08_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_North_Pier_00",
+    "merged_parts": 48,
+    "parent": "R08_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R08_Wall_South_Pier_00",
+    "merged_parts": 32,
+    "parent": "R08_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_East_Pier_00",
+    "merged_parts": 35,
+    "parent": "R09_Wall_East_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_West_Pier_00",
+    "merged_parts": 19,
+    "parent": "R09_Wall_West_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_West_Pier_02",
+    "merged_parts": 6,
+    "parent": "R09_Wall_West_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_North_Pier_00",
+    "merged_parts": 3,
+    "parent": "R09_Wall_North_Pier_00"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_North_Pier_02",
+    "merged_parts": 32,
+    "parent": "R09_Wall_North_Pier_02"
+  },
+  {
+    "name": "VG_Trim_R09_Wall_South_Pier_00",
+    "merged_parts": 45,
+    "parent": "R09_Wall_South_Pier_00"
+  },
+  {
+    "name": "VG_EstateFence",
+    "merged_parts": 334,
+    "parent": ""
+  }
+]

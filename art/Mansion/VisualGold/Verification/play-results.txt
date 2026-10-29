@@ -1,0 +1,1046 @@
+OK actual Jiro CharacterActor uses valid Humanoid Avatar
+OK model root axis conversion baked; local rotation identity
+OK body GPU bone palette bounded for Android: 54
+OK face GPU bone palettes bounded without deleting skeleton transforms
+OK actual skinned body remains upright after Animator evaluation
+OK model prefab LODGroup installed
+OK six CharacterActors retained
+OK nine Mansion RoomNodes retained
+OK eleven basic LOCK routes retained
+OK 54 StandPoints and nine ActionPoints unchanged
+OK LOD0 budget 30122
+OK LOD1 ratio 0.5850873
+OK LOD2 ratio 0.2945687
+OK Face_LOD0 shape Blink_L
+OK authored deformation Face_LOD0/Blink_L
+OK Face_LOD0 shape Blink_R
+OK authored deformation Face_LOD0/Blink_R
+OK Face_LOD0 shape Smile
+OK authored deformation Face_LOD0/Smile
+OK Face_LOD0 shape Angry
+OK authored deformation Face_LOD0/Angry
+OK Face_LOD0 shape Sad
+OK authored deformation Face_LOD0/Sad
+OK Face_LOD0 shape Surprise
+OK authored deformation Face_LOD0/Surprise
+OK Face_LOD0 shape Mouth_A
+OK authored deformation Face_LOD0/Mouth_A
+OK Face_LOD0 shape Mouth_I
+OK authored deformation Face_LOD0/Mouth_I
+OK Face_LOD0 shape Mouth_U
+OK authored deformation Face_LOD0/Mouth_U
+OK Face_LOD0 shape Mouth_E
+OK authored deformation Face_LOD0/Mouth_E
+OK Face_LOD0 shape Mouth_O
+OK authored deformation Face_LOD0/Mouth_O
+OK Face_LOD1 shape Blink_L
+OK authored deformation Face_LOD1/Blink_L
+OK Face_LOD1 shape Blink_R
+OK authored deformation Face_LOD1/Blink_R
+OK Face_LOD1 shape Smile
+OK authored deformation Face_LOD1/Smile
+OK Face_LOD1 shape Angry
+OK authored deformation Face_LOD1/Angry
+OK Face_LOD1 shape Sad
+OK authored deformation Face_LOD1/Sad
+OK Face_LOD1 shape Surprise
+OK authored deformation Face_LOD1/Surprise
+OK Face_LOD1 shape Mouth_A
+OK authored deformation Face_LOD1/Mouth_A
+OK Face_LOD1 shape Mouth_I
+OK authored deformation Face_LOD1/Mouth_I
+OK Face_LOD1 shape Mouth_U
+OK authored deformation Face_LOD1/Mouth_U
+OK Face_LOD1 shape Mouth_E
+OK authored deformation Face_LOD1/Mouth_E
+OK Face_LOD1 shape Mouth_O
+OK authored deformation Face_LOD1/Mouth_O
+OK Face_LOD2 shape Blink_L
+OK authored deformation Face_LOD2/Blink_L
+OK Face_LOD2 shape Blink_R
+OK authored deformation Face_LOD2/Blink_R
+OK Face_LOD2 shape Smile
+OK authored deformation Face_LOD2/Smile
+OK Face_LOD2 shape Angry
+OK authored deformation Face_LOD2/Angry
+OK Face_LOD2 shape Sad
+OK authored deformation Face_LOD2/Sad
+OK Face_LOD2 shape Surprise
+OK authored deformation Face_LOD2/Surprise
+OK Face_LOD2 shape Mouth_A
+OK authored deformation Face_LOD2/Mouth_A
+OK Face_LOD2 shape Mouth_I
+OK authored deformation Face_LOD2/Mouth_I
+OK Face_LOD2 shape Mouth_U
+OK authored deformation Face_LOD2/Mouth_U
+OK Face_LOD2 shape Mouth_E
+OK authored deformation Face_LOD2/Mouth_E
+OK Face_LOD2 shape Mouth_O
+OK authored deformation Face_LOD2/Mouth_O
+OK all wall-linked art followers survive saved-scene reload
+OK six-actor framing Room 1 zoom=9 player=4
+OK six-actor framing Room 1 zoom=9 player=4
+OK six-actor framing Room 1 zoom=9 player=5
+OK six-actor framing Room 1 zoom=9 player=5
+OK six-actor framing Room 1 zoom=9 player=1
+OK six-actor framing Room 1 zoom=9 player=1
+OK six-actor framing Room 1 zoom=9 player=0
+OK six-actor framing Room 1 zoom=9 player=0
+OK six-actor framing Room 1 zoom=9 player=3
+OK six-actor framing Room 1 zoom=9 player=3
+OK six-actor framing Room 1 zoom=9 player=2
+OK six-actor framing Room 1 zoom=9 player=2
+OK six-actor framing Room 1 zoom=19 player=4
+OK six-actor framing Room 1 zoom=19 player=4
+OK six-actor framing Room 1 zoom=19 player=5
+OK six-actor framing Room 1 zoom=19 player=5
+OK six-actor framing Room 1 zoom=19 player=1
+OK six-actor framing Room 1 zoom=19 player=1
+OK six-actor framing Room 1 zoom=19 player=0
+OK six-actor framing Room 1 zoom=19 player=0
+OK six-actor framing Room 1 zoom=19 player=3
+OK six-actor framing Room 1 zoom=19 player=3
+OK six-actor framing Room 1 zoom=19 player=2
+OK six-actor framing Room 1 zoom=19 player=2
+OK six-actor framing Room 1 zoom=32 player=4
+OK six-actor framing Room 1 zoom=32 player=4
+OK six-actor framing Room 1 zoom=32 player=5
+OK six-actor framing Room 1 zoom=32 player=5
+OK six-actor framing Room 1 zoom=32 player=1
+OK six-actor framing Room 1 zoom=32 player=1
+OK six-actor framing Room 1 zoom=32 player=0
+OK six-actor framing Room 1 zoom=32 player=0
+OK six-actor framing Room 1 zoom=32 player=3
+OK six-actor framing Room 1 zoom=32 player=3
+OK six-actor framing Room 1 zoom=32 player=2
+OK six-actor framing Room 1 zoom=32 player=2
+OK Jiro rendered in Room 1
+OK six-actor framing Room 2 zoom=9 player=4
+OK six-actor framing Room 2 zoom=9 player=4
+OK six-actor framing Room 2 zoom=9 player=5
+OK six-actor framing Room 2 zoom=9 player=5
+OK six-actor framing Room 2 zoom=9 player=1
+OK six-actor framing Room 2 zoom=9 player=1
+OK six-actor framing Room 2 zoom=9 player=0
+OK six-actor framing Room 2 zoom=9 player=0
+OK six-actor framing Room 2 zoom=9 player=3
+OK six-actor framing Room 2 zoom=9 player=3
+OK six-actor framing Room 2 zoom=9 player=2
+OK six-actor framing Room 2 zoom=9 player=2
+OK six-actor framing Room 2 zoom=19 player=4
+OK six-actor framing Room 2 zoom=19 player=4
+OK six-actor framing Room 2 zoom=19 player=5
+OK six-actor framing Room 2 zoom=19 player=5
+OK six-actor framing Room 2 zoom=19 player=1
+OK six-actor framing Room 2 zoom=19 player=1
+OK six-actor framing Room 2 zoom=19 player=0
+OK six-actor framing Room 2 zoom=19 player=0
+OK six-actor framing Room 2 zoom=19 player=3
+OK six-actor framing Room 2 zoom=19 player=3
+OK six-actor framing Room 2 zoom=19 player=2
+OK six-actor framing Room 2 zoom=19 player=2
+OK six-actor framing Room 2 zoom=32 player=4
+OK six-actor framing Room 2 zoom=32 player=4
+OK six-actor framing Room 2 zoom=32 player=5
+OK six-actor framing Room 2 zoom=32 player=5
+OK six-actor framing Room 2 zoom=32 player=1
+OK six-actor framing Room 2 zoom=32 player=1
+OK six-actor framing Room 2 zoom=32 player=0
+OK six-actor framing Room 2 zoom=32 player=0
+OK six-actor framing Room 2 zoom=32 player=3
+OK six-actor framing Room 2 zoom=32 player=3
+OK six-actor framing Room 2 zoom=32 player=2
+OK six-actor framing Room 2 zoom=32 player=2
+OK Jiro rendered in Room 2
+OK six-actor framing Room 3 zoom=9 player=4
+OK six-actor framing Room 3 zoom=9 player=4
+OK six-actor framing Room 3 zoom=9 player=5
+OK six-actor framing Room 3 zoom=9 player=5
+OK six-actor framing Room 3 zoom=9 player=1
+OK six-actor framing Room 3 zoom=9 player=1
+OK six-actor framing Room 3 zoom=9 player=0
+OK six-actor framing Room 3 zoom=9 player=0
+OK six-actor framing Room 3 zoom=9 player=3
+OK six-actor framing Room 3 zoom=9 player=3
+OK six-actor framing Room 3 zoom=9 player=2
+OK six-actor framing Room 3 zoom=9 player=2
+OK six-actor framing Room 3 zoom=19 player=4
+OK six-actor framing Room 3 zoom=19 player=4
+OK six-actor framing Room 3 zoom=19 player=5
+OK six-actor framing Room 3 zoom=19 player=5
+OK six-actor framing Room 3 zoom=19 player=1
+OK six-actor framing Room 3 zoom=19 player=1
+OK six-actor framing Room 3 zoom=19 player=0
+OK six-actor framing Room 3 zoom=19 player=0
+OK six-actor framing Room 3 zoom=19 player=3
+OK six-actor framing Room 3 zoom=19 player=3
+OK six-actor framing Room 3 zoom=19 player=2
+OK six-actor framing Room 3 zoom=19 player=2
+OK six-actor framing Room 3 zoom=32 player=4
+OK six-actor framing Room 3 zoom=32 player=4
+OK six-actor framing Room 3 zoom=32 player=5
+OK six-actor framing Room 3 zoom=32 player=5
+OK six-actor framing Room 3 zoom=32 player=1
+OK six-actor framing Room 3 zoom=32 player=1
+OK six-actor framing Room 3 zoom=32 player=0
+OK six-actor framing Room 3 zoom=32 player=0
+OK six-actor framing Room 3 zoom=32 player=3
+OK six-actor framing Room 3 zoom=32 player=3
+OK six-actor framing Room 3 zoom=32 player=2
+OK six-actor framing Room 3 zoom=32 player=2
+OK Jiro rendered in Room 3
+OK six-actor framing Room 4 zoom=9 player=4
+OK six-actor framing Room 4 zoom=9 player=4
+OK six-actor framing Room 4 zoom=9 player=5
+OK six-actor framing Room 4 zoom=9 player=5
+OK six-actor framing Room 4 zoom=9 player=1
+OK six-actor framing Room 4 zoom=9 player=1
+OK six-actor framing Room 4 zoom=9 player=0
+OK six-actor framing Room 4 zoom=9 player=0
+OK six-actor framing Room 4 zoom=9 player=3
+OK six-actor framing Room 4 zoom=9 player=3
+OK six-actor framing Room 4 zoom=9 player=2
+OK six-actor framing Room 4 zoom=9 player=2
+OK six-actor framing Room 4 zoom=19 player=4
+OK six-actor framing Room 4 zoom=19 player=4
+OK six-actor framing Room 4 zoom=19 player=5
+OK six-actor framing Room 4 zoom=19 player=5
+OK six-actor framing Room 4 zoom=19 player=1
+OK six-actor framing Room 4 zoom=19 player=1
+OK six-actor framing Room 4 zoom=19 player=0
+OK six-actor framing Room 4 zoom=19 player=0
+OK six-actor framing Room 4 zoom=19 player=3
+OK six-actor framing Room 4 zoom=19 player=3
+OK six-actor framing Room 4 zoom=19 player=2
+OK six-actor framing Room 4 zoom=19 player=2
+OK six-actor framing Room 4 zoom=32 player=4
+OK six-actor framing Room 4 zoom=32 player=4
+OK six-actor framing Room 4 zoom=32 player=5
+OK six-actor framing Room 4 zoom=32 player=5
+OK six-actor framing Room 4 zoom=32 player=1
+OK six-actor framing Room 4 zoom=32 player=1
+OK six-actor framing Room 4 zoom=32 player=0
+OK six-actor framing Room 4 zoom=32 player=0
+OK six-actor framing Room 4 zoom=32 player=3
+OK six-actor framing Room 4 zoom=32 player=3
+OK six-actor framing Room 4 zoom=32 player=2
+OK six-actor framing Room 4 zoom=32 player=2
+OK Jiro rendered in Room 4
+OK six-actor framing Room 5 zoom=9 player=4
+OK six-actor framing Room 5 zoom=9 player=4
+OK six-actor framing Room 5 zoom=9 player=5
+OK six-actor framing Room 5 zoom=9 player=5
+OK six-actor framing Room 5 zoom=9 player=1
+OK six-actor framing Room 5 zoom=9 player=1
+OK six-actor framing Room 5 zoom=9 player=0
+OK six-actor framing Room 5 zoom=9 player=0
+OK six-actor framing Room 5 zoom=9 player=3
+OK six-actor framing Room 5 zoom=9 player=3
+OK six-actor framing Room 5 zoom=9 player=2
+OK six-actor framing Room 5 zoom=9 player=2
+OK six-actor framing Room 5 zoom=19 player=4
+OK six-actor framing Room 5 zoom=19 player=4
+OK six-actor framing Room 5 zoom=19 player=5
+OK six-actor framing Room 5 zoom=19 player=5
+OK six-actor framing Room 5 zoom=19 player=1
+OK six-actor framing Room 5 zoom=19 player=1
+OK six-actor framing Room 5 zoom=19 player=0
+OK six-actor framing Room 5 zoom=19 player=0
+OK six-actor framing Room 5 zoom=19 player=3
+OK six-actor framing Room 5 zoom=19 player=3
+OK six-actor framing Room 5 zoom=19 player=2
+OK six-actor framing Room 5 zoom=19 player=2
+OK six-actor framing Room 5 zoom=32 player=4
+OK six-actor framing Room 5 zoom=32 player=4
+OK six-actor framing Room 5 zoom=32 player=5
+OK six-actor framing Room 5 zoom=32 player=5
+OK six-actor framing Room 5 zoom=32 player=1
+OK six-actor framing Room 5 zoom=32 player=1
+OK six-actor framing Room 5 zoom=32 player=0
+OK six-actor framing Room 5 zoom=32 player=0
+OK six-actor framing Room 5 zoom=32 player=3
+OK six-actor framing Room 5 zoom=32 player=3
+OK six-actor framing Room 5 zoom=32 player=2
+OK six-actor framing Room 5 zoom=32 player=2
+OK Jiro rendered in Room 5
+OK six-actor framing Room 6 zoom=9 player=4
+OK six-actor framing Room 6 zoom=9 player=4
+OK six-actor framing Room 6 zoom=9 player=5
+OK six-actor framing Room 6 zoom=9 player=5
+OK six-actor framing Room 6 zoom=9 player=1
+OK six-actor framing Room 6 zoom=9 player=1
+OK six-actor framing Room 6 zoom=9 player=0
+OK six-actor framing Room 6 zoom=9 player=0
+OK six-actor framing Room 6 zoom=9 player=3
+OK six-actor framing Room 6 zoom=9 player=3
+OK six-actor framing Room 6 zoom=9 player=2
+OK six-actor framing Room 6 zoom=9 player=2
+OK six-actor framing Room 6 zoom=19 player=4
+OK six-actor framing Room 6 zoom=19 player=4
+OK six-actor framing Room 6 zoom=19 player=5
+OK six-actor framing Room 6 zoom=19 player=5
+OK six-actor framing Room 6 zoom=19 player=1
+OK six-actor framing Room 6 zoom=19 player=1
+OK six-actor framing Room 6 zoom=19 player=0
+OK six-actor framing Room 6 zoom=19 player=0
+OK six-actor framing Room 6 zoom=19 player=3
+OK six-actor framing Room 6 zoom=19 player=3
+OK six-actor framing Room 6 zoom=19 player=2
+OK six-actor framing Room 6 zoom=19 player=2
+OK six-actor framing Room 6 zoom=32 player=4
+OK six-actor framing Room 6 zoom=32 player=4
+OK six-actor framing Room 6 zoom=32 player=5
+OK six-actor framing Room 6 zoom=32 player=5
+OK six-actor framing Room 6 zoom=32 player=1
+OK six-actor framing Room 6 zoom=32 player=1
+OK six-actor framing Room 6 zoom=32 player=0
+OK six-actor framing Room 6 zoom=32 player=0
+OK six-actor framing Room 6 zoom=32 player=3
+OK six-actor framing Room 6 zoom=32 player=3
+OK six-actor framing Room 6 zoom=32 player=2
+OK six-actor framing Room 6 zoom=32 player=2
+OK camera-occluded doorway restores when the view moves away
+OK Jiro rendered in Room 6
+OK six-actor framing Room 7 zoom=9 player=4
+OK six-actor framing Room 7 zoom=9 player=4
+OK six-actor framing Room 7 zoom=9 player=5
+OK six-actor framing Room 7 zoom=9 player=5
+OK six-actor framing Room 7 zoom=9 player=1
+OK six-actor framing Room 7 zoom=9 player=1
+OK six-actor framing Room 7 zoom=9 player=0
+OK six-actor framing Room 7 zoom=9 player=0
+OK six-actor framing Room 7 zoom=9 player=3
+OK six-actor framing Room 7 zoom=9 player=3
+OK six-actor framing Room 7 zoom=9 player=2
+OK six-actor framing Room 7 zoom=9 player=2
+OK six-actor framing Room 7 zoom=19 player=4
+OK six-actor framing Room 7 zoom=19 player=4
+OK six-actor framing Room 7 zoom=19 player=5
+OK six-actor framing Room 7 zoom=19 player=5
+OK six-actor framing Room 7 zoom=19 player=1
+OK six-actor framing Room 7 zoom=19 player=1
+OK six-actor framing Room 7 zoom=19 player=0
+OK six-actor framing Room 7 zoom=19 player=0
+OK six-actor framing Room 7 zoom=19 player=3
+OK six-actor framing Room 7 zoom=19 player=3
+OK six-actor framing Room 7 zoom=19 player=2
+OK six-actor framing Room 7 zoom=19 player=2
+OK six-actor framing Room 7 zoom=32 player=4
+OK six-actor framing Room 7 zoom=32 player=4
+OK six-actor framing Room 7 zoom=32 player=5
+OK six-actor framing Room 7 zoom=32 player=5
+OK six-actor framing Room 7 zoom=32 player=1
+OK six-actor framing Room 7 zoom=32 player=1
+OK six-actor framing Room 7 zoom=32 player=0
+OK six-actor framing Room 7 zoom=32 player=0
+OK six-actor framing Room 7 zoom=32 player=3
+OK six-actor framing Room 7 zoom=32 player=3
+OK six-actor framing Room 7 zoom=32 player=2
+OK six-actor framing Room 7 zoom=32 player=2
+OK Jiro rendered in Room 7
+OK six-actor framing Room 8 zoom=9 player=4
+OK six-actor framing Room 8 zoom=9 player=4
+OK six-actor framing Room 8 zoom=9 player=5
+OK six-actor framing Room 8 zoom=9 player=5
+OK six-actor framing Room 8 zoom=9 player=1
+OK six-actor framing Room 8 zoom=9 player=1
+OK six-actor framing Room 8 zoom=9 player=0
+OK six-actor framing Room 8 zoom=9 player=0
+OK six-actor framing Room 8 zoom=9 player=3
+OK six-actor framing Room 8 zoom=9 player=3
+OK six-actor framing Room 8 zoom=9 player=2
+OK six-actor framing Room 8 zoom=9 player=2
+OK six-actor framing Room 8 zoom=19 player=4
+OK six-actor framing Room 8 zoom=19 player=4
+OK six-actor framing Room 8 zoom=19 player=5
+OK six-actor framing Room 8 zoom=19 player=5
+OK six-actor framing Room 8 zoom=19 player=1
+OK six-actor framing Room 8 zoom=19 player=1
+OK six-actor framing Room 8 zoom=19 player=0
+OK six-actor framing Room 8 zoom=19 player=0
+OK six-actor framing Room 8 zoom=19 player=3
+OK six-actor framing Room 8 zoom=19 player=3
+OK six-actor framing Room 8 zoom=19 player=2
+OK six-actor framing Room 8 zoom=19 player=2
+OK six-actor framing Room 8 zoom=32 player=4
+OK six-actor framing Room 8 zoom=32 player=4
+OK six-actor framing Room 8 zoom=32 player=5
+OK six-actor framing Room 8 zoom=32 player=5
+OK six-actor framing Room 8 zoom=32 player=1
+OK six-actor framing Room 8 zoom=32 player=1
+OK six-actor framing Room 8 zoom=32 player=0
+OK six-actor framing Room 8 zoom=32 player=0
+OK six-actor framing Room 8 zoom=32 player=3
+OK six-actor framing Room 8 zoom=32 player=3
+OK six-actor framing Room 8 zoom=32 player=2
+OK six-actor framing Room 8 zoom=32 player=2
+OK Jiro rendered in Room 8
+OK six-actor framing Room 9 zoom=9 player=4
+OK six-actor framing Room 9 zoom=9 player=4
+OK six-actor framing Room 9 zoom=9 player=5
+OK six-actor framing Room 9 zoom=9 player=5
+OK six-actor framing Room 9 zoom=9 player=1
+OK six-actor framing Room 9 zoom=9 player=1
+OK six-actor framing Room 9 zoom=9 player=0
+OK six-actor framing Room 9 zoom=9 player=0
+OK six-actor framing Room 9 zoom=9 player=3
+OK six-actor framing Room 9 zoom=9 player=3
+OK six-actor framing Room 9 zoom=9 player=2
+OK six-actor framing Room 9 zoom=9 player=2
+OK six-actor framing Room 9 zoom=19 player=4
+OK six-actor framing Room 9 zoom=19 player=4
+OK six-actor framing Room 9 zoom=19 player=5
+OK six-actor framing Room 9 zoom=19 player=5
+OK six-actor framing Room 9 zoom=19 player=1
+OK six-actor framing Room 9 zoom=19 player=1
+OK six-actor framing Room 9 zoom=19 player=0
+OK six-actor framing Room 9 zoom=19 player=0
+OK six-actor framing Room 9 zoom=19 player=3
+OK six-actor framing Room 9 zoom=19 player=3
+OK six-actor framing Room 9 zoom=19 player=2
+OK six-actor framing Room 9 zoom=19 player=2
+OK six-actor framing Room 9 zoom=32 player=4
+OK six-actor framing Room 9 zoom=32 player=4
+OK six-actor framing Room 9 zoom=32 player=5
+OK six-actor framing Room 9 zoom=32 player=5
+OK six-actor framing Room 9 zoom=32 player=1
+OK six-actor framing Room 9 zoom=32 player=1
+OK six-actor framing Room 9 zoom=32 player=0
+OK six-actor framing Room 9 zoom=32 player=0
+OK six-actor framing Room 9 zoom=32 player=3
+OK six-actor framing Room 9 zoom=32 player=3
+OK six-actor framing Room 9 zoom=32 player=2
+OK six-actor framing Room 9 zoom=32 player=2
+OK Jiro rendered in Room 9
+OK StandPoint sampled 1/4
+OK StandPoint sampled 1/5
+OK StandPoint sampled 1/1
+OK StandPoint sampled 1/0
+OK StandPoint sampled 1/3
+OK StandPoint sampled 1/2
+OK actual Jiro mesh clearance at StandPoint 1/0
+OK StandPoint sampled 1/5
+OK StandPoint sampled 1/0
+OK StandPoint sampled 1/2
+OK StandPoint sampled 1/1
+OK StandPoint sampled 1/4
+OK StandPoint sampled 1/3
+OK actual Jiro mesh clearance at StandPoint 1/1
+OK StandPoint sampled 1/0
+OK StandPoint sampled 1/1
+OK StandPoint sampled 1/3
+OK StandPoint sampled 1/2
+OK StandPoint sampled 1/5
+OK StandPoint sampled 1/4
+OK actual Jiro mesh clearance at StandPoint 1/2
+OK StandPoint sampled 1/1
+OK StandPoint sampled 1/2
+OK StandPoint sampled 1/4
+OK StandPoint sampled 1/3
+OK StandPoint sampled 1/0
+OK StandPoint sampled 1/5
+OK actual Jiro mesh clearance at StandPoint 1/3
+OK StandPoint sampled 1/2
+OK StandPoint sampled 1/3
+OK StandPoint sampled 1/5
+OK StandPoint sampled 1/4
+OK StandPoint sampled 1/1
+OK StandPoint sampled 1/0
+OK actual Jiro mesh clearance at StandPoint 1/4
+OK StandPoint sampled 1/3
+OK StandPoint sampled 1/4
+OK StandPoint sampled 1/0
+OK StandPoint sampled 1/5
+OK StandPoint sampled 1/2
+OK StandPoint sampled 1/1
+OK actual Jiro mesh clearance at StandPoint 1/5
+OK StandPoint sampled 2/4
+OK StandPoint sampled 2/5
+OK StandPoint sampled 2/1
+OK StandPoint sampled 2/0
+OK StandPoint sampled 2/3
+OK StandPoint sampled 2/2
+OK actual Jiro mesh clearance at StandPoint 2/0
+OK StandPoint sampled 2/5
+OK StandPoint sampled 2/0
+OK StandPoint sampled 2/2
+OK StandPoint sampled 2/1
+OK StandPoint sampled 2/4
+OK StandPoint sampled 2/3
+OK actual Jiro mesh clearance at StandPoint 2/1
+OK StandPoint sampled 2/0
+OK StandPoint sampled 2/1
+OK StandPoint sampled 2/3
+OK StandPoint sampled 2/2
+OK StandPoint sampled 2/5
+OK StandPoint sampled 2/4
+OK actual Jiro mesh clearance at StandPoint 2/2
+OK StandPoint sampled 2/1
+OK StandPoint sampled 2/2
+OK StandPoint sampled 2/4
+OK StandPoint sampled 2/3
+OK StandPoint sampled 2/0
+OK StandPoint sampled 2/5
+OK actual Jiro mesh clearance at StandPoint 2/3
+OK StandPoint sampled 2/2
+OK StandPoint sampled 2/3
+OK StandPoint sampled 2/5
+OK StandPoint sampled 2/4
+OK StandPoint sampled 2/1
+OK StandPoint sampled 2/0
+OK actual Jiro mesh clearance at StandPoint 2/4
+OK StandPoint sampled 2/3
+OK StandPoint sampled 2/4
+OK StandPoint sampled 2/0
+OK StandPoint sampled 2/5
+OK StandPoint sampled 2/2
+OK StandPoint sampled 2/1
+OK actual Jiro mesh clearance at StandPoint 2/5
+OK StandPoint sampled 3/4
+OK StandPoint sampled 3/5
+OK StandPoint sampled 3/1
+OK StandPoint sampled 3/0
+OK StandPoint sampled 3/3
+OK StandPoint sampled 3/2
+OK actual Jiro mesh clearance at StandPoint 3/0
+OK StandPoint sampled 3/5
+OK StandPoint sampled 3/0
+OK StandPoint sampled 3/2
+OK StandPoint sampled 3/1
+OK StandPoint sampled 3/4
+OK StandPoint sampled 3/3
+OK actual Jiro mesh clearance at StandPoint 3/1
+OK StandPoint sampled 3/0
+OK StandPoint sampled 3/1
+OK StandPoint sampled 3/3
+OK StandPoint sampled 3/2
+OK StandPoint sampled 3/5
+OK StandPoint sampled 3/4
+OK actual Jiro mesh clearance at StandPoint 3/2
+OK StandPoint sampled 3/1
+OK StandPoint sampled 3/2
+OK StandPoint sampled 3/4
+OK StandPoint sampled 3/3
+OK StandPoint sampled 3/0
+OK StandPoint sampled 3/5
+OK actual Jiro mesh clearance at StandPoint 3/3
+OK StandPoint sampled 3/2
+OK StandPoint sampled 3/3
+OK StandPoint sampled 3/5
+OK StandPoint sampled 3/4
+OK StandPoint sampled 3/1
+OK StandPoint sampled 3/0
+OK actual Jiro mesh clearance at StandPoint 3/4
+OK StandPoint sampled 3/3
+OK StandPoint sampled 3/4
+OK StandPoint sampled 3/0
+OK StandPoint sampled 3/5
+OK StandPoint sampled 3/2
+OK StandPoint sampled 3/1
+OK actual Jiro mesh clearance at StandPoint 3/5
+OK StandPoint sampled 4/4
+OK StandPoint sampled 4/5
+OK StandPoint sampled 4/1
+OK StandPoint sampled 4/0
+OK StandPoint sampled 4/3
+OK StandPoint sampled 4/2
+OK actual Jiro mesh clearance at StandPoint 4/0
+OK StandPoint sampled 4/5
+OK StandPoint sampled 4/0
+OK StandPoint sampled 4/2
+OK StandPoint sampled 4/1
+OK StandPoint sampled 4/4
+OK StandPoint sampled 4/3
+OK actual Jiro mesh clearance at StandPoint 4/1
+OK StandPoint sampled 4/0
+OK StandPoint sampled 4/1
+OK StandPoint sampled 4/3
+OK StandPoint sampled 4/2
+OK StandPoint sampled 4/5
+OK StandPoint sampled 4/4
+OK actual Jiro mesh clearance at StandPoint 4/2
+OK StandPoint sampled 4/1
+OK StandPoint sampled 4/2
+OK StandPoint sampled 4/4
+OK StandPoint sampled 4/3
+OK StandPoint sampled 4/0
+OK StandPoint sampled 4/5
+OK actual Jiro mesh clearance at StandPoint 4/3
+OK StandPoint sampled 4/2
+OK StandPoint sampled 4/3
+OK StandPoint sampled 4/5
+OK StandPoint sampled 4/4
+OK StandPoint sampled 4/1
+OK StandPoint sampled 4/0
+OK actual Jiro mesh clearance at StandPoint 4/4
+OK StandPoint sampled 4/3
+OK StandPoint sampled 4/4
+OK StandPoint sampled 4/0
+OK StandPoint sampled 4/5
+OK StandPoint sampled 4/2
+OK StandPoint sampled 4/1
+OK actual Jiro mesh clearance at StandPoint 4/5
+OK StandPoint sampled 5/4
+OK StandPoint sampled 5/5
+OK StandPoint sampled 5/1
+OK StandPoint sampled 5/0
+OK StandPoint sampled 5/3
+OK StandPoint sampled 5/2
+OK actual Jiro mesh clearance at StandPoint 5/0
+OK StandPoint sampled 5/5
+OK StandPoint sampled 5/0
+OK StandPoint sampled 5/2
+OK StandPoint sampled 5/1
+OK StandPoint sampled 5/4
+OK StandPoint sampled 5/3
+OK actual Jiro mesh clearance at StandPoint 5/1
+OK StandPoint sampled 5/0
+OK StandPoint sampled 5/1
+OK StandPoint sampled 5/3
+OK StandPoint sampled 5/2
+OK StandPoint sampled 5/5
+OK StandPoint sampled 5/4
+OK actual Jiro mesh clearance at StandPoint 5/2
+OK StandPoint sampled 5/1
+OK StandPoint sampled 5/2
+OK StandPoint sampled 5/4
+OK StandPoint sampled 5/3
+OK StandPoint sampled 5/0
+OK StandPoint sampled 5/5
+OK actual Jiro mesh clearance at StandPoint 5/3
+OK StandPoint sampled 5/2
+OK StandPoint sampled 5/3
+OK StandPoint sampled 5/5
+OK StandPoint sampled 5/4
+OK StandPoint sampled 5/1
+OK StandPoint sampled 5/0
+OK actual Jiro mesh clearance at StandPoint 5/4
+OK StandPoint sampled 5/3
+OK StandPoint sampled 5/4
+OK StandPoint sampled 5/0
+OK StandPoint sampled 5/5
+OK StandPoint sampled 5/2
+OK StandPoint sampled 5/1
+OK actual Jiro mesh clearance at StandPoint 5/5
+OK StandPoint sampled 6/4
+OK StandPoint sampled 6/5
+OK StandPoint sampled 6/1
+OK StandPoint sampled 6/0
+OK StandPoint sampled 6/3
+OK StandPoint sampled 6/2
+OK actual Jiro mesh clearance at StandPoint 6/0
+OK StandPoint sampled 6/5
+OK StandPoint sampled 6/0
+OK StandPoint sampled 6/2
+OK StandPoint sampled 6/1
+OK StandPoint sampled 6/4
+OK StandPoint sampled 6/3
+OK actual Jiro mesh clearance at StandPoint 6/1
+OK StandPoint sampled 6/0
+OK StandPoint sampled 6/1
+OK StandPoint sampled 6/3
+OK StandPoint sampled 6/2
+OK StandPoint sampled 6/5
+OK StandPoint sampled 6/4
+OK actual Jiro mesh clearance at StandPoint 6/2
+OK StandPoint sampled 6/1
+OK StandPoint sampled 6/2
+OK StandPoint sampled 6/4
+OK StandPoint sampled 6/3
+OK StandPoint sampled 6/0
+OK StandPoint sampled 6/5
+OK actual Jiro mesh clearance at StandPoint 6/3
+OK StandPoint sampled 6/2
+OK StandPoint sampled 6/3
+OK StandPoint sampled 6/5
+OK StandPoint sampled 6/4
+OK StandPoint sampled 6/1
+OK StandPoint sampled 6/0
+OK actual Jiro mesh clearance at StandPoint 6/4
+OK StandPoint sampled 6/3
+OK StandPoint sampled 6/4
+OK StandPoint sampled 6/0
+OK StandPoint sampled 6/5
+OK StandPoint sampled 6/2
+OK StandPoint sampled 6/1
+OK actual Jiro mesh clearance at StandPoint 6/5
+OK StandPoint sampled 7/4
+OK StandPoint sampled 7/5
+OK StandPoint sampled 7/1
+OK StandPoint sampled 7/0
+OK StandPoint sampled 7/3
+OK StandPoint sampled 7/2
+OK actual Jiro mesh clearance at StandPoint 7/0
+OK StandPoint sampled 7/5
+OK StandPoint sampled 7/0
+OK StandPoint sampled 7/2
+OK StandPoint sampled 7/1
+OK StandPoint sampled 7/4
+OK StandPoint sampled 7/3
+OK actual Jiro mesh clearance at StandPoint 7/1
+OK StandPoint sampled 7/0
+OK StandPoint sampled 7/1
+OK StandPoint sampled 7/3
+OK StandPoint sampled 7/2
+OK StandPoint sampled 7/5
+OK StandPoint sampled 7/4
+OK actual Jiro mesh clearance at StandPoint 7/2
+OK StandPoint sampled 7/1
+OK StandPoint sampled 7/2
+OK StandPoint sampled 7/4
+OK StandPoint sampled 7/3
+OK StandPoint sampled 7/0
+OK StandPoint sampled 7/5
+OK actual Jiro mesh clearance at StandPoint 7/3
+OK StandPoint sampled 7/2
+OK StandPoint sampled 7/3
+OK StandPoint sampled 7/5
+OK StandPoint sampled 7/4
+OK StandPoint sampled 7/1
+OK StandPoint sampled 7/0
+OK actual Jiro mesh clearance at StandPoint 7/4
+OK StandPoint sampled 7/3
+OK StandPoint sampled 7/4
+OK StandPoint sampled 7/0
+OK StandPoint sampled 7/5
+OK StandPoint sampled 7/2
+OK StandPoint sampled 7/1
+OK actual Jiro mesh clearance at StandPoint 7/5
+OK StandPoint sampled 8/4
+OK StandPoint sampled 8/5
+OK StandPoint sampled 8/1
+OK StandPoint sampled 8/0
+OK StandPoint sampled 8/3
+OK StandPoint sampled 8/2
+OK actual Jiro mesh clearance at StandPoint 8/0
+OK StandPoint sampled 8/5
+OK StandPoint sampled 8/0
+OK StandPoint sampled 8/2
+OK StandPoint sampled 8/1
+OK StandPoint sampled 8/4
+OK StandPoint sampled 8/3
+OK actual Jiro mesh clearance at StandPoint 8/1
+OK StandPoint sampled 8/0
+OK StandPoint sampled 8/1
+OK StandPoint sampled 8/3
+OK StandPoint sampled 8/2
+OK StandPoint sampled 8/5
+OK StandPoint sampled 8/4
+OK actual Jiro mesh clearance at StandPoint 8/2
+OK StandPoint sampled 8/1
+OK StandPoint sampled 8/2
+OK StandPoint sampled 8/4
+OK StandPoint sampled 8/3
+OK StandPoint sampled 8/0
+OK StandPoint sampled 8/5
+OK actual Jiro mesh clearance at StandPoint 8/3
+OK StandPoint sampled 8/2
+OK StandPoint sampled 8/3
+OK StandPoint sampled 8/5
+OK StandPoint sampled 8/4
+OK StandPoint sampled 8/1
+OK StandPoint sampled 8/0
+OK actual Jiro mesh clearance at StandPoint 8/4
+OK StandPoint sampled 8/3
+OK StandPoint sampled 8/4
+OK StandPoint sampled 8/0
+OK StandPoint sampled 8/5
+OK StandPoint sampled 8/2
+OK StandPoint sampled 8/1
+OK actual Jiro mesh clearance at StandPoint 8/5
+OK StandPoint sampled 9/4
+OK StandPoint sampled 9/5
+OK StandPoint sampled 9/1
+OK StandPoint sampled 9/0
+OK StandPoint sampled 9/3
+OK StandPoint sampled 9/2
+OK actual Jiro mesh clearance at StandPoint 9/0
+OK StandPoint sampled 9/5
+OK StandPoint sampled 9/0
+OK StandPoint sampled 9/2
+OK StandPoint sampled 9/1
+OK StandPoint sampled 9/4
+OK StandPoint sampled 9/3
+OK actual Jiro mesh clearance at StandPoint 9/1
+OK StandPoint sampled 9/0
+OK StandPoint sampled 9/1
+OK StandPoint sampled 9/3
+OK StandPoint sampled 9/2
+OK StandPoint sampled 9/5
+OK StandPoint sampled 9/4
+OK actual Jiro mesh clearance at StandPoint 9/2
+OK StandPoint sampled 9/1
+OK StandPoint sampled 9/2
+OK StandPoint sampled 9/4
+OK StandPoint sampled 9/3
+OK StandPoint sampled 9/0
+OK StandPoint sampled 9/5
+OK actual Jiro mesh clearance at StandPoint 9/3
+OK StandPoint sampled 9/2
+OK StandPoint sampled 9/3
+OK StandPoint sampled 9/5
+OK StandPoint sampled 9/4
+OK StandPoint sampled 9/1
+OK StandPoint sampled 9/0
+OK actual Jiro mesh clearance at StandPoint 9/4
+OK StandPoint sampled 9/3
+OK StandPoint sampled 9/4
+OK StandPoint sampled 9/0
+OK StandPoint sampled 9/5
+OK StandPoint sampled 9/2
+OK StandPoint sampled 9/1
+OK actual Jiro mesh clearance at StandPoint 9/5
+OK ActionPoint sampled 1
+OK actual Jiro mesh clearance at ActionPoint 1
+OK ActionPoint sampled 2
+OK actual Jiro mesh clearance at ActionPoint 2
+OK ActionPoint sampled 3
+OK actual Jiro mesh clearance at ActionPoint 3
+OK ActionPoint sampled 4
+OK actual Jiro mesh clearance at ActionPoint 4
+OK ActionPoint sampled 5
+OK actual Jiro mesh clearance at ActionPoint 5
+OK ActionPoint sampled 6
+OK actual Jiro mesh clearance at ActionPoint 6
+OK ActionPoint sampled 7
+OK actual Jiro mesh clearance at ActionPoint 7
+OK ActionPoint sampled 8
+OK actual Jiro mesh clearance at ActionPoint 8
+OK ActionPoint sampled 9
+OK actual Jiro mesh clearance at ActionPoint 9
+OK actual Animator state Idle
+OK finite skinned geometry Idle
+OK actual Animator state Move
+OK finite skinned geometry Move
+OK actual Animator state Investigate
+OK finite skinned geometry Investigate
+OK actual Animator state Suspect
+OK finite skinned geometry Suspect
+OK actual Animator state Deduction
+OK finite skinned geometry Deduction
+OK actual Animator state Cooperate
+OK finite skinned geometry Cooperate
+OK actual Animator state UseAbility
+OK finite skinned geometry UseAbility
+OK actual Animator state Win
+OK finite skinned geometry Win
+OK actual Animator state Lose
+OK finite skinned geometry Lose
+OK actual per-frame facial render Neutral
+OK actual per-frame facial render Blink_L
+OK actual per-frame facial render Blink_R
+OK actual per-frame facial render Smile
+OK actual per-frame facial render Angry
+OK actual per-frame facial render Sad
+OK actual per-frame facial render Surprise
+OK actual per-frame facial render Mouth_A
+OK actual per-frame facial render Mouth_I
+OK actual per-frame facial render Mouth_U
+OK actual per-frame facial render Mouth_E
+OK actual per-frame facial render Mouth_O
+OK unchanged character assets in the Visual Gold environment
+OK MATTO NAZ JIRO coexist with valid original Humanoid Avatars
+OK actual deduction action camera cue active
+OK actual action camera reaches 3D side view
+OK Jiro visible in actual action camera framing
+OK all-six head clearance in actual side camera 3 / South_R01_Wall_South_Lintel_01
+OK all-six head clearance in actual side camera 3 / DOOR_01_05_Door_Header
+OK existing camera returns to default zoom after action cue
+OK Entries sampled DOOR_01_02 1->2
+OK complete NavMesh path 1->2
+OK no long detour 1->2
+OK actual walking Animator during navigation DOOR_01_02 direction=0
+OK actual Jiro bidirectional traversal DOOR_01_02 direction=0
+OK Entries sampled DOOR_01_02 2->1
+OK complete NavMesh path 2->1
+OK no long detour 2->1
+OK actual walking Animator during navigation DOOR_01_02 direction=1
+OK actual Jiro bidirectional traversal DOOR_01_02 direction=1
+OK Entries sampled DOOR_01_03 1->3
+OK complete NavMesh path 1->3
+OK no long detour 1->3
+OK actual walking Animator during navigation DOOR_01_03 direction=0
+OK actual Jiro bidirectional traversal DOOR_01_03 direction=0
+OK Entries sampled DOOR_01_03 3->1
+OK complete NavMesh path 3->1
+OK no long detour 3->1
+OK actual walking Animator during navigation DOOR_01_03 direction=1
+OK actual Jiro bidirectional traversal DOOR_01_03 direction=1
+OK Entries sampled DOOR_01_05 1->5
+OK complete NavMesh path 1->5
+OK no long detour 1->5
+OK actual walking Animator during navigation DOOR_01_05 direction=0
+OK actual Jiro bidirectional traversal DOOR_01_05 direction=0
+OK Entries sampled DOOR_01_05 5->1
+OK complete NavMesh path 5->1
+OK no long detour 5->1
+OK actual walking Animator during navigation DOOR_01_05 direction=1
+OK actual Jiro bidirectional traversal DOOR_01_05 direction=1
+OK Entries sampled DOOR_01_06 1->6
+OK complete NavMesh path 1->6
+OK no long detour 1->6
+OK actual walking Animator during navigation DOOR_01_06 direction=0
+OK actual Jiro bidirectional traversal DOOR_01_06 direction=0
+OK Entries sampled DOOR_01_06 6->1
+OK complete NavMesh path 6->1
+OK no long detour 6->1
+OK actual walking Animator during navigation DOOR_01_06 direction=1
+OK actual Jiro bidirectional traversal DOOR_01_06 direction=1
+OK Entries sampled DOOR_02_04 2->4
+OK complete NavMesh path 2->4
+OK no long detour 2->4
+OK actual walking Animator during navigation DOOR_02_04 direction=0
+OK actual Jiro bidirectional traversal DOOR_02_04 direction=0
+OK Entries sampled DOOR_02_04 4->2
+OK complete NavMesh path 4->2
+OK no long detour 4->2
+OK actual walking Animator during navigation DOOR_02_04 direction=1
+OK actual Jiro bidirectional traversal DOOR_02_04 direction=1
+OK Entries sampled DOOR_03_05 3->5
+OK complete NavMesh path 3->5
+OK no long detour 3->5
+OK actual walking Animator during navigation DOOR_03_05 direction=0
+OK actual Jiro bidirectional traversal DOOR_03_05 direction=0
+OK Entries sampled DOOR_03_05 5->3
+OK complete NavMesh path 5->3
+OK no long detour 5->3
+OK actual walking Animator during navigation DOOR_03_05 direction=1
+OK actual Jiro bidirectional traversal DOOR_03_05 direction=1
+OK Entries sampled DOOR_04_05 4->5
+OK complete NavMesh path 4->5
+OK no long detour 4->5
+OK actual walking Animator during navigation DOOR_04_05 direction=0
+OK actual Jiro bidirectional traversal DOOR_04_05 direction=0
+OK Entries sampled DOOR_04_05 5->4
+OK complete NavMesh path 5->4
+OK no long detour 5->4
+OK actual walking Animator during navigation DOOR_04_05 direction=1
+OK actual Jiro bidirectional traversal DOOR_04_05 direction=1
+OK Entries sampled DOOR_07_08 7->8
+OK complete NavMesh path 7->8
+OK no long detour 7->8
+OK actual walking Animator during navigation DOOR_07_08 direction=0
+OK actual Jiro bidirectional traversal DOOR_07_08 direction=0
+OK Entries sampled DOOR_07_08 8->7
+OK complete NavMesh path 8->7
+OK no long detour 8->7
+OK actual walking Animator during navigation DOOR_07_08 direction=1
+OK actual Jiro bidirectional traversal DOOR_07_08 direction=1
+OK Entries sampled DOOR_08_09 8->9
+OK complete NavMesh path 8->9
+OK no long detour 8->9
+OK actual walking Animator during navigation DOOR_08_09 direction=0
+OK actual Jiro bidirectional traversal DOOR_08_09 direction=0
+OK Entries sampled DOOR_08_09 9->8
+OK complete NavMesh path 9->8
+OK no long detour 9->8
+OK actual walking Animator during navigation DOOR_08_09 direction=1
+OK actual Jiro bidirectional traversal DOOR_08_09 direction=1
+OK Entries sampled DOOR_04_07 4->7
+OK complete NavMesh path 4->7
+OK no long detour 4->7
+OK actual walking Animator during navigation DOOR_04_07 direction=0
+OK actual Jiro bidirectional traversal DOOR_04_07 direction=0
+OK Entries sampled DOOR_04_07 7->4
+OK complete NavMesh path 7->4
+OK no long detour 7->4
+OK actual walking Animator during navigation DOOR_04_07 direction=1
+OK actual Jiro bidirectional traversal DOOR_04_07 direction=1
+OK Entries sampled DOOR_05_08 5->8
+OK complete NavMesh path 5->8
+OK no long detour 5->8
+OK actual walking Animator during navigation DOOR_05_08 direction=0
+OK actual Jiro bidirectional traversal DOOR_05_08 direction=0
+OK Entries sampled DOOR_05_08 8->5
+OK complete NavMesh path 8->5
+OK no long detour 8->5
+OK actual walking Animator during navigation DOOR_05_08 direction=1
+OK actual Jiro bidirectional traversal DOOR_05_08 direction=1
+OK public event starts actual 3D side camera
+OK 3D side view dispatches layout-matched 2D illustration handoff
+OK actual event head visible 5 / DOOR_05_08_A_SideRail_-1_Post_12
+OK actual event head visible 1 / DOOR_05_08_A_SideRail_-1_Cap
+OK actual event head visible 3 / South_R08_Wall_South_Pier_00
+OK actual event head visible 2 / DOOR_05_08_A_SideRail_1_Cap
+OK actual event head visible 2 / DOOR_05_08_A_COLLISION_Flight
+OK actual event head visible 2 / DOOR_05_08_A_SideRail_1_Post_12
+OK secret passage public event retained
+OK secret entrance samples 9
+OK secret logical and actual CharacterActor transition 9->6
+OK secret arrival remains supported destination, no airborne corridor
+OK secret entrance samples 6
+OK secret logical and actual CharacterActor transition 6->9
+OK secret arrival remains supported destination, no airborne corridor
+OK active secret panel collider opens
+OK active secret panel collider opens
+OK door public event overlays retained
+OK smoke event visuals retained
+OK Restart clears public event states
+OK normal/tangent streams ACC_JIRO_Flower_LOD0
+OK finite usable normals/tangents ACC_JIRO_Flower_LOD0
+OK normalized skin weights ACC_JIRO_Flower_LOD0
+OK normal/tangent streams ACC_JIRO_Flower_LOD1
+OK finite usable normals/tangents ACC_JIRO_Flower_LOD1
+OK normalized skin weights ACC_JIRO_Flower_LOD1
+OK normal/tangent streams ACC_JIRO_Flower_LOD2
+OK finite usable normals/tangents ACC_JIRO_Flower_LOD2
+OK normalized skin weights ACC_JIRO_Flower_LOD2
+OK normal/tangent streams Accessory_LOD0
+OK finite usable normals/tangents Accessory_LOD0
+OK normalized skin weights Accessory_LOD0
+OK normal/tangent streams Accessory_LOD1
+OK finite usable normals/tangents Accessory_LOD1
+OK normalized skin weights Accessory_LOD1
+OK normal/tangent streams Accessory_LOD2
+OK finite usable normals/tangents Accessory_LOD2
+OK normalized skin weights Accessory_LOD2
+OK normal/tangent streams Body_LOD0
+OK finite usable normals/tangents Body_LOD0
+OK normalized skin weights Body_LOD0
+OK normal/tangent streams Body_LOD1
+OK finite usable normals/tangents Body_LOD1
+OK normalized skin weights Body_LOD1
+OK normal/tangent streams Body_LOD2
+OK finite usable normals/tangents Body_LOD2
+OK normalized skin weights Body_LOD2
+OK normal/tangent streams Face_LOD0
+OK finite usable normals/tangents Face_LOD0
+OK normalized skin weights Face_LOD0
+OK normal/tangent streams Face_LOD1
+OK finite usable normals/tangents Face_LOD1
+OK normalized skin weights Face_LOD1
+OK normal/tangent streams Face_LOD2
+OK finite usable normals/tangents Face_LOD2
+OK normalized skin weights Face_LOD2
+OK normal/tangent streams Hair_Main_LOD0
+OK finite usable normals/tangents Hair_Main_LOD0
+OK normalized skin weights Hair_Main_LOD0
+OK normal/tangent streams Hair_Main_LOD1
+OK finite usable normals/tangents Hair_Main_LOD1
+OK normalized skin weights Hair_Main_LOD1
+OK normal/tangent streams Hair_Main_LOD2
+OK finite usable normals/tangents Hair_Main_LOD2
+OK normalized skin weights Hair_Main_LOD2
+OK normal/tangent streams Outfit_LOD0
+OK finite usable normals/tangents Outfit_LOD0
+OK normalized skin weights Outfit_LOD0
+OK normal/tangent streams Outfit_LOD1
+OK finite usable normals/tangents Outfit_LOD1
+OK normalized skin weights Outfit_LOD1
+OK normal/tangent streams Outfit_LOD2
+OK finite usable normals/tangents Outfit_LOD2
+OK normalized skin weights Outfit_LOD2
+OK normal/tangent streams Shoes_LOD0
+OK finite usable normals/tangents Shoes_LOD0
+OK normalized skin weights Shoes_LOD0
+OK normal/tangent streams Shoes_LOD1
+OK finite usable normals/tangents Shoes_LOD1
+OK normalized skin weights Shoes_LOD1
+OK normal/tangent streams Shoes_LOD2
+OK finite usable normals/tangents Shoes_LOD2
+OK normalized skin weights Shoes_LOD2
+OK existing single-player regression assertions=2461
+OK Restart preserves one Jiro and all six actors
+OK camera and cutaway preserved
+OK existing RuntimeGameUI remains ready after Restart
+AUTOMATED CHECKS PASSED; CAPTURES REQUIRE DIRECT VISUAL REVIEW BEFORE FINAL OK

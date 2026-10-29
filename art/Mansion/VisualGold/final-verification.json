@@ -1,0 +1,18 @@
+{
+  "directVisualReview": "Blender nine-room/estate; Unity nine rooms at zoom 9/19/32; side/action/event views; bidirectional service-stair captures",
+  "playReportSHA256": "37DA6728C3D911CE19AE915D6DCB47FBC17B74C0055B5736E54F0F16B49BEBD0",
+  "blenderReferencesUnchanged": 94,
+  "standPoints": 54,
+  "actorStates": 9,
+  "characterFilesUnchanged": 179,
+  "actionPoints": 9,
+  "completedAt": "2026-10-29T22:14:24.9959352+09:00",
+  "status": "OK",
+  "editorOptimization": "Release restored",
+  "bidirectionalTraversals": 22,
+  "deviceFpsBenchmark": false,
+  "basicRoutes": 11,
+  "unityProtectedPoints": 85,
+  "secretPassage": "9<->6 both directions passed",
+  "singlePlayerAssertions": 2461
+}

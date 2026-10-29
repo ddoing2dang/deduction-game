@@ -10,6 +10,9 @@ namespace DeductionGame
         [SerializeField] private float followSmoothTime = 0.22f;
         [SerializeField] private float zoomSmoothTime = 0.18f;
 
+        private bool goldFraming;
+        private Vector3 EffectiveOffset => goldFraming && MapData.Theme==MapTheme.Mansion
+            ? new Vector3(cameraOffset.x,cameraOffset.y,-cameraOffset.y/Mathf.Tan(42f*Mathf.Deg2Rad)) : cameraOffset;
         private Vector3 focus;
         private Vector3 focusVelocity;
         private float zoomVelocity;
@@ -25,6 +28,7 @@ namespace DeductionGame
 
         private void Start()
         {
+            goldFraming=MapData.Theme==MapTheme.Mansion&&FindFirstObjectByType<MansionVisualGoldState>()!=null;
             var cam = GetComponent<Camera>();
             if (cam != null)
             {
@@ -34,7 +38,7 @@ namespace DeductionGame
 
             transform.rotation = Quaternion.Euler(42f, 0f, 0f);
             focus = ResolveTarget();
-            transform.position = focus + cameraOffset;
+            transform.position = focus + EffectiveOffset;
         }
 
         private void LateUpdate()
@@ -53,7 +57,7 @@ namespace DeductionGame
                 Mathf.Infinity,
                 Time.unscaledDeltaTime);
 
-            transform.position = focus + cameraOffset;
+            transform.position = focus + EffectiveOffset;
             transform.rotation = Quaternion.Euler(42f, 0f, 0f);
             cam.orthographicSize = Mathf.SmoothDamp(
                 cam.orthographicSize,
@@ -66,7 +70,7 @@ namespace DeductionGame
 
         public void ResetView() {
             zoomIndex=1; focusVelocity=Vector3.zero; zoomVelocity=0; focus=ResolveTarget();
-            transform.position=focus+cameraOffset;
+            transform.position=focus+EffectiveOffset;
             var camera=GetComponent<Camera>(); if(camera!=null) camera.orthographicSize=ZoomLevels[1];
         }
 

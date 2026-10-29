@@ -8,6 +8,18 @@ namespace DeductionGame
         private int lastRoomId = -1;
         private Vector3 lastCutawayCameraPosition;
 
+        public void RefreshForCamera(int roomId=0)
+        {
+            var gm=GameManager.Instance;
+            if(gm==null||gm.Human==null)return;
+            if(mansionRoot==null){var root=GameObject.Find(MapData.RootName);if(root==null)return;mansionRoot=root.transform;}
+            int activeRoom=roomId>0?roomId:gm.Human.RoomId;
+            ApplyCutaway(activeRoom);
+            lastCutawayCameraPosition=transform.position;
+            lastRoomId=activeRoom;
+            foreach(var follower in FindObjectsByType<MansionGoldRendererFollower>(FindObjectsSortMode.None))follower.RefreshVisibility();
+        }
+
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Attach()
         {
@@ -94,6 +106,10 @@ namespace DeductionGame
                 foreach (RaycastHit hit in Physics.RaycastAll(ray, distance - .05f, ~0, QueryTriggerInteraction.Ignore))
                 {
                     Transform wall = hit.collider.transform;
+                    // A higher room can project across basement actors even when its plan barely overlaps.
+                    if(wall.name=="Floor"&&wall.parent!=null&&wall.position.y>room.Center.y+.5f){
+                        SetFloorVisible(wall.parent,false);SetForegroundWallVisible(wall.parent,false);continue;
+                    }
                     var art=wall.GetComponentInParent<MansionArtOccluder>();
                     if(art!=null){if(actorTarget)foreach(var item in art.GetComponentsInChildren<Renderer>())item.enabled=false;continue;}
                     if (wall.parent == null || wall.parent.name != "Walls") continue;

@@ -5,6 +5,9 @@ namespace DeductionGame {
  static Transform actor,target;
  static float until;
  static bool winning;
+ public static int CueSerial {get;private set;}
+ public static int SourceId {get;private set;}=-1;
+ public static CharacterState PublicState {get;private set;}
  public static void Cancel(){actor=null;target=null;winning=false;until=0;}
  public static bool Active => actor!=null && Time.unscaledTime<until;
  public static Vector3 Focus => target!=null ? (actor.position+target.position)*0.5f : actor.position;
@@ -20,6 +23,7 @@ namespace DeductionGame {
  }
  if(source==null)return;
  actor=source;target=partner;winning=state==CharacterState.Win;until=Time.unscaledTime+1.2f;
+ SourceId=id;PublicState=state;CueSerial++;
  }
  }
 }

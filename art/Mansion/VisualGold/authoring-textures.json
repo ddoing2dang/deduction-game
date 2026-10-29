@@ -1,0 +1,1332 @@
+[
+  {
+    "image": "Armchair_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_diff_1k.jpg",
+    "file": "000_Armchair_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "Armchair_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_metallic_1k.exr",
+    "file": "001_Armchair_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Armchair_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_nor_gl_1k.exr",
+    "file": "002_Armchair_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Armchair_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_roughness_1k.jpg",
+    "file": "003_Armchair_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_diff_1k.jpg",
+    "file": "004_Chandelier_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "Chandelier_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_metallic_1k.exr",
+    "file": "005_Chandelier_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_nor_gl_1k.exr",
+    "file": "006_Chandelier_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_roughness_1k.jpg",
+    "file": "007_Chandelier_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_02_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_diff_1k.jpg",
+    "file": "008_Chandelier_02_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "Chandelier_02_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_metallic_1k.exr",
+    "file": "009_Chandelier_02_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_02_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_nor_gl_1k.exr",
+    "file": "010_Chandelier_02_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "Chandelier_02_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_roughness_1k.jpg",
+    "file": "011_Chandelier_02_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicConsole_01_diff.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_diff_1k.jpg",
+    "file": "012_ClassicConsole_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "ClassicConsole_01_metallic.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_metallic_1k.exr",
+    "file": "013_ClassicConsole_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicConsole_01_nor_gl.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_nor_gl_1k.exr",
+    "file": "014_ClassicConsole_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicConsole_01_roughness.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_roughness_1k.jpg",
+    "file": "015_ClassicConsole_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicNightstand_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_diff_1k.jpg",
+    "file": "016_ClassicNightstand_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "ClassicNightstand_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_metallic_1k.exr",
+    "file": "017_ClassicNightstand_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicNightstand_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_nor_gl_1k.exr",
+    "file": "018_ClassicNightstand_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "ClassicNightstand_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_roughness_1k.jpg",
+    "file": "019_ClassicNightstand_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicBed_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_diff_1k.jpg",
+    "file": "020_GothicBed_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "GothicBed_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_metallic_1k.exr",
+    "file": "021_GothicBed_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicBed_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_nor_gl_1k.exr",
+    "file": "022_GothicBed_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicBed_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_roughness_1k.jpg",
+    "file": "023_GothicBed_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCabinet_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_diff_1k.jpg",
+    "file": "024_GothicCabinet_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "GothicCabinet_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_metallic_1k.exr",
+    "file": "025_GothicCabinet_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCabinet_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_nor_gl_1k.exr",
+    "file": "026_GothicCabinet_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCabinet_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_roughness_1k.jpg",
+    "file": "027_GothicCabinet_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCommode_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_diff_1k.jpg",
+    "file": "028_GothicCommode_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "GothicCommode_01_metallic.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_metallic_1k.exr",
+    "file": "029_GothicCommode_01_metallic_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCommode_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_nor_gl_1k.exr",
+    "file": "030_GothicCommode_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "GothicCommode_01_roughness.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_roughness_1k.jpg",
+    "file": "031_GothicCommode_01_roughness_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "antique_ceramic_vase_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_diff_1k.jpg",
+    "file": "032_antique_ceramic_vase_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "antique_ceramic_vase_01_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_metal_1k.exr",
+    "file": "033_antique_ceramic_vase_01_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "antique_ceramic_vase_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_nor_gl_1k.exr",
+    "file": "034_antique_ceramic_vase_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "antique_ceramic_vase_01_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_rough_1k.jpg",
+    "file": "035_antique_ceramic_vase_01_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "black_walnut_veneer_03_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\black_walnut_veneer_03\\black_walnut_veneer_03_diff_1k.jpg",
+    "file": "036_black_walnut_veneer_03_diff_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "black_walnut_veneer_03_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\black_walnut_veneer_03\\black_walnut_veneer_03_nor_gl_1k.jpg",
+    "file": "037_black_walnut_veneer_03_nor_gl_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "black_walnut_veneer_03_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\black_walnut_veneer_03\\black_walnut_veneer_03_rough_1k.jpg",
+    "file": "038_black_walnut_veneer_03_rough_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "castle_brick_02_red_diff_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\castle_brick_02_red\\castle_brick_02_red_diff_2k.jpg",
+    "file": "039_castle_brick_02_red_diff_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "castle_brick_02_red_nor_gl_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\castle_brick_02_red\\castle_brick_02_red_nor_gl_2k.jpg",
+    "file": "040_castle_brick_02_red_nor_gl_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "castle_brick_02_red_rough_ao_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\castle_brick_02_red\\castle_brick_02_red_rough_ao_2k.jpg",
+    "file": "041_castle_brick_02_red_rough_ao_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "cobblestone_floor_01_diff_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\cobblestone_floor_01\\cobblestone_floor_01_diff_2k.jpg",
+    "file": "042_cobblestone_floor_01_diff_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "cobblestone_floor_01_nor_gl_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\cobblestone_floor_01\\cobblestone_floor_01_nor_gl_2k.jpg",
+    "file": "043_cobblestone_floor_01_nor_gl_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "cobblestone_floor_01_rough_ao_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\cobblestone_floor_01\\cobblestone_floor_01_rough_ao_2k.jpg",
+    "file": "044_cobblestone_floor_01_rough_ao_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "dark_paneled_wood_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\dark_paneled_wood\\dark_paneled_wood_diff_1k.jpg",
+    "file": "045_dark_paneled_wood_diff_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "dark_paneled_wood_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\dark_paneled_wood\\dark_paneled_wood_nor_gl_1k.jpg",
+    "file": "046_dark_paneled_wood_nor_gl_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "dark_paneled_wood_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\dark_paneled_wood\\dark_paneled_wood_rough_1k.jpg",
+    "file": "047_dark_paneled_wood_rough_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "diagonal_parquet_diff_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\diagonal_parquet\\diagonal_parquet_diff_2k.jpg",
+    "file": "048_diagonal_parquet_diff_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "diagonal_parquet_nor_gl_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\diagonal_parquet\\diagonal_parquet_nor_gl_2k.jpg",
+    "file": "049_diagonal_parquet_nor_gl_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "diagonal_parquet_rough_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\diagonal_parquet\\diagonal_parquet_rough_2k.jpg",
+    "file": "050_diagonal_parquet_rough_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "dining_table_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_diff_1k.jpg",
+    "file": "051_dining_table_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "dining_table_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_nor_gl_1k.exr",
+    "file": "052_dining_table_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "dining_table_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_rough_1k.exr",
+    "file": "053_dining_table_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "fancy_picture_frame_02_canvas_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_diff_1k.png",
+    "file": "054_fancy_picture_frame_02_canvas_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "fancy_picture_frame_02_canvas_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_nor_gl_1k.png",
+    "file": "055_fancy_picture_frame_02_canvas_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "fancy_picture_frame_02_canvas_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_rough_1k.png",
+    "file": "056_fancy_picture_frame_02_canvas_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "fancy_picture_frame_02_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_diff_1k.jpg",
+    "file": "057_fancy_picture_frame_02_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "fancy_picture_frame_02_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_nor_gl_1k.exr",
+    "file": "058_fancy_picture_frame_02_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "fancy_picture_frame_02_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_rough_1k.jpg",
+    "file": "059_fancy_picture_frame_02_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "floral_jacquard_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\floral_jacquard\\floral_jacquard_diff_1k.jpg",
+    "file": "060_floral_jacquard_diff_1k.png",
+    "size": [
+      1024,
+      1553
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "floral_jacquard_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\floral_jacquard\\floral_jacquard_nor_gl_1k.jpg",
+    "file": "061_floral_jacquard_nor_gl_1k.png",
+    "size": [
+      1024,
+      1553
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "floral_jacquard_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\floral_jacquard\\floral_jacquard_rough_1k.jpg",
+    "file": "062_floral_jacquard_rough_1k.png",
+    "size": [
+      1024,
+      1553
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "gothic_coffee_table_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_diff_1k.jpg",
+    "file": "063_gothic_coffee_table_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "gothic_coffee_table_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_nor_gl_1k.exr",
+    "file": "064_gothic_coffee_table_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "gothic_coffee_table_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_rough_1k.exr",
+    "file": "065_gothic_coffee_table_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_diff_1k.jpg",
+    "file": "066_lantern_chandelier_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "lantern_chandelier_01_glass_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_diff_1k.png",
+    "file": "067_lantern_chandelier_01_glass_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "lantern_chandelier_01_glass_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_metal_1k.png",
+    "file": "068_lantern_chandelier_01_glass_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_glass_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_nor_gl_1k.png",
+    "file": "069_lantern_chandelier_01_glass_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_glass_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_rough_1k.png",
+    "file": "070_lantern_chandelier_01_glass_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_metal_1k.exr",
+    "file": "071_lantern_chandelier_01_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_nor_gl_1k.exr",
+    "file": "072_lantern_chandelier_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_01_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_rough_1k.jpg",
+    "file": "073_lantern_chandelier_01_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "lantern_chandelier_glass_01_alpha.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_alpha_1k.png",
+    "file": "074_lantern_chandelier_glass_01_alpha_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "marble_01_diff_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\marble_01\\marble_01_diff_2k.jpg",
+    "file": "075_marble_01_diff_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "marble_01_nor_gl_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\marble_01\\marble_01_nor_gl_2k.jpg",
+    "file": "076_marble_01_nor_gl_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "marble_01_rough_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\marble_01\\marble_01_rough_2k.jpg",
+    "file": "077_marble_01_rough_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "marble_bust_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_diff_1k.jpg",
+    "file": "078_marble_bust_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "marble_bust_01_mask.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_mask_1k.png",
+    "file": "079_marble_bust_01_mask_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "marble_bust_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_nor_gl_1k.exr",
+    "file": "080_marble_bust_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "marble_bust_01_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_rough_1k.jpg",
+    "file": "081_marble_bust_01_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "monastery_stone_floor_diff_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\monastery_stone_floor\\monastery_stone_floor_diff_2k.jpg",
+    "file": "082_monastery_stone_floor_diff_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "monastery_stone_floor_nor_gl_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\monastery_stone_floor\\monastery_stone_floor_nor_gl_2k.jpg",
+    "file": "083_monastery_stone_floor_nor_gl_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "monastery_stone_floor_rough_2k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\monastery_stone_floor\\monastery_stone_floor_rough_2k.jpg",
+    "file": "084_monastery_stone_floor_rough_2k.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "old_stone_wall_02_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\old_stone_wall_02\\old_stone_wall_02_diff_1k.jpg",
+    "file": "085_old_stone_wall_02_diff_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "old_stone_wall_02_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\old_stone_wall_02\\old_stone_wall_02_nor_gl_1k.jpg",
+    "file": "086_old_stone_wall_02_nor_gl_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "old_stone_wall_02_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\old_stone_wall_02\\old_stone_wall_02_rough_1k.jpg",
+    "file": "087_old_stone_wall_02_rough_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "painted_wooden_bench_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_diff_1k.jpg",
+    "file": "088_painted_wooden_bench_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "painted_wooden_bench_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_nor_gl_1k.exr",
+    "file": "089_painted_wooden_bench_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "painted_wooden_bench_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_rough_1k.exr",
+    "file": "090_painted_wooden_bench_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "painted_wooden_sofa_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_diff_1k.jpg",
+    "file": "091_painted_wooden_sofa_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "painted_wooden_sofa_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_nor_gl_1k.exr",
+    "file": "092_painted_wooden_sofa_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "painted_wooden_sofa_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_rough_1k.exr",
+    "file": "093_painted_wooden_sofa_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "plastered_wall_04_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\plastered_wall_04\\plastered_wall_04_diff_1k.jpg",
+    "file": "094_plastered_wall_04_diff_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "plastered_wall_04_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\plastered_wall_04\\plastered_wall_04_nor_gl_1k.jpg",
+    "file": "095_plastered_wall_04_nor_gl_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "plastered_wall_04_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\plastered_wall_04\\plastered_wall_04_rough_1k.jpg",
+    "file": "096_plastered_wall_04_rough_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_01_leaves_alpha.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_alpha_1k.png",
+    "file": "097_potted_plant_01_leaves_alpha_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_01_leaves_diff.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_diff_1k.png",
+    "file": "098_potted_plant_01_leaves_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_01_leaves_nor_gl.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_nor_gl_1k.png",
+    "file": "099_potted_plant_01_leaves_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_01_leaves_rough.png.002",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_rough_1k.png",
+    "file": "100_potted_plant_01_leaves_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_01_pot_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_diff_1k.png",
+    "file": "101_potted_plant_01_pot_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_01_pot_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_nor_gl_1k.png",
+    "file": "102_potted_plant_01_pot_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_01_pot_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_rough_1k.png",
+    "file": "103_potted_plant_01_pot_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_02_leaves_alpha.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_alpha_1k.png",
+    "file": "104_potted_plant_02_leaves_alpha_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_02_leaves_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_diff_1k.png",
+    "file": "105_potted_plant_02_leaves_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_02_leaves_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_nor_gl_1k.png",
+    "file": "106_potted_plant_02_leaves_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_02_leaves_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_rough_1k.png",
+    "file": "107_potted_plant_02_leaves_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_02_pot_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_diff_1k.png",
+    "file": "108_potted_plant_02_pot_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "potted_plant_02_pot_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_nor_gl_1k.png",
+    "file": "109_potted_plant_02_pot_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "potted_plant_02_pot_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_rough_1k.png",
+    "file": "110_potted_plant_02_pot_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "raw_wooden_floor_01_diff_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\raw_wooden_floor_01\\raw_wooden_floor_01_diff_1k.jpg",
+    "file": "111_raw_wooden_floor_01_diff_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "raw_wooden_floor_01_nor_gl_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\raw_wooden_floor_01\\raw_wooden_floor_01_nor_gl_1k.jpg",
+    "file": "112_raw_wooden_floor_01_nor_gl_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "raw_wooden_floor_01_rough_1k.jpg",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Textures\\raw_wooden_floor_01\\raw_wooden_floor_01_rough_1k.jpg",
+    "file": "113_raw_wooden_floor_01_rough_1k.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "tea_set_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_diff_1k.jpg",
+    "file": "114_tea_set_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "tea_set_01_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_metal_1k.exr",
+    "file": "115_tea_set_01_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "tea_set_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_nor_gl_1k.exr",
+    "file": "116_tea_set_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "tea_set_01_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_rough_1k.exr",
+    "file": "117_tea_set_01_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_diff_1k.jpg",
+    "file": "118_vintage_oil_lamp_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "vintage_oil_lamp_flame_alpha.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_flame_alpha_1k.png",
+    "file": "119_vintage_oil_lamp_flame_alpha_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_flame_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_flame_diff_1k.png",
+    "file": "120_vintage_oil_lamp_flame_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "vintage_oil_lamp_glass_alpha.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_alpha_1k.png",
+    "file": "121_vintage_oil_lamp_glass_alpha_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_glass_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_diff_1k.png",
+    "file": "122_vintage_oil_lamp_glass_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "vintage_oil_lamp_glass_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_metal_1k.png",
+    "file": "123_vintage_oil_lamp_glass_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_glass_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_nor_gl_1k.png",
+    "file": "124_vintage_oil_lamp_glass_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_glass_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_rough_1k.png",
+    "file": "125_vintage_oil_lamp_glass_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_metal_1k.exr",
+    "file": "126_vintage_oil_lamp_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_nor_gl_1k.exr",
+    "file": "127_vintage_oil_lamp_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "vintage_oil_lamp_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_rough_1k.exr",
+    "file": "128_vintage_oil_lamp_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "wine_barrel_01_diff.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_diff_1k.jpg",
+    "file": "129_wine_barrel_01_diff_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "sRGB"
+  },
+  {
+    "image": "wine_barrel_01_metal.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_metal_1k.exr",
+    "file": "130_wine_barrel_01_metal_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "wine_barrel_01_nor_gl.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_nor_gl_1k.exr",
+    "file": "131_wine_barrel_01_nor_gl_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  },
+  {
+    "image": "wine_barrel_01_rough.png.001",
+    "original": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\Mansion\\VisualGold\\Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_rough_1k.jpg",
+    "file": "132_wine_barrel_01_rough_png.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "colorspace": "Non-Color"
+  }
+]

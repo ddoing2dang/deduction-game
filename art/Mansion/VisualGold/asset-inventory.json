@@ -1,0 +1,1953 @@
+[
+  {
+    "slug": "ArmChair_01",
+    "file": "Models/ArmChair_01/ArmChair_01_1k.blend",
+    "objects": [
+      "ArmChair_01"
+    ],
+    "meshes": [
+      "ArmChair_01"
+    ],
+    "min": [
+      -0.4242154359817505,
+      -0.34845367074012756,
+      -0.0004314967372920364
+    ],
+    "max": [
+      0.4242154657840729,
+      0.4173066020011902,
+      1.064656138420105
+    ],
+    "dimensions": [
+      0.8484309017658234,
+      0.7657602727413177,
+      1.065087635157397
+    ],
+    "raw_tris": 5626,
+    "modifiers": [],
+    "images": {
+      "Armchair_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Armchair_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Armchair_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Armchair_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ArmChair_01\\textures\\Armchair_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "Chandelier_01",
+    "file": "Models/Chandelier_01/Chandelier_01_1k.blend",
+    "objects": [
+      "Chandelier_01"
+    ],
+    "meshes": [
+      "Chandelier_01"
+    ],
+    "min": [
+      -37.296382904052734,
+      -79.82707977294922,
+      -40.22236633300781
+    ],
+    "max": [
+      37.34918975830078,
+      5.7220458984375e-06,
+      41.33259963989258
+    ],
+    "dimensions": [
+      74.64557266235352,
+      79.82708549499512,
+      81.55496597290039
+    ],
+    "raw_tris": 26860,
+    "modifiers": [
+      [
+        "Chandelier_01",
+        "TRIANGULATE"
+      ]
+    ],
+    "images": {
+      "Chandelier_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_01\\textures\\Chandelier_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "Chandelier_02",
+    "file": "Models/Chandelier_02/Chandelier_02_1k.blend",
+    "objects": [
+      "Chandelier_02"
+    ],
+    "meshes": [
+      "Chandelier_02"
+    ],
+    "min": [
+      -0.3404228985309601,
+      -0.313377320766449,
+      0.059688448905944824
+    ],
+    "max": [
+      0.3385334312915802,
+      0.30570584535598755,
+      0.9077612161636353
+    ],
+    "dimensions": [
+      0.6789563298225403,
+      0.6190831661224365,
+      0.8480727672576904
+    ],
+    "raw_tris": 21514,
+    "modifiers": [],
+    "images": {
+      "Chandelier_02_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_02_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_02_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "Chandelier_02_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\Chandelier_02\\textures\\Chandelier_02_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "GothicCabinet_01",
+    "file": "Models/GothicCabinet_01/GothicCabinet_01_1k.blend",
+    "objects": [
+      "GothicCabinet_01_door4",
+      "GothicCabinet_01_door3",
+      "GothicCabinet_01_door2",
+      "GothicCabinet_01_door1",
+      "GothicCabinet_01_cabinet"
+    ],
+    "meshes": [
+      "GothicCabinet_01_door4",
+      "GothicCabinet_01_door3",
+      "GothicCabinet_01_door2",
+      "GothicCabinet_01_door1",
+      "GothicCabinet_01_cabinet"
+    ],
+    "min": [
+      -0.8595718145370483,
+      -0.5582708120346069,
+      -0.44867900013923645
+    ],
+    "max": [
+      0.8595719337463379,
+      0.4573075771331787,
+      2.36090087890625
+    ],
+    "dimensions": [
+      1.7191437482833862,
+      1.0155783891677856,
+      2.8095798790454865
+    ],
+    "raw_tris": 12170,
+    "modifiers": [],
+    "images": {
+      "GothicCabinet_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCabinet_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCabinet_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCabinet_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCabinet_01\\textures\\GothicCabinet_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "GothicCommode_01",
+    "file": "Models/GothicCommode_01/GothicCommode_01_1k.blend",
+    "objects": [
+      "GothicCommode_01_door03",
+      "GothicCommode_01_door02",
+      "GothicCommode_01_door01",
+      "GothicCommode_01"
+    ],
+    "meshes": [
+      "GothicCommode_01_door03",
+      "GothicCommode_01_door02",
+      "GothicCommode_01_door01",
+      "GothicCommode_01"
+    ],
+    "min": [
+      -60.17770767211914,
+      -12.898338317871094,
+      -55.04449462890625
+    ],
+    "max": [
+      59.96255874633789,
+      121.20425415039062,
+      29.155906677246094
+    ],
+    "dimensions": [
+      120.14026641845703,
+      134.10259246826172,
+      84.20040130615234
+    ],
+    "raw_tris": 3897,
+    "modifiers": [],
+    "images": {
+      "GothicCommode_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCommode_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCommode_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicCommode_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicCommode_01\\textures\\GothicCommode_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "GothicBed_01",
+    "file": "Models/GothicBed_01/GothicBed_01_1k.blend",
+    "objects": [
+      "GothicBed_01",
+      "03",
+      "02",
+      "01"
+    ],
+    "meshes": [
+      "GothicBed_01"
+    ],
+    "min": [
+      -0.7113074660301208,
+      -0.9868945479393005,
+      -1.181181374931839e-07
+    ],
+    "max": [
+      0.782444417476654,
+      1.053105354309082,
+      1.5338401794433594
+    ],
+    "dimensions": [
+      1.493751883506775,
+      2.0399999022483826,
+      1.5338402975614969
+    ],
+    "raw_tris": 18741,
+    "modifiers": [],
+    "images": {
+      "GothicBed_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicBed_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicBed_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "GothicBed_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\GothicBed_01\\textures\\GothicBed_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gothic_coffee_table",
+    "file": "Models/gothic_coffee_table/gothic_coffee_table_1k.blend",
+    "objects": [
+      "gothic_coffee_table"
+    ],
+    "meshes": [
+      "gothic_coffee_table"
+    ],
+    "min": [
+      -0.7212742567062378,
+      -0.7220950722694397,
+      0.0002775193133857101
+    ],
+    "max": [
+      0.7218159437179565,
+      0.7209951281547546,
+      0.5590505003929138
+    ],
+    "dimensions": [
+      1.4430902004241943,
+      1.4430902004241943,
+      0.5587729810795281
+    ],
+    "raw_tris": 23836,
+    "modifiers": [
+      [
+        "gothic_coffee_table",
+        "NODES"
+      ],
+      [
+        "gothic_coffee_table",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "gothic_coffee_table_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "gothic_coffee_table_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "gothic_coffee_table_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\gothic_coffee_table\\textures\\gothic_coffee_table_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "dining_table",
+    "file": "Models/dining_table/dining_table_1k.blend",
+    "objects": [
+      "dining_table_cloth",
+      "dining_table"
+    ],
+    "meshes": [
+      "dining_table_cloth",
+      "dining_table"
+    ],
+    "min": [
+      -1.1328890323638916,
+      -0.712041974067688,
+      -0.004275118932127953
+    ],
+    "max": [
+      1.1230069398880005,
+      0.6781940460205078,
+      0.872714102268219
+    ],
+    "dimensions": [
+      2.255895972251892,
+      1.3902360200881958,
+      0.876989221200347
+    ],
+    "raw_tris": 1048,
+    "modifiers": [],
+    "images": {
+      "dining_table_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "dining_table_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "dining_table_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\dining_table\\textures\\dining_table_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "ClassicConsole_01",
+    "file": "Models/ClassicConsole_01/ClassicConsole_01_1k.blend",
+    "objects": [
+      "ClassicConsole_01"
+    ],
+    "meshes": [
+      "ClassicConsole_01"
+    ],
+    "min": [
+      -0.7708194851875305,
+      -0.250885546207428,
+      -5.188380328036146e-06
+    ],
+    "max": [
+      0.772200882434845,
+      0.33838987350463867,
+      0.9490662217140198
+    ],
+    "dimensions": [
+      1.5430203676223755,
+      0.5892754197120667,
+      0.9490714100943478
+    ],
+    "raw_tris": 7566,
+    "modifiers": [],
+    "images": {
+      "ClassicConsole_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicConsole_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicConsole_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicConsole_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicConsole_01\\textures\\ClassicConsole_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "vintage_grandfather_clock_01",
+    "file": "Models/vintage_grandfather_clock_01/vintage_grandfather_clock_01_1k.blend",
+    "objects": [
+      "wdg_root",
+      "wdg_auto_free_button",
+      "wdg_auto_free",
+      "wdg_arrow_simple",
+      "vintage_grandfather_clock_01_MinuteHand",
+      "vintage_grandfather_clock_01_HourHand",
+      "vintage_grandfather_clock_01_Body",
+      "rig_vintage_grandfather_clock_01"
+    ],
+    "meshes": [
+      "wdg_root",
+      "wdg_auto_free_button",
+      "wdg_auto_free",
+      "wdg_arrow_simple",
+      "vintage_grandfather_clock_01_MinuteHand",
+      "vintage_grandfather_clock_01_HourHand",
+      "vintage_grandfather_clock_01_Body"
+    ],
+    "min": [
+      -0.49831828474998474,
+      -0.42369145154953003,
+      -0.061619214713573456
+    ],
+    "max": [
+      0.49831825494766235,
+      1.0551971197128296,
+      2.1905269622802734
+    ],
+    "dimensions": [
+      0.9966365396976471,
+      1.4788885712623596,
+      2.252146176993847
+    ],
+    "raw_tris": 12604,
+    "modifiers": [
+      [
+        "wdg_root",
+        "NODES"
+      ],
+      [
+        "wdg_root",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "wdg_auto_free_button",
+        "NODES"
+      ],
+      [
+        "vintage_grandfather_clock_01_MinuteHand",
+        "ARMATURE"
+      ],
+      [
+        "vintage_grandfather_clock_01_MinuteHand",
+        "NODES"
+      ],
+      [
+        "vintage_grandfather_clock_01_MinuteHand",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "vintage_grandfather_clock_01_HourHand",
+        "ARMATURE"
+      ],
+      [
+        "vintage_grandfather_clock_01_HourHand",
+        "NODES"
+      ],
+      [
+        "vintage_grandfather_clock_01_HourHand",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "vintage_grandfather_clock_01_Body",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "vintage_grandfather_clock_01_Body",
+        "NODES"
+      ],
+      [
+        "vintage_grandfather_clock_01_Body",
+        "ARMATURE"
+      ]
+    ],
+    "images": {
+      "vintage_grandfather_clock_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_grandfather_clock_01\\textures\\vintage_grandfather_clock_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_grandfather_clock_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_grandfather_clock_01\\textures\\vintage_grandfather_clock_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_grandfather_clock_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_grandfather_clock_01\\textures\\vintage_grandfather_clock_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_grandfather_clock_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_grandfather_clock_01\\textures\\vintage_grandfather_clock_01_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_grandfather_clock_01_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_grandfather_clock_01\\textures\\vintage_grandfather_clock_01_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "fancy_picture_frame_02",
+    "file": "Models/fancy_picture_frame_02/fancy_picture_frame_02_1k.blend",
+    "objects": [
+      "fancy_picture_frame_02_canvas",
+      "fancy_picture_frame_02"
+    ],
+    "meshes": [
+      "fancy_picture_frame_02_canvas",
+      "fancy_picture_frame_02"
+    ],
+    "min": [
+      -0.332224577665329,
+      -0.09037653356790543,
+      -0.39103221893310547
+    ],
+    "max": [
+      0.3283344507217407,
+      -0.0013333752285689116,
+      0.38001298904418945
+    ],
+    "dimensions": [
+      0.6605590283870697,
+      0.08904315833933651,
+      0.7710452079772949
+    ],
+    "raw_tris": 35102,
+    "modifiers": [
+      [
+        "fancy_picture_frame_02",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "fancy_picture_frame_02",
+        "NODES"
+      ],
+      [
+        "fancy_picture_frame_02",
+        "TRIANGULATE"
+      ]
+    ],
+    "images": {
+      "fancy_picture_frame_02_canvas_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "fancy_picture_frame_02_canvas_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "fancy_picture_frame_02_canvas_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_canvas_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "fancy_picture_frame_02_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "fancy_picture_frame_02_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "fancy_picture_frame_02_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\fancy_picture_frame_02\\textures\\fancy_picture_frame_02_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "wine_barrel_01",
+    "file": "Models/wine_barrel_01/wine_barrel_01_1k.blend",
+    "objects": [
+      "wine_barrel_01_Lid",
+      "wine_barrel_01_bung",
+      "wine_barrel_01_base",
+      "wine_barrel_01"
+    ],
+    "meshes": [
+      "wine_barrel_01_Lid",
+      "wine_barrel_01_bung",
+      "wine_barrel_01_base",
+      "wine_barrel_01"
+    ],
+    "min": [
+      -0.37094923853874207,
+      -0.38508278131484985,
+      0.0006841719150543213
+    ],
+    "max": [
+      0.3709522783756256,
+      0.37095293402671814,
+      0.8719475269317627
+    ],
+    "dimensions": [
+      0.7419015169143677,
+      0.756035715341568,
+      0.8712633550167084
+    ],
+    "raw_tris": 10820,
+    "modifiers": [
+      [
+        "wine_barrel_01_Lid",
+        "TRIANGULATE"
+      ],
+      [
+        "wine_barrel_01_Lid",
+        "NODES"
+      ],
+      [
+        "wine_barrel_01_Lid",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "wine_barrel_01_base",
+        "TRIANGULATE"
+      ],
+      [
+        "wine_barrel_01_base",
+        "NODES"
+      ],
+      [
+        "wine_barrel_01_base",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "wine_barrel_01",
+        "TRIANGULATE"
+      ],
+      [
+        "wine_barrel_01",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "wine_barrel_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "wine_barrel_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "wine_barrel_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "wine_barrel_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\wine_barrel_01\\textures\\wine_barrel_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "marble_bust_01",
+    "file": "Models/marble_bust_01/marble_bust_01_1k.blend",
+    "objects": [
+      "marble_bust_01"
+    ],
+    "meshes": [
+      "marble_bust_01"
+    ],
+    "min": [
+      -0.12288019061088562,
+      -0.1551172435283661,
+      -0.028259359300136566
+    ],
+    "max": [
+      0.14886942505836487,
+      0.1445964276790619,
+      0.48668384552001953
+    ],
+    "dimensions": [
+      0.2717496156692505,
+      0.299713671207428,
+      0.5149432048201561
+    ],
+    "raw_tris": 17456,
+    "modifiers": [],
+    "images": {
+      "marble_bust_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "marble_bust_01_mask.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_mask_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "marble_bust_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "marble_bust_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\marble_bust_01\\textures\\marble_bust_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "brass_vase_03",
+    "file": "Models/brass_vase_03/brass_vase_03_1k.blend",
+    "objects": [
+      "brass_vase_03"
+    ],
+    "meshes": [
+      "brass_vase_03"
+    ],
+    "min": [
+      -0.04126664251089096,
+      -0.04123661667108536,
+      0.0008439713856205344
+    ],
+    "max": [
+      0.04123524948954582,
+      0.0412653423845768,
+      0.2012130320072174
+    ],
+    "dimensions": [
+      0.08250189200043678,
+      0.08250195905566216,
+      0.20036906062159687
+    ],
+    "raw_tris": 2616,
+    "modifiers": [
+      [
+        "brass_vase_03",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "brass_vase_03",
+        "NODES"
+      ],
+      [
+        "brass_vase_03",
+        "TRIANGULATE"
+      ]
+    ],
+    "images": {
+      "brass_vase_03_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\brass_vase_03\\textures\\brass_vase_03_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "brass_vase_03_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\brass_vase_03\\textures\\brass_vase_03_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "brass_vase_03_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\brass_vase_03\\textures\\brass_vase_03_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "brass_vase_03_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\brass_vase_03\\textures\\brass_vase_03_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "antique_ceramic_vase_01",
+    "file": "Models/antique_ceramic_vase_01/antique_ceramic_vase_01_1k.blend",
+    "objects": [
+      "antique_ceramic_vase_01"
+    ],
+    "meshes": [
+      "antique_ceramic_vase_01"
+    ],
+    "min": [
+      -0.12751498818397522,
+      -0.12751497328281403,
+      -0.00011807833652710542
+    ],
+    "max": [
+      0.12751497328281403,
+      0.12751497328281403,
+      0.4394349753856659
+    ],
+    "dimensions": [
+      0.25502996146678925,
+      0.25502994656562805,
+      0.439553053722193
+    ],
+    "raw_tris": 9408,
+    "modifiers": [],
+    "images": {
+      "antique_ceramic_vase_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "antique_ceramic_vase_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "antique_ceramic_vase_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "antique_ceramic_vase_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\antique_ceramic_vase_01\\textures\\antique_ceramic_vase_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "tea_set_01",
+    "file": "Models/tea_set_01/tea_set_01_1k.blend",
+    "objects": [
+      "tea_set_01_teapot_01_lid",
+      "tea_set_01_teapot_01",
+      "tea_set_01_sugar_cup_01_lid",
+      "tea_set_01_sugar_cup_01",
+      "tea_set_01_saucer_circular_04",
+      "tea_set_01_saucer_circular_03",
+      "tea_set_01_plate_large_square_01",
+      "tea_set_01_plate_large_circular_03",
+      "tea_set_01_cup_small_02",
+      "tea_set_01_cup_small_01"
+    ],
+    "meshes": [
+      "tea_set_01_teapot_01_lid",
+      "tea_set_01_teapot_01",
+      "tea_set_01_sugar_cup_01_lid",
+      "tea_set_01_sugar_cup_01",
+      "tea_set_01_saucer_circular_04",
+      "tea_set_01_saucer_circular_03",
+      "tea_set_01_plate_large_square_01",
+      "tea_set_01_plate_large_circular_03",
+      "tea_set_01_cup_small_02",
+      "tea_set_01_cup_small_01"
+    ],
+    "min": [
+      -0.09400609880685806,
+      -0.13891728222370148,
+      -0.0008325735689140856
+    ],
+    "max": [
+      0.09400609880685806,
+      0.128876730799675,
+      0.16261917352676392
+    ],
+    "dimensions": [
+      0.18801219761371613,
+      0.26779401302337646,
+      0.163451747095678
+    ],
+    "raw_tris": 40296,
+    "modifiers": [],
+    "images": {
+      "tea_set_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "tea_set_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "tea_set_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "tea_set_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\tea_set_01\\textures\\tea_set_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "side_table_tall_01",
+    "file": "Models/side_table_tall_01/side_table_tall_01_1k.blend",
+    "objects": [
+      "side_table_tall_01"
+    ],
+    "meshes": [
+      "side_table_tall_01"
+    ],
+    "min": [
+      -0.19199135899543762,
+      -0.19199137389659882,
+      -2.1163985366001725e-05
+    ],
+    "max": [
+      0.19199135899543762,
+      0.19199134409427643,
+      0.7611303329467773
+    ],
+    "dimensions": [
+      0.38398271799087524,
+      0.38398271799087524,
+      0.7611514969321433
+    ],
+    "raw_tris": 6408,
+    "modifiers": [
+      [
+        "side_table_tall_01",
+        "TRIANGULATE"
+      ],
+      [
+        "side_table_tall_01",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "side_table_tall_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\side_table_tall_01\\textures\\side_table_tall_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "side_table_tall_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\side_table_tall_01\\textures\\side_table_tall_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "side_table_tall_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\side_table_tall_01\\textures\\side_table_tall_01_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "side_table_tall_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\side_table_tall_01\\textures\\side_table_tall_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "ClassicNightstand_01",
+    "file": "Models/ClassicNightstand_01/ClassicNightstand_01_1k.blend",
+    "objects": [
+      "ClassicNightstand_01"
+    ],
+    "meshes": [
+      "ClassicNightstand_01"
+    ],
+    "min": [
+      -0.2838761508464813,
+      -0.2120964378118515,
+      -4.329826097659861e-08
+    ],
+    "max": [
+      0.28387612104415894,
+      0.2120964378118515,
+      0.6999649405479431
+    ],
+    "dimensions": [
+      0.5677522718906403,
+      0.424192875623703,
+      0.6999649838462041
+    ],
+    "raw_tris": 2002,
+    "modifiers": [],
+    "images": {
+      "ClassicNightstand_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicNightstand_01_metallic.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_metallic_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicNightstand_01_roughness.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_roughness_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "ClassicNightstand_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\ClassicNightstand_01\\textures\\ClassicNightstand_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "vintage_oil_lamp",
+    "file": "Models/vintage_oil_lamp/vintage_oil_lamp_1k.blend",
+    "objects": [
+      "vintage_oil_lamp_glass",
+      "vintage_oil_lamp_flame",
+      "vintage_oil_lamp"
+    ],
+    "meshes": [
+      "vintage_oil_lamp_glass",
+      "vintage_oil_lamp_flame",
+      "vintage_oil_lamp"
+    ],
+    "min": [
+      -0.11000002920627594,
+      -0.10999996960163116,
+      -1.822867901069003e-08
+    ],
+    "max": [
+      0.10999996960163116,
+      0.11000002175569534,
+      0.8016371726989746
+    ],
+    "dimensions": [
+      0.2199999988079071,
+      0.2199999913573265,
+      0.8016371909276536
+    ],
+    "raw_tris": 7208,
+    "modifiers": [],
+    "images": {
+      "vintage_oil_lamp_glass_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_metal_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_glass_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_glass_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_glass_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_glass_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_glass_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_flame_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_flame_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_flame_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_flame_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "vintage_oil_lamp_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\vintage_oil_lamp\\textures\\vintage_oil_lamp_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "potted_plant_01",
+    "file": "Models/potted_plant_01/potted_plant_01_1k.blend",
+    "objects": [
+      "potted_plant_01_stem",
+      "potted_plant_01_pot",
+      "potted_plant_01_pebbles",
+      "potted_plant_01_leaves"
+    ],
+    "meshes": [
+      "potted_plant_01_stem",
+      "potted_plant_01_pot",
+      "potted_plant_01_pebbles",
+      "potted_plant_01_leaves"
+    ],
+    "min": [
+      -0.3388006389141083,
+      -0.2709676921367645,
+      0.0
+    ],
+    "max": [
+      0.25011786818504333,
+      0.36564406752586365,
+      1.3370721340179443
+    ],
+    "dimensions": [
+      0.5889185070991516,
+      0.6366117596626282,
+      1.3370721340179443
+    ],
+    "raw_tris": 96030,
+    "modifiers": [
+      [
+        "potted_plant_01_leaves",
+        "SUBSURF"
+      ],
+      [
+        "potted_plant_01_leaves",
+        "DATA_TRANSFER"
+      ],
+      [
+        "potted_plant_01_leaves",
+        "NODES"
+      ]
+    ],
+    "images": {
+      "potted_plant_01_pot_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_pot_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_pot_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_pot_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_leaves_nor_gl.png.001": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_leaves_rough.png.001": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_leaves_diff.png.001": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_01_leaves_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_01\\textures\\potted_plant_01_leaves_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "potted_plant_02",
+    "file": "Models/potted_plant_02/potted_plant_02_1k.blend",
+    "objects": [
+      "potted_plant_02_pot",
+      "potted_plant_02_leaves",
+      "potted_plant_02_dirt"
+    ],
+    "meshes": [
+      "potted_plant_02_pot",
+      "potted_plant_02_leaves",
+      "potted_plant_02_dirt"
+    ],
+    "min": [
+      -0.3937562108039856,
+      -0.33649539947509766,
+      -0.09663186967372894
+    ],
+    "max": [
+      0.3351912200450897,
+      0.4209985136985779,
+      0.535942018032074
+    ],
+    "dimensions": [
+      0.7289474308490753,
+      0.7574939131736755,
+      0.6325738877058029
+    ],
+    "raw_tris": 69806,
+    "modifiers": [],
+    "images": {
+      "potted_plant_02_pot_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_pot_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_pot_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_pot_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_leaves_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_leaves_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_leaves_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_02_leaves_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_02\\textures\\potted_plant_02_leaves_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "potted_plant_04",
+    "file": "Models/potted_plant_04/potted_plant_04_1k.blend",
+    "objects": [
+      "potted_plant_04_pot",
+      "potted_plant_04_plant",
+      "potted_plant_04_ground",
+      "potted_plant_04_dirt"
+    ],
+    "meshes": [
+      "potted_plant_04_pot",
+      "potted_plant_04_plant",
+      "potted_plant_04_ground",
+      "potted_plant_04_dirt"
+    ],
+    "min": [
+      -0.08513703942298889,
+      -0.1008082702755928,
+      0.00023656646953895688
+    ],
+    "max": [
+      0.08513703942298889,
+      0.08513703942298889,
+      0.26783305406570435
+    ],
+    "dimensions": [
+      0.17027407884597778,
+      0.1859453096985817,
+      0.2675964875961654
+    ],
+    "raw_tris": 6097,
+    "modifiers": [
+      [
+        "potted_plant_04_pot",
+        "WEIGHTED_NORMAL"
+      ],
+      [
+        "potted_plant_04_pot",
+        "NODES"
+      ],
+      [
+        "potted_plant_04_pot",
+        "SUBSURF"
+      ],
+      [
+        "potted_plant_04_plant",
+        "NODES"
+      ],
+      [
+        "potted_plant_04_plant",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "potted_plant_04_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_04\\textures\\potted_plant_04_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_04_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_04\\textures\\potted_plant_04_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "potted_plant_04_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\potted_plant_04\\textures\\potted_plant_04_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "painted_wooden_bench",
+    "file": "Models/painted_wooden_bench/painted_wooden_bench_1k.blend",
+    "objects": [
+      "painted_wooden_bench"
+    ],
+    "meshes": [
+      "painted_wooden_bench"
+    ],
+    "min": [
+      -0.5760610699653625,
+      -0.24284429848194122,
+      -0.0004994967021048069
+    ],
+    "max": [
+      0.5888825058937073,
+      0.25369879603385925,
+      0.8887919783592224
+    ],
+    "dimensions": [
+      1.1649435758590698,
+      0.4965430945158005,
+      0.8892914750613272
+    ],
+    "raw_tris": 630,
+    "modifiers": [
+      [
+        "painted_wooden_bench",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "painted_wooden_bench_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "painted_wooden_bench_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "painted_wooden_bench_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_bench\\textures\\painted_wooden_bench_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "horse_statue_01",
+    "file": "Models/horse_statue_01/horse_statue_01_1k.blend",
+    "objects": [
+      "horse_statue_01"
+    ],
+    "meshes": [
+      "horse_statue_01"
+    ],
+    "min": [
+      -0.08515907824039459,
+      -0.053880687803030014,
+      1.830275505199097e-05
+    ],
+    "max": [
+      0.07783335447311401,
+      0.05391017720103264,
+      0.21999721229076385
+    ],
+    "dimensions": [
+      0.1629924327135086,
+      0.10779086500406265,
+      0.21997890953571186
+    ],
+    "raw_tris": 22388,
+    "modifiers": [],
+    "images": {
+      "horse_statue_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\horse_statue_01\\textures\\horse_statue_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "horse_statue_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\horse_statue_01\\textures\\horse_statue_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "horse_statue_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\horse_statue_01\\textures\\horse_statue_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "throw_pillows_01",
+    "file": "Models/throw_pillows_01/throw_pillows_01_1k.blend",
+    "objects": [
+      "throw_pillows_01_pillow02",
+      "throw_pillows_01_pillow01"
+    ],
+    "meshes": [
+      "throw_pillows_01_pillow02",
+      "throw_pillows_01_pillow01"
+    ],
+    "min": [
+      -0.25888463854789734,
+      -0.0021050451323390007,
+      -0.2589276134967804
+    ],
+    "max": [
+      0.3245271146297455,
+      0.4480541944503784,
+      0.16153106093406677
+    ],
+    "dimensions": [
+      0.5834117531776428,
+      0.4501592395827174,
+      0.42045867443084717
+    ],
+    "raw_tris": 6362,
+    "modifiers": [],
+    "images": {
+      "throw_pillows_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\throw_pillows_01\\textures\\throw_pillows_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "throw_pillows_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\throw_pillows_01\\textures\\throw_pillows_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "throw_pillows_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\throw_pillows_01\\textures\\throw_pillows_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "lantern_chandelier_01",
+    "file": "Models/lantern_chandelier_01/lantern_chandelier_01_1k.blend",
+    "objects": [
+      "lantern_chandelier_01"
+    ],
+    "meshes": [
+      "lantern_chandelier_01"
+    ],
+    "min": [
+      -0.4159274101257324,
+      -0.4188120663166046,
+      -1.2611048221588135
+    ],
+    "max": [
+      0.4282068610191345,
+      0.4187144637107849,
+      0.017969727516174316
+    ],
+    "dimensions": [
+      0.8441342711448669,
+      0.8375265300273895,
+      1.2790745496749878
+    ],
+    "raw_tris": 5971,
+    "modifiers": [],
+    "images": {
+      "lantern_chandelier_01_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_metal_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_rough_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_glass_01_alpha.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_alpha_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_glass_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_diff_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_glass_metal.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_metal_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_glass_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_rough_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "lantern_chandelier_01_glass_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\lantern_chandelier_01\\textures\\lantern_chandelier_01_glass_nor_gl_1k.png",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "chinese_sofa",
+    "file": "Models/chinese_sofa/chinese_sofa_1k.blend",
+    "objects": [
+      "chinese_sofa"
+    ],
+    "meshes": [
+      "chinese_sofa"
+    ],
+    "min": [
+      -1.143192172050476,
+      -0.4837439954280853,
+      -2.483498029448583e-08
+    ],
+    "max": [
+      1.1422407627105713,
+      0.4851073920726776,
+      0.8600190877914429
+    ],
+    "dimensions": [
+      2.2854329347610474,
+      0.9688513875007629,
+      0.8600191126264232
+    ],
+    "raw_tris": 704,
+    "modifiers": [
+      [
+        "chinese_sofa",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "chinese_sofa_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\chinese_sofa\\textures\\chinese_sofa_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "chinese_sofa_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\chinese_sofa\\textures\\chinese_sofa_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "chinese_sofa_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\chinese_sofa\\textures\\chinese_sofa_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "slug": "painted_wooden_sofa",
+    "file": "Models/painted_wooden_sofa/painted_wooden_sofa_1k.blend",
+    "objects": [
+      "painted_wooden_sofa"
+    ],
+    "meshes": [
+      "painted_wooden_sofa"
+    ],
+    "min": [
+      -1.2258553504943848,
+      -0.37223193049430847,
+      0.0
+    ],
+    "max": [
+      1.2258553504943848,
+      0.41508427262306213,
+      1.2810335159301758
+    ],
+    "dimensions": [
+      2.4517107009887695,
+      0.7873162031173706,
+      1.2810335159301758
+    ],
+    "raw_tris": 5826,
+    "modifiers": [
+      [
+        "painted_wooden_sofa",
+        "NODES"
+      ],
+      [
+        "painted_wooden_sofa",
+        "WEIGHTED_NORMAL"
+      ]
+    ],
+    "images": {
+      "painted_wooden_sofa_diff.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_diff_1k.jpg",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "painted_wooden_sofa_rough.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_rough_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      },
+      "painted_wooden_sofa_nor_gl.png": {
+        "path": "//Sources\\FullPack\\Mansion_CC0_FullPack\\Models\\painted_wooden_sofa\\textures\\painted_wooden_sofa_nor_gl_1k.exr",
+        "size": [
+          1024,
+          1024
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,338 @@
+{
+  "ClassicConsole_01": {
+    "source": "https://polyhaven.com/a/ClassicConsole_01",
+    "raw_tris": 7566,
+    "game_tris": 5000,
+    "measured_dimensions": [
+      1.5430203676223755,
+      0.5890169143676758,
+      0.9490975141525269
+    ],
+    "source_bottom": [
+      -0.7708194851875305,
+      -0.2506270110607147,
+      -5.188380328036146e-06
+    ],
+    "template_mesh": "Plane.018"
+  },
+  "vintage_oil_lamp": {
+    "source": "https://polyhaven.com/a/vintage_oil_lamp",
+    "raw_tris": 7208,
+    "game_tris": 4500,
+    "measured_dimensions": [
+      0.2199999988079071,
+      0.2199999988079071,
+      0.8016371726989746
+    ],
+    "source_bottom": [
+      -0.11000002920627594,
+      -0.10999996960163116,
+      -1.822867901069003e-08
+    ],
+    "template_mesh": "Glass.003"
+  },
+  "Chandelier_01": {
+    "source": "https://polyhaven.com/a/Chandelier_01",
+    "raw_tris": 26860,
+    "game_tris": 9999,
+    "measured_dimensions": [
+      0.7467519044876099,
+      0.8145424127578735,
+      0.7982823848724365
+    ],
+    "source_bottom": [
+      -0.37283310294151306,
+      -0.41351521015167236,
+      -0.7982705235481262
+    ],
+    "template_mesh": "Line008.002"
+  },
+  "ArmChair_01": {
+    "source": "https://polyhaven.com/a/ArmChair_01",
+    "raw_tris": 5626,
+    "game_tris": 4499,
+    "measured_dimensions": [
+      0.8487433195114136,
+      0.7654848098754883,
+      1.065259337425232
+    ],
+    "source_bottom": [
+      -0.4241107404232025,
+      -0.3481782078742981,
+      -0.0004314967372920364
+    ],
+    "template_mesh": "Cylinder.009"
+  },
+  "GothicCabinet_01": {
+    "source": "https://polyhaven.com/a/GothicCabinet_01",
+    "raw_tris": 12170,
+    "game_tris": 7999,
+    "measured_dimensions": [
+      1.7188382148742676,
+      1.1165443658828735,
+      2.36090087890625
+    ],
+    "source_bottom": [
+      -0.8592662215232849,
+      -0.6592315435409546,
+      -7.450591255064865e-08
+    ],
+    "template_mesh": "Plane.026"
+  },
+  "painted_wooden_sofa": {
+    "source": "https://polyhaven.com/a/painted_wooden_sofa",
+    "raw_tris": 5826,
+    "game_tris": 5826,
+    "measured_dimensions": [
+      2.4517107009887695,
+      0.7873162031173706,
+      1.2810335159301758
+    ],
+    "source_bottom": [
+      -1.2258553504943848,
+      -0.37223193049430847,
+      0.0
+    ],
+    "template_mesh": "sofa.002"
+  },
+  "gothic_coffee_table": {
+    "source": "https://polyhaven.com/a/gothic_coffee_table",
+    "raw_tris": 23836,
+    "game_tris": 6500,
+    "measured_dimensions": [
+      1.4408513307571411,
+      1.4408692121505737,
+      0.5573893785476685
+    ],
+    "source_bottom": [
+      -0.720172643661499,
+      -0.7210113406181335,
+      0.0007535313488915563
+    ],
+    "template_mesh": "Cube.004"
+  },
+  "fancy_picture_frame_02": {
+    "source": "https://polyhaven.com/a/fancy_picture_frame_02",
+    "raw_tris": 35102,
+    "game_tris": 4999,
+    "measured_dimensions": [
+      0.6608412265777588,
+      0.08808688074350357,
+      0.7705825567245483
+    ],
+    "source_bottom": [
+      -0.3320973217487335,
+      -0.09012778848409653,
+      -0.390977680683136
+    ],
+    "template_mesh": "Plane.033"
+  },
+  "dining_table": {
+    "source": "https://polyhaven.com/a/dining_table",
+    "raw_tris": 1048,
+    "game_tris": 1048,
+    "measured_dimensions": [
+      2.2558960914611816,
+      1.3902360200881958,
+      0.8769892454147339
+    ],
+    "source_bottom": [
+      -1.1328890323638916,
+      -0.712041974067688,
+      -0.004275118932127953
+    ],
+    "template_mesh": "table1_cloth.003"
+  },
+  "Chandelier_02": {
+    "source": "https://polyhaven.com/a/Chandelier_02",
+    "raw_tris": 21514,
+    "game_tris": 8000,
+    "measured_dimensions": [
+      0.6786158084869385,
+      0.6184549927711487,
+      0.8480727672576904
+    ],
+    "source_bottom": [
+      -0.3402388095855713,
+      -0.31315386295318604,
+      0.059688448905944824
+    ],
+    "template_mesh": "Cylinder010.003"
+  },
+  "potted_plant_01": {
+    "source": "https://polyhaven.com/a/potted_plant_01",
+    "raw_tris": 96030,
+    "game_tris": 9000,
+    "measured_dimensions": [
+      0.592563271522522,
+      0.6343031525611877,
+      1.3507788181304932
+    ],
+    "source_bottom": [
+      -0.3409316837787628,
+      -0.2686590850353241,
+      -0.013706624507904053
+    ],
+    "template_mesh": "potted_plant_01_base_low.002"
+  },
+  "potted_plant_02": {
+    "source": "https://polyhaven.com/a/potted_plant_02",
+    "raw_tris": 69806,
+    "game_tris": 6999,
+    "measured_dimensions": [
+      0.7011243104934692,
+      0.6590322256088257,
+      0.8422871828079224
+    ],
+    "source_bottom": [
+      -0.39650991559028625,
+      -0.23840464651584625,
+      -0.0006706766434945166
+    ],
+    "template_mesh": "Circle.026"
+  },
+  "wine_barrel_01": {
+    "source": "https://polyhaven.com/a/wine_barrel_01",
+    "raw_tris": 10820,
+    "game_tris": 6500,
+    "measured_dimensions": [
+      0.7419015169143677,
+      0.7559329271316528,
+      0.8705002069473267
+    ],
+    "source_bottom": [
+      -0.37094923853874207,
+      -0.3849799931049347,
+      0.0010650919284671545
+    ],
+    "template_mesh": "DiameterSmall.003"
+  },
+  "GothicBed_01": {
+    "source": "https://polyhaven.com/a/GothicBed_01",
+    "raw_tris": 18741,
+    "game_tris": 11999,
+    "measured_dimensions": [
+      1.4927176237106323,
+      2.0399999618530273,
+      1.5336488485336304
+    ],
+    "source_bottom": [
+      -0.7109782099723816,
+      -0.9868945479393005,
+      -1.181181374931839e-07
+    ],
+    "template_mesh": "Plane.040"
+  },
+  "ClassicNightstand_01": {
+    "source": "https://polyhaven.com/a/ClassicNightstand_01",
+    "raw_tris": 2002,
+    "game_tris": 2002,
+    "measured_dimensions": [
+      0.5677522420883179,
+      0.424192875623703,
+      0.6999650001525879
+    ],
+    "source_bottom": [
+      -0.2838761508464813,
+      -0.2120964378118515,
+      -4.329826097659861e-08
+    ],
+    "template_mesh": "Plane.042"
+  },
+  "GothicCommode_01": {
+    "source": "https://polyhaven.com/a/GothicCommode_01",
+    "raw_tris": 3897,
+    "game_tris": 3499,
+    "measured_dimensions": [
+      1.2014026641845703,
+      0.5806594491004944,
+      1.2120425701141357
+    ],
+    "source_bottom": [
+      -0.6017770767211914,
+      -0.29155924916267395,
+      -5.9249074979561556e-08
+    ],
+    "template_mesh": "Circle.033"
+  },
+  "antique_ceramic_vase_01": {
+    "source": "https://polyhaven.com/a/antique_ceramic_vase_01",
+    "raw_tris": 9408,
+    "game_tris": 3500,
+    "measured_dimensions": [
+      0.25491055846214294,
+      0.25491052865982056,
+      0.43972253799438477
+    ],
+    "source_bottom": [
+      -0.12745529413223267,
+      -0.12745526432991028,
+      -0.0001814465649658814
+    ],
+    "template_mesh": "Cylinder.013"
+  },
+  "lantern_chandelier_01": {
+    "source": "https://polyhaven.com/a/lantern_chandelier_01",
+    "raw_tris": 5971,
+    "game_tris": 4499,
+    "measured_dimensions": [
+      0.579170286655426,
+      0.574636697769165,
+      0.8776311278343201
+    ],
+    "source_bottom": [
+      -0.28537261486053467,
+      -0.2873518764972687,
+      -0.8652586340904236
+    ],
+    "template_mesh": "Plane.044"
+  },
+  "painted_wooden_bench": {
+    "source": "https://polyhaven.com/a/painted_wooden_bench",
+    "raw_tris": 630,
+    "game_tris": 630,
+    "measured_dimensions": [
+      1.1649435758590698,
+      0.49654310941696167,
+      0.8892914652824402
+    ],
+    "source_bottom": [
+      -0.5760610699653625,
+      -0.24284429848194122,
+      -0.0004994967021048069
+    ],
+    "template_mesh": "bench.003"
+  },
+  "tea_set_01": {
+    "source": "https://polyhaven.com/a/tea_set_01",
+    "raw_tris": 40296,
+    "game_tris": 6500,
+    "measured_dimensions": [
+      0.9186052680015564,
+      0.4839852750301361,
+      0.16507288813591003
+    ],
+    "source_bottom": [
+      -0.4407111704349518,
+      -0.20033174753189087,
+      -0.0009212280274368823
+    ],
+    "template_mesh": "Circle.049"
+  },
+  "marble_bust_01": {
+    "source": "https://polyhaven.com/a/marble_bust_01",
+    "raw_tris": 17456,
+    "game_tris": 5000,
+    "measured_dimensions": [
+      0.27168041467666626,
+      0.29977187514305115,
+      0.5147709846496582
+    ],
+    "source_bottom": [
+      -0.12281100451946259,
+      -0.15517544746398926,
+      0.00010905628732871264
+    ],
+    "template_mesh": "marble_bust_01.002"
+  }
+}

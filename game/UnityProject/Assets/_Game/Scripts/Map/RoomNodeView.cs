@@ -20,6 +20,10 @@ namespace DeductionGame
             }
             var ui=FindFirstObjectByType<RuntimeGameUI>();
             Color color=gm.Human.RoomId==roomId?Color.cyan:ui!=null && ui.SelectedRoom==roomId?Color.yellow:gm.MoveReason(roomId)==""?Color.green:new Color(0.4f,0.4f,0.4f,0.3f);
+            if(MapData.Theme==MapTheme.Mansion&&GameObject.Find("MansionVisualGold")!=null){
+                hint.widthMultiplier=.035f;
+                color=gm.Human.RoomId==roomId?new Color(.32f,.65f,.62f,.72f):ui!=null&&ui.SelectedRoom==roomId?new Color(.86f,.66f,.24f,.82f):gm.MoveReason(roomId)==""?new Color(.39f,.56f,.40f,.38f):new Color(.4f,.4f,.4f,.16f);
+            }
             hint.startColor=hint.endColor=color;var floor=GetComponent<Renderer>();hint.enabled=floor==null || floor.enabled;
             UpdateLabel();
         }

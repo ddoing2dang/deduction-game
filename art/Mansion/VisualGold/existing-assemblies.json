@@ -1,0 +1,1963 @@
+{
+  "R01_Hero_Chandelier": {
+    "room": 1,
+    "objects": [
+      "R01_Hero_Chandelier"
+    ],
+    "min": [
+      -1.0,
+      3.3499999046325684,
+      6.409999847412109
+    ],
+    "max": [
+      1.0,
+      4.650000095367432,
+      6.590000152587891
+    ]
+  },
+  "R01_Chandelier_Arm_00": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_00"
+    ],
+    "min": [
+      0.0,
+      3.9749999046325684,
+      6.324999809265137
+    ],
+    "max": [
+      1.100000023841858,
+      4.025000095367432,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_00": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_00"
+    ],
+    "min": [
+      0.9399999976158142,
+      3.940000057220459,
+      6.375
+    ],
+    "max": [
+      1.059999942779541,
+      4.059999942779541,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_01": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_01"
+    ],
+    "min": [
+      -0.01767767034471035,
+      3.9823224544525146,
+      6.324999809265137
+    ],
+    "max": [
+      0.7954951524734497,
+      4.795495510101318,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_01": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_01"
+    ],
+    "min": [
+      0.6471067667007446,
+      4.647106647491455,
+      6.375
+    ],
+    "max": [
+      0.7671067714691162,
+      4.767106533050537,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_02": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_02"
+    ],
+    "min": [
+      -0.02500002458691597,
+      4.0,
+      6.324999809265137
+    ],
+    "max": [
+      0.02500002458691597,
+      5.100000381469727,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_02": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_02"
+    ],
+    "min": [
+      -0.05999999865889549,
+      4.940000057220459,
+      6.375
+    ],
+    "max": [
+      0.05999999865889549,
+      5.059999942779541,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_03": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_03"
+    ],
+    "min": [
+      -0.7954951524734497,
+      3.9823224544525146,
+      6.324999809265137
+    ],
+    "max": [
+      0.01767767034471035,
+      4.795495510101318,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_03": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_03"
+    ],
+    "min": [
+      -0.7671067714691162,
+      4.647106647491455,
+      6.375
+    ],
+    "max": [
+      -0.6471067667007446,
+      4.767106533050537,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_04": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_04"
+    ],
+    "min": [
+      -1.100000023841858,
+      3.9749999046325684,
+      6.324999809265137
+    ],
+    "max": [
+      2.1855695031547384e-09,
+      4.025000095367432,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_04": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_04"
+    ],
+    "min": [
+      -1.059999942779541,
+      3.940000057220459,
+      6.375
+    ],
+    "max": [
+      -0.9399999976158142,
+      4.059999942779541,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_05": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_05"
+    ],
+    "min": [
+      -0.7954952120780945,
+      3.20450496673584,
+      6.324999809265137
+    ],
+    "max": [
+      0.01767769828438759,
+      4.0176777839660645,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_05": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_05"
+    ],
+    "min": [
+      -0.7671067714691162,
+      3.232893228530884,
+      6.375
+    ],
+    "max": [
+      -0.6471067667007446,
+      3.352893114089966,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_06": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_06"
+    ],
+    "min": [
+      -0.025000007823109627,
+      2.9000000953674316,
+      6.324999809265137
+    ],
+    "max": [
+      0.025000007823109627,
+      4.0,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_06": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_06"
+    ],
+    "min": [
+      -0.05999999865889549,
+      2.940000057220459,
+      6.375
+    ],
+    "max": [
+      0.05999999865889549,
+      3.059999942779541,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Arm_07": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Arm_07"
+    ],
+    "min": [
+      -0.017677582800388336,
+      3.20450496673584,
+      6.324999809265137
+    ],
+    "max": [
+      0.7954950928688049,
+      4.0176777839660645,
+      6.375
+    ]
+  },
+  "R01_Chandelier_Candle_07": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Candle_07"
+    ],
+    "min": [
+      0.6471067667007446,
+      3.232893228530884,
+      6.375
+    ],
+    "max": [
+      0.7671067714691162,
+      3.352893114089966,
+      6.725000381469727
+    ]
+  },
+  "R01_Chandelier_Stem": {
+    "room": 1,
+    "objects": [
+      "R01_Chandelier_Stem"
+    ],
+    "min": [
+      -0.029999999329447746,
+      3.9700000286102295,
+      6.299999713897705
+    ],
+    "max": [
+      0.029999999329447746,
+      4.03000020980835,
+      7.900000095367432
+    ]
+  },
+  "R02_Hero_BookcaseBack": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_BookcaseBack"
+    ],
+    "min": [
+      -16.07499885559082,
+      4.199999809265137,
+      0.0
+    ],
+    "max": [
+      -15.72499942779541,
+      7.199999809265137,
+      3.0
+    ]
+  },
+  "R02_Hero_Bookshelf_0": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_Bookshelf_0"
+    ],
+    "min": [
+      -15.949999809265137,
+      4.199999809265137,
+      0.3100000023841858
+    ],
+    "max": [
+      -15.34999942779541,
+      7.199999809265137,
+      0.38999998569488525
+    ]
+  },
+  "R02_Hero_Bookshelf_1": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_Bookshelf_1"
+    ],
+    "min": [
+      -15.949999809265137,
+      4.199999809265137,
+      0.85999995470047
+    ],
+    "max": [
+      -15.34999942779541,
+      7.199999809265137,
+      0.9399999976158142
+    ]
+  },
+  "R02_Hero_Bookshelf_2": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_Bookshelf_2"
+    ],
+    "min": [
+      -15.949999809265137,
+      4.199999809265137,
+      1.4100000858306885
+    ],
+    "max": [
+      -15.34999942779541,
+      7.199999809265137,
+      1.4900000095367432
+    ]
+  },
+  "R02_Hero_Bookshelf_3": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_Bookshelf_3"
+    ],
+    "min": [
+      -15.949999809265137,
+      4.199999809265137,
+      1.9600000381469727
+    ],
+    "max": [
+      -15.34999942779541,
+      7.199999809265137,
+      2.0399999618530273
+    ]
+  },
+  "R02_Hero_Bookshelf_4": {
+    "room": 2,
+    "objects": [
+      "R02_Hero_Bookshelf_4"
+    ],
+    "min": [
+      -15.949999809265137,
+      4.199999809265137,
+      2.509999990463257
+    ],
+    "max": [
+      -15.34999942779541,
+      7.199999809265137,
+      2.5899999141693115
+    ]
+  },
+  "R03_Hero_Fireplace": {
+    "room": 3,
+    "objects": [
+      "R03_Hero_Fireplace"
+    ],
+    "min": [
+      8.199999809265137,
+      7.175000190734863,
+      0.0
+    ],
+    "max": [
+      10.199999809265137,
+      7.824999809265137,
+      1.600000023841858
+    ]
+  },
+  "R03_Hero_Mantel": {
+    "room": 3,
+    "objects": [
+      "R03_Hero_Mantel"
+    ],
+    "min": [
+      8.0,
+      7.074999809265137,
+      1.5699999332427979
+    ],
+    "max": [
+      10.399999618530273,
+      7.925000190734863,
+      1.7300000190734863
+    ]
+  },
+  "R03_Hero_Portrait": {
+    "room": 3,
+    "objects": [
+      "R03_Hero_Portrait"
+    ],
+    "min": [
+      8.550000190734863,
+      7.720000267028809,
+      1.9000000953674316
+    ],
+    "max": [
+      9.84999942779541,
+      7.840000152587891,
+      3.4000000953674316
+    ]
+  },
+  "R04_Hero_BanquetSideboard": {
+    "room": 4,
+    "objects": [
+      "R04_Hero_BanquetSideboard"
+    ],
+    "min": [
+      -9.5,
+      -4.574999809265137,
+      0.0
+    ],
+    "max": [
+      -6.5,
+      -3.8249998092651367,
+      1.2999999523162842
+    ]
+  },
+  "R04_Hero_SideboardMarble": {
+    "room": 4,
+    "objects": [
+      "R04_Hero_SideboardMarble"
+    ],
+    "min": [
+      -9.600000381469727,
+      -4.625,
+      1.28000009059906
+    ],
+    "max": [
+      -6.400000095367432,
+      -3.7749998569488525,
+      1.399999976158142
+    ]
+  },
+  "R05_Hero_Range": {
+    "room": 5,
+    "objects": [
+      "R05_Hero_Range"
+    ],
+    "min": [
+      -0.25,
+      -11.75,
+      0.0
+    ],
+    "max": [
+      2.25,
+      -10.950000762939453,
+      1.100000023841858
+    ]
+  },
+  "R05_Hero_Hood": {
+    "room": 5,
+    "objects": [
+      "R05_Hero_Hood"
+    ],
+    "min": [
+      -0.2999999523162842,
+      -12.074999809265137,
+      2.3499999046325684
+    ],
+    "max": [
+      2.299999952316284,
+      -11.22499942779541,
+      2.8499999046325684
+    ]
+  },
+  "R06_Hero_GlassMullion_-4.7_-3": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_-4.7_-3"
+    ],
+    "min": [
+      -4.739999771118164,
+      9.960000038146973,
+      0.0
+    ],
+    "max": [
+      -4.659999847412109,
+      10.039999961853027,
+      4.0
+    ]
+  },
+  "R06_Hero_GlassMullion_-4.7_0": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_-4.7_0"
+    ],
+    "min": [
+      -4.739999771118164,
+      12.960000038146973,
+      0.0
+    ],
+    "max": [
+      -4.659999847412109,
+      13.039999961853027,
+      4.0
+    ]
+  },
+  "R06_Hero_GlassMullion_-4.7_3": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_-4.7_3"
+    ],
+    "min": [
+      -4.739999771118164,
+      15.960000038146973,
+      0.0
+    ],
+    "max": [
+      -4.659999847412109,
+      16.040000915527344,
+      4.0
+    ]
+  },
+  "R06_Hero_GlassMullion_4.7_-3": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_4.7_-3"
+    ],
+    "min": [
+      4.659999847412109,
+      9.960000038146973,
+      0.0
+    ],
+    "max": [
+      4.739999771118164,
+      10.039999961853027,
+      4.0
+    ]
+  },
+  "R06_Hero_GlassMullion_4.7_0": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_4.7_0"
+    ],
+    "min": [
+      4.659999847412109,
+      12.960000038146973,
+      0.0
+    ],
+    "max": [
+      4.739999771118164,
+      13.039999961853027,
+      4.0
+    ]
+  },
+  "R06_Hero_GlassMullion_4.7_3": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_GlassMullion_4.7_3"
+    ],
+    "min": [
+      4.659999847412109,
+      15.960000038146973,
+      0.0
+    ],
+    "max": [
+      4.739999771118164,
+      16.040000915527344,
+      4.0
+    ]
+  },
+  "R06_Hero_Planter": {
+    "room": 6,
+    "objects": [
+      "R06_Hero_Planter"
+    ],
+    "min": [
+      -4.449999809265137,
+      14.700000762939453,
+      0.0
+    ],
+    "max": [
+      -3.1500000953674316,
+      16.5,
+      0.699999988079071
+    ]
+  },
+  "R06_WindowMullion_-5_10.8": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_-5_10.8"
+    ],
+    "min": [
+      -5.034999847412109,
+      10.765000343322754,
+      0.0
+    ],
+    "max": [
+      -4.965000152587891,
+      10.835000038146973,
+      4.0
+    ]
+  },
+  "R06_WindowMullion_-5_12.6": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_-5_12.6"
+    ],
+    "min": [
+      -5.034999847412109,
+      12.565000534057617,
+      0.0
+    ],
+    "max": [
+      -4.965000152587891,
+      12.635000228881836,
+      4.0
+    ]
+  },
+  "R06_WindowMullion_-5_14.4": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_-5_14.4"
+    ],
+    "min": [
+      -5.034999847412109,
+      14.364999771118164,
+      0.0
+    ],
+    "max": [
+      -4.965000152587891,
+      14.434999465942383,
+      4.0
+    ]
+  },
+  "R06_WindowRail_-5_1.1": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_-5_1.1"
+    ],
+    "min": [
+      -5.034999847412109,
+      9.0,
+      1.065000057220459
+    ],
+    "max": [
+      -4.965000152587891,
+      17.0,
+      1.1349999904632568
+    ]
+  },
+  "R06_WindowRail_-5_2.6": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_-5_2.6"
+    ],
+    "min": [
+      -5.034999847412109,
+      9.0,
+      2.56499981880188
+    ],
+    "max": [
+      -4.965000152587891,
+      17.0,
+      2.634999990463257
+    ]
+  },
+  "R06_WindowRail_-5_3.95": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_-5_3.95"
+    ],
+    "min": [
+      -5.034999847412109,
+      9.0,
+      3.9149999618530273
+    ],
+    "max": [
+      -4.965000152587891,
+      17.0,
+      3.9850001335144043
+    ]
+  },
+  "R06_WindowMullion_5_10.8": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_5_10.8"
+    ],
+    "min": [
+      4.965000152587891,
+      10.765000343322754,
+      0.0
+    ],
+    "max": [
+      5.034999847412109,
+      10.835000038146973,
+      4.0
+    ]
+  },
+  "R06_WindowMullion_5_12.6": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_5_12.6"
+    ],
+    "min": [
+      4.965000152587891,
+      12.565000534057617,
+      0.0
+    ],
+    "max": [
+      5.034999847412109,
+      12.635000228881836,
+      4.0
+    ]
+  },
+  "R06_WindowMullion_5_14.4": {
+    "room": 6,
+    "objects": [
+      "R06_WindowMullion_5_14.4"
+    ],
+    "min": [
+      4.965000152587891,
+      14.364999771118164,
+      0.0
+    ],
+    "max": [
+      5.034999847412109,
+      14.434999465942383,
+      4.0
+    ]
+  },
+  "R06_WindowRail_5_1.1": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_5_1.1"
+    ],
+    "min": [
+      4.965000152587891,
+      9.0,
+      1.065000057220459
+    ],
+    "max": [
+      5.034999847412109,
+      17.0,
+      1.1349999904632568
+    ]
+  },
+  "R06_WindowRail_5_2.6": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_5_2.6"
+    ],
+    "min": [
+      4.965000152587891,
+      9.0,
+      2.56499981880188
+    ],
+    "max": [
+      5.034999847412109,
+      17.0,
+      2.634999990463257
+    ]
+  },
+  "R06_WindowRail_5_3.95": {
+    "room": 6,
+    "objects": [
+      "R06_WindowRail_5_3.95"
+    ],
+    "min": [
+      4.965000152587891,
+      9.0,
+      3.9149999618530273
+    ],
+    "max": [
+      5.034999847412109,
+      17.0,
+      3.9850001335144043
+    ]
+  },
+  "R08_Hero_WineRack_0": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_WineRack_0"
+    ],
+    "min": [
+      -0.49999988079071045,
+      -3.7750000953674316,
+      -3.7100000381469727
+    ],
+    "max": [
+      2.500000238418579,
+      -3.125,
+      -3.5900001525878906
+    ]
+  },
+  "R08_Hero_WineRack_1": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_WineRack_1"
+    ],
+    "min": [
+      -0.49999988079071045,
+      -3.7750000953674316,
+      -3.109999895095825
+    ],
+    "max": [
+      2.500000238418579,
+      -3.125,
+      -2.990000009536743
+    ]
+  },
+  "R08_Hero_WineRack_2": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_WineRack_2"
+    ],
+    "min": [
+      -0.49999988079071045,
+      -3.7750000953674316,
+      -2.509999990463257
+    ],
+    "max": [
+      2.500000238418579,
+      -3.125,
+      -2.390000104904175
+    ]
+  },
+  "R08_Hero_WineRack_3": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_WineRack_3"
+    ],
+    "min": [
+      -0.49999988079071045,
+      -3.7750000953674316,
+      -1.909999966621399
+    ],
+    "max": [
+      2.500000238418579,
+      -3.125,
+      -1.790000081062317
+    ]
+  },
+  "R08_Hero_RackDivider_0": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_0"
+    ],
+    "min": [
+      2.2100000381469727,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      2.2899999618530273,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R08_Hero_RackDivider_1": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_1"
+    ],
+    "min": [
+      1.7100001573562622,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      1.790000081062317,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R08_Hero_RackDivider_2": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_2"
+    ],
+    "min": [
+      1.2100001573562622,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      1.290000081062317,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R08_Hero_RackDivider_3": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_3"
+    ],
+    "min": [
+      0.7100000977516174,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      0.7900001406669617,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R08_Hero_RackDivider_4": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_4"
+    ],
+    "min": [
+      0.21000008285045624,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      0.2900001108646393,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R08_Hero_RackDivider_5": {
+    "room": 8,
+    "objects": [
+      "R08_Hero_RackDivider_5"
+    ],
+    "min": [
+      -0.28999993205070496,
+      -3.7750000953674316,
+      -4.0
+    ],
+    "max": [
+      -0.2099999040365219,
+      -3.125,
+      -1.5999999046325684
+    ]
+  },
+  "R09_Hero_Locker": {
+    "room": 9,
+    "objects": [
+      "R09_Hero_Locker"
+    ],
+    "min": [
+      12.100000381469727,
+      -2.674999952316284,
+      -4.0
+    ],
+    "max": [
+      13.5,
+      -2.0249998569488525,
+      -2.0
+    ]
+  },
+  "R09_Hero_BedFrame": {
+    "room": 9,
+    "objects": [
+      "R09_Hero_BedFrame"
+    ],
+    "min": [
+      12.09999942779541,
+      -7.25,
+      -4.0
+    ],
+    "max": [
+      13.300000190734863,
+      -5.149999618530273,
+      -3.4000000953674316
+    ]
+  },
+  "R09_Hero_Mattress": {
+    "room": 9,
+    "objects": [
+      "R09_Hero_Mattress"
+    ],
+    "min": [
+      12.125,
+      -7.199999809265137,
+      -3.424999952316284
+    ],
+    "max": [
+      13.274999618530273,
+      -5.199999809265137,
+      -3.2749998569488525
+    ]
+  },
+  "R01_P02_HallRug": {
+    "room": 1,
+    "objects": [
+      "R01_P02_HallRug_Border",
+      "R01_P02_HallRug_Field",
+      "R01_P02_HallRug_Motif-1.7",
+      "R01_P02_HallRug_Motif0",
+      "R01_P02_HallRug_Motif1.7"
+    ],
+    "min": [
+      -2.700000047683716,
+      -1.2000000476837158,
+      0.0020000003278255463
+    ],
+    "max": [
+      2.700000047683716,
+      4.199999809265137,
+      0.02800000086426735
+    ]
+  },
+  "R01_P02_Console": {
+    "room": 1,
+    "objects": [
+      "R01_P02_Console_Top",
+      "R01_P02_Console_Leg0",
+      "R01_P02_Console_Leg1",
+      "R01_P02_Console_Leg2",
+      "R01_P02_Console_Leg3"
+    ],
+    "min": [
+      4.0,
+      6.275000095367432,
+      0.0
+    ],
+    "max": [
+      5.5,
+      6.924999713897705,
+      0.8799999952316284
+    ]
+  },
+  "R01_P02_ConsoleLamp": {
+    "room": 1,
+    "objects": [
+      "R01_P02_ConsoleLamp_Foot",
+      "R01_P02_ConsoleLamp_Stem",
+      "R01_P02_ConsoleLamp_Shade"
+    ],
+    "min": [
+      4.539999961853027,
+      6.418134689331055,
+      0.9000000357627869
+    ],
+    "max": [
+      4.960000038146973,
+      6.781865119934082,
+      1.5549999475479126
+    ]
+  },
+  "R01_P02_Moulding": {
+    "room": 1,
+    "objects": [
+      "R01_P02_Moulding_R01_Wall_East_Pier_00",
+      "R01_P02_Moulding_R01_Wall_East_Pier_02",
+      "R01_P02_Moulding_R01_Wall_West_Pier_00",
+      "R01_P02_Moulding_R01_Wall_West_Pier_02",
+      "R01_P02_Moulding_R01_Wall_North_Pier_00",
+      "R01_P02_Moulding_R01_Wall_North_Pier_02",
+      "R01_P02_Moulding_R01_Wall_South_Pier_00",
+      "R01_P02_Moulding_R01_Wall_South_Pier_02"
+    ],
+    "min": [
+      -6.132500171661377,
+      -3.632499933242798,
+      0.04999999701976776
+    ],
+    "max": [
+      6.132500171661377,
+      7.632500171661377,
+      0.26999998092651367
+    ]
+  },
+  "R02_P02_Moulding": {
+    "room": 2,
+    "objects": [
+      "R02_P02_Moulding_R02_Wall_East_Pier_00",
+      "R02_P02_Moulding_R02_Wall_East_Pier_02",
+      "R02_P02_Moulding_R02_Wall_West_Pier_00",
+      "R02_P02_Moulding_R02_Wall_North_Pier_00",
+      "R02_P02_Moulding_R02_Wall_South_Pier_00",
+      "R02_P02_Moulding_R02_Wall_South_Pier_02"
+    ],
+    "min": [
+      -16.63249969482422,
+      -0.13249999284744263,
+      0.04999999701976776
+    ],
+    "max": [
+      -7.367499828338623,
+      8.132499694824219,
+      0.26999998092651367
+    ]
+  },
+  "R03_P02_Moulding": {
+    "room": 3,
+    "objects": [
+      "R03_P02_Moulding_R03_Wall_East_Pier_00",
+      "R03_P02_Moulding_R03_Wall_West_Pier_00",
+      "R03_P02_Moulding_R03_Wall_West_Pier_02",
+      "R03_P02_Moulding_R03_Wall_North_Pier_00",
+      "R03_P02_Moulding_R03_Wall_South_Pier_00",
+      "R03_P02_Moulding_R03_Wall_South_Pier_02"
+    ],
+    "min": [
+      7.367499828338623,
+      -0.13249999284744263,
+      0.04999999701976776
+    ],
+    "max": [
+      16.63249969482422,
+      8.132499694824219,
+      0.26999998092651367
+    ]
+  },
+  "R04_P02_Moulding": {
+    "room": 4,
+    "objects": [
+      "R04_P02_Moulding_R04_Wall_East_Pier_00",
+      "R04_P02_Moulding_R04_Wall_East_Pier_02",
+      "R04_P02_Moulding_R04_Wall_West_Pier_00",
+      "R04_P02_Moulding_R04_Wall_North_Pier_00",
+      "R04_P02_Moulding_R04_Wall_North_Pier_02",
+      "R04_P02_Moulding_R04_Wall_South_Pier_00"
+    ],
+    "min": [
+      -16.13249969482422,
+      -11.132499694824219,
+      0.04999999701976776
+    ],
+    "max": [
+      -5.867499828338623,
+      -2.867500066757202,
+      0.26999998092651367
+    ]
+  },
+  "R05_P02_Moulding": {
+    "room": 5,
+    "objects": [
+      "R05_P02_Moulding_R05_Wall_East_Pier_00",
+      "R05_P02_Moulding_R05_Wall_East_Pier_02",
+      "R05_P02_Moulding_R05_Wall_West_Pier_00",
+      "R05_P02_Moulding_R05_Wall_West_Pier_02",
+      "R05_P02_Moulding_R05_Wall_North_Pier_00",
+      "R05_P02_Moulding_R05_Wall_North_Pier_02",
+      "R05_P02_Moulding_R05_Wall_South_Pier_00"
+    ],
+    "min": [
+      -2.632499933242798,
+      -12.132499694824219,
+      0.04999999701976776
+    ],
+    "max": [
+      6.632500171661377,
+      -3.867500066757202,
+      0.26999998092651367
+    ]
+  },
+  "R06_P02_Moulding": {
+    "room": 6,
+    "objects": [
+      "R06_P02_Moulding_R06_Wall_East_Pier_00",
+      "R06_P02_Moulding_R06_Wall_West_Pier_00",
+      "R06_P02_Moulding_R06_Wall_West_Pier_02",
+      "R06_P02_Moulding_R06_Wall_North_Pier_00",
+      "R06_P02_Moulding_R06_Wall_South_Pier_00",
+      "R06_P02_Moulding_R06_Wall_South_Pier_02"
+    ],
+    "min": [
+      -5.132500171661377,
+      8.867500305175781,
+      0.04999999701976776
+    ],
+    "max": [
+      5.132500171661377,
+      17.13249969482422,
+      0.26999998092651367
+    ]
+  },
+  "R02_P02_Bookcase": {
+    "room": 2,
+    "objects": [
+      "R02_P02_Bookcase_Book0_0",
+      "R02_P02_Bookcase_Book0_1",
+      "R02_P02_Bookcase_Book0_2",
+      "R02_P02_Bookcase_Book0_3",
+      "R02_P02_Bookcase_Book0_4",
+      "R02_P02_Bookcase_Book0_5",
+      "R02_P02_Bookcase_Book0_6",
+      "R02_P02_Bookcase_Book0_7",
+      "R02_P02_Bookcase_Book0_8",
+      "R02_P02_Bookcase_Book0_9",
+      "R02_P02_Bookcase_Book1_0",
+      "R02_P02_Bookcase_Book1_1",
+      "R02_P02_Bookcase_Book1_2",
+      "R02_P02_Bookcase_Book1_3",
+      "R02_P02_Bookcase_Book1_4",
+      "R02_P02_Bookcase_Book1_5",
+      "R02_P02_Bookcase_Book1_6",
+      "R02_P02_Bookcase_Book1_7",
+      "R02_P02_Bookcase_Book1_8",
+      "R02_P02_Bookcase_Book1_9",
+      "R02_P02_Bookcase_Book2_0",
+      "R02_P02_Bookcase_Book2_1",
+      "R02_P02_Bookcase_Book2_2",
+      "R02_P02_Bookcase_Book2_3",
+      "R02_P02_Bookcase_Book2_4",
+      "R02_P02_Bookcase_Book2_5",
+      "R02_P02_Bookcase_Book2_6",
+      "R02_P02_Bookcase_Book2_7",
+      "R02_P02_Bookcase_Book2_8",
+      "R02_P02_Bookcase_Book2_9",
+      "R02_P02_Bookcase_Book3_0",
+      "R02_P02_Bookcase_Book3_1",
+      "R02_P02_Bookcase_Book3_2",
+      "R02_P02_Bookcase_Book3_3",
+      "R02_P02_Bookcase_Book3_4",
+      "R02_P02_Bookcase_Book3_5",
+      "R02_P02_Bookcase_Book3_6",
+      "R02_P02_Bookcase_Book3_7",
+      "R02_P02_Bookcase_Book3_8",
+      "R02_P02_Bookcase_Book3_9",
+      "R02_P02_Bookcase_Book4_0",
+      "R02_P02_Bookcase_Book4_1",
+      "R02_P02_Bookcase_Book4_2",
+      "R02_P02_Bookcase_Book4_3",
+      "R02_P02_Bookcase_Book4_4",
+      "R02_P02_Bookcase_Book4_5",
+      "R02_P02_Bookcase_Book4_6",
+      "R02_P02_Bookcase_Book4_7",
+      "R02_P02_Bookcase_Book4_8",
+      "R02_P02_Bookcase_Book4_9"
+    ],
+    "min": [
+      -15.720000267028809,
+      4.320000171661377,
+      0.4049999713897705
+    ],
+    "max": [
+      -15.359999656677246,
+      6.909999847412109,
+      2.9549999237060547
+    ]
+  },
+  "R02_P02_Desk": {
+    "room": 2,
+    "objects": [
+      "R02_P02_Desk_Top",
+      "R02_P02_Desk_Leg0",
+      "R02_P02_Desk_Leg1",
+      "R02_P02_Desk_Leg2",
+      "R02_P02_Desk_Leg3",
+      "R02_P02_Desk_OpenBook",
+      "R02_P02_Desk_Drawer"
+    ],
+    "min": [
+      -12.75,
+      6.574999809265137,
+      0.0
+    ],
+    "max": [
+      -10.649999618530273,
+      7.425000190734863,
+      0.9404999613761902
+    ]
+  },
+  "R02_P02_DeskChair": {
+    "room": 2,
+    "objects": [
+      "R02_P02_DeskChair_Seat",
+      "R02_P02_DeskChair_Leg0",
+      "R02_P02_DeskChair_Leg1",
+      "R02_P02_DeskChair_Leg2",
+      "R02_P02_DeskChair_Leg3",
+      "R02_P02_DeskChair_Back"
+    ],
+    "min": [
+      -11.949999809265137,
+      5.900000095367432,
+      0.0
+    ],
+    "max": [
+      -11.449999809265137,
+      6.400000095367432,
+      1.1549999713897705
+    ]
+  },
+  "R02_P02_ReadingLamp": {
+    "room": 2,
+    "objects": [
+      "R02_P02_ReadingLamp_Foot",
+      "R02_P02_ReadingLamp_Stem",
+      "R02_P02_ReadingLamp_Shade"
+    ],
+    "min": [
+      -12.5600004196167,
+      6.818134784698486,
+      0.9100000262260437
+    ],
+    "max": [
+      -12.140000343322754,
+      7.181865215301514,
+      1.5649999380111694
+    ]
+  },
+  "R03_P02_SeatingRug": {
+    "room": 3,
+    "objects": [
+      "R03_P02_SeatingRug_Border",
+      "R03_P02_SeatingRug_Field"
+    ],
+    "min": [
+      13.550000190734863,
+      3.0,
+      0.0020000003278255463
+    ],
+    "max": [
+      16.149999618530273,
+      6.800000190734863,
+      0.020500000566244125
+    ]
+  },
+  "R03_P02_Sofa": {
+    "room": 3,
+    "objects": [
+      "R03_P02_Sofa_Plinth",
+      "R03_P02_Sofa_Back",
+      "R03_P02_Sofa_Cushion0",
+      "R03_P02_Sofa_Cushion1",
+      "R03_P02_Sofa_Cushion2",
+      "R03_P02_Sofa_Arm0",
+      "R03_P02_Sofa_Arm1"
+    ],
+    "min": [
+      14.84999942779541,
+      3.430000066757202,
+      0.0
+    ],
+    "max": [
+      16.0049991607666,
+      6.570000171661377,
+      1.3550000190734863
+    ]
+  },
+  "R03_P02_CoffeeTable": {
+    "room": 3,
+    "objects": [
+      "R03_P02_CoffeeTable_Top",
+      "R03_P02_CoffeeTable_Leg0",
+      "R03_P02_CoffeeTable_Leg1",
+      "R03_P02_CoffeeTable_Leg2",
+      "R03_P02_CoffeeTable_Leg3",
+      "R03_P02_CoffeeTable_Tray"
+    ],
+    "min": [
+      14.149999618530273,
+      4.375,
+      0.0
+    ],
+    "max": [
+      14.75,
+      5.625,
+      0.5774999856948853
+    ]
+  },
+  "R03_P02_Portrait": {
+    "room": 3,
+    "objects": [
+      "R03_P02_Portrait_Inner",
+      "R03_P02_Portrait_Frame0",
+      "R03_P02_Portrait_Frame1",
+      "R03_P02_Portrait_Frame2",
+      "R03_P02_Portrait_Frame3"
+    ],
+    "min": [
+      8.520000457763672,
+      7.614999771118164,
+      1.8799999952316284
+    ],
+    "max": [
+      9.880000114440918,
+      7.717499732971191,
+      3.4200000762939453
+    ]
+  },
+  "R04_P02_DiningTable": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningTable_Top",
+      "R04_P02_DiningTable_Leg0",
+      "R04_P02_DiningTable_Leg1",
+      "R04_P02_DiningTable_Leg2",
+      "R04_P02_DiningTable_Leg3",
+      "R04_P02_DiningTable_Runner",
+      "R04_P02_DiningTable_Plate0_-1",
+      "R04_P02_DiningTable_Plate0_1",
+      "R04_P02_DiningTable_Plate1_-1",
+      "R04_P02_DiningTable_Plate1_1",
+      "R04_P02_DiningTable_Plate2_-1",
+      "R04_P02_DiningTable_Plate2_1",
+      "R04_P02_DiningTable_CandleBase0",
+      "R04_P02_DiningTable_Candle0",
+      "R04_P02_DiningTable_CandleBase1",
+      "R04_P02_DiningTable_Candle1"
+    ],
+    "min": [
+      -12.399999618530273,
+      -10.510000228881836,
+      0.0
+    ],
+    "max": [
+      -8.600000381469727,
+      -9.690000534057617,
+      1.2899999618530273
+    ]
+  },
+  "R04_P02_DiningChair0_-1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair0_-1_Seat",
+      "R04_P02_DiningChair0_-1_Leg0",
+      "R04_P02_DiningChair0_-1_Leg1",
+      "R04_P02_DiningChair0_-1_Leg2",
+      "R04_P02_DiningChair0_-1_Leg3",
+      "R04_P02_DiningChair0_-1_Back"
+    ],
+    "min": [
+      -12.050000190734863,
+      -11.069999694824219,
+      0.0
+    ],
+    "max": [
+      -11.550000190734863,
+      -10.569999694824219,
+      1.1549999713897705
+    ]
+  },
+  "R04_P02_DiningChair0_1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair0_1_Seat",
+      "R04_P02_DiningChair0_1_Leg0",
+      "R04_P02_DiningChair0_1_Leg1",
+      "R04_P02_DiningChair0_1_Leg2",
+      "R04_P02_DiningChair0_1_Leg3",
+      "R04_P02_DiningChair0_1_Back"
+    ],
+    "min": [
+      -12.050000190734863,
+      -9.630000114440918,
+      0.0
+    ],
+    "max": [
+      -11.550000190734863,
+      -9.130000114440918,
+      1.1549999713897705
+    ]
+  },
+  "R04_P02_DiningChair1_-1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair1_-1_Seat",
+      "R04_P02_DiningChair1_-1_Leg0",
+      "R04_P02_DiningChair1_-1_Leg1",
+      "R04_P02_DiningChair1_-1_Leg2",
+      "R04_P02_DiningChair1_-1_Leg3",
+      "R04_P02_DiningChair1_-1_Back"
+    ],
+    "min": [
+      -10.75,
+      -11.069999694824219,
+      0.0
+    ],
+    "max": [
+      -10.25,
+      -10.569999694824219,
+      1.1549999713897705
+    ]
+  },
+  "R04_P02_DiningChair1_1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair1_1_Seat",
+      "R04_P02_DiningChair1_1_Leg0",
+      "R04_P02_DiningChair1_1_Leg1",
+      "R04_P02_DiningChair1_1_Leg2",
+      "R04_P02_DiningChair1_1_Leg3",
+      "R04_P02_DiningChair1_1_Back"
+    ],
+    "min": [
+      -10.75,
+      -9.630000114440918,
+      0.0
+    ],
+    "max": [
+      -10.25,
+      -9.130000114440918,
+      1.1549999713897705
+    ]
+  },
+  "R04_P02_DiningChair2_-1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair2_-1_Seat",
+      "R04_P02_DiningChair2_-1_Leg0",
+      "R04_P02_DiningChair2_-1_Leg1",
+      "R04_P02_DiningChair2_-1_Leg2",
+      "R04_P02_DiningChair2_-1_Leg3",
+      "R04_P02_DiningChair2_-1_Back"
+    ],
+    "min": [
+      -9.449999809265137,
+      -11.069999694824219,
+      0.0
+    ],
+    "max": [
+      -8.949999809265137,
+      -10.569999694824219,
+      1.1549999713897705
+    ]
+  },
+  "R04_P02_DiningChair2_1": {
+    "room": 4,
+    "objects": [
+      "R04_P02_DiningChair2_1_Seat",
+      "R04_P02_DiningChair2_1_Leg0",
+      "R04_P02_DiningChair2_1_Leg1",
+      "R04_P02_DiningChair2_1_Leg2",
+      "R04_P02_DiningChair2_1_Leg3",
+      "R04_P02_DiningChair2_1_Back"
+    ],
+    "min": [
+      -9.449999809265137,
+      -9.630000114440918,
+      0.0
+    ],
+    "max": [
+      -8.949999809265137,
+      -9.130000114440918,
+      1.1549999713897705
+    ]
+  },
+  "R05_P02_Sink": {
+    "room": 5,
+    "objects": [
+      "R05_P02_Sink_Cabinet",
+      "R05_P02_Sink_Counter",
+      "R05_P02_Sink_Basin",
+      "R05_P02_Sink_Tap",
+      "R05_P02_Sink_Door0",
+      "R05_P02_Sink_Door1",
+      "R05_P02_Sink_Door2"
+    ],
+    "min": [
+      -2.3399999141693115,
+      -10.610000610351562,
+      0.0
+    ],
+    "max": [
+      -1.2599999904632568,
+      -8.489999771118164,
+      1.4149999618530273
+    ]
+  },
+  "R05_P02_Cooker": {
+    "room": 5,
+    "objects": [
+      "R05_P02_Cooker_Burner0_0",
+      "R05_P02_Cooker_Burner0_1",
+      "R05_P02_Cooker_Burner1_0",
+      "R05_P02_Cooker_Burner1_1"
+    ],
+    "min": [
+      0.22500000894069672,
+      -11.725000381469727,
+      1.1024999618530273
+    ],
+    "max": [
+      1.774999976158142,
+      -10.97499942779541,
+      1.1375000476837158
+    ]
+  },
+  "R05_P02_Shelves": {
+    "room": 5,
+    "objects": [
+      "R05_P02_Shelves_Shelf0",
+      "R05_P02_Shelves_Shelf1",
+      "R05_P02_Shelves_Jar0",
+      "R05_P02_Shelves_Jar1",
+      "R05_P02_Shelves_Jar2"
+    ],
+    "min": [
+      -2.375,
+      -10.399999618530273,
+      1.850000023841858
+    ],
+    "max": [
+      -1.9250000715255737,
+      -8.600000381469727,
+      2.549999952316284
+    ]
+  },
+  "R06_P02_Plant0": {
+    "room": 6,
+    "objects": [
+      "R06_P02_Plant0_Leaf0",
+      "R06_P02_Plant0_Leaf1",
+      "R06_P02_Plant0_Leaf2",
+      "R06_P02_Plant0_Leaf3",
+      "R06_P02_Plant0_Leaf4",
+      "R06_P02_Plant0_Leaf5",
+      "R06_P02_Plant0_Leaf6"
+    ],
+    "min": [
+      -4.318675518035889,
+      15.028912544250488,
+      0.49319353699684143
+    ],
+    "max": [
+      -3.265202760696411,
+      16.167583465576172,
+      1.601537823677063
+    ]
+  },
+  "R06_P02_Plant1": {
+    "room": 6,
+    "objects": [
+      "R06_P02_Plant1_Pot",
+      "R06_P02_Plant1_Leaf0",
+      "R06_P02_Plant1_Leaf1",
+      "R06_P02_Plant1_Leaf2",
+      "R06_P02_Plant1_Leaf3",
+      "R06_P02_Plant1_Leaf4",
+      "R06_P02_Plant1_Leaf5",
+      "R06_P02_Plant1_Leaf6"
+    ],
+    "min": [
+      3.2813243865966797,
+      15.028912544250488,
+      0.0
+    ],
+    "max": [
+      4.334797382354736,
+      16.167583465576172,
+      1.601537823677063
+    ]
+  },
+  "R06_P02_Plant2": {
+    "room": 6,
+    "objects": [
+      "R06_P02_Plant2_Pot",
+      "R06_P02_Plant2_Leaf0",
+      "R06_P02_Plant2_Leaf1",
+      "R06_P02_Plant2_Leaf2",
+      "R06_P02_Plant2_Leaf3",
+      "R06_P02_Plant2_Leaf4",
+      "R06_P02_Plant2_Leaf5",
+      "R06_P02_Plant2_Leaf6"
+    ],
+    "min": [
+      3.331324338912964,
+      10.028912544250488,
+      0.0
+    ],
+    "max": [
+      4.384797096252441,
+      11.167583465576172,
+      1.601537823677063
+    ]
+  },
+  "R06_P02_PottingShelf": {
+    "room": 6,
+    "objects": [
+      "R06_P02_PottingShelf_Top",
+      "R06_P02_PottingShelf_Leg0",
+      "R06_P02_PottingShelf_Leg1",
+      "R06_P02_PottingShelf_Leg2",
+      "R06_P02_PottingShelf_Leg3",
+      "R06_P02_PottingShelf_Pot0",
+      "R06_P02_PottingShelf_Pot1",
+      "R06_P02_PottingShelf_Pot2"
+    ],
+    "min": [
+      3.575000047683716,
+      12.34999942779541,
+      0.0
+    ],
+    "max": [
+      4.224999904632568,
+      14.050000190734863,
+      1.0499999523162842
+    ]
+  },
+  "R07_P02_Boiler": {
+    "room": 7,
+    "objects": [
+      "R07_P02_Boiler_Vessel",
+      "R07_P02_Boiler_Band0",
+      "R07_P02_Boiler_Band1",
+      "R07_P02_Boiler_Flue",
+      "R07_P02_Boiler_GaugePlate"
+    ],
+    "min": [
+      -13.53499984741211,
+      -4.489999771118164,
+      -4.0
+    ],
+    "max": [
+      -12.065000534057617,
+      -3.0149998664855957,
+      -0.9000000357627869
+    ]
+  },
+  "R07_P02_PipeBank": {
+    "room": 7,
+    "objects": [
+      "R07_P02_PipeBank_Pipe0",
+      "R07_P02_PipeBank_Branch0",
+      "R07_P02_PipeBank_Valve0",
+      "R07_P02_PipeBank_Pipe1",
+      "R07_P02_PipeBank_Branch1",
+      "R07_P02_PipeBank_Valve1",
+      "R07_P02_PipeBank_Pipe2",
+      "R07_P02_PipeBank_Branch2",
+      "R07_P02_PipeBank_Valve2"
+    ],
+    "min": [
+      -13.74000072479248,
+      -3.9750001430511475,
+      -3.950000047683716
+    ],
+    "max": [
+      -12.859999656677246,
+      -3.0299999713897705,
+      -0.9500000476837158
+    ]
+  },
+  "R08_P02_RackBacking": {
+    "room": 8,
+    "objects": [
+      "R08_P02_RackBacking_Panel"
+    ],
+    "min": [
+      -0.5499999523162842,
+      -3.2300000190734863,
+      -4.024999618530273
+    ],
+    "max": [
+      2.549999952316284,
+      -3.130000114440918,
+      -1.6749999523162842
+    ]
+  },
+  "R08_P02_WineBottles": {
+    "room": 8,
+    "objects": [
+      "R08_P02_WineBottles_Body0_0",
+      "R08_P02_WineBottles_Neck0_0",
+      "R08_P02_WineBottles_Label0_0",
+      "R08_P02_WineBottles_Body0_1",
+      "R08_P02_WineBottles_Neck0_1",
+      "R08_P02_WineBottles_Label0_1",
+      "R08_P02_WineBottles_Body0_2",
+      "R08_P02_WineBottles_Neck0_2",
+      "R08_P02_WineBottles_Label0_2",
+      "R08_P02_WineBottles_Body0_3",
+      "R08_P02_WineBottles_Neck0_3",
+      "R08_P02_WineBottles_Label0_3",
+      "R08_P02_WineBottles_Body0_4",
+      "R08_P02_WineBottles_Neck0_4",
+      "R08_P02_WineBottles_Label0_4",
+      "R08_P02_WineBottles_Body0_5",
+      "R08_P02_WineBottles_Neck0_5",
+      "R08_P02_WineBottles_Label0_5",
+      "R08_P02_WineBottles_Body1_0",
+      "R08_P02_WineBottles_Neck1_0",
+      "R08_P02_WineBottles_Label1_0",
+      "R08_P02_WineBottles_Body1_1",
+      "R08_P02_WineBottles_Neck1_1",
+      "R08_P02_WineBottles_Label1_1",
+      "R08_P02_WineBottles_Body1_2",
+      "R08_P02_WineBottles_Neck1_2",
+      "R08_P02_WineBottles_Label1_2",
+      "R08_P02_WineBottles_Body1_3",
+      "R08_P02_WineBottles_Neck1_3",
+      "R08_P02_WineBottles_Label1_3",
+      "R08_P02_WineBottles_Body1_4",
+      "R08_P02_WineBottles_Neck1_4",
+      "R08_P02_WineBottles_Label1_4",
+      "R08_P02_WineBottles_Body1_5",
+      "R08_P02_WineBottles_Neck1_5",
+      "R08_P02_WineBottles_Label1_5",
+      "R08_P02_WineBottles_Body2_0",
+      "R08_P02_WineBottles_Neck2_0",
+      "R08_P02_WineBottles_Label2_0",
+      "R08_P02_WineBottles_Body2_1",
+      "R08_P02_WineBottles_Neck2_1",
+      "R08_P02_WineBottles_Label2_1",
+      "R08_P02_WineBottles_Body2_2",
+      "R08_P02_WineBottles_Neck2_2",
+      "R08_P02_WineBottles_Label2_2",
+      "R08_P02_WineBottles_Body2_3",
+      "R08_P02_WineBottles_Neck2_3",
+      "R08_P02_WineBottles_Label2_3",
+      "R08_P02_WineBottles_Body2_4",
+      "R08_P02_WineBottles_Neck2_4",
+      "R08_P02_WineBottles_Label2_4",
+      "R08_P02_WineBottles_Body2_5",
+      "R08_P02_WineBottles_Neck2_5",
+      "R08_P02_WineBottles_Label2_5"
+    ],
+    "min": [
+      -0.27900001406669617,
+      -3.799999952316284,
+      -3.5490000247955322
+    ],
+    "max": [
+      2.2690000534057617,
+      -3.2899999618530273,
+      -2.1510000228881836
+    ]
+  },
+  "R08_P02_Barrel0": {
+    "room": 8,
+    "objects": [
+      "R08_P02_Barrel0_Body",
+      "R08_P02_Barrel0_Hoop0",
+      "R08_P02_Barrel0_Hoop1"
+    ],
+    "min": [
+      -2.9549999237060547,
+      -9.604999542236328,
+      -4.0
+    ],
+    "max": [
+      -2.1449999809265137,
+      -8.795000076293945,
+      -2.8000001907348633
+    ]
+  },
+  "R08_P02_Barrel1": {
+    "room": 8,
+    "objects": [
+      "R08_P02_Barrel1_Body",
+      "R08_P02_Barrel1_Hoop0",
+      "R08_P02_Barrel1_Hoop1"
+    ],
+    "min": [
+      -1.9549999237060547,
+      -10.304999351501465,
+      -4.0
+    ],
+    "max": [
+      -1.1449999809265137,
+      -9.494999885559082,
+      -2.8000001907348633
+    ]
+  },
+  "R08_P02_Crate": {
+    "room": 8,
+    "objects": [
+      "R08_P02_Crate_Body",
+      "R08_P02_Crate_Band0",
+      "R08_P02_Crate_Band1"
+    ],
+    "min": [
+      -3.1399998664855957,
+      -10.712499618530273,
+      -4.0
+    ],
+    "max": [
+      -2.4600000381469727,
+      -10.010000228881836,
+      -3.3400001525878906
+    ]
+  },
+  "R09_P02_Bed": {
+    "room": 9,
+    "objects": [
+      "R09_P02_Bed_Blanket",
+      "R09_P02_Bed_Pillow"
+    ],
+    "min": [
+      12.119999885559082,
+      -7.159999847412109,
+      -3.2899999618530273
+    ],
+    "max": [
+      13.279999732971191,
+      -5.330000400543213,
+      -3.130000114440918
+    ]
+  },
+  "R09_P02_Bedside": {
+    "room": 9,
+    "objects": [
+      "R09_P02_Bedside_Cabinet"
+    ],
+    "min": [
+      11.34999942779541,
+      -7.950000286102295,
+      -4.0
+    ],
+    "max": [
+      11.949999809265137,
+      -7.349999904632568,
+      -3.3600001335144043
+    ]
+  },
+  "R09_P02_BedsideLamp": {
+    "room": 9,
+    "objects": [
+      "R09_P02_BedsideLamp_Foot",
+      "R09_P02_BedsideLamp_Stem",
+      "R09_P02_BedsideLamp_Shade"
+    ],
+    "min": [
+      11.4399995803833,
+      -7.831865310668945,
+      -3.330000162124634
+    ],
+    "max": [
+      11.859999656677246,
+      -7.468134880065918,
+      -2.674999952316284
+    ]
+  },
+  "R09_P02_Locker": {
+    "room": 9,
+    "objects": [
+      "R09_P02_Locker_Handle0",
+      "R09_P02_Locker_Handle1"
+    ],
+    "min": [
+      12.675000190734863,
+      -2.7300000190734863,
+      -3.2250001430511475
+    ],
+    "max": [
+      12.925000190734863,
+      -2.6700000762939453,
+      -2.674999952316284
+    ]
+  }
+}
