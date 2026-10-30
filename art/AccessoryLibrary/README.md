@@ -12,30 +12,30 @@
 
 ## 분류 / 적용 예시
 
-- **벨트/가터/끈:** \`ACC_Buckle_Gold\`, \`ACC_Buckle_Silver\`, \`ACC_Buckle_Black\`, \`ACC_Buckle_Oval\`, \`ACC_Double_Clasp\`
-- **리본:** \`ACC_Bow_Burgundy\`, \`ACC_Bow_Black\`, \`ACC_Bow_Ivory\`, \`ACC_Bow_Purple\`, \`ACC_Ribbon_DoubleTail\`
-- **하트·참:** \`ACC_Heart_Pendant\`, \`ACC_Heart_RedGem\`, \`ACC_Cross_Charm\`, \`ACC_Crescent_Moon\`, \`ACC_Key_Charm\`, \`ACC_Lock_Charm\`
-- **브로치:** \`ACC_Star_Brooch\`, \`ACC_Butterfly_Pin\`, \`ACC_Flower_White\`, \`ACC_Rose_Brooch\`, \`ACC_Gem_Brooch_Violet\`, \`ACC_Gem_Brooch_Emerald\`, \`ACC_Crest_Badge\`, \`ACC_Flame_Brooch\`
-- **장식 체인:** \`ACC_Chain_Short\`, \`ACC_Chain_Drape\`, \`ACC_Pearl_Strand\`, \`ACC_Heart_Chain\`
-- **기타:** \`ACC_Button_Gold\`, \`ACC_Button_Black\`, \`ACC_Zipper_Pull\`, \`ACC_Eyelet_Pair\`, \`ACC_Stud_Triple\`, \`ACC_Lace_Ruffle\`
+- **벨트/가터/끈:** `ACC_Buckle_Gold`, `ACC_Buckle_Silver`, `ACC_Buckle_Black`, `ACC_Buckle_Oval`, `ACC_Double_Clasp`
+- **리본:** `ACC_Bow_Burgundy`, `ACC_Bow_Black`, `ACC_Bow_Ivory`, `ACC_Bow_Purple`, `ACC_Ribbon_DoubleTail`
+- **하트·참:** `ACC_Heart_Pendant`, `ACC_Heart_RedGem`, `ACC_Cross_Charm`, `ACC_Crescent_Moon`, `ACC_Key_Charm`, `ACC_Lock_Charm`
+- **브로치:** `ACC_Star_Brooch`, `ACC_Butterfly_Pin`, `ACC_Flower_White`, `ACC_Rose_Brooch`, `ACC_Gem_Brooch_Violet`, `ACC_Gem_Brooch_Emerald`, `ACC_Crest_Badge`, `ACC_Flame_Brooch`
+- **장식 체인:** `ACC_Chain_Short`, `ACC_Chain_Drape`, `ACC_Pearl_Strand`, `ACC_Heart_Chain`
+- **기타:** `ACC_Button_Gold`, `ACC_Button_Black`, `ACC_Zipper_Pull`, `ACC_Eyelet_Pair`, `ACC_Stud_Triple`, `ACC_Lace_Ruffle`
 
-전체 파일·삼각형 수·용도는 자동 생성된 \`index.json\`을 참조하세요.
+전체 파일·삼각형 수·용도는 자동 생성된 `index.json`을 참조하세요.
 
 ## Blender 5.0.1 가져오기
 
-**GUI:** File → Import → glTF 2.0 (.glb/.gltf) → \`glb/ACC_*.glb\` 선택.
+**GUI:** File → Import → glTF 2.0 (.glb/.gltf) → `glb/ACC_*.glb` 선택.
 
 **Codex/Blender Python:**
-\`\`\`python
+```python
 import sys
 sys.path.insert(0, "C:/UnityProjects/DeductionGame/deduction-game/art/AccessoryLibrary")
 from import_accessory_blender import import_accessory
 objects = import_accessory("ACC_Heart_Pendant")
 # 필요한 위치·크기·회전은 현재 캐릭터 의상 기준으로 별도 피팅.
 # 몸·리그 웨이트를 자동 변경하지 않습니다.
-\`\`\`
+```
 
-Blender 임포트 API 사용: \`bpy.ops.import_scene.gltf(filepath=...)\`.
+Blender 임포트 API 사용: `bpy.ops.import_scene.gltf(filepath=...)`.
 
 ## 사용 예시
 
@@ -51,12 +51,12 @@ Blender 임포트 API 사용: \`bpy.ops.import_scene.gltf(filepath=...)\`.
 
 ## 재생성
 
-Python 3.11+ 와 \`trimesh\`, \`numpy\` 필요.
-\`\`\`sh
+Python 3.11+ 와 `trimesh`, `numpy` 필요.
+```sh
 python -m pip install trimesh numpy
 python art/AccessoryLibrary/build_accessories.py
-\`\`\`
-이 명령으로 \`glb/*.glb\` 파일과 \`index.json\`을 다시 만들 수 있습니다. GitHub Actions에서 자동 생성·보관합니다.
+```
+이 명령으로 `glb/*.glb` 파일과 `index.json`을 다시 만들 수 있습니다. GitHub Actions에서 자동 생성·보관합니다.
 
 ## 추가 외부 에셋 소스 (다운로드·복제는 별도 라이선스 확인)
 
