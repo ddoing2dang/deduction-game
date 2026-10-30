@@ -1,0 +1,33 @@
+name: Import verified CC0 VRoid hair sample
+
+on:
+  push:
+    branches:
+      - codex/cc0-commercial-hair-assets
+    paths:
+      - '.github/workflows/import-cc0-hair.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-hair:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout asset branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download exact CC0 VRoid hair sample and verify Git SHA
+        run: python3 art/ThirdPartyHair/fetch_cc0_hair.py
+      - name: Commit verified VRM asset to this branch only
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- art/ThirdPartyHair/HairSample_Female.vrm
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add verified CC0 VRoid HairSample_Female source VRM'
+            git push origin HEAD:codex/cc0-commercial-hair-assets
+          fi
