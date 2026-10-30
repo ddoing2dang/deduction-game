@@ -1,0 +1,52 @@
+name: Build and store clothing accessory GLBs
+
+on:
+  push:
+    branches:
+      - codex/free-clothing-accessories
+    paths:
+      - '.github/workflows/build-free-accessories.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install geometry exporter dependencies
+        run: python3 -m pip install --disable-pip-version-check --quiet "numpy>=1.26" "trimesh>=4.5"
+      - name: Generate original GLB assets and index
+        run: python3 art/AccessoryLibrary/build_accessories.py
+      - name: Validate 30+ separate GLBs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          import trimesh
+          folder = Path('art/AccessoryLibrary')
+          index = json.loads((folder/'index.json').read_text(encoding='utf-8'))
+          assert index['count'] >= 30, index['count']
+          assert index['count'] == len(index['assets'])
+          for item in index['assets']:
+              file = folder/item['file']
+              assert file.is_file() and file.stat().st_size > 300
+              model = trimesh.load(file, force='scene')
+              assert any(len(m.faces) > 0 for m in model.geometry.values())
+          print('PASS', index['count'], 'validated GLBs')
+          PY
+      - name: Commit asset binaries to accessory branch only
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add art/AccessoryLibrary/glb art/AccessoryLibrary/index.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save original free commercial-use clothing accessories as GLB'
+            git push origin HEAD:codex/free-clothing-accessories
+          fi
