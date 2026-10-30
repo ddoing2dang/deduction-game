@@ -1,0 +1,58 @@
+{
+  "character": "JIRO",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\JIRO.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_JIRO_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 69340,
+      "edges": 208169,
+      "polygons": 138779,
+      "triangles_expected_at_most": 277558,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.3082452118396759,
+          -0.3429262042045593,
+          -0.8955878019332886
+        ],
+        "max": [
+          0.28504642844200134,
+          0.3479553461074829,
+          0.9023491740226746
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 138779
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#F5D2C4",
+    "eye": "#E7CB3D",
+    "hair": "#91D35D",
+    "hair_secondary": "#4E975B",
+    "outfit_primary": "#16251D",
+    "outfit_secondary": "#EFF0E9",
+    "ribbon": "#3C8E54",
+    "metal": "#B0B2AC",
+    "shoes": "#242327"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}

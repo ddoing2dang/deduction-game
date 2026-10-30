@@ -1,0 +1,74 @@
+{
+  "BOKI": {
+    "size_bytes": 8918028,
+    "sha256": "bacb8fbe6ae08406c100072d874cb89cdff0cc13254a4429910960b2a2bc8aa5",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  },
+  "JIRO": {
+    "size_bytes": 7316131,
+    "sha256": "a4996499d9dcc1642a0b3011da50672ffcde33b216368ea5f5ea1d93d4e7c61d",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  },
+  "MARIHI": {
+    "size_bytes": 10498077,
+    "sha256": "5dc8658674787b0cd03f60ad9333cad5079ea97843bda2811e992ac0143e4445",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  },
+  "MATTO": {
+    "size_bytes": 11763037,
+    "sha256": "ec4688ab491cebf0c638a92ebc41f414b9d667fc8417a7bb9fc0974fbb2a3ebc",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  },
+  "MUNIRE": {
+    "size_bytes": 13146517,
+    "sha256": "707fad475cb6bf2e47a8e7ebae355d2558d3d682b0fad127ed34a942a9947ef1",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  },
+  "NAZ": {
+    "size_bytes": 10152662,
+    "sha256": "1563484690ee5895571c2fde91bc99f47eb5f75e018e9da653e7377f8fb90728",
+    "blender_format_version": "404",
+    "object_blocks": 1,
+    "mesh_blocks": 1,
+    "material_blocks": 0,
+    "image_blocks": 0,
+    "armature_blocks": 0,
+    "block_count": 967,
+    "note": "Binary-level structural audit; geometry not visually inspected"
+  }
+}

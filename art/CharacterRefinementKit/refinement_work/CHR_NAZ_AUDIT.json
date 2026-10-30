@@ -1,0 +1,58 @@
+{
+  "character": "NAZ",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\NAZ.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_NAZ_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 97604,
+      "edges": 293310,
+      "polygons": 195540,
+      "triangles_expected_at_most": 391080,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.3070732057094574,
+          -0.3542777895927429,
+          -0.9531019330024719
+        ],
+        "max": [
+          0.2852867841720581,
+          0.34867948293685913,
+          0.9471625685691833
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 195540
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#F0CDBF",
+    "eye": "#E78AAE",
+    "hair": "#715044",
+    "hair_secondary": "#D894AB",
+    "outfit_primary": "#1A1B22",
+    "outfit_secondary": "#F2ECE9",
+    "ribbon": "#DD8AA8",
+    "metal": "#B7A9AA",
+    "shoes": "#1C1A1F"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}

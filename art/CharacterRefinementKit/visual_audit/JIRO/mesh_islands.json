@@ -1,0 +1,38 @@
+{
+  "character": "JIRO",
+  "file": "CHR_JIRO_REFINEMENT_WIP.blend",
+  "blender": "5.0.1",
+  "mesh_count": 1,
+  "bounds": {
+    "min": [
+      -0.3082452118396759,
+      -0.3429262042045593,
+      -0.8955878019332886
+    ],
+    "max": [
+      0.28504642844200134,
+      0.3479553461074829,
+      0.9023491740226746
+    ]
+  },
+  "sources": [
+    {
+      "name": "mesh_node",
+      "vertices": 69340,
+      "faces": 138779,
+      "triangles": 138779,
+      "uv_layers": 0,
+      "material_slots": 0,
+      "shape_keys": [],
+      "vertex_groups": 0,
+      "island_count": 3,
+      "largest_islands_vertices": [
+        68153,
+        610,
+        577
+      ],
+      "single_vertex_islands": 0
+    }
+  ],
+  "NOTE": "Visual inspection only; no sculpt, UV, materials, rigging or original files were changed."
+}

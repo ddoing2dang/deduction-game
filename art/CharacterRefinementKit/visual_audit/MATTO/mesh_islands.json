@@ -1,0 +1,36 @@
+{
+  "character": "MATTO",
+  "file": "CHR_MATTO_REFINEMENT_WIP.blend",
+  "blender": "5.0.1",
+  "mesh_count": 1,
+  "bounds": {
+    "min": [
+      -0.30135804414749146,
+      -0.35485711693763733,
+      -0.9507530331611633
+    ],
+    "max": [
+      0.3020167946815491,
+      0.3585052192211151,
+      0.9206354022026062
+    ]
+  },
+  "sources": [
+    {
+      "name": "mesh_node",
+      "vertices": 113593,
+      "faces": 227782,
+      "triangles": 227782,
+      "uv_layers": 0,
+      "material_slots": 0,
+      "shape_keys": [],
+      "vertex_groups": 0,
+      "island_count": 1,
+      "largest_islands_vertices": [
+        113593
+      ],
+      "single_vertex_islands": 0
+    }
+  ],
+  "NOTE": "Visual inspection only; no sculpt, UV, materials, rigging or original files were changed."
+}

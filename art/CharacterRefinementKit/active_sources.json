@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "design_rules": "../../ART_GUIDE.md",
+  "active_authoring_stage": "refinement",
+  "unity_export_enabled": false,
+  "characters": [
+    {
+      "character": "CHR_NAZ",
+      "source": "sources/NAZ.blend",
+      "source_sha256": "1563484690ee5895571c2fde91bc99f47eb5f75e018e9da653e7377f8fb90728",
+      "work": "work/CHR_NAZ/CHR_NAZ_REFINEMENT.blend",
+      "initial_work_sha256": "1563484690ee5895571c2fde91bc99f47eb5f75e018e9da653e7377f8fb90728",
+      "eye_lock": "pink",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    },
+    {
+      "character": "CHR_JIRO",
+      "source": "sources/JIRO.blend",
+      "source_sha256": "a4996499d9dcc1642a0b3011da50672ffcde33b216368ea5f5ea1d93d4e7c61d",
+      "work": "work/CHR_JIRO/CHR_JIRO_REFINEMENT.blend",
+      "initial_work_sha256": "a4996499d9dcc1642a0b3011da50672ffcde33b216368ea5f5ea1d93d4e7c61d",
+      "eye_lock": "yellow",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    },
+    {
+      "character": "CHR_MARIHI",
+      "source": "sources/MARIHI.blend",
+      "source_sha256": "5dc8658674787b0cd03f60ad9333cad5079ea97843bda2811e992ac0143e4445",
+      "work": "work/CHR_MARIHI/CHR_MARIHI_REFINEMENT.blend",
+      "initial_work_sha256": "5dc8658674787b0cd03f60ad9333cad5079ea97843bda2811e992ac0143e4445",
+      "eye_lock": "green",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    },
+    {
+      "character": "CHR_MATTO",
+      "source": "sources/MATTO.blend",
+      "source_sha256": "ec4688ab491cebf0c638a92ebc41f414b9d667fc8417a7bb9fc0974fbb2a3ebc",
+      "work": "work/CHR_MATTO/CHR_MATTO_REFINEMENT.blend",
+      "initial_work_sha256": "ec4688ab491cebf0c638a92ebc41f414b9d667fc8417a7bb9fc0974fbb2a3ebc",
+      "eye_lock": "red",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    },
+    {
+      "character": "CHR_BOKI",
+      "source": "sources/BOKI.blend",
+      "source_sha256": "bacb8fbe6ae08406c100072d874cb89cdff0cc13254a4429910960b2a2bc8aa5",
+      "work": "work/CHR_BOKI/CHR_BOKI_REFINEMENT.blend",
+      "initial_work_sha256": "bacb8fbe6ae08406c100072d874cb89cdff0cc13254a4429910960b2a2bc8aa5",
+      "eye_lock": "gray",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    },
+    {
+      "character": "CHR_MUNIRE",
+      "source": "sources/MUNIRE.blend",
+      "source_sha256": "707fad475cb6bf2e47a8e7ebae355d2558d3d682b0fad127ed34a942a9947ef1",
+      "work": "work/CHR_MUNIRE/CHR_MUNIRE_REFINEMENT.blend",
+      "initial_work_sha256": "707fad475cb6bf2e47a8e7ebae355d2558d3d682b0fad127ed34a942a9947ef1",
+      "eye_lock": "purple",
+      "status": "raw_refinement_base",
+      "unity_replacement_allowed": false,
+      "required_before_game_export": [
+        "semantic_parts",
+        "UV",
+        "materials",
+        "Humanoid_rig",
+        "skinning",
+        "expressions",
+        "LOD",
+        "visual_approval",
+        "game_validation"
+      ]
+    }
+  ]
+}

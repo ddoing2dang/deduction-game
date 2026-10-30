@@ -1,0 +1,37 @@
+{
+  "character": "BOKI",
+  "file": "CHR_BOKI_REFINEMENT_WIP.blend",
+  "blender": "5.0.1",
+  "mesh_count": 1,
+  "bounds": {
+    "min": [
+      -0.2999736964702606,
+      -0.2690627872943878,
+      -0.9502526521682739
+    ],
+    "max": [
+      0.29973116517066956,
+      0.2791546583175659,
+      0.9472797513008118
+    ]
+  },
+  "sources": [
+    {
+      "name": "mesh_node",
+      "vertices": 85158,
+      "faces": 170877,
+      "triangles": 170877,
+      "uv_layers": 0,
+      "material_slots": 0,
+      "shape_keys": [],
+      "vertex_groups": 0,
+      "island_count": 2,
+      "largest_islands_vertices": [
+        83509,
+        1649
+      ],
+      "single_vertex_islands": 0
+    }
+  ],
+  "NOTE": "Visual inspection only; no sculpt, UV, materials, rigging or original files were changed."
+}

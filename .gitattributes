@@ -1,0 +1,2 @@
+art/CharacterRefinementKit/**/*.blend filter=lfs diff=lfs merge=lfs -text
+art/CharacterRefinementKit/**/*.zip filter=lfs diff=lfs merge=lfs -text

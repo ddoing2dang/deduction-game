@@ -1,0 +1,58 @@
+{
+  "character": "BOKI",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\BOKI.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_BOKI_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 85158,
+      "edges": 256316,
+      "polygons": 170877,
+      "triangles_expected_at_most": 341754,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.2999736964702606,
+          -0.2690627872943878,
+          -0.9502526521682739
+        ],
+        "max": [
+          0.29973116517066956,
+          0.2791546583175659,
+          0.9472797513008118
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 170877
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#EBC5B7",
+    "eye": "#777B84",
+    "hair": "#65202E",
+    "hair_secondary": "#A3364D",
+    "outfit_primary": "#1A1A21",
+    "outfit_secondary": "#BDA78F",
+    "ribbon": "#492A31",
+    "metal": "#BEA17D",
+    "shoes": "#1B161C"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}

@@ -1,0 +1,58 @@
+{
+  "character": "MUNIRE",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\MUNIRE.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_MUNIRE_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 127567,
+      "edges": 383114,
+      "polygons": 255410,
+      "triangles_expected_at_most": 510820,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.3355027735233307,
+          -0.4089778661727905,
+          -0.9495030641555786
+        ],
+        "max": [
+          0.32683196663856506,
+          0.41534730792045593,
+          0.9462307095527649
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 255410
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#F3D9D2",
+    "eye": "#8259BD",
+    "hair": "#8D6CB9",
+    "hair_secondary": "#AF90D5",
+    "outfit_primary": "#1F1C29",
+    "outfit_secondary": "#F3EDF2",
+    "ribbon": "#594088",
+    "metal": "#A9A2B1",
+    "shoes": "#1D1B27"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}

@@ -1,0 +1,36 @@
+{
+  "character": "MARIHI",
+  "file": "CHR_MARIHI_REFINEMENT_WIP.blend",
+  "blender": "5.0.1",
+  "mesh_count": 1,
+  "bounds": {
+    "min": [
+      -0.2990258038043976,
+      -0.3555147647857666,
+      -0.9507768750190735
+    ],
+    "max": [
+      0.321421355009079,
+      0.35700511932373047,
+      0.9473925232887268
+    ]
+  },
+  "sources": [
+    {
+      "name": "mesh_node",
+      "vertices": 101013,
+      "faces": 202462,
+      "triangles": 202462,
+      "uv_layers": 0,
+      "material_slots": 0,
+      "shape_keys": [],
+      "vertex_groups": 0,
+      "island_count": 1,
+      "largest_islands_vertices": [
+        101013
+      ],
+      "single_vertex_islands": 0
+    }
+  ],
+  "NOTE": "Visual inspection only; no sculpt, UV, materials, rigging or original files were changed."
+}

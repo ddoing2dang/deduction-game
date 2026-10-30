@@ -1,0 +1,58 @@
+{
+  "character": "MATTO",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\MATTO.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_MATTO_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 113593,
+      "edges": 341672,
+      "polygons": 227782,
+      "triangles_expected_at_most": 455564,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.30135804414749146,
+          -0.35485711693763733,
+          -0.9507530331611633
+        ],
+        "max": [
+          0.3020167946815491,
+          0.3585052192211151,
+          0.9206354022026062
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 227782
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#F2D5CB",
+    "eye": "#B42437",
+    "hair": "#E7E6E9",
+    "hair_secondary": "#BFC2CB",
+    "outfit_primary": "#17171C",
+    "outfit_secondary": "#E9E6E7",
+    "ribbon": "#6D172C",
+    "metal": "#B2A1A6",
+    "shoes": "#1C1920"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}

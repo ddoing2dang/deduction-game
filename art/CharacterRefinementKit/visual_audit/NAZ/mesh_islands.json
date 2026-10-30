@@ -1,0 +1,36 @@
+{
+  "character": "NAZ",
+  "file": "CHR_NAZ_REFINEMENT_WIP.blend",
+  "blender": "5.0.1",
+  "mesh_count": 1,
+  "bounds": {
+    "min": [
+      -0.3070732057094574,
+      -0.3542777895927429,
+      -0.9531019330024719
+    ],
+    "max": [
+      0.2852867841720581,
+      0.34867948293685913,
+      0.9471625685691833
+    ]
+  },
+  "sources": [
+    {
+      "name": "mesh_node",
+      "vertices": 97604,
+      "faces": 195540,
+      "triangles": 195540,
+      "uv_layers": 0,
+      "material_slots": 0,
+      "shape_keys": [],
+      "vertex_groups": 0,
+      "island_count": 1,
+      "largest_islands_vertices": [
+        97604
+      ],
+      "single_vertex_islands": 0
+    }
+  ],
+  "NOTE": "Visual inspection only; no sculpt, UV, materials, rigging or original files were changed."
+}

@@ -1,0 +1,30 @@
+{
+  "faceVerticesSmoothed": 616,
+  "regionFaces": {
+    "Face": 816,
+    "Hair": 59573,
+    "Sleeves": 30267,
+    "Outfit": 15986,
+    "Body": 14574,
+    "Shoes": 16780,
+    "Accessory": 32881
+  },
+  "irisPixelsRepaintedGray": 2834,
+  "UV": "front-reference projection, side/back authoring incomplete",
+  "remaining": [
+    "semantic boundary cleanup",
+    "dedicated eye/eyelid topology",
+    "back and side UV painting",
+    "production retopology",
+    "rig and expressions"
+  ],
+  "status": "WIP_NOT_COMPLETE",
+  "iris": "separate gray iris, pupil, sclera and highlight meshes",
+  "visualIssues": [
+    "side projection stretches",
+    "semantic boundaries require manual cleanup",
+    "eyes require eyelid integration"
+  ],
+  "sourceHashPreserved": true,
+  "completion": "NOT COMPLETE: eyelid/eye integration and UV seams fail visual acceptance"
+}

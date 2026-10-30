@@ -1,0 +1,58 @@
+{
+  "character": "MARIHI",
+  "source": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\sources\\MARIHI.blend",
+  "output": "C:\\UnityProjects\\DeductionGame\\deduction-game\\art\\CharacterRefinementKit\\refinement_work\\CHR_MARIHI_REFINEMENT_WIP.blend",
+  "blender_version": "5.0.1",
+  "source_meshes": [
+    {
+      "name": "mesh_node",
+      "vertices": 101013,
+      "edges": 303692,
+      "polygons": 202462,
+      "triangles_expected_at_most": 404924,
+      "shape_keys": [],
+      "vertex_groups": [],
+      "uv_maps": [],
+      "color_attributes": [],
+      "material_slots": [],
+      "bounds_world": {
+        "min": [
+          -0.2990258038043976,
+          -0.3555147647857666,
+          -0.9507768750190735
+        ],
+        "max": [
+          0.321421355009079,
+          0.35700511932373047,
+          0.9473925232887268
+        ]
+      },
+      "face_count_by_material_slot": {
+        "0": 202462
+      }
+    }
+  ],
+  "source_materials": [],
+  "source_images": [],
+  "source_armature_count": 0,
+  "palette_hex": {
+    "skin": "#CDA084",
+    "eye": "#3D975D",
+    "hair": "#EDCD66",
+    "hair_secondary": "#F7E5A4",
+    "outfit_primary": "#17171A",
+    "outfit_secondary": "#F1ECE5",
+    "ribbon": "#161418",
+    "metal": "#C7A45B",
+    "shoes": "#19151B"
+  },
+  "real_work_remaining": [
+    "facial sculpt and actual facial landmarks",
+    "iris region selection, exact LOCK eye material assignment",
+    "anatomy, garment and hair region splitting",
+    "UV seams/texture authoring and baking",
+    "topology reconstruction and LOD",
+    "rigging, blendshapes and Unity import/play validation"
+  ],
+  "status": "PREP_ONLY_NOT_FINISHED"
+}
