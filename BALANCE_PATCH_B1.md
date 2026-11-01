@@ -14,6 +14,12 @@ Investigation cap revised from 4 to **3 per investigator per theme**, after revi
 - Existing timers and role counts are preserved.
 
 ## Not yet determined
+## Follow-up rule LOCK (2026-11-02)
+- The second formal deduction cannot occur in the round immediately after the first. Wait one full round: R6 first → R7 unavailable → R8 or later second. Two failed guesses eliminate the investigator.
+- To preserve the mandatory R12 deduction, an investigator who has never guessed cannot make their first formal guess in R11. A first guess at R10 permits the second at R12. The rule applies to AI and humans. Existing simulations without this restriction are superseded for balance purposes.
+- This is a rule-document update; the Unity runtime and Play Mode have not been verified against it.
+
+## Not yet determined
 - Ties after three themes.
 - Which players receive the culprit role in each theme.
 - Final nine weapon names for each theme.
