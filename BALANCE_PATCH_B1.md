@@ -15,9 +15,9 @@ Investigation cap revised from 4 to **3 per investigator per theme**, after revi
 
 ## Not yet determined
 ## Follow-up rule LOCK (2026-11-02)
-- The second formal deduction cannot occur in the round immediately after the first. Wait one full round: R6 first → R7 unavailable → R8 or later second. Two failed guesses eliminate the investigator.
-- To preserve the mandatory R12 deduction, an investigator who has never guessed cannot make their first formal guess in R11. A first guess at R10 permits the second at R12. The rule applies to AI and humans. Existing simulations without this restriction are superseded for balance purposes.
-- This is a rule-document update; the Unity runtime and Play Mode have not been verified against it.
+- Each investigator may make only one formal deduction per round and no more than two per theme. After a failed first deduction in R6, the second is allowed in R7, but never in the same round. No extra round-skip cooldown.
+- Two failed formal deductions eliminate the investigator. An R11 first attempt and an R12 second attempt are legal, and the R12 mandatory deduction observes the one-per-round restriction. This is the same for humans and AI.
+- This is a rule-document correction; Unity runtime and Play Mode have not been verified against it.
 
 ## Not yet determined
 - Ties after three themes.
