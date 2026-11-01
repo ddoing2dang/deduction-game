@@ -7,8 +7,8 @@ Current B1 implementation targets:
 - Three private three-field investigation queries per investigator; public match count only.
 - R6+ final guesses, R12 forced guess, two attempts per investigator.
 
-- **2026-11-02 rule LOCK:** An investigator cannot submit a second formal deduction in the round immediately following the first; at least one complete round must be skipped (R6 first => R7 wait => R8+ second). Two failed deductions eliminate that investigator. To retain the compulsory R12 deduction without bypassing the cooldown, disallow a first deduction in R11; a first deduction in R12 is legal. Applies to human and AI, including all future B1 simulation models.
-- Do not reuse any older 10,000-session exploratory balance numbers as evidence of balance under the above cooldown until a new simulation explicitly enforces this restriction.
+- **2026-11-02 rule LOCK:** Each investigator may make **at most one formal deduction per round** and at most two per theme. If the first deduction fails in R6, no second deduction can occur in R6, but a second deduction is permitted in R7. There is **no extra one-round cooldown**. Only two failed deductions eliminate the investigator. An initial deduction in R11 and a second deduction in R12 are legal. Mandatory R12 deductions remain one per investigator in that round. Applies equally to human and AI.
+- Previous 10,000-session exploratory balance results are not automatically validated by this rule wording; check per-player deduction logs and confirm at-most-once-per-round submissions before trusting them.
 
 - End-of-round shared scoring: one successful investigator receives 2 points, multiple successful investigators receive 1 each.
 - Culprit survival score: 0 points if solved R6-R8, 1 point if solved R9-R12, 2 points if unsolved after R12.
