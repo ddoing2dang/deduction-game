@@ -6,6 +6,10 @@ Current B1 implementation targets:
 - Nine rooms and nine weapons per theme, six players and unchanged card dealing.
 - Three private three-field investigation queries per investigator; public match count only.
 - R6+ final guesses, R12 forced guess, two attempts per investigator.
+
+- **2026-11-02 rule LOCK:** An investigator cannot submit a second formal deduction in the round immediately following the first; at least one complete round must be skipped (R6 first => R7 wait => R8+ second). Two failed deductions eliminate that investigator. To retain the compulsory R12 deduction without bypassing the cooldown, disallow a first deduction in R11; a first deduction in R12 is legal. Applies to human and AI, including all future B1 simulation models.
+- Do not reuse any older 10,000-session exploratory balance numbers as evidence of balance under the above cooldown until a new simulation explicitly enforces this restriction.
+
 - End-of-round shared scoring: one successful investigator receives 2 points, multiple successful investigators receive 1 each.
 - Culprit survival score: 0 points if solved R6-R8, 1 point if solved R9-R12, 2 points if unsolved after R12.
 - Three themes, separate session state for each; only cumulative scores persist.
