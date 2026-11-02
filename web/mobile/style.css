@@ -92,3 +92,32 @@
 .person-dialog-actions .button{min-height:47px}
 @keyframes character-arrive{from{opacity:.25;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
 @media(max-height:670px){.person-figure{height:min(32dvh,210px)}.person-quote p{font-size:14px}.person-stage{padding:12px 14px}}
+
+/* Before-prologue player identity selector — exact approved portraits */
+.choose-panel{background:radial-gradient(circle at 50% 5%,#533249 0%,#291a2d 48%,#1c1423 100%);border:1px solid #997482;padding:19px 15px 22px}
+.choose-title{font-family:Georgia,'Noto Serif KR',serif;color:#f5d8a7;font-size:29px;margin:8px 0 7px;letter-spacing:-.04em}
+.avatar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:20px 0 14px}
+.avatar-card{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:5px;border:1px solid #76536a;border-radius:14px;padding:7px 5px 10px;background:linear-gradient(155deg,#3b283c,#251a2c);color:#f5ddea;min-width:0;min-height:190px;cursor:pointer;box-shadow:inset 0 1px #ffffff0f;transition:transform .16s,border-color .18s,box-shadow .18s,background .18s}
+.avatar-card.selected{background:linear-gradient(150deg,#67405c,#372339);border:2px solid #f0d094;box-shadow:0 0 0 2px #ecc88a2b,0 0 22px #e9b77c20}
+.avatar-card:active{transform:scale(.97)}
+.avatar-card:focus-visible{outline:3px solid #ecd19d;outline-offset:2px}
+.avatar-portrait{width:100%;height:128px;display:block;object-fit:contain;filter:drop-shadow(0 4px 9px #0009)}
+.avatar-name{font-weight:850;font-size:15px;line-height:1.2;letter-spacing:-.03em}
+.avatar-selected{color:#ccacb8;font-size:11px}
+.avatar-card.selected .avatar-selected{color:#ffe4af;font-weight:800}
+.avatar-preview{display:flex;align-items:center;gap:13px;min-height:110px;border:1px solid #a07870;border-radius:16px;background:radial-gradient(circle at 16% 50%,#63455244,transparent 45%),#2b202e;padding:10px;margin-bottom:13px}
+.preview-portrait{display:block;flex-shrink:0;width:94px;height:105px;object-fit:contain;filter:drop-shadow(0 4px 10px #0009)}
+.preview-placeholder{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:94px;height:94px;border-radius:50%;color:#d7a48a;font-size:55px;background:#3a293a}
+.avatar-info{flex:1;min-width:0}
+.avatar-info span{display:block;font-size:10px;letter-spacing:.08em;font-weight:850;color:#d8aeb9;margin-bottom:5px}
+.avatar-info strong{display:block;font-size:20px;color:#f8dfac;margin-bottom:5px}
+.avatar-info p{margin:0;color:#d5bec8;font-size:12px;line-height:1.45}
+.my-character{display:flex;align-items:center;gap:11px;margin-bottom:11px;border-radius:14px;border:1px solid #986b77;background:linear-gradient(105deg,#543349,#2b1d30);padding:7px 12px 7px 8px;min-height:70px}
+.my-character img{width:52px;height:55px;object-fit:contain;flex-shrink:0}
+.my-character div{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.my-character small{font-size:11px;color:#dfbdc8}
+.my-character b{font-size:18px;color:#f6dca8}
+.my-character>span{font-size:10px;letter-spacing:.10em;font-weight:900;color:#eac68e}
+.choice.my-choice{border-color:#b58f66;color:#f6d5a0;background:#5b3a49;text-decoration:none;opacity:1}
+@media(max-width:370px){.avatar-grid{gap:6px}.avatar-card{padding:6px 2px;min-height:160px}.avatar-portrait{height:105px}.avatar-name{font-size:13px}.choose-panel{padding:15px 11px}.avatar-preview{gap:8px}.preview-portrait{width:75px}}
+@media(prefers-reduced-motion:reduce){.avatar-card{transition:none}}
