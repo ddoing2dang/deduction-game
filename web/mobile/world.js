@@ -179,7 +179,6 @@ const BRWorld = (function buildWorld(){
   state.history.unshift("R"+state.round+" · 과학수사(개인): 미배분 장소/흉기 카드 1장씩 확인");
   return {...result,cards:w.forensic.cards};
  }
- function searchEvidence(){return {ok:false,message:"확정 EVENTS.md에 없는 방별 임의 특별 단서 이벤트는 제거되었습니다."};}
  function interaction(state,npcId,action,weapon,suspectedRoom=state.room){
   const w=migrate(state),npc=w.npcs.find(x=>x.id===npcId);
   if(!npc||npc.room!==state.room)return {ok:false,message:"그 인물은 지금 같은 방에 없습니다. 지도에서 위치를 찾아 이동하세요."};
@@ -286,7 +285,7 @@ const BRWorld = (function buildWorld(){
   for(const npc of w.npcs){
    let target=null;
    // An NPC may collect the key if they physically reach its room.
-   if(!w.key.taken&&state.round>=w.key.appears&&npc===w.npcs[0])target=w.key.room;
+   if(!w.key.taken&&state.round>=Math.max(6,w.key.appears)&&npc===w.npcs[0])target=w.key.room;
    if(w.key.owner===npc.id&&w.box.appears!==null&&state.round>=w.box.appears&&!w.box.opened)target=w.box.room;
    if(target!==null){
     const path=pathBetween(npc.room,target);
