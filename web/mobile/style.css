@@ -204,3 +204,248 @@
 @media(max-width:390px){.graph-grid{gap:19px 11px}.room.world-room.graph-node{min-height:97px;padding:6px 1px}.world-room.graph-node .room-name{font-size:10px}.world-room.graph-node .symbol{font-size:21px}.graph-node .npc-mini{height:20px;width:19px}}
 @media(max-width:325px){.graph-grid{gap:13px 8px}.room.world-room.graph-node{min-height:92px}.world-room.graph-node .room-name{font-size:9px}.graph-node .npc-mini{width:17px;height:18px}}
 @media(prefers-reduced-motion:reduce){.world-room.graph-node.route-selected{transform:none}}
+
+
+/* ============================================================
+   MOBILE UI READABILITY PATCH · 2026-11-03
+   Retain the noir backgrounds while brightening every tappable
+   surface. Dark text on light actions, light text on dark actions.
+   This does not change gameplay, routes or stored data.
+   ============================================================ */
+:root{
+  --action-gold:#f3d19b;
+  --action-rose:#e2b9cb;
+  --action-cream:#fff4f7;
+  --action-ink:#291722;
+  --action-ghost:#684a60;
+  --action-disabled:#504051;
+}
+button,select{
+  -webkit-tap-highlight-color:rgba(243,209,155,.26);
+}
+button:disabled{
+  opacity:1;
+  cursor:not-allowed;
+  filter:none;
+}
+.button{
+  background:linear-gradient(140deg,#e3afc2,#d69aad);
+  color:#281623;
+  border:2px solid #f1cedd;
+  font-size:15px;
+  font-weight:850;
+  line-height:1.35;
+  min-height:50px;
+  padding:13px 16px;
+  box-shadow:0 3px 12px #0a061040,inset 0 1px #fff9;
+  text-shadow:none;
+}
+.button.primary{
+  background:linear-gradient(140deg,#ffe2b0,#e6b879);
+  color:#291722;
+  border-color:#fff0c9;
+  box-shadow:0 5px 17px #c9975c35,inset 0 1px #fffbd9;
+}
+.button.secondary{
+  background:linear-gradient(145deg,#efcbda,#d6a5bc);
+  color:#23141f;
+  border:2px solid #f9deeb;
+  box-shadow:0 3px 11px #120b164d,inset 0 1px #fff8;
+}
+.button.ghost{
+  background:#684a60;
+  color:#fff5f7;
+  border:2px solid #c69ab5;
+  box-shadow:inset 0 1px #ffffff23;
+}
+.button.active{
+  background:#f3d19b;
+  border-color:#fff1d4;
+  color:#291722;
+  box-shadow:0 0 0 3px #e7bd805c;
+}
+.button:disabled,.button.primary:disabled,.button.secondary:disabled,.button.ghost:disabled{
+  background:#504051;
+  color:#ede0e9;
+  border:2px dashed #927b90;
+  box-shadow:none;
+  opacity:1;
+  text-shadow:none;
+}
+.button:focus-visible,button:focus-visible,select:focus-visible,
+.avatar-card:focus-visible,.room:focus-visible,.navitem:focus-visible,
+.host-call:focus-visible,.person-close:focus-visible,.choice:focus-visible{
+  outline:3px solid #ffe4a8;
+  outline-offset:3px;
+}
+@media (hover:hover){
+  .button:not(:disabled):hover,.choice:not(:disabled):hover,
+  .navitem:not(:disabled):hover,.host-call:hover,
+  .avatar-card:not(:disabled):hover,.graph-node:not(:disabled):hover{
+    filter:brightness(1.08);
+  }
+}
+.navitem{
+  background:#584255;
+  color:#fff0f8;
+  border:1px solid #9d7b95;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:850;
+  min-height:57px;
+  padding:9px 4px;
+  text-shadow:none;
+}
+.navitem .navico{font-size:22px}
+.navitem.active{
+  background:#f3d19b;
+  color:#291722;
+  border-color:#fff0c9;
+  box-shadow:0 2px 11px #e0b87a4d;
+}
+.bottomnav{background:#211522f5;border-top:1px solid #b78c9e;gap:5px}
+.host-call{
+  background:#e8c4d5;
+  color:#271521;
+  border:2px solid #ffe0ed;
+  min-height:44px;
+  font-size:12px;
+  font-weight:850;
+  padding:10px 11px;
+  box-shadow:0 3px 9px #0003;
+}
+.person-close{
+  width:44px;
+  height:44px;
+  background:#e8c4d5;
+  color:#271521;
+  border-color:#ffe4ee;
+  font-size:18px;
+  font-weight:900;
+}
+.avatar-card{
+  background:linear-gradient(150deg,#765269,#5a4055);
+  color:#fff4f7;
+  border:2px solid #b99aaf;
+  box-shadow:0 4px 14px #0b061048;
+}
+.avatar-card .avatar-name{font-size:15px;color:inherit}
+.avatar-card .avatar-selected{color:#ffe4f0;font-size:12px;font-weight:800}
+.avatar-card.selected{
+  background:linear-gradient(145deg,#ffe4b8,#e7bd89);
+  color:#2b1925;
+  border-color:#fff0cf;
+  box-shadow:0 0 0 3px #f3c98a58,0 4px 16px #e8b9874d;
+}
+.avatar-card.selected .avatar-selected{color:#2b1925}
+.card-person{
+  background:#573d52;
+  color:#fff3f7;
+  border:2px solid #b38aa8;
+  box-shadow:0 4px 13px #08050b42;
+}
+.card-person strong{color:#fff4f7}
+.card-person small{color:#f3d7e6;font-weight:750;font-size:12px}
+.card-person.eliminated{opacity:.8;filter:grayscale(.45);border-style:dashed}
+.choice{
+  background:#ead2de;
+  color:#2b1a28;
+  border:2px solid #f5e4ef;
+  font-size:13px;
+  font-weight:800;
+  min-height:44px;
+  padding:10px 12px;
+}
+.choice.selected,.choice.my-choice{
+  background:#f3d19b;
+  color:#2b1925;
+  border-color:#fff0c9;
+  opacity:1;
+}
+.choice.struck{
+  background:#5d4958;
+  color:#fff0f7;
+  border-color:#a58ba0;
+  opacity:1;
+  text-decoration:line-through;
+  text-decoration-thickness:2px;
+}
+select{
+  background:#f4e4eb;
+  color:#251321;
+  border:2px solid #caa2b9;
+  min-height:54px;
+  font-size:15px;
+  font-weight:700;
+  border-radius:12px;
+  color-scheme:light;
+}
+select option{background:#fff5f8;color:#251321}
+select option:disabled{color:#69616c}
+.inlinebtn{color:#ffe1ae;font-weight:850;min-height:44px}
+.room{
+  background:#67465b;
+  border:2px solid #b48fa4;
+  color:#fff3f7;
+  font-weight:800;
+}
+.room.active{background:#f3d19b;color:#291722;border-color:#fff0c9}
+.room.active:after{color:#291722;font-weight:850}
+.room.world-room.graph-node{
+  border-color:#9e839b;
+  background:#544253;
+  color:#fff2f8;
+}
+.room.world-room.graph-node.reachable{
+  border-color:#e0b98e;
+  background:#725067;
+  color:#fff5f9;
+  opacity:1;
+  box-shadow:0 0 0 1px #e6bf8c66,0 4px 12px #1109155e;
+}
+.room.world-room.graph-node.reachable .graph-room-cost{color:#fff0c6;font-weight:900}
+.room.world-room.graph-node.not-reachable,
+.room.world-room.graph-node:disabled{
+  background:#403440;
+  color:#ece0e9;
+  border-color:#796d7f;
+  opacity:.87;
+  filter:none;
+  box-shadow:none;
+  cursor:not-allowed;
+}
+.room.world-room.graph-node.not-reachable .graph-room-cost{color:#e3cbd7}
+.room.world-room.graph-node.active,
+.room.world-room.graph-node.route-selected{
+  background:#f4d39a;
+  color:#301928;
+  border-color:#fff2cb;
+  opacity:1;
+  filter:none;
+  box-shadow:0 0 0 3px #f3d19b60,0 0 18px #e7b57e50;
+}
+.room.world-room.graph-node.active .graph-room-cost,
+.room.world-room.graph-node.route-selected .graph-room-cost{color:#301928}
+.room.world-room.graph-node.active:after{display:none}
+.graph-node .room-name{font-weight:900}
+.graph-node .graph-room-cost{font-size:11px}
+.encounter-card{
+  background:#52394d;
+  border:2px solid #a6819b;
+}
+.encounter-card>.button{
+  min-height:44px;
+  font-size:12px;
+  font-weight:850;
+  padding:9px 10px;
+  box-shadow:0 2px 7px #0003;
+}
+.route-preview .button{min-height:50px}
+.host-actions .button,.person-dialog-actions .button{min-height:48px;font-size:14px}
+.host-actions .button.ghost,.host-actions .button.secondary{min-height:44px;font-size:13px}
+@media (max-width:380px){
+  .navitem{font-size:11px;min-width:0;padding:8px 3px}
+  .encounter-card>.button{min-height:44px;font-size:11px;padding:8px 8px}
+  .avatar-card .avatar-name{font-size:13px}
+  .graph-node .graph-room-cost{font-size:10px}
+}
