@@ -167,3 +167,40 @@
 .suspicion-person strong{font-family:Georgia,'Noto Serif KR',serif;font-size:24px;font-weight:850;color:#f8daad;display:block;margin:6px 0}
 .suspicion-person p{font-size:12px;line-height:1.5;color:#dfc6d3;margin:0}
 @media(max-width:360px){.suspicion-person{gap:9px}.suspicion-portrait{width:69px;height:95px;flex-basis:69px}.suspicion-person strong{font-size:20px}}
+
+/* Connected nine-room board: actual graph edges, route previews and move confirmation */
+.mansion-graph{position:relative;width:100%;max-width:540px;margin:13px auto 0;padding:3px 0;isolation:isolate}
+.map-connections{position:absolute;z-index:0;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.graph-link{stroke:#947a8b;stroke-width:2.3;stroke-linecap:round;opacity:.76;vector-effect:non-scaling-stroke;filter:drop-shadow(0 1px 2px #120d13)}
+.graph-link.graph-adjacent{stroke:#e5b97c;opacity:.95;stroke-width:3.2}
+.graph-link.graph-locked{stroke:#e8808b;opacity:.98;stroke-width:3.4;stroke-dasharray:7 5}
+.graph-link.graph-secret{stroke:#5fe1d0;opacity:1;stroke-width:4;stroke-dasharray:5 5}
+.graph-link.graph-selected{stroke:#ffe0a4;stroke-width:5;opacity:1;filter:drop-shadow(0 0 4px #e8b471)}
+.graph-link.graph-jump{stroke:#d99cfd;stroke-width:4;stroke-dasharray:3 6;opacity:.95}
+.graph-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 17px}
+.room.world-room.graph-node{width:100%;min-width:0;min-height:104px;padding:8px 3px;border-width:2px;border-radius:15px;background:#2e2636;box-shadow:0 3px 10px #0b0811ab;position:relative;z-index:1;justify-content:center}
+.world-room.graph-node .symbol{font-size:24px}
+.world-room.graph-node .room-name{min-height:23px;font-size:11px}
+.graph-node .graph-room-cost{color:#dcc4ae;font-size:10px;font-weight:900;line-height:1.1}
+.graph-node .npc-row{min-height:20px}
+.graph-node .world-room-tokens{min-height:12px}
+.world-room.graph-node.reachable{border-color:#c6a36f;color:#fff7e9;background:#48354b;box-shadow:0 0 0 1px #e6bc794a,0 4px 13px #170e1b8a;cursor:pointer}
+.world-room.graph-node.reachable .graph-room-cost{color:#ffe0a5}
+.world-room.graph-node.not-reachable{border-color:#5b5263;background:#292632;opacity:.51;filter:saturate(.7);cursor:not-allowed}
+.world-room.graph-node.not-reachable .graph-room-cost{color:#b5a1af}
+.world-room.graph-node.active{border-color:#ffe0a4;background:#624459;opacity:1;box-shadow:0 0 0 3px #b98f6447,0 0 15px #c39b7570;filter:none;cursor:default}
+.world-room.graph-node.route-selected{border-color:#ffdb8d;background:#70515f;opacity:1;box-shadow:0 0 0 3px #ffdb8d66,0 0 20px #dca66c66;cursor:pointer;transform:translateY(-2px)}
+.world-room.graph-node.route-selected .graph-room-cost{color:#fff0c7}
+.world-room.graph-node:disabled{pointer-events:none}
+.graph-node .npc-mini{height:22px;width:21px}
+.map-instruction{font-size:12px;line-height:1.6;margin:13px 0 3px;color:#e2cdb5;padding:11px 12px;border-radius:11px;background:#35283b;border:1px dashed #916f77}
+.route-preview{margin:13px 0 0;padding:13px;border-radius:14px;border:1px solid #d9b17c;background:linear-gradient(125deg,#4d3547,#39263b);box-shadow:0 5px 17px #08040844}
+.route-preview-title{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.route-preview-title span{font-size:12px;font-weight:800;color:#dbbfce}
+.route-preview-title strong{font-size:16px;color:#f8d99c}
+.route-preview>p{font-size:15px;font-weight:750;line-height:1.6;color:#fff1d8;margin:10px 0}
+.route-preview-actions{display:flex;flex-direction:column;gap:8px}
+.route-preview .button{min-height:46px}
+@media(max-width:390px){.graph-grid{gap:19px 11px}.room.world-room.graph-node{min-height:97px;padding:6px 1px}.world-room.graph-node .room-name{font-size:10px}.world-room.graph-node .symbol{font-size:21px}.graph-node .npc-mini{height:20px;width:19px}}
+@media(max-width:325px){.graph-grid{gap:13px 8px}.room.world-room.graph-node{min-height:92px}.world-room.graph-node .room-name{font-size:9px}.graph-node .npc-mini{width:17px;height:18px}}
+@media(prefers-reduced-motion:reduce){.world-room.graph-node.route-selected{transform:none}}
