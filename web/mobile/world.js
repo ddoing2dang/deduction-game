@@ -266,8 +266,8 @@ const BRWorld = (function buildWorld(){
    const npc=w.npcs.find(n=>n.id===target&&n.room===state.room);
    if(!npc)return {ok:false,message:"심문은 같은 방의 NPC에게만 가능합니다."};
    if(w.suspicions>=3)return {ok:false,message:"의심 횟수가 부족해 심문할 수 없어요."};
-   ability.left--;w.suspicions++;
    if(!Number.isInteger(itemId)||itemId<0||itemId>=9)return {ok:false,message:"심문할 흉기를 선택하세요."};
+   ability.left--;w.suspicions++;
    const roomYes=npc.hand.room===state.room,itemYes=npc.hand.item===itemId;
    const found=roomYes?{kind:"room",id:npc.hand.room}:itemYes?{kind:"item",id:npc.hand.item}:null;
    const res=consumeInfo(state,`심문 결과 · 현재 장소 카드 ${roomYes?"YES":"NO"} / 선택 도구 카드 ${itemYes?"YES":"NO"}`);
