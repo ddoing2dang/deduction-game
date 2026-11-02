@@ -30,6 +30,7 @@ let hostScene=null;
 let hostVoiceToken=0;
 let hostActiveUtterance=null;
 let hostTimers=[];
+let pendingRoundActionFocus=false;
 let personDialog=-1;
 let selectedAvatar=-1;
 let worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};
@@ -75,6 +76,7 @@ function phaseAction(){
  return btn(`R${state.round} 종료 → R${state.round+1} 시작`,'next-round','button primary full');
 }
 function nextRound(){
+ pendingRoundActionFocus=false;
  if(state.ended||state.phase!=='review'||state.round>=12)return;
  state.round++;
  state.phase='investigate';
@@ -118,8 +120,22 @@ function showHost(scenes){
  stopHostPlayback();
  hostScenes=Array.isArray(scenes)?scenes.slice():[scenes];
  hostScene=hostScenes.shift()||null;
+ // Information action has ended: after the outcome, guide the player to the
+ // next round button. Don't advance the round automatically or skip the result.
+ if(hostScene&&state.started&&!state.ended&&state.phase==='review')pendingRoundActionFocus=true;
  render();
- if(hostScene)playHostAutomatically(); // run inside the original tap's call stack
+ if(hostScene)playHostAutomatically();
+}
+function focusNextRoundAction(){
+ if(!pendingRoundActionFocus)return;
+ pendingRoundActionFocus=false;
+ if(!state.started||state.ended||state.phase!=='review')return;
+ // Make the action the primary visible destination after the narrator closes.
+ currentTab='map';
+ render();
+ const target=app.querySelector?.(state.round>=12?'.round-next-quick [data-act="open-accuse"]':'.round-next-quick [data-act="next-round"]');
+ if(target?.scrollIntoView)target.scrollIntoView({behavior:'smooth',block:'center'});
+ else if(window.scrollTo)window.scrollTo({top:0,behavior:'smooth'});
 }
 function advanceHost(){
  if(!hostScene)return;
@@ -127,6 +143,7 @@ function advanceHost(){
  hostScene=hostScenes.shift()||null;
  render();
  if(hostScene)playHostAutomatically();
+ else focusNextRoundAction();
 }
 function shortResultVoice(sc){
  if(sc.voiceScope==="investigation"){
@@ -187,10 +204,28 @@ function playHostAutomatically(){
  }catch(_){/* Caption deadline remains armed. */}
 }
 
+function resultEffect(sc){
+ if(sc.voicePhase!=='result'||!['investigation','deduction'].includes(sc.voiceScope))return '';
+ const match=Number.isInteger(sc.matches)&&sc.matches>=0&&sc.matches<=3?sc.matches:null;
+ const victory=sc.effect==='victory';
+ const defeat=sc.effect==='defeat'||sc.effect==='wrong';
+ const delayed=sc.effect==='delay';
+ const label=victory?'사건 해결':defeat?'최종 추리 실패':delayed?'결과 발표 지연':match!==null?match+'개 일치':'추리 판정';
+ const stateClass=victory?'fx-victory':defeat?'fx-defeat':delayed?'fx-delay':'fx-count-'+(match===null?'pending':match);
+ const marks=Array.from({length:3},(_,i)=>'<span class="fx-seal '+(match!==null&&i<match?'fx-hit':'fx-empty')+'" aria-hidden="true">'+(match!==null&&i<match?'✦':'◇')+'</span>').join('');
+ const particles=Array.from({length:16},(_,i)=>'<i class="fx-particle" style="--j:'+i+';--angle:'+(i*22.5)+'deg" aria-hidden="true"></i>').join('');
+ return '<div class="result-fx '+stateClass+'" role="img" aria-label="'+esc(label)+'">'+
+  '<div class="fx-rays" aria-hidden="true"></div><div class="fx-particles" aria-hidden="true">'+particles+'</div>'+
+  '<div class="fx-dossier"><span class="fx-motto">'+(victory?'CASE SOLVED':defeat?'CASE UNRESOLVED':delayed?'SIGNAL LOST':'EVIDENCE REVEALED')+'</span>'+
+  '<strong class="fx-score">'+(victory?'✦':defeat?'✕':delayed?'⌛':String(match))+'</strong>'+
+  '<span class="fx-message">'+esc(label)+'</span>'+
+  (match!==null?'<div class="fx-seals">'+marks+'</div>':'')+
+  '</div></div>';
+}
 function hostDialog() {
  if(!hostScene)return '';
  const sc=hostScene;
- return `<div class="host-backdrop" role="dialog" aria-modal="true" aria-label="사회자 진행 연출"><div class="host-stage host-${esc(sc.kind||'round')}"><div class="host-stage-orbit" aria-hidden="true">✦</div><div class="host-orb" aria-hidden="true"><span class="host-emblem">${esc(sc.icon||'✦')}</span></div><div class="host-eyebrow">${esc(sc.eyebrow||'BLACK ROSE')}</div><div class="host-title">${esc(sc.title||'저택의 기록')}</div><div class="host-speaker"><span class="speaker-dot"></span>장미 저택의 사회자</div><p class="host-words">${esc(sc.body||'')}</p><p class="host-sub">${esc(sc.sub||'')}</p><div class="host-auto-progress" role="status"><span class="host-auto-pulse" aria-hidden="true"></span><span>${shouldNarrate(sc)?'짧은 결과 음성 · 최대 3초 · 종료 1초 후 자동 진행':'무음 연출 · 3초 후 자동 진행'}</span></div><div class="host-disclaimer">음성 재생이 차단된 기기에서는 자막을 보여준 뒤 자동으로 진행합니다.</div></div></div>`;
+ return `<div class="host-backdrop" role="dialog" aria-modal="true" aria-label="사회자 진행 연출"><div class="host-stage host-${esc(sc.kind||'round')}"><div class="host-stage-orbit" aria-hidden="true">✦</div><div class="host-orb" aria-hidden="true"><span class="host-emblem">${esc(sc.icon||'✦')}</span></div><div class="host-eyebrow">${esc(sc.eyebrow||'BLACK ROSE')}</div><div class="host-title">${esc(sc.title||'저택의 기록')}</div>${resultEffect(sc)}<div class="host-speaker"><span class="speaker-dot"></span>장미 저택의 사회자</div><p class="host-words">${esc(sc.body||'')}</p><p class="host-sub">${esc(sc.sub||'')}</p> </div></div>`;
 }
 
 function hostStrip() {
@@ -392,7 +427,7 @@ function submitProbe(){
  if(delayed){state.world.awaiting={round:state.round,match,chosen:[CHARACTERS[chosen.person].name,ROOMS[chosen.room][0],ITEMS[chosen.item]]};state.history.unshift(`R${state.round} 조사 접수 · 판정 결과는 다음 라운드 발표`);}
  else state.history.unshift(`R${state.round} 조사 · ${ROOMS[state.room][0]} · [${CHARACTERS[chosen.person].name} / ${ROOMS[chosen.room][0]} / ${ITEMS[chosen.item]}] → ${match}개 일치`);
  save();probePicks={person:-1,room:-1,item:-1};show('probeResult');
- showHost({voiceScope:'investigation',voicePhase:'result',kind:delayed?'warning':match===3?'reveal':'evidence',icon:delayed?'⌛':'◇',eyebrow:`R${state.round} · 조사 판정`,title:delayed?'발표 지연':match+'개 일치',body:delayed?'정체불명의 통신 교란으로 조사 판정 발표가 다음 라운드로 늦춰졌습니다. 입력한 조합은 보존됩니다.':`제출한 세 항목 중 정답과 일치하는 것은 ${match}개입니다. 어느 항목인지는 알려드릴 수 없습니다.`,sub:'발표가 지연되어도 정답 값은 바뀌지 않습니다.',action:'조사 결과 확인'});
+ showHost({voiceScope:'investigation',voicePhase:'result',kind:delayed?'warning':match===3?'reveal':'evidence',icon:delayed?'⌛':'◇',eyebrow:`R${state.round} · 조사 판정`,title:delayed?'발표 지연':match+'개 일치',effect:delayed?'delay':'count',matches:delayed?null:match,body:delayed?'정체불명의 통신 교란으로 조사 판정 발표가 다음 라운드로 늦춰졌습니다. 입력한 조합은 보존됩니다.':`제출한 세 항목 중 정답과 일치하는 것은 ${match}개입니다. 어느 항목인지는 알려드릴 수 없습니다.`,sub:'발표가 지연되어도 정답 값은 바뀌지 않습니다.',action:'조사 결과 확인'});
 }
 
 function accuse(){const locked=state.round<6;const attempted=state.lastAccuseRound===state.round;return `${summary()}${panel(`R${state.round} · 최종 추리`, `<p class="lead">R6부터 최종 지목할 수 있어요. 전체 최대 2번, 한 라운드에 1번만 가능하며 실패해도 다음 라운드에는 다시 도전할 수 있어요.</p>${selectField('누가?','person',CHARACTERS.map(c=>c.name))}${selectField('어디서?','room',ROOMS.map(r=>r[0]))}${selectField('무엇으로?','item',ITEMS)}${btn('세 항목으로 최종 지목','submit','button primary full',locked||attempted||state.fail>=2)}${locked?'<p class="hint">R1~R5에는 공식 최종 추리가 잠겨 있어요. R6부터 열려요.</p>':''}${attempted?'<p class="hint">이번 라운드에는 이미 추리했어요. 다음 라운드부터 다시 도전 가능해요.</p>':''}`)}<div class="notice">어떤 항목이 맞았는지는 알려주지 않아요. R12에는 반드시 최종 추리로 마무리해요.</div>${state.phase==='review'&&state.round<12?phaseAction():''}`}
@@ -404,9 +439,9 @@ function announceOpening(){
  const w=BRWorld.migrate(state);const ability=BRWorld.ABILITIES.find(a=>a.id===w.ability.type);
  showHost([{kind:'opening',icon:'❀',eyebrow:'PROLOGUE · 저택의 밤',title:'검은 장미의 비밀',body:`한밤중, 검은 장미 저택에서 수상한 사건이 일어났습니다. ${state.playerCharacter>=0?CHARACTERS[state.playerCharacter].name+'(이)가 수사자로 나섭니다.':'당신이 수사자로 나섭니다.'} 남은 다섯 인물 사이에 진실이 숨어 있죠.`,sub:'이 이야기는 모바일 독립판의 사건 도입입니다. 특정 인물을 범인으로 지목하지 않습니다.',action:'저택 안으로 들어가기'},{kind:'reveal',icon:'✦',eyebrow:'RANDOM ABILITY',title:'랜덤 능력 부여',body:`${CHARACTERS[state.playerCharacter]?.name||'수사자'}의 능력은 「${ability.name}」입니다. ${ability.desc}`,sub:'다른 NPC들도 개별 랜덤 능력을 부여받았으며, 범인은 남몰래 방해 능력을 발동합니다.',action:'능력 확인'},hostRoundScene(1)]);
 }
-function start(){selectedDestination=-1;suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
+function start(){pendingRoundActionFocus=false;selectedDestination=-1;suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
 function submit(){if(state.round<6||state.lastAccuseRound===state.round||state.fail>=2||state.ended)return;if(picks.person===state.playerCharacter||Object.values(picks).some(n=>n<0)){message='범인·장소·도구를 모두 골라주세요.';render();return}const match=['person','room','item'].filter(k=>picks[k]===state.answer[k]).length;state.lastAccuseRound=state.round;
-if(match===3){state.won=true;state.ended=true;state.history.unshift(`R${state.round} 최종 지목: 3개 일치, 사건 해결`);save();show('end');showHost({voiceScope:'deduction',voicePhase:'result',kind:'verdict',icon:'❀',eyebrow:`R${state.round} · 최종 판정`,title:'진실이 밝혀졌다',body:'세 항목이 모두 일치합니다. 장미의 밤을 뒤덮은 수수께끼가 풀렸습니다.',sub:'사건 해결 · 결말 화면에서 정답을 확인하세요.',action:'사건의 결말 보기'});return}state.fail++;state.history.unshift(`R${state.round} 최종 지목 실패 · 총 ${match}개 일치`);if(state.fail>=2||state.round===12){state.won=false;state.ended=true;save();show('end');showHost({voiceScope:'deduction',voicePhase:'result',kind:'danger',icon:'⌛',eyebrow:'최종 판정 · 실패',title:'진실은 어둠 속에',body:`최종 지목은 ${match}개만 일치했습니다. 더 이상 기회가 남지 않았습니다.`,sub:'수사 종료 · 결말 화면에서 정답을 확인하세요.',action:'결말 보기'});}else{message=`지목이 틀렸어요. 세 항목 중 ${match}개 일치했어요. 남은 기회는 1회입니다. 같은 라운드 재추리는 불가하며 다음 라운드부터 가능해요.`;save();render();showHost({voiceScope:'deduction',voicePhase:'result',kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 최종 추리 판정`,title:'아직 답이 아니다',body:`세 항목 중 정답과 일치한 것은 ${match}개. 하지만 어떤 항목이 틀렸는지는 공개되지 않습니다.`,sub:'다음 라운드부터 두 번째 최종 추리가 가능합니다.',action:'수사 계속하기'});}}
+if(match===3){state.won=true;state.ended=true;state.history.unshift(`R${state.round} 최종 지목: 3개 일치, 사건 해결`);save();show('end');showHost({voiceScope:'deduction',voicePhase:'result',kind:'verdict',icon:'❀',eyebrow:`R${state.round} · 최종 판정`,title:'진실이 밝혀졌다',effect:'victory',matches:3,body:'세 항목이 모두 일치합니다. 장미의 밤을 뒤덮은 수수께끼가 풀렸습니다.',sub:'사건 해결 · 결말 화면에서 정답을 확인하세요.',action:'사건의 결말 보기'});return}state.fail++;state.history.unshift(`R${state.round} 최종 지목 실패 · 총 ${match}개 일치`);if(state.fail>=2||state.round===12){state.won=false;state.ended=true;save();show('end');showHost({voiceScope:'deduction',voicePhase:'result',kind:'danger',icon:'⌛',eyebrow:'최종 판정 · 실패',title:'진실은 어둠 속에',effect:'defeat',matches:match,body:`최종 지목은 ${match}개만 일치했습니다. 더 이상 기회가 남지 않았습니다.`,sub:'수사 종료 · 결말 화면에서 정답을 확인하세요.',action:'결말 보기'});}else{message=`지목이 틀렸어요. 세 항목 중 ${match}개 일치했어요. 남은 기회는 1회입니다. 같은 라운드 재추리는 불가하며 다음 라운드부터 가능해요.`;save();render();showHost({voiceScope:'deduction',voicePhase:'result',kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 최종 추리 판정`,title:'아직 답이 아니다',effect:'wrong',matches:match,body:`세 항목 중 정답과 일치한 것은 ${match}개. 하지만 어떤 항목이 틀렸는지는 공개되지 않습니다.`,sub:'다음 라운드부터 두 번째 최종 추리가 가능합니다.',action:'수사 계속하기'});}}
 app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!el)return;const act=el.dataset.act;if(personDialog>=0){if(act==='person-close'){personDialog=-1;render();return}if(act==='person-probe'&&state.phase==='investigate'&&!state.ended&&personDialog!==state.playerCharacter){probePicks.person=personDialog;personDialog=-1;show('probe');return}return}if(hostScene)return;if(act==='new'){if(state.started&&!state.ended&&!confirm('진행 중인 사건을 지우고 새로 시작할까요?'))return;selectedAvatar=-1;show('choose');return}if(act==='choose-back'){show('home');return}if(act==='confirm-character'){start();return}if(act==='resume'){show('map');return}if(act==='submit'){submit();return}if(act==='open-probe'){if(state.phase==='investigate'){if(BRWorld.migrate(state).investigated>=3){message='가설 조사 최대 3회를 사용했어요. NPC 만남, 증거 조사, 특별 능력을 이용하세요.';render();return}const why=BRWorld.canInfo(state);if(why){message=why;render();return}show('probe')}else show('probeResult');return}
  if(act==='cancel-route'){selectedDestination=-1;render();return}
  if(act==='confirm-route'){
