@@ -138,20 +138,21 @@ const BRWorld = (function buildWorld(){
   state.history.unshift(`R${state.round} · ${state.room+1}번 방 특별 단서 · ${label} #${hint.id+1}은 정답 제외`);
   return {...res,kind:hint.kind,id:hint.id};
  }
- function interaction(state,npcId,action,weapon){
+ function interaction(state,npcId,action,weapon,suspectedRoom=state.room){
   const w=migrate(state),npc=w.npcs.find(x=>x.id===npcId);
   if(!npc||npc.room!==state.room)return {ok:false,message:"그 인물은 지금 같은 방에 없습니다. 지도에서 위치를 찾아 이동하세요."};
   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
   if(action==="suspect"){
    if(w.suspicions>=3)return {ok:false,message:"이번 사건의 의심 기회 3회를 모두 사용했어요."};
+   if(!Number.isInteger(suspectedRoom)||suspectedRoom<0||suspectedRoom>=9||!Number.isInteger(weapon)||weapon<0||weapon>=9)return {ok:false,message:"의심할 장소와 흉기를 각각 선택하세요."};
    const cards=[];
-   if(npc.hand.room===state.room)cards.push({kind:"room",id:npc.hand.room});
+   if(npc.hand.room===suspectedRoom)cards.push({kind:"room",id:npc.hand.room});
    if(npc.hand.item===weapon)cards.push({kind:"item",id:npc.hand.item});
    const found=cards.length?pick(cards):null;
    w.suspicions++;
-   const res=consumeInfo(state,found?"의심 성공 · 상대 손패 1장을 확인했습니다.":"의심 결과 · 해당하는 카드가 없었습니다.");
+   const res=consumeInfo(state,found?"의심 성공 · 상대가 보유한 장소/흉기 카드 중 1장을 확인했습니다.":"의심 결과 · 상대에게 선택한 장소/흉기 카드가 없었습니다.");
    if(found)w.clueRead.push({...found,via:"suspect",person:npc.id});
-   state.history.unshift(`R${state.round} · 같은 방 인물 의심 · ${found?found.kind+" 카드 #"+(found.id+1):"현재 장소/선택 도구 카드 없음"}`);
+   state.history.unshift(`R${state.round} · 인물 #${npc.id+1} 의심 [장소 #${suspectedRoom+1} / 흉기 #${weapon+1}] · ${found?found.kind+" 카드 #"+(found.id+1)+" 공개":"두 카드 모두 보유하지 않음"}`);
    return {...res,found,npc:npc.id};
   }
   if(action==="cooperate"){
