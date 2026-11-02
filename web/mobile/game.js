@@ -30,6 +30,8 @@ let hostScene=null;
 let personDialog=-1;
 let selectedAvatar=-1;
 let worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};
+let suspectTarget=-1;
+let suspectGuess={room:-1,item:-1};
 const app=document.getElementById('app');
 function freshState(started=true,playerCharacter=-1){const suspects=CHARACTERS.map((_,i)=>i).filter(i=>i!==playerCharacter);const caseState={started,ended:false,won:false,playerCharacter,answer:{person:suspects[Math.floor(Math.random()*suspects.length)],room:Math.floor(Math.random()*9),item:Math.floor(Math.random()*9)},spent:0,fail:0,room:0,round:1,phase:'investigate',lastAccuseRound:0,marked:{person:[],room:[],item:[]},history:[],lastInvestigation:null,seed:Date.now()};BRWorld.setup(caseState);return caseState;}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){console.warn('저장 불가',e)}}
@@ -205,7 +207,7 @@ function worldMap(){
  const destinations=ROOMS.map(([name],i)=>i!==state.room&&routeReachable(i)?esc(name):null).filter(Boolean);
  const routeHint='<p class="world-route">현재 이동 가능: '+(destinations.length?destinations.join(' · '):'이동력 없음 / 능력 이동 확인')+'</p>';
  const npcs=BRWorld.npcHere(state);
- const encounter=npcs.length?'<div class="encounter-grid">'+npcs.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><label class="segtitle">의심할 도구</label>'+worldSelect('weapon',ITEMS,worldChoice.weapon):'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 있는 방을 찾아 이동해야 의심·협조할 수 있습니다.</p>';
+ const encounter=npcs.length?'<div class="encounter-grid">'+npcs.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">‘의심’을 누르면 장소와 흉기를 각각 선택할 수 있어요.</p>':'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 있는 방을 찾아 이동해야 의심·협조할 수 있습니다.</p>';
  const special=w.hotspots.find(x=>x.room===state.room&&!x.used);
  const specialButton=special?btn('🔎 특별 단서 조사 · 행동 1회 소모','search-clue','button secondary full',state.phase!=='investigate'):'<p class="hint">이 방에 남은 특별 단서는 없습니다.</p>';
  const primary=state.phase==='review'?phaseAction():(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 단서, 능력으로 나머지 정보를 수집하세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
@@ -214,6 +216,31 @@ function worldMap(){
  panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${npcs.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
  worldAbility()+
  panel('특별 사건',`<div class="world-events"><div>🗝️ 열쇠 · ${w.key.taken?'획득 완료':state.round>=w.key.appears?ROOMS[w.key.room][0]+'에 출현':'R'+w.key.appears+'에 나타남'}</div><div>📦 비밀상자 · ${w.box.opened?'개봉 완료':state.round>=w.box.appears&&w.key.taken?ROOMS[w.box.room][0]+'에 출현':'열쇠 필요 / 이후 등장'}</div></div><p class="hint">🔎은 증거 조사, 🗝️는 열쇠, 📦은 비밀상자예요. 원하는 방까지 이동해서 직접 수집하세요.</p>`);
+}
+
+
+function suspicionSelect(kind, values){
+ const label=kind==='room'?'의심할 장소':'의심할 흉기';
+ return `<label class="segtitle" for="suspicion-${kind}">${label}</label><select id="suspicion-${kind}" data-suspicion-pick="${kind}"><option value="-1" ${suspectGuess[kind]===-1?'selected':''}>선택하세요</option>${values.map((v,i)=>`<option value="${i}" ${suspectGuess[kind]===i?'selected':''}>${esc(v)}</option>`).join('')}</select>`;
+}
+function suspicionScreen(){
+ const w=BRWorld.migrate(state),npc=w.npcs.find(n=>n.id===suspectTarget);
+ if(!npc||npc.room!==state.room)return `${summary()}${panel('의심할 인물을 찾을 수 없어요','<p class="lead">이 인물이 같은 방에 없어요. 저택 지도로 돌아가세요.</p>')}${btn('지도 돌아가기','cancel-suspicion','button secondary full')}`;
+ const c=CHARACTERS[npc.id];
+ return `${summary()}${panel('인물 의심 · 장소 + 흉기',`<div class="suspicion-person">${img(c,'suspicion-portrait')}<div><span class="eyebrow">SUSPECT</span><strong>${esc(c.name)}</strong><p>현재 ${esc(ROOMS[state.room][0])}에서 만났습니다.</p></div></div><p class="lead">이 인물이 보유한 장소 카드와 흉기 카드를 추측하세요. <b>의심 장소는 지금 서 있는 방이 아니어도 됩니다.</b></p>${suspicionSelect('room',ROOMS.map(r=>r[0]))}${suspicionSelect('item',ITEMS)}<p class="hint">두 카드 중 한 장 이상 맞으면, 상대가 보유한 카드 한 장만 공개합니다. 둘 다 틀리면 해당 카드가 없다고 알려줍니다. 성공·실패 모두 의심 1회와 이번 라운드 정보행동 1회를 사용합니다.</p>${btn('이 장소와 흉기로 의심하기','submit-suspicion','button primary full')}`)}${btn('취소 · 방으로 돌아가기','cancel-suspicion','button secondary full')}`;
+}
+function submitSuspicion(){
+ if(suspectGuess.room<0||suspectGuess.item<0){
+  message='의심할 장소와 흉기를 모두 선택해주세요.';render();return;
+ }
+ const npcId=suspectTarget, chosen={...suspectGuess};
+ const result=BRWorld.interaction(state,npcId,'suspect',chosen.item,chosen.room);
+ if(result.ok){
+  const card=result.found?clueTitle(result.found.kind,result.found.id):'두 카드 모두 없음';
+  state.history[0]=`R${state.round} · ${NPCName(npcId)} 의심 [${ROOMS[chosen.room][0]} / ${ITEMS[chosen.item]}] → ${card}`;
+  suspectTarget=-1;suspectGuess={room:-1,item:-1};
+ }
+ worldResult(result);
 }
 
 function worldResult(result){
@@ -261,16 +288,18 @@ function submitProbe(){
 function accuse(){const locked=state.round<6;const attempted=state.lastAccuseRound===state.round;return `${summary()}${panel(`R${state.round} · 최종 추리`, `<p class="lead">R6부터 최종 지목할 수 있어요. 전체 최대 2번, 한 라운드에 1번만 가능하며 실패해도 다음 라운드에는 다시 도전할 수 있어요.</p>${selectField('누가?','person',CHARACTERS.map(c=>c.name))}${selectField('어디서?','room',ROOMS.map(r=>r[0]))}${selectField('무엇으로?','item',ITEMS)}${btn('세 항목으로 최종 지목','submit','button primary full',locked||attempted||state.fail>=2)}${locked?'<p class="hint">R1~R5에는 공식 최종 추리가 잠겨 있어요. R6부터 열려요.</p>':''}${attempted?'<p class="hint">이번 라운드에는 이미 추리했어요. 다음 라운드부터 다시 도전 가능해요.</p>':''}`)}<div class="notice">어떤 항목이 맞았는지는 알려주지 않아요. R12에는 반드시 최종 추리로 마무리해요.</div>${state.phase==='review'&&state.round<12?phaseAction():''}`}
 function ending(){const p=CHARACTERS[state.answer.person],rn=ROOMS[state.answer.room][0],it=ITEMS[state.answer.item];return `<section class="panel hero"><div class="eyebrow">CASE CLOSED</div><h1 class="hero-title">${state.won?'진실을 밝혀냈다':'사건은 미궁 속으로'}</h1>${img(p)}<p class="hero-desc">${state.won?'모든 조각이 하나의 진실을 가리킨다.':'조사 기록은 남았지만, 마지막 기회를 잃었다.'}</p><div class="evidence" style="text-align:left"><b>범인</b> ${p.name}<br><b>장소</b> ${rn}<br><b>도구</b> ${it}</div><div class="sep"></div>${btn('새로운 사건 시작','new','button primary full')}<div style="height:9px"></div>${btn('조사 기록 보기','log','button secondary full')}</section>`}
 function navbar(){return `<nav class="bottomnav" aria-label="게임 메뉴">${[['map','⌂','저택'],['people','♙','인물'],['notes','▤','수첩'],['accuse','◆','추리']].map(([id,ico,txt])=>`<button class="navitem ${currentTab===id?'active':''}" data-act="tab:${id}"><span class="navico">${ico}</span>${txt}</button>`).join('')}</nav>`}
-function render(){if(!app)return;const title=header()+roundBar()+hostStrip();let body='';if(currentTab==='home')body=intro();else if(currentTab==='choose')body=chooseCharacter();else if(currentTab==='map')body=map();else if(currentTab==='people')body=people();else if(currentTab==='notes')body=notebook();else if(currentTab==='accuse')body=accuse();else if(currentTab==='probe')body=investigationForm();else if(currentTab==='probeResult')body=investigationResult();else if(currentTab==='end')body=ending();app.innerHTML=title+(message?`<div class="notice" role="status">${esc(message)}</div>`:'')+body+(state.started&&!state.ended?navbar():'')+hostDialog()+personDialogView();}
+function render(){if(!app)return;const title=header()+roundBar()+hostStrip();let body='';if(currentTab==='home')body=intro();else if(currentTab==='choose')body=chooseCharacter();else if(currentTab==='map')body=map();else if(currentTab==='suspect')body=suspicionScreen();else if(currentTab==='people')body=people();else if(currentTab==='notes')body=notebook();else if(currentTab==='accuse')body=accuse();else if(currentTab==='probe')body=investigationForm();else if(currentTab==='probeResult')body=investigationResult();else if(currentTab==='end')body=ending();app.innerHTML=title+(message?`<div class="notice" role="status">${esc(message)}</div>`:'')+body+(state.started&&!state.ended?navbar():'')+hostDialog()+personDialogView();}
 function show(tab){currentTab=tab;message='';render();window.scrollTo({top:0,behavior:'instant'})}
 function announceOpening(){
  const w=BRWorld.migrate(state);const ability=BRWorld.ABILITIES.find(a=>a.id===w.ability.type);
  showHost([{kind:'opening',icon:'❀',eyebrow:'PROLOGUE · 저택의 밤',title:'검은 장미의 비밀',body:`한밤중, 검은 장미 저택에서 수상한 사건이 일어났습니다. ${state.playerCharacter>=0?CHARACTERS[state.playerCharacter].name+'(이)가 수사자로 나섭니다.':'당신이 수사자로 나섭니다.'} 남은 다섯 인물 사이에 진실이 숨어 있죠.`,sub:'이 이야기는 모바일 독립판의 사건 도입입니다. 특정 인물을 범인으로 지목하지 않습니다.',action:'저택 안으로 들어가기'},{kind:'reveal',icon:'✦',eyebrow:'RANDOM ABILITY',title:'랜덤 능력 부여',body:`${CHARACTERS[state.playerCharacter]?.name||'수사자'}의 능력은 「${ability.name}」입니다. ${ability.desc}`,sub:'다른 NPC들도 개별 랜덤 능력을 부여받았으며, 범인은 남몰래 방해 능력을 발동합니다.',action:'능력 확인'},hostRoundScene(1)]);
 }
-function start(){worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
+function start(){suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
 function submit(){if(state.round<6||state.lastAccuseRound===state.round||state.fail>=2||state.ended)return;if(picks.person===state.playerCharacter||Object.values(picks).some(n=>n<0)){message='범인·장소·도구를 모두 골라주세요.';render();return}const match=['person','room','item'].filter(k=>picks[k]===state.answer[k]).length;state.lastAccuseRound=state.round;
 if(match===3){state.won=true;state.ended=true;state.history.unshift(`R${state.round} 최종 지목: 3개 일치, 사건 해결`);save();show('end');showHost({kind:'verdict',icon:'❀',eyebrow:`R${state.round} · 최종 판정`,title:'진실이 밝혀졌다',body:'세 항목이 모두 일치합니다. 장미의 밤을 뒤덮은 수수께끼가 풀렸습니다.',sub:'사건 해결 · 결말 화면에서 정답을 확인하세요.',action:'사건의 결말 보기'});return}state.fail++;state.history.unshift(`R${state.round} 최종 지목 실패 · 총 ${match}개 일치`);if(state.fail>=2||state.round===12){state.won=false;state.ended=true;save();show('end');showHost({kind:'danger',icon:'⌛',eyebrow:'최종 판정 · 실패',title:'진실은 어둠 속에',body:`최종 지목은 ${match}개만 일치했습니다. 더 이상 기회가 남지 않았습니다.`,sub:'수사 종료 · 결말 화면에서 정답을 확인하세요.',action:'결말 보기'});}else{message=`지목이 틀렸어요. 세 항목 중 ${match}개 일치했어요. 남은 기회는 1회입니다. 같은 라운드 재추리는 불가하며 다음 라운드부터 가능해요.`;save();render();showHost({kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 최종 추리 판정`,title:'아직 답이 아니다',body:`세 항목 중 정답과 일치한 것은 ${match}개. 하지만 어떤 항목이 틀렸는지는 공개되지 않습니다.`,sub:'다음 라운드부터 두 번째 최종 추리가 가능합니다.',action:'수사 계속하기'});}}
 app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!el)return;const act=el.dataset.act;if(personDialog>=0){if(act==='person-close'){personDialog=-1;render();return}if(act==='person-probe'&&state.phase==='investigate'&&!state.ended&&personDialog!==state.playerCharacter){probePicks.person=personDialog;personDialog=-1;show('probe');return}return}if(hostScene){if(act==='host-next'){nextHost();return}if(act==='host-skip'){nextHost(true);return}if(act==='host-voice'){voiceHost();return}return}if(act==='host-help'){showHost(currentHostScene());return}if(act==='new'){if(state.started&&!state.ended&&!confirm('진행 중인 사건을 지우고 새로 시작할까요?'))return;selectedAvatar=-1;show('choose');return}if(act==='choose-back'){show('home');return}if(act==='confirm-character'){start();return}if(act==='resume'){show('map');return}if(act==='submit'){submit();return}if(act==='open-probe'){if(state.phase==='investigate'){if(BRWorld.migrate(state).investigated>=3){message='가설 조사 최대 3회를 사용했어요. NPC 만남, 증거 조사, 특별 능력을 이용하세요.';render();return}const why=BRWorld.canInfo(state);if(why){message=why;render();return}show('probe')}else show('probeResult');return}
+ if(act==='cancel-suspicion'){suspectTarget=-1;suspectGuess={room:-1,item:-1};show('map');return}
+ if(act==='submit-suspicion'){submitSuspicion();return}
  if(act==='search-clue'){worldResult(BRWorld.searchEvidence(state));return}
  if(act==='pass-turn'){
   if(state.ended||state.phase!=='investigate')return;
@@ -285,11 +314,16 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   if(result.ok)save();
   render();return;
  }
- if(type==='suspect'||type==='cooperate'){
-  worldResult(BRWorld.interaction(state,Number(val),type==='suspect'?'suspect':'cooperate',worldChoice.weapon));return;
+ if(type==='suspect'){
+  const npcId=Number(val);
+  if(state.phase!=='investigate'||state.ended||!BRWorld.npcHere(state).some(n=>n.id===npcId)){message='지금은 해당 인물을 의심할 수 없어요.';render();return}
+  suspectTarget=npcId;suspectGuess={room:-1,item:-1};show('suspect');return;
  }
+ if(type==='cooperate'){worldResult(BRWorld.interaction(state,Number(val),'cooperate',worldChoice.weapon));return}
  if(type==='tab'){show(val);return}if(type==='person'){activePerson=+val;personDialog=activePerson;render();return}if(type==='mark'){markCandidate(val,Number(extra));return}});
 app.addEventListener('change',(e)=>{const el=e.target.closest('[data-pick]');if(el){const target=currentTab==='probe'?probePicks:picks;target[el.dataset.pick]=Number(el.value)}
+ const sp=e.target.closest('[data-suspicion-pick]');
+ if(sp){suspectGuess[sp.dataset.suspicionPick]=Number(sp.value)}
  const w=e.target.closest('[data-world-pick]');
  if(w){const k=w.dataset.worldPick;worldChoice[k]=k==='kind'?w.value:Number(w.value);if(k==='kind'){worldChoice.item=0;render()}}
 });
