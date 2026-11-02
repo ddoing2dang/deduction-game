@@ -313,9 +313,9 @@ function worldMap(){
  const infoBlocked=BRWorld.canInfo(state);
  const encounter=people.length?'<div class="encounter-grid">'+people.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',!!infoBlocked||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',!!infoBlocked||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">의심은 장소와 흉기를 각각 선택해 제출해요.</p>'+(infoBlocked?'<p class="world-alert">'+esc(infoBlocked)+' · 이 방에서 의심·협조를 사용할 수 없습니다.</p>':w.suspicions>=3&&w.cooperations>=1?'<p class="hint">이번 사건의 의심·협조 횟수를 모두 사용했어요.</p>':''):'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 표시된 방으로 연결 경로를 따라 이동하세요.</p>';
  const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">NPC를 만나 의심·협조하거나 확정 이벤트 장소로 이동해 정보를 얻으세요.</p>';
- const primary=state.phase==='review'?phaseAction():(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 능력, R7 과학수사로 정보를 더 모으세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
+ const primary=state.phase==='review'?'<p class="hint">이번 라운드 정보행동이 끝났어요. 지도 위의 다음 라운드 버튼으로 진행할 수 있어요.</p>':(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 능력, R7 과학수사로 정보를 더 모으세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
  const mode=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 능력 선택됨 · 목적지를 고르고 이동을 확정하세요.</div>':'';
- return summary()+worldNotice()+panel(`저택 이동 경로 · 남은 ${w.moveLeft}P`,
+ return summary()+(state.phase==='review'?'<div class="round-next-quick">'+phaseAction()+'</div>':'')+worldNotice()+panel(`저택 이동 경로 · 남은 ${w.moveLeft}P`,
  `<p class="hint">금색 연결선: 현재 방과 연결 · 밝은 방: 이동 가능 · 붉은 선: 잠금/고장난 문 · 청록 점선: 비밀통로 · 방 하나 통과 시 기본 1P.</p>${mode}<div class="mansion-graph"><svg class="map-connections" viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">${linkSvg}${passageSvg}${jumpLine}</svg><div class="graph-grid">${grid}</div></div>${routePreview}${routeHint}`)+
  panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${people.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
  worldAbility()+officialEventPanel();
@@ -338,6 +338,7 @@ function submitSuspicion(){
   message='의심할 장소와 흉기를 모두 선택해주세요.';render();return;
  }
  const npcId=suspectTarget, chosen={...suspectGuess};
+ if(BRWorld.canInfo(state)){message=BRWorld.canInfo(state);render();return;}
  const result=BRWorld.interaction(state,npcId,'suspect',chosen.item,chosen.room);
  if(result.ok){
   const card=result.found?clueTitle(result.found.kind,result.found.id):'두 카드 모두 없음';
@@ -435,13 +436,15 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   if(state.ended||BRWorld.migrate(state).suspicions>=3||!BRWorld.npcHere(state).some(n=>n.id===npcId)){message='의심 기회를 사용했거나 그 인물이 같은 방에 없어요.';render();return}
   suspectTarget=npcId;suspectGuess={room:-1,item:-1};show('suspect');return;
  }
- if(type==='cooperate'){worldResult(BRWorld.interaction(state,Number(val),'cooperate',worldChoice.weapon),'cooperation');return}
+ if(type==='cooperate'){const reason=BRWorld.canInfo(state);if(reason){message=reason;render();return}worldResult(BRWorld.interaction(state,Number(val),'cooperate',worldChoice.weapon),'cooperation');return}
  if(type==='tab'){show(val);return}if(type==='person'){activePerson=+val;personDialog=activePerson;render();return}if(type==='mark'){markCandidate(val,Number(extra));return}});
-app.addEventListener('change',(e)=>{const el=e.target.closest('[data-pick]');if(el){const target=currentTab==='probe'?probePicks:picks;target[el.dataset.pick]=Number(el.value)}
+function updateChoices(e){const el=e.target.closest('[data-pick]');if(el){const target=currentTab==='probe'?probePicks:picks;target[el.dataset.pick]=Number(el.value)}
  const sp=e.target.closest('[data-suspicion-pick]');
  if(sp){suspectGuess[sp.dataset.suspicionPick]=Number(sp.value)}
  const w=e.target.closest('[data-world-pick]');
  if(w){const k=w.dataset.worldPick;worldChoice[k]=k==='kind'?w.value:Number(w.value);if(k==='kind'){worldChoice.item=0;render()}}
-});
+}
+app.addEventListener('change',updateChoices);
+app.addEventListener('input',updateChoices);
 render();
 })();
