@@ -196,8 +196,14 @@ function playHostAutomatically(){
   voice.onend=finishAfterVoice;
   voice.onerror=fallbackToCaptions;
   window.speechSynthesis.speak(voice);
-  // Mobile browsers may refuse to start unattended speech. Don't hang forever.
-  scheduleHost(()=>{if(!started)fallbackToCaptions()},7000);
+  // A browser may refuse auto speech; after 3s, end the silent attempt and
+  // move to the next scene 1s later rather than waiting an extra 7–11 seconds.
+  scheduleHost(()=>{
+   if(!started&&token===hostVoiceToken&&!settled){
+    finishAfterVoice();
+    try{window.speechSynthesis.cancel()}catch(_){}
+   }
+  },3000);
  }catch(_){fallbackToCaptions()}
 }
 
