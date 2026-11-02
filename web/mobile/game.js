@@ -218,8 +218,8 @@ function worldMap(){
     const segment=[path[k-1],path[k]].sort((x,y)=>x-y).join('-');
     if(w.event?.kind==='lock'&&w.event.edge===segment||w.special?.activated&&w.special.type==='broken_door'&&state.round===w.special.round&&w.special.edge===segment)extra++;
   }
-  if(ab.type==='gate'&&ab.left>=extra)extra=0;
-  const cost=(worldChoice.mode==='detour'&&ab.type==='detour'&&ab.left>0&&hops===2?1:hops)+extra;
+  const gateDiscount=ab.type==='gate'&&ab.left>0?1:0;
+  const cost=Math.max(0,(worldChoice.mode==='detour'&&ab.type==='detour'&&ab.left>0&&hops===2?1:hops)+extra-gateDiscount);
   return cost<=w.moveLeft;
  };
  const grid=ROOMS.map(([name,emoji],i)=>'<button class="room world-room '+(state.room===i?'active':routeReachable(i)?'reachable':'not-reachable')+'" data-act="room:'+i+'" aria-label="'+esc(name)+'"><span class="symbol">'+emoji+'</span><span class="room-name">'+esc(name)+'</span><div class="npc-row">'+roomPlayers(i)+'</div>'+roomTokens(i)+'</button>').join('');
