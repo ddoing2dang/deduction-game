@@ -94,8 +94,9 @@ const BRWorld = (function buildWorld(){
   for(let i=1;i<path.length;i++)if(event?.kind==="lock"&&event.edge===edge(path[i-1],path[i]))extra++;
   let price=hops+extra;
   if(mode==="detour"&&ability.type==="detour"&&ability.left>0&&hops===2)price=1+extra;
-  if(extra>0&&ability.type==="gate"&&ability.left>=extra){price-=extra;ability.left-=extra;}
+  if(extra>0&&ability.type==="gate"&&ability.left>=extra){price-=extra;}
   if(price>w.moveLeft)return {ok:false,message:`이 방까지 ${price}P 필요해요. 현재 ${w.moveLeft}P 남았습니다. 연결된 가까운 방부터 이동하세요.`};
+  if(extra>0&&ability.type==="gate"&&ability.left>=extra)ability.left-=extra;
   if(mode==="detour"&&hops===2&&ability.type==="detour"&&ability.left>0)ability.left--;
   w.moveLeft-=price;
   w.prevRoom=state.room;state.room=to;
@@ -211,7 +212,7 @@ const BRWorld = (function buildWorld(){
    const steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
    for(let j=0;j<steps;j++){
     if(npc.trait==="stationary"&&Math.random()<.35)continue;
-    npc.room=pick(EDGES[npc.room]);
+    const from=npc.room;const options=npc.trait==="roamer"?EDGES[from].filter(room=>room!==npc.prevRoom):EDGES[from];npc.room=pick(options.length?options:EDGES[from]);npc.prevRoom=from;
    }
   }
   // Actual culprit can disrupt with hidden origin. Never identify the actor in UI.
