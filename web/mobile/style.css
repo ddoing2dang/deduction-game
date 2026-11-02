@@ -73,3 +73,22 @@
 @media(max-height:660px){.host-orb{width:74px;height:74px;margin:3px auto 12px}.host-emblem{font-size:38px}.host-stage{padding:16px 18px}.host-title{font-size:24px}.host-words{font-size:15px}.host-speaker{margin:10px 0 7px}}
 @media(max-width:360px){.host-stage{padding:16px 15px}.host-title{font-size:25px}.host-words{font-size:15px}.room-art{height:150px}.host-inline{gap:7px}.host-mini-icon{width:31px;height:31px;flex-basis:31px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Character conversations: preserve approved 2D portrait files */
+.person-backdrop{position:fixed;inset:0;z-index:110;display:flex;justify-content:center;align-items:center;padding:14px;background:linear-gradient(180deg,#120b16ed,#25152bef 50%,#0e0811f2);backdrop-filter:blur(13px);animation:backdrop-rise .25s both}
+.person-stage{width:min(100%,460px);max-height:calc(100dvh - 28px);overflow:auto;border:1px solid #a47b7e;border-radius:24px;background:radial-gradient(circle at 50% 35%,#55394e,#241724 67%,#1b131b);box-shadow:0 24px 100px #000a,inset 0 1px #fff3;padding:14px 17px 18px;animation:stage-reveal .35s both}
+.person-upper{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.person-chapter{font-size:10px;letter-spacing:.13em;color:#d9bfa1;font-weight:800}
+.person-close{border:1px solid #745a68;border-radius:10px;color:#f0d4da;background:#241722;cursor:pointer;width:35px;height:35px}
+.person-figure{height:min(38dvh,340px);min-height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;background:radial-gradient(ellipse at 50% 65%,#94747b48,transparent 67%)}
+.person-figure:after{content:"";height:26px;background:radial-gradient(ellipse at center,#110912b0,transparent 70%);width:65%;position:absolute;bottom:0;left:17.5%}
+.character-dialog-portrait{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 6px 17px #06030bbb);animation:character-arrive .45s ease both}
+.person-name{text-align:center;color:#fae0b9;font-size:26px;font-family:Georgia,serif;font-weight:800;margin:4px 0 12px}
+.person-quote{border:1px solid #9b6f82;background:#3b283a;border-radius:15px;padding:12px 18px;min-height:80px;display:flex;align-items:center;gap:7px;animation:dialog-line .5s .15s both}
+.person-quote p{margin:0;flex:1;color:#fff0f1;font-size:16px;line-height:1.7}
+.quote-mark{color:#e7bc8f;font-family:Georgia,serif;font-size:23px}
+.person-info{color:#d0b7c6;font-size:11px;line-height:1.65;margin:12px 0 14px}
+.person-dialog-actions{display:flex;flex-direction:column;gap:7px}
+.person-dialog-actions .button{min-height:47px}
+@keyframes character-arrive{from{opacity:.25;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
+@media(max-height:670px){.person-figure{height:min(32dvh,210px)}.person-quote p{font-size:14px}.person-stage{padding:12px 14px}}
