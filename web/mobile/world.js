@@ -10,7 +10,7 @@ const BRWorld = (function buildWorld(){
   {id:"analysis",name:"정보분석",charges:2,desc:"지정한 장소·흉기 카드의 배분 여부 확인 (2회, 정보행동 소비)"},
   {id:"return",name:"회귀",charges:2,desc:"바로 전에 방문한 방으로 순간 복귀 (2회)"},
   {id:"detour",name:"우회",charges:2,desc:"최대 두 연결을 1P에 통과 (2회)"},
-  {id:"gate",name:"문지기",charges:3,desc:"잠긴 연결의 추가 이동력 1P 무시 (3회)"}
+  {id:"gate",name:"문지기",charges:3,desc:"방 이동 시 기본 통행비 1P 면제 (3회). 잠금·고장난 문의 추가 비용은 유지"}
  ];
  const TRAITS=[
   {id:"swift",name:"신속",desc:"다음 라운드에 최대 세 칸 이동"},
