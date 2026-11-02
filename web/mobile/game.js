@@ -125,6 +125,27 @@ function advanceHost(){
  render();
  if(hostScene)playHostAutomatically();
 }
+function shortResultVoice(sc){
+ if(sc.voiceScope==="investigation"){
+  if(sc.title==="발표 지연")return "조사 결과가 지연됐습니다.";
+  const matched=String(sc.title||"").match(/[0-3]개/);
+  return matched?`조사 결과, ${matched[0]} 일치.`:"조사 결과를 확인하세요.";
+ }
+ if(sc.voiceScope==="suspicion"){
+  if(/획득한|카드.*확인|의심 성공/.test(sc.body||""))return "의심 결과, 카드 한 장 확인.";
+  return "의심 결과, 일치 카드 없음.";
+ }
+ if(sc.voiceScope==="cooperation"){
+  if(/거절/.test(sc.body||""))return "협조 요청을 거절했습니다.";
+  return "협조 성공, 카드 한 장 확인.";
+ }
+ if(sc.voiceScope==="deduction"){
+  if(sc.kind==="verdict")return "정답입니다. 사건 해결!";
+  if(sc.kind==="danger")return "추리 실패. 사건 종료.";
+  return "오답입니다. 다시 추리하세요.";
+ }
+ return "";
+}
 function playHostAutomatically(){
  if(!hostScene)return;
  const token=hostVoiceToken;
@@ -133,8 +154,8 @@ function playHostAutomatically(){
   scheduleHost(()=>{if(token===hostVoiceToken)advanceHost()},3000);
   return;
  }
- const line=[hostScene.title,hostScene.body].filter(Boolean).join('. ');
- const readDuration=Math.max(2400,Math.min(9000,line.length*115));
+ const line=shortResultVoice(hostScene);
+ const readDuration=3000; // no-speech fallback keeps results brief too
  let settled=false,started=false;
  function finishAfterVoice(){
   if(settled||token!==hostVoiceToken)return;
@@ -154,7 +175,7 @@ function playHostAutomatically(){
  try{
   const voice=new window.SpeechSynthesisUtterance(line);
   voice.lang='ko-KR';
-  voice.rate=.92;
+  voice.rate=1.07;
   voice.pitch=.92;
   voice.volume=1;
   const voices=typeof window.speechSynthesis.getVoices==='function'?window.speechSynthesis.getVoices():[];
@@ -164,8 +185,13 @@ function playHostAutomatically(){
   voice.onstart=()=>{
    if(token!==hostVoiceToken||settled)return;
    started=true;clearHostTimers();
-   // Watchdog for buggy devices where onend never arrives.
-   scheduleHost(fallbackToCaptions,Math.max(15000,Math.min(75000,line.length*530)));
+   // Cap slow TTS at three seconds, then keep the 1s transition.
+   // Settle before canceling so synchronous onerror cannot trigger fallback.
+   scheduleHost(()=>{
+    if(token!==hostVoiceToken||settled)return;
+    finishAfterVoice();
+    try{window.speechSynthesis.cancel()}catch(_){}
+   },3000);
   };
   voice.onend=finishAfterVoice;
   voice.onerror=fallbackToCaptions;
@@ -178,7 +204,7 @@ function playHostAutomatically(){
 function hostDialog() {
  if(!hostScene)return '';
  const sc=hostScene;
- return `<div class="host-backdrop" role="dialog" aria-modal="true" aria-label="사회자 진행 연출"><div class="host-stage host-${esc(sc.kind||'round')}"><div class="host-stage-orbit" aria-hidden="true">✦</div><div class="host-orb" aria-hidden="true"><span class="host-emblem">${esc(sc.icon||'✦')}</span></div><div class="host-eyebrow">${esc(sc.eyebrow||'BLACK ROSE')}</div><div class="host-title">${esc(sc.title||'저택의 기록')}</div><div class="host-speaker"><span class="speaker-dot"></span>장미 저택의 사회자</div><p class="host-words">${esc(sc.body||'')}</p><p class="host-sub">${esc(sc.sub||'')}</p><div class="host-auto-progress" role="status"><span class="host-auto-pulse" aria-hidden="true"></span><span>${shouldNarrate(sc)?'사회자 음성 재생 · 종료 1초 후 자동 진행':'무음 연출 · 3초 후 자동 진행'}</span></div><div class="host-disclaimer">음성 재생이 차단된 기기에서는 자막을 보여준 뒤 자동으로 진행합니다.</div></div></div>`;
+ return `<div class="host-backdrop" role="dialog" aria-modal="true" aria-label="사회자 진행 연출"><div class="host-stage host-${esc(sc.kind||'round')}"><div class="host-stage-orbit" aria-hidden="true">✦</div><div class="host-orb" aria-hidden="true"><span class="host-emblem">${esc(sc.icon||'✦')}</span></div><div class="host-eyebrow">${esc(sc.eyebrow||'BLACK ROSE')}</div><div class="host-title">${esc(sc.title||'저택의 기록')}</div><div class="host-speaker"><span class="speaker-dot"></span>장미 저택의 사회자</div><p class="host-words">${esc(sc.body||'')}</p><p class="host-sub">${esc(sc.sub||'')}</p><div class="host-auto-progress" role="status"><span class="host-auto-pulse" aria-hidden="true"></span><span>${shouldNarrate(sc)?'짧은 결과 음성 · 최대 3초 · 종료 1초 후 자동 진행':'무음 연출 · 3초 후 자동 진행'}</span></div><div class="host-disclaimer">음성 재생이 차단된 기기에서는 자막을 보여준 뒤 자동으로 진행합니다.</div></div></div>`;
 }
 
 function hostStrip() {
