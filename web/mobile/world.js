@@ -5,7 +5,7 @@ const BRWorld = (function buildWorld(){
  const ABILITIES=[
   {id:"dash",name:"질주",charges:3,desc:"이번 라운드 이동력 +1P (3회)"},
   {id:"jump",name:"도약",charges:1,desc:"원하는 방으로 즉시 이동 (1회)"},
-  {id:"trace",name:"추적",charges:2,desc:"다른 방의 NPC 보유 장소카드 1장 확인 (2회, 정보행동 소비)"},
+  {id:"trace",name:"추적",charges:3,desc:"다른 NPC가 있는 방으로 연결 이동할 때 기본 통행비 1P 면제 (3회). 비밀 카드는 열람하지 않음"},
   {id:"interrogate",name:"심문",charges:1,desc:"같은 방 인물의 현재 장소·선택 흉기 카드 YES/NO 확인 (1회, 정보행동 소비)"},
   {id:"analysis",name:"정보분석",charges:2,desc:"지정한 장소·흉기 카드의 배분 여부 확인 (2회, 정보행동 소비)"},
   {id:"return",name:"회귀",charges:2,desc:"바로 전에 방문한 방으로 순간 복귀 (2회)"},
@@ -116,8 +116,9 @@ const BRWorld = (function buildWorld(){
   if(ability.type!=="jump"||ability.left<=0)return {ok:false,reason:"ability",message:"도약 능력이 없거나 사용 횟수를 다 썼어요."};
   return {ok:true,path:[state.room,to],cost:0,hops:0,special:"jump",extra:0,message:"도약 능력으로 연결 없이 이동 (0P)"};
  }
- if(mode!=="walk"&&mode!=="detour")return {ok:false,reason:"ability",message:"이동 모드를 확인해주세요."};
+ if(mode!=="walk"&&mode!=="detour"&&mode!=="trace")return {ok:false,reason:"ability",message:"이동 모드를 확인해주세요."};
  if(mode==="detour"&&(ability.type!=="detour"||ability.left<=0))return {ok:false,reason:"ability",message:"우회 능력을 사용할 수 없어요."};
+ if(mode==="trace"&&(ability.type!=="trace"||ability.left<=0||!w.npcs.some(n=>n.room===to)))return {ok:false,reason:"ability",message:"추적은 다른 NPC가 있는 목적지 방으로 연결 이동할 때만 사용할 수 있어요."};
  const passage=w.special?.activated&&w.special.type==="secret_passage"&&state.round===w.special.round?w.special:null;
  const isExtra=(a,b)=>{
   const segment=edge(a,b);
@@ -130,9 +131,9 @@ const BRWorld = (function buildWorld(){
   if(room===to){
    const hops=path.length-1;
    const base=mode==="detour"&&hops===2?1:hops;
-   const waived=ability.type==="gate"&&ability.left>0?1:0;
+   const waived=(ability.type==="gate"&&ability.left>0||mode==="trace")?1:0;
    const cost=Math.max(0,base+extra-waived);
-   const candidate={path:path.slice(),cost,hops,extra,special:mode==="detour"&&hops===2?"detour":null,gateUsed:waived>0};
+   const candidate={path:path.slice(),cost,hops,extra,special:mode==="trace"?"trace":mode==="detour"&&hops===2?"detour":null,gateUsed:ability.type==="gate"&&waived>0};
    if(!best||candidate.cost<best.cost||candidate.cost===best.cost&&candidate.hops<best.hops)best=candidate;
    return;
   }
@@ -158,7 +159,7 @@ const BRWorld = (function buildWorld(){
  const w=migrate(state),ability=w.ability;
  if(info.special==="jump")ability.left--;
  else{
-  if(info.special==="detour")ability.left--;
+  if(info.special==="detour"||info.special==="trace")ability.left--;
   if(info.gateUsed)ability.left--;
   w.moveLeft-=info.cost;
  }
@@ -260,25 +261,19 @@ const BRWorld = (function buildWorld(){
    const here=state.room;state.room=w.prevRoom;w.prevRoom=here;w.prevRoomRound=state.round;
    return {ok:true,message:"회귀 발동! 이전 방으로 순간 이동. "+arrive(state)};
   }
-  if(ability.type==="trace"){
-   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
-   const npc=w.npcs.find(n=>n.id===target);
-   if(!npc)return {ok:false,message:"추적할 NPC를 선택하세요."};
-   ability.left--;const res=consumeInfo(state,"추적 · 지정한 인물의 장소 카드를 확인했습니다.");
-   const found={kind:"room",id:npc.hand.room,via:"trace",person:npc.id};
-   w.clueRead.push(found);state.history.unshift(`R${state.round} · 추적 · 장소 카드 #${found.id+1} 확인`);
-   return {...res,found};
-  }
   if(ability.type==="interrogate"){
    const reason=canInfo(state);if(reason)return {ok:false,message:reason};
    const npc=w.npcs.find(n=>n.id===target&&n.room===state.room);
    if(!npc)return {ok:false,message:"심문은 같은 방의 NPC에게만 가능합니다."};
    if(w.suspicions>=3)return {ok:false,message:"의심 횟수가 부족해 심문할 수 없어요."};
    ability.left--;w.suspicions++;
+   if(!Number.isInteger(itemId)||itemId<0||itemId>=9)return {ok:false,message:"심문할 흉기를 선택하세요."};
    const roomYes=npc.hand.room===state.room,itemYes=npc.hand.item===itemId;
+   const found=roomYes?{kind:"room",id:npc.hand.room}:itemYes?{kind:"item",id:npc.hand.item}:null;
    const res=consumeInfo(state,`심문 결과 · 현재 장소 카드 ${roomYes?"YES":"NO"} / 선택 도구 카드 ${itemYes?"YES":"NO"}`);
-   state.history.unshift(`R${state.round} · 심문 · 현재 장소 ${roomYes?"YES":"NO"}, 도구 #${itemId+1} ${itemYes?"YES":"NO"}`);
-   return res;
+   if(found)w.clueRead.push({...found,via:"interrogate",person:npc.id});
+   state.history.unshift(`R${state.round} · 심문 · 현재 장소 ${roomYes?"YES":"NO"}, 도구 #${itemId+1} ${itemYes?"YES":"NO"} ${found?"(카드 1장 확인)":""}`);
+   return {...res,found};
   }
   if(ability.type==="analysis"){
    const reason=canInfo(state);if(reason)return {ok:false,message:reason};
@@ -337,7 +332,7 @@ const BRWorld = (function buildWorld(){
     }else{
      let steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
      if((skill.type==="dash"||skill.type==="detour")&&skill.left>0&&Math.random()<.36){steps++;skill.left--;}
-     if(["trace","analysis","interrogate"].includes(skill.type)&&skill.left>0&&Math.random()<.36){
+     if(["analysis","interrogate"].includes(skill.type)&&skill.left>0&&Math.random()<.36){
       const others=w.npcs.filter(o=>o.id!==npc.id);
       if(others.length){const victim=pick(others),kind=Math.random()<.5?"room":"item";npc.intel.push({kind,id:victim.hand[kind]});skill.left--;}
      }
