@@ -163,7 +163,7 @@ function worldAbility(){
  let controls='';
  if(ab.id==='jump'||ab.id==='detour'){
   controls='<p class="hint">능력 이동 모드를 켜고 지도에서 목적지 방을 눌러주세요.</p>'+btn(worldChoice.mode===ab.id?'능력 이동 선택 중 · 끄기':'능력 이동 모드 켜기','ability-mode','button secondary full',c.left<=0);
- }else if(ab.id==='gate')controls='<p class="hint">잠긴 통로 이동 시 자동 발동하여 추가 이동력 소모를 막아요.</p>';
+ }else if(ab.id==='gate')controls='<p class="hint">이동 확정 시 기본 통행비 1P만 자동 면제됩니다. 잠금·고장난 문의 추가 통과 비용은 그대로 적용돼요.</p>';
  else if(ab.id==='trace'||ab.id==='interrogate'){
   const candidates=ab.id==='interrogate'?BRWorld.npcHere(state):w.npcs;
   controls='<label class="segtitle">능력 대상 인물</label><select data-world-pick="npc"><option value="-1">인물을 선택하세요</option>'+candidates.map(n=>'<option value="'+n.id+'" '+(worldChoice.npc===n.id?'selected':'')+'>'+esc(NPCName(n.id))+'</option>').join('')+'</select>';
