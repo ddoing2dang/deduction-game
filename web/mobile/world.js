@@ -63,7 +63,7 @@ const BRWorld = (function buildWorld(){
   const passage=pick(pairs);
   const special={type:extraType,round:extraRound,room:extraLocation,edge:extraEdge,from:passage[0],to:passage[1],activated:false};
   const ability=pick(ABILITIES);
-  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:2,lock:2,delay:2},key:{appears:2+rnd(4),room:pick(candidateRooms),taken:false,owner:null},box:{appears:null,room:null,opened:false,owner:null},special,forensic:{arrived:false,read:false,cards:{room:pick(roomCards.slice(6)),item:pick(itemCards.slice(6))}},clueRead:[],released:null};
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:1,lock:2,delay:2},key:{appears:2+rnd(4),room:pick(candidateRooms),taken:false,owner:null},box:{appears:null,room:null,opened:false,owner:null},special,forensic:{arrived:false,read:false,cards:{room:pick(roomCards.slice(6)),item:pick(itemCards.slice(6))}},clueRead:[],released:null};
   return state.world;
  }
  function migrate(state){
@@ -76,7 +76,7 @@ const BRWorld = (function buildWorld(){
   w.clueRead=w.clueRead.filter(c=>c.via!=="evidence");
   delete w.hotspots;
   if(!Array.isArray(w.eventLog))w.eventLog=[];
-  if(!w.sabotageUses)w.sabotageUses={smoke:2,lock:2,delay:2};
+  if(!w.sabotageUses)w.sabotageUses={smoke:1,lock:2,delay:2};
   if(!w.special){const a=rnd(9),b=pick(EDGES[a]);const pairs=[];for(let i=0;i<9;i++)for(let j=i+1;j<9;j++)if(!EDGES[i].includes(j))pairs.push([i,j]);const t=pick(["blackout","broken_door","secret_passage"]);const chosen=pick(pairs);w.special={type:t,round:Math.min(11,Math.max(6,state.round<11?state.round+1:11)),room:rnd(9),edge:edge(a,b),from:chosen[0],to:chosen[1],activated:false};}
   if(!w.forensic)w.forensic={arrived:state.round>=7,read:false,cards:{room:w.unassigned.room[rnd(w.unassigned.room.length)],item:w.unassigned.item[rnd(w.unassigned.item.length)]}};
   if(w.box.appears!=null&&w.key.taken&&w.box.appears<=w.key.acquiredRound&&state.round<w.box.appears)w.box.appears=Math.min(8,w.key.acquiredRound+1);
@@ -256,63 +256,87 @@ const BRWorld = (function buildWorld(){
  }
  function nextRound(state){
   const w=migrate(state);
-  w.released=w.awaiting;
+  const delayed=w.awaiting;
+  if(w.event?.kind==="delay"&&!delayed)w.sabotageUses.delay=Math.min(2,w.sabotageUses.delay+1);
+  w.released=delayed;
   w.awaiting=null;
-  w.moveLeft=2;
-  w.event=null;
-  for(const npc of w.npcs){
-   const skill=npc.ability;
-   if(skill.type==="jump"&&skill.left>0&&Math.random()<.22){
-    npc.prevRoom=npc.room;npc.room=rnd(9);skill.left--;continue;
-   }
-   if(skill.type==="return"&&skill.left>0&&Number.isInteger(npc.prevRoom)&&Math.random()<.20){
-    const from=npc.room;npc.room=npc.prevRoom;npc.prevRoom=from;skill.left--;continue;
-   }
-   let steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
-   if((skill.type==="dash"||skill.type==="detour")&&skill.left>0&&Math.random()<.36){steps++;skill.left--}
-   if(["trace","analysis","interrogate"].includes(skill.type)&&skill.left>0&&Math.random()<.36){
-    const others=w.npcs.filter(o=>o.id!==npc.id);
-    if(others.length){const victim=pick(others),kind=Math.random()<.5?"room":"item";npc.intel.push({kind,id:victim.hand[kind]});skill.left--}
-   }
-   for(let j=0;j<steps;j++){
-    if(npc.trait==="stationary"&&Math.random()<.35)continue;
-    const from=npc.room;const options=npc.trait==="roamer"?EDGES[from].filter(room=>room!==npc.prevRoom):EDGES[from];npc.room=pick(options.length?options:EDGES[from]);npc.prevRoom=from;
-   }
-  }
-  // Actual culprit can disrupt with hidden origin. Never identify the actor in UI.
-  if(state.round>=2&&state.round<=11&&Math.random()<.62&&Object.values(w.sabotageUses).some(n=>n>0)){
-   const types=["smoke","lock","delay"].filter(k=>w.sabotageUses[k]>0);
-   const kind=pick(types);
-   w.sabotageUses[kind]--;
-   if(kind==="smoke")w.event={kind,rooms:[pick(w.npcs).room]};
-   if(kind==="lock"){const a=rnd(9),b=pick(EDGES[a]);w.event={kind,edge:edge(a,b)};}
-   if(kind==="delay")w.event={kind};
-   w.eventLog.unshift(`R${state.round} · 출처 불명의 사건: ${kind==="smoke"?"연막":kind==="lock"?"문 잠금":"조사 결과 지연"}`);
-  }
+  w.moveLeft=2;w.event=null;
   const announce=[];
   if(w.released){
-   announce.push(`지난 R${w.released.round} 조사 결과가 도착했습니다: ${w.released.match}개 일치`);
-   state.history.unshift(`R${w.released.round} 지연된 조사 · [${w.released.chosen.join(" / ")}] → ${w.released.match}개 일치`);
+   const line="지난 R"+w.released.round+" 조사 결과: "+w.released.match+"개 일치";
+   announce.push(line);
+   state.history.unshift("R"+w.released.round+" · 지연된 조사 판정 공개: "+w.released.match+"개 일치");
   }
-  if(w.key.taken&&!w.box.opened&&state.round===w.box.appears)announce.push("비밀상자 출현! 지도에서 해당 방을 확인하세요.");
-  if(state.round===w.key.appears&&!w.key.taken)announce.push("낡은 열쇠가 저택 어딘가에 출현했어요.");
-  if(state.round===3||state.round===6||state.round===9||state.round===12){
-   const culprit=w.npcs.find(n=>n.id===state.answer.person);
-   if(culprit){
-    const others=shuffle(w.npcs.filter(n=>n.id!==culprit.id).map(n=>n.room));
-    const candidates=[culprit.room];
-    for(const room of others)if(!candidates.includes(room)&&candidates.length<4)candidates.push(room);
-    for(const room of shuffle(Array.from({length:9},(_,i)=>i)))if(!candidates.includes(room)&&candidates.length<4)candidates.push(room);
-    const regions=shuffle(candidates);
-    const names=["현관 홀","응접실","서재","식당","주방","침실","음악실","온실","지하 와인창고"];
-    w.witnesses.push({round:state.round,rooms:regions});
-    const clue="목격자 진술 · 이 라운드 시작 시 범인은 "+regions.map(i=>names[i]).join(" / ")+" 중 한 곳에 있었습니다.";
-    state.history.unshift("R"+state.round+" "+clue);
-    announce.push(clue+" 어느 인물인지는 알려주지 않습니다.");
+  if(state.round>=7&&!w.forensic.arrived){
+   w.forensic.arrived=true;
+   announce.push("과학수사 결과가 도착했습니다. 현관 홀(로비)에서 일반 정보행동 1회를 사용해 개인적으로 확인하세요.");
+  }
+  if(!w.special.activated&&state.round===w.special.round){
+   const sp=w.special;
+   sp.activated=true;
+   const names=["현관 홀","응접실","서재","식당","주방","침실","음악실","온실","지하 와인창고"];
+   const title={blackout:"정전",broken_door:"고장난 문",secret_passage:"비밀통로"}[sp.type];
+   const detail=sp.type==="blackout"?names[sp.room]+"에서 2라운드(R"+state.round+"~R"+(state.round+1)+") 이동 외 행동 불가":
+   sp.type==="broken_door"?names[Number(sp.edge.split("-")[0])]+" ↔ "+names[Number(sp.edge.split("-")[1])]+" 연결 1라운드 동안 통과비 +1P":
+   names[sp.from]+" ↔ "+names[sp.to]+" 1라운드 임시 연결(1P)";
+   const line="확정 특별이벤트: "+title+"! "+detail;
+   w.eventLog.unshift("R"+state.round+" · "+line);
+   announce.push(line);
+  }
+  for(const npc of w.npcs){
+   let target=null;
+   // An NPC may collect the key if they physically reach its room.
+   if(!w.key.taken&&state.round>=w.key.appears&&npc===w.npcs[0])target=w.key.room;
+   if(w.key.owner===npc.id&&w.box.appears!==null&&state.round>=w.box.appears&&!w.box.opened)target=w.box.room;
+   if(target!==null){
+    const path=pathBetween(npc.room,target);
+    if(path)for(let j=1;j<Math.min(path.length,3);j++){npc.prevRoom=npc.room;npc.room=path[j];}
+   }else{
+    const skill=npc.ability;
+    if(skill.type==="jump"&&skill.left>0&&Math.random()<.22){
+     npc.prevRoom=npc.room;npc.room=rnd(9);skill.left--;
+    }else if(skill.type==="return"&&skill.left>0&&Number.isInteger(npc.prevRoom)&&Math.random()<.20){
+     const from=npc.room;npc.room=npc.prevRoom;npc.prevRoom=from;skill.left--;
+    }else{
+     let steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
+     if((skill.type==="dash"||skill.type==="detour")&&skill.left>0&&Math.random()<.36){steps++;skill.left--;}
+     if(["trace","analysis","interrogate"].includes(skill.type)&&skill.left>0&&Math.random()<.36){
+      const others=w.npcs.filter(o=>o.id!==npc.id);
+      if(others.length){const victim=pick(others),kind=Math.random()<.5?"room":"item";npc.intel.push({kind,id:victim.hand[kind]});skill.left--;}
+     }
+     for(let j=0;j<steps;j++){
+      if(npc.trait==="stationary"&&Math.random()<.35)continue;
+      const from=npc.room;
+      const options=npc.trait==="roamer"?EDGES[from].filter(room=>room!==npc.prevRoom):EDGES[from];
+      npc.room=pick(options.length?options:EDGES[from]);npc.prevRoom=from;
+     }
+    }
+   }
+   if(!w.key.taken&&state.round>=w.key.appears&&npc.room===w.key.room)claimKey(state,npc.id);
+   if(w.key.owner===npc.id&&w.box.appears!==null&&state.round>=w.box.appears&&npc.room===w.box.room&&!w.box.opened){
+    w.box.opened=true;w.box.owner=npc.id;
+    w.eventLog.unshift("R"+state.round+" · 누군가 비밀상자를 개봉했습니다. 열람한 카드는 소유자에게만 공개됩니다.");
    }
   }
-  announce.push(arrive(state));
-  return announce.filter(Boolean);
+  // The culprit's abilities are independent of the single extra event from EVENTS.md.
+  if(state.round>=2&&state.round<=11&&Math.random()<.62&&Object.values(w.sabotageUses).some(n=>n>0)){
+   const types=["smoke","lock","delay"].filter(k=>w.sabotageUses[k]>0);
+   const kind=pick(types);w.sabotageUses[kind]--;
+   if(kind==="smoke"){
+    const blocked=w.special.type==="blackout"&&w.special.activated&&state.round>=w.special.round&&state.round<=w.special.round+1?[w.special.room]:[];
+    const places=shuffle(Array.from({length:9},(_,i)=>i).filter(i=>!blocked.includes(i)));
+    w.event={kind,rooms:places.slice(0,2)};
+   }
+   if(kind==="lock"){const a=rnd(9),b=pick(EDGES[a]);w.event={kind,edge:edge(a,b)};}
+   if(kind==="delay")w.event={kind};
+   w.eventLog.unshift("R"+state.round+" · 범인 능력: "+{smoke:"연막",lock:"잠금",delay:"교란"}[kind]);
+  }
+  if(state.round===w.key.appears)announce.push("낡은 열쇠 이벤트가 시작되었습니다. 열쇠를 발견한 인물만 소유 정보를 확인할 수 있습니다.");
+  if(w.box.appears!==null&&state.round===w.box.appears)announce.push("비밀상자가 나타났습니다. 열쇠 보유자만 열 수 있으며 카드 내용은 개인 정보입니다.");
+  const seen=arrive(state);
+  if(seen)announce.push(seen);
+  return announce;
  }
+
  return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,canInfo,consumeInfo,npcHere,travel,arrive,searchEvidence,interaction,useAbility,nextRound};
 })();
