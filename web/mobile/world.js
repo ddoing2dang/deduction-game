@@ -1,0 +1,238 @@
+/* Mobile solo mystery: game-world rules, AI residents and events. */
+const BRWorld = (function buildWorld(){
+ "use strict";
+ const EDGES=[[1,2,3],[0,5,6],[0,6,7],[0,4,5],[3,8],[1,3,6],[1,2,5,7],[2,6,8],[4,7]];
+ const ABILITIES=[
+  {id:"dash",name:"질주",charges:3,desc:"이번 라운드 이동력 +1P (3회)"},
+  {id:"jump",name:"도약",charges:1,desc:"원하는 방으로 즉시 이동 (1회)"},
+  {id:"trace",name:"추적",charges:2,desc:"다른 방의 NPC 보유 장소카드 1장 확인 (2회, 정보행동 소비)"},
+  {id:"interrogate",name:"심문",charges:1,desc:"같은 방 인물의 현재 장소·선택 흉기 카드 YES/NO 확인 (1회, 정보행동 소비)"},
+  {id:"analysis",name:"정보분석",charges:2,desc:"지정한 장소·흉기 카드의 배분 여부 확인 (2회, 정보행동 소비)"},
+  {id:"return",name:"회귀",charges:2,desc:"바로 전에 방문한 방으로 순간 복귀 (2회)"},
+  {id:"detour",name:"우회",charges:2,desc:"최대 두 연결을 1P에 통과 (2회)"},
+  {id:"gate",name:"문지기",charges:3,desc:"잠긴 연결의 추가 이동력 1P 무시 (3회)"}
+ ];
+ const TRAITS=[
+  {id:"swift",name:"신속",desc:"다음 라운드에 최대 세 칸 이동"},
+  {id:"helpful",name:"협조적",desc:"협조 요청을 반드시 수락"},
+  {id:"careful",name:"신중",desc:"협조 요청 수락 확률 낮음"},
+  {id:"stationary",name:"신중한 이동",desc:"자주 현재 방에 머무름"},
+  {id:"ordinary",name:"일반 이동",desc:"한두 칸 이동"},
+  {id:"roamer",name:"배회",desc:"새로운 방을 찾아 이동"}
+ ];
+ const rnd=n=>Math.floor(Math.random()*n);
+ const pick=arr=>arr[rnd(arr.length)];
+ const shuffle=arr=>{for(let i=arr.length-1;i>0;i--){let j=rnd(i+1);[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;};
+ const edge=(a,b)=>a<b?`${a}-${b}`:`${b}-${a}`;
+ function pathBetween(from,to,limit=8){
+  if(from===to)return [from];
+  const queue=[[from]],visited=new Set([from]);
+  while(queue.length){
+   const path=queue.shift(),last=path[path.length-1];
+   for(const next of EDGES[last]){
+    if(visited.has(next))continue;
+    const np=path.concat(next);
+    if(next===to)return np;
+    if(np.length<=limit){visited.add(next);queue.push(np);}
+   }
+  }
+  return null;
+ }
+ function setup(state){
+  if(state.world)return state.world;
+  const notAnswer=(kind,total)=>shuffle(Array.from({length:total},(_,i)=>i).filter(i=>i!==state.answer[kind]));
+  const roomCards=notAnswer("room",9),itemCards=notAnswer("item",9);
+  const all=Array.from({length:6},(_,i)=>({id:i,room:i===state.playerCharacter?0:rnd(9),trait:pick(TRAITS).id,hand:{room:roomCards[i],item:itemCards[i]}}));
+  const own=all.find(x=>x.id===state.playerCharacter);
+  const npcs=all.filter(x=>x.id!==state.playerCharacter);
+  // Legacy save may have no selected player. Support sentinel -1 by assigning a temporary card.
+  const owner=own?own.hand:{room:roomCards[0],item:itemCards[0]};
+  const candidateRooms=shuffle([1,2,3,4,5,6,7,8]);
+  const hotspotCards=shuffle([...roomCards.slice(1,6).map(i=>({kind:"room",id:i})),...itemCards.slice(1,6).map(i=>({kind:"item",id:i}))]);
+  const hotspots=candidateRooms.slice(0,3).map((room,i)=>({room,kind:hotspotCards[i].kind,id:hotspotCards[i].id,used:false}));
+  const ability=pick(ABILITIES);
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],released:null};
+  return state.world;
+ }
+ function migrate(state){
+  const w=setup(state);
+  if(!Number.isFinite(w.moveLeft))w.moveLeft=2;
+  if(!Array.isArray(w.clueRead))w.clueRead=[];
+  if(!Array.isArray(w.eventLog))w.eventLog=[];
+  return w;
+ }
+ function canInfo(state){
+  const w=migrate(state);
+  if(state.phase!=="investigate"||state.ended)return "이번 라운드 정보행동은 이미 끝났어요.";
+  if(w.event?.kind==="smoke"&&w.event.rooms.includes(state.room))return "연막이 가득한 방입니다. 다른 방으로 이동해야 정보행동을 할 수 있어요.";
+  return "";
+ }
+ function consumeInfo(state,summary){
+  const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+  state.spent++;
+  state.phase="review";
+  state.world.eventLog.unshift(`R${state.round} · ${summary}`);
+  return {ok:true,message:summary};
+ }
+ function npcHere(state){return migrate(state).npcs.filter(n=>n.room===state.room)}
+ function travel(state,to,mode="walk"){
+  const w=migrate(state);
+  if(state.ended)return {ok:false,message:"사건이 종료되었습니다."};
+  if(to===state.room)return {ok:false,message:"이미 그 방에 있어요."};
+  if(!Number.isInteger(to)||to<0||to>8)return {ok:false,message:"유효하지 않은 방입니다."};
+  const path=pathBetween(state.room,to);
+  if(!path)return {ok:false,message:"이동 경로가 없어요."};
+  const ability=w.ability;
+  if(mode==="jump"&&ability.type==="jump"&&ability.left>0){
+   ability.left--;w.prevRoom=state.room;state.room=to;
+   const found=arrive(state);
+   return {ok:true,message:`도약 능력 사용 · 목적지로 이동! ${found}`};
+  }
+  const hops=path.length-1;
+  const event=w.event;
+  let extra=0;
+  for(let i=1;i<path.length;i++)if(event?.kind==="lock"&&event.edge===edge(path[i-1],path[i]))extra++;
+  let price=hops+extra;
+  if(mode==="detour"&&ability.type==="detour"&&ability.left>0&&hops===2)price=1+extra;
+  if(extra>0&&ability.type==="gate"&&ability.left>=extra){price-=extra;ability.left-=extra;}
+  if(price>w.moveLeft)return {ok:false,message:`이 방까지 ${price}P 필요해요. 현재 ${w.moveLeft}P 남았습니다. 연결된 가까운 방부터 이동하세요.`};
+  if(mode==="detour"&&hops===2&&ability.type==="detour"&&ability.left>0)ability.left--;
+  w.moveLeft-=price;
+  w.prevRoom=state.room;state.room=to;
+  const found=arrive(state);
+  return {ok:true,message:`${hops}개 연결 이동 · ${price}P 사용, 남은 ${w.moveLeft}P. ${found}`};
+ }
+ function arrive(state){
+  const w=migrate(state),strings=[];
+  if(!w.key.taken&&state.round>=w.key.appears&&state.room===w.key.room){
+   w.key.taken=true;strings.push("낡은 열쇠 획득! 비밀상자를 찾아보세요.");
+   state.history.unshift(`R${state.round} · 비밀 열쇠를 찾았습니다. (소유 정보)`);
+  }
+  if(w.key.taken&&!w.box.opened&&state.round>=w.box.appears&&state.room===w.box.room){
+   w.box.opened=true;
+   const room=w.unassigned.room[0],item=w.unassigned.item[0];
+   w.clueRead.push({room:room,item:item,via:"secret"});
+   state.history.unshift(`R${state.round} · 비밀상자에서 미배분 장소/도구 카드 ${room+1}, ${item+1}를 확보`);
+   strings.push("비밀상자 개봉! 정답이 아닌 미배분 카드 두 장을 확인했습니다.");
+  }
+  return strings.join(" ");
+ }
+ function searchEvidence(state){
+  const w=migrate(state),hint=w.hotspots.find(x=>x.room===state.room&&!x.used);
+  if(!hint)return {ok:false,message:"이 방에 남은 특별 단서가 없어요."};
+  const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+  hint.used=true;
+  w.clueRead.push({kind:hint.kind,id:hint.id,via:"evidence"});
+  const label=hint.kind==="room"?"장소":"도구";
+  const res=consumeInfo(state,`${label} 카드 한 장이 사건의 정답이 아님을 확인했어요.`);
+  state.history.unshift(`R${state.round} · ${state.room+1}번 방 특별 단서 · ${label} #${hint.id+1}은 정답 제외`);
+  return {...res,kind:hint.kind,id:hint.id};
+ }
+ function interaction(state,npcId,action,weapon){
+  const w=migrate(state),npc=w.npcs.find(x=>x.id===npcId);
+  if(!npc||npc.room!==state.room)return {ok:false,message:"그 인물은 지금 같은 방에 없습니다. 지도에서 위치를 찾아 이동하세요."};
+  const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+  if(action==="suspect"){
+   if(w.suspicions>=3)return {ok:false,message:"이번 사건의 의심 기회 3회를 모두 사용했어요."};
+   const cards=[];
+   if(npc.hand.room===state.room)cards.push({kind:"room",id:npc.hand.room});
+   if(npc.hand.item===weapon)cards.push({kind:"item",id:npc.hand.item});
+   const found=cards.length?pick(cards):null;
+   w.suspicions++;
+   const res=consumeInfo(state,found?"의심 성공 · 상대 손패 1장을 확인했습니다.":"의심 결과 · 해당하는 카드가 없었습니다.");
+   if(found)w.clueRead.push({...found,via:"suspect",person:npc.id});
+   state.history.unshift(`R${state.round} · 같은 방 인물 의심 · ${found?found.kind+" 카드 #"+(found.id+1):"현재 장소/선택 도구 카드 없음"}`);
+   return {...res,found,npc:npc.id};
+  }
+  if(action==="cooperate"){
+   if(w.cooperations>=1)return {ok:false,message:"이번 사건의 협조 기회 1회를 모두 사용했어요."};
+   const trait=npc.trait;
+   const accept=trait==="helpful"||Math.random()<(trait==="careful"?.55:.83);
+   if(!accept)return {ok:false,message:"상대가 협조를 거절했어요. 행동권은 소모되지 않았습니다."};
+   w.cooperations++;
+   const found=Math.random()<.5?{kind:"room",id:npc.hand.room}:{kind:"item",id:npc.hand.item};
+   w.clueRead.push({...found,via:"cooperate",person:npc.id});
+   const res=consumeInfo(state,"협조 수락 · 상대가 보유한 카드 한 장을 보여주었습니다.");
+   state.history.unshift(`R${state.round} · 같은 방 협조 · ${found.kind} 카드 #${found.id+1} 확인`);
+   return {...res,found,npc:npc.id};
+  }
+  return {ok:false,message:"알 수 없는 행동입니다."};
+ }
+ function useAbility(state,target=-1,itemType="item",itemId=0){
+  const w=migrate(state),ability=w.ability;
+  if(ability.left<=0)return {ok:false,message:"능력 횟수를 모두 사용했습니다."};
+  if(ability.type==="dash"){
+   w.moveLeft++;ability.left--;return {ok:true,message:"질주! 이번 라운드 이동력 +1P."};
+  }
+  if(ability.type==="return"){
+   if(state.room===w.prevRoom)return {ok:false,message:"돌아갈 이전 방이 없어요."};
+   ability.left--;
+   const here=state.room;state.room=w.prevRoom;w.prevRoom=here;
+   return {ok:true,message:"회귀 발동! 이전 방으로 순간 이동. "+arrive(state)};
+  }
+  if(ability.type==="trace"){
+   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+   const npc=w.npcs.find(n=>n.id===target);
+   if(!npc)return {ok:false,message:"추적할 NPC를 선택하세요."};
+   ability.left--;const res=consumeInfo(state,"추적 · 지정한 인물의 장소 카드를 확인했습니다.");
+   const found={kind:"room",id:npc.hand.room,via:"trace",person:npc.id};
+   w.clueRead.push(found);state.history.unshift(`R${state.round} · 추적 · 장소 카드 #${found.id+1} 확인`);
+   return {...res,found};
+  }
+  if(ability.type==="interrogate"){
+   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+   const npc=w.npcs.find(n=>n.id===target&&n.room===state.room);
+   if(!npc)return {ok:false,message:"심문은 같은 방의 NPC에게만 가능합니다."};
+   if(w.suspicions>=3)return {ok:false,message:"의심 횟수가 부족해 심문할 수 없어요."};
+   ability.left--;w.suspicions++;
+   const roomYes=npc.hand.room===state.room,itemYes=npc.hand.item===itemId;
+   const res=consumeInfo(state,`심문 결과 · 현재 장소 카드 ${roomYes?"YES":"NO"} / 선택 도구 카드 ${itemYes?"YES":"NO"}`);
+   state.history.unshift(`R${state.round} · 심문 · 현재 장소 ${roomYes?"YES":"NO"}, 도구 #${itemId+1} ${itemYes?"YES":"NO"}`);
+   return res;
+  }
+  if(ability.type==="analysis"){
+   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
+   if(!["room","item"].includes(itemType)||!Number.isInteger(itemId)||itemId<0||itemId>8)return {ok:false,message:"분석할 카드를 고르세요."};
+   const distributed=w.npcs.some(n=>n.hand[itemType]===itemId)||w.ownHand[itemType]===itemId;
+   ability.left--;
+   const res=consumeInfo(state,`정보분석 · 해당 카드가 6인 손패에 배분되었는가? ${distributed?"YES":"NO"}`);
+   state.history.unshift(`R${state.round} · 정보분석 · ${itemType} 카드 #${itemId+1} 배분 ${distributed?"YES":"NO"}`);
+   return res;
+  }
+  return {ok:false,message:"이 능력은 이동할 방을 선택할 때 발동해요."};
+ }
+ function nextRound(state){
+  const w=migrate(state);
+  w.released=w.awaiting;
+  w.awaiting=null;
+  w.moveLeft=2;
+  w.event=null;
+  for(const npc of w.npcs){
+   const steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
+   for(let j=0;j<steps;j++){
+    if(npc.trait==="stationary"&&Math.random()<.35)continue;
+    npc.room=pick(EDGES[npc.room]);
+   }
+  }
+  // Actual culprit can disrupt with hidden origin. Never identify the actor in UI.
+  if(state.round>=2&&state.round<=11&&Math.random()<.62){
+   const types=["smoke","lock","delay"];
+   const kind=pick(types);
+   if(kind==="smoke")w.event={kind,rooms:[pick(w.npcs).room]};
+   if(kind==="lock"){const a=rnd(9),b=pick(EDGES[a]);w.event={kind,edge:edge(a,b)};}
+   if(kind==="delay")w.event={kind};
+   w.eventLog.unshift(`R${state.round} · 출처 불명의 사건: ${kind==="smoke"?"연막":kind==="lock"?"문 잠금":"조사 결과 지연"}`);
+  }
+  const announce=[];
+  if(w.released){
+   announce.push(`지난 R${w.released.round} 조사 결과가 도착했습니다: ${w.released.match}개 일치`);
+   state.history.unshift(`R${w.released.round} 지연된 조사 · [${w.released.chosen.join(" / ")}] → ${w.released.match}개 일치`);
+  }
+  if(w.key.taken&&!w.box.opened&&state.round===w.box.appears)announce.push("비밀상자 출현! 지도에서 해당 방을 확인하세요.");
+  if(state.round===w.key.appears&&!w.key.taken)announce.push("낡은 열쇠가 저택 어딘가에 출현했어요.");
+  if(state.round===3||state.round===6||state.round===9||state.round===12)announce.push("목격정보 발표 라운드 · 아래 NPC 이동 기록을 참고하세요. 정답 후보를 자동 확정하지는 않습니다.");
+  announce.push(arrive(state));
+  return announce.filter(Boolean);
+ }
+ return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,canInfo,consumeInfo,npcHere,travel,arrive,searchEvidence,interaction,useAbility,nextRound};
+})();
