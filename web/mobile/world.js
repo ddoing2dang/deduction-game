@@ -103,40 +103,71 @@ const BRWorld = (function buildWorld(){
   return {ok:true,message:summary};
  }
  function npcHere(state){return migrate(state).npcs.filter(n=>n.room===state.room)}
- function travel(state,to,mode="walk"){
-  const w=migrate(state);
-  if(state.ended)return {ok:false,message:"사건이 종료되었습니다."};
-  if(to===state.room)return {ok:false,message:"이미 그 방에 있어요."};
-  if(!Number.isInteger(to)||to<0||to>8)return {ok:false,message:"유효하지 않은 방입니다."};
-  const special=w.special?.activated&&w.special.type==="secret_passage"&&state.round===w.special.round?w.special:null;
-  const path=pathBetween(state.room,to,8,special);
-  if(!path)return {ok:false,message:"이동 경로가 없어요."};
-  const ability=w.ability;
-  if(mode==="jump"&&ability.type==="jump"&&ability.left>0){
-   ability.left--;w.prevRoom=state.room;state.room=to;
-   const found=arrive(state);
-   return {ok:true,message:`도약 능력 사용 · 목적지로 이동! ${found}`};
-  }
-  const hops=path.length-1;
-  const event=w.event;
-  let extra=0;
-  for(let i=1;i<path.length;i++){
-   const passageEdge=edge(path[i-1],path[i]);
-   const villainLock=event?.kind==="lock"&&event.edge===passageEdge;
-   const broken=w.special?.activated&&w.special.type==="broken_door"&&state.round===w.special.round&&w.special.edge===passageEdge;
-   if(villainLock||broken)extra++; // Never stack two +1P surcharges on the same edge.
-  }
-  let price=hops+extra;
-  if(mode==="detour"&&ability.type==="detour"&&ability.left>0&&hops===2)price=1+extra;
-  if(ability.type==="gate"&&ability.left>0){price=Math.max(0,price-1);} // Base cost waiver only; extra surcharge remains.
-  if(price>w.moveLeft)return {ok:false,message:`이 방까지 ${price}P 필요해요. 현재 ${w.moveLeft}P 남았습니다. 연결된 가까운 방부터 이동하세요.`};
-  if(ability.type==="gate"&&ability.left>0)ability.left--;
-  if(mode==="detour"&&hops===2&&ability.type==="detour"&&ability.left>0)ability.left--;
-  w.moveLeft-=price;
-  w.prevRoom=state.room;state.room=to;
-  const found=arrive(state);
-  return {ok:true,message:`${hops}개 연결 이동 · ${price}P 사용, 남은 ${w.moveLeft}P. ${found}`};
+ function routeInfo(state,to,mode="walk"){
+ const w=migrate(state);
+ if(state.ended)return {ok:false,reason:"ended",message:"사건이 종료되었습니다."};
+ if(!Number.isInteger(to)||to<0||to>=EDGES.length)return {ok:false,reason:"invalid",message:"유효하지 않은 방입니다."};
+ if(to===state.room)return {ok:false,reason:"same",path:[state.room],message:"현재 위치입니다."};
+ const ability=w.ability;
+ if(mode==="jump"){
+  if(ability.type!=="jump"||ability.left<=0)return {ok:false,reason:"ability",message:"도약 능력이 없거나 사용 횟수를 다 썼어요."};
+  return {ok:true,path:[state.room,to],cost:0,hops:0,special:"jump",extra:0,message:"도약 능력으로 연결 없이 이동 (0P)"};
  }
+ if(mode!=="walk"&&mode!=="detour")return {ok:false,reason:"ability",message:"이동 모드를 확인해주세요."};
+ if(mode==="detour"&&(ability.type!=="detour"||ability.left<=0))return {ok:false,reason:"ability",message:"우회 능력을 사용할 수 없어요."};
+ const passage=w.special?.activated&&w.special.type==="secret_passage"&&state.round===w.special.round?w.special:null;
+ const isExtra=(a,b)=>{
+  const segment=edge(a,b);
+  const locked=w.event?.kind==="lock"&&w.event.edge===segment;
+  const broken=w.special?.activated&&w.special.type==="broken_door"&&state.round===w.special.round&&w.special.edge===segment;
+  return locked||broken?1:0;
+ };
+ let best=null;
+ function visit(room,path,visited,extra){
+  if(room===to){
+   const hops=path.length-1;
+   const base=mode==="detour"&&hops===2?1:hops;
+   const waived=ability.type==="gate"&&ability.left>0?1:0;
+   const cost=Math.max(0,base+extra-waived);
+   const candidate={path:path.slice(),cost,hops,extra,special:mode==="detour"&&hops===2?"detour":null,gateUsed:waived>0};
+   if(!best||candidate.cost<best.cost||candidate.cost===best.cost&&candidate.hops<best.hops)best=candidate;
+   return;
+  }
+  if(path.length>=EDGES.length)return;
+  const neighbors=EDGES[room].slice();
+  if(passage){if(room===passage.from)neighbors.push(passage.to);else if(room===passage.to)neighbors.push(passage.from);}
+  for(const next of neighbors){
+   if(visited.has(next))continue;
+   visited.add(next);path.push(next);
+   visit(next,path,visited,extra+isExtra(room,next));
+   path.pop();visited.delete(next);
+  }
+ }
+ visit(state.room,[state.room],new Set([state.room]),0);
+ if(!best)return {ok:false,reason:"disconnected",message:"연결된 이동 경로가 없습니다."};
+ return {...best,ok:best.cost<=w.moveLeft,
+   reason:best.cost<=w.moveLeft?null:"points",
+   message:best.cost<=w.moveLeft?"연결된 이동 경로 확인":`이 경로는 ${best.cost}P가 필요해요. 현재 ${w.moveLeft}P 남았습니다.`};
+}
+ function travel(state,to,mode="walk"){
+ const info=routeInfo(state,to,mode);
+ if(!info.ok)return {ok:false,message:info.message,route:info};
+ const w=migrate(state),ability=w.ability;
+ if(info.special==="jump")ability.left--;
+ else{
+  if(info.special==="detour")ability.left--;
+  if(info.gateUsed)ability.left--;
+  w.moveLeft-=info.cost;
+ }
+ for(const step of info.path.slice(1)){
+  w.prevRoom=state.room;state.room=step;arrive(state);
+ }
+ const names=["현관 홀","응접실","서재","식당","주방","침실","음악실","온실","지하 와인창고"];
+ const route=info.path.map(id=>names[id]).join(" → ");
+ state.history.unshift(`R${state.round} 이동 · ${route} (${info.cost}P)`);
+ return {ok:true,route:info,message:`이동 완료: ${route} · ${info.cost}P 사용, 남은 ${w.moveLeft}P.`};
+}
+
  function claimKey(state,owner){
   const w=migrate(state);
   if(w.key.taken||state.round<w.key.appears)return "";
@@ -337,5 +368,5 @@ const BRWorld = (function buildWorld(){
   return announce;
  }
 
- return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,canInfo,consumeInfo,npcHere,travel,arrive,checkForensic,interaction,useAbility,nextRound};
+ return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,routeInfo,canInfo,consumeInfo,npcHere,travel,arrive,checkForensic,interaction,useAbility,nextRound};
 })();
