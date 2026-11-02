@@ -51,13 +51,14 @@ const BRWorld = (function buildWorld(){
   const hotspotCards=shuffle([...roomCards.slice(1,6).map(i=>({kind:"room",id:i})),...itemCards.slice(1,6).map(i=>({kind:"item",id:i}))]);
   const hotspots=candidateRooms.slice(0,3).map((room,i)=>({room,kind:hotspotCards[i].kind,id:hotspotCards[i].id,used:false}));
   const ability=pick(ABILITIES);
-  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],released:null};
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],witnesses:[],released:null};
   return state.world;
  }
  function migrate(state){
   const w=setup(state);
   if(!Number.isFinite(w.moveLeft))w.moveLeft=2;
   if(!Array.isArray(w.clueRead))w.clueRead=[];
+  if(!Array.isArray(w.witnesses))w.witnesses=[];
   if(!Array.isArray(w.eventLog))w.eventLog=[];
   return w;
  }
@@ -231,7 +232,21 @@ const BRWorld = (function buildWorld(){
   }
   if(w.key.taken&&!w.box.opened&&state.round===w.box.appears)announce.push("비밀상자 출현! 지도에서 해당 방을 확인하세요.");
   if(state.round===w.key.appears&&!w.key.taken)announce.push("낡은 열쇠가 저택 어딘가에 출현했어요.");
-  if(state.round===3||state.round===6||state.round===9||state.round===12)announce.push("목격정보 발표 라운드 · 아래 NPC 이동 기록을 참고하세요. 정답 후보를 자동 확정하지는 않습니다.");
+  if(state.round===3||state.round===6||state.round===9||state.round===12){
+   const culprit=w.npcs.find(n=>n.id===state.answer.person);
+   if(culprit){
+    const others=shuffle(w.npcs.filter(n=>n.id!==culprit.id).map(n=>n.room));
+    const candidates=[culprit.room];
+    for(const room of others)if(!candidates.includes(room)&&candidates.length<4)candidates.push(room);
+    for(const room of shuffle(Array.from({length:9},(_,i)=>i)))if(!candidates.includes(room)&&candidates.length<4)candidates.push(room);
+    const regions=shuffle(candidates);
+    const names=["현관 홀","응접실","서재","식당","주방","침실","음악실","온실","지하 와인창고"];
+    w.witnesses.push({round:state.round,rooms:regions});
+    const clue="목격자 진술 · 이 라운드 시작 시 범인은 "+regions.map(i=>names[i]).join(" / ")+" 중 한 곳에 있었습니다.";
+    state.history.unshift("R"+state.round+" "+clue);
+    announce.push(clue+" 어느 인물인지는 알려주지 않습니다.");
+   }
+  }
   announce.push(arrive(state));
   return announce.filter(Boolean);
  }
