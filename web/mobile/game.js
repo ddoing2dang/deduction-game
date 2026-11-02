@@ -232,7 +232,7 @@ function worldAbility(){
  const base='<div class="world-ability-head"><span>✦ 랜덤 능력</span><b>'+esc(ab.name)+'</b><span>남은 '+c.left+'회</span></div><p class="hint">'+esc(ab.desc)+'</p>'+(ab.id==='dash'&&w.dashUsedRound===state.round?'<p class="hint">이번 라운드 질주는 이미 사용했어요.</p>':'');
  let controls='';
  if(ab.id==='jump'||ab.id==='detour'||ab.id==='trace'){
-  controls='<p class="hint">능력 이동 모드를 켜고 지도에서 목적지 방을 눌러주세요.</p>'+btn(worldChoice.mode===ab.id?'능력 이동 선택 중 · 끄기':'능력 이동 모드 켜기','ability-mode','button secondary full',c.left<=0);
+  controls='<p class="hint">능력 이동 모드를 켜고 지도에서 목적지 방을 눌러주세요.</p>'+btn(worldChoice.mode===ab.id?'능력 이동 선택 중 · 끄기':'능력 이동 모드 켜기','ability-mode','button secondary full',c.left<=0||state.phase!=='investigate');
  }else if(ab.id==='gate')controls='<p class="hint">이동 확정 시 기본 통행비 1P만 자동 면제됩니다. 잠금·고장난 문의 추가 통과 비용은 그대로 적용돼요.</p>';
  else if(ab.id==='interrogate'){
   const candidates=ab.id==='interrogate'?BRWorld.npcHere(state):w.npcs;
@@ -426,7 +426,7 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   state.history.unshift(`R${state.round} · 정보행동 없이 턴 종료`);
   save();currentTab='map';message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';showHost({kind:'round',icon:'◇',eyebrow:`R${state.round} · 라운드 정산`,title:'이번 라운드 종료',body:'정보행동 없이 이번 라운드를 종료했습니다. 수첩을 확인한 뒤 다음 라운드로 넘어가세요.'});return;
  }
- if(act==='ability-mode'){const ab=abilityDef();if(state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;selectedDestination=-1;render()}return}
+ if(act==='ability-mode'){const ab=abilityDef();if(state.phase==='investigate'&&state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;selectedDestination=-1;render()}return}
  if(act==='ability-use'){worldResult(BRWorld.useAbility(state,worldChoice.npc,worldChoice.kind,abilityDef().id==='interrogate'?worldChoice.weapon:worldChoice.item));return}if(act==='next-round'){nextRound();return}if(act==='open-accuse'){show('accuse');return}if(act==='submit-probe'){submitProbe();return}if(act==='back-map'){show('map');return}if(act==='open-notes'){show('notes');return}if(act==='log'){show('notes');return}const [type,val,extra]=act.split(':');if(type==='choose'){const n=Number(val);if(currentTab==='choose'&&Number.isInteger(n)&&n>=0&&n<6){selectedAvatar=n;message='';render()}return}if(type==='room'){
   const destination=Number(val);
   const route=BRWorld.routeInfo(state,destination,worldChoice.mode);
