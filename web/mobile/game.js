@@ -229,12 +229,12 @@ function worldNotice(){
 
 function worldAbility(){
  const w=BRWorld.migrate(state),ab=abilityDef(),c=w.ability;
- const base='<div class="world-ability-head"><span>✦ 랜덤 능력</span><b>'+esc(ab.name)+'</b><span>남은 '+c.left+'회</span></div><p class="hint">'+esc(ab.desc)+'</p>';
+ const base='<div class="world-ability-head"><span>✦ 랜덤 능력</span><b>'+esc(ab.name)+'</b><span>남은 '+c.left+'회</span></div><p class="hint">'+esc(ab.desc)+'</p>'+(ab.id==='dash'&&w.dashUsedRound===state.round?'<p class="hint">이번 라운드 질주는 이미 사용했어요.</p>':'');
  let controls='';
- if(ab.id==='jump'||ab.id==='detour'){
+ if(ab.id==='jump'||ab.id==='detour'||ab.id==='trace'){
   controls='<p class="hint">능력 이동 모드를 켜고 지도에서 목적지 방을 눌러주세요.</p>'+btn(worldChoice.mode===ab.id?'능력 이동 선택 중 · 끄기':'능력 이동 모드 켜기','ability-mode','button secondary full',c.left<=0);
  }else if(ab.id==='gate')controls='<p class="hint">이동 확정 시 기본 통행비 1P만 자동 면제됩니다. 잠금·고장난 문의 추가 통과 비용은 그대로 적용돼요.</p>';
- else if(ab.id==='trace'||ab.id==='interrogate'){
+ else if(ab.id==='interrogate'){
   const candidates=ab.id==='interrogate'?BRWorld.npcHere(state):w.npcs;
   controls='<label class="segtitle">능력 대상 인물</label><select data-world-pick="npc"><option value="-1">인물을 선택하세요</option>'+candidates.map(n=>'<option value="'+n.id+'" '+(worldChoice.npc===n.id?'selected':'')+'>'+esc(NPCName(n.id))+'</option>').join('')+'</select>';
   if(ab.id==='interrogate')controls+='<label class="segtitle">심문할 도구</label>'+worldSelect('weapon',ITEMS,worldChoice.weapon);
@@ -243,7 +243,7 @@ function worldAbility(){
   controls='<label class="segtitle">분석 카드 종류</label><select data-world-pick="kind"><option value="room" '+(worldChoice.kind==='room'?'selected':'')+'>장소 카드</option><option value="item" '+(worldChoice.kind==='item'?'selected':'')+'>도구 카드</option></select>';
   controls+='<label class="segtitle">분석할 카드</label>'+worldSelect('item',worldChoice.kind==='room'?ROOMS.map(x=>x[0]):ITEMS,worldChoice.item);
   controls+=btn('배분 여부 분석하기','ability-use','button secondary full',c.left<=0||state.phase!=='investigate');
- }else controls=btn('「'+ab.name+'」 능력 사용','ability-use','button secondary full',c.left<=0||ab.id==='return'&&state.room===w.prevRoom);
+ }else controls=btn('「'+ab.name+'」 능력 사용','ability-use','button secondary full',c.left<=0||state.phase!=='investigate'||ab.id==='dash'&&w.dashUsedRound===state.round||ab.id==='return'&&(w.prevRoomRound<state.round-2||w.prevRoomRound<1||state.room===w.prevRoom));
  return panel('나의 특별 능력',base+controls);
 }
 
@@ -255,7 +255,8 @@ function roomPlayers(room){
 function roomTokens(i){
  const w=BRWorld.migrate(state);
  const box=w.box.appears!==null&&state.round>=w.box.appears&&!w.box.opened&&w.box.room===i;
- return '<div class="world-room-tokens">'+(box?'📦':'')+'</div>';
+ const key=state.round>=w.key.appears&&!w.key.taken&&w.key.room===i;
+ return '<div class="world-room-tokens">'+(key?'🗝️ ':'')+(box?'📦':'')+'</div>';
 }
 function officialEventPanel(){
  const w=BRWorld.migrate(state),sp=w.special;
@@ -267,7 +268,7 @@ function officialEventPanel(){
   if(sp.type==='broken_door'&&state.round===sp.round)active='🚪 고장난 문 · '+sp.edge.split('-').map(x=>roomNames[Number(x)]).join(' ↔ ')+' 통과비 +1P';
   if(sp.type==='secret_passage'&&state.round===sp.round)active='🕳️ 비밀통로 · '+roomNames[sp.from]+' ↔ '+roomNames[sp.to]+' 1P 임시 이동';
  }
- const keyText=w.key.owner==='player'?'내가 열쇠 보유 중':w.key.taken?'누군가 발견함 (소유 비공개)':state.round>=w.key.appears?'열쇠 수색 중':'R'+w.key.appears+'에 등장';
+ const keyText=w.key.owner==='player'?'내가 열쇠 보유 중':w.key.taken?'누군가 발견함 (소유 비공개)':state.round>=w.key.appears?ROOMS[w.key.room][0]+'에 열쇠 출현 · 획득자는 비공개':'R'+w.key.appears+'에 등장';
  const boxText=w.box.opened?'개봉됨 (열람자는 비공개)':w.box.appears!==null&&state.round>=w.box.appears?roomNames[w.box.room]+'에 등장':w.box.appears!==null?'R'+w.box.appears+'에 등장':'열쇠를 찾은 뒤 후속 라운드에 등장';
  const science=w.forensic;
  const scienceText=science.read?'결과 확인 완료 · 수첩에 개인 기록됨':state.round>=7?'도착 · 현관 홀(로비)에서 확인 가능':'R7 시작에 결과 도착';
@@ -317,7 +318,7 @@ function worldMap(){
  const encounter=people.length?'<div class="encounter-grid">'+people.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',!!infoBlocked||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',!!infoBlocked||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">의심은 장소와 흉기를 각각 선택해 제출해요.</p>'+(infoBlocked?'<p class="world-alert">'+esc(infoBlocked)+' · 이 방에서 의심·협조를 사용할 수 없습니다.</p>':w.suspicions>=3&&w.cooperations>=1?'<p class="hint">이번 사건의 의심·협조 횟수를 모두 사용했어요.</p>':''):'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 표시된 방으로 연결 경로를 따라 이동하세요.</p>';
  const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">NPC를 만나 의심·협조하거나 확정 이벤트 장소로 이동해 정보를 얻으세요.</p>';
  const primary=state.phase==='review'?'<p class="hint">이번 라운드 정보행동이 끝났어요. 지도 위의 다음 라운드 버튼으로 진행할 수 있어요.</p>':(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 능력, R7 과학수사로 정보를 더 모으세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
- const mode=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 능력 선택됨 · 목적지를 고르고 이동을 확정하세요.</div>':'';
+ const mode=worldChoice.mode!=='walk'?'<div class="notice">✦ '+({jump:'도약',detour:'우회',trace:'추적'}[worldChoice.mode]||'특수 이동')+' 능력 선택됨 · 목적지를 고르고 이동을 확정하세요.</div>':'';
  return summary()+(state.phase==='review'?'<div class="round-next-quick">'+phaseAction()+'</div>':'')+worldNotice()+panel(`저택 이동 경로 · 남은 ${w.moveLeft}P`,
  `<p class="hint">금색 연결선: 현재 방과 연결 · 밝은 방: 이동 가능 · 붉은 선: 잠금/고장난 문 · 청록 점선: 비밀통로 · 방 하나 통과 시 기본 1P.</p>${mode}<div class="mansion-graph"><svg class="map-connections" viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">${linkSvg}${passageSvg}${jumpLine}</svg><div class="graph-grid">${grid}</div></div>${routePreview}${routeHint}`)+
  panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${people.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
