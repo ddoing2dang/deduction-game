@@ -330,12 +330,12 @@ function submitSuspicion(){
 }
 
 function worldResult(result){
- if(!result.ok){message=result.message;render();return;}
+ if(!result.ok){message=result.message;render();if(result.message.includes('협조를 거절'))showHost({kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 협조 요청`,title:'협조 거절',body:result.message,sub:'협조 거절 시 정보행동과 협조 횟수는 소모되지 않습니다.'});return;}
  let desc=result.message;
  if(result.found)desc+=' 획득한 '+(result.found.kind==='room'?'장소':'도구')+' 카드: '+clueTitle(result.found.kind,result.found.id);
  if(result.cards)desc+=' 미배분 장소: '+clueTitle('room',result.cards.room)+' / 미배분 흉기: '+clueTitle('item',result.cards.item);
  save();show('map');message=desc;render();
- if(state.phase==='review')showHost({kind:'evidence',icon:'✦',eyebrow:`R${state.round} · 행동 판정`,title:'정보 확보',body:desc,sub:'공개된 카드는 정답에 해당하지 않는다는 것을 알 수 있습니다. 수첩에서 추리하세요.',action:'계속하기'});
+ showHost({kind:'evidence',icon:'✦',eyebrow:`R${state.round} · 행동 판정`,title:state.phase==='review'?'정보 판정':'행동 완료',body:desc,sub:state.phase==='review'?'획득한 정보는 추리 수첩에 기록됩니다.':'이동과 정보행동을 계속 진행할 수 있습니다.'});
 }
 
 function map(){return worldMap();}
@@ -384,13 +384,13 @@ function announceOpening(){
 function start(){selectedDestination=-1;suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
 function submit(){if(state.round<6||state.lastAccuseRound===state.round||state.fail>=2||state.ended)return;if(picks.person===state.playerCharacter||Object.values(picks).some(n=>n<0)){message='범인·장소·도구를 모두 골라주세요.';render();return}const match=['person','room','item'].filter(k=>picks[k]===state.answer[k]).length;state.lastAccuseRound=state.round;
 if(match===3){state.won=true;state.ended=true;state.history.unshift(`R${state.round} 최종 지목: 3개 일치, 사건 해결`);save();show('end');showHost({kind:'verdict',icon:'❀',eyebrow:`R${state.round} · 최종 판정`,title:'진실이 밝혀졌다',body:'세 항목이 모두 일치합니다. 장미의 밤을 뒤덮은 수수께끼가 풀렸습니다.',sub:'사건 해결 · 결말 화면에서 정답을 확인하세요.',action:'사건의 결말 보기'});return}state.fail++;state.history.unshift(`R${state.round} 최종 지목 실패 · 총 ${match}개 일치`);if(state.fail>=2||state.round===12){state.won=false;state.ended=true;save();show('end');showHost({kind:'danger',icon:'⌛',eyebrow:'최종 판정 · 실패',title:'진실은 어둠 속에',body:`최종 지목은 ${match}개만 일치했습니다. 더 이상 기회가 남지 않았습니다.`,sub:'수사 종료 · 결말 화면에서 정답을 확인하세요.',action:'결말 보기'});}else{message=`지목이 틀렸어요. 세 항목 중 ${match}개 일치했어요. 남은 기회는 1회입니다. 같은 라운드 재추리는 불가하며 다음 라운드부터 가능해요.`;save();render();showHost({kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 최종 추리 판정`,title:'아직 답이 아니다',body:`세 항목 중 정답과 일치한 것은 ${match}개. 하지만 어떤 항목이 틀렸는지는 공개되지 않습니다.`,sub:'다음 라운드부터 두 번째 최종 추리가 가능합니다.',action:'수사 계속하기'});}}
-app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!el)return;const act=el.dataset.act;if(personDialog>=0){if(act==='person-close'){personDialog=-1;render();return}if(act==='person-probe'&&state.phase==='investigate'&&!state.ended&&personDialog!==state.playerCharacter){probePicks.person=personDialog;personDialog=-1;show('probe');return}return}if(hostScene)return;if(act==='new'){if(state.started&&!state.ended&&!confirm('진행 중인 사건을 지우고 새로 시작할까요?'))return;selectedAvatar=-1;show('choose');return}if(act==='choose-back'){show('home');return}if(act==='confirm-character'){start();return}if(act==='resume'){show('map');return}if(act==='submit'){submit();return}if(act==='open-probe'){if(state.phase==='investigate'){if(BRWorld.migrate(state).investigated>=3){message='가설 조사 최대 3회를 사용했어요. NPC 만남, 증거 조사, 특별 능력을 이용하세요.';render();return}const why=BRWorld.canInfo(state);if(why){message=why;render();return}show('probe')}else show('probeResult');return}
+app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!el)return;const act=el.dataset.act;if(personDialog>=0){if(act==='person-close'){personDialog=-1;render();return}if(act==='person-probe'&&state.phase==='investigate'&&!state.ended&&personDialog!==state.playerCharacter){probePicks.person=personDialog;personDialog=-1;show('probe');return}return}if(hostScene)return;if(act==='new'){if(state.started&&!state.ended&&!confirm('진행 중인 사건을 지우고 새로 시작할까요?'))return;selectedAvatar=-1;show('choose');return}if(act==='choose-back'){show('home');return}if(act==='confirm-character'){start();return}if(act==='resume'){show('map');return}if(act==='submit'){submit();return}if(act==='open-probe'){if(state.phase==='investigate'){if(BRWorld.migrate(state).investigated>=3){message='가설 조사 최대 3회를 사용했어요. NPC 만남, 증거 조사, 특별 능력을 이용하세요.';render();return}const why=BRWorld.canInfo(state);if(why){message=why;render();return}show('probe');showHost({kind:'evidence',icon:'◇',eyebrow:`R${state.round} · 가설 조사`,title:'조사 시작',body:'범인, 장소, 흉기를 각각 하나씩 선택하세요. 조사 결과에서는 세 항목 중 일치하는 개수만 알려드립니다.',sub:'가설 조사는 사건 전체에서 최대 세 번 가능합니다.'})}else show('probeResult');return}
  if(act==='cancel-route'){selectedDestination=-1;render();return}
  if(act==='confirm-route'){
   if(selectedDestination<0)return;
   const destination=selectedDestination;
   const result=BRWorld.travel(state,destination,worldChoice.mode);
-  if(result.ok){selectedDestination=-1;worldChoice.mode='walk';save();show('map');message=result.message;render();}
+  if(result.ok){selectedDestination=-1;worldChoice.mode='walk';save();show('map');message=result.message;render();showHost({kind:'round',icon:'⌂',eyebrow:`R${state.round} · 방 이동`,title:'이동 완료',body:result.message,sub:'연결된 경로를 따라 이동했습니다.'});}
   else{selectedDestination=-1;message=result.message;render();}
   return;
  }
@@ -401,7 +401,7 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   if(state.ended||state.phase!=='investigate')return;
   state.phase='review';state.lastInvestigation=null;
   state.history.unshift(`R${state.round} · 정보행동 없이 턴 종료`);
-  save();show('map');message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';render();return;
+  save();show('map');message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';render();showHost({kind:'round',icon:'◇',eyebrow:`R${state.round} · 라운드 정산`,title:'이번 라운드 종료',body:'정보행동 없이 이번 라운드를 종료했습니다. 수첩을 확인한 뒤 다음 라운드로 넘어가세요.'});return;
  }
  if(act==='ability-mode'){const ab=abilityDef();if(state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;selectedDestination=-1;render()}return}
  if(act==='ability-use'){worldResult(BRWorld.useAbility(state,worldChoice.npc,worldChoice.kind,abilityDef().id==='interrogate'?worldChoice.weapon:worldChoice.item));return}if(act==='next-round'){nextRound();return}if(act==='open-accuse'){show('accuse');return}if(act==='submit-probe'){submitProbe();return}if(act==='back-map'){show('map');return}if(act==='open-notes'){show('notes');return}if(act==='log'){show('notes');return}const [type,val,extra]=act.split(':');if(type==='choose'){const n=Number(val);if(currentTab==='choose'&&Number.isInteger(n)&&n>=0&&n<6){selectedAvatar=n;message='';render()}return}if(type==='room'){
@@ -413,7 +413,7 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
  if(type==='suspect'){
   const npcId=Number(val);
   if(state.phase!=='investigate'||state.ended||!BRWorld.npcHere(state).some(n=>n.id===npcId)){message='지금은 해당 인물을 의심할 수 없어요.';render();return}
-  suspectTarget=npcId;suspectGuess={room:-1,item:-1};show('suspect');return;
+  suspectTarget=npcId;suspectGuess={room:-1,item:-1};show('suspect');showHost({kind:'evidence',icon:'◇',eyebrow:`R${state.round} · 인물 의심`,title:`${NPCName(npcId)} 의심`,body:'상대의 장소 카드와 흉기 카드를 추측합니다. 확인하고 싶은 장소 하나와 흉기 하나를 선택하세요.',sub:'제출하기 전까지 의심 횟수는 소모되지 않습니다.'});return;
  }
  if(type==='cooperate'){worldResult(BRWorld.interaction(state,Number(val),'cooperate',worldChoice.weapon));return}
  if(type==='tab'){show(val);return}if(type==='person'){activePerson=+val;personDialog=activePerson;render();return}if(type==='mark'){markCandidate(val,Number(extra));return}});
