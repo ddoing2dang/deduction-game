@@ -24,12 +24,14 @@ const BRWorld = (function buildWorld(){
  const pick=arr=>arr[rnd(arr.length)];
  const shuffle=arr=>{for(let i=arr.length-1;i>0;i--){let j=rnd(i+1);[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;};
  const edge=(a,b)=>a<b?`${a}-${b}`:`${b}-${a}`;
- function pathBetween(from,to,limit=8){
+ function pathBetween(from,to,limit=8,passage=null){
   if(from===to)return [from];
   const queue=[[from]],visited=new Set([from]);
   while(queue.length){
    const path=queue.shift(),last=path[path.length-1];
-   for(const next of EDGES[last]){
+   const choices=EDGES[last].slice();
+   if(passage&&passage.type==="secret_passage"&&passage.activated){if(last===passage.from)choices.push(passage.to);if(last===passage.to)choices.push(passage.from)}
+   for(const next of choices){
     if(visited.has(next))continue;
     const np=path.concat(next);
     if(next===to)return np;
@@ -106,7 +108,8 @@ const BRWorld = (function buildWorld(){
   if(state.ended)return {ok:false,message:"사건이 종료되었습니다."};
   if(to===state.room)return {ok:false,message:"이미 그 방에 있어요."};
   if(!Number.isInteger(to)||to<0||to>8)return {ok:false,message:"유효하지 않은 방입니다."};
-  const path=pathBetween(state.room,to);
+  const special=w.special?.activated&&w.special.type==="secret_passage"&&state.round===w.special.round?w.special:null;
+  const path=pathBetween(state.room,to,8,special);
   if(!path)return {ok:false,message:"이동 경로가 없어요."};
   const ability=w.ability;
   if(mode==="jump"&&ability.type==="jump"&&ability.left>0){
@@ -117,7 +120,12 @@ const BRWorld = (function buildWorld(){
   const hops=path.length-1;
   const event=w.event;
   let extra=0;
-  for(let i=1;i<path.length;i++)if(event?.kind==="lock"&&event.edge===edge(path[i-1],path[i]))extra++;
+  for(let i=1;i<path.length;i++){
+   const passageEdge=edge(path[i-1],path[i]);
+   const villainLock=event?.kind==="lock"&&event.edge===passageEdge;
+   const broken=w.special?.activated&&w.special.type==="broken_door"&&state.round===w.special.round&&w.special.edge===passageEdge;
+   if(villainLock||broken)extra++; // Never stack two +1P surcharges on the same edge.
+  }
   let price=hops+extra;
   if(mode==="detour"&&ability.type==="detour"&&ability.left>0&&hops===2)price=1+extra;
   if(extra>0&&ability.type==="gate"&&ability.left>=extra){price-=extra;}
@@ -129,20 +137,34 @@ const BRWorld = (function buildWorld(){
   const found=arrive(state);
   return {ok:true,message:`${hops}개 연결 이동 · ${price}P 사용, 남은 ${w.moveLeft}P. ${found}`};
  }
+ function claimKey(state,owner){
+  const w=migrate(state);
+  if(w.key.taken||state.round<w.key.appears)return "";
+  if(owner==="player"&&state.room!==w.key.room)return "";
+  if(owner!=="player"&&(!w.npcs.find(n=>n.id===owner&&n.room===w.key.room)))return "";
+  w.key.taken=true;w.key.owner=owner;w.key.acquiredRound=state.round;
+  if(w.box.appears===null){
+   const first=Math.max(4,state.round+1);
+   if(first<=8){w.box.appears=first+rnd(9-first);w.box.room=rnd(9);}
+  }
+  if(owner==="player"){
+   state.history.unshift("R"+state.round+" · 낡은 열쇠를 비공개로 획득했습니다.");
+   return "낡은 열쇠를 획득했습니다. 소유 정보는 비공개입니다.";
+  }
+  return "";
+ }
  function arrive(state){
-  const w=migrate(state),strings=[];
-  if(!w.key.taken&&state.round>=w.key.appears&&state.room===w.key.room){
-   w.key.taken=true;strings.push("낡은 열쇠 획득! 비밀상자를 찾아보세요.");
-   state.history.unshift(`R${state.round} · 비밀 열쇠를 찾았습니다. (소유 정보)`);
+  const w=migrate(state),texts=[];
+  const key=claimKey(state,"player");
+  if(key)texts.push(key);
+  if(w.box.appears!==null&&state.round>=w.box.appears&&!w.box.opened&&state.room===w.box.room&&w.key.owner==="player"){
+   w.box.opened=true;w.box.owner="player";
+   const room=pick(w.unassigned.room),item=pick(w.unassigned.item);
+   w.clueRead.push({kind:"room",id:room,via:"secret"},{kind:"item",id:item,via:"secret"});
+   state.history.unshift("R"+state.round+" · 비밀상자 개봉(개인): 미배분 장소 카드와 흉기 카드 각각 한 장 확인");
+   texts.push("비밀상자를 열었습니다. 정답이 아닌 장소·흉기 카드 각 한 장을 확인했습니다.");
   }
-  if(w.key.taken&&!w.box.opened&&state.round>=w.box.appears&&state.room===w.box.room){
-   w.box.opened=true;
-   const room=w.unassigned.room[0],item=w.unassigned.item[0];
-   w.clueRead.push({room:room,item:item,via:"secret"});
-   state.history.unshift(`R${state.round} · 비밀상자에서 미배분 장소/도구 카드 ${room+1}, ${item+1}를 확보`);
-   strings.push("비밀상자 개봉! 정답이 아닌 미배분 카드 두 장을 확인했습니다.");
-  }
-  return strings.join(" ");
+  return texts.join(" ");
  }
  function checkForensic(state){
   const w=migrate(state);
