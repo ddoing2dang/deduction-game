@@ -342,6 +342,13 @@ const BRWorld = (function buildWorld(){
       const options=npc.trait==="roamer"?EDGES[from].filter(room=>room!==npc.prevRoom):EDGES[from];
       npc.room=pick(options.length?options:EDGES[from]);npc.prevRoom=from;
      }
+     // NPC tracing grants a free final adjacent step only into an actually occupied room.
+     if(skill.type==="trace"&&skill.left>0){
+      const occupied=EDGES[npc.room].filter(next=>w.npcs.some(other=>other!==npc&&other.room===next));
+      if(occupied.length&&Math.random()<.36){
+       npc.prevRoom=npc.room;npc.room=pick(occupied);skill.left--;
+      }
+     }
     }
    }
    if(!w.key.taken&&state.round>=w.key.appears&&npc.room===w.key.room)claimKey(state,npc.id);
@@ -351,9 +358,9 @@ const BRWorld = (function buildWorld(){
    }
   }
   // The culprit's abilities are independent of the single extra event from EVENTS.md.
-  if(state.round>=2&&state.round<=11&&Math.random()<.62&&Object.values(w.sabotageUses).some(n=>n>0)){
-   const types=["smoke","lock","delay"].filter(k=>w.sabotageUses[k]>0);
-   const kind=pick(types);w.sabotageUses[kind]--;
+  const usableSabotage=["smoke","lock","delay"].filter(k=>w.sabotageUses[k]>0&&(k!=="delay"||w.investigated<3));
+  if(state.round>=2&&state.round<=11&&usableSabotage.length>0&&Math.random()<.62){
+   const kind=pick(usableSabotage);w.sabotageUses[kind]--;
    if(kind==="smoke"){
     const blocked=w.special.type==="blackout"&&w.special.activated&&state.round>=w.special.round&&state.round<=w.special.round+1?[w.special.room]:[];
     const places=shuffle(Array.from({length:9},(_,i)=>i).filter(i=>!blocked.includes(i)));
