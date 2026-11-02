@@ -128,9 +128,9 @@ const BRWorld = (function buildWorld(){
   }
   let price=hops+extra;
   if(mode==="detour"&&ability.type==="detour"&&ability.left>0&&hops===2)price=1+extra;
-  if(extra>0&&ability.type==="gate"&&ability.left>=extra){price-=extra;}
+  if(ability.type==="gate"&&ability.left>0){price=Math.max(0,price-1);} // Base cost waiver only; extra surcharge remains.
   if(price>w.moveLeft)return {ok:false,message:`이 방까지 ${price}P 필요해요. 현재 ${w.moveLeft}P 남았습니다. 연결된 가까운 방부터 이동하세요.`};
-  if(extra>0&&ability.type==="gate"&&ability.left>=extra)ability.left-=extra;
+  if(ability.type==="gate"&&ability.left>0)ability.left--;
   if(mode==="detour"&&hops===2&&ability.type==="detour"&&ability.left>0)ability.left--;
   w.moveLeft-=price;
   w.prevRoom=state.room;state.room=to;
