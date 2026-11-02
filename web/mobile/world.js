@@ -338,5 +338,5 @@ const BRWorld = (function buildWorld(){
   return announce;
  }
 
- return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,canInfo,consumeInfo,npcHere,travel,arrive,searchEvidence,interaction,useAbility,nextRound};
+ return {EDGES,ABILITIES,TRAITS,setup,migrate,pathBetween,canInfo,consumeInfo,npcHere,travel,arrive,checkForensic,interaction,useAbility,nextRound};
 })();
