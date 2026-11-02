@@ -84,9 +84,12 @@ function nextRound(){
  const announcements=BRWorld.nextRound(state);
  save();show('map');
  message=`R${state.round} 시작! NPC가 이동하고 사건이 갱신되었습니다.`;render();
- const scenes=[hostRoundScene(state.round)];
- if(announcements.length)scenes.push({kind:'evidence',icon:'❀',eyebrow:`R${state.round} · 저택 소식`,title:'새로운 사건',body:announcements.join(' '),sub:'사건의 출처는 비공개입니다. 방마다 위험과 기회를 확인하세요.',action:'저택 확인하기'});
- showHost(scenes);
+ const scene=hostRoundScene(state.round);
+ if(announcements.length){
+  scene.body+=' '+announcements.join(' ');
+  scene.sub='새 라운드의 NPC 위치와 이벤트를 확인하세요. 이 안내는 추리 단서가 아닙니다.';
+ }
+ showHost(scene);
 }
 
 function hostRoundScene(n) {
