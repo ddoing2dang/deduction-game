@@ -51,19 +51,35 @@ const BRWorld = (function buildWorld(){
   // Legacy save may have no selected player. Support sentinel -1 by assigning a temporary card.
   const owner=own?own.hand:{room:roomCards[0],item:itemCards[0]};
   const candidateRooms=shuffle([1,2,3,4,5,6,7,8]);
-  const hotspotCards=shuffle([...roomCards.slice(1,6).map(i=>({kind:"room",id:i})),...itemCards.slice(1,6).map(i=>({kind:"item",id:i}))]);
-  const hotspots=candidateRooms.slice(0,3).map((room,i)=>({room,kind:hotspotCards[i].kind,id:hotspotCards[i].id,used:false}));
+  // EVENTS.md: only one additional event per case, once in R6–R11.
+  const extraType=pick(["blackout","broken_door","secret_passage"]);
+  const extraRound=6+rnd(6);
+  const extraLocation=pick(candidateRooms);
+  const a=rnd(9),b=pick(EDGES[a]);
+  const extraEdge=edge(a,b);
+  const pairs=[];for(let i=0;i<9;i++)for(let j=i+1;j<9;j++)if(!EDGES[i].includes(j))pairs.push([i,j]);
+  const passage=pick(pairs);
+  const special={type:extraType,round:extraRound,room:extraLocation,edge:extraEdge,from:passage[0],to:passage[1],activated:false};
   const ability=pick(ABILITIES);
-  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:2,lock:2,delay:2},key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],witnesses:[],released:null};
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:2,lock:2,delay:2},key:{appears:2+rnd(4),room:pick(candidateRooms),taken:false,owner:null},box:{appears:null,room:null,opened:false,owner:null},special,forensic:{arrived:false,read:false,cards:{room:pick(roomCards.slice(6)),item:pick(itemCards.slice(6))}},clueRead:[],released:null};
   return state.world;
  }
  function migrate(state){
   const w=setup(state);
   if(!Number.isFinite(w.moveLeft))w.moveLeft=2;
   if(!Array.isArray(w.clueRead))w.clueRead=[];
-  if(!Array.isArray(w.witnesses))w.witnesses=[];
+  // Remove unsupported location-based eyewitness claims from old browser saves.
+  delete w.witnesses;
+  state.history=Array.isArray(state.history)?state.history.filter(v=>!/목격자 진술|범인은 .* 중 한 곳|특별 단서 ·/.test(v)):[];
+  w.clueRead=w.clueRead.filter(c=>c.via!=="evidence");
+  delete w.hotspots;
   if(!Array.isArray(w.eventLog))w.eventLog=[];
   if(!w.sabotageUses)w.sabotageUses={smoke:2,lock:2,delay:2};
+  if(!w.special){const a=rnd(9),b=pick(EDGES[a]);const pairs=[];for(let i=0;i<9;i++)for(let j=i+1;j<9;j++)if(!EDGES[i].includes(j))pairs.push([i,j]);const t=pick(["blackout","broken_door","secret_passage"]);const chosen=pick(pairs);w.special={type:t,round:Math.min(11,Math.max(6,state.round<11?state.round+1:11)),room:rnd(9),edge:edge(a,b),from:chosen[0],to:chosen[1],activated:false};}
+  if(!w.forensic)w.forensic={arrived:state.round>=7,read:false,cards:{room:w.unassigned.room[rnd(w.unassigned.room.length)],item:w.unassigned.item[rnd(w.unassigned.item.length)]}};
+  if(w.box.appears!=null&&w.key.taken&&w.box.appears<=w.key.acquiredRound&&state.round<w.box.appears)w.box.appears=Math.min(8,w.key.acquiredRound+1);
+  if(w.key.owner===undefined)w.key.owner=w.key.taken?"player":null;
+  if(w.box.owner===undefined)w.box.owner=null;
   for(const n of w.npcs){
    if(!n.ability){const a=pick(ABILITIES);n.ability={type:a.id,left:a.charges}}
    if(!Array.isArray(n.intel))n.intel=[];
@@ -74,6 +90,7 @@ const BRWorld = (function buildWorld(){
   const w=migrate(state);
   if(state.phase!=="investigate"||state.ended)return "이번 라운드 정보행동은 이미 끝났어요.";
   if(w.event?.kind==="smoke"&&w.event.rooms.includes(state.room))return "연막이 가득한 방입니다. 다른 방으로 이동해야 정보행동을 할 수 있어요.";
+  if(w.special.type==="blackout"&&w.special.activated&&state.round>=w.special.round&&state.round<=w.special.round+1&&state.room===w.special.room)return "정전 중인 방입니다. 2라운드 동안 이동 외 행동을 할 수 없어요.";
   return "";
  }
  function consumeInfo(state,summary){
@@ -127,17 +144,20 @@ const BRWorld = (function buildWorld(){
   }
   return strings.join(" ");
  }
- function searchEvidence(state){
-  const w=migrate(state),hint=w.hotspots.find(x=>x.room===state.room&&!x.used);
-  if(!hint)return {ok:false,message:"이 방에 남은 특별 단서가 없어요."};
+ function checkForensic(state){
+  const w=migrate(state);
+  if(state.round<7)return {ok:false,message:"R7에 과학수사 결과가 도착합니다."};
+  if(state.room!==0)return {ok:false,message:"현관 홀(로비)에서만 과학수사 결과를 확인할 수 있어요."};
+  if(w.forensic.read)return {ok:false,message:"이 과학수사 결과는 이미 확인했습니다. 수첩에서 다시 볼 수 있어요."};
   const reason=canInfo(state);if(reason)return {ok:false,message:reason};
-  hint.used=true;
-  w.clueRead.push({kind:hint.kind,id:hint.id,via:"evidence"});
-  const label=hint.kind==="room"?"장소":"도구";
-  const res=consumeInfo(state,`${label} 카드 한 장이 사건의 정답이 아님을 확인했어요.`);
-  state.history.unshift(`R${state.round} · ${state.room+1}번 방 특별 단서 · ${label} #${hint.id+1}은 정답 제외`);
-  return {...res,kind:hint.kind,id:hint.id};
+  const result=consumeInfo(state,"과학수사 결과를 개인적으로 확인했습니다.");
+  if(!result.ok)return result;
+  w.forensic.read=true;
+  w.clueRead.push({kind:"room",id:w.forensic.cards.room,via:"forensic"},{kind:"item",id:w.forensic.cards.item,via:"forensic"});
+  state.history.unshift("R"+state.round+" · 과학수사(개인): 미배분 장소/흉기 카드 1장씩 확인");
+  return {...result,cards:w.forensic.cards};
  }
+ function searchEvidence(){return {ok:false,message:"확정 EVENTS.md에 없는 방별 임의 특별 단서 이벤트는 제거되었습니다."};}
  function interaction(state,npcId,action,weapon,suspectedRoom=state.room){
   const w=migrate(state),npc=w.npcs.find(x=>x.id===npcId);
   if(!npc||npc.room!==state.room)return {ok:false,message:"그 인물은 지금 같은 방에 없습니다. 지도에서 위치를 찾아 이동하세요."};
