@@ -200,7 +200,7 @@ function officialEventPanel(){
  const boxText=w.box.opened?'개봉됨 (열람자는 비공개)':w.box.appears!==null&&state.round>=w.box.appears?roomNames[w.box.room]+'에 등장':w.box.appears!==null?'R'+w.box.appears+'에 등장':'열쇠를 찾은 뒤 후속 라운드에 등장';
  const science=w.forensic;
  const scienceText=science.read?'결과 확인 완료 · 수첩에 개인 기록됨':state.round>=7?'도착 · 현관 홀(로비)에서 확인 가능':'R7 시작에 결과 도착';
- const scienceButton=state.round>=7&&!science.read&&here?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'';
+ const scienceButton='';
  const extraText=sp.activated?(active||'추가 이벤트 종료 · '+{blackout:'정전',broken_door:'고장난 문',secret_passage:'비밀통로'}[sp.type]):'R6~R11에 정전 / 고장난 문 / 비밀통로 중 단 한 번 발생';
  return panel('확정 특별이벤트 · EVENTS.md',`<div class="world-events"><div>🗝️ 열쇠 → 📦 비밀상자<br>${esc(keyText)} / ${esc(boxText)}</div><div>🔬 과학수사<br>${esc(scienceText)}</div><div>✦ 추가 이벤트 (1종 1회)<br>${esc(extraText)}</div></div>${scienceButton}<p class="hint">열쇠와 과학수사 카드 내용은 각자 획득·확인해야 합니다. 정식 이벤트에 없는 단서 생성은 사용하지 않습니다.</p>`);
 }
@@ -227,8 +227,8 @@ function worldMap(){
  const routeHint='<p class="world-route">현재 이동 가능: '+(destinations.length?destinations.join(' · '):'이동력 없음 / 능력 이동 확인')+'</p>';
  const npcs=BRWorld.npcHere(state);
  const encounter=npcs.length?'<div class="encounter-grid">'+npcs.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">‘의심’을 누르면 장소와 흉기를 각각 선택할 수 있어요.</p>':'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 있는 방을 찾아 이동해야 의심·협조할 수 있습니다.</p>';
- const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">이 방에는 별도의 임의 특별단서가 없습니다. NPC를 만나거나 확정 이벤트를 활용하세요.</p>';
- const primary=state.phase==='review'?phaseAction():(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 단서, 능력으로 나머지 정보를 수집하세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
+ const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">NPC를 만나 의심·협조하거나, 확정 이벤트 장소로 이동해 정보를 얻으세요.</p>';
+ const primary=state.phase==='review'?phaseAction():(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 능력, R7 과학수사로 정보를 더 모으세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
  const toggle=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 모드 — 이동할 방을 터치하세요.</div>':'';
  return summary()+worldNotice()+panel('저택 지도 · 이동력 '+w.moveLeft+'P',`<p class="hint">NPC가 있는 방에서만 의심·협조가 가능해요. 이동은 연결 경로를 따르며 라운드마다 2P입니다. 다음 라운드에는 NPC도 이동합니다.</p>${toggle}<div class="grid3">${grid}</div>${routeHint}`)+
  panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${npcs.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
