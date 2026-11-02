@@ -63,12 +63,14 @@ const BRWorld = (function buildWorld(){
   const passage=pick(pairs);
   const special={type:extraType,round:extraRound,room:extraLocation,edge:extraEdge,from:passage[0],to:passage[1],activated:false};
   const ability=pick(ABILITIES);
-  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:1,lock:2,delay:2},key:{appears:2+rnd(4),room:pick(candidateRooms),taken:false,owner:null},box:{appears:null,room:null,opened:false,owner:null},special,forensic:{arrived:false,read:false,cards:{room:pick(roomCards.slice(6)),item:pick(itemCards.slice(6))}},clueRead:[],released:null};
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,prevRoomRound:-1,dashUsedRound:0,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:1,lock:2,delay:2},key:{appears:2+rnd(4),room:pick(candidateRooms),taken:false,owner:null},box:{appears:null,room:null,opened:false,owner:null},special,forensic:{arrived:false,read:false,cards:{room:pick(roomCards.slice(6)),item:pick(itemCards.slice(6))}},clueRead:[],released:null};
   return state.world;
  }
  function migrate(state){
   const w=setup(state);
   if(!Number.isFinite(w.moveLeft))w.moveLeft=2;
+  if(!Number.isInteger(w.prevRoomRound))w.prevRoomRound=-1;
+  if(!Number.isInteger(w.dashUsedRound))w.dashUsedRound=0;
   if(!Array.isArray(w.clueRead))w.clueRead=[];
   // Remove unsupported location-based eyewitness claims from old browser saves.
   delete w.witnesses;
@@ -106,6 +108,7 @@ const BRWorld = (function buildWorld(){
  function routeInfo(state,to,mode="walk"){
  const w=migrate(state);
  if(state.ended)return {ok:false,reason:"ended",message:"사건이 종료되었습니다."};
+ if(state.phase!=="investigate")return {ok:false,reason:"phase",message:"이번 라운드 정보행동을 마쳤어요. 다음 라운드부터 다시 이동할 수 있어요."};
  if(!Number.isInteger(to)||to<0||to>=EDGES.length)return {ok:false,reason:"invalid",message:"유효하지 않은 방입니다."};
  if(to===state.room)return {ok:false,reason:"same",path:[state.room],message:"현재 위치입니다."};
  const ability=w.ability;
@@ -160,7 +163,7 @@ const BRWorld = (function buildWorld(){
   w.moveLeft-=info.cost;
  }
  for(const step of info.path.slice(1)){
-  w.prevRoom=state.room;state.room=step;arrive(state);
+  w.prevRoom=state.room;w.prevRoomRound=state.round;state.room=step;arrive(state);
  }
  const names=["현관 홀","응접실","서재","식당","주방","침실","음악실","온실","지하 와인창고"];
  const route=info.path.map(id=>names[id]).join(" → ");
@@ -245,12 +248,16 @@ const BRWorld = (function buildWorld(){
   const w=migrate(state),ability=w.ability;
   if(ability.left<=0)return {ok:false,message:"능력 횟수를 모두 사용했습니다."};
   if(ability.type==="dash"){
-   w.moveLeft++;ability.left--;return {ok:true,message:"질주! 이번 라운드 이동력 +1P."};
+   if(state.phase!=="investigate"||state.ended)return {ok:false,message:"이동 능력은 정보행동 전에만 사용할 수 있어요."};
+   if(w.dashUsedRound===state.round)return {ok:false,message:"질주는 한 라운드에 한 번만 사용할 수 있어요."};
+   w.moveLeft++;ability.left--;w.dashUsedRound=state.round;
+   return {ok:true,message:"질주! 이번 라운드 이동력 +1P."};
   }
   if(ability.type==="return"){
-   if(state.room===w.prevRoom)return {ok:false,message:"돌아갈 이전 방이 없어요."};
+   if(state.phase!=="investigate"||state.ended)return {ok:false,message:"이동 능력은 정보행동 전에만 사용할 수 있어요."};
+   if(w.prevRoomRound<state.round-2||w.prevRoomRound<1||state.room===w.prevRoom)return {ok:false,message:"최근 두 라운드 내에 방문한 복귀 가능한 이전 방이 없어요."};
    ability.left--;
-   const here=state.room;state.room=w.prevRoom;w.prevRoom=here;
+   const here=state.room;state.room=w.prevRoom;w.prevRoom=here;w.prevRoomRound=state.round;
    return {ok:true,message:"회귀 발동! 이전 방으로 순간 이동. "+arrive(state)};
   }
   if(ability.type==="trace"){
@@ -361,7 +368,7 @@ const BRWorld = (function buildWorld(){
    if(kind==="delay")w.event={kind};
    w.eventLog.unshift("R"+state.round+" · 범인 능력: "+{smoke:"연막",lock:"잠금",delay:"교란"}[kind]);
   }
-  if(state.round===w.key.appears)announce.push("낡은 열쇠 이벤트가 시작되었습니다. 열쇠를 발견한 인물만 소유 정보를 확인할 수 있습니다.");
+  if(state.round===w.key.appears)announce.push("낡은 열쇠가 나타났습니다. 아직 발견되지 않았다면 지도에서 위치를 확인할 수 있습니다. 획득자 신원은 비공개입니다.");
   if(w.box.appears!==null&&state.round===w.box.appears)announce.push("비밀상자가 나타났습니다. 열쇠 보유자만 열 수 있으며 카드 내용은 개인 정보입니다.");
   const seen=arrive(state);
   if(seen)announce.push(seen);
