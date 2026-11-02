@@ -159,3 +159,11 @@
 .world-room.not-reachable{opacity:.54;filter:saturate(.8)}
 .world-room.active{opacity:1;filter:none;border-color:#f0d190;box-shadow:0 0 0 2px #f0d1902a;background:#57394c}
 .world-route{margin:12px 0 0;color:#e7ca97;line-height:1.5;font-size:12px;padding:9px 11px;background:#38283a;border-radius:10px;border:1px solid #79596f}
+
+/* Select both location and weapon while questioning an NPC */
+.suspicion-person{display:flex;align-items:center;gap:13px;border:1px solid #9c7584;border-radius:14px;padding:10px;margin:14px 0 18px;background:linear-gradient(100deg,#51354a,#2b1f31)}
+.suspicion-portrait{width:85px;height:108px;object-fit:contain;flex:0 0 85px;filter:drop-shadow(0 5px 12px #0009)}
+.suspicion-person>div{min-width:0;flex:1}
+.suspicion-person strong{font-family:Georgia,'Noto Serif KR',serif;font-size:24px;font-weight:850;color:#f8daad;display:block;margin:6px 0}
+.suspicion-person p{font-size:12px;line-height:1.5;color:#dfc6d3;margin:0}
+@media(max-width:360px){.suspicion-person{gap:9px}.suspicion-portrait{width:69px;height:95px;flex-basis:69px}.suspicion-person strong{font-size:20px}}
