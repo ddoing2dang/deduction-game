@@ -30,6 +30,7 @@ let hostScene=null;
 let personDialog=-1;
 let selectedAvatar=-1;
 let worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};
+let selectedDestination=-1;
 let suspectTarget=-1;
 let suspectGuess={room:-1,item:-1};
 const app=document.getElementById('app');
@@ -76,7 +77,7 @@ function nextRound(){
  state.phase='investigate';
  state.lastInvestigation=null;
  probePicks={person:-1,room:-1,item:-1};
- worldChoice.mode='walk';
+ worldChoice.mode='walk';selectedDestination=-1;
  const announcements=BRWorld.nextRound(state);
  save();show('map');
  message=`R${state.round} 시작! NPC가 이동하고 사건이 갱신되었습니다.`;render();
@@ -206,32 +207,49 @@ function officialEventPanel(){
 }
 function worldMap(){
  const w=BRWorld.migrate(state);
- const routeReachable=i=>{
-  if(i===state.room)return true;
-  const sp=w.special?.activated&&w.special.type==='secret_passage'&&state.round===w.special.round?w.special:null;
-  const path=BRWorld.pathBetween(state.room,i,8,sp);if(!path)return false;
-  const ab=w.ability;
-  if(worldChoice.mode==='jump'&&ab.type==='jump'&&ab.left>0)return true;
-  const hops=path.length-1;
-  let extra=0;
-  for(let k=1;k<path.length;k++){
-    const segment=[path[k-1],path[k]].sort((x,y)=>x-y).join('-');
-    if(w.event?.kind==='lock'&&w.event.edge===segment||w.special?.activated&&w.special.type==='broken_door'&&state.round===w.special.round&&w.special.edge===segment)extra++;
-  }
-  const gateDiscount=ab.type==='gate'&&ab.left>0?1:0;
-  const cost=Math.max(0,(worldChoice.mode==='detour'&&ab.type==='detour'&&ab.left>0&&hops===2?1:hops)+extra-gateDiscount);
-  return cost<=w.moveLeft;
- };
- const grid=ROOMS.map(([name,emoji],i)=>'<button class="room world-room '+(state.room===i?'active':routeReachable(i)?'reachable':'not-reachable')+'" data-act="room:'+i+'" aria-label="'+esc(name)+'"><span class="symbol">'+emoji+'</span><span class="room-name">'+esc(name)+'</span><div class="npc-row">'+roomPlayers(i)+'</div>'+roomTokens(i)+'</button>').join('');
- const destinations=ROOMS.map(([name],i)=>i!==state.room&&routeReachable(i)?esc(name):null).filter(Boolean);
- const routeHint='<p class="world-route">현재 이동 가능: '+(destinations.length?destinations.join(' · '):'이동력 없음 / 능력 이동 확인')+'</p>';
- const npcs=BRWorld.npcHere(state);
- const encounter=npcs.length?'<div class="encounter-grid">'+npcs.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">‘의심’을 누르면 장소와 흉기를 각각 선택할 수 있어요.</p>':'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 있는 방을 찾아 이동해야 의심·협조할 수 있습니다.</p>';
- const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">NPC를 만나 의심·협조하거나, 확정 이벤트 장소로 이동해 정보를 얻으세요.</p>';
+ const roomInfo=i=>BRWorld.routeInfo(state,i,worldChoice.mode);
+ const pending=selectedDestination>=0?roomInfo(selectedDestination):null;
+ const planned=pending?.ok?pending:null;
+ const current=state.room;
+ const coords=Array.from({length:9},(_,i)=>({x:50+(i%3)*100,y:50+Math.floor(i/3)*100}));
+ const pathEdges=new Set();
+ if(planned&&planned.special!=="jump"){
+  for(let j=1;j<planned.path.length;j++)pathEdges.add([planned.path[j-1],planned.path[j]].sort((a,b)=>a-b).join("-"));
+ }
+ const linkSvg=BRWorld.EDGES.flatMap((connections,i)=>connections.filter(j=>i<j).map(j=>{
+  const key=i+"-"+j,from=coords[i],to=coords[j];
+  const isBlocked=(w.event?.kind==="lock"&&w.event.edge===key)||(w.special?.activated&&w.special.type==="broken_door"&&state.round===w.special.round&&w.special.edge===key);
+  const isSelected=pathEdges.has(key);
+  const adjacent=i===current||j===current;
+  return `<line x1="${from.x}" y1="${from.y}" x2="${to.x}" y2="${to.y}" class="graph-link ${isBlocked?'graph-locked':isSelected?'graph-selected':adjacent?'graph-adjacent':''}" />`;
+ })).join('');
+ const sp=w.special;
+ const passageActive=sp?.activated&&sp.type==="secret_passage"&&state.round===sp.round;
+ const passageSvg=passageActive?`<line x1="${coords[sp.from].x}" y1="${coords[sp.from].y}" x2="${coords[sp.to].x}" y2="${coords[sp.to].y}" class="graph-link graph-secret ${pathEdges.has([sp.from,sp.to].sort((a,b)=>a-b).join('-'))?'graph-selected':''}"/>`:'';
+ const jumpLine=planned?.special==="jump"?`<line x1="${coords[current].x}" y1="${coords[current].y}" x2="${coords[selectedDestination].x}" y2="${coords[selectedDestination].y}" class="graph-link graph-jump"/>`:'';
+ const grid=ROOMS.map(([name,emoji],i)=>{
+  const isCurrent=i===current,route=isCurrent?null:roomInfo(i);
+  const canGo=route?.ok===true;
+  const choice=selectedDestination===i&&canGo;
+  const css=isCurrent?'active':choice?'route-selected':canGo?'reachable':'not-reachable';
+  const cost=isCurrent?'● 현재':canGo?route.cost+'P 이동':'이동 불가';
+  const accessible=isCurrent?'내 위치':canGo?'경로 연결됨 · '+route.cost+'P':'이동력 부족 / 연결 없음';
+  return `<button type="button" class="room world-room graph-node ${css}" data-act="room:${i}" aria-label="${esc(name)} · ${accessible}" aria-pressed="${choice?'true':'false'}" ${!canGo?'disabled':''}>
+   <span class="symbol">${emoji}</span><span class="room-name">${esc(name)}</span>
+   <span class="graph-room-cost">${cost}</span><div class="npc-row">${roomPlayers(i)}</div>${roomTokens(i)}
+  </button>`;
+ }).join('');
+ const routePreview=planned?`<div class="route-preview" role="status"><div class="route-preview-title"><span>선택한 이동 경로</span><strong>${planned.cost}P 사용</strong></div><p>${planned.path.map(i=>esc(ROOMS[i][0])).join(' → ')}</p><div class="route-preview-actions">${btn('이 경로로 이동하기','confirm-route','button primary full')}${btn('취소','cancel-route','button secondary full')}</div>${planned.special==='jump'?'<p class="hint">예외: 도약 능력 사용 시에만 복도를 거치지 않고 이동할 수 있습니다.</p>':''}</div>`:'<p class="map-instruction">밝은 방을 터치하면 <b>실제 경로와 필요한 이동력</b>을 먼저 볼 수 있어요. 확인하기 전까지 캐릭터가 이동하지 않습니다.</p>';
+ const possible=ROOMS.map(([name],i)=>i!==current&&roomInfo(i).ok?esc(name):null).filter(Boolean);
+ const routeHint='<p class="world-route">현재 위치에서 연결 경로로 이동 가능한 방: '+(possible.length?possible.join(' · '):'없음 · 다음 라운드 또는 능력 사용')+'</p>';
+ const people=BRWorld.npcHere(state);
+ const encounter=people.length?'<div class="encounter-grid">'+people.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.ABILITIES.find(a=>a.id===n.ability?.type)||{}).name||'기본 능력')+' 능력 · '+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+'</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><p class="hint">의심은 장소와 흉기를 각각 선택해 제출해요.</p>':'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 표시된 방으로 연결 경로를 따라 이동하세요.</p>';
+ const specialButton=state.round>=7&&state.room===0&&!w.forensic.read?btn('🔬 과학수사 결과 확인 · 정보행동 1회','check-forensic','button secondary full',state.phase!=='investigate'):'<p class="hint">NPC를 만나 의심·협조하거나 확정 이벤트 장소로 이동해 정보를 얻으세요.</p>';
  const primary=state.phase==='review'?phaseAction():(btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full',w.investigated>=3)+(w.investigated>=3?'<p class="hint">가설 조사 3회 소진. NPC 의심·협조, 특별 능력, R7 과학수사로 정보를 더 모으세요.</p>':'')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full'));
- const toggle=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 모드 — 이동할 방을 터치하세요.</div>':'';
- return summary()+worldNotice()+panel('저택 지도 · 이동력 '+w.moveLeft+'P',`<p class="hint">NPC가 있는 방에서만 의심·협조가 가능해요. 이동은 연결 경로를 따르며 라운드마다 2P입니다. 다음 라운드에는 NPC도 이동합니다.</p>${toggle}<div class="grid3">${grid}</div>${routeHint}`)+
- panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${npcs.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
+ const mode=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 능력 선택됨 · 목적지를 고르고 이동을 확정하세요.</div>':'';
+ return summary()+worldNotice()+panel(`저택 이동 경로 · 남은 ${w.moveLeft}P`,
+ `<p class="hint">금색 연결선: 현재 방과 연결 · 밝은 방: 이동 가능 · 붉은 선: 잠금/고장난 문 · 청록 점선: 비밀통로 · 방 하나 통과 시 기본 1P.</p>${mode}<div class="mansion-graph"><svg class="map-connections" viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">${linkSvg}${passageSvg}${jumpLine}</svg><div class="graph-grid">${grid}</div></div>${routePreview}${routeHint}`)+
+ panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${people.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
  worldAbility()+officialEventPanel();
 }
 
@@ -312,10 +330,19 @@ function announceOpening(){
  const w=BRWorld.migrate(state);const ability=BRWorld.ABILITIES.find(a=>a.id===w.ability.type);
  showHost([{kind:'opening',icon:'❀',eyebrow:'PROLOGUE · 저택의 밤',title:'검은 장미의 비밀',body:`한밤중, 검은 장미 저택에서 수상한 사건이 일어났습니다. ${state.playerCharacter>=0?CHARACTERS[state.playerCharacter].name+'(이)가 수사자로 나섭니다.':'당신이 수사자로 나섭니다.'} 남은 다섯 인물 사이에 진실이 숨어 있죠.`,sub:'이 이야기는 모바일 독립판의 사건 도입입니다. 특정 인물을 범인으로 지목하지 않습니다.',action:'저택 안으로 들어가기'},{kind:'reveal',icon:'✦',eyebrow:'RANDOM ABILITY',title:'랜덤 능력 부여',body:`${CHARACTERS[state.playerCharacter]?.name||'수사자'}의 능력은 「${ability.name}」입니다. ${ability.desc}`,sub:'다른 NPC들도 개별 랜덤 능력을 부여받았으며, 범인은 남몰래 방해 능력을 발동합니다.',action:'능력 확인'},hostRoundScene(1)]);
 }
-function start(){suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
+function start(){selectedDestination=-1;suspectTarget=-1;suspectGuess={room:-1,item:-1};worldChoice={npc:-1,weapon:0,kind:'item',item:0,mode:'walk'};if(!Number.isInteger(selectedAvatar)||selectedAvatar<0||selectedAvatar>=CHARACTERS.length){message='먼저 캐릭터를 선택해주세요.';render();return}personDialog=-1;state=freshState(true,selectedAvatar);picks={person:-1,room:-1,item:-1};probePicks={person:-1,room:-1,item:-1};save();show('map');message=`${CHARACTERS[selectedAvatar].name}(으)로 사건을 시작합니다.`;render();announceOpening()}
 function submit(){if(state.round<6||state.lastAccuseRound===state.round||state.fail>=2||state.ended)return;if(picks.person===state.playerCharacter||Object.values(picks).some(n=>n<0)){message='범인·장소·도구를 모두 골라주세요.';render();return}const match=['person','room','item'].filter(k=>picks[k]===state.answer[k]).length;state.lastAccuseRound=state.round;
 if(match===3){state.won=true;state.ended=true;state.history.unshift(`R${state.round} 최종 지목: 3개 일치, 사건 해결`);save();show('end');showHost({kind:'verdict',icon:'❀',eyebrow:`R${state.round} · 최종 판정`,title:'진실이 밝혀졌다',body:'세 항목이 모두 일치합니다. 장미의 밤을 뒤덮은 수수께끼가 풀렸습니다.',sub:'사건 해결 · 결말 화면에서 정답을 확인하세요.',action:'사건의 결말 보기'});return}state.fail++;state.history.unshift(`R${state.round} 최종 지목 실패 · 총 ${match}개 일치`);if(state.fail>=2||state.round===12){state.won=false;state.ended=true;save();show('end');showHost({kind:'danger',icon:'⌛',eyebrow:'최종 판정 · 실패',title:'진실은 어둠 속에',body:`최종 지목은 ${match}개만 일치했습니다. 더 이상 기회가 남지 않았습니다.`,sub:'수사 종료 · 결말 화면에서 정답을 확인하세요.',action:'결말 보기'});}else{message=`지목이 틀렸어요. 세 항목 중 ${match}개 일치했어요. 남은 기회는 1회입니다. 같은 라운드 재추리는 불가하며 다음 라운드부터 가능해요.`;save();render();showHost({kind:'warning',icon:'⚖',eyebrow:`R${state.round} · 최종 추리 판정`,title:'아직 답이 아니다',body:`세 항목 중 정답과 일치한 것은 ${match}개. 하지만 어떤 항목이 틀렸는지는 공개되지 않습니다.`,sub:'다음 라운드부터 두 번째 최종 추리가 가능합니다.',action:'수사 계속하기'});}}
 app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!el)return;const act=el.dataset.act;if(personDialog>=0){if(act==='person-close'){personDialog=-1;render();return}if(act==='person-probe'&&state.phase==='investigate'&&!state.ended&&personDialog!==state.playerCharacter){probePicks.person=personDialog;personDialog=-1;show('probe');return}return}if(hostScene){if(act==='host-next'){nextHost();return}if(act==='host-skip'){nextHost(true);return}if(act==='host-voice'){voiceHost();return}return}if(act==='host-help'){showHost(currentHostScene());return}if(act==='new'){if(state.started&&!state.ended&&!confirm('진행 중인 사건을 지우고 새로 시작할까요?'))return;selectedAvatar=-1;show('choose');return}if(act==='choose-back'){show('home');return}if(act==='confirm-character'){start();return}if(act==='resume'){show('map');return}if(act==='submit'){submit();return}if(act==='open-probe'){if(state.phase==='investigate'){if(BRWorld.migrate(state).investigated>=3){message='가설 조사 최대 3회를 사용했어요. NPC 만남, 증거 조사, 특별 능력을 이용하세요.';render();return}const why=BRWorld.canInfo(state);if(why){message=why;render();return}show('probe')}else show('probeResult');return}
+ if(act==='cancel-route'){selectedDestination=-1;render();return}
+ if(act==='confirm-route'){
+  if(selectedDestination<0)return;
+  const destination=selectedDestination;
+  const result=BRWorld.travel(state,destination,worldChoice.mode);
+  if(result.ok){selectedDestination=-1;worldChoice.mode='walk';save();show('map');message=result.message;render();}
+  else{selectedDestination=-1;message=result.message;render();}
+  return;
+ }
  if(act==='cancel-suspicion'){suspectTarget=-1;suspectGuess={room:-1,item:-1};show('map');return}
  if(act==='submit-suspicion'){submitSuspicion();return}
  if(act==='check-forensic'){worldResult(BRWorld.checkForensic(state));return}
@@ -325,12 +352,12 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   state.history.unshift(`R${state.round} · 정보행동 없이 턴 종료`);
   save();show('map');message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';render();return;
  }
- if(act==='ability-mode'){const ab=abilityDef();if(state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;render()}return}
+ if(act==='ability-mode'){const ab=abilityDef();if(state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;selectedDestination=-1;render()}return}
  if(act==='ability-use'){worldResult(BRWorld.useAbility(state,worldChoice.npc,worldChoice.kind,abilityDef().id==='interrogate'?worldChoice.weapon:worldChoice.item));return}if(act==='next-round'){nextRound();return}if(act==='open-accuse'){show('accuse');return}if(act==='submit-probe'){submitProbe();return}if(act==='back-map'){show('map');return}if(act==='open-notes'){show('notes');return}if(act==='log'){show('notes');return}const [type,val,extra]=act.split(':');if(type==='choose'){const n=Number(val);if(currentTab==='choose'&&Number.isInteger(n)&&n>=0&&n<6){selectedAvatar=n;message='';render()}return}if(type==='room'){
-  const result=BRWorld.travel(state,Number(val),worldChoice.mode);
-  worldChoice.mode='walk';show('map');message=result.message;
-  if(result.ok)save();
-  render();return;
+  const destination=Number(val);
+  const route=BRWorld.routeInfo(state,destination,worldChoice.mode);
+  if(!route.ok){selectedDestination=-1;message=route.message;render();return;}
+  selectedDestination=destination;message='';show('map');return;
  }
  if(type==='suspect'){
   const npcId=Number(val);
