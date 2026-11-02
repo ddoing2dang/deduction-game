@@ -153,3 +153,9 @@
  .encounter-meta strong{font-size:12px}
  .encounter-card>.button{padding:7px 7px;font-size:10px;min-height:36px}
 }
+
+/* Traversable destinations and room distance cues */
+.world-room.reachable{border-color:#d1a36f;box-shadow:inset 0 1px #ffeed021,0 0 0 1px #e9ba7c33;background:linear-gradient(140deg,#443448,#302439)}
+.world-room.not-reachable{opacity:.54;filter:saturate(.8)}
+.world-room.active{opacity:1;filter:none;border-color:#f0d190;box-shadow:0 0 0 2px #f0d1902a;background:#57394c}
+.world-route{margin:12px 0 0;color:#e7ca97;line-height:1.5;font-size:12px;padding:9px 11px;background:#38283a;border-radius:10px;border:1px solid #79596f}
