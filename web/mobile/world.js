@@ -42,7 +42,10 @@ const BRWorld = (function buildWorld(){
   if(state.world)return state.world;
   const notAnswer=(kind,total)=>shuffle(Array.from({length:total},(_,i)=>i).filter(i=>i!==state.answer[kind]));
   const roomCards=notAnswer("room",9),itemCards=notAnswer("item",9);
-  const all=Array.from({length:6},(_,i)=>({id:i,room:i===state.playerCharacter?0:rnd(9),trait:pick(TRAITS).id,hand:{room:roomCards[i],item:itemCards[i]}}));
+  const all=Array.from({length:6},(_,i)=>{
+   const a=pick(ABILITIES);
+   return {id:i,room:i===state.playerCharacter?0:rnd(9),trait:pick(TRAITS).id,ability:{type:a.id,left:a.charges},intel:[],hand:{room:roomCards[i],item:itemCards[i]}};
+  });
   const own=all.find(x=>x.id===state.playerCharacter);
   const npcs=all.filter(x=>x.id!==state.playerCharacter);
   // Legacy save may have no selected player. Support sentinel -1 by assigning a temporary card.
@@ -51,7 +54,7 @@ const BRWorld = (function buildWorld(){
   const hotspotCards=shuffle([...roomCards.slice(1,6).map(i=>({kind:"room",id:i})),...itemCards.slice(1,6).map(i=>({kind:"item",id:i}))]);
   const hotspots=candidateRooms.slice(0,3).map((room,i)=>({room,kind:hotspotCards[i].kind,id:hotspotCards[i].id,used:false}));
   const ability=pick(ABILITIES);
-  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],witnesses:[],released:null};
+  state.world={npcs,ownHand:owner,unassigned:{room:roomCards.slice(6),item:itemCards.slice(6)},ability:{type:ability.id,left:ability.charges},moveLeft:2,prevRoom:0,hotspots,investigated:0,suspicions:0,cooperations:0,awaiting:null,event:null,eventLog:[],sabotageUses:{smoke:2,lock:2,delay:2},key:{appears:2+rnd(3),room:pick(candidateRooms),taken:false},box:{appears:5+rnd(3),room:pick(candidateRooms),opened:false},clueRead:[],witnesses:[],released:null};
   return state.world;
  }
  function migrate(state){
@@ -60,6 +63,11 @@ const BRWorld = (function buildWorld(){
   if(!Array.isArray(w.clueRead))w.clueRead=[];
   if(!Array.isArray(w.witnesses))w.witnesses=[];
   if(!Array.isArray(w.eventLog))w.eventLog=[];
+  if(!w.sabotageUses)w.sabotageUses={smoke:2,lock:2,delay:2};
+  for(const n of w.npcs){
+   if(!n.ability){const a=pick(ABILITIES);n.ability={type:a.id,left:a.charges}}
+   if(!Array.isArray(n.intel))n.intel=[];
+  }
   return w;
  }
  function canInfo(state){
@@ -210,16 +218,29 @@ const BRWorld = (function buildWorld(){
   w.moveLeft=2;
   w.event=null;
   for(const npc of w.npcs){
-   const steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
+   const skill=npc.ability;
+   if(skill.type==="jump"&&skill.left>0&&Math.random()<.22){
+    npc.prevRoom=npc.room;npc.room=rnd(9);skill.left--;continue;
+   }
+   if(skill.type==="return"&&skill.left>0&&Number.isInteger(npc.prevRoom)&&Math.random()<.20){
+    const from=npc.room;npc.room=npc.prevRoom;npc.prevRoom=from;skill.left--;continue;
+   }
+   let steps=npc.trait==="swift"?3:npc.trait==="stationary"?rnd(2):1+rnd(2);
+   if((skill.type==="dash"||skill.type==="detour")&&skill.left>0&&Math.random()<.36){steps++;skill.left--}
+   if(["trace","analysis","interrogate"].includes(skill.type)&&skill.left>0&&Math.random()<.36){
+    const others=w.npcs.filter(o=>o.id!==npc.id);
+    if(others.length){const victim=pick(others),kind=Math.random()<.5?"room":"item";npc.intel.push({kind,id:victim.hand[kind]});skill.left--}
+   }
    for(let j=0;j<steps;j++){
     if(npc.trait==="stationary"&&Math.random()<.35)continue;
     const from=npc.room;const options=npc.trait==="roamer"?EDGES[from].filter(room=>room!==npc.prevRoom):EDGES[from];npc.room=pick(options.length?options:EDGES[from]);npc.prevRoom=from;
    }
   }
   // Actual culprit can disrupt with hidden origin. Never identify the actor in UI.
-  if(state.round>=2&&state.round<=11&&Math.random()<.62){
-   const types=["smoke","lock","delay"];
+  if(state.round>=2&&state.round<=11&&Math.random()<.62&&Object.values(w.sabotageUses).some(n=>n>0)){
+   const types=["smoke","lock","delay"].filter(k=>w.sabotageUses[k]>0);
    const kind=pick(types);
+   w.sabotageUses[kind]--;
    if(kind==="smoke")w.event={kind,rooms:[pick(w.npcs).room]};
    if(kind==="lock"){const a=rnd(9),b=pick(EDGES[a]);w.event={kind,edge:edge(a,b)};}
    if(kind==="delay")w.event={kind};
