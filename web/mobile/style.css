@@ -121,3 +121,35 @@
 .choice.my-choice{border-color:#b58f66;color:#f6d5a0;background:#5b3a49;text-decoration:none;opacity:1}
 @media(max-width:370px){.avatar-grid{gap:6px}.avatar-card{padding:6px 2px;min-height:160px}.avatar-portrait{height:105px}.avatar-name{font-size:13px}.choose-panel{padding:15px 11px}.avatar-preview{gap:8px}.preview-portrait{width:75px}}
 @media(prefers-reduced-motion:reduce){.avatar-card{transition:none}}
+
+/* 2026-11-03: AI-resident board, encounter cards and evidence/event UI */
+.world-safe,.world-alert{position:relative;border-radius:12px;padding:12px 13px;margin-bottom:14px;font-size:12px;line-height:1.55;font-weight:700}
+.world-safe{background:#263b35;border:1px solid #557869;color:#c8eedc}
+.world-alert{background:linear-gradient(135deg,#633b45,#3c222c);border:1px solid #b88175;color:#ffdfd2;box-shadow:0 5px 16px #0c050b55}
+.room.world-room{padding:8px 4px;min-height:124px;display:flex;align-items:center;flex-direction:column;justify-content:flex-start;gap:3px}
+.world-room .symbol{font-size:25px;line-height:1.1;margin-bottom:1px}
+.world-room .room-name{font-size:11px;line-height:1.25;min-height:27px;display:grid;align-items:center}
+.npc-row{display:flex;justify-content:center;align-items:center;gap:2px;min-height:24px;max-width:100%;flex-wrap:wrap}
+.npc-mini{width:23px;height:25px;object-fit:contain;background:#311f33;border:1px solid #ca9c82;border-radius:7px;filter:drop-shadow(0 1px 3px #0008)}
+.world-room-tokens{font-size:14px;line-height:1.1;min-height:17px;letter-spacing:-.09em}
+.encounter-grid{display:flex;flex-direction:column;gap:9px;margin:12px 0}
+.encounter-card{border:1px solid #866477;border-radius:14px;background:linear-gradient(120deg,#3d293d,#2d2032);display:flex;align-items:center;gap:7px;padding:8px;min-height:70px}
+.encounter-card>img{width:47px;height:57px;object-fit:contain;flex:0 0 47px;filter:drop-shadow(0 3px 8px #0008)}
+.encounter-meta{flex:1;min-width:0}
+.encounter-meta strong{font-size:14px;color:#f0d6a6;display:block;white-space:nowrap}
+.encounter-meta span{font-size:10px;color:#d4b6c3;display:block;margin-top:4px}
+.encounter-card>.button{min-height:39px;padding:8px 10px;border-radius:10px;box-shadow:none;font-size:11px;white-space:nowrap}
+.world-ability-head{display:flex;align-items:center;justify-content:space-between;gap:6px;border:1px solid #92787b;background:linear-gradient(100deg,#50354e,#302338);padding:13px 10px;border-radius:14px}
+.world-ability-head span{font-size:11px;color:#e5c6d1}
+.world-ability-head b{font-size:19px;color:#f3d19a}
+.world-events{display:flex;flex-direction:column;gap:8px}
+.world-events>div{padding:11px;border-radius:11px;border:1px solid #665468;background:#2e2431;color:#f3d6e0;font-size:12px;line-height:1.5}
+@media(max-width:380px){
+ .room.world-room{min-height:118px;padding:6px 2px}
+ .world-room .room-name{font-size:10px}
+ .npc-mini{width:20px;height:22px}
+ .encounter-card{gap:5px;padding:6px}
+ .encounter-card>img{width:38px;height:45px;flex-basis:38px}
+ .encounter-meta strong{font-size:12px}
+ .encounter-card>.button{padding:7px 7px;font-size:10px;min-height:36px}
+}
