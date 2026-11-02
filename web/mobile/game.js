@@ -47,7 +47,7 @@ function img(c,klass='hero-photo'){return `<img class="${klass}" src="${portrait
 function btn(txt,fn,cls='button',off=false){return `<button type="button" class="${cls}" data-act="${fn}" ${off?'disabled':''}>${txt}</button>`}
 function header(){return `<header class="topbar"><div><div class="smallcaps">BLACK ROSE · MOBILE</div><div class="brand">검은 장미의 비밀</div></div><div class="chip">${state.started?`R${state.round}/12`:'2D 추리 게임'}</div></header>`}
 function panel(title,body){return `<section class="panel"><div class="eyebrow">BLACK ROSE MANSION</div><h2 class="section-title">${title}</h2>${body}</section>`}
-function intro(){return `<section class="panel hero"><div class="badge-float">싱글플레이</div><div class="eyebrow">어둠 속에 숨겨진 진실</div>${img(CHARACTERS[0])}<h1 class="hero-title">장미가 지는 밤</h1><p class="hero-desc">저택에서 벌어진 수상한 사건.<br>여섯 캐릭터 중 나의 역할을 고르고, 아홉 개의 방과 도구로 사건을 추리하세요.<br>단서를 수집해 숨겨진 조합을 밝혀내세요.</p>${btn('캐릭터 선택하고 시작','new','button primary full')}<p class="lead">${state.started&&!state.ended?'이전 사건이 저장되어 있어요.':''}</p>${state.started&&!state.ended?btn('이어서 플레이','resume','button secondary full'):''}</section>${panel('플레이 방법',`<p class="lead">① 캐릭터 6명 중 내 조사자를 선택해요. 나머지 5명 중 범인이 있어요.<br>② 방을 고른 뒤 조사할 세 항목을 직접 선택해요.<br>③ 라운드마다 조사 1회, 맞은 항목 개수만 확인해요.<br>④ R6부터 최종 추리 가능! 같은 라운드에 2번 연속 지목할 수 없어요.</p><div class="evidence">모바일 독립 규칙 · 총 12라운드 · 라운드당 조사 1회 · 최종 지목 2회 · 휴대폰에 자동 저장</div>`)}<div class="footer">기존 PC Unity 게임과 분리된 독립 게임입니다.</div>`}
+function intro(){return `<section class="panel hero"><div class="badge-float">싱글플레이</div><div class="eyebrow">어둠 속에 숨겨진 진실</div>${img(CHARACTERS[0])}<h1 class="hero-title">장미가 지는 밤</h1><p class="hero-desc">저택에서 벌어진 수상한 사건.<br>여섯 캐릭터 중 나의 역할을 고르고, 아홉 개의 방과 도구로 사건을 추리하세요.<br>단서를 수집해 숨겨진 조합을 밝혀내세요.</p>${btn('캐릭터 선택하고 시작','new','button primary full')}<p class="lead">${state.started&&!state.ended?'이전 사건이 저장되어 있어요.':''}</p>${state.started&&!state.ended?btn('이어서 플레이','resume','button secondary full'):''}</section>${panel('플레이 방법',`<p class="lead">① 캐릭터를 선택하면 랜덤 능력을 받아요.<br>② 2P로 방을 이동해 NPC를 만나 의심·협조할 수 있어요.<br>③ 가설 조사·특별 단서·의심·협조 중 한 번의 정보행동을 선택해요.<br>④ 범인의 방해와 이벤트를 넘어 R6부터 최종 추리에 도전해요! 같은 라운드에 2번 연속 지목할 수 없어요.</p><div class="evidence">모바일 독립 규칙 · 총 12라운드 · 라운드당 조사 1회 · 최종 지목 2회 · 휴대폰에 자동 저장</div>`)}<div class="footer">기존 PC Unity 게임과 분리된 독립 게임입니다.</div>`}
 
 function chooseCharacter(){
  const cards=CHARACTERS.map((c,i)=>`<button type="button" class="avatar-card ${selectedAvatar===i?'selected':''}" data-act="choose:${i}" aria-pressed="${selectedAvatar===i?'true':'false'}" aria-label="${esc(c.name)} 선택">${img(c,'avatar-portrait')}<span class="avatar-name">${esc(c.name)}</span><span class="avatar-selected">${selectedAvatar===i?'✓ 선택됨':'선택하기'}</span></button>`).join('');
@@ -189,14 +189,28 @@ function roomTokens(i){
 
 function worldMap(){
  const w=BRWorld.migrate(state);
- const grid=ROOMS.map(([name,emoji],i)=>'<button class="room world-room '+(state.room===i?'active':'')+'" data-act="room:'+i+'" aria-label="'+esc(name)+'"><span class="symbol">'+emoji+'</span><span class="room-name">'+esc(name)+'</span><div class="npc-row">'+roomPlayers(i)+'</div>'+roomTokens(i)+'</button>').join('');
+ const routeReachable=i=>{
+  if(i===state.room)return true;
+  const path=BRWorld.pathBetween(state.room,i);if(!path)return false;
+  const ab=w.ability;
+  if(worldChoice.mode==='jump'&&ab.type==='jump'&&ab.left>0)return true;
+  const hops=path.length-1;
+  let extra=0;
+  for(let k=1;k<path.length;k++)if(w.event?.kind==='lock'&&w.event.edge===[path[k-1],path[k]].sort((x,y)=>x-y).join('-'))extra++;
+  if(ab.type==='gate'&&ab.left>=extra)extra=0;
+  const cost=(worldChoice.mode==='detour'&&ab.type==='detour'&&ab.left>0&&hops===2?1:hops)+extra;
+  return cost<=w.moveLeft;
+ };
+ const grid=ROOMS.map(([name,emoji],i)=>'<button class="room world-room '+(state.room===i?'active':routeReachable(i)?'reachable':'not-reachable')+'" data-act="room:'+i+'" aria-label="'+esc(name)+'"><span class="symbol">'+emoji+'</span><span class="room-name">'+esc(name)+'</span><div class="npc-row">'+roomPlayers(i)+'</div>'+roomTokens(i)+'</button>').join('');
+ const destinations=ROOMS.map(([name],i)=>i!==state.room&&routeReachable(i)?esc(name):null).filter(Boolean);
+ const routeHint='<p class="world-route">현재 이동 가능: '+(destinations.length?destinations.join(' · '):'이동력 없음 / 능력 이동 확인')+'</p>';
  const npcs=BRWorld.npcHere(state);
  const encounter=npcs.length?'<div class="encounter-grid">'+npcs.map(n=>'<div class="encounter-card"><img src="'+portrait(CHARACTERS[n.id])+'" alt="'+esc(NPCName(n.id))+'"><div class="encounter-meta"><strong>'+esc(NPCName(n.id))+'</strong><span>'+esc((BRWorld.TRAITS.find(t=>t.id===n.trait)||{}).name||'일반 이동')+' 성향</span></div>'+btn('의심','suspect:'+n.id,'button secondary',state.phase!=='investigate'||w.suspicions>=3)+btn('협조','cooperate:'+n.id,'button secondary',state.phase!=='investigate'||w.cooperations>=1)+'</div>').join('')+'</div><label class="segtitle">의심할 도구</label>'+worldSelect('weapon',ITEMS,worldChoice.weapon):'<p class="hint">같은 방에 NPC가 없어요. 지도에서 초상화가 있는 방을 찾아 이동해야 의심·협조할 수 있습니다.</p>';
  const special=w.hotspots.find(x=>x.room===state.room&&!x.used);
  const specialButton=special?btn('🔎 특별 단서 조사 · 행동 1회 소모','search-clue','button secondary full',state.phase!=='investigate'):'<p class="hint">이 방에 남은 특별 단서는 없습니다.</p>';
  const primary=state.phase==='review'?phaseAction():btn('가설 조사 · 3항목 직접 선택','open-probe','button primary full')+'<div style="height:9px"></div>'+btn('이번 라운드 행동 없이 종료','pass-turn','button ghost full');
  const toggle=worldChoice.mode!=='walk'?'<div class="notice">✦ '+(worldChoice.mode==='jump'?'도약':'우회')+' 모드 — 이동할 방을 터치하세요.</div>':'';
- return summary()+worldNotice()+panel('저택 지도 · 이동력 '+w.moveLeft+'P',`<p class="hint">NPC가 있는 방에서만 의심·협조가 가능해요. 이동은 연결 경로를 따르며 라운드마다 2P입니다. 다음 라운드에는 NPC도 이동합니다.</p>${toggle}<div class="grid3">${grid}</div>`)+
+ return summary()+worldNotice()+panel('저택 지도 · 이동력 '+w.moveLeft+'P',`<p class="hint">NPC가 있는 방에서만 의심·협조가 가능해요. 이동은 연결 경로를 따르며 라운드마다 2P입니다. 다음 라운드에는 NPC도 이동합니다.</p>${toggle}<div class="grid3">${grid}</div>${routeHint}`)+
  panel(ROOMS[state.room][0]+' · 방 행동',`<p class="lead">같은 방 NPC ${npcs.length}명 · 의심 ${w.suspicions}/3 · 협조 ${w.cooperations}/1</p>${encounter}<div class="sep"></div>${specialButton}<div class="sep"></div>${primary}`)+
  worldAbility()+
  panel('특별 사건',`<div class="world-events"><div>🗝️ 열쇠 · ${w.key.taken?'획득 완료':state.round>=w.key.appears?ROOMS[w.key.room][0]+'에 출현':'R'+w.key.appears+'에 나타남'}</div><div>📦 비밀상자 · ${w.box.opened?'개봉 완료':state.round>=w.box.appears&&w.key.taken?ROOMS[w.box.room][0]+'에 출현':'열쇠 필요 / 이후 등장'}</div></div><p class="hint">🔎은 증거 조사, 🗝️는 열쇠, 📦은 비밀상자예요. 원하는 방까지 이동해서 직접 수집하세요.</p>`);
