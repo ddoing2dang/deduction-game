@@ -389,3 +389,158 @@ select option{background:#fffaf4;color:#302431}
 @media(prefers-reduced-motion:reduce){
   .panel,.host-stage,.person-stage{animation:none}
 }
+
+
+/* THE EVIDENCE REVEAL — cinematic result-only effects (CSS, no images/audio).
+   Three ambiguous seals show how MANY fields match, never WHICH field. */
+.result-fx{
+  position:relative;isolation:isolate;overflow:hidden;
+  margin:15px auto 12px;padding:20px 10px 17px;
+  border:2px solid #c6a17b;border-radius:18px;
+  background:radial-gradient(ellipse at 50% 30%,#fffaf1 0%,#f8e8d2 52%,#ead4c5 100%);
+  box-shadow:inset 0 0 0 4px #fff8,0 6px 18px #754b522a;
+  color:#67334a;
+}
+.result-fx .fx-dossier{position:relative;z-index:2;display:flex;align-items:center;flex-direction:column;gap:7px}
+.result-fx .fx-motto{
+  font:800 10px/1.5 Georgia,serif;letter-spacing:.19em;
+  color:#885a58;
+}
+.result-fx .fx-score{
+  display:block;font-family:Georgia,'Noto Serif KR',serif;
+  font-size:clamp(44px,11vw,71px);font-weight:900;
+  line-height:1;color:#703147;
+  animation:fx-judgment-reveal .64s cubic-bezier(.16,1.25,.3,1) both;
+  text-shadow:0 6px 15px #973e6d36;
+}
+.result-fx .fx-message{font-size:15px;font-weight:900;color:#5b3045}
+.result-fx .fx-seals{display:flex;gap:14px;margin-top:8px;justify-content:center}
+.result-fx .fx-seal{
+  display:grid;place-items:center;width:37px;height:37px;
+  border:2px solid #bbaba1;border-radius:50%;
+  color:#857781;background:#f3e8df;
+  font-size:20px;font-family:Georgia,serif;
+  transform:rotate(-12deg);
+  animation:fx-seal-enter .48s both;
+}
+.result-fx .fx-seal:nth-child(2){animation-delay:.13s}
+.result-fx .fx-seal:nth-child(3){animation-delay:.26s}
+.result-fx .fx-seal.fx-hit{
+  border-color:#aa7b41;color:#fff8e7;
+  background:linear-gradient(130deg,#bd9157,#806036);
+  box-shadow:0 0 0 3px #d9b78455,0 0 15px #d7a96868;
+}
+.result-fx .fx-rays{
+  position:absolute;z-index:0;inset:-25%;pointer-events:none;
+  background:repeating-conic-gradient(from 0deg at 50% 50%,#bb86441c 0deg 8deg,transparent 8deg 23deg);
+  animation:fx-ray-turn 15s linear infinite;
+  opacity:.75;
+  mask-image:radial-gradient(ellipse at center,transparent 0 13%,#000 62%,transparent 77%);
+}
+.result-fx .fx-particles{
+  position:absolute;z-index:1;inset:0;overflow:hidden;pointer-events:none;
+}
+.result-fx .fx-particle{
+  position:absolute;top:54%;left:50%;width:5px;height:5px;
+  background:#c89b59;box-shadow:0 0 8px #d6a15e;
+  border-radius:1px;transform:rotate(var(--angle));
+  opacity:0;animation:fx-spark-flight 2.2s ease-out both;
+  animation-delay:calc(var(--j)*70ms);
+}
+.result-fx.fx-count-0{
+  background:radial-gradient(ellipse at center,#f6e2df 0%,#e9cccd 100%);
+  border-color:#bc808b;
+}
+.result-fx.fx-count-0 .fx-score{color:#8d3b50;animation:fx-judgment-reveal .6s both,fx-shake .5s .55s both}
+.result-fx.fx-count-0 .fx-rays{background:repeating-conic-gradient(#ad566d1a 0 10deg,transparent 10deg 27deg)}
+.result-fx.fx-count-1 .fx-score{color:#9a6636}
+.result-fx.fx-count-2 .fx-score{color:#986d38;text-shadow:0 0 15px #cfa25e75}
+.result-fx.fx-count-3,.result-fx.fx-victory{
+  background:radial-gradient(ellipse at center,#fffaf0,#f7e2b5 72%,#e8c898);
+  border-color:#b88a48;box-shadow:inset 0 0 0 4px #fff9,0 0 22px #d8a55680;
+}
+.result-fx.fx-count-3 .fx-score,.result-fx.fx-victory .fx-score{
+  color:#8c6630;text-shadow:0 0 18px #dbb66a8a;
+}
+.result-fx.fx-count-3 .fx-rays,.result-fx.fx-victory .fx-rays{opacity:1;animation-duration:9s}
+.result-fx.fx-victory .fx-score{font-size:77px;animation:fx-judgment-reveal .8s both,fx-victory-shine 1.6s .8s infinite alternate}
+.result-fx.fx-victory .fx-particle{width:7px;height:7px;animation-duration:2.6s;background:#e6bd6f}
+.result-fx.fx-defeat{
+  background:radial-gradient(ellipse at center,#f7e7e7,#eed1d8 70%,#dbb4c2);
+  border-color:#a85168;box-shadow:inset 0 0 0 4px #fff8,0 0 17px #9a3b5f44;
+}
+.result-fx.fx-defeat .fx-score{
+  color:#912e4b;animation:fx-judgment-reveal .7s both,fx-shake .55s .55s both;
+  text-shadow:0 0 15px #b85e7166;
+}
+.result-fx.fx-defeat .fx-particle{background:#ae647c;box-shadow:0 0 8px #ad5e7b}
+.result-fx.fx-delay{background:radial-gradient(circle at center,#f3ede7,#e3dbd5);border-color:#a49286}
+.result-fx.fx-delay .fx-score{color:#785d59}
+.result-fx.fx-delay .fx-particle{background:#a88d84}
+.host-stage:has(.result-fx) .host-orb{animation:fx-orb-pulse 1.4s ease-in-out 2}
+.host-stage:has(.fx-victory) .host-emblem{color:#94703e}
+.host-stage:has(.fx-defeat) .host-emblem{color:#9a3e57}
+@keyframes fx-judgment-reveal{
+  from{opacity:0;transform:scale(2.2) rotate(-11deg);filter:blur(6px)}
+  70%{opacity:1;filter:blur(0)}
+  to{opacity:1;transform:scale(1) rotate(0)}
+}
+@keyframes fx-seal-enter{
+  from{opacity:0;transform:rotate(-36deg) scale(.4)}
+  to{opacity:1;transform:rotate(-12deg) scale(1)}
+}
+@keyframes fx-spark-flight{
+  0%{opacity:0;transform:rotate(var(--angle)) translateX(3px) scale(.6)}
+  16%{opacity:1}
+  75%{opacity:.8}
+  100%{opacity:0;transform:rotate(var(--angle)) translateX(148px) scale(.3)}
+}
+@keyframes fx-ray-turn{
+  from{transform:rotate(0)}
+  to{transform:rotate(360deg)}
+}
+@keyframes fx-shake{
+  0%,100%{transform:translateX(0)}
+  20%{transform:translateX(-9px)}
+  40%{transform:translateX(7px)}
+  60%{transform:translateX(-4px)}
+  80%{transform:translateX(2px)}
+}
+@keyframes fx-victory-shine{
+  from{text-shadow:0 0 8px #c49b5780}
+  to{text-shadow:0 0 23px #ebce8f,0 0 45px #f8dba891}
+}
+@keyframes fx-orb-pulse{
+  0%,100%{box-shadow:0 0 0 8px #b1906830,0 9px 20px #5c3d4c29}
+  50%{box-shadow:0 0 0 15px #b1906830,0 0 22px #d5a76c60}
+}
+/* Dramatic but readable entry accents, without any extra modal or wait. */
+.panel:has([data-act="submit-probe"]),.panel:has([data-act="submit"]){
+  border-top-color:#8c5163;
+  box-shadow:0 10px 26px #6e4e6030,0 0 0 2px #a8826d35;
+}
+.panel:has([data-act="submit-probe"]) .section-title::before,
+.panel:has([data-act="submit"]) .section-title::before{
+  content:"✦ ";color:#a57750;animation:fx-victory-shine 1.6s ease-in-out infinite alternate;
+}
+/* The next-round action becomes the clear visual target after the result. */
+.round-next-quick{margin:2px 0 12px;scroll-margin-top:105px}
+.round-next-quick .button{width:100%;min-height:58px;border-radius:15px;box-shadow:0 6px 16px #682f4e3e}
+.round-next-quick .button:focus-visible{outline:3px solid #b98b60;outline-offset:4px}
+@media(max-width:380px){
+ .result-fx{padding:15px 8px 13px;margin:12px auto}
+ .result-fx .fx-score{font-size:53px}
+ .result-fx.fx-victory .fx-score{font-size:62px}
+ .result-fx .fx-seals{gap:10px}
+ .result-fx .fx-seal{width:33px;height:33px}
+}
+@media(prefers-reduced-motion:reduce){
+ .result-fx *, .result-fx::before,.result-fx::after,
+ .host-stage:has(.result-fx) .host-orb,
+ .panel:has([data-act="submit-probe"]) .section-title::before,
+ .panel:has([data-act="submit"]) .section-title::before{
+  animation:none!important;transition:none!important;
+ }
+ .result-fx .fx-particle{display:none}
+ .result-fx .fx-score,.result-fx .fx-seal{opacity:1;transform:none;filter:none}
+}
