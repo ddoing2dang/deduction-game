@@ -356,7 +356,7 @@ function worldResult(result,voiceScope=null){
  let desc=result.message;
  if(result.found)desc+=' 획득한 '+(result.found.kind==='room'?'장소':'도구')+' 카드: '+clueTitle(result.found.kind,result.found.id);
  if(result.cards)desc+=' 미배분 장소: '+clueTitle('room',result.cards.room)+' / 미배분 흉기: '+clueTitle('item',result.cards.item);
- save();show('map');message=desc;render();
+ save();currentTab='map';message=desc;
  showHost({voiceScope,voicePhase:voiceScope?'result':null,kind:'evidence',icon:'✦',eyebrow:`R${state.round} · 행동 판정`,title:state.phase==='review'?'정보 판정':'행동 완료',body:desc,sub:state.phase==='review'?'획득한 정보는 추리 수첩에 기록됩니다.':'이동과 정보행동을 계속 진행할 수 있습니다.'});
 }
 
@@ -412,7 +412,7 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   if(selectedDestination<0)return;
   const destination=selectedDestination;
   const result=BRWorld.travel(state,destination,worldChoice.mode);
-  if(result.ok){selectedDestination=-1;worldChoice.mode='walk';save();show('map');message=result.message;render();showHost({kind:'round',icon:'⌂',eyebrow:`R${state.round} · 방 이동`,title:'이동 완료',body:result.message,sub:'연결된 경로를 따라 이동했습니다.'});}
+  if(result.ok){selectedDestination=-1;worldChoice.mode='walk';save();currentTab='map';message=result.message;showHost({kind:'round',icon:'⌂',eyebrow:`R${state.round} · 방 이동`,title:'이동 완료',body:result.message,sub:'연결된 경로를 따라 이동했습니다.'});}
   else{selectedDestination=-1;message=result.message;render();}
   return;
  }
@@ -423,7 +423,7 @@ app.addEventListener('click',(e)=>{const el=e.target.closest('[data-act]');if(!e
   if(state.ended||state.phase!=='investigate')return;
   state.phase='review';state.lastInvestigation=null;
   state.history.unshift(`R${state.round} · 정보행동 없이 턴 종료`);
-  save();show('map');message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';render();showHost({kind:'round',icon:'◇',eyebrow:`R${state.round} · 라운드 정산`,title:'이번 라운드 종료',body:'정보행동 없이 이번 라운드를 종료했습니다. 수첩을 확인한 뒤 다음 라운드로 넘어가세요.'});return;
+  save();currentTab='map';message='이번 라운드는 행동을 하지 않고 넘겼습니다. 다음 라운드로 진행할 수 있습니다.';showHost({kind:'round',icon:'◇',eyebrow:`R${state.round} · 라운드 정산`,title:'이번 라운드 종료',body:'정보행동 없이 이번 라운드를 종료했습니다. 수첩을 확인한 뒤 다음 라운드로 넘어가세요.'});return;
  }
  if(act==='ability-mode'){const ab=abilityDef();if(state.world.ability.left>0){worldChoice.mode=worldChoice.mode===ab.id?'walk':ab.id;selectedDestination=-1;render()}return}
  if(act==='ability-use'){worldResult(BRWorld.useAbility(state,worldChoice.npc,worldChoice.kind,abilityDef().id==='interrogate'?worldChoice.weapon:worldChoice.item));return}if(act==='next-round'){nextRound();return}if(act==='open-accuse'){show('accuse');return}if(act==='submit-probe'){submitProbe();return}if(act==='back-map'){show('map');return}if(act==='open-notes'){show('notes');return}if(act==='log'){show('notes');return}const [type,val,extra]=act.split(':');if(type==='choose'){const n=Number(val);if(currentTab==='choose'&&Number.isInteger(n)&&n>=0&&n<6){selectedAvatar=n;message='';render()}return}if(type==='room'){
