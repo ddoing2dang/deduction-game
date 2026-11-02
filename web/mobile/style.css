@@ -449,3 +449,23 @@ select option:disabled{color:#69616c}
   .avatar-card .avatar-name{font-size:13px}
   .graph-node .graph-room-cost{font-size:10px}
 }
+
+/* Fully hands-free narrator: no next / skip / listen buttons in the scene. */
+.host-auto-progress{
+ display:flex;align-items:center;justify-content:center;gap:10px;
+ padding:12px 13px;margin:19px auto 0;
+ border:1px solid #c19e91;border-radius:13px;
+ background:#513744;color:#fff1da;
+ font-size:12px;font-weight:800;line-height:1.5;
+}
+.host-auto-pulse{
+ display:block;flex:0 0 10px;width:10px;height:10px;border-radius:50%;
+ background:#f1d29c;box-shadow:0 0 0 4px #f1d29c27;
+ animation:host-voice-pulse 1.2s ease-in-out infinite;
+}
+@keyframes host-voice-pulse{
+ 0%,100%{transform:scale(.9);opacity:.65}
+ 50%{transform:scale(1.2);opacity:1;box-shadow:0 0 0 7px #f1d29c16}
+}
+@media(prefers-reduced-motion:reduce){.host-auto-pulse{animation:none}}
+@media(max-width:370px){.host-auto-progress{padding:10px;font-size:11px}}
