@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": "1.4.0",
   "createdAt": "2026-11-08",
   "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
   "implementationStatus": "design_only_unity_not_integrated",
@@ -24,7 +24,7 @@
     "completeReselectionOfWeaponNamesAllowed": true
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
-  "weaponCatalogStatus": "twelve_fully_reselected_common_item_proposals_per_user_permission_specific_names_still_authoring_draft",
+  "weaponCatalogStatus": "pass1_and_pass2_editorially_reviewed_personal_item_proposals_awaiting_final_case_truth_validation",
   "methodCatalogStatus": "four_user_approved_categories_nine_subtypes_now_user_requested_for_scenario_design",
   "weapons": [
     {
@@ -47,7 +47,13 @@
       ],
       "fictionalItemDesignNote": "작업용 개인 소지품. 날에 의한 감식 범주에만 후보로 포함",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "취미용 소형 작업 도구. 개인 파우치·책상에 보관 가능.",
+      "caseAuthorChecks": [
+        "흔적이 날붙이 감식과 부합할 때만 범행 도구 후보"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W02",
@@ -61,7 +67,7 @@
         "M02_V1",
         "M02_V2"
       ],
-      "itemGroup": "둔력 물품",
+      "itemGroup": "둔력 소품",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -69,7 +75,14 @@
       ],
       "fictionalItemDesignNote": "책과 서류를 받치는 묵직한 개인 소품. 타격·낙하 충격 사건은 별도 물리 타당성 검증 필요",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "개인 책·자료를 세우는 무게감 있는 소품. 모든 테마의 객실 책상에 자연스럽다.",
+      "caseAuthorChecks": [
+        "낙하물 충격형은 개인실 소장 도구의 사건실 이동·위치·반환을 확인할 것",
+        "안전 설비/가구 구조 미확정 상태에서 낙하 경로를 사실로 고정하지 말 것"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W03",
@@ -91,7 +104,13 @@
       ],
       "fictionalItemDesignNote": "개인 소지 재단 도구. 날에 의한 감식 범주",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "의상 수선·포장·종이 작업에 쓰이는 개인 도구.",
+      "caseAuthorChecks": [
+        "사용 흔적은 감식으로만 확정; 소품 보유는 범행의 증거가 아님"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W04",
@@ -105,7 +124,7 @@
         "M03_V1",
         "M03_V2"
       ],
-      "itemGroup": "섬유 물품",
+      "itemGroup": "개인 직물",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -113,11 +132,17 @@
       ],
       "fictionalItemDesignNote": "의상·소지품에 포함 가능한 직물. 질식 관련 사용 여부는 사건별 감식으로만 결정",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "여행 짐이나 개인 의상과 함께 보관하는 평범한 천 소재 소지품.",
+      "caseAuthorChecks": [
+        "목 압박·호흡 차단 사건별 물질 흔적을 별도 확인"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W05",
-      "name": "묵직한 돌 장식품",
+      "name": "돌 문진",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
@@ -127,7 +152,7 @@
         "M02_V1",
         "M02_V2"
       ],
-      "itemGroup": "둔력 물품",
+      "itemGroup": "둔력 소품",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -135,11 +160,18 @@
       ],
       "fictionalItemDesignNote": "선반·테이블 소품. 낙하물 설정은 물리적·사건적 타당성 검증 필요",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "책상 위 종이·메모를 눌러 두는 작은 장식형 문진.",
+      "caseAuthorChecks": [
+        "둔력 후보일 뿐 무게와 접촉 흔적이 검증되지 않으면 살해 도구로 쓰지 말 것",
+        "낙하물 충격형은 사건실 내 배치·시간표 근거 필요"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W06",
-      "name": "휴대용 금속 상패",
+      "name": "금속 사진 액자",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
@@ -151,13 +183,20 @@
         "M02_V2"
       ],
       "weaponTypeReplacementRecommended": false,
-      "itemGroup": "둔력 물품",
+      "itemGroup": "둔력 소품",
       "themes": [
         "HOTEL",
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
-      "fictionalItemDesignNote": "개인이 보관할 수 있는 작은 기념패. 실제 손상과 연관되는지는 감식으로 입증"
+      "fictionalItemDesignNote": "개인이 보관할 수 있는 작은 기념패. 실제 손상과 연관되는지는 감식으로 입증",
+      "everydayPlacementRationale": "숙소·선실·대기실의 개인 물품. 액자 속 사진의 인물·관계는 승인 전 미정.",
+      "caseAuthorChecks": [
+        "액자 내용으로 특정 관계·직업·피해자 인연을 임의 확정하지 말 것",
+        "둔력 손상 가능성은 실제 감식 및 물건의 물리적 타당성 필요"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W07",
@@ -171,18 +210,24 @@
       "compatibleVariantIds": [
         "M03_V1"
       ],
-      "itemGroup": "섬유 물품",
+      "itemGroup": "개인 직물",
       "themes": [
         "HOTEL",
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
       "fictionalItemDesignNote": "가방의 교체형 직물 스트랩. 질식 관련 물증 후보",
-      "weaponTypeReplacementRecommended": false
+      "weaponTypeReplacementRecommended": false,
+      "everydayPlacementRationale": "개인이 들고 다니는 가방의 교체형 또는 분리형 스트랩.",
+      "caseAuthorChecks": [
+        "객관적 섬유 흔적 없이 수법을 단정하지 말 것"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W08",
-      "name": "개인 약 정리함",
+      "name": "개인 약통",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -192,7 +237,7 @@
         "M04_V1",
         "M04_V2"
       ],
-      "itemGroup": "용기 물품",
+      "itemGroup": "개인 보관 용기",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -200,11 +245,18 @@
       ],
       "fictionalItemDesignNote": "약물 관련 기록 및 잔류물 감식 후보. 구체 성분·용량·사용 과정 설정 금지",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "일상적인 개인 휴대 약통. 약의 성분·소지자 병력은 아직 미설정.",
+      "caseAuthorChecks": [
+        "실제 독성·약물 관련 감식 결과가 있는 경우에만 수법과 연계",
+        "의학 기록 없이는 특정 약·질환·용량을 새로 설정하지 말 것"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W09",
-      "name": "밀폐 음료 보틀",
+      "name": "휴대용 음료병",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -215,7 +267,7 @@
         "M04_V2",
         "M04_V3"
       ],
-      "itemGroup": "용기 물품",
+      "itemGroup": "개인 보관 용기",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -223,11 +275,18 @@
       ],
       "fictionalItemDesignNote": "음료 용기. 독성·알레르기 원인 여부는 법의학·기록으로만 검증",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "테마에 무관하게 개인 음료를 보관하는 병.",
+      "caseAuthorChecks": [
+        "내용물·독성·알레르기 원인은 증거가 있는 사건에서만 정의",
+        "용기는 원인 물질 자체와 동일하지 않음을 구별"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W10",
-      "name": "간식 보관 케이스",
+      "name": "밀폐 간식통",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -238,7 +297,7 @@
         "M04_V2",
         "M04_V3"
       ],
-      "itemGroup": "용기 물품",
+      "itemGroup": "개인 보관 용기",
       "themes": [
         "HOTEL",
         "CRUISE",
@@ -246,7 +305,14 @@
       ],
       "fictionalItemDesignNote": "음식 보관 용기. 알레르기·물질 관련 설정은 개인병력·검사 기록을 가진 사건만 허용",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "개인 취향의 간식·소지품을 담는 작은 밀폐 용기. 음식 내용물은 임의 확정 금지.",
+      "caseAuthorChecks": [
+        "알레르기 사건에 쓰이는 경우 의료적 반응과 사전 알레르기 정보의 검증 필요",
+        "보키의 괴식 취향이 범인 여부의 단서가 되어서는 안 됨"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W11",
@@ -261,17 +327,24 @@
       "compatibleVariantIds": [
         "M03_V2"
       ],
-      "itemGroup": "섬유 물품",
+      "itemGroup": "개인 직물",
       "themes": [
         "HOTEL",
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
-      "fictionalItemDesignNote": "개인 소지 직물. 질식/호흡 관련 감식 후보"
+      "fictionalItemDesignNote": "개인 소지 직물. 질식/호흡 관련 감식 후보",
+      "everydayPlacementRationale": "주머니·가방에 넣는 개인 면직물.",
+      "caseAuthorChecks": [
+        "의학적 감식 없이 질식 여부를 추측할 수 없음",
+        "교살과 호흡 차단 증거 분류를 혼동하지 말 것"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     },
     {
       "id": "W12",
-      "name": "접이식 과일칼",
+      "name": "작은 과일칼",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
         "M01"
@@ -289,7 +362,14 @@
       ],
       "fictionalItemDesignNote": "개인 휴대용 도구. 날에 의한 감식 범주",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false
+      "methodCompatibilityReviewNeeded": false,
+      "everydayPlacementRationale": "과일·간식 손질용 개인 소지품. 장소별 반입 가능 여부는 별도 세계관 규칙으로 확인.",
+      "caseAuthorChecks": [
+        "실제 날붙이 감식 흔적 없는 경우 살해 도구 후보로 확정하지 말 것",
+        "세 테마 물건 반입 규정이 있으면 따르도록 사건 작성자 확인"
+      ],
+      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
+      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
     }
   ],
   "methods": [
@@ -424,7 +504,14 @@
           "instanceId": "ROOM_MATTO_W11",
           "originalTypeOwnerRoomId": "ROOM_MOONIRE"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "정밀 공예칼",
+        "금속 북엔드",
+        "두꺼운 면 손수건"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     },
     {
       "roomId": "ROOM_JIRO",
@@ -453,7 +540,14 @@
           "instanceId": "ROOM_JIRO_W02",
           "originalTypeOwnerRoomId": "ROOM_MATTO"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "재단용 가위",
+        "넓은 천 벨트",
+        "금속 북엔드"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     },
     {
       "roomId": "ROOM_MARIHI",
@@ -482,7 +576,14 @@
           "instanceId": "ROOM_MARIHI_W03",
           "originalTypeOwnerRoomId": "ROOM_JIRO"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "돌 문진",
+        "금속 사진 액자",
+        "재단용 가위"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     },
     {
       "roomId": "ROOM_NAZ",
@@ -511,7 +612,14 @@
           "instanceId": "ROOM_NAZ_W05",
           "originalTypeOwnerRoomId": "ROOM_MARIHI"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "캔버스 가방끈",
+        "개인 약통",
+        "돌 문진"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     },
     {
       "roomId": "ROOM_BOKI",
@@ -540,7 +648,14 @@
           "instanceId": "ROOM_BOKI_W07",
           "originalTypeOwnerRoomId": "ROOM_NAZ"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "휴대용 음료병",
+        "밀폐 간식통",
+        "캔버스 가방끈"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     },
     {
       "roomId": "ROOM_MOONIRE",
@@ -569,7 +684,14 @@
           "instanceId": "ROOM_MOONIRE_W09",
           "originalTypeOwnerRoomId": "ROOM_BOKI"
         }
-      ]
+      ],
+      "displayItemNames": [
+        "두꺼운 면 손수건",
+        "작은 과일칼",
+        "휴대용 음료병"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "reviewed_design_proposal"
     }
   ],
   "weaponInstanceRules": {
@@ -821,5 +943,16 @@
       ]
     }
   ],
-  "weaponSelectionGuidance": "All 12 candidate item names re-curated together for 9 method subtypes and three themes; preserve shared 12-type/18-instance fixed architecture; every name is still a user-reviewable proposal."
+  "weaponSelectionGuidance": "Every item is an ordinary personal belonging plausible at HOTEL/CRUISE/MUSIC_BROADCAST. Writer review passes verify placement rationale and subtype-to-evidence compatibility at design level; item use as crime weapon still requires separate proof and medically plausible case authoring. Names remain proposal, numeric constraints user confirmed.",
+  "itemCoherenceContract": {
+    "allThemesHaveSameNames": true,
+    "perRoomThreeSlots": true,
+    "noPhysicalWeaponsOutsideNpcRooms": true,
+    "noFixedPersonalityGuiltAssociation": true,
+    "poisonCategoryUsesContainerAsWeaponObjectOnlyIfScenarioEvidenceProvesIt": true,
+    "noUnprovedMedicalOrTravelAccessFacts": true,
+    "fallingObjectVariantRequiresSceneAndTimelineApproval": true,
+    "dialogueUsesCaseEvidenceOnlyWhenNPCGrantedKnowledge": true,
+    "weaponReviewRoundsCompleted": 2
+  }
 }
