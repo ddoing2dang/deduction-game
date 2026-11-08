@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 682" width="2048" height="682">
+ <title>Mansion - classic translucent dialogue panel and nameplate</title>
+ <desc>Translucent main interior 42 percent opacity, nameplate 52 percent opacity. Transparent canvas with original themed colors and restrained ornaments.</desc>
+ <defs><linearGradient id="sheen" x1="0" y1="0" x2="0.35" y2="1"><stop stop-color="#ffffff" stop-opacity=".10"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".14"/></linearGradient></defs>
+ <g stroke-linejoin="round">
+ <path d="M93 173 H1952 Q1978 173 1980 196 L2015 221 Q2031 231 2031 254 V519 Q2031 543 2004 556 L1982 572 Q1974 596 1944 596 H106 Q77 596 70 574 L41 554 Q20 544 20 519 V264 Q20 232 43 222 L71 195 Q74 173 93 173Z" fill="#292527" stroke="#292527" stroke-width="7"/>
+ <path d="M96 189 H1948 Q1966 190 1968 214 L2002 237 Q2016 243 2016 263 V513 Q2015 533 1993 544 L1971 558 Q1963 580 1941 580 H107 Q90 580 84 558 L57 544 Q39 535 39 514 V264 Q39 245 59 234 L85 216 Q84 192 96 189Z" fill="#f8f4f5" fill-opacity=".42" stroke="#bca07c" stroke-width="5"/>
+ <path d="M105 203 H1940 Q1950 204 1950 222 L1990 251 V517 L1956 549 Q1954 566 1932 566 H118 Q97 566 97 549 L55 514 V265 L96 228Z" fill="none" stroke="#6c313c" stroke-opacity=".62" stroke-width="2.8"/>
+ <path d="M97 250 Q500 198 992 212 L1862 214" fill="none" stroke="#ffffff" stroke-opacity=".33" stroke-width="2"/>
+ <path d="M137 83 H576 Q607 83 612 107 L619 137 V178 Q617 209 585 224 H138 Q88 224 86 188 V133 Q88 96 137 83Z" fill="#292527" stroke="#292527" stroke-width="6"/>
+ <path d="M141 98 H570 Q594 98 599 123 V178 Q598 202 564 208 H144 Q102 206 103 176 V133 Q103 105 141 98Z" fill="#f8f4f5" fill-opacity=".52" stroke="#bca07c" stroke-width="4"/>
+ <path d="M147 111 H559 Q581 113 585 138 V174 Q581 193 557 194 H148 Q118 192 118 170 V138 Q120 111 147 111Z" stroke="#6c313c" stroke-opacity=".45" stroke-width="2" fill="none"/>
+ <path d="M1017 559 L1031 542 L1047 558 L1031 576Z" fill="#6c313c" stroke="#bca07c" stroke-width="3"/>
+ <path d="M105 510 Q95 540 129 548 L158 554 M1940 509 Q1950 540 1920 548 L1894 554" stroke="#bca07c" stroke-width="3" fill="none"/>
+ <path d="M1021 558 Q1002 555 990 566 M1042 559 Q1056 555 1070 566" fill="none" stroke="#bca07c" stroke-width="3"/></g>
+ </svg>
