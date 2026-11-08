@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "createdAt": "2026-11-08",
   "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
   "implementationStatus": "design_only_unity_not_integrated",
@@ -16,11 +16,13 @@
     "crossRoomSharedIncomingSlotsPerNpc": 1,
     "totalNpcRooms": 6,
     "noWeaponObjectInLobbyOrCrimeScene": true,
-    "methodCatalogSharedAcrossThemes": true
+    "methodCatalogSharedAcrossThemes": true,
+    "methodCategoryCount": 4,
+    "methodVariantApproval": "under_exploration_not_final"
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
   "weaponCatalogStatus": "proposal_for_specific_names_and_base_owners",
-  "methodCatalogStatus": "M01_M04_proposed_unchanged_M05_user_rejected_replacement_awaiting_selection",
+  "methodCatalogStatus": "four_user_approved_shared_categories_nine_variants_proposed",
   "weapons": [
     {
       "id": "W01",
@@ -70,7 +72,7 @@
     {
       "id": "W06",
       "name": "휴대용 고데기",
-      "primaryMethodId": null,
+      "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
       ],
@@ -127,7 +129,8 @@
       "baseOwner": "ROOM_MOONIRE",
       "methodCompatibilityReviewNeeded": true,
       "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
-      "primaryMethodReviewNeeded": true
+      "primaryMethodReviewNeeded": true,
+      "weaponTypeReplacementRecommended": true
     },
     {
       "id": "W12",
@@ -142,79 +145,105 @@
   "methods": [
     {
       "id": "M01",
-      "name": "날붙이 공격",
+      "name": "자상·절창",
+      "userFacingLabel": "자상(날붙이)",
+      "forensicCategory": "날에 의한 손상(찌름·베임)",
       "key": "SHARP_INJURY",
       "aliases": [
-        "날붙이로 공격",
         "자상",
-        "찌르기",
-        "베기"
+        "절창",
+        "날붙이 공격",
+        "칼에 의한 손상",
+        "찌름",
+        "베임"
       ],
       "evidenceTypes": [
-        "injury_pattern",
-        "tool_trace_comparison",
+        "sharp_injury_findings",
+        "weapon_trace_match",
         "access_timeline"
       ],
-      "approvalStatus": "recommended_not_yet_user_confirmed"
+      "approvalStatus": "user_confirmed_major_category",
+      "variantIds": [
+        "M01_V1",
+        "M01_V2"
+      ]
     },
     {
       "id": "M02",
-      "name": "둔기 타격",
+      "name": "둔력 손상",
+      "userFacingLabel": "타박상(둔기)",
+      "forensicCategory": "둔력에 의한 손상",
       "key": "BLUNT_IMPACT",
       "aliases": [
-        "둔기로 공격",
-        "타격",
-        "가격",
+        "타박상",
+        "둔력 손상",
+        "둔기 타격",
+        "둔기로 가격",
         "충격"
       ],
       "evidenceTypes": [
-        "blunt_impact_pattern",
-        "object_damage_trace",
+        "blunt_force_findings",
+        "object_contact_evidence",
         "access_timeline"
       ],
-      "approvalStatus": "recommended_not_yet_user_confirmed"
+      "approvalStatus": "user_confirmed_major_category",
+      "variantIds": [
+        "M02_V1",
+        "M02_V2"
+      ]
     },
     {
       "id": "M03",
-      "name": "목 압박·교살",
-      "key": "NECK_COMPRESSION",
+      "name": "질식사",
+      "userFacingLabel": "질식사(교살 포함)",
+      "forensicCategory": "목 압박 및 호흡 차단 관련 질식",
+      "key": "ASPHYXIA",
+      "legacyKey": "NECK_COMPRESSION",
       "aliases": [
-        "목을 조름",
+        "질식",
+        "질식사",
         "교살",
-        "목 압박"
+        "목 졸림",
+        "목 압박",
+        "호흡 차단"
       ],
       "evidenceTypes": [
-        "neck_compression_findings",
-        "fiber_comparison",
+        "asphyxia_forensic_findings",
+        "material_trace_review",
         "access_timeline"
       ],
-      "approvalStatus": "recommended_not_yet_user_confirmed"
+      "approvalStatus": "user_confirmed_major_category",
+      "variantIds": [
+        "M03_V1",
+        "M03_V2"
+      ]
     },
     {
       "id": "M04",
-      "name": "약물·독성물질 중독",
-      "key": "TOXIC_EFFECT",
+      "name": "독살·물질 반응",
+      "userFacingLabel": "독살(독극물·알레르기 포함)",
+      "forensicCategory": "독성물질/약물 관련 사망 또는 고의로 유발된 심각한 알레르기 반응",
+      "key": "SUBSTANCE_INDUCED_DEATH",
+      "legacyKey": "TOXIC_EFFECT",
       "aliases": [
-        "약물로 사망",
-        "중독",
         "독살",
-        "독극물"
+        "중독",
+        "독극물",
+        "약물 중독",
+        "급성 알레르기 반응",
+        "아나필락시스"
       ],
       "evidenceTypes": [
-        "toxicology_report",
-        "container_residue_findings",
+        "toxicology_or_allergy_findings",
+        "relevant_container_record",
         "access_timeline"
       ],
-      "approvalStatus": "recommended_not_yet_user_confirmed"
-    },
-    {
-      "id": "M05",
-      "name": "5번 교체 대기",
-      "key": "METHOD_05_PENDING",
-      "aliases": [],
-      "evidenceTypes": [],
-      "approvalStatus": "original_electrocution_rejected_by_user",
-      "selectable": false
+      "approvalStatus": "user_confirmed_major_category",
+      "variantIds": [
+        "M04_V1",
+        "M04_V2",
+        "M04_V3"
+      ]
     }
   ],
   "npcRoomAssignments": [
@@ -402,7 +431,7 @@
     "evidencePolicy": "Finding a tool alone does not prove it was used, the method or the culprit. Forensic support + NPC knowledge/access + timeline + unique proof graph required."
   },
   "methodSelectionPolicy": {
-    "proposedCount": 5,
+    "proposedCount": 4,
     "primaryMethodsArePhysicalCauseOfDeath": true,
     "secondaryStoryModifiersAreNotAnswerAxes": [
       "기습",
@@ -420,7 +449,19 @@
       "CRUISE",
       "MUSIC_BROADCAST"
     ],
-    "fifthMethodStatus": "pending_user_choice_not_selectable"
+    "fifthMethodStatus": "retired_no_fifth_method",
+    "userApprovedCategoryCount": 4,
+    "proposedVariantCount": 9,
+    "methodScoringPolicy": "methodId category is scored as the method axis; methodVariantId is case-specific proof/reconstruction detail and not mandatory in final free-text accusation unless user explicitly revises scoring",
+    "caseTruthFields": [
+      "methodId",
+      "methodVariantId",
+      "weaponId",
+      "culpritNpcId"
+    ],
+    "methodVariantProofRequired": true,
+    "methodVariantNotAutoSelectedByWeapon": true,
+    "noNewWeaponTypeForVariant": true
   },
   "rejectedMethodSuggestions": [
     {
@@ -429,7 +470,132 @@
       "status": "user_rejected"
     }
   ],
-  "fifthMethodAlternatives": [
+  "methodCompatibilityStatus": "Four parent categories mapped; W06/W11 and respiratory obstruction/allergy variants require reviewed candidate weapons, no Unity gameplay generation",
+  "deprecatedMethods": [
+    {
+      "id": "M05",
+      "name": "5번 교체 대기",
+      "key": "METHOD_05_PENDING",
+      "aliases": [],
+      "evidenceTypes": [],
+      "approvalStatus": "deprecated_not_selectable",
+      "selectable": false,
+      "deprecatedReason": "User confirmed exactly 4 shared categories; no 5th method. Prior electrocution rejected."
+    }
+  ],
+  "methodVariants": [
+    {
+      "id": "M01_V1",
+      "categoryId": "M01",
+      "name": "찌르기형(자창)",
+      "description": "날에 의한 찌름 관련 손상으로 사건을 구별",
+      "proofThemes": [
+        "injury_pattern",
+        "forensic_tool_match"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M01_V2",
+      "categoryId": "M01",
+      "name": "베기형(절창)",
+      "description": "날에 의한 베임 관련 손상으로 사건을 구별",
+      "proofThemes": [
+        "cut_pattern",
+        "forensic_tool_match"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M02_V1",
+      "categoryId": "M02",
+      "name": "직접 타격형",
+      "description": "휴대 가능한 물체의 직접 충격과 관련된 사건",
+      "proofThemes": [
+        "blunt_force_report",
+        "object_mark_comparison"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M02_V2",
+      "categoryId": "M02",
+      "name": "낙하물 충격형",
+      "description": "사건 중 물체가 떨어져 생긴 충격과 관련된 사건. 별도 장소 구조와 물체 이동의 인과 검증이 필요",
+      "proofThemes": [
+        "impact_forensics",
+        "object_placement_timeline"
+      ],
+      "approvalStatus": "proposed_variant",
+      "specialConstraints": [
+        "used_object_must_be_from_one_of_six_npc_rooms",
+        "no_unexplained_large_prop_or_new_room"
+      ]
+    },
+    {
+      "id": "M03_V1",
+      "categoryId": "M03",
+      "name": "목 압박·교살형",
+      "description": "목 압박 관련 감식 소견과 도구의 관련성을 조사",
+      "proofThemes": [
+        "neck_compression_findings",
+        "material_trace_comparison"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M03_V2",
+      "categoryId": "M03",
+      "name": "호흡 차단형",
+      "description": "목 압박과 다른 호흡 차단 관련 감식 소견을 확인",
+      "proofThemes": [
+        "airway_related_forensic_report",
+        "material_trace_comparison"
+      ],
+      "approvalStatus": "proposed_variant",
+      "specialConstraints": [
+        "review_weapon_catalog_for_matching_item"
+      ]
+    },
+    {
+      "id": "M04_V1",
+      "categoryId": "M04",
+      "name": "독극물 중독형",
+      "description": "독성 관련 검사 결과와 물증 기록으로 추론",
+      "proofThemes": [
+        "toxicology_report",
+        "container_trace"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M04_V2",
+      "categoryId": "M04",
+      "name": "약물 관련 중독형",
+      "description": "약물 관련 감식 소견과 기록으로 추론",
+      "proofThemes": [
+        "medication_toxicology_report",
+        "medical_record_comparison"
+      ],
+      "approvalStatus": "proposed_variant"
+    },
+    {
+      "id": "M04_V3",
+      "categoryId": "M04",
+      "name": "심각한 알레르기 반응형",
+      "description": "독극물 중독이 아닌 알레르기 관련 소견과 알려진 민감성 정보로 추론",
+      "proofThemes": [
+        "allergy_forensic_review",
+        "prior_known_allergy_record"
+      ],
+      "approvalStatus": "proposed_variant",
+      "specialConstraints": [
+        "must_not_mislabel_allergy_as_poison_toxicology",
+        "ensure_selected_weapon_id_or_item_is_coherent"
+      ]
+    }
+  ],
+  "archivedFifthMethodAlternatives": [
     {
       "id": "OPT_A",
       "name": "기도 폐쇄에 의한 질식",
@@ -503,6 +669,5 @@
         "timeline"
       ]
     }
-  ],
-  "methodCompatibilityStatus": "M05 removed from active/proposed compatibility map; W06,W07,W11 require revisit after user's choice"
+  ]
 }
