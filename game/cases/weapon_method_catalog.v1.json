@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.4.0",
+  "schemaVersion": "1.5.0",
   "createdAt": "2026-11-08",
   "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
   "implementationStatus": "design_only_unity_not_integrated",
@@ -24,12 +24,12 @@
     "completeReselectionOfWeaponNamesAllowed": true
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
-  "weaponCatalogStatus": "pass1_and_pass2_editorially_reviewed_personal_item_proposals_awaiting_final_case_truth_validation",
+  "weaponCatalogStatus": "plain_language_twelve_item_proposals_twice_editorial_reviewed_story_truth_requires_author_validation",
   "methodCatalogStatus": "four_user_approved_categories_nine_subtypes_now_user_requested_for_scenario_design",
   "weapons": [
     {
       "id": "W01",
-      "name": "정밀 공예칼",
+      "name": "커터칼",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
         "M01"
@@ -48,16 +48,18 @@
       "fictionalItemDesignNote": "작업용 개인 소지품. 날에 의한 감식 범주에만 후보로 포함",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "취미용 소형 작업 도구. 개인 파우치·책상에 보관 가능.",
+      "everydayPlacementRationale": "종이나 포장을 다룰 때 흔히 쓰는 개인 소지품.",
       "caseAuthorChecks": [
         "흔적이 날붙이 감식과 부합할 때만 범행 도구 후보"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W02",
-      "name": "금속 북엔드",
+      "name": "손전등",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
@@ -76,17 +78,19 @@
       "fictionalItemDesignNote": "책과 서류를 받치는 묵직한 개인 소품. 타격·낙하 충격 사건은 별도 물리 타당성 검증 필요",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "개인 책·자료를 세우는 무게감 있는 소품. 모든 테마의 객실 책상에 자연스럽다.",
+      "everydayPlacementRationale": "호텔·크루즈·대기실에서도 개인 가방에 둘 수 있는 소지품. 충격 사건으로 쓰려면 물리적 개연성 검토 필요.",
       "caseAuthorChecks": [
         "낙하물 충격형은 개인실 소장 도구의 사건실 이동·위치·반환을 확인할 것",
         "안전 설비/가구 구조 미확정 상태에서 낙하 경로를 사실로 고정하지 말 것"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W03",
-      "name": "재단용 가위",
+      "name": "가위",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
         "M01"
@@ -105,16 +109,18 @@
       "fictionalItemDesignNote": "개인 소지 재단 도구. 날에 의한 감식 범주",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "의상 수선·포장·종이 작업에 쓰이는 개인 도구.",
+      "everydayPlacementRationale": "여행 짐과 개인 대기실에서 포장·문구 작업용으로 흔히 볼 수 있는 물건.",
       "caseAuthorChecks": [
         "사용 흔적은 감식으로만 확정; 소품 보유는 범행의 증거가 아님"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W04",
-      "name": "넓은 천 벨트",
+      "name": "벨트",
       "primaryMethodId": "M03",
       "compatibleMethodIds": [
         "M03"
@@ -133,16 +139,18 @@
       "fictionalItemDesignNote": "의상·소지품에 포함 가능한 직물. 질식 관련 사용 여부는 사건별 감식으로만 결정",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "여행 짐이나 개인 의상과 함께 보관하는 평범한 천 소재 소지품.",
+      "everydayPlacementRationale": "옷이나 개인 여행 가방에 들어 있는 평범한 물건.",
       "caseAuthorChecks": [
         "목 압박·호흡 차단 사건별 물질 흔적을 별도 확인"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W05",
-      "name": "돌 문진",
+      "name": "작은 화분",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
@@ -161,17 +169,19 @@
       "fictionalItemDesignNote": "선반·테이블 소품. 낙하물 설정은 물리적·사건적 타당성 검증 필요",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "책상 위 종이·메모를 눌러 두는 작은 장식형 문진.",
+      "everydayPlacementRationale": "방 책상이나 선반에 둘 수 있는 개인 소품. 크루즈 선실/대기실에 실제로 있는 설정은 사건별로 검증.",
       "caseAuthorChecks": [
         "둔력 후보일 뿐 무게와 접촉 흔적이 검증되지 않으면 살해 도구로 쓰지 말 것",
         "낙하물 충격형은 사건실 내 배치·시간표 근거 필요"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W06",
-      "name": "금속 사진 액자",
+      "name": "사진 액자",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
@@ -190,17 +200,19 @@
         "MUSIC_BROADCAST"
       ],
       "fictionalItemDesignNote": "개인이 보관할 수 있는 작은 기념패. 실제 손상과 연관되는지는 감식으로 입증",
-      "everydayPlacementRationale": "숙소·선실·대기실의 개인 물품. 액자 속 사진의 인물·관계는 승인 전 미정.",
+      "everydayPlacementRationale": "개인이 가져온 사진이나 장식용 물건. 사진 속 인물·관계는 미설정.",
       "caseAuthorChecks": [
         "액자 내용으로 특정 관계·직업·피해자 인연을 임의 확정하지 말 것",
         "둔력 손상 가능성은 실제 감식 및 물건의 물리적 타당성 필요"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W07",
-      "name": "캔버스 가방끈",
+      "name": "가방끈",
       "primaryMethodId": "M03",
       "compatibleMethodIds": [
         "M03"
@@ -218,16 +230,18 @@
       ],
       "fictionalItemDesignNote": "가방의 교체형 직물 스트랩. 질식 관련 물증 후보",
       "weaponTypeReplacementRecommended": false,
-      "everydayPlacementRationale": "개인이 들고 다니는 가방의 교체형 또는 분리형 스트랩.",
+      "everydayPlacementRationale": "여행 가방이나 개인 가방에 달린 흔한 소지품.",
       "caseAuthorChecks": [
         "객관적 섬유 흔적 없이 수법을 단정하지 말 것"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W08",
-      "name": "개인 약통",
+      "name": "약통",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -246,17 +260,19 @@
       "fictionalItemDesignNote": "약물 관련 기록 및 잔류물 감식 후보. 구체 성분·용량·사용 과정 설정 금지",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "일상적인 개인 휴대 약통. 약의 성분·소지자 병력은 아직 미설정.",
+      "everydayPlacementRationale": "개인이 소지하는 용기. 내용물·병력·약물명은 사건 승인 전 미정.",
       "caseAuthorChecks": [
         "실제 독성·약물 관련 감식 결과가 있는 경우에만 수법과 연계",
         "의학 기록 없이는 특정 약·질환·용량을 새로 설정하지 말 것"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W09",
-      "name": "휴대용 음료병",
+      "name": "물병",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -276,17 +292,19 @@
       "fictionalItemDesignNote": "음료 용기. 독성·알레르기 원인 여부는 법의학·기록으로만 검증",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "테마에 무관하게 개인 음료를 보관하는 병.",
+      "everydayPlacementRationale": "세 테마에 모두 자연스럽게 놓일 수 있는 개인 음료 용기.",
       "caseAuthorChecks": [
         "내용물·독성·알레르기 원인은 증거가 있는 사건에서만 정의",
         "용기는 원인 물질 자체와 동일하지 않음을 구별"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W10",
-      "name": "밀폐 간식통",
+      "name": "과자통",
       "primaryMethodId": "M04",
       "compatibleMethodIds": [
         "M04"
@@ -306,17 +324,19 @@
       "fictionalItemDesignNote": "음식 보관 용기. 알레르기·물질 관련 설정은 개인병력·검사 기록을 가진 사건만 허용",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "개인 취향의 간식·소지품을 담는 작은 밀폐 용기. 음식 내용물은 임의 확정 금지.",
+      "everydayPlacementRationale": "세 테마에 모두 개인 간식을 보관할 수 있는 용기. 실제 음식 내용물은 사건 승인 전 미정.",
       "caseAuthorChecks": [
         "알레르기 사건에 쓰이는 경우 의료적 반응과 사전 알레르기 정보의 검증 필요",
         "보키의 괴식 취향이 범인 여부의 단서가 되어서는 안 됨"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W11",
-      "name": "두꺼운 면 손수건",
+      "name": "손수건",
       "primaryMethodId": "M03",
       "compatibleMethodIds": [
         "M03"
@@ -334,17 +354,19 @@
         "MUSIC_BROADCAST"
       ],
       "fictionalItemDesignNote": "개인 소지 직물. 질식/호흡 관련 감식 후보",
-      "everydayPlacementRationale": "주머니·가방에 넣는 개인 면직물.",
+      "everydayPlacementRationale": "가방이나 주머니에 넣을 수 있는 개인 소지품.",
       "caseAuthorChecks": [
         "의학적 감식 없이 질식 여부를 추측할 수 없음",
         "교살과 호흡 차단 증거 분류를 혼동하지 말 것"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     },
     {
       "id": "W12",
-      "name": "작은 과일칼",
+      "name": "과일칼",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
         "M01"
@@ -363,13 +385,15 @@
       "fictionalItemDesignNote": "개인 휴대용 도구. 날에 의한 감식 범주",
       "weaponTypeReplacementRecommended": false,
       "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "과일·간식 손질용 개인 소지품. 장소별 반입 가능 여부는 별도 세계관 규칙으로 확인.",
+      "everydayPlacementRationale": "과일을 손질할 때 쓰는 익숙한 도구. 각 테마 반입 규칙은 별도 확인 필요.",
       "caseAuthorChecks": [
         "실제 날붙이 감식 흔적 없는 경우 살해 도구 후보로 확정하지 말 것",
         "세 테마 물건 반입 규정이 있으면 따르도록 사건 작성자 확인"
       ],
-      "placementReviewPass1": "ordinary_personal_belonging_all_three_themes",
-      "placementReviewPass2": "check_weapon_evidence_and_no_fixed_owner_guilt"
+      "placementReviewPass1": "common_place_three_theme_plausibility_review",
+      "placementReviewPass2": "forensic_and_story_consistency_review_gated_not_verified_as_playable",
+      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
+      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility."
     }
   ],
   "methods": [
@@ -506,9 +530,9 @@
         }
       ],
       "displayItemNames": [
-        "정밀 공예칼",
-        "금속 북엔드",
-        "두꺼운 면 손수건"
+        "커터칼",
+        "손전등",
+        "손수건"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -542,9 +566,9 @@
         }
       ],
       "displayItemNames": [
-        "재단용 가위",
-        "넓은 천 벨트",
-        "금속 북엔드"
+        "가위",
+        "벨트",
+        "손전등"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -578,9 +602,9 @@
         }
       ],
       "displayItemNames": [
-        "돌 문진",
-        "금속 사진 액자",
-        "재단용 가위"
+        "작은 화분",
+        "사진 액자",
+        "가위"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -614,9 +638,9 @@
         }
       ],
       "displayItemNames": [
-        "캔버스 가방끈",
-        "개인 약통",
-        "돌 문진"
+        "가방끈",
+        "약통",
+        "작은 화분"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -650,9 +674,9 @@
         }
       ],
       "displayItemNames": [
-        "휴대용 음료병",
-        "밀폐 간식통",
-        "캔버스 가방끈"
+        "물병",
+        "과자통",
+        "가방끈"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -686,9 +710,9 @@
         }
       ],
       "displayItemNames": [
-        "두꺼운 면 손수건",
-        "작은 과일칼",
-        "휴대용 음료병"
+        "손수건",
+        "과일칼",
+        "물병"
       ],
       "userConfirmedSlotCount": 3,
       "itemNamesStatus": "reviewed_design_proposal"
@@ -943,7 +967,7 @@
       ]
     }
   ],
-  "weaponSelectionGuidance": "Every item is an ordinary personal belonging plausible at HOTEL/CRUISE/MUSIC_BROADCAST. Writer review passes verify placement rationale and subtype-to-evidence compatibility at design level; item use as crime weapon still requires separate proof and medically plausible case authoring. Names remain proposal, numeric constraints user confirmed.",
+  "weaponSelectionGuidance": "Use 12 familiar Korean object names: 커터칼/손전등/가위/벨트/작은 화분/사진 액자/가방끈/약통/물병/과자통/손수건/과일칼. Do not infer weapon use from object alone. Keep 3 themes and all 9 variants under evidence and realistic scene/medical constraints.",
   "itemCoherenceContract": {
     "allThemesHaveSameNames": true,
     "perRoomThreeSlots": true,
@@ -953,6 +977,8 @@
     "noUnprovedMedicalOrTravelAccessFacts": true,
     "fallingObjectVariantRequiresSceneAndTimelineApproval": true,
     "dialogueUsesCaseEvidenceOnlyWhenNPCGrantedKnowledge": true,
-    "weaponReviewRoundsCompleted": 2
+    "weaponReviewRoundsCompleted": 2,
+    "userFacingSimpleItemNames": true,
+    "plausibilityWarning": "Falling-object subtype is disabled for playable generation until item weight, geometry and movement timeline are independently proved, particularly for hand-held personal props."
   }
 }
