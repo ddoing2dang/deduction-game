@@ -15,11 +15,12 @@
     "baseAssignedSlotsPerNpc": 2,
     "crossRoomSharedIncomingSlotsPerNpc": 1,
     "totalNpcRooms": 6,
-    "noWeaponObjectInLobbyOrCrimeScene": true
+    "noWeaponObjectInLobbyOrCrimeScene": true,
+    "methodCatalogSharedAcrossThemes": true
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
   "weaponCatalogStatus": "proposal_for_specific_names_and_base_owners",
-  "methodCatalogStatus": "recommended_5_not_yet_user_approved",
+  "methodCatalogStatus": "M01_M04_proposed_unchanged_M05_user_rejected_replacement_awaiting_selection",
   "weapons": [
     {
       "id": "W01",
@@ -69,22 +70,25 @@
     {
       "id": "W06",
       "name": "휴대용 고데기",
-      "primaryMethodId": "M05",
+      "primaryMethodId": null,
       "compatibleMethodIds": [
-        "M05",
         "M02"
       ],
-      "baseOwner": "ROOM_MARIHI"
+      "baseOwner": "ROOM_MARIHI",
+      "methodCompatibilityReviewNeeded": true,
+      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
+      "primaryMethodReviewNeeded": true
     },
     {
       "id": "W07",
       "name": "충전 케이블",
       "primaryMethodId": "M03",
       "compatibleMethodIds": [
-        "M03",
-        "M05"
+        "M03"
       ],
-      "baseOwner": "ROOM_NAZ"
+      "baseOwner": "ROOM_NAZ",
+      "methodCompatibilityReviewNeeded": true,
+      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected."
     },
     {
       "id": "W08",
@@ -118,11 +122,12 @@
     {
       "id": "W11",
       "name": "멀티탭",
-      "primaryMethodId": "M05",
-      "compatibleMethodIds": [
-        "M05"
-      ],
-      "baseOwner": "ROOM_MOONIRE"
+      "primaryMethodId": null,
+      "compatibleMethodIds": [],
+      "baseOwner": "ROOM_MOONIRE",
+      "methodCompatibilityReviewNeeded": true,
+      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
+      "primaryMethodReviewNeeded": true
     },
     {
       "id": "W12",
@@ -204,19 +209,12 @@
     },
     {
       "id": "M05",
-      "name": "전기장비에 의한 감전",
-      "key": "ELECTRICAL_INJURY",
-      "aliases": [
-        "감전",
-        "전기 충격",
-        "전기에 의한 사망"
-      ],
-      "evidenceTypes": [
-        "electrical_exam_report",
-        "device_forensic_findings",
-        "access_timeline"
-      ],
-      "approvalStatus": "recommended_not_yet_user_confirmed"
+      "name": "5번 교체 대기",
+      "key": "METHOD_05_PENDING",
+      "aliases": [],
+      "evidenceTypes": [],
+      "approvalStatus": "original_electrocution_rejected_by_user",
+      "selectable": false
     }
   ],
   "npcRoomAssignments": [
@@ -416,6 +414,95 @@
     "weaponOwnershipNeverAutomaticallyDeterminesGuilt": true,
     "culpritMustBeSampledFromSixWithoutPersistentBias": true,
     "neverInventUnapprovedEvidence": true,
-    "caseNeedsProofOfMethodBeyondWeaponPresence": true
-  }
+    "caseNeedsProofOfMethodBeyondWeaponPresence": true,
+    "sharedAcrossThemes": [
+      "HOTEL",
+      "CRUISE",
+      "MUSIC_BROADCAST"
+    ],
+    "fifthMethodStatus": "pending_user_choice_not_selectable"
+  },
+  "rejectedMethodSuggestions": [
+    {
+      "oldId": "M05",
+      "oldName": "전기장비에 의한 감전",
+      "status": "user_rejected"
+    }
+  ],
+  "fifthMethodAlternatives": [
+    {
+      "id": "OPT_A",
+      "name": "기도 폐쇄에 의한 질식",
+      "relativeRank": 1,
+      "worksInAllThreeThemes": true,
+      "differenceFromM03": "M03 is neck compression, OPT_A is non-neck airway obstruction; require separate medical evidence",
+      "weaponCatalogImpact": "Requires reviewing at least one of the 12 currently provisional items; no new 13th type without user approval",
+      "evidenceConcepts": [
+        "distinct_asphyxia_forensics",
+        "fiber_or_material_trace",
+        "room_access"
+      ]
+    },
+    {
+      "id": "OPT_B",
+      "name": "화상·열 손상",
+      "relativeRank": 2,
+      "worksInAllThreeThemes": true,
+      "weaponCatalogImpact": "Check heat-related approved prop W06 and corroborating forensic evidence; not every heat source necessarily a viable weapon",
+      "evidenceConcepts": [
+        "thermal_forensics",
+        "material_trace",
+        "room_access"
+      ]
+    },
+    {
+      "id": "OPT_C",
+      "name": "추락에 의한 사망",
+      "relativeRank": 4,
+      "worksInAllThreeThemes": false,
+      "weaponCatalogImpact": "Requires compatible environment and physical item; music broadcast theme is one-floor, so forced architecture would be needed",
+      "evidenceConcepts": [
+        "fall_forensics",
+        "scene_geometry",
+        "timeline"
+      ]
+    },
+    {
+      "id": "OPT_D",
+      "name": "무거운 물체에 의한 압궤",
+      "relativeRank": 3,
+      "worksInAllThreeThemes": true,
+      "weaponCatalogImpact": "Requires substantial compatible movable heavy item; current small props do not strongly support it",
+      "evidenceConcepts": [
+        "compression_forensics",
+        "heavy_object_trace",
+        "access_timeline"
+      ]
+    },
+    {
+      "id": "OPT_E",
+      "name": "화재로 인한 연기 흡입",
+      "relativeRank": 5,
+      "worksInAllThreeThemes": true,
+      "weaponCatalogImpact": "High burden on scene destruction/evidence; require strong justification for common scene architecture",
+      "evidenceConcepts": [
+        "smoke_exposure_forensics",
+        "fire_scene_record",
+        "timeline"
+      ]
+    },
+    {
+      "id": "OPT_F",
+      "name": "저체온에 의한 사망",
+      "relativeRank": 6,
+      "worksInAllThreeThemes": false,
+      "weaponCatalogImpact": "Needs setting-specific cold exposure and equipment, less natural in all themes",
+      "evidenceConcepts": [
+        "hypothermia_forensics",
+        "environmental_evidence",
+        "timeline"
+      ]
+    }
+  ],
+  "methodCompatibilityStatus": "M05 removed from active/proposed compatibility map; W06,W07,W11 require revisit after user's choice"
 }
