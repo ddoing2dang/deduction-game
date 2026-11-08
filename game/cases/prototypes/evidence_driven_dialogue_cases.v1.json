@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "createdAt": "2026-11-08",
   "status": "EDITORIAL_PROTOTYPE_NOT_USER_APPROVED_NOT_RUNTIME_ENABLED",
   "purpose": "Three prototype crime scenarios with specific playable-style testimony (time, location, witness, objects) replacing generic evasive NPC prompts.",
-  "caveat": "Newly authored sample fiction, not actual approved case truth or proven unique-answer gameplay. All authorOnly truth is for editors/validators, not NPC input. Forensics, timelines, access, branching and unique-solution solver must be reviewed before play.",
+  "caveat": "Newly authored sample fiction, not actual approved case truth or proven unique-answer gameplay. All authorOnly truth is for editors/validators, not NPC input. Forensics, timelines, access, branching and unique-solution solver must be reviewed before play. New locked rule: only caseTruth.culpritNpcId may intentionally state false facts. Innocent characters must not speak untrue facts, even as red herrings or mistaken memories. All proposed truth labels remain unverified drafts until the complete case truth is validated.",
   "sharedRules": {
     "roomCount": 8,
     "weaponTypes": 12,
@@ -16,7 +16,11 @@
     ],
     "legacyDialogue714Preserved": true,
     "legacyCurated480Preserved": true,
-    "newDialogueUsesExplicitEvidenceGate": true
+    "newDialogueUsesExplicitEvidenceGate": true,
+    "onlyCulpritCanLie": true,
+    "innocentsAlwaysTruthful": true,
+    "innocentsCannotGiveIncorrectMemories": true,
+    "culpritFalseStatementsMustHaveCounterEvidence": true
   },
   "npcDisplayNames": {
     "MATTO": "마도아",
@@ -125,31 +129,57 @@
           "statementId": "HINT_HOTEL_001_MATTO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "FALSE_CULPRIT_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": true,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION",
+          "contradictedByEvidenceIds": [
+            "H_E_VIDEO"
+          ],
+          "confrontationLineId": "HINT_HOTEL_001_MATTO_CONFRONT",
+          "liePurpose": "case_specific_alibi_concealment_author_draft"
         },
         {
           "lineId": "HINT_HOTEL_001_MATTO_WITNESS",
           "npcId": "MATTO",
           "intent": "ASK_WITNESS",
-          "responseText": "8시 8분쯤 복희를 로비에서 봤어. 그 뒤에는 혼자 있었지.",
+          "responseText": "8시 8분쯤 복희를 로비에서 봤어. 그때 나는 101호로 들어갔어.",
           "requiredNpcKnowledge": true,
           "requiresEvidence": [],
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MATTO_WEAPON",
           "npcId": "MATTO",
           "intent": "ASK_WEAPON",
-          "responseText": "101호에 내 커터칼이 있어. 아까도 방에 놓여 있었어.",
+          "responseText": "101호에 내 커터칼이 있어. 원래부터 내가 갖고 있던 물건이야.",
           "requiredNpcKnowledge": true,
           "requiresEvidence": [],
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_JJIRO_ALIBI",
@@ -161,7 +191,14 @@
           "statementId": "HINT_HOTEL_001_JJIRO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_JJIRO_WITNESS",
@@ -173,7 +210,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_JJIRO_WEAPON",
@@ -185,7 +229,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MARIHI_ALIBI",
@@ -197,7 +248,14 @@
           "statementId": "HINT_HOTEL_001_MARIHI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MARIHI_WITNESS",
@@ -209,7 +267,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MARIHI_WEAPON",
@@ -221,7 +286,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_NAZ_ALIBI",
@@ -233,7 +305,14 @@
           "statementId": "HINT_HOTEL_001_NAZ_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_NAZ_WITNESS",
@@ -245,7 +324,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_NAZ_WEAPON",
@@ -257,7 +343,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_BOKI_ALIBI",
@@ -269,7 +362,14 @@
           "statementId": "HINT_HOTEL_001_BOKI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_BOKI_WITNESS",
@@ -281,7 +381,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_BOKI_WEAPON",
@@ -293,7 +400,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MOONIRE_ALIBI",
@@ -305,7 +419,14 @@
           "statementId": "HINT_HOTEL_001_MOONIRE_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MOONIRE_WITNESS",
@@ -317,7 +438,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_HOTEL_001_MOONIRE_WEAPON",
@@ -329,7 +457,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         }
       ],
       "confrontation": {
@@ -341,7 +476,27 @@
           "H_E_VIDEO"
         ],
         "requiredStatementId": "HINT_HOTEL_001_MATTO_ALIBI",
-        "approvalStatus": "author_draft"
+        "approvalStatus": "author_draft",
+        "falseClaimSourceNpcId": "MATTO",
+        "culpritOnly": true,
+        "runtimeSelectable": false,
+        "truthStatus": "TRUE_PROPOSED_CORRECTION_OF_CULPRIT_LIE"
+      },
+      "deceptionPolicy": {
+        "onlyCulpritMayLie": true,
+        "culpritNpcId": "MATTO",
+        "innocenceTruthRequiredForAllOtherNpcIds": true,
+        "authorProposedFalseStatementIds": [
+          "HINT_HOTEL_001_MATTO_ALIBI"
+        ],
+        "falseInformationSelectionAllowedOnlyWhen": "currentNpcId == case.authorOnly.culpritNpcId AND original line has verified contradiction + evidence and case approval",
+        "runtimeStatus": "blocked_pending_case_validation_and_Unity_gate"
+      },
+      "statementTruthSummary": {
+        "proposedFalseCount": 1,
+        "proposedTrueCount": 17,
+        "confrontationCount": 1,
+        "unverifiedTrueCount": 17
       }
     },
     {
@@ -439,7 +594,14 @@
           "statementId": "HINT_CRUISE_001_MATTO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MATTO_WITNESS",
@@ -451,7 +613,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MATTO_WEAPON",
@@ -463,7 +632,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MARIHI_ALIBI",
@@ -475,7 +651,14 @@
           "statementId": "HINT_CRUISE_001_MARIHI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MARIHI_WITNESS",
@@ -487,7 +670,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MARIHI_WEAPON",
@@ -499,7 +689,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_NAZ_ALIBI",
@@ -511,7 +708,14 @@
           "statementId": "HINT_CRUISE_001_NAZ_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_NAZ_WITNESS",
@@ -523,7 +727,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_NAZ_WEAPON",
@@ -535,7 +746,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_BOKI_ALIBI",
@@ -547,7 +765,19 @@
           "statementId": "HINT_CRUISE_001_BOKI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "FALSE_CULPRIT_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": true,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION",
+          "contradictedByEvidenceIds": [
+            "C_E_STAIR"
+          ],
+          "confrontationLineId": "HINT_CRUISE_001_BOKI_CONFRONT",
+          "liePurpose": "case_specific_alibi_concealment_author_draft"
         },
         {
           "lineId": "HINT_CRUISE_001_BOKI_WITNESS",
@@ -559,7 +789,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_BOKI_WEAPON",
@@ -571,7 +808,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_JJIRO_ALIBI",
@@ -583,7 +827,14 @@
           "statementId": "HINT_CRUISE_001_JJIRO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_JJIRO_WITNESS",
@@ -595,7 +846,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_JJIRO_WEAPON",
@@ -607,7 +865,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MOONIRE_ALIBI",
@@ -619,7 +884,14 @@
           "statementId": "HINT_CRUISE_001_MOONIRE_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MOONIRE_WITNESS",
@@ -631,7 +903,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_CRUISE_001_MOONIRE_WEAPON",
@@ -643,7 +922,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         }
       ],
       "confrontation": {
@@ -655,7 +941,27 @@
           "C_E_STAIR"
         ],
         "requiredStatementId": "HINT_CRUISE_001_BOKI_ALIBI",
-        "approvalStatus": "author_draft"
+        "approvalStatus": "author_draft",
+        "falseClaimSourceNpcId": "BOKI",
+        "culpritOnly": true,
+        "runtimeSelectable": false,
+        "truthStatus": "TRUE_PROPOSED_CORRECTION_OF_CULPRIT_LIE"
+      },
+      "deceptionPolicy": {
+        "onlyCulpritMayLie": true,
+        "culpritNpcId": "BOKI",
+        "innocenceTruthRequiredForAllOtherNpcIds": true,
+        "authorProposedFalseStatementIds": [
+          "HINT_CRUISE_001_BOKI_ALIBI"
+        ],
+        "falseInformationSelectionAllowedOnlyWhen": "currentNpcId == case.authorOnly.culpritNpcId AND original line has verified contradiction + evidence and case approval",
+        "runtimeStatus": "blocked_pending_case_validation_and_Unity_gate"
+      },
+      "statementTruthSummary": {
+        "proposedFalseCount": 1,
+        "proposedTrueCount": 17,
+        "confrontationCount": 1,
+        "unverifiedTrueCount": 17
       }
     },
     {
@@ -752,7 +1058,14 @@
           "statementId": "HINT_BROADCAST_001_MATTO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MATTO_WITNESS",
@@ -764,7 +1077,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MATTO_WEAPON",
@@ -776,7 +1096,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MARIHI_ALIBI",
@@ -788,7 +1115,14 @@
           "statementId": "HINT_BROADCAST_001_MARIHI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MARIHI_WITNESS",
@@ -800,7 +1134,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MARIHI_WEAPON",
@@ -812,7 +1153,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_NAZ_ALIBI",
@@ -824,19 +1172,38 @@
           "statementId": "HINT_BROADCAST_001_NAZ_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "FALSE_CULPRIT_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": true,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION",
+          "contradictedByEvidenceIds": [
+            "B_E_WITNESS"
+          ],
+          "confrontationLineId": "HINT_BROADCAST_001_NAZ_CONFRONT",
+          "liePurpose": "case_specific_alibi_concealment_author_draft"
         },
         {
           "lineId": "HINT_BROADCAST_001_NAZ_WITNESS",
           "npcId": "NAZ",
           "intent": "ASK_WITNESS",
-          "responseText": "6시 20분 전에 지로아를 봤어. 그 뒤에는 누구와도 마주치지 않았어.",
+          "responseText": "6시 20분 전에 지로아를 본 적 있어. 그때는 별다른 이야기 안 했어.",
           "requiredNpcKnowledge": true,
           "requiresEvidence": [],
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_NAZ_WEAPON",
@@ -848,7 +1215,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "CULPRIT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_BOKI_ALIBI",
@@ -860,7 +1234,14 @@
           "statementId": "HINT_BROADCAST_001_BOKI_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_BOKI_WITNESS",
@@ -872,7 +1253,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_BOKI_WEAPON",
@@ -884,7 +1272,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_JJIRO_ALIBI",
@@ -896,7 +1291,14 @@
           "statementId": "HINT_BROADCAST_001_JJIRO_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_JJIRO_WITNESS",
@@ -908,7 +1310,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_JJIRO_WEAPON",
@@ -920,7 +1329,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MOONIRE_ALIBI",
@@ -932,7 +1348,14 @@
           "statementId": "HINT_BROADCAST_001_MOONIRE_ALIBI",
           "approvalStatus": "author_draft",
           "emotionTag": "serious",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MOONIRE_WITNESS",
@@ -944,7 +1367,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         },
         {
           "lineId": "HINT_BROADCAST_001_MOONIRE_WEAPON",
@@ -956,7 +1386,14 @@
           "statementId": null,
           "approvalStatus": "author_draft",
           "emotionTag": "neutral",
-          "animationTag": "talk"
+          "animationTag": "talk",
+          "truthStatus": "TRUE_PROPOSED",
+          "speakerRoleInThisSample": "INNOCENT",
+          "falseInformationAllowed": false,
+          "truthVerifiedAgainstFullCase": false,
+          "speakerKnowledgeVerified": false,
+          "runtimeSelectable": false,
+          "requiredRuntimePolicy": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION"
         }
       ],
       "confrontation": {
@@ -968,8 +1405,29 @@
           "B_E_WITNESS"
         ],
         "requiredStatementId": "HINT_BROADCAST_001_NAZ_ALIBI",
-        "approvalStatus": "author_draft"
+        "approvalStatus": "author_draft",
+        "falseClaimSourceNpcId": "NAZ",
+        "culpritOnly": true,
+        "runtimeSelectable": false,
+        "truthStatus": "TRUE_PROPOSED_CORRECTION_OF_CULPRIT_LIE"
+      },
+      "deceptionPolicy": {
+        "onlyCulpritMayLie": true,
+        "culpritNpcId": "NAZ",
+        "innocenceTruthRequiredForAllOtherNpcIds": true,
+        "authorProposedFalseStatementIds": [
+          "HINT_BROADCAST_001_NAZ_ALIBI"
+        ],
+        "falseInformationSelectionAllowedOnlyWhen": "currentNpcId == case.authorOnly.culpritNpcId AND original line has verified contradiction + evidence and case approval",
+        "runtimeStatus": "blocked_pending_case_validation_and_Unity_gate"
+      },
+      "statementTruthSummary": {
+        "proposedFalseCount": 1,
+        "proposedTrueCount": 17,
+        "confrontationCount": 1,
+        "unverifiedTrueCount": 17
       }
     }
-  ]
+  ],
+  "deceptionPolicySource": "game/cases/culprit_only_deception_policy.v1.json"
 }
