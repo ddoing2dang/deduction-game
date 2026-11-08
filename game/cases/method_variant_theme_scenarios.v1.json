@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.3.0",
   "createdAt": "2026-11-08",
   "purpose": "27 authored case blueprints = nine proposed subtypes × three approved world themes",
   "implementationStatus": "design_only_not_playable_or_validated",
@@ -40,7 +40,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W12",
-      "weaponName": "작은 과일칼",
+      "weaponName": "과일칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -51,7 +51,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 찌르기형(자창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 작은 과일칼 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 찌른 상처에 관한 기록과 과일칼의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M01_V1_FORENSIC",
@@ -69,7 +69,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "작은 과일칼 실물별 출처와 검증된 감식 기록 비교",
+          "description": "과일칼 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -125,7 +125,7 @@
         "찌름과 베임 감식 구분",
         "도구·상처의 비교 기록 유무"
       ],
-      "weaponThemePlacementRationale": "과일·간식 손질용 개인 소지품. 장소별 반입 가능 여부는 별도 세계관 규칙으로 확인.",
+      "weaponThemePlacementRationale": "과일을 손질할 때 쓰는 익숙한 도구. 각 테마 반입 규칙은 별도 확인 필요.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -133,13 +133,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M01_V1",
@@ -151,7 +154,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W01",
-      "weaponName": "정밀 공예칼",
+      "weaponName": "커터칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -162,7 +165,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 찌르기형(자창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 정밀 공예칼 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 찌른 상처에 관한 기록과 커터칼의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M01_V1_FORENSIC",
@@ -180,7 +183,7 @@
             "ROOM_MATTO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "정밀 공예칼 실물별 출처와 검증된 감식 기록 비교",
+          "description": "커터칼 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -236,7 +239,7 @@
         "찌름과 베임 감식 구분",
         "도구·상처의 비교 기록 유무"
       ],
-      "weaponThemePlacementRationale": "취미용 소형 작업 도구. 개인 파우치·책상에 보관 가능.",
+      "weaponThemePlacementRationale": "종이나 포장을 다룰 때 흔히 쓰는 개인 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -244,13 +247,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V1",
@@ -262,7 +268,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W03",
-      "weaponName": "재단용 가위",
+      "weaponName": "가위",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -277,7 +283,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 찌르기형(자창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 재단용 가위 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 찌른 상처에 관한 기록과 가위의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M01_V1_FORENSIC",
@@ -296,7 +302,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "재단용 가위 실물별 출처와 검증된 감식 기록 비교",
+          "description": "가위 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -352,7 +358,7 @@
         "찌름과 베임 감식 구분",
         "도구·상처의 비교 기록 유무"
       ],
-      "weaponThemePlacementRationale": "의상 수선·포장·종이 작업에 쓰이는 개인 도구.",
+      "weaponThemePlacementRationale": "여행 짐과 개인 대기실에서 포장·문구 작업용으로 흔히 볼 수 있는 물건.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -360,13 +366,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M01_V2",
@@ -378,7 +387,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W03",
-      "weaponName": "재단용 가위",
+      "weaponName": "가위",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -393,7 +402,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 베기형(절창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 재단용 가위 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 베인 상처에 관한 기록과 가위의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M01_V2_FORENSIC",
@@ -412,7 +421,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "재단용 가위 실물별 출처와 검증된 감식 기록 비교",
+          "description": "가위 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -468,7 +477,7 @@
         "절창 소견과 자창을 구별",
         "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지"
       ],
-      "weaponThemePlacementRationale": "의상 수선·포장·종이 작업에 쓰이는 개인 도구.",
+      "weaponThemePlacementRationale": "여행 짐과 개인 대기실에서 포장·문구 작업용으로 흔히 볼 수 있는 물건.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -476,13 +485,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M01_V2",
@@ -494,7 +506,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W12",
-      "weaponName": "작은 과일칼",
+      "weaponName": "과일칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -505,7 +517,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 베기형(절창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 작은 과일칼 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 베인 상처에 관한 기록과 과일칼의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M01_V2_FORENSIC",
@@ -523,7 +535,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "작은 과일칼 실물별 출처와 검증된 감식 기록 비교",
+          "description": "과일칼 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -579,7 +591,7 @@
         "절창 소견과 자창을 구별",
         "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지"
       ],
-      "weaponThemePlacementRationale": "과일·간식 손질용 개인 소지품. 장소별 반입 가능 여부는 별도 세계관 규칙으로 확인.",
+      "weaponThemePlacementRationale": "과일을 손질할 때 쓰는 익숙한 도구. 각 테마 반입 규칙은 별도 확인 필요.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -587,13 +599,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V2",
@@ -605,7 +620,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W01",
-      "weaponName": "정밀 공예칼",
+      "weaponName": "커터칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -616,7 +631,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 베기형(절창) 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 정밀 공예칼 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 베인 상처에 관한 기록과 커터칼의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M01_V2_FORENSIC",
@@ -634,7 +649,7 @@
             "ROOM_MATTO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "정밀 공예칼 실물별 출처와 검증된 감식 기록 비교",
+          "description": "커터칼 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -690,7 +705,7 @@
         "절창 소견과 자창을 구별",
         "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지"
       ],
-      "weaponThemePlacementRationale": "취미용 소형 작업 도구. 개인 파우치·책상에 보관 가능.",
+      "weaponThemePlacementRationale": "종이나 포장을 다룰 때 흔히 쓰는 개인 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -698,13 +713,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M02_V1",
@@ -716,7 +734,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W05",
-      "weaponName": "돌 문진",
+      "weaponName": "작은 화분",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -731,7 +749,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 직접 타격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 돌 문진 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 직접 부딪힌 흔적에 관한 기록과 작은 화분의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M02_V1_FORENSIC",
@@ -750,7 +768,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "돌 문진 실물별 출처와 검증된 감식 기록 비교",
+          "description": "작은 화분 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -806,7 +824,7 @@
         "직접 타격 흔적과 동선이 일치",
         "소지품 종류만으로 상처 원인 단정 금지"
       ],
-      "weaponThemePlacementRationale": "책상 위 종이·메모를 눌러 두는 작은 장식형 문진.",
+      "weaponThemePlacementRationale": "방 책상이나 선반에 둘 수 있는 개인 소품. 크루즈 선실/대기실에 실제로 있는 설정은 사건별로 검증.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -814,13 +832,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M02_V1",
@@ -832,7 +853,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W02",
-      "weaponName": "금속 북엔드",
+      "weaponName": "손전등",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -847,7 +868,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 직접 타격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 금속 북엔드 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 직접 부딪힌 흔적에 관한 기록과 손전등의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M02_V1_FORENSIC",
@@ -866,7 +887,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 북엔드 실물별 출처와 검증된 감식 기록 비교",
+          "description": "손전등 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -922,7 +943,7 @@
         "직접 타격 흔적과 동선이 일치",
         "소지품 종류만으로 상처 원인 단정 금지"
       ],
-      "weaponThemePlacementRationale": "개인 책·자료를 세우는 무게감 있는 소품. 모든 테마의 객실 책상에 자연스럽다.",
+      "weaponThemePlacementRationale": "호텔·크루즈·대기실에서도 개인 가방에 둘 수 있는 소지품. 충격 사건으로 쓰려면 물리적 개연성 검토 필요.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -930,13 +951,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V1",
@@ -948,7 +972,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W06",
-      "weaponName": "금속 사진 액자",
+      "weaponName": "사진 액자",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -959,7 +983,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 직접 타격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 금속 사진 액자 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 직접 부딪힌 흔적에 관한 기록과 사진 액자의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M02_V1_FORENSIC",
@@ -977,7 +1001,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 사진 액자 실물별 출처와 검증된 감식 기록 비교",
+          "description": "사진 액자 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1033,7 +1057,7 @@
         "직접 타격 흔적과 동선이 일치",
         "소지품 종류만으로 상처 원인 단정 금지"
       ],
-      "weaponThemePlacementRationale": "숙소·선실·대기실의 개인 물품. 액자 속 사진의 인물·관계는 승인 전 미정.",
+      "weaponThemePlacementRationale": "개인이 가져온 사진이나 장식용 물건. 사진 속 인물·관계는 미설정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1041,13 +1065,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M02_V2",
@@ -1059,7 +1086,7 @@
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
       "weaponId": "W02",
-      "weaponName": "금속 북엔드",
+      "weaponName": "손전등",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1074,7 +1101,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 낙하물 충격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 금속 북엔드 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 물건이 떨어져 부딪힌 흔적에 관한 기록과 손전등의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M02_V2_FORENSIC",
@@ -1093,7 +1120,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 북엔드 실물별 출처와 검증된 감식 기록 비교",
+          "description": "손전등 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1151,7 +1178,7 @@
         "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
         "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요"
       ],
-      "weaponThemePlacementRationale": "개인 책·자료를 세우는 무게감 있는 소품. 모든 테마의 객실 책상에 자연스럽다.",
+      "weaponThemePlacementRationale": "호텔·크루즈·대기실에서도 개인 가방에 둘 수 있는 소지품. 충격 사건으로 쓰려면 물리적 개연성 검토 필요.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1159,13 +1186,18 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Still needs independent case-by-case geometry and object weight/trajectory plausibility confirmation. Heavy harm from a small item cannot be assumed.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M02_V2",
@@ -1177,7 +1209,7 @@
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
       "weaponId": "W06",
-      "weaponName": "금속 사진 액자",
+      "weaponName": "사진 액자",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1188,7 +1220,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 낙하물 충격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 금속 사진 액자 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 물건이 떨어져 부딪힌 흔적에 관한 기록과 사진 액자의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M02_V2_FORENSIC",
@@ -1206,7 +1238,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 사진 액자 실물별 출처와 검증된 감식 기록 비교",
+          "description": "사진 액자 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1264,7 +1296,7 @@
         "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
         "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요"
       ],
-      "weaponThemePlacementRationale": "숙소·선실·대기실의 개인 물품. 액자 속 사진의 인물·관계는 승인 전 미정.",
+      "weaponThemePlacementRationale": "개인이 가져온 사진이나 장식용 물건. 사진 속 인물·관계는 미설정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1272,13 +1304,18 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Still needs independent case-by-case geometry and object weight/trajectory plausibility confirmation. Heavy harm from a small item cannot be assumed.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V2",
@@ -1290,7 +1327,7 @@
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
       "weaponId": "W05",
-      "weaponName": "돌 문진",
+      "weaponName": "작은 화분",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1305,7 +1342,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 낙하물 충격형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 돌 문진 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 물건이 떨어져 부딪힌 흔적에 관한 기록과 작은 화분의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_FORENSIC",
@@ -1324,7 +1361,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "돌 문진 실물별 출처와 검증된 감식 기록 비교",
+          "description": "작은 화분 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1382,7 +1419,7 @@
         "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
         "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요"
       ],
-      "weaponThemePlacementRationale": "책상 위 종이·메모를 눌러 두는 작은 장식형 문진.",
+      "weaponThemePlacementRationale": "방 책상이나 선반에 둘 수 있는 개인 소품. 크루즈 선실/대기실에 실제로 있는 설정은 사건별로 검증.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1390,13 +1427,18 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Still needs independent case-by-case geometry and object weight/trajectory plausibility confirmation. Heavy harm from a small item cannot be assumed.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M03_V1",
@@ -1408,7 +1450,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W04",
-      "weaponName": "넓은 천 벨트",
+      "weaponName": "벨트",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1419,7 +1461,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 목 압박·교살형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 넓은 천 벨트 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 목이 눌린 흔적에 관한 기록과 벨트의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M03_V1_FORENSIC",
@@ -1437,7 +1479,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "넓은 천 벨트 실물별 출처와 검증된 감식 기록 비교",
+          "description": "벨트 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1493,7 +1535,7 @@
         "목 압박 관련 법의학 소견이 존재",
         "천/가방끈의 단순 소지는 교살 증거가 아님"
       ],
-      "weaponThemePlacementRationale": "여행 짐이나 개인 의상과 함께 보관하는 평범한 천 소재 소지품.",
+      "weaponThemePlacementRationale": "옷이나 개인 여행 가방에 들어 있는 평범한 물건.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1501,13 +1543,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M03_V1",
@@ -1519,7 +1564,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W07",
-      "weaponName": "캔버스 가방끈",
+      "weaponName": "가방끈",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1534,7 +1579,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 목 압박·교살형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 캔버스 가방끈 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 목이 눌린 흔적에 관한 기록과 가방끈의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M03_V1_FORENSIC",
@@ -1553,7 +1598,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "캔버스 가방끈 실물별 출처와 검증된 감식 기록 비교",
+          "description": "가방끈 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1609,7 +1654,7 @@
         "목 압박 관련 법의학 소견이 존재",
         "천/가방끈의 단순 소지는 교살 증거가 아님"
       ],
-      "weaponThemePlacementRationale": "개인이 들고 다니는 가방의 교체형 또는 분리형 스트랩.",
+      "weaponThemePlacementRationale": "여행 가방이나 개인 가방에 달린 흔한 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1617,13 +1662,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V1",
@@ -1635,7 +1683,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W04",
-      "weaponName": "넓은 천 벨트",
+      "weaponName": "벨트",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1646,7 +1694,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 목 압박·교살형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 넓은 천 벨트 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 목이 눌린 흔적에 관한 기록과 벨트의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M03_V1_FORENSIC",
@@ -1664,7 +1712,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "넓은 천 벨트 실물별 출처와 검증된 감식 기록 비교",
+          "description": "벨트 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1720,7 +1768,7 @@
         "목 압박 관련 법의학 소견이 존재",
         "천/가방끈의 단순 소지는 교살 증거가 아님"
       ],
-      "weaponThemePlacementRationale": "여행 짐이나 개인 의상과 함께 보관하는 평범한 천 소재 소지품.",
+      "weaponThemePlacementRationale": "옷이나 개인 여행 가방에 들어 있는 평범한 물건.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1728,13 +1776,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M03_V2",
@@ -1746,7 +1797,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 면 손수건",
+      "weaponName": "손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1761,7 +1812,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 호흡 차단형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 두꺼운 면 손수건 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 숨이 막힌 원인과 관련된 흔적에 관한 기록과 손수건의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M03_V2_FORENSIC",
@@ -1780,7 +1831,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 면 손수건 실물별 출처와 검증된 감식 기록 비교",
+          "description": "손수건 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1836,7 +1887,7 @@
         "호흡 차단 소견을 교살과 구별하는 검증 기록",
         "직물 관련 감식과 개별 인스턴스 조사"
       ],
-      "weaponThemePlacementRationale": "주머니·가방에 넣는 개인 면직물.",
+      "weaponThemePlacementRationale": "가방이나 주머니에 넣을 수 있는 개인 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1844,13 +1895,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M03_V2",
@@ -1862,7 +1916,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 면 손수건",
+      "weaponName": "손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1877,7 +1931,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 호흡 차단형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 두꺼운 면 손수건 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 숨이 막힌 원인과 관련된 흔적에 관한 기록과 손수건의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M03_V2_FORENSIC",
@@ -1896,7 +1950,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 면 손수건 실물별 출처와 검증된 감식 기록 비교",
+          "description": "손수건 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1952,7 +2006,7 @@
         "호흡 차단 소견을 교살과 구별하는 검증 기록",
         "직물 관련 감식과 개별 인스턴스 조사"
       ],
-      "weaponThemePlacementRationale": "주머니·가방에 넣는 개인 면직물.",
+      "weaponThemePlacementRationale": "가방이나 주머니에 넣을 수 있는 개인 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -1960,13 +2014,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V2",
@@ -1978,7 +2035,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 면 손수건",
+      "weaponName": "손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1993,7 +2050,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 호흡 차단형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 두꺼운 면 손수건 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 숨이 막힌 원인과 관련된 흔적에 관한 기록과 손수건의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M03_V2_FORENSIC",
@@ -2012,7 +2069,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 면 손수건 실물별 출처와 검증된 감식 기록 비교",
+          "description": "손수건 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2068,7 +2125,7 @@
         "호흡 차단 소견을 교살과 구별하는 검증 기록",
         "직물 관련 감식과 개별 인스턴스 조사"
       ],
-      "weaponThemePlacementRationale": "주머니·가방에 넣는 개인 면직물.",
+      "weaponThemePlacementRationale": "가방이나 주머니에 넣을 수 있는 개인 소지품.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2076,13 +2133,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M04_V1",
@@ -2094,7 +2154,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W09",
-      "weaponName": "휴대용 음료병",
+      "weaponName": "물병",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2109,7 +2169,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 독극물 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 휴대용 음료병 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 독성 검사 결과에 관한 기록과 물병의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V1_FORENSIC",
@@ -2128,7 +2188,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "휴대용 음료병 실물별 출처와 검증된 감식 기록 비교",
+          "description": "물병 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2185,7 +2245,7 @@
         "용기 자체와 검출된 물질은 다름",
         "구체 독물 종류/사용 절차를 대사에 담지 말 것"
       ],
-      "weaponThemePlacementRationale": "테마에 무관하게 개인 음료를 보관하는 병.",
+      "weaponThemePlacementRationale": "세 테마에 모두 자연스럽게 놓일 수 있는 개인 음료 용기.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2193,13 +2253,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M04_V1",
@@ -2211,7 +2274,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W10",
-      "weaponName": "밀폐 간식통",
+      "weaponName": "과자통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2222,7 +2285,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 독극물 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 밀폐 간식통 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 독성 검사 결과에 관한 기록과 과자통의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V1_FORENSIC",
@@ -2240,7 +2303,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "밀폐 간식통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "과자통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2297,7 +2360,7 @@
         "용기 자체와 검출된 물질은 다름",
         "구체 독물 종류/사용 절차를 대사에 담지 말 것"
       ],
-      "weaponThemePlacementRationale": "개인 취향의 간식·소지품을 담는 작은 밀폐 용기. 음식 내용물은 임의 확정 금지.",
+      "weaponThemePlacementRationale": "세 테마에 모두 개인 간식을 보관할 수 있는 용기. 실제 음식 내용물은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2305,13 +2368,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V1",
@@ -2323,7 +2389,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W08",
-      "weaponName": "개인 약통",
+      "weaponName": "약통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2334,7 +2400,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 독극물 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 개인 약통 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 독성 검사 결과에 관한 기록과 약통의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V1_FORENSIC",
@@ -2352,7 +2418,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "개인 약통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "약통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2409,7 +2475,7 @@
         "용기 자체와 검출된 물질은 다름",
         "구체 독물 종류/사용 절차를 대사에 담지 말 것"
       ],
-      "weaponThemePlacementRationale": "일상적인 개인 휴대 약통. 약의 성분·소지자 병력은 아직 미설정.",
+      "weaponThemePlacementRationale": "개인이 소지하는 용기. 내용물·병력·약물명은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2417,13 +2483,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M04_V2",
@@ -2435,7 +2504,7 @@
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
       "weaponId": "W08",
-      "weaponName": "개인 약통",
+      "weaponName": "약통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2446,7 +2515,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 약물 관련 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 개인 약통 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 약물 관련 검사 결과에 관한 기록과 약통의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V2_FORENSIC",
@@ -2464,7 +2533,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "개인 약통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "약통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2521,7 +2590,7 @@
         "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
         "약물 명칭·용량·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "일상적인 개인 휴대 약통. 약의 성분·소지자 병력은 아직 미설정.",
+      "weaponThemePlacementRationale": "개인이 소지하는 용기. 내용물·병력·약물명은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2529,13 +2598,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M04_V2",
@@ -2547,7 +2619,7 @@
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
       "weaponId": "W08",
-      "weaponName": "개인 약통",
+      "weaponName": "약통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2558,7 +2630,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 약물 관련 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 개인 약통 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 약물 관련 검사 결과에 관한 기록과 약통의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V2_FORENSIC",
@@ -2576,7 +2648,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "개인 약통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "약통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2633,7 +2705,7 @@
         "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
         "약물 명칭·용량·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "일상적인 개인 휴대 약통. 약의 성분·소지자 병력은 아직 미설정.",
+      "weaponThemePlacementRationale": "개인이 소지하는 용기. 내용물·병력·약물명은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2641,13 +2713,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V2",
@@ -2659,7 +2734,7 @@
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
       "weaponId": "W09",
-      "weaponName": "휴대용 음료병",
+      "weaponName": "물병",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2674,7 +2749,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 약물 관련 중독형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 휴대용 음료병 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 약물 관련 검사 결과에 관한 기록과 물병의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_FORENSIC",
@@ -2693,7 +2768,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "휴대용 음료병 실물별 출처와 검증된 감식 기록 비교",
+          "description": "물병 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2750,7 +2825,7 @@
         "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
         "약물 명칭·용량·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "테마에 무관하게 개인 음료를 보관하는 병.",
+      "weaponThemePlacementRationale": "세 테마에 모두 자연스럽게 놓일 수 있는 개인 음료 용기.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2758,13 +2833,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "HOTEL_M04_V3",
@@ -2776,7 +2854,7 @@
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
       "weaponId": "W10",
-      "weaponName": "밀폐 간식통",
+      "weaponName": "과자통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2787,7 +2865,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "204호 사건의 심각한 알레르기 반응형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 밀폐 간식통 후보의 실제 연관성을 교차 검증한다. 1층 로비 ↔ 계단 ↔ 2층 204호 복도 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "호텔 204호에서 찾은 심한 알레르기 반응에 관한 검사 기록에 관한 기록과 과자통의 관련성을 조사한다. 호텔 1층 로비와 204호 사이 계단·복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V3_FORENSIC",
@@ -2805,7 +2883,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "밀폐 간식통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "과자통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2863,7 +2941,7 @@
         "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
         "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "개인 취향의 간식·소지품을 담는 작은 밀폐 용기. 음식 내용물은 임의 확정 금지.",
+      "weaponThemePlacementRationale": "세 테마에 모두 개인 간식을 보관할 수 있는 용기. 실제 음식 내용물은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2871,13 +2949,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "CRUISE_M04_V3",
@@ -2889,7 +2970,7 @@
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
       "weaponId": "W09",
-      "weaponName": "휴대용 음료병",
+      "weaponName": "물병",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2904,7 +2985,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "403호 사건의 심각한 알레르기 반응형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 휴대용 음료병 후보의 실제 연관성을 교차 검증한다. 아트리움 ↔ 선수/선미 계단 ↔ 4데크 403호 근처 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "크루즈 403호에서 찾은 심한 알레르기 반응에 관한 검사 기록에 관한 기록과 물병의 관련성을 조사한다. 크루즈 3데크 로비와 403호 사이 앞뒤 계단에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V3_FORENSIC",
@@ -2923,7 +3004,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "휴대용 음료병 실물별 출처와 검증된 감식 기록 비교",
+          "description": "물병 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2981,7 +3062,7 @@
         "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
         "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "테마에 무관하게 개인 음료를 보관하는 병.",
+      "weaponThemePlacementRationale": "세 테마에 모두 자연스럽게 놓일 수 있는 개인 음료 용기.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -2989,13 +3070,16 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V3",
@@ -3007,7 +3091,7 @@
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
       "weaponId": "W10",
-      "weaponName": "밀폐 간식통",
+      "weaponName": "과자통",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -3018,7 +3102,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "VIP-01 사건의 심각한 알레르기 반응형 관련 감식 기록과, NPC 개인실에서 발견할 수 있는 밀폐 간식통 후보의 실제 연관성을 교차 검증한다. 공동 대기홀 ↔ 중앙 짧은 통로 ↔ VIP-01 및 A/B 복도 우회 동선은 사건별로 입증해야 한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에서 찾은 심한 알레르기 반응에 관한 검사 기록에 관한 기록과 과자통의 관련성을 조사한다. 음악방송 공동 대기홀과 VIP-01 사이 중앙 통로 및 좌우 복도에서 실제 이동을 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_FORENSIC",
@@ -3036,7 +3120,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "밀폐 간식통 실물별 출처와 검증된 감식 기록 비교",
+          "description": "과자통 실물마다 발견한 방과 검사 기록을 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -3094,7 +3178,7 @@
         "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
         "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것"
       ],
-      "weaponThemePlacementRationale": "개인 취향의 간식·소지품을 담는 작은 밀폐 용기. 음식 내용물은 임의 확정 금지.",
+      "weaponThemePlacementRationale": "세 테마에 모두 개인 간식을 보관할 수 있는 용기. 실제 음식 내용물은 사건 승인 전 미정.",
       "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
       "useInRandomCaseGeneratorOnlyIf": [
         "TRUE_CASE_TIMELINE_AUTHORED",
@@ -3102,15 +3186,18 @@
         "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
         "WEAPON_INSTANCE_RETURN_PROVEN",
         "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
-        "PROOF_GRAPH_UNIQUE"
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
       ],
       "designReviews": {
         "round1": "plausibility_weapon_origin_theme_transit_reviewed",
         "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
         "runtimeGameplayValidated": false
-      }
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation"
     }
   ],
-  "weaponDesignUpdate": "twelve_item_pass1_placement_pass2_case_evidence_review_2026-11-08",
-  "reviewStatus": "editorial_passes_completed_scenario_truth_and_Unity_gameplay_validation_not_done"
+  "weaponDesignUpdate": "all_12_item_display_names_changed_to_common_everyday_Korean_2026-11-08",
+  "reviewStatus": "two_editorial_passes_plus_plain_language_copyedit_completed_truthed_cases_unvalidated"
 }
