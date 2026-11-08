@@ -21,6 +21,7 @@
 - **테마별 roomId 및 displayNumber 필수 분리:** `MAPS.md`, `game/maps/theme_room_layouts.v1.json` 기준. 호텔 101/201, 크루즈 301/401, 음악방송 A01/B01/VIP-01 대기실 표기를 혼용하지 않고, 복도/계단/승강기를 9번째 조사실로 만들지 않는다. **테마마다 구조가 달라** 호텔 4+4, 크루즈 5+3, 음악방송 단층 8개이다. 모든 테마에 2층/층당 4개를 강제하는 구 스키마는 폐기하고, 두 새 추천안은 JSON의 `topology` 그래프를 참고한다. 기존 단층 로비 직결 7개 문 그래프를 호텔/크루즈/음악방송에 적용하지 않는다.
 - 필수 수사 시스템: **NPC 알리바이 대조 + 현장/개인실 증거 연결 + 논리적으로 달라지는 무작위 사건 생성 + 시간표·동선 사건 재구성**.
 - 카드 배분/손패/블러핑 없이 장소 조사와 NPC 대화·심문·증거 제시로 사건을 추리한다.
+- **사용자 제공 테마별 대화창 원본 PNG 3개 저장(2026-11-08):** `art/UI/DialogueFrames/ThemeDialogue_v1/`의 `Mansion.png`(HOTEL), `Cruise.png`(CRUISE), `MusicBroadcast.png`(MUSIC_BROADCAST). 모두 원본 2048×682 RGBA 투명 PNG, 좌측 상단 이름표와 넓은 중앙 본문 유지. 테마 자동 교체와 이름/대사 `TextMeshPro` 레이어는 다음 Unity UI 단계에서 구현. 기존 `art/UI/CardFrames/InvitationPortrait_v2/` 초대장 세로 카드와 용도 구분, 이미지/레이아웃 임의 변경 금지. 상세 `art/UI/DialogueFrames/ThemeDialogue_v1/README.md`, `dialogue_frame_manifest.v1.json`. **PNG GitHub 저장 완료, Unity UI 적용/기능 테스트/빌드 미실시.**
 - **NPC 심문 6명 전원은 질문 선택지 없이 완전 자유 한국어 타이핑 대화형 (USER LOCK).** NPC는 이전 질문·발언·제시된 증거·철회/정정을 기억하며 기록을 보존한다. NPC 대사 문장은 사전에 작성/검수하며 AI는 입력 의도/증거/이전 대화에 맞는 사전 대사 ID 검색·선택만 수행한다. 새로운 NPC 대사를 생성하지 않는다. NPC 자신이 알 수 없는 사실, 미발견 단서, 새로운 사건 정답을 만들지 못한다. `NPC_FREE_DIALOGUE.md`를 필수 준수.
 - **랜덤 사건은 사전 검증된 템플릿 + 제약 조건 + 시드 생성 + 논증/도달성 솔버로 구성**한다. 범인만 랜덤 변경하는 가짜 사건 금지. `RANDOM_CASE_AI_DESIGN.md`를 필수 준수.
 - 최종 고발은 **플레이어의 자유 한국어 타이핑 입력**이다. 버튼으로 범인/장소/흉기를 찍는 구형 시스템을 재도입하지 않는다.
