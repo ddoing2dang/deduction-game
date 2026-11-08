@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "createdAt": "2026-11-08",
   "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
   "implementationStatus": "design_only_unity_not_integrated",
@@ -18,11 +18,13 @@
     "noWeaponObjectInLobbyOrCrimeScene": true,
     "methodCatalogSharedAcrossThemes": true,
     "methodCategoryCount": 4,
-    "methodVariantApproval": "under_exploration_not_final"
+    "methodVariantApproval": "under_exploration_not_final",
+    "methodScoringAcceptParentOnly": true,
+    "methodSubtypeRequiredInFinalAccusation": false
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
-  "weaponCatalogStatus": "proposal_for_specific_names_and_base_owners",
-  "methodCatalogStatus": "four_user_approved_shared_categories_nine_variants_proposed",
+  "weaponCatalogStatus": "recommended_revised_12_types_for_4_parent_categories_and_9_subtypes_item_names_not_user_approved",
+  "methodCatalogStatus": "four_user_approved_categories_nine_subtypes_now_user_requested_for_scenario_design",
   "weapons": [
     {
       "id": "W01",
@@ -31,7 +33,11 @@
       "compatibleMethodIds": [
         "M01"
       ],
-      "baseOwner": "ROOM_MATTO"
+      "baseOwner": "ROOM_MATTO",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ]
     },
     {
       "id": "W02",
@@ -40,7 +46,11 @@
       "compatibleMethodIds": [
         "M02"
       ],
-      "baseOwner": "ROOM_MATTO"
+      "baseOwner": "ROOM_MATTO",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ]
     },
     {
       "id": "W03",
@@ -49,7 +59,11 @@
       "compatibleMethodIds": [
         "M01"
       ],
-      "baseOwner": "ROOM_JIRO"
+      "baseOwner": "ROOM_JIRO",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ]
     },
     {
       "id": "W04",
@@ -58,7 +72,11 @@
       "compatibleMethodIds": [
         "M03"
       ],
-      "baseOwner": "ROOM_JIRO"
+      "baseOwner": "ROOM_JIRO",
+      "compatibleVariantIds": [
+        "M03_V1",
+        "M03_V2"
+      ]
     },
     {
       "id": "W05",
@@ -67,19 +85,27 @@
       "compatibleMethodIds": [
         "M02"
       ],
-      "baseOwner": "ROOM_MARIHI"
+      "baseOwner": "ROOM_MARIHI",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ]
     },
     {
       "id": "W06",
-      "name": "휴대용 고데기",
+      "name": "접이식 금속 스탠드",
       "primaryMethodId": "M02",
       "compatibleMethodIds": [
         "M02"
       ],
       "baseOwner": "ROOM_MARIHI",
-      "methodCompatibilityReviewNeeded": true,
-      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
-      "primaryMethodReviewNeeded": true
+      "methodCompatibilityReviewNeeded": false,
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "weaponTypeReplacementRecommended": false,
+      "proposalRevisionReason": "Replace electrocution-dependent hair straightener to support shared blunt impact variants in all three themes"
     },
     {
       "id": "W07",
@@ -90,7 +116,10 @@
       ],
       "baseOwner": "ROOM_NAZ",
       "methodCompatibilityReviewNeeded": true,
-      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected."
+      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
+      "compatibleVariantIds": [
+        "M03_V1"
+      ]
     },
     {
       "id": "W08",
@@ -99,7 +128,11 @@
       "compatibleMethodIds": [
         "M04"
       ],
-      "baseOwner": "ROOM_NAZ"
+      "baseOwner": "ROOM_NAZ",
+      "compatibleVariantIds": [
+        "M04_V1",
+        "M04_V2"
+      ]
     },
     {
       "id": "W09",
@@ -109,7 +142,13 @@
         "M04",
         "M02"
       ],
-      "baseOwner": "ROOM_BOKI"
+      "baseOwner": "ROOM_BOKI",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M04_V1",
+        "M04_V2",
+        "M04_V3"
+      ]
     },
     {
       "id": "W10",
@@ -119,18 +158,28 @@
         "M02",
         "M04"
       ],
-      "baseOwner": "ROOM_BOKI"
+      "baseOwner": "ROOM_BOKI",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M04_V1",
+        "M04_V2",
+        "M04_V3"
+      ]
     },
     {
       "id": "W11",
-      "name": "멀티탭",
-      "primaryMethodId": null,
-      "compatibleMethodIds": [],
+      "name": "두꺼운 수건",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03"
+      ],
       "baseOwner": "ROOM_MOONIRE",
-      "methodCompatibilityReviewNeeded": true,
-      "priorMethodNote": "Electrocution M05 was withdrawn; do not infer candidate fifth-method compatibility until selected.",
-      "primaryMethodReviewNeeded": true,
-      "weaponTypeReplacementRecommended": true
+      "methodCompatibilityReviewNeeded": false,
+      "weaponTypeReplacementRecommended": false,
+      "compatibleVariantIds": [
+        "M03_V2"
+      ],
+      "proposalRevisionReason": "Replace electrocution-dependent power strip with non-mechanical breathing obstruction clue candidate in all three themes"
     },
     {
       "id": "W12",
@@ -139,7 +188,11 @@
       "compatibleMethodIds": [
         "M01"
       ],
-      "baseOwner": "ROOM_MOONIRE"
+      "baseOwner": "ROOM_MOONIRE",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ]
     }
   ],
   "methods": [
@@ -452,7 +505,7 @@
     "fifthMethodStatus": "retired_no_fifth_method",
     "userApprovedCategoryCount": 4,
     "proposedVariantCount": 9,
-    "methodScoringPolicy": "methodId category is scored as the method axis; methodVariantId is case-specific proof/reconstruction detail and not mandatory in final free-text accusation unless user explicitly revises scoring",
+    "methodScoringPolicy": "Accept any of four parent method categories M01-M04 regardless of which of nine subtypes the case uses. Final answer still requires culpritNpcId+methodId+weaponId. If input explicitly mentions subtype, map it to parent and score only parent; do not require subtype ID, do not reject correct parent due to omitted or different subtype wording unless core category itself is unclear.",
     "caseTruthFields": [
       "methodId",
       "methodVariantId",
@@ -461,7 +514,8 @@
     ],
     "methodVariantProofRequired": true,
     "methodVariantNotAutoSelectedByWeapon": true,
-    "noNewWeaponTypeForVariant": true
+    "noNewWeaponTypeForVariant": true,
+    "userRequestedThemeVariantWeaponDialoguePack": true
   },
   "rejectedMethodSuggestions": [
     {
@@ -470,7 +524,7 @@
       "status": "user_rejected"
     }
   ],
-  "methodCompatibilityStatus": "Four parent categories mapped; W06/W11 and respiratory obstruction/allergy variants require reviewed candidate weapons, no Unity gameplay generation",
+  "methodCompatibilityStatus": "All 12 provisional item types have compatible variant IDs. Case scenario pack will separately assign 27 theme-variant examples. Evidence and forensic verification per case are still pending.",
   "deprecatedMethods": [
     {
       "id": "M05",
