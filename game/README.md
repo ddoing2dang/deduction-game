@@ -10,4 +10,6 @@
 
 자세한 규칙은 [GAME_RULES.md](../GAME_RULES.md), 맵은 [MAPS.md](../MAPS.md), AI 채점 설계는 [NATURAL_LANGUAGE_DEDUCTION.md](../NATURAL_LANGUAGE_DEDUCTION.md), NPC 자유 채팅은 [NPC_FREE_DIALOGUE.md](../NPC_FREE_DIALOGUE.md), 랜덤 사건은 [RANDOM_CASE_AI_DESIGN.md](../RANDOM_CASE_AI_DESIGN.md), NPC 아트는 [NPC_SPRITE_SPEC.md](../NPC_SPRITE_SPEC.md), 아트는 [PRODUCTION_STANDARD_2_5D.md](../PRODUCTION_STANDARD_2_5D.md) 참조.
 
+고정 인물 성격은 [CHARACTERS_PERSONALITY.md](../CHARACTERS_PERSONALITY.md), 초기 대사 데이터는 [npc_dialogue_catalog.v1.json](dialogue/npc_dialogue_catalog.v1.json) (**228개/6명×38상황**), 선택 규약은 [dialogue/README.md](dialogue/README.md) 참고. 사건별 진술 자료와 게임 런타임 연결은 아직 없음.
+
 실제 프로젝트는 `UnityProject/`. 원본 씬·에셋 보존, 승인 없는 기능 테스트·빌드·배포 금지.
