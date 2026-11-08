@@ -1,0 +1,4 @@
+# Original Kenney Castle Kit CC0 texture atlas
+newmtl colormap
+Kd 1 1 1
+map_Kd Textures/colormap.png

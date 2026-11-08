@@ -1,0 +1,9 @@
+# Original KayKit Furniture Bits CC0 texture atlas
+newmtl furniture_texture
+Ns 250.0
+Ka 1 1 1
+Kd 1 1 1
+Ks .5 .5 .5
+d 1
+illum 2
+map_Kd furniturebits_texture.png

@@ -1,0 +1,9 @@
+# Original KayKit Restaurant Bits CC0 texture atlas
+newmtl restaurant
+Ns 250.0
+Ka 1 1 1
+Kd 1 1 1
+Ks .5 .5 .5
+d 1
+illum 2
+map_Kd restaurantbits_texture.png
