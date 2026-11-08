@@ -7,84 +7,273 @@
   "licence": "CC0 1.0 Universal",
   "licenceFile": "LICENSE.txt",
   "meshFormat": "Wavefront OBJ",
-  "assetCount": 19,
-  "originalKayKitTextureIncluded": false,
+  "assetCount": 53,
+  "originalKayKitTextureIncluded": true,
   "modelFiles": [
     {
       "path": "Models/armchair.obj",
-      "sourceBlobSha": "7005b3d4b70d9fdbf56537420703e225a936fc06"
+      "sourceBlobSha": "7005b3d4b70d9fdbf56537420703e225a936fc06",
+      "repositoryBlobSha": "d909595a0ce40bd43fc3cab48d46f8dd73b4da15"
+    },
+    {
+      "path": "Models/armchair_pillows.obj",
+      "sourceBlobSha": "890cae0405a201709432f7f2077b450781ccc211",
+      "repositoryBlobSha": "bcbf0c94a2cf3c997a4ab6e00e95f9dd199093d5"
     },
     {
       "path": "Models/bed_double_A.obj",
-      "sourceBlobSha": "c36015a6de3af7acecc16ed60a91fa515d107794"
+      "sourceBlobSha": "c36015a6de3af7acecc16ed60a91fa515d107794",
+      "repositoryBlobSha": "a28a823e4cacc48788568a9a4d33d5c39197467d"
+    },
+    {
+      "path": "Models/bed_double_B.obj",
+      "sourceBlobSha": "a74ccd648eee7f841769cba04cbe4ca27ea7a49a",
+      "repositoryBlobSha": "91d9564442df817654ad4c4fc03892aa135dd922"
     },
     {
       "path": "Models/bed_single_A.obj",
-      "sourceBlobSha": "6e3a5b0f63cc53507b4d5abaad461bc314e6c918"
+      "sourceBlobSha": "6e3a5b0f63cc53507b4d5abaad461bc314e6c918",
+      "repositoryBlobSha": "6e00bc51d91da1f1bc1ff44d0b2e95c531102270"
+    },
+    {
+      "path": "Models/bed_single_B.obj",
+      "sourceBlobSha": "3acda05fc744604c1e156781877994c92fca98be",
+      "repositoryBlobSha": "6695bef803b1c15b48e90eaf59e6ba8db5cc1683"
     },
     {
       "path": "Models/book_set.obj",
-      "sourceBlobSha": "4ae222efee8f9ad1cb17fefe8d460e5fa8e5ef87"
+      "sourceBlobSha": "4ae222efee8f9ad1cb17fefe8d460e5fa8e5ef87",
+      "repositoryBlobSha": "b273158aa6a2d442fab50f44a2dfd85f5d6d3eaa"
+    },
+    {
+      "path": "Models/book_single.obj",
+      "sourceBlobSha": "72b1a0dead2eb06b8022ceb355261bd5cf6b5158",
+      "repositoryBlobSha": "abf3c42c5c3a9865406ba2d56ce42542ae650523"
     },
     {
       "path": "Models/cabinet_medium.obj",
-      "sourceBlobSha": "a721cc63f6ec5056a557bc97cb8916ac8c2b0df3"
+      "sourceBlobSha": "a721cc63f6ec5056a557bc97cb8916ac8c2b0df3",
+      "repositoryBlobSha": "809a1a0692a188e4a495f2aa85064a8070ead579"
+    },
+    {
+      "path": "Models/cabinet_medium_decorated.obj",
+      "sourceBlobSha": "dc22c1ae1c0a552b605ebc8e32141174d7a6a708",
+      "repositoryBlobSha": "3b2d217c682b7272d40e886f0ac4a388733a9314"
     },
     {
       "path": "Models/cabinet_small.obj",
-      "sourceBlobSha": "788fd3f51f444962b068021ba7c1c099d53c2e14"
+      "sourceBlobSha": "788fd3f51f444962b068021ba7c1c099d53c2e14",
+      "repositoryBlobSha": "024cc160041984ea79395e003abbea14f9ce499b"
+    },
+    {
+      "path": "Models/cabinet_small_decorated.obj",
+      "sourceBlobSha": "2b0d1eba77275455337c6a6fd338f7538ba8f07e",
+      "repositoryBlobSha": "02628f99ee433ea78481c4ee4392fa1e69ff1c2b"
+    },
+    {
+      "path": "Models/cactus_medium_A.obj",
+      "sourceBlobSha": "6d270a7f13bfd79c291da377d11091f6ad55294b",
+      "repositoryBlobSha": "0e69c02b0bbf22bcc7d56eb5a0c69d5790215ef4"
+    },
+    {
+      "path": "Models/cactus_medium_B.obj",
+      "sourceBlobSha": "b81437424f39c897f94bb2b9eefa43ff22b83bbc",
+      "repositoryBlobSha": "486365bb95542e69c32b9bf5c81b651b69f04286"
+    },
+    {
+      "path": "Models/cactus_small_A.obj",
+      "sourceBlobSha": "b0ffed01f2e457d754f5b76289eed6f16b662645",
+      "repositoryBlobSha": "2cedf0ea6bc8b97ed403a5575656d1a3497147bd"
+    },
+    {
+      "path": "Models/cactus_small_B.obj",
+      "sourceBlobSha": "454147d77a84fbaba4f8d3707d7627c860f87c6a",
+      "repositoryBlobSha": "828b221f7977acf5a7eb2c863d13d5651c1f5914"
+    },
+    {
+      "path": "Models/chair_A.obj",
+      "sourceBlobSha": "510ea08f49cd52589a900b5e7cd1250010d6a168",
+      "repositoryBlobSha": "e89f756883d0eb96868684193a4832b04a077456"
     },
     {
       "path": "Models/chair_A_wood.obj",
-      "sourceBlobSha": "31bffed6671485a91e7bcd87e85e11970413b7be"
+      "sourceBlobSha": "31bffed6671485a91e7bcd87e85e11970413b7be",
+      "repositoryBlobSha": "6d7e2a724f2a6f6dfe2f5f282e2b21e707e609da"
+    },
+    {
+      "path": "Models/chair_B.obj",
+      "sourceBlobSha": "39274ad5294d950f2d4c066c9044afd58489916e",
+      "repositoryBlobSha": "4d90cab080ff5c52ef51245a12f1d8f729dbbae3"
+    },
+    {
+      "path": "Models/chair_B_wood.obj",
+      "sourceBlobSha": "05f443f40533f0d65c17328fe3937d1f099f92f4",
+      "repositoryBlobSha": "bf2532373501cbab79154e91e7790cf2a0e8bcd2"
+    },
+    {
+      "path": "Models/chair_C.obj",
+      "sourceBlobSha": "e210cbcd76274fb6db7fde3cacfa6909bf8d5201",
+      "repositoryBlobSha": "9f878c57661e0ebd72c240b594a850c582b97057"
     },
     {
       "path": "Models/chair_stool.obj",
-      "sourceBlobSha": "04b707e99d38d7106998cf1a9d114450b89601c9"
+      "sourceBlobSha": "04b707e99d38d7106998cf1a9d114450b89601c9",
+      "repositoryBlobSha": "1b0c5ec00b35b530e8a8e22ce99cde84c4e31bee"
+    },
+    {
+      "path": "Models/chair_stool_wood.obj",
+      "sourceBlobSha": "c3a6a963b169322e53a37eca803477896b69fdf8",
+      "repositoryBlobSha": "0b3d0609b47bf8ade7d72258352f8553bc3a2c17"
     },
     {
       "path": "Models/couch.obj",
-      "sourceBlobSha": "742e49ba6b82557682c603d9ae8cd849f7461448"
+      "sourceBlobSha": "742e49ba6b82557682c603d9ae8cd849f7461448",
+      "repositoryBlobSha": "6966b4f7f3000ab459a3c26038960c1f8be273ef"
     },
     {
       "path": "Models/couch_pillows.obj",
-      "sourceBlobSha": "17cb03608c9043ff3bdd6ec3dadf483b1e2984e1"
+      "sourceBlobSha": "17cb03608c9043ff3bdd6ec3dadf483b1e2984e1",
+      "repositoryBlobSha": "a4af845367cb07519917ea5172e010e11085cea0"
     },
     {
       "path": "Models/lamp_standing.obj",
-      "sourceBlobSha": "843a5e8ed4a7b9b80459f3c1c2c3baca39e66f32"
+      "sourceBlobSha": "843a5e8ed4a7b9b80459f3c1c2c3baca39e66f32",
+      "repositoryBlobSha": "6fa5e526bc113baf2150b06bb17be42f3021d2ec"
     },
     {
       "path": "Models/lamp_table.obj",
-      "sourceBlobSha": "70253a7e087a560a8c96ec9a67028a8320f6bec7"
+      "sourceBlobSha": "70253a7e087a560a8c96ec9a67028a8320f6bec7",
+      "repositoryBlobSha": "d51d58caa60de8268ccf74ec24461844d5d868ec"
     },
     {
       "path": "Models/pictureframe_large_A.obj",
-      "sourceBlobSha": "040629d86201c0a560304556898d62467f2e9126"
+      "sourceBlobSha": "040629d86201c0a560304556898d62467f2e9126",
+      "repositoryBlobSha": "8fcfba89ebaef4ae43bef3998e3b19eb897b72ac"
+    },
+    {
+      "path": "Models/pictureframe_large_B.obj",
+      "sourceBlobSha": "e9a66bdeecceb4fa03509fdb2a5ef40f36d49f6d",
+      "repositoryBlobSha": "c1277e374c6cd7fcf29f5106646e614789b0f733"
+    },
+    {
+      "path": "Models/pictureframe_medium.obj",
+      "sourceBlobSha": "0173ac54f7cc158594d3c128ca7247fb41e47cd8",
+      "repositoryBlobSha": "936890dc8fda048ef7e8e5db0fa3a7de077b2f77"
+    },
+    {
+      "path": "Models/pictureframe_small_A.obj",
+      "sourceBlobSha": "c7b32e05bd455cd8d29c16e086983bb7db47438d",
+      "repositoryBlobSha": "431c8117cfd4b127937896ef7251da68d299e7d8"
+    },
+    {
+      "path": "Models/pictureframe_small_B.obj",
+      "sourceBlobSha": "acf7dfe103228d1bd2e20b0c3cf63860d923f2e8",
+      "repositoryBlobSha": "cf993f3f67d6ad3bcce4f43ecb245d21e036ca8f"
+    },
+    {
+      "path": "Models/pictureframe_small_C.obj",
+      "sourceBlobSha": "b43f4c70bd6b4c1864eacd4c27bccd96cd3e42da",
+      "repositoryBlobSha": "13847da94044e0283c68a9b7f575d187292424f1"
     },
     {
       "path": "Models/pictureframe_standing_A.obj",
-      "sourceBlobSha": "89a71403729755e4c4946b0de148cf95d257dbd3"
+      "sourceBlobSha": "89a71403729755e4c4946b0de148cf95d257dbd3",
+      "repositoryBlobSha": "3b61a53ce9c0f7938d090ed773f6ab318c889946"
+    },
+    {
+      "path": "Models/pictureframe_standing_B.obj",
+      "sourceBlobSha": "098f42afc9e39f86f33f891651800e1c514a7e11",
+      "repositoryBlobSha": "7a715c012fa1ad29ec13981851a58e794934f1dd"
+    },
+    {
+      "path": "Models/pillow_A.obj",
+      "sourceBlobSha": "f28faba5e4cab7a69f1ba2fe110b9eafadb89816",
+      "repositoryBlobSha": "95d5aea983bb92b93da8057ef868e0fdbe158426"
+    },
+    {
+      "path": "Models/pillow_B.obj",
+      "sourceBlobSha": "e60349aa2af157aafd500333b8c749a0708143d8",
+      "repositoryBlobSha": "67b163de3b7b4d66872f476e02dc2d8a4b37da4b"
     },
     {
       "path": "Models/rug_oval_A.obj",
-      "sourceBlobSha": "4bcee0e52da4b5e38313d508195e32d8a9f6c3d2"
+      "sourceBlobSha": "4bcee0e52da4b5e38313d508195e32d8a9f6c3d2",
+      "repositoryBlobSha": "098d077399fd72e662758bf3dbf271e1b435f25c"
+    },
+    {
+      "path": "Models/rug_oval_B.obj",
+      "sourceBlobSha": "d06ce884a5b473325c81abb37b70e791bdccc62b",
+      "repositoryBlobSha": "53c18a4703d47412fb294b56a69e245618e27cef"
     },
     {
       "path": "Models/rug_rectangle_A.obj",
-      "sourceBlobSha": "fc501054c0203346323621d30f0ee54d7a3a1d3d"
+      "sourceBlobSha": "fc501054c0203346323621d30f0ee54d7a3a1d3d",
+      "repositoryBlobSha": "24ce5adb1ef0e96f92629af3dfb7f3397616193c"
+    },
+    {
+      "path": "Models/rug_rectangle_B.obj",
+      "sourceBlobSha": "de0c102a43fb6b741adadf8f1f9ebc6cdbbf03a5",
+      "repositoryBlobSha": "bc0004b1a951847ec9815810f8cc3e6be81c7add"
+    },
+    {
+      "path": "Models/rug_rectangle_stripes_A.obj",
+      "sourceBlobSha": "71b47e7729c2ddad630bc14b0f92be84f9819a98",
+      "repositoryBlobSha": "5ac4d32d9d44be5ee7dca344b617fad82e758b8b"
+    },
+    {
+      "path": "Models/rug_rectangle_stripes_B.obj",
+      "sourceBlobSha": "a9d6b7a39078caca39c91234e39a15f78d733e38",
+      "repositoryBlobSha": "c2a42aee81425c7f9f2b54d0d17b8921b1ec36d1"
     },
     {
       "path": "Models/shelf_A_big.obj",
-      "sourceBlobSha": "60022056e2a80fb64e8182c5a72364f6b15007f8"
+      "sourceBlobSha": "60022056e2a80fb64e8182c5a72364f6b15007f8",
+      "repositoryBlobSha": "ff8416b575dc6a35b3060ec227a58a943d66814c"
+    },
+    {
+      "path": "Models/shelf_A_small.obj",
+      "sourceBlobSha": "77790629e9a4cd44961a18fb5be7b90cfd102eea",
+      "repositoryBlobSha": "e1b8f2ce1925d2aa5efd1196800e728a084deb17"
+    },
+    {
+      "path": "Models/shelf_B_large.obj",
+      "sourceBlobSha": "8298fa8cea770b154783c62a27a47a0cc6f05905",
+      "repositoryBlobSha": "66feecb6bf18793fac36d7e8380d0c568b366d90"
+    },
+    {
+      "path": "Models/shelf_B_large_decorated.obj",
+      "sourceBlobSha": "3fc8157326202386243493f00571b91fdc01f733",
+      "repositoryBlobSha": "250c4de1281d020477daecdfb10f6120e0091c5f"
+    },
+    {
+      "path": "Models/shelf_B_small.obj",
+      "sourceBlobSha": "4503fc3c234f667fbb0b405a938bbceab71f592f",
+      "repositoryBlobSha": "62e6cf0329fefbe93b1d245a58720cf1f40317ac"
+    },
+    {
+      "path": "Models/shelf_B_small_decorated.obj",
+      "sourceBlobSha": "3a27bd893b46ee28ccc0b33dbd64d670b4af8ecd",
+      "repositoryBlobSha": "c2f36a87dd767128774da33fcff412a9385a8c48"
+    },
+    {
+      "path": "Models/table_low.obj",
+      "sourceBlobSha": "2d710faca0bd9bd5792a73b4f717f1cf4d1d62f1",
+      "repositoryBlobSha": "e4a8f1ae8ec863dea8e238a810999b1027834299"
     },
     {
       "path": "Models/table_medium.obj",
-      "sourceBlobSha": "bf38ba6b1d9f1d9daf148177431fa28e33118920"
+      "sourceBlobSha": "bf38ba6b1d9f1d9daf148177431fa28e33118920",
+      "repositoryBlobSha": "c71b936e01a01fb6758c8b08977464fde017481f"
     },
     {
       "path": "Models/table_medium_long.obj",
-      "sourceBlobSha": "f314342b93679b533dd0ab4d91d77c7456c73e33"
+      "sourceBlobSha": "f314342b93679b533dd0ab4d91d77c7456c73e33",
+      "repositoryBlobSha": "889a42bcc689cea9ed327443f039d0ccbb9ac9a0"
+    },
+    {
+      "path": "Models/table_small.obj",
+      "sourceBlobSha": "03c7db3c98ca0a9333ec80fe6cbde7d93cdff251",
+      "repositoryBlobSha": "11e5351dc3452f31531999871dc582835c45b6bf"
     }
   ],
   "sharedMaterial": "Models/kaykit_furniture.mtl",
@@ -95,8 +284,14 @@
     "Models/kaykit_palette_MusicBroadcast.tga"
   ],
   "caveats": [
-    "Original atlas is not included, approximate generated palette textures only",
-    "Check model colors/scale/URP materials after importing; untested",
-    "Not finished game maps"
-  ]
+    "For original KayKit appearance override legacy 19 OBJ material with original furniturebits_texture.png in Unity.",
+    "Confirm URP materials, UVs and scale in Unity; not imported or tested.",
+    "These are low-poly component assets, not completed thematic maps."
+  ],
+  "originalTextureFile": "Models/furniturebits_texture.png",
+  "materialFiles": [
+    "Models/kaykit_furniture.mtl",
+    "Models/kaykit_furniture_original.mtl"
+  ],
+  "originalModelsMaterialNote": "Original 19 OBJ reference old kaykit_furniture.mtl (generated TGA); new 34 OBJ reference kaykit_furniture_original.mtl (original PNG)."
 }

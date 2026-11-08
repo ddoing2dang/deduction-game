@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.1",
+  "packageName": "KenneyCastleKit",
+  "license": "CC0-1.0",
+  "licenseFile": "LICENSE.txt",
+  "author": "Kenney",
+  "officialSource": "https://kenney.nl/assets/castle-kit",
+  "gitMirrorUsed": "Evolis-Work/kenney-castle-kit",
+  "importStyle": "OBJ+MTL+PNG",
+  "sourceModelCount": 15,
+  "originalTextureIncluded": true,
+  "caveats": [
+    "OBJ model references a shared MTL and the original included PNG color atlas; in Unity confirm URP/Lit material imports and mesh scale.",
+    "These stylized models are CC0 and are not finished high-detail final maps."
+  ],
+  "files": [
+    {
+      "file": "Models/door.obj",
+      "format": "OBJ",
+      "gitBlobSha": "e3287e301d5e5e3135f51c087424b9bc83c6826d",
+      "originalSourceGitBlobSha": "866e35844605401caa8a2135b33f68c80913ee18"
+    },
+    {
+      "file": "Models/flag-banner-long.obj",
+      "format": "OBJ",
+      "gitBlobSha": "01ab843c8ed606c1b45a055952614a1f5fe91f5c",
+      "originalSourceGitBlobSha": "f3cebcbe88163915ec0f79f4f23635fa95fbeea7"
+    },
+    {
+      "file": "Models/flag-banner-short.obj",
+      "format": "OBJ",
+      "gitBlobSha": "94619a9a5f96593f574898139f2715350ffacd61",
+      "originalSourceGitBlobSha": "9645a07e1824b01415a799578b55d2d4fab286ec"
+    },
+    {
+      "file": "Models/gate.obj",
+      "format": "OBJ",
+      "gitBlobSha": "1e921289b057f299b0fa0faee2a0edad5941c167",
+      "originalSourceGitBlobSha": "8c8baaad65100331a8c3222b793d7421bd62b25d"
+    },
+    {
+      "file": "Models/metal-gate.obj",
+      "format": "OBJ",
+      "gitBlobSha": "96e211a2a555da03a4033a22a33f77ba326905a0",
+      "originalSourceGitBlobSha": "3647593d1674afbe46a55d9516641b8f231ee793"
+    },
+    {
+      "file": "Models/stairs-stone-square.obj",
+      "format": "OBJ",
+      "gitBlobSha": "16eae1fad1c0e40db4b1294acad2c21bdbcd550a",
+      "originalSourceGitBlobSha": "c36dbabbb8693fe44351b368cad581583950c676"
+    },
+    {
+      "file": "Models/stairs-stone.obj",
+      "format": "OBJ",
+      "gitBlobSha": "2aeeb5f6417917bdbfb5d3fe0068ed230b76686d",
+      "originalSourceGitBlobSha": "2ac2a1dcae07516acba0a452890a1007860fe2bc"
+    },
+    {
+      "file": "Models/tower-square-arch.obj",
+      "format": "OBJ",
+      "gitBlobSha": "cad1bb577f5c6f74065a8a82e3c857e18333e81e",
+      "originalSourceGitBlobSha": "aacfa5377a96e5e86a1e66271d57de0d82495bca"
+    },
+    {
+      "file": "Models/wall-corner.obj",
+      "format": "OBJ",
+      "gitBlobSha": "562adcb8c210138ad6b91389441b594c768374e9",
+      "originalSourceGitBlobSha": "6c6f780f7843fb8c21ffb77a2f1f0eb909f584db"
+    },
+    {
+      "file": "Models/wall-doorway.obj",
+      "format": "OBJ",
+      "gitBlobSha": "58a6587280067d3fa5b2d494e984f6d0af37431c",
+      "originalSourceGitBlobSha": "6cbd3c0cc9d655c415dac9a2b4fa676424ca4be6"
+    },
+    {
+      "file": "Models/wall-half.obj",
+      "format": "OBJ",
+      "gitBlobSha": "de02a202462bfe9aa7a5e7cf920827f068c7d044",
+      "originalSourceGitBlobSha": "647bfa89eb641f6774efd6e1933c98a68344ad14"
+    },
+    {
+      "file": "Models/wall-narrow-stairs.obj",
+      "format": "OBJ",
+      "gitBlobSha": "f76cc8012c2bec2bb5e8429e7aa5eac1627974d3",
+      "originalSourceGitBlobSha": "d246fd4c30ca0ea8f591da6435567069918b88c4"
+    },
+    {
+      "file": "Models/wall-narrow-wood.obj",
+      "format": "OBJ",
+      "gitBlobSha": "daa7e67498c56f7954fbdb1c2db2a4bac59323d6",
+      "originalSourceGitBlobSha": "e70dd690fcb718fe1c943ec041082d8843f88f15"
+    },
+    {
+      "file": "Models/wall-pillar.obj",
+      "format": "OBJ",
+      "gitBlobSha": "c711a367279f3635bab8968b98539897275a7cc6",
+      "originalSourceGitBlobSha": "623813c4ac1f49a4b03480fc2f0ff6fe9ad1436a"
+    },
+    {
+      "file": "Models/wall-stud.obj",
+      "format": "OBJ",
+      "gitBlobSha": "d95175d78b009627d0b0ae33bfc2bd4a2caeed40",
+      "originalSourceGitBlobSha": "07e61870a3378bf307c2a7d191e9ca9c66e8d093"
+    }
+  ]
+}

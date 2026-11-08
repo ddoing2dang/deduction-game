@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.1",
+  "packageName": "KenneyFurnitureKit",
+  "license": "CC0-1.0",
+  "licenseFile": "LICENSE.txt",
+  "author": "Kenney",
+  "officialSource": "https://kenney.nl/assets/furniture-kit",
+  "gitMirrorUsed": "ChingAmazing/OpenHome3D-html",
+  "importStyle": "GLB (requires Unity glTFast)",
+  "sourceModelCount": 18,
+  "originalTextureIncluded": false,
+  "caveats": [
+    "Unity does not import .glb as a native FBX/OBJ by default; install Unity glTFast com.unity.cloud.gltfast before importing these GLBs.",
+    "Self-contained GLB copied byte-for-byte from licensed public mirror and verified with Git blob SHA."
+  ],
+  "files": [
+    {
+      "file": "Models/bathroomCabinetDrawer.glb",
+      "format": "GLB",
+      "gitBlobSha": "a15c682a262b169ee71ebba1df2c3d1819fd7510",
+      "originalSourceGitBlobSha": "a15c682a262b169ee71ebba1df2c3d1819fd7510"
+    },
+    {
+      "file": "Models/bathroomMirror.glb",
+      "format": "GLB",
+      "gitBlobSha": "8e3604f44c3c640aca9c08e7e598058f9af88aa9",
+      "originalSourceGitBlobSha": "8e3604f44c3c640aca9c08e7e598058f9af88aa9"
+    },
+    {
+      "file": "Models/ceilingFan.glb",
+      "format": "GLB",
+      "gitBlobSha": "db49a5a847cae56864abe2e6702cdee87345abfc",
+      "originalSourceGitBlobSha": "db49a5a847cae56864abe2e6702cdee87345abfc"
+    },
+    {
+      "file": "Models/chairDesk.glb",
+      "format": "GLB",
+      "gitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed",
+      "originalSourceGitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed"
+    },
+    {
+      "file": "Models/coatRackStanding.glb",
+      "format": "GLB",
+      "gitBlobSha": "1ea916e1dbe4964c77ecaad7d7893e5231546bc3",
+      "originalSourceGitBlobSha": "1ea916e1dbe4964c77ecaad7d7893e5231546bc3"
+    },
+    {
+      "file": "Models/computerKeyboard.glb",
+      "format": "GLB",
+      "gitBlobSha": "77e5b4fc0d2d4c748173068f8ec325497f3c9011",
+      "originalSourceGitBlobSha": "77e5b4fc0d2d4c748173068f8ec325497f3c9011"
+    },
+    {
+      "file": "Models/computerMouse.glb",
+      "format": "GLB",
+      "gitBlobSha": "333b20fad5121354f165ca7f77b6f2e777691bbb",
+      "originalSourceGitBlobSha": "333b20fad5121354f165ca7f77b6f2e777691bbb"
+    },
+    {
+      "file": "Models/computerScreen.glb",
+      "format": "GLB",
+      "gitBlobSha": "c509093d35ee40bb6791dde9ad8e9de4bc3348dd",
+      "originalSourceGitBlobSha": "c509093d35ee40bb6791dde9ad8e9de4bc3348dd"
+    },
+    {
+      "file": "Models/desk.glb",
+      "format": "GLB",
+      "gitBlobSha": "8ca187070cd666239ab1d93dda2e98105f7de776",
+      "originalSourceGitBlobSha": "8ca187070cd666239ab1d93dda2e98105f7de776"
+    },
+    {
+      "file": "Models/deskCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "98fb683035e8508aac7f79504bfbf71be328ea3b",
+      "originalSourceGitBlobSha": "98fb683035e8508aac7f79504bfbf71be328ea3b"
+    },
+    {
+      "file": "Models/lampRoundFloor.glb",
+      "format": "GLB",
+      "gitBlobSha": "69f7c9df4fb9e2fb327c59f3b20e8669faf7df0d",
+      "originalSourceGitBlobSha": "69f7c9df4fb9e2fb327c59f3b20e8669faf7df0d"
+    },
+    {
+      "file": "Models/lampRoundTable.glb",
+      "format": "GLB",
+      "gitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe",
+      "originalSourceGitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe"
+    },
+    {
+      "file": "Models/lampWall.glb",
+      "format": "GLB",
+      "gitBlobSha": "cc2d160260a0b7ef08e611a22013043378209898",
+      "originalSourceGitBlobSha": "cc2d160260a0b7ef08e611a22013043378209898"
+    },
+    {
+      "file": "Models/laptop.glb",
+      "format": "GLB",
+      "gitBlobSha": "5a30fe5caac134e2c14aa9ee50a258bc11e456ba",
+      "originalSourceGitBlobSha": "5a30fe5caac134e2c14aa9ee50a258bc11e456ba"
+    },
+    {
+      "file": "Models/loungeDesignChair.glb",
+      "format": "GLB",
+      "gitBlobSha": "50526dab735dd80c2dde5a08582bf621939cfbcb",
+      "originalSourceGitBlobSha": "50526dab735dd80c2dde5a08582bf621939cfbcb"
+    },
+    {
+      "file": "Models/loungeDesignSofa.glb",
+      "format": "GLB",
+      "gitBlobSha": "c3640d2b87a260fb893a54fba862212695afe4d6",
+      "originalSourceGitBlobSha": "c3640d2b87a260fb893a54fba862212695afe4d6"
+    },
+    {
+      "file": "Models/pottedPlant.glb",
+      "format": "GLB",
+      "gitBlobSha": "774d659a2d2be3f9af3fea78e13b2f250fdbb262",
+      "originalSourceGitBlobSha": "774d659a2d2be3f9af3fea78e13b2f250fdbb262"
+    },
+    {
+      "file": "Models/radio.glb",
+      "format": "GLB",
+      "gitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29",
+      "originalSourceGitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29"
+    }
+  ]
+}

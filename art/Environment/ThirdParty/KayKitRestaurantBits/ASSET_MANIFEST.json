@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.1",
+  "packageName": "KayKitRestaurantBits",
+  "license": "CC0-1.0",
+  "licenseFile": "LICENSE.txt",
+  "author": "Kay Lousberg",
+  "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
+  "gitMirrorUsed": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
+  "importStyle": "OBJ+MTL+PNG",
+  "sourceModelCount": 36,
+  "originalTextureIncluded": true,
+  "caveats": [
+    "OBJ model references a shared MTL and the original included PNG color atlas; in Unity confirm URP/Lit material imports and mesh scale.",
+    "These stylized models are CC0 and are not finished high-detail final maps."
+  ],
+  "files": [
+    {
+      "file": "Models/bowl.obj",
+      "format": "OBJ",
+      "gitBlobSha": "500ab22d4c1f54e6257282204e3d5d57c12e7fdd",
+      "originalSourceGitBlobSha": "39fb5af2766878c9b87dfa57246775c0e779b336"
+    },
+    {
+      "file": "Models/bowl_small.obj",
+      "format": "OBJ",
+      "gitBlobSha": "439b3de58cc2e8b0d3d6252aa7119572d73570b9",
+      "originalSourceGitBlobSha": "bcc3ccd5f96b691c0c3c193ddc282ebc64ee354e"
+    },
+    {
+      "file": "Models/cuttingboard.obj",
+      "format": "OBJ",
+      "gitBlobSha": "c4bb0bdb9d830b774cb18618c7188921fe74c0a3",
+      "originalSourceGitBlobSha": "3e83e6c281341c75da920cd5c8ad23076c415136"
+    },
+    {
+      "file": "Models/dishrack.obj",
+      "format": "OBJ",
+      "gitBlobSha": "34e6a8ca4e454ee6965a1273597c838f6f18fb48",
+      "originalSourceGitBlobSha": "f2003a5c655483a1aff1e45ea7b62bab9a34105b"
+    },
+    {
+      "file": "Models/door_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "b1e3fa477c8966bc02f87943b69448e580ab6355",
+      "originalSourceGitBlobSha": "86cb19a20174e71bccba7b30dafac8a8c207d7db"
+    },
+    {
+      "file": "Models/door_B.obj",
+      "format": "OBJ",
+      "gitBlobSha": "1c467d74d30c44b6afdf788c8fe78ecd01f51cd6",
+      "originalSourceGitBlobSha": "2884da4b08623620a5b0d5ced8be7ce2de1b3042"
+    },
+    {
+      "file": "Models/floor_kitchen.obj",
+      "format": "OBJ",
+      "gitBlobSha": "64e6685abe017d2c5bdc57bae3c63b95e1322ddb",
+      "originalSourceGitBlobSha": "495e4cd577481ba603910909f90c0887db12c0c3"
+    },
+    {
+      "file": "Models/fridge_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "5141555b79e35832ce940663c194018aefc054bd",
+      "originalSourceGitBlobSha": "71c9040e247cc36f669b135d094bc90921b4d01e"
+    },
+    {
+      "file": "Models/fridge_B.obj",
+      "format": "OBJ",
+      "gitBlobSha": "bd2bd31eb54a521e36e35ae24228b5f8a9192bf6",
+      "originalSourceGitBlobSha": "5f0ef3dcb71a4f74322840021bbdafca22dbecef"
+    },
+    {
+      "file": "Models/jar_A_large.obj",
+      "format": "OBJ",
+      "gitBlobSha": "5d5475d95b1e3d696ccd49e01067ee526c8fd944",
+      "originalSourceGitBlobSha": "e10c2b2a8bf945df534918aa396a27ce999f630b"
+    },
+    {
+      "file": "Models/jar_A_small.obj",
+      "format": "OBJ",
+      "gitBlobSha": "d4184116901edf2730fdf5fce0766d98b69a9d35",
+      "originalSourceGitBlobSha": "06f5f1ff3688a177d23d5f103cc1335e4bb88c4e"
+    },
+    {
+      "file": "Models/jar_B_medium.obj",
+      "format": "OBJ",
+      "gitBlobSha": "01934fb55ac7aa35b887feae289bc128428af089",
+      "originalSourceGitBlobSha": "c5d6066e395774f523c9ac443c40e1507403a12d"
+    },
+    {
+      "file": "Models/kitchencabinet.obj",
+      "format": "OBJ",
+      "gitBlobSha": "5860be1494a142a48bb193c68fdb3dc7d26ad154",
+      "originalSourceGitBlobSha": "fc6e662dfe46160270e5d069334ddb85a7c2d355"
+    },
+    {
+      "file": "Models/kitchencabinet_corner.obj",
+      "format": "OBJ",
+      "gitBlobSha": "591d3784ba1192256b44c20d51b095f761df74c2",
+      "originalSourceGitBlobSha": "7c98480c48b26d68f3e7ec69445790af53a35042"
+    },
+    {
+      "file": "Models/kitchencounter_sink.obj",
+      "format": "OBJ",
+      "gitBlobSha": "5667e8c5b60b66101b24bbf5bde9947b27ccc447",
+      "originalSourceGitBlobSha": "a29ce81ed5478c24105563a4b78acfbbaa6fea78"
+    },
+    {
+      "file": "Models/kitchencounter_straight_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "bb9ef33ee06828c0ce994808f1ad50e8be135ad0",
+      "originalSourceGitBlobSha": "815357504f300b7aeba226d536721d4596021e20"
+    },
+    {
+      "file": "Models/kitchencounter_straight_B.obj",
+      "format": "OBJ",
+      "gitBlobSha": "51f9291fc02664159c82d7b7a317302a5a3b7646",
+      "originalSourceGitBlobSha": "794829aa9ec406628f1360b01c23ca3540f64448"
+    },
+    {
+      "file": "Models/kitchentable_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "35b93809c80c026a6189088f61e23892bc59d74e",
+      "originalSourceGitBlobSha": "364f4578c4711d647dc730872dd9a0f113eacf28"
+    },
+    {
+      "file": "Models/kitchentable_A_large.obj",
+      "format": "OBJ",
+      "gitBlobSha": "6679ba6344a714e5ade34bca7995c03b32c94f64",
+      "originalSourceGitBlobSha": "eacc1e38adb9ff3ea4275cdc3643ebfe16963282"
+    },
+    {
+      "file": "Models/menu.obj",
+      "format": "OBJ",
+      "gitBlobSha": "597c5d9dae7c65097206dcb623bb30070e563485",
+      "originalSourceGitBlobSha": "8439e8db50b620288c3fb3d31dfc21ad550b58dc"
+    },
+    {
+      "file": "Models/oven.obj",
+      "format": "OBJ",
+      "gitBlobSha": "3e9729936417c6096b0ebb537aa004ca4aeebd48",
+      "originalSourceGitBlobSha": "ebafe3c4f7b500c6a6a0b69c60e7779a5a90af3a"
+    },
+    {
+      "file": "Models/pillar_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "77965877db9bf62318d65217f766b8c148013ca4",
+      "originalSourceGitBlobSha": "0cb5bf2f378df256048d62370f9e725b5578a612"
+    },
+    {
+      "file": "Models/pillar_B.obj",
+      "format": "OBJ",
+      "gitBlobSha": "79429d411ee69479b96ba998b759754cffac086a",
+      "originalSourceGitBlobSha": "9a1aa7066b07c195eea33f95d38227ce45c12384"
+    },
+    {
+      "file": "Models/plate.obj",
+      "format": "OBJ",
+      "gitBlobSha": "3e4b2cc6e301b5691412aea06c2e5bdec01e59b7",
+      "originalSourceGitBlobSha": "b254c6556e32a93b85c7f7cb896cddaa5c27ffe4"
+    },
+    {
+      "file": "Models/plate_small.obj",
+      "format": "OBJ",
+      "gitBlobSha": "b68ae96451d235f47ed852336bd437a0b512b280",
+      "originalSourceGitBlobSha": "9021bd99beba50a43e8c4d7933a6ac0b5f683de3"
+    },
+    {
+      "file": "Models/shelf_papertowel.obj",
+      "format": "OBJ",
+      "gitBlobSha": "f6ccb08a19355ccbd17bab48c0cae8dca3b06b43",
+      "originalSourceGitBlobSha": "6d94739a25e9b5c37af6f85e1f722ef92784b958"
+    },
+    {
+      "file": "Models/stove_multi.obj",
+      "format": "OBJ",
+      "gitBlobSha": "4ecba4f3f93d9578d4cea294b4b674622b3c61f5",
+      "originalSourceGitBlobSha": "72abf5fb96e1c5372bd9718aabb597e7155c8e95"
+    },
+    {
+      "file": "Models/table_round_A.obj",
+      "format": "OBJ",
+      "gitBlobSha": "1348d071862f345ce0a161f08691fa51bc15bc9a",
+      "originalSourceGitBlobSha": "5b3f6ecedfe782281e3e20c03b7fc98f6035f4e9"
+    },
+    {
+      "file": "Models/table_round_B.obj",
+      "format": "OBJ",
+      "gitBlobSha": "475f059c3aed8583cec241b8ef50164818b1a690",
+      "originalSourceGitBlobSha": "3eab26c1d1f04d36dad309e7863519ae98757cba"
+    },
+    {
+      "file": "Models/wall.obj",
+      "format": "OBJ",
+      "gitBlobSha": "576ee5f76e036062b05ca2436af6334ea27899a3",
+      "originalSourceGitBlobSha": "1433b3904e8b40797af225f2111631c1da192fbf"
+    },
+    {
+      "file": "Models/wall_decorated.obj",
+      "format": "OBJ",
+      "gitBlobSha": "683d30d33c8cdc7cd7dc797fce9286ccfa568af8",
+      "originalSourceGitBlobSha": "9353cf35d235a344276e5b40c692bf58393dad86"
+    },
+    {
+      "file": "Models/wall_doorway.obj",
+      "format": "OBJ",
+      "gitBlobSha": "7e12f5b6de012808be4656fdb9c71bab5d358207",
+      "originalSourceGitBlobSha": "6cc74b9d75693ce93e14fc00a084ce13caccc3c5"
+    },
+    {
+      "file": "Models/wall_half.obj",
+      "format": "OBJ",
+      "gitBlobSha": "5cdbc89ef8b77292adf0d628101699c42e9acdee",
+      "originalSourceGitBlobSha": "b63959a0a65ace47b5392508e93523e19239f944"
+    },
+    {
+      "file": "Models/wall_orderwindow.obj",
+      "format": "OBJ",
+      "gitBlobSha": "a8b8faf09c46179ac202742a2a4c4ab199d471fa",
+      "originalSourceGitBlobSha": "ae17dff4fb68528563ed0fdb0ec95e85dd83559e"
+    },
+    {
+      "file": "Models/wall_window_closed.obj",
+      "format": "OBJ",
+      "gitBlobSha": "aae1ca4ee77a8b9ab034142eae2baeb44b3e907e",
+      "originalSourceGitBlobSha": "a18e385e41a48477f78ff83f9e73d9ebb3fd8bad"
+    },
+    {
+      "file": "Models/wall_window_open.obj",
+      "format": "OBJ",
+      "gitBlobSha": "f018ef56c565d21a49a40ea28dab5f00fcb1eff6",
+      "originalSourceGitBlobSha": "2c7c5d9a38d98b4696adb06df301f64f198fe019"
+    }
+  ]
+}
