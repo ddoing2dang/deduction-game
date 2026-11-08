@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "target": "Windows PC x64 only",
+  "status": "source assets staged, Unity not imported",
+  "sourcePack": "KayKit Furniture Bits 1.0",
+  "sourceRepository": "https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
+  "licence": "CC0 1.0 Universal",
+  "licenceFile": "LICENSE.txt",
+  "meshFormat": "Wavefront OBJ",
+  "assetCount": 19,
+  "originalKayKitTextureIncluded": false,
+  "modelFiles": [
+    {
+      "path": "Models/armchair.obj",
+      "sourceBlobSha": "7005b3d4b70d9fdbf56537420703e225a936fc06"
+    },
+    {
+      "path": "Models/bed_double_A.obj",
+      "sourceBlobSha": "c36015a6de3af7acecc16ed60a91fa515d107794"
+    },
+    {
+      "path": "Models/bed_single_A.obj",
+      "sourceBlobSha": "6e3a5b0f63cc53507b4d5abaad461bc314e6c918"
+    },
+    {
+      "path": "Models/book_set.obj",
+      "sourceBlobSha": "4ae222efee8f9ad1cb17fefe8d460e5fa8e5ef87"
+    },
+    {
+      "path": "Models/cabinet_medium.obj",
+      "sourceBlobSha": "a721cc63f6ec5056a557bc97cb8916ac8c2b0df3"
+    },
+    {
+      "path": "Models/cabinet_small.obj",
+      "sourceBlobSha": "788fd3f51f444962b068021ba7c1c099d53c2e14"
+    },
+    {
+      "path": "Models/chair_A_wood.obj",
+      "sourceBlobSha": "31bffed6671485a91e7bcd87e85e11970413b7be"
+    },
+    {
+      "path": "Models/chair_stool.obj",
+      "sourceBlobSha": "04b707e99d38d7106998cf1a9d114450b89601c9"
+    },
+    {
+      "path": "Models/couch.obj",
+      "sourceBlobSha": "742e49ba6b82557682c603d9ae8cd849f7461448"
+    },
+    {
+      "path": "Models/couch_pillows.obj",
+      "sourceBlobSha": "17cb03608c9043ff3bdd6ec3dadf483b1e2984e1"
+    },
+    {
+      "path": "Models/lamp_standing.obj",
+      "sourceBlobSha": "843a5e8ed4a7b9b80459f3c1c2c3baca39e66f32"
+    },
+    {
+      "path": "Models/lamp_table.obj",
+      "sourceBlobSha": "70253a7e087a560a8c96ec9a67028a8320f6bec7"
+    },
+    {
+      "path": "Models/pictureframe_large_A.obj",
+      "sourceBlobSha": "040629d86201c0a560304556898d62467f2e9126"
+    },
+    {
+      "path": "Models/pictureframe_standing_A.obj",
+      "sourceBlobSha": "89a71403729755e4c4946b0de148cf95d257dbd3"
+    },
+    {
+      "path": "Models/rug_oval_A.obj",
+      "sourceBlobSha": "4bcee0e52da4b5e38313d508195e32d8a9f6c3d2"
+    },
+    {
+      "path": "Models/rug_rectangle_A.obj",
+      "sourceBlobSha": "fc501054c0203346323621d30f0ee54d7a3a1d3d"
+    },
+    {
+      "path": "Models/shelf_A_big.obj",
+      "sourceBlobSha": "60022056e2a80fb64e8182c5a72364f6b15007f8"
+    },
+    {
+      "path": "Models/table_medium.obj",
+      "sourceBlobSha": "bf38ba6b1d9f1d9daf148177431fa28e33118920"
+    },
+    {
+      "path": "Models/table_medium_long.obj",
+      "sourceBlobSha": "f314342b93679b533dd0ab4d91d77c7456c73e33"
+    }
+  ],
+  "sharedMaterial": "Models/kaykit_furniture.mtl",
+  "paletteFiles": [
+    "Models/kaykit_palette_Neutral.tga",
+    "Models/kaykit_palette_Mansion.tga",
+    "Models/kaykit_palette_Cruise.tga",
+    "Models/kaykit_palette_MusicBroadcast.tga"
+  ],
+  "caveats": [
+    "Original atlas is not included, approximate generated palette textures only",
+    "Check model colors/scale/URP materials after importing; untested",
+    "Not finished game maps"
+  ]
+}
