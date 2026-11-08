@@ -1,16 +1,19 @@
-# 마또 머더미스터리 — Unity 제작 영역
+# 추리 게임 — 새 Unity 프로젝트 시작 (2026-11-09)
 
-최신 확정 룰: 플레이어 탐정 1명 / 6명의 고정 NPC 용의자 중 랜덤 범인 1명 / **8개 방**(공동 로비 1, 각 NPC 개인실 6, 피해자 살해 현장 1) / **범인·범행수법·흉기 3항목을 한국어 자유 입력으로 최종 추리**.
+**이전 `UnityProject/` 프로젝트와 구형 6인 PvP/카드/턴/씬 자동 생성 코드는 `main`에서 초기화되었다.** 삭제 전 전체 상태는 [백업 브랜치](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-fresh-unity-project-20261109)에 있다.
 
-- **NPC 질문은 완전 자유 한국어 타이핑**으로 확정. 질문 선택지 없음. 질문 해석 AI가 **사전 작성 대사 ID만 검색·선택**. NPC 지식 게이트/이전 진술 원문 보존/증거 기반 추궁/대사 ID 유효성 검증.
-- 사건 생성은 **검증된 사건 템플릿 + 제약 랜덤 + 진실 동결 + 시드 재현 + 유일해/도달성 검증** 방식.
-- 핵심 기능: 알리바이 대조 / 현장·개인실 물증 연결 / 인과적으로 달라지는 랜덤 사건 / 사건 시간표 재구성 / 증거 기반 심문.
-- 그래픽: 3D 고품질 쿼터뷰 맵 + 2D 방향별 NPC + 수사 UI/컷신.
-- **테마별 대화창 PNG 원본 3종 GitHub 저장 완료:** [`art/UI/DialogueFrames/ThemeDialogue_v1/`](../art/UI/DialogueFrames/ThemeDialogue_v1/README.md). `HOTEL→Mansion.png`, `CRUISE→Cruise.png`, `MUSIC_BROADCAST→MusicBroadcast.png`. 이름표 위 표시명은 [`npc_display_profiles.v1.json`](characters/npc_display_profiles.v1.json)에서, 본문은 검수된 대사 ID에서 가져온다. **Unity UI 프리팹 적용은 아직 전.**
-- 현재 Unity는 **구형 6인 PvP 카드·턴 기반 LEGACY** 상태. 문서 규칙 확정은 Unity 코드 적용이 아님.
+새 프로젝트는 **Unity Hub → New Project → Universal 3D (URP)**, 프로젝트 이름 `UnityProject`, 저장 위치 `<repo>/game`로 생성한다. 버전은 기존 사용하던 Unity **6000.3.26f1** 권장. [자세한 새 프로젝트 생성/이관 절차](UNITY_RESTART_GUIDE.md) 참조.
 
-자세한 규칙은 [GAME_RULES.md](../GAME_RULES.md), 맵은 [MAPS.md](../MAPS.md), AI 채점 설계는 [NATURAL_LANGUAGE_DEDUCTION.md](../NATURAL_LANGUAGE_DEDUCTION.md), NPC 자유 채팅은 [NPC_FREE_DIALOGUE.md](../NPC_FREE_DIALOGUE.md), 랜덤 사건은 [RANDOM_CASE_AI_DESIGN.md](../RANDOM_CASE_AI_DESIGN.md), NPC 아트는 [NPC_SPRITE_SPEC.md](../NPC_SPRITE_SPEC.md), 아트는 [PRODUCTION_STANDARD_2_5D.md](../PRODUCTION_STANDARD_2_5D.md) 참조.
+## 유지되는 현행 게임 기획
+- 인간 탐정 1명 + 용의자 NPC 6명(마도아·마리예·나주아·복희·지로아·문이린); 범인 1명 무작위 선정.
+- `HOTEL`, `CRUISE`, `MUSIC_BROADCAST` 세 테마, 각각 8개 조사 공간.
+- 최종 정답은 **범인 + 범행수법(4개 대분류 중 1개) + 흉기**, 범행장소는 정답에서 제외.
+- 자유 한국어 타이핑 심문. NPC 답변은 사건/지식/증거 상태를 검증하고 **사전 작성·검수된 대사 ID만** 선택.
+- **의도적 거짓말은 현재 사건 범인만**, 무고한 NPC는 자신이 실제로 아는 사실만 진술.
+- 기본 사전 대사·사건/흉기·맵 설계는 `game/dialogue/`, `game/cases/`, `game/maps/`에 보존됨. 기존 검증 전 시범 사건은 출시 가능한 데이터가 아님.
+- 실제 사용자 업로드 원본 대화창 3종은 `art/UI/DialogueFrames/ThemeDialogue_v1/`에 GitHub 저장됨; 프레임 원본과 투명도를 그대로 사용.
 
-고정 인물 성격은 [CHARACTERS_PERSONALITY.md](../CHARACTERS_PERSONALITY.md), 초기 대사 데이터는 [npc_dialogue_catalog.v1.json](dialogue/npc_dialogue_catalog.v1.json) (**228개/6명×38상황**), 선택 규약은 [dialogue/README.md](dialogue/README.md) 참고. 사건별 진술 자료와 게임 런타임 연결은 아직 없음.
+## 구현 상태
+**기존 Unity 코드 제거 / 새 Unity Hub 프로젝트 미생성 / 신규 씬·프리팹 미구현 / 테스트·빌드 미실시.**
 
-실제 프로젝트는 `UnityProject/`. 원본 씬·에셋 보존, 승인 없는 기능 테스트·빌드·배포 금지.
+먼저 대저택 대화창 프리팹을 새 Unity 프로젝트의 첫 독립 씬으로 만들고, 이후 다른 두 테마에 재사용한다. 자동 복원되는 구형 `ProjectBootstrap.cs`는 어떤 경우에도 새 프로젝트에 넣지 않는다.
