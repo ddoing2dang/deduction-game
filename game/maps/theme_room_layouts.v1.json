@@ -331,7 +331,7 @@
       ]
     },
     "MUSIC_BROADCAST": {
-      "status": "user_confirmed_theme_revised_u_layout_proposed_not_final",
+      "status": "saved_working_baseline_user_approved",
       "layoutDocument": "MUSIC_BROADCAST_LAYOUT.md",
       "replacesTheme": "MUSEUM",
       "themeDescription": "One-floor U-shaped backstage: left and right greenroom wings, central communal waiting lounge, rear VIP crime-scene room",
@@ -502,7 +502,7 @@
         ]
       },
       "transitGraphConcept": "Single-floor U shaped left/right greenroom wings; rear corridor crosslinks both wings; VIP-01 touches a short central connector behind communal lobby, not isolated at far corridor end",
-      "mobilityDetailsStatus": "proposed_not_yet_user_approved",
+      "mobilityDetailsStatus": "approved_conceptual_topology_exact_door_sizes_move_times_unimplemented",
       "evidenceCandidateTags": [
         "show_cue_sheet",
         "call_time",
@@ -516,7 +516,22 @@
         "right_corridor",
         "rear_cross_corridor",
         "stage_background_only"
-      ]
+      ],
+      "layoutApproval": {
+        "approved": true,
+        "approvedAt": "2026-11-08",
+        "approvedScope": [
+          "single_floor_u_shaped_eight_investigable_rooms",
+          "lobby_central",
+          "left_wing_A01_A03",
+          "right_wing_B01_B03",
+          "npc_room_assignments",
+          "vip01_scene_adjacent_behind_lobby",
+          "central_short_approach",
+          "left_right_rear_loop"
+        ],
+        "technicalImplementationStatus": "design_only_unity_not_implemented"
+      }
     }
   },
   "themeSelection": {
@@ -532,8 +547,12 @@
       ]
     },
     "musicBroadcast": {
-      "status": "user_confirmed_theme_proposed_u_layout_with_vip_scene_near_lobby",
-      "layoutFinalApproval": false
+      "status": "user_approved_saved_room_layout",
+      "layoutFinalApproval": true,
+      "floorCounts": [
+        8
+      ],
+      "crimeSceneAccess": "VIP-01 near communal waiting hall via CENTRAL_LINK; loop via left/right corridors"
     },
     "replacedTheme": "MUSEUM",
     "replacedThemePolicy": "Museum is not an active third theme; music broadcast is the third theme and uses a proposed single-floor U layout"
