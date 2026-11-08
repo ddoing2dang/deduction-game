@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "createdAt": "2026-11-08",
   "usage": "Design data only, not loaded by Unity; no in-game implementation claimed",
   "sharedConstraints": {
@@ -112,7 +112,7 @@
       "topologyStatus": "hotel preserved as saved working baseline; exact door links pending scene design"
     },
     "CRUISE": {
-      "status": "revised_distinct_layout_proposed_not_final",
+      "status": "saved_working_baseline_user_approved",
       "layoutDocument": "CRUISE_LAYOUT.md",
       "themeDescription": "Asymmetric elongated ship with port/starboard corridor loop and two interdeck stair routes",
       "structureType": "cruise_asymmetric_ship_loop_5_plus_3",
@@ -245,7 +245,8 @@
             "roomId": "LOBBY",
             "at": [
               "D3_PORT",
-              "D3_STARBOARD"
+              "D3_STARBOARD",
+              "D3_FORE"
             ]
           },
           {
@@ -312,10 +313,16 @@
           "stern",
           "port",
           "starboard"
+        ],
+        "shortCrimeSceneRoute": [
+          "LOBBY",
+          "D3_FORE",
+          "D4_FORE",
+          "CRIME_SCENE"
         ]
       },
-      "transitGraphConcept": "Two navigable deck corridor loops linked by bow and stern stairs. Four cabins and lobby on D3, two cabins and scene on D4.",
-      "mobilityDetailsStatus": "proposed_not_yet_user_approved",
+      "transitGraphConcept": "User-confirmed 3-deck five spaces, 4-deck three. LOBBY has front stair approach at D3_FORE; 403 at D4_FORE, short route from lobby; second aft stair and corridor loops retained.",
+      "mobilityDetailsStatus": "concept_graph_user_approved_room_position_exact_3d_unimplemented",
       "evidenceCandidateTags": [
         "ship_cabin_key",
         "interdeck_stair_witness",
@@ -324,7 +331,7 @@
       ]
     },
     "MUSIC_BROADCAST": {
-      "status": "user_confirmed_theme_revised_distinct_layout_proposed",
+      "status": "user_confirmed_theme_revised_u_layout_proposed_not_final",
       "layoutDocument": "MUSIC_BROADCAST_LAYOUT.md",
       "replacesTheme": "MUSEUM",
       "themeDescription": "One-floor U-shaped backstage: left and right greenroom wings, central communal waiting lounge, rear VIP crime-scene room",
@@ -387,7 +394,7 @@
               "roomId": "CRIME_SCENE",
               "displayNumber": "VIP-01",
               "displayName": "특별 대기실 · 살해 현장",
-              "location": "rear_center"
+              "location": "rear_of_central_lobby_near_common_area"
             }
           ]
         }
@@ -401,7 +408,8 @@
           "REAR_CROSS",
           "RIGHT_REAR",
           "RIGHT_MID",
-          "RIGHT_FRONT"
+          "RIGHT_FRONT",
+          "CENTRAL_LINK"
         ],
         "transitEdges": [
           [
@@ -427,6 +435,10 @@
           [
             "RIGHT_MID",
             "RIGHT_FRONT"
+          ],
+          [
+            "REAR_CROSS",
+            "CENTRAL_LINK"
           ]
         ],
         "roomEntrances": [
@@ -434,7 +446,8 @@
             "roomId": "LOBBY",
             "at": [
               "LEFT_FRONT",
-              "RIGHT_FRONT"
+              "RIGHT_FRONT",
+              "CENTRAL_LINK"
             ]
           },
           {
@@ -476,14 +489,19 @@
           {
             "roomId": "CRIME_SCENE",
             "at": [
-              "REAR_CROSS"
+              "CENTRAL_LINK"
             ]
           }
         ],
-        "alternateApproachesToCrimeScene": "LEFT wing or RIGHT wing from LOBBY to REAR_CROSS",
-        "stairs": []
+        "alternateApproachesToCrimeScene": "LOBBY to CENTRAL_LINK to VIP-01 via short central door; alternate paths via left/right wings to rear cross and central link",
+        "stairs": [],
+        "shortCrimeSceneRoute": [
+          "LOBBY",
+          "CENTRAL_LINK",
+          "CRIME_SCENE"
+        ]
       },
-      "transitGraphConcept": "Central lobby opens to left/right waiting-room corridors; both wings connect at rear crosspassage; one VIP scene door at rear",
+      "transitGraphConcept": "Single-floor U shaped left/right greenroom wings; rear corridor crosslinks both wings; VIP-01 touches a short central connector behind communal lobby, not isolated at far corridor end",
       "mobilityDetailsStatus": "proposed_not_yet_user_approved",
       "evidenceCandidateTags": [
         "show_cue_sheet",
@@ -506,10 +524,16 @@
       "status": "saved_user_working_baseline"
     },
     "cruise": {
-      "status": "revised_asymmetric_5_3_decks_draft"
+      "status": "user_approved_saved_room_layout",
+      "crimeSceneAccess": "near forward stair reachable directly from lobby's front connector",
+      "floorCounts": [
+        5,
+        3
+      ]
     },
     "musicBroadcast": {
-      "status": "user_confirmed_music_broadcast_theme_u_shaped_layout_draft"
+      "status": "user_confirmed_theme_proposed_u_layout_with_vip_scene_near_lobby",
+      "layoutFinalApproval": false
     },
     "replacedTheme": "MUSEUM",
     "replacedThemePolicy": "Museum is not an active third theme; music broadcast is the third theme and uses a proposed single-floor U layout"
