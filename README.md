@@ -24,6 +24,8 @@
 - [CHARACTERS_PERSONALITY.md](CHARACTERS_PERSONALITY.md) — 사용자 확정 6명 성격과 말투
 - [game/dialogue/npc_dialogue_catalog.v1.json](game/dialogue/npc_dialogue_catalog.v1.json) — **6명 × 38상황 = 기초 대사 228개 저장**
 - [game/dialogue/README.md](game/dialogue/README.md) — 대사 ID·상황 해금·AI 검색 연결 가이드
+- [QUESTION_TUTORIAL.md](QUESTION_TUTORIAL.md) — **질문 튜토리얼**: 초보자 안내·상황별 질문 가이드
+- [game/dialogue/question_tutorial.v1.json](game/dialogue/question_tutorial.v1.json) — 게임 UI용 사전 작성 안내 문구 데이터
 - [RANDOM_CASE_AI_DESIGN.md](RANDOM_CASE_AI_DESIGN.md) — 제약 기반 랜덤 사건·증거 검증·난이도 설계
 - [NPC_SPRITE_SPEC.md](NPC_SPRITE_SPEC.md) — NPC 6명 전용 최소 스프라이트 제작 명세
 - [UI_FLOW.md](UI_FLOW.md) — 자유 타이핑 고발·추리보드 UI
