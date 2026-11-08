@@ -4,19 +4,19 @@
 ## 작업 상태
 - 이번 저장은 **제작 매뉴얼 + 재사용 CC0 3D OBJ 모델 19개 + 텍스처 팔레트 4종 + 라이선스**를 GitHub에 보관하는 단계입니다.
 - 게임용 완성 맵, 씬 구성, 모델의 Unity 임포트, 조명, 상호작용, 기능 테스트, EXE 빌드는 **아직 하지 않았습니다**.
-- 기존 Unity 프로젝트 및 승인 NPC·대화창 원본은 삭제하거나 덮어쓰지 않습니다. 사용자 별도 요청 없이 Play Mode/기능 테스트/빌드/배포 금지.
+- **현재 GitHub main에는 `game/UnityProject/`가 아직 없고**, 별도 작업으로 이전 구형 Unity 프로젝트가 초기화된 상태입니다. 삭제 전 버전은 `archive/pre-fresh-unity-project-20261109` 브랜치에 보존돼 있습니다. 사용자 PC의 로컬 프로젝트에 원격 삭제를 수행하지 않았습니다. 승인된 NPC·대화창 데이터는 보존하고, 별도 요청 없이 Play Mode/기능 테스트/빌드/배포 금지.
 
 ## 왜 Unity 조립 방식인가
 Blender에서 모든 환경을 직접 모델링할 필요 없이 **Unity에서 모듈형 방/벽/천장/가구를 조립**합니다. 처음에는 ProBuilder를 동선과 비율 확인에만 사용하고, 최종 아트는 고품질 건축 에셋/재질/조명으로 교체합니다. 기본 큐브 그레이박스나 저폴리 소품만으로 완성 아트라고 주장하지 않습니다.
 
 ## 프로젝트 구조
-- 원본 Unity: `game/UnityProject`
+- **새로 생성할 Unity 경로:** `game/UnityProject` (현재 main에는 없음; [Unity 재시작 가이드](game/UNITY_RESTART_GUIDE.md) 절차로 Unity Hub에서 생성)
 - 이번 추가 소품: `art/Environment/ThirdParty/KayKitFurnitureBits/Models/`
 - 라이선스: `art/Environment/ThirdParty/KayKitFurnitureBits/LICENSE.txt`
 - 전체 모델 목록/원본 SHA: `art/Environment/ThirdParty/KayKitFurnitureBits/ASSET_MANIFEST.json`
 - 별도 3종 UI: `art/UI/DialogueFrames/Translucent/`
 
-**현재 3D 소품은 Unity Assets 폴더에 들어가지 않은 스테이징 파일**입니다. Unity 적용을 승인할 때 OBJ, MTL, TGA를 함께 `game/UnityProject/Assets/_Game/Art/Environment/ThirdParty/KayKitFurnitureBits/`로 복사하여 임포트합니다.
+**현재 새 Unity 프로젝트가 없으므로 3D 소품은 Unity Assets에 들어가지 않은 GitHub 스테이징 파일**입니다. Unity 적용을 승인할 때 OBJ, MTL, TGA를 함께 `game/UnityProject/Assets/_Game/Art/Environment/ThirdParty/KayKitFurnitureBits/`로 복사하여 임포트합니다.
 
 ## 실제 등록한 외부 자산과 라이선스
 출처: **KayKit Furniture Bits 1.0 / Kay Lousberg / CC0 1.0**:
@@ -42,7 +42,7 @@ https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0
 - PC라고 무제한 폴리곤을 쓰지 않고 조명·재질·오클루전/LOD는 사용 중 실측하여 튜닝.
 
 ## Unity에서 만드는 순서 (실행 전 지침)
-1. Windows 전용 URP 맵 씬을 구형 Legacy와 분리해 준비.
+1. [Unity 재시작 가이드](game/UNITY_RESTART_GUIDE.md)를 따라 Windows에서 새 Unity URP 프로젝트를 생성한 후 전용 맵 씬을 준비. 구형 Legacy는 main에 없음.
 2. ProBuilder로 **동선 설계용** 8개 공간의 크기/문/계단/복도 확보.
 3. OBJ+공용 MTL+색상 TGA를 Assets 하위에 복사한 뒤 모델 임포트. 방향·단위·피벗·노멀 체크.
 4. 호텔 로비 **한 공간의 높은 시각 품질**을 먼저 승인받고 나머지 객실로 확장.
