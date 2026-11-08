@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": "1.3.1",
   "createdAt": "2026-11-08",
   "language": "ko-KR",
   "purpose": "Pre-authored, personality-specific NPC dialogue candidate pool for 27 theme×subtype case blueprints",
@@ -10,7 +10,7 @@
   "sourceScenes": "game/cases/method_variant_theme_scenarios.v1.json",
   "caseFactGatePolicy": "NOT SELECTABLE UNTIL scenario is fully authored and validated, NPC has explicit specific fact/knowledge grant, relevant matching evidence has been discovered and presented, and each response passed dialogue editorial signoff. No grants or complete case truths are included; this file does NOT itself authorize any line.",
   "usesRealtimeLLMGeneration": false,
-  "dialogueStatus": "486_distinct_personality_lines_two_editorial_reviews_plus_simple_Korean_language_update_pending_case_truth_knowledge_approval",
+  "dialogueStatus": "two_personality_and_case_editorial_passes_plus_two_plain_Korean_copyedits_486_unique_lines_not_yet_case_truth_authorized",
   "lines": [
     {
       "lineId": "HOTEL_M01_V1_MATTO_EVIDENCE_01",
@@ -41,7 +41,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V1_FORENSIC"
       ],
-      "responseText": "204호 검사 메모를 보여준 거구나. 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 과일칼의 이름만 보곤 수수께끼를 끝내면 안 되겠지.",
+      "responseText": "204호 검사 메모를 보여준 거구나. 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 과일칼을 찾았다는 이유만으로 수수께끼를 끝내면 안 되겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -167,7 +167,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V1_FORENSIC"
       ],
-      "responseText": "204호 관련 자료라면, 찌름과 관련된 검사이라면 상처의 종류부터 확인하자. 과일칼과 일치한다는 증거는 따로 있어야 해.",
+      "responseText": "204호 관련 자료라면, 찌름과 관련된 검사라면 상처의 종류부터 확인하자. 과일칼의 흔적과 일치한다는 증거는 따로 있어야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -209,7 +209,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V1_ROUTE"
       ],
-      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 사람이 드나든 시간과 목격 장소부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 사람이 드나든 시간과 목격 장소부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -251,7 +251,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V1_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 과일칼. 날붙이라는 사실만으로는 부족해. 과일칼의 보관 기록과 검사 기록의 대조부터 확인해야지.",
+      "responseText": "호텔 객실에서 언급된 물건은 과일칼. 날붙이라는 사실만으로는 부족해. 과일칼의 보관 기록과 검사 기록의 대조부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -797,7 +797,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V1_FORENSIC"
       ],
-      "responseText": "403호에서 확인한 자료야? 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 커터칼의 이름만 보곤 수수께끼를 끝내면 안 되겠지.",
+      "responseText": "403호에서 확인한 자료야? 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 커터칼을 찾았다는 이유만으로 수수께끼를 끝내면 안 되겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -923,7 +923,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V1_FORENSIC"
       ],
-      "responseText": "403호 검사 자료를 봤다면, 찌름과 관련된 검사이라면 상처의 종류부터 확인하자. 커터칼과 일치한다는 증거는 따로 있어야 해.",
+      "responseText": "403호 검사 자료를 봤다면, 찌름과 관련된 검사라면 상처의 종류부터 확인하자. 커터칼의 흔적과 일치한다는 증거는 따로 있어야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -965,7 +965,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V1_ROUTE"
       ],
-      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 사람이 드나든 시간과 목격 장소부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 사람이 드나든 시간과 목격 장소부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1007,7 +1007,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V1_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 커터칼. 날붙이라는 사실만으로는 부족해. 공예칼의 발견 장소와 검사한 물건의 일치 여부부터 확인해야지.",
+      "responseText": "크루즈 객실에서 확인된 건 커터칼. 날붙이라는 사실만으로는 부족해. 공예칼의 발견 장소와 검사한 물건의 일치 여부부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1553,7 +1553,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_FORENSIC"
       ],
-      "responseText": "VIP-01에서 나온 자료구나. 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 가위의 이름만 보곤 수수께끼를 끝내면 안 되겠지.",
+      "responseText": "VIP-01에서 나온 자료구나. 찌름과 베임이 다른 기록이라는 건 알겠어. 그래도 가위를 찾았다는 이유만으로 수수께끼를 끝내면 안 되겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1637,7 +1637,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 가위? 모양만 보고 결론 내면 안 되겠지. 가위 실물의 흔적과 검사 기록의 대조부터 살펴보자!",
+      "responseText": "대기실에서 찾았다는 게 가위? 모양만 보고 결론 내면 안 되겠지. 가위 물건의 흔적과 검사 기록의 대조부터 살펴보자!",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1679,7 +1679,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_FORENSIC"
       ],
-      "responseText": "VIP-01 검사 기록부터 보자. 찌름과 관련된 검사이라면 상처의 종류부터 확인하자. 가위와 일치한다는 증거는 따로 있어야 해.",
+      "responseText": "VIP-01 검사 기록부터 보자. 찌름과 관련된 검사라면 상처의 종류부터 확인하자. 가위의 흔적과 일치한다는 증거는 따로 있어야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1721,7 +1721,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ROUTE"
       ],
-      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 사람이 드나든 시간과 목격 장소부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 사람이 드나든 시간과 목격 장소부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1763,7 +1763,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 가위. 날붙이라는 사실만으로는 부족해. 가위 실물의 흔적과 검사 기록의 대조부터 확인해야지.",
+      "responseText": "A/B 대기실에서 확인된 물건은 가위. 날붙이라는 사실만으로는 부족해. 가위 물건의 흔적과 검사 기록의 대조부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -1889,7 +1889,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "무대 뒤편 대기실에서 나온 소품은 가위. 칼이나 가위가 소설에 등장했다고 곧 범행 도구는 아니지. 가위 실물의 흔적과 검사 기록의 대조부터 보자.",
+      "responseText": "무대 뒤편 대기실에서 나온 소품은 가위. 칼이나 가위가 소설에 등장했다고 곧 범행 도구는 아니지. 가위 물건의 흔적과 검사 기록의 대조부터 보자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2015,7 +2015,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "대기실에서 확인한 물건은 가위. 다칠 수 있는 물건이더라도 가위 실물의 흔적과 검사 기록의 대조부터 증거로 검토하자.",
+      "responseText": "대기실에서 확인한 물건은 가위. 다칠 수 있는 물건이더라도 가위 물건의 흔적과 검사 기록의 대조부터 증거로 검토하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2141,7 +2141,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 가위? 이런 물건은 종류가 비슷하잖아. 가위 실물의 흔적과 검사 기록의 대조부터 확인해 보자.",
+      "responseText": "대기실에서 나왔다는 물건이 가위? 이런 물건은 종류가 비슷하잖아. 가위 물건의 흔적과 검사 기록의 대조부터 확인해 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2267,7 +2267,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 가위군요… 저는… 물건 이름보다 가위 실물의 흔적과 검사 기록의 대조부터 확인하고 싶어요.",
+      "responseText": "대기실에서 찾았다는 게 가위군요… 저는… 물건 이름보다 가위 물건의 흔적과 검사 기록의 대조부터 확인하고 싶어요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2393,7 +2393,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔 사건에 나온 물건이 가위? 모양만 보고 결론 내면 안 되겠지. 가위 실물의 흔적과 검사 기록의 대조부터 살펴보자!",
+      "responseText": "호텔 사건에 나온 물건이 가위? 모양만 보고 결론 내면 안 되겠지. 가위 물건의 흔적과 검사 기록의 대조부터 살펴보자!",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2435,7 +2435,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_FORENSIC"
       ],
-      "responseText": "204호 관련 자료라면, 베임으로 판단한 근거가 있겠지. 가위라는 물건의 흔적도 따로 대조해야 해.",
+      "responseText": "204호 관련 자료라면, 베임으로 판단한 근거가 있겠지. 가위라는 물건의 흔적도 따로 비교해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2519,7 +2519,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 가위. 날붙이라는 사실만으로는 부족해. 가위 실물의 흔적과 검사 기록의 대조부터 확인해야지.",
+      "responseText": "호텔 객실에서 언급된 물건은 가위. 날붙이라는 사실만으로는 부족해. 가위 물건의 흔적과 검사 기록의 대조부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2645,7 +2645,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔 기록에서 눈에 띄는 소품은 가위. 칼이나 가위가 소설에 등장했다고 곧 범행 도구는 아니지. 가위 실물의 흔적과 검사 기록의 대조부터 보자.",
+      "responseText": "호텔 기록에서 눈에 띄는 소품은 가위. 칼이나 가위가 소설에 등장했다고 곧 범행 도구는 아니지. 가위 물건의 흔적과 검사 기록의 대조부터 보자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2771,7 +2771,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔 객실에서 확인된 물건은 가위. 다칠 수 있는 물건이더라도 가위 실물의 흔적과 검사 기록의 대조부터 증거로 검토하자.",
+      "responseText": "호텔 객실에서 확인된 물건은 가위. 다칠 수 있는 물건이더라도 가위 물건의 흔적과 검사 기록의 대조부터 증거로 검토하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -2897,7 +2897,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 가위? 이런 물건은 종류가 비슷하잖아. 가위 실물의 흔적과 검사 기록의 대조부터 확인해 보자.",
+      "responseText": "호텔에서 나온 게 가위? 이런 물건은 종류가 비슷하잖아. 가위 물건의 흔적과 검사 기록의 대조부터 확인해 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -3023,7 +3023,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M01_V2_ITEM"
       ],
-      "responseText": "호텔에서 확인된 물건이 가위군요… 저는… 물건 이름보다 가위 실물의 흔적과 검사 기록의 대조부터 확인하고 싶어요.",
+      "responseText": "호텔에서 확인된 물건이 가위군요… 저는… 물건 이름보다 가위 물건의 흔적과 검사 기록의 대조부터 확인하고 싶어요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -3191,7 +3191,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V2_FORENSIC"
       ],
-      "responseText": "403호 검사 자료를 봤다면, 베임으로 판단한 근거가 있겠지. 과일칼라는 물건의 흔적도 따로 대조해야 해.",
+      "responseText": "403호 검사 자료를 봤다면, 베임으로 판단한 근거가 있겠지. 과일칼이라는 물건의 흔적도 따로 비교해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -3275,7 +3275,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M01_V2_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 과일칼. 날붙이라는 사실만으로는 부족해. 과일칼의 보관 기록과 검사 기록의 대조부터 확인해야지.",
+      "responseText": "크루즈 객실에서 확인된 건 과일칼. 날붙이라는 사실만으로는 부족해. 과일칼의 보관 기록과 검사 기록의 대조부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -3947,7 +3947,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V2_FORENSIC"
       ],
-      "responseText": "VIP-01 검사 기록부터 보자. 베임으로 판단한 근거가 있겠지. 커터칼라는 물건의 흔적도 따로 대조해야 해.",
+      "responseText": "VIP-01 검사 기록부터 보자. 베임으로 판단한 근거가 있겠지. 커터칼이라는 물건의 흔적도 따로 비교해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -4031,7 +4031,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M01_V2_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 커터칼. 날붙이라는 사실만으로는 부족해. 공예칼의 발견 장소와 검사한 물건의 일치 여부부터 확인해야지.",
+      "responseText": "A/B 대기실에서 확인된 물건은 커터칼. 날붙이라는 사실만으로는 부족해. 공예칼의 발견 장소와 검사한 물건의 일치 여부부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -4829,7 +4829,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V1_FORENSIC"
       ],
-      "responseText": "204호의 검사 기록이라… 강한 충격이라는 장면을 그릴 순 있어. 하지만 작은 화분이 그 장면의 소품이었는지는 검사이 증명해야 해.",
+      "responseText": "204호의 검사 기록이라… 강한 충격이라는 장면을 그릴 순 있어. 하지만 작은 화분이 그 장면의 소품이었는지는 검사가 증명해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -4997,7 +4997,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V1_ROUTE"
       ],
-      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5165,7 +5165,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V1_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 작은 화분? 그냥 방에 놓인 물건일 수도 있잖아. 화분의 최초 발견 위치부터 확인해야지.",
+      "responseText": "호텔에서 나온 게 작은 화분? 그냥 방에 놓인 물건일 수도 있잖아. 화분의 최초 발견 위치부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5207,7 +5207,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V1_FORENSIC"
       ],
-      "responseText": "204호의 기록을 보여주셨네요… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 작은 화분과 맞는 검사이 있는지 먼저 볼게요.",
+      "responseText": "204호의 기록을 보여주셨네요… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 작은 화분과 맞는 검사가 있는지 먼저 볼게요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5585,7 +5585,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V1_FORENSIC"
       ],
-      "responseText": "403호라는 장면의 기록이네. 강한 충격이라는 장면을 그릴 순 있어. 하지만 손전등이 그 장면의 소품이었는지는 검사이 증명해야 해.",
+      "responseText": "403호라는 장면의 기록이네. 강한 충격이라는 장면을 그릴 순 있어. 하지만 손전등이 그 장면의 소품이었는지는 검사가 증명해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5753,7 +5753,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V1_ROUTE"
       ],
-      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5921,7 +5921,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V1_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 손전등? 그냥 방에 놓인 물건일 수도 있잖아. 손전등의 무게와 최초 보관 위치 기록부터 확인해야지.",
+      "responseText": "배 안에서 찾았다는 게 손전등? 그냥 방에 놓인 물건일 수도 있잖아. 손전등의 무게와 최초 보관 위치 기록부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -5963,7 +5963,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V1_FORENSIC"
       ],
-      "responseText": "403호의 기록이라면… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 손전등과 맞는 검사이 있는지 먼저 볼게요.",
+      "responseText": "403호의 기록이라면… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 손전등과 맞는 검사가 있는지 먼저 볼게요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -6341,7 +6341,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V1_FORENSIC"
       ],
-      "responseText": "VIP-01의 자료가 눈앞에 있네. 강한 충격이라는 장면을 그릴 순 있어. 하지만 사진 액자가 그 장면의 소품이었는지는 검사이 증명해야 해.",
+      "responseText": "VIP-01의 자료가 눈앞에 있네. 강한 충격이라는 장면을 그릴 순 있어. 하지만 사진 액자가 그 장면의 소품이었는지는 검사가 증명해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -6509,7 +6509,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V1_ROUTE"
       ],
-      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 사건 전후에 누가 어디 있었는지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -6677,7 +6677,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V1_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 사진 액자? 그냥 방에 놓인 물건일 수도 있잖아. 액자 물건과 검사 사진이 일치하는지부터 확인해야지.",
+      "responseText": "대기실에서 나왔다는 물건이 사진 액자? 그냥 방에 놓인 물건일 수도 있잖아. 액자 물건과 검사 사진이 일치하는지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -6719,7 +6719,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V1_FORENSIC"
       ],
-      "responseText": "VIP-01에서 나온 기록이군요… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 사진 액자와 맞는 검사이 있는지 먼저 볼게요.",
+      "responseText": "VIP-01에서 나온 기록이군요… 다친 이유를… 물건 하나로 정하고 싶진 않아요. 사진 액자와 맞는 검사가 있는지 먼저 볼게요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -7013,7 +7013,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V2_ROUTE"
       ],
-      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 물건이 있던 자리와 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 물건이 있던 자리와 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -7223,7 +7223,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V2_FORENSIC"
       ],
-      "responseText": "204호 자료를 함께 보자. 낙하라는 설명을 사실로 받아들이기 전에 손전등의 보관 위치와 충격 검사을 함께 확인하자.",
+      "responseText": "204호 자료를 함께 보자. 낙하라는 설명을 사실로 받아들이기 전에 손전등의 보관 위치와 충격 검사를 함께 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -7433,7 +7433,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M02_V2_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 손전등? 그냥 방에 놓인 물건일 수도 있잖아. 손전등의 무게와 최초 보관 위치 기록부터 확인해야지.",
+      "responseText": "호텔에서 나온 게 손전등? 그냥 방에 놓인 물건일 수도 있잖아. 손전등의 무게와 최초 보관 위치 기록부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -7769,7 +7769,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V2_ROUTE"
       ],
-      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 물건이 있던 자리와 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 물건이 있던 자리와 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -7979,7 +7979,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V2_FORENSIC"
       ],
-      "responseText": "403호 관련 자료를 차분히 읽자. 낙하라는 설명을 사실로 받아들이기 전에 사진 액자의 보관 위치와 충격 검사을 함께 확인하자.",
+      "responseText": "403호 관련 자료를 차분히 읽자. 낙하라는 설명을 사실로 받아들이기 전에 사진 액자의 보관 위치와 충격 검사를 함께 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -8189,7 +8189,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M02_V2_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 사진 액자? 그냥 방에 놓인 물건일 수도 있잖아. 액자 물건과 검사 사진이 일치하는지부터 확인해야지.",
+      "responseText": "배 안에서 찾았다는 게 사진 액자? 그냥 방에 놓인 물건일 수도 있잖아. 액자 물건과 검사 사진이 일치하는지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -8525,7 +8525,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V2_ROUTE"
       ],
-      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 물건이 있던 자리와 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 물건이 있던 자리와 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -8735,7 +8735,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V2_FORENSIC"
       ],
-      "responseText": "VIP-01 기록에 관해서라면, 낙하라는 설명을 사실로 받아들이기 전에 작은 화분의 보관 위치와 충격 검사을 함께 확인하자.",
+      "responseText": "VIP-01 기록에 관해서라면, 낙하라는 설명을 사실로 받아들이기 전에 작은 화분의 보관 위치와 충격 검사를 함께 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -8945,7 +8945,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M02_V2_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 작은 화분? 그냥 방에 놓인 물건일 수도 있잖아. 화분의 최초 발견 위치부터 확인해야지.",
+      "responseText": "대기실에서 나왔다는 물건이 작은 화분? 그냥 방에 놓인 물건일 수도 있잖아. 화분의 최초 발견 위치부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9197,7 +9197,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔 사건에 나온 물건이 벨트? 천이라고 다 같은 물건은 아니잖아. 천 소재의 유사성과 정말 같은 물건인지부터 보자.",
+      "responseText": "호텔 사건에 나온 물건이 벨트? 천이라고 다 같은 물건은 아니잖아. 비슷한 천인지, 실제로 같은 물건인지부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9323,7 +9323,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 벨트. 직물은 흔해도 개별 물건은 달라. 천 소재의 유사성과 정말 같은 물건인지부터 확인하자.",
+      "responseText": "호텔 객실에서 언급된 물건은 벨트. 천으로 된 물건도 하나하나 다르지. 비슷한 천인지, 실제로 같은 물건인지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9449,7 +9449,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔 기록에서 눈에 띄는 소품은 벨트. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 천 소재의 유사성과 정말 같은 물건인지부터 따져 봐야지.",
+      "responseText": "호텔 기록에서 눈에 띄는 소품은 벨트. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 비슷한 천인지, 실제로 같은 물건인지부터 따져 봐야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9491,7 +9491,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_FORENSIC"
       ],
-      "responseText": "204호 자료를 함께 보자. 목 압박 관련 소견은 검사으로 판단해야 해. 벨트의 흔적과 실제로 일치하는지도 보자.",
+      "responseText": "204호 자료를 함께 보자. 목이 눌린 흔적은 검사로 판단해야 해. 벨트의 흔적과 실제로 일치하는지도 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9575,7 +9575,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔 객실에서 확인된 물건은 벨트. 의상이나 가방에 붙은 평범한 천일 수도 있어. 천 소재의 유사성과 정말 같은 물건인지부터 확인하자.",
+      "responseText": "호텔 객실에서 확인된 물건은 벨트. 의상이나 가방에 붙은 평범한 천일 수도 있어. 비슷한 천인지, 실제로 같은 물건인지부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9701,7 +9701,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 벨트? 그런 천은 누구나 갖고 있을 수 있지. 천 소재의 유사성과 정말 같은 물건인지부터 살펴보자.",
+      "responseText": "호텔에서 나온 게 벨트? 그런 천은 누구나 갖고 있을 수 있지. 비슷한 천인지, 실제로 같은 물건인지부터 살펴보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9827,7 +9827,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V1_ITEM"
       ],
-      "responseText": "호텔에서 확인된 물건이 벨트군요… 비슷해 보이는 직물이라도… 천 소재의 유사성과 정말 같은 물건인지부터 확인하고 싶어요.",
+      "responseText": "호텔에서 확인된 물건이 벨트군요… 비슷해 보이는 직물이라도… 비슷한 천인지, 실제로 같은 물건인지부터 확인하고 싶어요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -9953,7 +9953,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "선실에서 언급된 물건이 가방끈? 천이라고 다 같은 물건은 아니잖아. 가방끈의 어느 방 물건인지 확인한 기록부터 보자.",
+      "responseText": "선실에서 언급된 물건이 가방끈? 천이라고 다 같은 물건은 아니잖아. 가방끈이 어느 방 물건인지부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10079,7 +10079,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 가방끈. 직물은 흔해도 개별 물건은 달라. 가방끈의 어느 방 물건인지 확인한 기록부터 확인하자.",
+      "responseText": "크루즈 객실에서 확인된 건 가방끈. 천으로 된 물건도 하나하나 다르지. 가방끈이 어느 방 물건인지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10205,7 +10205,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "크루즈 선실의 소품으로 등장한 건 가방끈. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 가방끈의 어느 방 물건인지 확인한 기록부터 따져 봐야지.",
+      "responseText": "크루즈 선실의 소품으로 등장한 건 가방끈. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 가방끈이 어느 방 물건인지부터 따져 봐야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10247,7 +10247,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_FORENSIC"
       ],
-      "responseText": "403호 관련 자료를 차분히 읽자. 목 압박 관련 소견은 검사으로 판단해야 해. 가방끈의 흔적과 실제로 일치하는지도 보자.",
+      "responseText": "403호 관련 자료를 차분히 읽자. 목이 눌린 흔적은 검사로 판단해야 해. 가방끈의 흔적과 실제로 일치하는지도 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10331,7 +10331,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "선실에서 발견한 물건은 가방끈. 의상이나 가방에 붙은 평범한 천일 수도 있어. 가방끈의 어느 방 물건인지 확인한 기록부터 확인하자.",
+      "responseText": "선실에서 발견한 물건은 가방끈. 의상이나 가방에 붙은 평범한 천일 수도 있어. 가방끈이 어느 방 물건인지부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10457,7 +10457,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 가방끈? 그런 천은 누구나 갖고 있을 수 있지. 가방끈의 어느 방 물건인지 확인한 기록부터 살펴보자.",
+      "responseText": "배 안에서 찾았다는 게 가방끈? 그런 천은 누구나 갖고 있을 수 있지. 가방끈이 어느 방 물건인지부터 살펴보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10583,7 +10583,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V1_ITEM"
       ],
-      "responseText": "선실에서 확인한 물건이 가방끈군요… 비슷해 보이는 직물이라도… 가방끈의 어느 방 물건인지 확인한 기록부터 확인하고 싶어요.",
+      "responseText": "선실에서 확인한 물건이 가방끈군요… 비슷해 보이는 직물이라도… 가방끈이 어느 방 물건인지부터 확인하고 싶어요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10709,7 +10709,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 벨트? 천이라고 다 같은 물건은 아니잖아. 천 소재의 유사성과 정말 같은 물건인지부터 보자.",
+      "responseText": "대기실에서 찾았다는 게 벨트? 천이라고 다 같은 물건은 아니잖아. 비슷한 천인지, 실제로 같은 물건인지부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10835,7 +10835,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 벨트. 직물은 흔해도 개별 물건은 달라. 천 소재의 유사성과 정말 같은 물건인지부터 확인하자.",
+      "responseText": "A/B 대기실에서 확인된 물건은 벨트. 천으로 된 물건도 하나하나 다르지. 비슷한 천인지, 실제로 같은 물건인지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -10961,7 +10961,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "무대 뒤편 대기실에서 나온 소품은 벨트. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 천 소재의 유사성과 정말 같은 물건인지부터 따져 봐야지.",
+      "responseText": "무대 뒤편 대기실에서 나온 소품은 벨트. 똑같아 보이는 천도 서로 다른 소품일 수 있어. 비슷한 천인지, 실제로 같은 물건인지부터 따져 봐야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11003,7 +11003,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_FORENSIC"
       ],
-      "responseText": "VIP-01 기록에 관해서라면, 목 압박 관련 소견은 검사으로 판단해야 해. 벨트의 흔적과 실제로 일치하는지도 보자.",
+      "responseText": "VIP-01 기록에 관해서라면, 목이 눌린 흔적은 검사로 판단해야 해. 벨트의 흔적과 실제로 일치하는지도 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11087,7 +11087,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "대기실에서 확인한 물건은 벨트. 의상이나 가방에 붙은 평범한 천일 수도 있어. 천 소재의 유사성과 정말 같은 물건인지부터 확인하자.",
+      "responseText": "대기실에서 확인한 물건은 벨트. 의상이나 가방에 붙은 평범한 천일 수도 있어. 비슷한 천인지, 실제로 같은 물건인지부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11213,7 +11213,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 벨트? 그런 천은 누구나 갖고 있을 수 있지. 천 소재의 유사성과 정말 같은 물건인지부터 살펴보자.",
+      "responseText": "대기실에서 나왔다는 물건이 벨트? 그런 천은 누구나 갖고 있을 수 있지. 비슷한 천인지, 실제로 같은 물건인지부터 살펴보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11339,7 +11339,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 벨트군요… 비슷해 보이는 직물이라도… 천 소재의 유사성과 정말 같은 물건인지부터 확인하고 싶어요.",
+      "responseText": "대기실에서 찾았다는 게 벨트군요… 비슷해 보이는 직물이라도… 비슷한 천인지, 실제로 같은 물건인지부터 확인하고 싶어요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11591,7 +11591,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V2_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 손수건. 직물은 흔해도 개별 물건은 달라. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
+      "responseText": "호텔 객실에서 언급된 물건은 손수건. 천으로 된 물건도 하나하나 다르지. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11759,7 +11759,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V2_FORENSIC"
       ],
-      "responseText": "204호 자료를 함께 보자. 호흡 차단 관련 소견과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
+      "responseText": "204호 자료를 함께 보자. 숨이 막힌 흔적과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -11801,7 +11801,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M03_V2_ROUTE"
       ],
-      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -12347,7 +12347,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V2_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 손수건. 직물은 흔해도 개별 물건은 달라. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
+      "responseText": "크루즈 객실에서 확인된 건 손수건. 천으로 된 물건도 하나하나 다르지. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -12515,7 +12515,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V2_FORENSIC"
       ],
-      "responseText": "403호 관련 자료를 차분히 읽자. 호흡 차단 관련 소견과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
+      "responseText": "403호 관련 자료를 차분히 읽자. 숨이 막힌 흔적과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -12557,7 +12557,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M03_V2_ROUTE"
       ],
-      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13103,7 +13103,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V2_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 손수건. 직물은 흔해도 개별 물건은 달라. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
+      "responseText": "A/B 대기실에서 확인된 물건은 손수건. 천으로 된 물건도 하나하나 다르지. 손수건의 어느 방의 물건인지 적힌 기록부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13271,7 +13271,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V2_FORENSIC"
       ],
-      "responseText": "VIP-01 기록에 관해서라면, 호흡 차단 관련 소견과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
+      "responseText": "VIP-01 기록에 관해서라면, 숨이 막힌 흔적과 목 압박 소견은 구분해서 읽자. 손수건은 독립적으로 확인해야 해.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13313,7 +13313,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M03_V2_ROUTE"
       ],
-      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 봤다는 말과 실제로 본 장소부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13649,7 +13649,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_FORENSIC"
       ],
-      "responseText": "204호 검사 메모를 보여준 거구나. 독 검사라는 말에 머리가 복잡해졌어. 물병이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
+      "responseText": "204호 검사 메모를 보여준 거구나. 독극물 검사라는 말에 머리가 복잡해졌어. 물병이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13733,7 +13733,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔 사건에 나온 물건이 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 외관과 검사 기록의 대조부터 보지 않으면 헛다리야.",
+      "responseText": "호텔 사건에 나온 물건이 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 모습과 검사 결과부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13817,7 +13817,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ROUTE"
       ],
-      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 공용 물건 기록과 방에 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "204호로 가는 계단과 2층 복도를 먼저 구분하자. 공용 물건 기록과 방에 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13859,7 +13859,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "호텔 객실에서 언급된 물건은 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13901,7 +13901,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_FORENSIC"
       ],
-      "responseText": "204호의 검사 기록이라… 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 물병과 검사 결과를 대조하자.",
+      "responseText": "204호의 검사 기록이라… 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 물병과 검사 결과를 비교하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -13985,7 +13985,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔 기록에서 눈에 띄는 소품은 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 외관과 검사 기록의 대조부터 검증해야지.",
+      "responseText": "호텔 기록에서 눈에 띄는 소품은 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 모습과 검사 결과부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14027,7 +14027,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_FORENSIC"
       ],
-      "responseText": "204호 자료를 함께 보자. 독 검사에서 무엇이 확인됐는지부터 보자. 물병라는 용기만으로는 알 수 없으니까.",
+      "responseText": "204호 자료를 함께 보자. 독극물 검사에서 무엇이 확인됐는지부터 보자. 물병이라는 용기만으로는 알 수 없으니까.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14111,7 +14111,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔 객실에서 확인된 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 외관과 검사 기록의 대조부터 확인하자.",
+      "responseText": "호텔 객실에서 확인된 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 모습과 검사 결과부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14237,7 +14237,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "호텔에서 나온 게 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14279,7 +14279,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_FORENSIC"
       ],
-      "responseText": "204호의 기록을 보여주셨네요… 독 검사 기록이 있다고 해도… 물병과 직접 연관된다는 근거가 필요해요.",
+      "responseText": "204호의 기록을 보여주셨네요… 독극물 검사 기록이 있다고 해도… 물병과 직접 연관된다는 근거가 필요해요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14363,7 +14363,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V1_ITEM"
       ],
-      "responseText": "호텔에서 확인된 물건이 물병군요… 개인 소지품이에요… 물병의 외관과 검사 기록의 대조부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "호텔에서 확인된 물건이 물병군요… 개인 소지품이에요… 물병의 모습과 검사 결과부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14405,7 +14405,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_FORENSIC"
       ],
-      "responseText": "403호에서 확인한 자료야? 독 검사라는 말에 머리가 복잡해졌어. 과자통이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
+      "responseText": "403호에서 확인한 자료야? 독극물 검사라는 말에 머리가 복잡해졌어. 과자통이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14489,7 +14489,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "선실에서 언급된 물건이 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "선실에서 언급된 물건이 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14573,7 +14573,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ROUTE"
       ],
-      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 공용 물건 기록과 방에 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "403호로 가는 앞뒤 계단 기록을 나눠 보자. 공용 물건 기록과 방에 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14615,7 +14615,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "크루즈 객실에서 확인된 건 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14657,7 +14657,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_FORENSIC"
       ],
-      "responseText": "403호라는 장면의 기록이네. 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 과자통과 검사 결과를 대조하자.",
+      "responseText": "403호라는 장면의 기록이네. 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 과자통과 검사 결과를 비교하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14741,7 +14741,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "크루즈 선실의 소품으로 등장한 건 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 실물과 내용물 검증 기록의 구분부터 검증해야지.",
+      "responseText": "크루즈 선실의 소품으로 등장한 건 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 안에 무엇이 있었는지 확인한 기록부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14783,7 +14783,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_FORENSIC"
       ],
-      "responseText": "403호 관련 자료를 차분히 읽자. 독 검사에서 무엇이 확인됐는지부터 보자. 과자통라는 용기만으로는 알 수 없으니까.",
+      "responseText": "403호 관련 자료를 차분히 읽자. 독극물 검사에서 무엇이 확인됐는지부터 보자. 과자통이라는 용기만으로는 알 수 없으니까.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14867,7 +14867,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "선실에서 발견한 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 실물과 내용물 검증 기록의 구분부터 확인하자.",
+      "responseText": "선실에서 발견한 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 안에 무엇이 있었는지 확인한 기록부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -14993,7 +14993,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "배 안에서 찾았다는 게 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15035,7 +15035,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_FORENSIC"
       ],
-      "responseText": "403호의 기록이라면… 독 검사 기록이 있다고 해도… 과자통과 직접 연관된다는 근거가 필요해요.",
+      "responseText": "403호의 기록이라면… 독극물 검사 기록이 있다고 해도… 과자통과 직접 연관된다는 근거가 필요해요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15119,7 +15119,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V1_ITEM"
       ],
-      "responseText": "선실에서 확인한 물건이 과자통군요… 개인 소지품이에요… 과자통 실물과 내용물 검증 기록의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "선실에서 확인한 물건이 과자통군요… 개인 소지품이에요… 과자통 안에 무엇이 있었는지 확인한 기록부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15161,7 +15161,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_FORENSIC"
       ],
-      "responseText": "VIP-01에서 나온 자료구나. 독 검사라는 말에 머리가 복잡해졌어. 약통이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
+      "responseText": "VIP-01에서 나온 자료구나. 독극물 검사라는 말에 머리가 복잡해졌어. 약통이 나왔다고 곧바로 원인이 정해지는 건 아니겠지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15245,7 +15245,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통 발견 사실과 검사 결과의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "대기실에서 찾았다는 게 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15329,7 +15329,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ROUTE"
       ],
-      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 공용 물건 기록과 방에 드나든 시간부터 대조하자. 직접 본 것과 추측은 다른 거니까.",
+      "responseText": "VIP-01 중앙 통로와 A/B 날개를 나눠 보자. 공용 물건 기록과 방에 드나든 시간부터 비교하자. 직접 본 것과 추측은 다른 거니까.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15371,7 +15371,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "A/B 대기실에서 확인된 물건은 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15413,7 +15413,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_FORENSIC"
       ],
-      "responseText": "VIP-01의 자료가 눈앞에 있네. 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 약통과 검사 결과를 대조하자.",
+      "responseText": "VIP-01의 자료가 눈앞에 있네. 독살이라는 결말은 가장 극적이지만, 극적인 이야기는 증거가 아니야. 약통과 검사 결과를 비교하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15497,7 +15497,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "무대 뒤편 대기실에서 나온 소품은 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통 발견 사실과 검사 결과의 구분부터 검증해야지.",
+      "responseText": "무대 뒤편 대기실에서 나온 소품은 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15539,7 +15539,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_FORENSIC"
       ],
-      "responseText": "VIP-01 기록에 관해서라면, 독 검사에서 무엇이 확인됐는지부터 보자. 약통라는 용기만으로는 알 수 없으니까.",
+      "responseText": "VIP-01 기록에 관해서라면, 독극물 검사에서 무엇이 확인됐는지부터 보자. 약통라는 용기만으로는 알 수 없으니까.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15623,7 +15623,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "대기실에서 확인한 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통 발견 사실과 검사 결과의 구분부터 확인하자.",
+      "responseText": "대기실에서 확인한 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통을 찾은 사실과 실제 검사 결과의 차이부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15749,7 +15749,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "대기실에서 나왔다는 물건이 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15791,7 +15791,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_FORENSIC"
       ],
-      "responseText": "VIP-01에서 나온 기록이군요… 독 검사 기록이 있다고 해도… 약통과 직접 연관된다는 근거가 필요해요.",
+      "responseText": "VIP-01에서 나온 기록이군요… 독극물 검사 기록이 있다고 해도… 약통과 직접 연관된다는 근거가 필요해요.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15875,7 +15875,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V1_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 약통군요… 개인 소지품이에요… 약통 발견 사실과 검사 결과의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "대기실에서 찾았다는 게 약통군요… 개인 소지품이에요… 약통을 찾은 사실과 실제 검사 결과의 차이부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -15917,7 +15917,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_FORENSIC"
       ],
-      "responseText": "204호 검사 메모를 보여준 거구나. 약 관련 검사이면 쉽게 오해받을 사람도 있겠네. 약통의 겉모습보다 실제 기록을 보자.",
+      "responseText": "204호 검사 메모를 보여준 거구나. 약 관련 검사가면 쉽게 오해받을 사람도 있겠네. 약통의 겉모습보다 실제 기록을 보자.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16001,7 +16001,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔 사건에 나온 물건이 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통 발견 사실과 검사 결과의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "호텔 사건에 나온 물건이 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16043,7 +16043,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_FORENSIC"
       ],
-      "responseText": "204호 관련 자료라면, 개인 약품이 있다는 이유로 의심하면 곤란해. 약통과 의료 검사이 일치하는지부터 확인하자.",
+      "responseText": "204호 관련 자료라면, 개인 약품이 있다는 이유로 의심하면 곤란해. 약통과 의료 검사가 일치하는지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16127,7 +16127,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "호텔 객실에서 언급된 물건은 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16253,7 +16253,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔 기록에서 눈에 띄는 소품은 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통 발견 사실과 검사 결과의 구분부터 검증해야지.",
+      "responseText": "호텔 기록에서 눈에 띄는 소품은 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16295,7 +16295,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_FORENSIC"
       ],
-      "responseText": "204호 자료를 함께 보자. 정상적인 약 소지도 흔한 일이야. 약통과 관련된 검사이 확인되는지 차분히 따져 보자.",
+      "responseText": "204호 자료를 함께 보자. 정상적인 약 소지도 흔한 일이야. 약통과 관련된 검사가 확인되는지 차분히 따져 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16379,7 +16379,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔 객실에서 확인된 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통 발견 사실과 검사 결과의 구분부터 확인하자.",
+      "responseText": "호텔 객실에서 확인된 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통을 찾은 사실과 실제 검사 결과의 차이부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16505,7 +16505,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "호텔에서 나온 게 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16631,7 +16631,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V2_ITEM"
       ],
-      "responseText": "호텔에서 확인된 물건이 약통군요… 개인 소지품이에요… 약통 발견 사실과 검사 결과의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "호텔에서 확인된 물건이 약통군요… 개인 소지품이에요… 약통을 찾은 사실과 실제 검사 결과의 차이부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16673,7 +16673,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_FORENSIC"
       ],
-      "responseText": "403호에서 확인한 자료야? 약 관련 검사이면 쉽게 오해받을 사람도 있겠네. 약통의 겉모습보다 실제 기록을 보자.",
+      "responseText": "403호에서 확인한 자료야? 약 관련 검사가면 쉽게 오해받을 사람도 있겠네. 약통의 겉모습보다 실제 기록을 보자.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16757,7 +16757,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "선실에서 언급된 물건이 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통 발견 사실과 검사 결과의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "선실에서 언급된 물건이 약통? 겉으로 보기엔 그냥 소지품이잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16799,7 +16799,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_FORENSIC"
       ],
-      "responseText": "403호 검사 자료를 봤다면, 개인 약품이 있다는 이유로 의심하면 곤란해. 약통과 의료 검사이 일치하는지부터 확인하자.",
+      "responseText": "403호 검사 자료를 봤다면, 개인 약품이 있다는 이유로 의심하면 곤란해. 약통과 의료 검사가 일치하는지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -16883,7 +16883,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "크루즈 객실에서 확인된 건 약통. 용기 소지와 실제 내용물은 다른 이야기야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17009,7 +17009,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "크루즈 선실의 소품으로 등장한 건 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통 발견 사실과 검사 결과의 구분부터 검증해야지.",
+      "responseText": "크루즈 선실의 소품으로 등장한 건 약통. 그릇 하나만으로 결말을 정하는 건 억지야. 약통을 찾은 사실과 실제 검사 결과의 차이부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17051,7 +17051,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_FORENSIC"
       ],
-      "responseText": "403호 관련 자료를 차분히 읽자. 정상적인 약 소지도 흔한 일이야. 약통과 관련된 검사이 확인되는지 차분히 따져 보자.",
+      "responseText": "403호 관련 자료를 차분히 읽자. 정상적인 약 소지도 흔한 일이야. 약통과 관련된 검사가 확인되는지 차분히 따져 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17135,7 +17135,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "선실에서 발견한 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통 발견 사실과 검사 결과의 구분부터 확인하자.",
+      "responseText": "선실에서 발견한 물건은 약통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 약통을 찾은 사실과 실제 검사 결과의 차이부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17261,7 +17261,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통 발견 사실과 검사 결과의 구분부터 보자.",
+      "responseText": "배 안에서 찾았다는 게 약통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 약통을 찾은 사실과 실제 검사 결과의 차이부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17387,7 +17387,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V2_ITEM"
       ],
-      "responseText": "선실에서 확인한 물건이 약통군요… 개인 소지품이에요… 약통 발견 사실과 검사 결과의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "선실에서 확인한 물건이 약통군요… 개인 소지품이에요… 약통을 찾은 사실과 실제 검사 결과의 차이부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17429,7 +17429,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_FORENSIC"
       ],
-      "responseText": "VIP-01에서 나온 자료구나. 약 관련 검사이면 쉽게 오해받을 사람도 있겠네. 물병의 겉모습보다 실제 기록을 보자.",
+      "responseText": "VIP-01에서 나온 자료구나. 약 관련 검사가면 쉽게 오해받을 사람도 있겠네. 물병의 겉모습보다 실제 기록을 보자.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17513,7 +17513,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 외관과 검사 기록의 대조부터 보지 않으면 헛다리야.",
+      "responseText": "대기실에서 찾았다는 게 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 모습과 검사 결과부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17555,7 +17555,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_FORENSIC"
       ],
-      "responseText": "VIP-01 검사 기록부터 보자. 개인 약품이 있다는 이유로 의심하면 곤란해. 물병과 의료 검사이 일치하는지부터 확인하자.",
+      "responseText": "VIP-01 검사 기록부터 보자. 개인 약품이 있다는 이유로 의심하면 곤란해. 물병과 의료 검사가 일치하는지부터 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17639,7 +17639,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "A/B 대기실에서 확인된 물건은 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17765,7 +17765,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "무대 뒤편 대기실에서 나온 소품은 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 외관과 검사 기록의 대조부터 검증해야지.",
+      "responseText": "무대 뒤편 대기실에서 나온 소품은 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 모습과 검사 결과부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17807,7 +17807,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_FORENSIC"
       ],
-      "responseText": "VIP-01 기록에 관해서라면, 정상적인 약 소지도 흔한 일이야. 물병과 관련된 검사이 확인되는지 차분히 따져 보자.",
+      "responseText": "VIP-01 기록에 관해서라면, 정상적인 약 소지도 흔한 일이야. 물병과 관련된 검사가 확인되는지 차분히 따져 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -17891,7 +17891,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "대기실에서 확인한 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 외관과 검사 기록의 대조부터 확인하자.",
+      "responseText": "대기실에서 확인한 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 모습과 검사 결과부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18017,7 +18017,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "대기실에서 나왔다는 물건이 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18143,7 +18143,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V2_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 물병군요… 개인 소지품이에요… 물병의 외관과 검사 기록의 대조부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "대기실에서 찾았다는 게 물병군요… 개인 소지품이에요… 물병의 모습과 검사 결과부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18269,7 +18269,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔 사건에 나온 물건이 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "호텔 사건에 나온 물건이 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18311,7 +18311,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_FORENSIC"
       ],
-      "responseText": "204호 관련 자료라면, 심한 알레르기와 독성 중독은 다른 문제야. 과자통이 실제 관련됐는지 검사과 기록으로 확인하자.",
+      "responseText": "204호 관련 자료라면, 심한 알레르기와 독극물 중독은 다른 문제야. 과자통이 실제 관련됐는지 검사와 기록으로 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18395,7 +18395,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔 객실에서 언급된 물건은 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "호텔 객실에서 언급된 물건은 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18521,7 +18521,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔 기록에서 눈에 띄는 소품은 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 실물과 내용물 검증 기록의 구분부터 검증해야지.",
+      "responseText": "호텔 기록에서 눈에 띄는 소품은 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 안에 무엇이 있었는지 확인한 기록부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18605,7 +18605,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ROUTE"
       ],
-      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "1층 로비와 2층 204호 사이 기록부터 보자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18647,7 +18647,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔 객실에서 확인된 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 실물과 내용물 검증 기록의 구분부터 확인하자.",
+      "responseText": "호텔 객실에서 확인된 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 안에 무엇이 있었는지 확인한 기록부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18689,7 +18689,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_FORENSIC"
       ],
-      "responseText": "204호 기록까지 나왔구나. 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 과자통 관련 사실은 검사으로 가려야지.",
+      "responseText": "204호 기록까지 나왔구나. 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 과자통에 관한 내용은 검사로 가려야지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18773,7 +18773,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔에서 나온 게 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "호텔에서 나온 게 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -18899,7 +18899,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_HOTEL_M04_V3_ITEM"
       ],
-      "responseText": "호텔에서 확인된 물건이 과자통군요… 개인 소지품이에요… 과자통 실물과 내용물 검증 기록의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "호텔에서 확인된 물건이 과자통군요… 개인 소지품이에요… 과자통 안에 무엇이 있었는지 확인한 기록부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19025,7 +19025,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "선실에서 언급된 물건이 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 외관과 검사 기록의 대조부터 보지 않으면 헛다리야.",
+      "responseText": "선실에서 언급된 물건이 물병? 겉으로 보기엔 그냥 소지품이잖아. 물병의 모습과 검사 결과부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19067,7 +19067,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_FORENSIC"
       ],
-      "responseText": "403호 검사 자료를 봤다면, 심한 알레르기와 독성 중독은 다른 문제야. 물병이 실제 관련됐는지 검사과 기록으로 확인하자.",
+      "responseText": "403호 검사 자료를 봤다면, 심한 알레르기와 독극물 중독은 다른 문제야. 물병이 실제 관련됐는지 검사와 기록으로 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19151,7 +19151,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "크루즈 객실에서 확인된 건 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "크루즈 객실에서 확인된 건 물병. 용기 소지와 실제 내용물은 다른 이야기야. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19277,7 +19277,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "크루즈 선실의 소품으로 등장한 건 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 외관과 검사 기록의 대조부터 검증해야지.",
+      "responseText": "크루즈 선실의 소품으로 등장한 건 물병. 그릇 하나만으로 결말을 정하는 건 억지야. 물병의 모습과 검사 결과부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19361,7 +19361,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ROUTE"
       ],
-      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "아트리움과 403호 사이 두 경로를 구분하자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19403,7 +19403,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "선실에서 발견한 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 외관과 검사 기록의 대조부터 확인하자.",
+      "responseText": "선실에서 발견한 물건은 물병. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 물병의 모습과 검사 결과부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19445,7 +19445,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_FORENSIC"
       ],
-      "responseText": "403호 기록이라고? 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 물병 관련 사실은 검사으로 가려야지.",
+      "responseText": "403호 기록이라고? 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 물병에 관한 내용은 검사로 가려야지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19529,7 +19529,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "배 안에서 찾았다는 게 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 외관과 검사 기록의 대조부터 보자.",
+      "responseText": "배 안에서 찾았다는 게 물병? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 물병의 모습과 검사 결과부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19655,7 +19655,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_CRUISE_M04_V3_ITEM"
       ],
-      "responseText": "선실에서 확인한 물건이 물병군요… 개인 소지품이에요… 물병의 외관과 검사 기록의 대조부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "선실에서 확인한 물건이 물병군요… 개인 소지품이에요… 물병의 모습과 검사 결과부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19781,7 +19781,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보지 않으면 헛다리야.",
+      "responseText": "대기실에서 찾았다는 게 과자통? 겉으로 보기엔 그냥 소지품이잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보지 않으면 헛다리야.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19823,7 +19823,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_FORENSIC"
       ],
-      "responseText": "VIP-01 검사 기록부터 보자. 심한 알레르기와 독성 중독은 다른 문제야. 과자통이 실제 관련됐는지 검사과 기록으로 확인하자.",
+      "responseText": "VIP-01 검사 기록부터 보자. 심한 알레르기와 독극물 중독은 다른 문제야. 과자통이 실제 관련됐는지 검사와 기록으로 확인하자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -19907,7 +19907,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "A/B 대기실에서 확인된 물건은 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "A/B 대기실에서 확인된 물건은 과자통. 용기 소지와 실제 내용물은 다른 이야기야. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20033,7 +20033,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "무대 뒤편 대기실에서 나온 소품은 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 실물과 내용물 검증 기록의 구분부터 검증해야지.",
+      "responseText": "무대 뒤편 대기실에서 나온 소품은 과자통. 그릇 하나만으로 결말을 정하는 건 억지야. 과자통 안에 무엇이 있었는지 확인한 기록부터 검증해야지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20117,7 +20117,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ROUTE"
       ],
-      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 진술이 다를 땐 기록이 있는지 먼저 봐야 해.",
+      "responseText": "공동 대기홀과 VIP-01 사이 경로부터 구분하자. 개인 사정을 실제로 알 만한 사람이 누구인지부터 확인해 보자. 말이 다를 땐 기록이 있는지 먼저 봐야 해.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20159,7 +20159,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "대기실에서 확인한 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 실물과 내용물 검증 기록의 구분부터 확인하자.",
+      "responseText": "대기실에서 확인한 물건은 과자통. 개인의 건강이나 식습관을 함부로 추측하면 안 돼. 과자통 안에 무엇이 있었는지 확인한 기록부터 확인하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20201,7 +20201,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_FORENSIC"
       ],
-      "responseText": "VIP-01 자료라고? 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 과자통 관련 사실은 검사으로 가려야지.",
+      "responseText": "VIP-01 자료라고? 음식 얘기라서 나부터 떠올리면 좀 억울하겠네… 과자통에 관한 내용은 검사로 가려야지.",
       "emotionTag": "worried",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20285,7 +20285,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "대기실에서 나왔다는 물건이 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 실물과 내용물 검증 기록의 구분부터 보자.",
+      "responseText": "대기실에서 나왔다는 물건이 과자통? 음식이든 약이든 갖고 있다는 것만으로 몰아가면 억울하잖아. 과자통 안에 무엇이 있었는지 확인한 기록부터 보자.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20411,7 +20411,7 @@
       "requiredPresentedEvidenceIds": [
         "EV_MUSIC_BROADCAST_M04_V3_ITEM"
       ],
-      "responseText": "대기실에서 찾았다는 게 과자통군요… 개인 소지품이에요… 과자통 실물과 내용물 검증 기록의 구분부터 확인한 뒤에 판단해 주세요.",
+      "responseText": "대기실에서 찾았다는 게 과자통군요… 개인 소지품이에요… 과자통 안에 무엇이 있었는지 확인한 기록부터 살펴본 다음에 판단해 주세요.",
       "emotionTag": "serious",
       "animationTag": "talk",
       "responseStatus": "editorially_rewritten_twice_personality_checked_still_requires_case_truth_gate",
@@ -20455,6 +20455,15 @@
         "preserve six NPC voices and knowledge gates"
       ],
       "performed": "user_requested_vocabulary_simplification"
+    },
+    {
+      "round": 4,
+      "focus": [
+        "plain Korean grammar after simplifying all prop names",
+        "josa and natural dialogue",
+        "no forensic jargon in spoken text"
+      ],
+      "performed": "final_plain_Korean_copyedit"
     }
   ]
 }
