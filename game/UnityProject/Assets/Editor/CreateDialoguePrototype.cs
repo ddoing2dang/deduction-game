@@ -36,7 +36,7 @@ public static class CreateDialoguePrototype
         AssetDatabase.AddObjectToAsset(font.material, font);
         foreach (var atlas in font.atlasTextures) AssetDatabase.AddObjectToAsset(atlas, font);
 
-        var profilesJson = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Data/Preserved/characters/npc_display_profiles.v1.json");
+        var profilesJson = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Data/UI/NpcNames.json");
         var profiles = JsonUtility.FromJson<NpcProfiles>(profilesJson.text);
         var frames = new DialoguePrototypeView.ThemeFrame[3];
         string[] ids = { "HOTEL", "CRUISE", "MUSIC_BROADCAST" };

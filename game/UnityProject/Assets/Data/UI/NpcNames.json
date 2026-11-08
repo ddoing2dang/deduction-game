@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "UI_ONLY_NO_MAP_OR_CASE_DATA",
+  "characters": [
+    {
+      "npcId": "MATTO",
+      "displayName": "마도아"
+    },
+    {
+      "npcId": "MARIHI",
+      "displayName": "마리예"
+    },
+    {
+      "npcId": "NAZ",
+      "displayName": "나주아"
+    },
+    {
+      "npcId": "BOKI",
+      "displayName": "복희"
+    },
+    {
+      "npcId": "JJIRO",
+      "displayName": "지로아"
+    },
+    {
+      "npcId": "MOONIRE",
+      "displayName": "문이린"
+    }
+  ]
+}

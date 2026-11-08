@@ -1,55 +1,10 @@
-# 마또 머더미스터리 — AI 추리형 2.5D 보드게임
+# 신규 추리 게임 — 깨끗한 출발점
 
-## 2026-11-08 최신 확정 구조
+기존 맵·사건·게임 코드는 모두 삭제했습니다. 사용자가 올린 UI 원본 6장만 유지합니다.
 
-- **플레이어:** 탐정 1명.
-- **NPC 용의자:** 마또 / 마리히 / 나즈 / 찌로 / 보키 / 문이레 — 6명.
-- **범인:** NPC 6명 중 매 판 1명 랜덤.
-- **맵:** 공동 로비 1 + NPC 개인실 6 + 피해자가 실제 살해된 사건 현장 1 = **총 8개 방**.
-- **흉기 배치(사용자 확정):** 3개 테마 동일 12종, NPC 개인실 6개에 각 3개씩만 실물 발견(기본 배정 2 + 타방 종류 공유 1), 실물 18개 배치. 로비/사건 현장에는 흉기 실물 대신 흔적·기록 배치.
-- **범행수법(4대 분류 사용자 확정·세 테마 공통):** 자상·절창(날붙이), 둔력 손상(타박상/둔기), 질식사(교살·호흡 차단), 독살·물질 반응(독극물·약물·알레르기). **추가 5번 없음, 감전 폐기.** 내부 세부 수법 9개는 탐색·검증 중인 추천안.
-- **호텔 테마(저장된 현행 기준):** 1F 공동 로비·101~103, 2F 201~204(현장). 객실 번호는 표시용.
-- **크루즈 테마(사용자 카드 배치 확정 저장):** **3데크 5공간**(공동 아트리움·301~304호), **4데크 3공간**(401~403호, 403호 사건 현장). 길쭉한 선박의 좌현/우현 복도·앞뒤 계단 2개. **로비 앞계단 가까운 403호 사건 현장**.
-- **음악방송 대기실 테마(박물관 대체 확정):** **단층 U자형 8개** = 중앙 공동 대기홀 + 왼쪽 A01~A03 + 오른쪽 B01~B03 + **공동 대기홀 바로 뒤편 가까운 VIP-01 특별 대기실 사건 현장**. 사용자가 방 번호·인물 배정·VIP-01의 로비 인접 동선까지 확정 저장.
-- **수사:** NPC 알리바이 대조 + 현장/개인실 증거 연결 + 논리적으로 변화하는 무작위 사건 + 시간표/동선 사건 재구성 + 증거 기반 추궁.
-- **최종 정답:** **범인 + 범행수법 + 흉기**. **범행 장소는 정답 대상에서 제외.**
-- **NPC 심문:** **질문 선택지 없이 6명 NPC와 한국어 자유 채팅**. NPC는 사건별 기억·이전 발언·증거 제시·진술 번복 이력을 유지하고 **AI가 작가 검수 대사 ID만 검색·선택**해 답한다. 즉석 대사 생성 없음.
-- **랜덤 AI:** 승인된 사건 템플릿 + 시드/제약 생성 + NPC별 지식 + 증거/시간표 그래프 + 정답 유일성 검증.
-- **정답 입력:** **한국어 자유 문장 직접 타이핑**. AI는 해석, 별도 정답 엔진은 판정.
-- **그래픽:** 새 고품질 8방 쿼터뷰 3D 디오라마 + 고품질 2D NPC 스프라이트. 기존 그레이박스 최종 아트 불채택.
+- 새 Unity UI 작업 브랜치: [codex/fresh-unity-dialogue-prototype-20261109](https://github.com/ddoing2dang/deduction-game/tree/codex/fresh-unity-dialogue-prototype-20261109)
+- 신규 씬: `game/UnityProject/Assets/Scenes/DialoguePrototype.unity`
+- 프리팹: `game/UnityProject/Assets/Prefabs/DialoguePanel.prefab`
+- 기존 맵 파일/맵 GameObject/맵 데이터는 재사용하지 않음
 
-## 현행 최상위 문서
-- [GAME_RULES.md](GAME_RULES.md) — 확정 룰
-- [DESIGN_BASELINE.md](DESIGN_BASELINE.md) — 고정 기획
-- [MAPS.md](MAPS.md) — 총 8개 방
-- [HOTEL_LAYOUT.md](HOTEL_LAYOUT.md) — 사용자 지시대로 저장한 호텔 2층 4+4 객실 번호 구조
-- [CRUISE_LAYOUT.md](CRUISE_LAYOUT.md) — 크루즈 3데크 5 + 4데크 3, 좌현/우현·두 계단 구조
-- [MUSIC_BROADCAST_LAYOUT.md](MUSIC_BROADCAST_LAYOUT.md) — 박물관 대체 음악방송 단층 U자형 8공간 확정 배치
-- [game/maps/theme_room_layouts.v1.json](game/maps/theme_room_layouts.v1.json) — 호텔·크루즈·음악방송 테마별 표시 번호와 논리 방 ID 대응
-- [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
-- **흉기 품목 최신 작업안:** 사용자의 요청으로 **실제로 치명적인 결과가 가능한 흔한 물건 12종**(커터칼·독약병·가위·벨트·아령·수면제·가방끈·망치·유리병·땅콩 과자·베개·과일칼)으로 전면 교체. **3개 테마 공통·NPC 개인실마다 3개·총 18개** 수량 유지. 약물/알레르기/낙하물은 사건별 객관 증명이 없으면 사용 불가.
-- **테마별 범행 구상:** 9세부×3테마=27개 사건 설계 후보, 캐릭터 성격에 맞춰 구어체로 전면 재작성한 조건부 대사 486개. **상위 4분류의 수법만 맞혀도 수법 정답 인정**하며 범인·흉기 종류도 별도 판정. 현재 자료·대사 편집 단계로 Unity 게임플레이 미검증.
-- [WEAPON_METHOD_DESIGN.md](WEAPON_METHOD_DESIGN.md) — 흉기 12종·NPC 방당 3개 공유 배치와 공통 수법 4대 확정 분류와 세부 유형 9개 탐색안
-- [METHOD_THEME_CASES.md](METHOD_THEME_CASES.md) — 4대 분류 정답과 9세부×3테마 총 27개 흉기·증거·대사 구성안
-- [game/cases/method_variant_theme_scenarios.v1.json](game/cases/method_variant_theme_scenarios.v1.json) — 27개 사건 구성안 데이터
-- [game/dialogue/method_variant_theme_lines.v1.json](game/dialogue/method_variant_theme_lines.v1.json) — 486개 NPC 조건부 대사 초안
-- [game/cases/weapon_method_catalog.v1.json](game/cases/weapon_method_catalog.v1.json) — 12종/18개 실물 인스턴스, 4대 수법·9개 세부 변형 제안·방별 배정 데이터
-- [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
-- [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
-- [NPC_FREE_DIALOGUE.md](NPC_FREE_DIALOGUE.md) — 자유 질문 → 사전 검수 NPC 대사 선택·기억·추궁
-- [CHARACTERS_PERSONALITY.md](CHARACTERS_PERSONALITY.md) — 사용자 확정 6명 성격과 말투
-- [game/dialogue/npc_dialogue_catalog.v1.json](game/dialogue/npc_dialogue_catalog.v1.json) — **6명 × 38상황 = 기초 대사 228개 저장**
-- [game/dialogue/README.md](game/dialogue/README.md) — 대사 ID·상황 해금·AI 검색 연결 가이드
-- [QUESTION_TUTORIAL.md](QUESTION_TUTORIAL.md) — **질문 튜토리얼**: 초보자 안내·상황별 질문 가이드
-- [game/dialogue/question_tutorial.v1.json](game/dialogue/question_tutorial.v1.json) — 게임 UI용 사전 작성 안내 문구 데이터
-- [RANDOM_CASE_AI_DESIGN.md](RANDOM_CASE_AI_DESIGN.md) — 제약 기반 랜덤 사건·증거 검증·난이도 설계
-- [NPC_SPRITE_SPEC.md](NPC_SPRITE_SPEC.md) — NPC 6명 전용 최소 스프라이트 제작 명세
-- [UI_FLOW.md](UI_FLOW.md) — 자유 타이핑 고발·추리보드 UI
-- [PRODUCTION_STANDARD_2_5D.md](PRODUCTION_STANDARD_2_5D.md) — 고품질 아트/Unity 기준
-- [ARCHITECTURE.md](ARCHITECTURE.md) — 권장 기술 구조
-- [AGENTS.md](AGENTS.md) — Codex 작업 제약
-- [LEGACY_IMPLEMENTATION.md](LEGACY_IMPLEMENTATION.md) — 이전 런타임 현황
-
-**종전 전체 스냅샷:** [archive/pre-single-detective-reboot-20261108](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-single-detective-reboot-20261108). 구형 6인 PvP/카드/12R/9방 구조는 폐기.
-
-**구현 상태:** 6인 성격 및 기초 상황별 대사 JSON(228개)을 저장했으며, 새 규칙을 GitHub 문서에 반영했지만 기존 Unity 씬·C# 런타임 자체를 새 게임으로 전환한 것은 아니다. 사용자 별도 요청 없이 테스트·빌드·배포하지 않았다.
+Windows PC에서 열린 Unity Editor나 로컬 프로젝트는 원격 GitHub 업데이트만으로 변경되지 않습니다.

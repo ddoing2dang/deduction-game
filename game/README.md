@@ -1,19 +1,18 @@
-# 추리 게임 — 새 Unity 프로젝트 시작 (2026-11-09)
+# 새 Unity 대화창 UI 프로젝트 — 기존 맵 완전 배제
 
-**이전 `UnityProject/` 프로젝트와 구형 6인 PvP/카드/턴/씬 자동 생성 코드는 `main`에서 초기화되었다.** 삭제 전 전체 상태는 [백업 브랜치](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-fresh-unity-project-20261109)에 있다.
+## 현재 GitHub 브랜치 구성
+- 기존 맵 스크립트, 맵 오브젝트, 맵 JSON, 환경/가구 에셋, 오래된 웹 게임 및 옛 문서 전부 제거.
+- 새 Unity 씬 `Assets/Scenes/DialoguePrototype.unity`의 루트는 **Main Camera / DialogueCanvas / EventSystem**뿐입니다. `DialogueCanvas`에 `DialoguePanel.prefab`가 연결되어 있습니다.
+- 기존 `Assets/Data/Preserved/`(맵·사건·대사·구형 프로필 사본) 전체 제거.
+- 프리팹에 필요한 **이름 목록 6개만** 새로 `Assets/Data/UI/NpcNames.json`으로 작성. 옮긴 TextAsset의 Unity 메타 GUID를 유지하여 씬/프리팹 직렬화 참조를 유지합니다.
+- 대저택·크루즈·음악방송 대화창 PNG는 **원본 그대로**. 한국어 TMP 폰트·입력·대화 기록·NPC 전용 거짓말 게이트는 유지하며 실제 사건/AI 어댑터는 미연결.
+- 새 Unity 프로젝트에는 기존 그레이박스, 방, 맵 데이터가 없습니다.
 
-새 프로젝트는 **Unity Hub → New Project → Universal 3D (URP)**, 프로젝트 이름 `UnityProject`, 저장 위치 `<repo>/game`로 생성한다. 버전은 기존 사용하던 Unity **6000.3.26f1** 권장. [자세한 새 프로젝트 생성/이관 절차](UNITY_RESTART_GUIDE.md) 참조.
+## 로컬 Unity가 아직 옛 맵을 보여줄 때
+1. Unity Editor 창에서 프로젝트 경로를 확인하세요. **새 프로젝트:** `C:/UnityProjects/DeductionGame/fresh-dialogue/game/UnityProject`.
+2. 먼저 기존 로컬 미커밋 작업이 있다면 백업하고, GitHub 작업 브랜치 `codex/fresh-unity-dialogue-prototype-20261109`의 최신 변경을 받으세요. `main`과 작업 브랜치를 섞지 마세요.
+3. Unity Project 패널에서 **`Assets/Scenes/DialoguePrototype.unity` 더블클릭**. Hierarchy 루트가 `Main Camera`, `DialogueCanvas`, `EventSystem`인지 확인하세요.
+4. 여전히 `Mansion_Graybox`, `Room_01` 등 구형 오브젝트가 있으면 다른 씬이나 다른 Unity 프로젝트가 열려 있는 것입니다.
+5. Scene 창의 바닥 **격자선은 실제 맵이 아닙니다**. 기본 Scene 뷰 편집용 안내선입니다.
 
-## 유지되는 현행 게임 기획
-- 인간 탐정 1명 + 용의자 NPC 6명(마도아·마리예·나주아·복희·지로아·문이린); 범인 1명 무작위 선정.
-- `HOTEL`, `CRUISE`, `MUSIC_BROADCAST` 세 테마, 각각 8개 조사 공간.
-- 최종 정답은 **범인 + 범행수법(4개 대분류 중 1개) + 흉기**, 범행장소는 정답에서 제외.
-- 자유 한국어 타이핑 심문. NPC 답변은 사건/지식/증거 상태를 검증하고 **사전 작성·검수된 대사 ID만** 선택.
-- **의도적 거짓말은 현재 사건 범인만**, 무고한 NPC는 자신이 실제로 아는 사실만 진술.
-- 기본 사전 대사·사건/흉기·맵 설계는 `game/dialogue/`, `game/cases/`, `game/maps/`에 보존됨. 기존 검증 전 시범 사건은 출시 가능한 데이터가 아님.
-- 실제 사용자 업로드 원본 대화창 3종은 `art/UI/DialogueFrames/ThemeDialogue_v1/`에 GitHub 저장됨; 프레임 원본과 투명도를 그대로 사용.
-
-## 구현 상태
-**기존 Unity 코드 제거 / 새 Unity Hub 프로젝트 미생성 / 신규 씬·프리팹 미구현 / 테스트·빌드 미실시.**
-
-먼저 대저택 대화창 프리팹을 새 Unity 프로젝트의 첫 독립 씬으로 만들고, 이후 다른 두 테마에 재사용한다. 자동 복원되는 구형 `ProjectBootstrap.cs`는 어떤 경우에도 새 프로젝트에 넣지 않는다.
+과거 PC 로컬 프로젝트를 원격 작업으로 삭제하거나 변경하지 않았습니다. 기능 테스트/Play Mode/EXE 빌드를 진행하지 않았습니다.
