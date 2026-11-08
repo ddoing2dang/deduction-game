@@ -8,7 +8,7 @@
 - **맵:** 공동 로비 1 + NPC 개인실 6 + 피해자가 실제 살해된 사건 현장 1 = **총 8개 방**.
 - **수사:** NPC 알리바이 대조 + 현장/개인실 증거 연결 + 논리적으로 변화하는 무작위 사건 + 시간표/동선 사건 재구성 + 증거 기반 추궁.
 - **최종 정답:** **범인 + 범행수법 + 흉기**. **범행 장소는 정답 대상에서 제외.**
-- **NPC 심문:** **질문 선택지 없이 6명 NPC와 한국어 자유 채팅**. NPC는 사건별 기억·이전 발언·증거 제시·진술 번복 이력을 유지하고 사건 진실과 모순되지 않게 답한다.
+- **NPC 심문:** **질문 선택지 없이 6명 NPC와 한국어 자유 채팅**. NPC는 사건별 기억·이전 발언·증거 제시·진술 번복 이력을 유지하고 **AI가 작가 검수 대사 ID만 검색·선택**해 답한다. 즉석 대사 생성 없음.
 - **랜덤 AI:** 승인된 사건 템플릿 + 시드/제약 생성 + NPC별 지식 + 증거/시간표 그래프 + 정답 유일성 검증.
 - **정답 입력:** **한국어 자유 문장 직접 타이핑**. AI는 해석, 별도 정답 엔진은 판정.
 - **그래픽:** 새 고품질 8방 쿼터뷰 3D 디오라마 + 고품질 2D NPC 스프라이트. 기존 그레이박스 최종 아트 불채택.
@@ -20,8 +20,9 @@
 - [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
 - [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
 - [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
-- [NPC_FREE_DIALOGUE.md](NPC_FREE_DIALOGUE.md) — NPC 6명 전원 자유 채팅·기억·추궁·사실 검증
+- [NPC_FREE_DIALOGUE.md](NPC_FREE_DIALOGUE.md) — 자유 질문 → 사전 검수 NPC 대사 선택·기억·추궁
 - [RANDOM_CASE_AI_DESIGN.md](RANDOM_CASE_AI_DESIGN.md) — 제약 기반 랜덤 사건·증거 검증·난이도 설계
+- [NPC_SPRITE_SPEC.md](NPC_SPRITE_SPEC.md) — NPC 6명 전용 최소 스프라이트 제작 명세
 - [UI_FLOW.md](UI_FLOW.md) — 자유 타이핑 고발·추리보드 UI
 - [PRODUCTION_STANDARD_2_5D.md](PRODUCTION_STANDARD_2_5D.md) — 고품질 아트/Unity 기준
 - [ARCHITECTURE.md](ARCHITECTURE.md) — 권장 기술 구조
