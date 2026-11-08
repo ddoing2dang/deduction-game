@@ -27,7 +27,8 @@
     "TRUST_INCREASED": "Trust state changed by deterministic rules",
     "TRUST_DECREASED": "Trust state changed by deterministic rules",
     "PRIOR_RESPONSE_EXISTS": "NPC previously answered this intent",
-    "PRIOR_STATEMENT_EXISTS": "NPC has specific previously recorded statement"
+    "PRIOR_STATEMENT_EXISTS": "NPC has specific previously recorded statement",
+    "NO_APPROVED_ANSWER_AVAILABLE": "Only when selector has no eligible authored answer for the user's intent; avoid making false claims of factual ignorance"
   },
   "characters": {
     "MATTO": {
@@ -544,7 +545,7 @@
         "ROOM"
       ],
       "requiredState": "ALWAYS",
-      "responseText": "내 방이 수상해 보여? 평소에도 좀 정신없는 건 사실이지만!",
+      "responseText": "내 방을 살펴보겠다고? 그럼 뭐부터 찾는 건데?",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -828,8 +829,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "지금은 잘 모르겠어. 괜히 맞혀 보겠다고 말하지 않을래.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "지금은 확실히 답하기 어려워. 괜히 찍어서 말하면 더 엉뚱해질 것 같아.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -1402,8 +1403,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "그건 정말 모르겠어. 모르는 건 모른다고 해야지.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "지금은 정확히 답하기 어려워. 확인할 수 있는 게 생기면 이야기하자.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -1976,8 +1977,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "모르는 부분은 상상으로 메울 수 있지만, 그건 답이 아니겠지. 모르겠어.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "아직 확실하게 답할 수 없는 페이지야. 상상으로 빈칸을 채울 순 없지.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -2550,8 +2551,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "그건 확실히 모르겠어. 추측을 사실처럼 말하지 않을게.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "그 질문에는 지금 확실히 답하기 어려워. 추측을 사실처럼 말하진 않을게.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -3124,8 +3125,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "그건 진짜 모르겠다. 괜히 이상한 답 할 순 없잖아.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "지금은 딱 잘라 답하기 어렵네. 괜히 이상한 소리 했다간 더 헷갈리잖아.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -3654,7 +3655,7 @@
         "REPEAT"
       ],
       "requiredState": "PRIOR_RESPONSE_EXISTS",
-      "responseText": "그 질문은 전에 했어. …내가 한 답은 바뀌지 않았을 거야.",
+      "responseText": "그 질문은 전에 했어. …내가 했던 대답을 기록에서 함께 볼래?",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -3698,8 +3699,8 @@
       "intentTags": [
         "UNKNOWN"
       ],
-      "requiredState": "ALWAYS",
-      "responseText": "…모르겠어. 확신도 없는데 답할 수는 없어.",
+      "requiredState": "NO_APPROVED_ANSWER_AVAILABLE",
+      "responseText": "…지금은 확실히 답하기 어려워. 괜히 틀린 말을 하고 싶지 않아.",
       "emotionTag": "neutral",
       "animationTag": "talk",
       "templateSlots": [],
@@ -3796,5 +3797,7 @@
       "status": "authored_base",
       "caseSpecific": false
     }
-  ]
+  ],
+  "contentStatus": "initial authored, user personality traits confirmed; case-specific text/branch review pending",
+  "approvalScope": "character identity and personality confirmed; each line is an initial editorial draft, not a shipped/tested scenario dialogue"
 }
