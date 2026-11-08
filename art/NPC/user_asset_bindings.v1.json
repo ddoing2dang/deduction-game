@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.3.0",
   "documentedAt": "2026-11-08",
   "status": "user_uploaded_asset_mapping_design_only_not_unity_integrated",
   "sources": [
@@ -38,9 +38,9 @@
     {
       "sourceFolder": "NPC_Sprites/02_blonde",
       "npcId": "MARIHI",
-      "npcDisplayName": "마리희",
+      "npcDisplayName": "마리예",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRihui",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -68,9 +68,9 @@
     {
       "sourceFolder": "NPC_Sprites/04_red",
       "npcId": "BOKI",
-      "npcDisplayName": "보희",
+      "npcDisplayName": "복희",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_BoHui",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_BokHui",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -98,9 +98,9 @@
     {
       "sourceFolder": "NPC_Sprites/06_purple",
       "npcId": "MOONIRE",
-      "npcDisplayName": "문이래",
+      "npcDisplayName": "문이린",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrae",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrin",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
