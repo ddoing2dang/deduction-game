@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "createdAt": "2026-11-08",
   "purpose": "27 authored case blueprints = nine proposed subtypes × three approved world themes",
   "implementationStatus": "design_only_not_playable_or_validated",
@@ -24,7 +24,8 @@
       "culpritNpcId",
       "methodId",
       "weaponId"
-    ]
+    ],
+    "fourParentOnlyScoring": true
   },
   "constraints": "Blueprints are ingredient proposals and do not specify actual culprit, victim, method-forensic proof, timeline, or approved NPC knowledge. None is an accepted/generated playable case until validated separately.",
   "dialogueSource": "game/dialogue/method_variant_theme_lines.v1.json",
@@ -39,7 +40,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W12",
-      "weaponName": "과도",
+      "weaponName": "접이식 과일칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -50,7 +51,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 찌름 형태에 관한 상처 감식 기록와 과도 후보의 연결을 수사한다. 204호 앞 복도 출입 시각표 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 찌름 관련 상처 감식 기록과 접이식 과일칼 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M01_V1_FORENSIC",
@@ -68,7 +69,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "과도 실물별 출처와 감식 비교",
+          "description": "접이식 과일칼 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -112,7 +113,10 @@
         "HOTEL_M01_V1_MOONIRE_EVIDENCE_01",
         "HOTEL_M01_V1_MOONIRE_ROUTE_01",
         "HOTEL_M01_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M01_V1",
@@ -124,7 +128,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W01",
-      "weaponName": "커터칼",
+      "weaponName": "정밀 공예칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -135,7 +139,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 찌름 형태에 관한 상처 감식 기록와 커터칼 후보의 연결을 수사한다. 앞계단과 403호 접근 목격 진술 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 찌름 관련 상처 감식 기록과 정밀 공예칼 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M01_V1_FORENSIC",
@@ -153,7 +157,7 @@
             "ROOM_MATTO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "커터칼 실물별 출처와 감식 비교",
+          "description": "정밀 공예칼 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -197,7 +201,10 @@
         "CRUISE_M01_V1_MOONIRE_EVIDENCE_01",
         "CRUISE_M01_V1_MOONIRE_ROUTE_01",
         "CRUISE_M01_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V1",
@@ -209,7 +216,7 @@
       "methodVariantId": "M01_V1",
       "methodVariantName": "찌르기형(자창)",
       "weaponId": "W03",
-      "weaponName": "다목적 가위",
+      "weaponName": "재단용 가위",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -224,7 +231,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 찌름 형태에 관한 상처 감식 기록와 다목적 가위 후보의 연결을 수사한다. VIP-01 방문 시간과 호출 순서표 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 찌름 관련 상처 감식 기록과 재단용 가위 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M01_V1_FORENSIC",
@@ -243,7 +250,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "다목적 가위 실물별 출처와 감식 비교",
+          "description": "재단용 가위 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -287,7 +294,10 @@
         "MUSIC_BROADCAST_M01_V1_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M01_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M01_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M01_V2",
@@ -299,7 +309,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W03",
-      "weaponName": "다목적 가위",
+      "weaponName": "재단용 가위",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -314,7 +324,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 베임 형태에 관한 상처 감식 기록와 다목적 가위 후보의 연결을 수사한다. 2층 객실 출입 표식 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 베임 관련 상처 감식 기록과 재단용 가위 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M01_V2_FORENSIC",
@@ -333,7 +343,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "다목적 가위 실물별 출처와 감식 비교",
+          "description": "재단용 가위 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -377,7 +387,10 @@
         "HOTEL_M01_V2_MOONIRE_EVIDENCE_01",
         "HOTEL_M01_V2_MOONIRE_ROUTE_01",
         "HOTEL_M01_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M01_V2",
@@ -389,7 +402,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W12",
-      "weaponName": "과도",
+      "weaponName": "접이식 과일칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -400,7 +413,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 베임 형태에 관한 상처 감식 기록와 과도 후보의 연결을 수사한다. 4데크 선실 복도 출입 시각 메모 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 베임 관련 상처 감식 기록과 접이식 과일칼 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M01_V2_FORENSIC",
@@ -418,7 +431,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "과도 실물별 출처와 감식 비교",
+          "description": "접이식 과일칼 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -462,7 +475,10 @@
         "CRUISE_M01_V2_MOONIRE_EVIDENCE_01",
         "CRUISE_M01_V2_MOONIRE_ROUTE_01",
         "CRUISE_M01_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V2",
@@ -474,7 +490,7 @@
       "methodVariantId": "M01_V2",
       "methodVariantName": "베기형(절창)",
       "weaponId": "W01",
-      "weaponName": "커터칼",
+      "weaponName": "정밀 공예칼",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -485,7 +501,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 베임 형태에 관한 상처 감식 기록와 커터칼 후보의 연결을 수사한다. 좌우 대기실 앞 목격 및 출연 순서표 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 베임 관련 상처 감식 기록과 정밀 공예칼 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M01_V2_FORENSIC",
@@ -503,7 +519,7 @@
             "ROOM_MATTO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "커터칼 실물별 출처와 감식 비교",
+          "description": "정밀 공예칼 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -547,7 +563,10 @@
         "MUSIC_BROADCAST_M01_V2_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M01_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M01_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M02_V1",
@@ -559,7 +578,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W05",
-      "weaponName": "유리 문진",
+      "weaponName": "묵직한 돌 장식품",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -574,7 +593,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 둔력 손상과 물체 접촉 흔적 기록와 유리 문진 후보의 연결을 수사한다. 204호 복도에서의 목격 진술 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 직접적인 둔력 손상 감식 기록과 묵직한 돌 장식품 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M02_V1_FORENSIC",
@@ -593,7 +612,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "유리 문진 실물별 출처와 감식 비교",
+          "description": "묵직한 돌 장식품 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -637,7 +656,10 @@
         "HOTEL_M02_V1_MOONIRE_EVIDENCE_01",
         "HOTEL_M02_V1_MOONIRE_ROUTE_01",
         "HOTEL_M02_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M02_V1",
@@ -649,7 +671,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W02",
-      "weaponName": "금속 손전등",
+      "weaponName": "금속 북엔드",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -664,7 +686,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 둔력 손상과 물체 접촉 흔적 기록와 금속 손전등 후보의 연결을 수사한다. 선수·선미 계단 양쪽 목격 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 직접적인 둔력 손상 감식 기록과 금속 북엔드 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M02_V1_FORENSIC",
@@ -683,7 +705,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 손전등 실물별 출처와 감식 비교",
+          "description": "금속 북엔드 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -727,7 +749,10 @@
         "CRUISE_M02_V1_MOONIRE_EVIDENCE_01",
         "CRUISE_M02_V1_MOONIRE_ROUTE_01",
         "CRUISE_M02_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V1",
@@ -739,7 +764,7 @@
       "methodVariantId": "M02_V1",
       "methodVariantName": "직접 타격형",
       "weaponId": "W06",
-      "weaponName": "접이식 금속 스탠드",
+      "weaponName": "휴대용 금속 상패",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -750,7 +775,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 둔력 손상과 물체 접촉 흔적 기록와 접이식 금속 스탠드 후보의 연결을 수사한다. 공동 대기홀 호출 패널 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 직접적인 둔력 손상 감식 기록과 휴대용 금속 상패 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M02_V1_FORENSIC",
@@ -768,7 +793,7 @@
             "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "접이식 금속 스탠드 실물별 출처와 감식 비교",
+          "description": "휴대용 금속 상패 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -812,7 +837,10 @@
         "MUSIC_BROADCAST_M02_V1_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M02_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M02_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M02_V2",
@@ -823,19 +851,23 @@
       "methodName": "둔력 손상",
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
-      "weaponId": "W06",
-      "weaponName": "접이식 금속 스탠드",
+      "weaponId": "W02",
+      "weaponName": "금속 북엔드",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
-          "roomId": "ROOM_MARIHI",
-          "instanceId": "ROOM_MARIHI_W06"
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W02"
+        },
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W02"
         }
       ],
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 낙하물과 충격 위치의 감식 기록와 접이식 금속 스탠드 후보의 연결을 수사한다. 204호 인접 소품 위치 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 낙하 물체와 충격의 감식 기록과 금속 북엔드 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M02_V2_FORENSIC",
@@ -850,10 +882,11 @@
           "evidenceId": "EV_HOTEL_M02_V2_ITEM",
           "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
           "eligibleRoomIds": [
-            "ROOM_MARIHI"
+            "ROOM_MATTO",
+            "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "접이식 금속 스탠드 실물별 출처와 감식 비교",
+          "description": "금속 북엔드 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -898,7 +931,10 @@
         "HOTEL_M02_V2_MOONIRE_EVIDENCE_01",
         "HOTEL_M02_V2_MOONIRE_ROUTE_01",
         "HOTEL_M02_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M02_V2",
@@ -909,23 +945,19 @@
       "methodName": "둔력 손상",
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
-      "weaponId": "W05",
-      "weaponName": "유리 문진",
+      "weaponId": "W06",
+      "weaponName": "휴대용 금속 상패",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
           "roomId": "ROOM_MARIHI",
-          "instanceId": "ROOM_MARIHI_W05"
-        },
-        {
-          "roomId": "ROOM_NAZ",
-          "instanceId": "ROOM_NAZ_W05"
+          "instanceId": "ROOM_MARIHI_W06"
         }
       ],
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 낙하물과 충격 위치의 감식 기록와 유리 문진 후보의 연결을 수사한다. 4데크 선실 보관 위치 자료 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 낙하 물체와 충격의 감식 기록과 휴대용 금속 상패 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M02_V2_FORENSIC",
@@ -940,11 +972,10 @@
           "evidenceId": "EV_CRUISE_M02_V2_ITEM",
           "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
           "eligibleRoomIds": [
-            "ROOM_MARIHI",
-            "ROOM_NAZ"
+            "ROOM_MARIHI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "유리 문진 실물별 출처와 감식 비교",
+          "description": "휴대용 금속 상패 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -989,7 +1020,10 @@
         "CRUISE_M02_V2_MOONIRE_EVIDENCE_01",
         "CRUISE_M02_V2_MOONIRE_ROUTE_01",
         "CRUISE_M02_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V2",
@@ -1000,19 +1034,23 @@
       "methodName": "둔력 손상",
       "methodVariantId": "M02_V2",
       "methodVariantName": "낙하물 충격형",
-      "weaponId": "W06",
-      "weaponName": "접이식 금속 스탠드",
+      "weaponId": "W05",
+      "weaponName": "묵직한 돌 장식품",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
           "roomId": "ROOM_MARIHI",
-          "instanceId": "ROOM_MARIHI_W06"
+          "instanceId": "ROOM_MARIHI_W05"
+        },
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W05"
         }
       ],
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 낙하물과 충격 위치의 감식 기록와 접이식 금속 스탠드 후보의 연결을 수사한다. 무대 소품 정리표와 VIP-01 출입 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 낙하 물체와 충격의 감식 기록과 묵직한 돌 장식품 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_FORENSIC",
@@ -1027,10 +1065,11 @@
           "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_ITEM",
           "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
           "eligibleRoomIds": [
-            "ROOM_MARIHI"
+            "ROOM_MARIHI",
+            "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "접이식 금속 스탠드 실물별 출처와 감식 비교",
+          "description": "묵직한 돌 장식품 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1075,7 +1114,10 @@
         "MUSIC_BROADCAST_M02_V2_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M02_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M02_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M03_V1",
@@ -1087,7 +1129,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W04",
-      "weaponName": "목도리",
+      "weaponName": "넓은 천 벨트",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1098,7 +1140,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 목 압박 관련 감식 기록와 목도리 후보의 연결을 수사한다. 객실 번호가 적힌 로비 메모 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 목 압박 관련 감식 기록과 넓은 천 벨트 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M03_V1_FORENSIC",
@@ -1116,7 +1158,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "목도리 실물별 출처와 감식 비교",
+          "description": "넓은 천 벨트 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1160,7 +1202,10 @@
         "HOTEL_M03_V1_MOONIRE_EVIDENCE_01",
         "HOTEL_M03_V1_MOONIRE_ROUTE_01",
         "HOTEL_M03_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M03_V1",
@@ -1172,7 +1217,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W07",
-      "weaponName": "충전 케이블",
+      "weaponName": "캔버스 가방끈",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1187,7 +1232,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 목 압박 관련 감식 기록와 충전 케이블 후보의 연결을 수사한다. 3데크 선실과 403호 동선 메모 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 목 압박 관련 감식 기록과 캔버스 가방끈 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M03_V1_FORENSIC",
@@ -1206,7 +1251,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "충전 케이블 실물별 출처와 감식 비교",
+          "description": "캔버스 가방끈 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1250,7 +1295,10 @@
         "CRUISE_M03_V1_MOONIRE_EVIDENCE_01",
         "CRUISE_M03_V1_MOONIRE_ROUTE_01",
         "CRUISE_M03_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V1",
@@ -1262,7 +1310,7 @@
       "methodVariantId": "M03_V1",
       "methodVariantName": "목 압박·교살형",
       "weaponId": "W04",
-      "weaponName": "목도리",
+      "weaponName": "넓은 천 벨트",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1273,7 +1321,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 목 압박 관련 감식 기록와 목도리 후보의 연결을 수사한다. A/B 복도의 이동 목격 진술 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 목 압박 관련 감식 기록과 넓은 천 벨트 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M03_V1_FORENSIC",
@@ -1291,7 +1339,7 @@
             "ROOM_JIRO"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "목도리 실물별 출처와 감식 비교",
+          "description": "넓은 천 벨트 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1335,7 +1383,10 @@
         "MUSIC_BROADCAST_M03_V1_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M03_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M03_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M03_V2",
@@ -1347,7 +1398,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 수건",
+      "weaponName": "두꺼운 면 손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1362,7 +1413,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 호흡 차단 관련 감식 기록와 두꺼운 수건 후보의 연결을 수사한다. 204호 주변 천 조각 조사 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 목 압박과 구별되는 호흡 차단 감식 기록과 두꺼운 면 손수건 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M03_V2_FORENSIC",
@@ -1381,7 +1432,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 수건 실물별 출처와 감식 비교",
+          "description": "두꺼운 면 손수건 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1425,7 +1476,10 @@
         "HOTEL_M03_V2_MOONIRE_EVIDENCE_01",
         "HOTEL_M03_V2_MOONIRE_ROUTE_01",
         "HOTEL_M03_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M03_V2",
@@ -1437,7 +1491,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 수건",
+      "weaponName": "두꺼운 면 손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1452,7 +1506,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 호흡 차단 관련 감식 기록와 두꺼운 수건 후보의 연결을 수사한다. 선실 린넨 사용 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 목 압박과 구별되는 호흡 차단 감식 기록과 두꺼운 면 손수건 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M03_V2_FORENSIC",
@@ -1471,7 +1525,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 수건 실물별 출처와 감식 비교",
+          "description": "두꺼운 면 손수건 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1515,7 +1569,10 @@
         "CRUISE_M03_V2_MOONIRE_EVIDENCE_01",
         "CRUISE_M03_V2_MOONIRE_ROUTE_01",
         "CRUISE_M03_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V2",
@@ -1527,7 +1584,7 @@
       "methodVariantId": "M03_V2",
       "methodVariantName": "호흡 차단형",
       "weaponId": "W11",
-      "weaponName": "두꺼운 수건",
+      "weaponName": "두꺼운 면 손수건",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1542,7 +1599,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 호흡 차단 관련 감식 기록와 두꺼운 수건 후보의 연결을 수사한다. VIP-01 근처 대기실 비품 목록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 목 압박과 구별되는 호흡 차단 감식 기록과 두꺼운 면 손수건 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M03_V2_FORENSIC",
@@ -1561,7 +1618,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "두꺼운 수건 실물별 출처와 감식 비교",
+          "description": "두꺼운 면 손수건 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1605,7 +1662,10 @@
         "MUSIC_BROADCAST_M03_V2_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M03_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M03_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M04_V1",
@@ -1617,7 +1677,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W09",
-      "weaponName": "유리 음료병",
+      "weaponName": "밀폐 음료 보틀",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1632,7 +1692,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 독성물질 검사 결과 기록와 유리 음료병 후보의 연결을 수사한다. 호텔 로비의 음료 확인표 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 독성물질 관련 검사 기록과 밀폐 음료 보틀 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V1_FORENSIC",
@@ -1651,7 +1711,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "유리 음료병 실물별 출처와 감식 비교",
+          "description": "밀폐 음료 보틀 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1695,7 +1755,10 @@
         "HOTEL_M04_V1_MOONIRE_EVIDENCE_01",
         "HOTEL_M04_V1_MOONIRE_ROUTE_01",
         "HOTEL_M04_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M04_V1",
@@ -1707,7 +1770,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W10",
-      "weaponName": "금속 텀블러",
+      "weaponName": "간식 보관 케이스",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1718,7 +1781,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 독성물질 검사 결과 기록와 금속 텀블러 후보의 연결을 수사한다. 선내 음료 정리표 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 독성물질 관련 검사 기록과 간식 보관 케이스 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V1_FORENSIC",
@@ -1736,7 +1799,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 텀블러 실물별 출처와 감식 비교",
+          "description": "간식 보관 케이스 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1780,7 +1843,10 @@
         "CRUISE_M04_V1_MOONIRE_EVIDENCE_01",
         "CRUISE_M04_V1_MOONIRE_ROUTE_01",
         "CRUISE_M04_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V1",
@@ -1792,7 +1858,7 @@
       "methodVariantId": "M04_V1",
       "methodVariantName": "독극물 중독형",
       "weaponId": "W08",
-      "weaponName": "작은 약병",
+      "weaponName": "개인 약 정리함",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1803,7 +1869,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 독성물질 검사 결과 기록와 작은 약병 후보의 연결을 수사한다. 공용 대기홀 음료 배치 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 독성물질 관련 검사 기록과 개인 약 정리함 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V1_FORENSIC",
@@ -1821,7 +1887,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "작은 약병 실물별 출처와 감식 비교",
+          "description": "개인 약 정리함 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1865,7 +1931,10 @@
         "MUSIC_BROADCAST_M04_V1_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M04_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V1_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M04_V2",
@@ -1877,7 +1946,7 @@
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
       "weaponId": "W08",
-      "weaponName": "작은 약병",
+      "weaponName": "개인 약 정리함",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1888,7 +1957,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 약물 관련 감식 결과 기록와 작은 약병 후보의 연결을 수사한다. 로비의 약 관련 메모 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 약물 관련 감식 검사 기록과 개인 약 정리함 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V2_FORENSIC",
@@ -1906,7 +1975,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "작은 약병 실물별 출처와 감식 비교",
+          "description": "개인 약 정리함 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -1950,7 +2019,10 @@
         "HOTEL_M04_V2_MOONIRE_EVIDENCE_01",
         "HOTEL_M04_V2_MOONIRE_ROUTE_01",
         "HOTEL_M04_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M04_V2",
@@ -1962,7 +2034,7 @@
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
       "weaponId": "W08",
-      "weaponName": "작은 약병",
+      "weaponName": "개인 약 정리함",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -1973,7 +2045,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 약물 관련 감식 결과 기록와 작은 약병 후보의 연결을 수사한다. 선실 약 관련 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 약물 관련 감식 검사 기록과 개인 약 정리함 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V2_FORENSIC",
@@ -1991,7 +2063,7 @@
             "ROOM_NAZ"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "작은 약병 실물별 출처와 감식 비교",
+          "description": "개인 약 정리함 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2035,7 +2107,10 @@
         "CRUISE_M04_V2_MOONIRE_EVIDENCE_01",
         "CRUISE_M04_V2_MOONIRE_ROUTE_01",
         "CRUISE_M04_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V2",
@@ -2046,19 +2121,23 @@
       "methodName": "독살·물질 반응",
       "methodVariantId": "M04_V2",
       "methodVariantName": "약물 관련 중독형",
-      "weaponId": "W10",
-      "weaponName": "금속 텀블러",
+      "weaponId": "W09",
+      "weaponName": "밀폐 음료 보틀",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
           "roomId": "ROOM_BOKI",
-          "instanceId": "ROOM_BOKI_W10"
+          "instanceId": "ROOM_BOKI_W09"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W09"
         }
       ],
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 약물 관련 감식 결과 기록와 금속 텀블러 후보의 연결을 수사한다. 출연 순서표와 개인 물품 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 약물 관련 감식 검사 기록과 밀폐 음료 보틀 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_FORENSIC",
@@ -2073,10 +2152,11 @@
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_ITEM",
           "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
           "eligibleRoomIds": [
-            "ROOM_BOKI"
+            "ROOM_BOKI",
+            "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 텀블러 실물별 출처와 감식 비교",
+          "description": "밀폐 음료 보틀 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2120,7 +2200,10 @@
         "MUSIC_BROADCAST_M04_V2_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M04_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V2_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "HOTEL_M04_V3",
@@ -2132,7 +2215,7 @@
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
       "weaponId": "W10",
-      "weaponName": "금속 텀블러",
+      "weaponName": "간식 보관 케이스",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2143,7 +2226,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "204호",
-      "investigativePremise": "호텔 204호의 급성 알레르기 반응 관련 감식 기록와 금속 텀블러 후보의 연결을 수사한다. 투숙객의 알레르기 관련 승인 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "호텔 204호에 관련된 급성 알레르기 관련 검사 기록과 간식 보관 케이스 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_HOTEL_M04_V3_FORENSIC",
@@ -2161,7 +2244,7 @@
             "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "금속 텀블러 실물별 출처와 감식 비교",
+          "description": "간식 보관 케이스 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2206,7 +2289,10 @@
         "HOTEL_M04_V3_MOONIRE_EVIDENCE_01",
         "HOTEL_M04_V3_MOONIRE_ROUTE_01",
         "HOTEL_M04_V3_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "CRUISE_M04_V3",
@@ -2218,7 +2304,7 @@
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
       "weaponId": "W09",
-      "weaponName": "유리 음료병",
+      "weaponName": "밀폐 음료 보틀",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
@@ -2233,7 +2319,7 @@
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "403호",
-      "investigativePremise": "크루즈 403호의 급성 알레르기 반응 관련 감식 기록와 유리 음료병 후보의 연결을 수사한다. 선내 개인별 알레르기 정보 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "크루즈 403호에 관련된 급성 알레르기 관련 검사 기록과 밀폐 음료 보틀 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_CRUISE_M04_V3_FORENSIC",
@@ -2252,7 +2338,7 @@
             "ROOM_MOONIRE"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "유리 음료병 실물별 출처와 감식 비교",
+          "description": "밀폐 음료 보틀 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2297,7 +2383,10 @@
         "CRUISE_M04_V3_MOONIRE_EVIDENCE_01",
         "CRUISE_M04_V3_MOONIRE_ROUTE_01",
         "CRUISE_M04_V3_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V3",
@@ -2308,23 +2397,19 @@
       "methodName": "독살·물질 반응",
       "methodVariantId": "M04_V3",
       "methodVariantName": "심각한 알레르기 반응형",
-      "weaponId": "W09",
-      "weaponName": "유리 음료병",
+      "weaponId": "W10",
+      "weaponName": "간식 보관 케이스",
       "weaponTypeCatalogShared": true,
       "eligibleWeaponInstances": [
         {
           "roomId": "ROOM_BOKI",
-          "instanceId": "ROOM_BOKI_W09"
-        },
-        {
-          "roomId": "ROOM_MOONIRE",
-          "instanceId": "ROOM_MOONIRE_W09"
+          "instanceId": "ROOM_BOKI_W10"
         }
       ],
       "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
       "crimeSceneRoomId": "CRIME_SCENE",
       "crimeSceneDisplayNumber": "VIP-01",
-      "investigativePremise": "음악방송 대기실 VIP-01의 급성 알레르기 반응 관련 감식 기록와 유리 음료병 후보의 연결을 수사한다. 승인된 알레르기 주의사항·출연 관련 기록 후보를 별도로 검증한다.",
+      "investigativePremise": "음악방송 대기실 VIP-01에 관련된 급성 알레르기 관련 검사 기록과 간식 보관 케이스 후보의 관련성을 수사한다. 테마별 동선과 기록은 실제 사건 템플릿에서 확인해야 한다.",
       "evidenceBlueprint": [
         {
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_FORENSIC",
@@ -2339,11 +2424,10 @@
           "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_ITEM",
           "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
           "eligibleRoomIds": [
-            "ROOM_BOKI",
-            "ROOM_MOONIRE"
+            "ROOM_BOKI"
           ],
           "kind": "weapon_instance_forensic",
-          "description": "유리 음료병 실물별 출처와 감식 비교",
+          "description": "간식 보관 케이스 각각의 실물 출처와 감식 비교",
           "role": "weapon_type_and_instance_access_proof",
           "isPhysicalWeapon": true,
           "requiresAuthoredSceneTruth": true
@@ -2388,7 +2472,11 @@
         "MUSIC_BROADCAST_M04_V3_MOONIRE_EVIDENCE_01",
         "MUSIC_BROADCAST_M04_V3_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V3_MOONIRE_ITEM_01"
-      ]
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval"
     }
-  ]
+  ],
+  "weaponDesignUpdate": "all_12_weapon_item_names_reselected_2026-11-08"
 }
