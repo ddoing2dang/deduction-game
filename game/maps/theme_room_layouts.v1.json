@@ -1,11 +1,9 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "createdAt": "2026-11-08",
   "usage": "Design data only, not loaded by Unity; no in-game implementation claimed",
   "sharedConstraints": {
     "totalInvestigableRooms": 8,
-    "perLayoutLevelCount": 2,
-    "roomsPerLevel": 4,
     "npcSuspects": [
       "MATTO",
       "MARIHI",
@@ -35,7 +33,11 @@
       "corridors",
       "landings",
       "elevator"
-    ]
+    ],
+    "layoutPolicy": "Exactly eight investigable spaces, each theme chooses its own floor/deck distribution and geometry; corridors, stairs and transit nodes are not additional rooms",
+    "lobbyRoomCount": 1,
+    "npcPersonalRoomCount": 6,
+    "crimeSceneRoomCount": 1
   },
   "themes": {
     "HOTEL": {
@@ -101,15 +103,27 @@
         }
       ],
       "transitGraphConcept": "single central stair between 1F lobby/corridor and 2F corridor; corridor travel not a 9th room",
-      "mobilityDetailsStatus": "unimplemented"
+      "mobilityDetailsStatus": "unimplemented",
+      "structureType": "hotel_central_stair_4_plus_4",
+      "levelRoomCounts": [
+        4,
+        4
+      ],
+      "topologyStatus": "hotel preserved as saved working baseline; exact door links pending scene design"
     },
     "CRUISE": {
-      "status": "proposed_not_yet_user_approved",
+      "status": "revised_distinct_layout_proposed_not_final",
       "layoutDocument": "CRUISE_LAYOUT.md",
+      "themeDescription": "Asymmetric elongated ship with port/starboard corridor loop and two interdeck stair routes",
+      "structureType": "cruise_asymmetric_ship_loop_5_plus_3",
+      "levelRoomCounts": [
+        5,
+        3
+      ],
       "levels": [
         {
           "id": "DECK_3",
-          "name": "3데크",
+          "name": "3데크 · 선실과 아트리움",
           "rooms": [
             {
               "roomId": "LOBBY",
@@ -118,134 +132,372 @@
               "features": [
                 "welcome_desk",
                 "lounge",
-                "atrium"
+                "two_corridor_exits"
               ]
             },
             {
-              "roomId": "ROOM_NAZ",
+              "roomId": "ROOM_MATTO",
               "displayNumber": "301",
-              "displayName": "나즈 선실"
+              "displayName": "마또 선실",
+              "location": "port_forward"
+            },
+            {
+              "roomId": "ROOM_NAZ",
+              "displayNumber": "302",
+              "displayName": "나즈 선실",
+              "location": "port_aft"
             },
             {
               "roomId": "ROOM_BOKI",
-              "displayNumber": "302",
-              "displayName": "보키 선실"
+              "displayNumber": "303",
+              "displayName": "보키 선실",
+              "location": "starboard_forward"
             },
             {
-              "roomId": "ROOM_MOONIRE",
-              "displayNumber": "303",
-              "displayName": "문이레 선실"
+              "roomId": "ROOM_JIRO",
+              "displayNumber": "304",
+              "displayName": "찌로 선실",
+              "location": "starboard_aft"
             }
           ]
         },
         {
           "id": "DECK_4",
-          "name": "4데크",
+          "name": "4데크 · 상부 선실",
           "rooms": [
             {
-              "roomId": "ROOM_MATTO",
-              "displayNumber": "401",
-              "displayName": "마또 선실"
-            },
-            {
-              "roomId": "ROOM_JIRO",
-              "displayNumber": "402",
-              "displayName": "찌로 선실"
-            },
-            {
               "roomId": "ROOM_MARIHI",
-              "displayNumber": "403",
-              "displayName": "마리히 선실"
+              "displayNumber": "401",
+              "displayName": "마리히 선실",
+              "location": "upper_port"
+            },
+            {
+              "roomId": "ROOM_MOONIRE",
+              "displayNumber": "402",
+              "displayName": "문이레 선실",
+              "location": "upper_starboard"
             },
             {
               "roomId": "CRIME_SCENE",
-              "displayNumber": "404",
-              "displayName": "살해 현장 선실"
+              "displayNumber": "403",
+              "displayName": "살해 현장 선실",
+              "location": "upper_forward"
             }
           ]
         }
       ],
-      "transitGraphConcept": "forward and aft stairs, port and starboard corridors, no additional investigable rooms",
-      "mobilityDetailsStatus": "proposed_only"
+      "topology": {
+        "interpretation": "Conceptual undirected navigation graph; transit nodes are not investigable rooms; movement timing/door conditions unspecified",
+        "transitNodes": [
+          "D3_FORE",
+          "D3_PORT",
+          "D3_AFT",
+          "D3_STARBOARD",
+          "D4_FORE",
+          "D4_PORT",
+          "D4_AFT",
+          "D4_STARBOARD"
+        ],
+        "transitEdges": [
+          [
+            "D3_FORE",
+            "D3_PORT"
+          ],
+          [
+            "D3_PORT",
+            "D3_AFT"
+          ],
+          [
+            "D3_AFT",
+            "D3_STARBOARD"
+          ],
+          [
+            "D3_STARBOARD",
+            "D3_FORE"
+          ],
+          [
+            "D4_FORE",
+            "D4_PORT"
+          ],
+          [
+            "D4_PORT",
+            "D4_AFT"
+          ],
+          [
+            "D4_AFT",
+            "D4_STARBOARD"
+          ],
+          [
+            "D4_STARBOARD",
+            "D4_FORE"
+          ],
+          [
+            "D3_FORE",
+            "D4_FORE"
+          ],
+          [
+            "D3_AFT",
+            "D4_AFT"
+          ]
+        ],
+        "roomEntrances": [
+          {
+            "roomId": "LOBBY",
+            "at": [
+              "D3_PORT",
+              "D3_STARBOARD"
+            ]
+          },
+          {
+            "roomId": "ROOM_MATTO",
+            "at": [
+              "D3_PORT"
+            ]
+          },
+          {
+            "roomId": "ROOM_NAZ",
+            "at": [
+              "D3_PORT"
+            ]
+          },
+          {
+            "roomId": "ROOM_BOKI",
+            "at": [
+              "D3_STARBOARD"
+            ]
+          },
+          {
+            "roomId": "ROOM_JIRO",
+            "at": [
+              "D3_STARBOARD"
+            ]
+          },
+          {
+            "roomId": "ROOM_MARIHI",
+            "at": [
+              "D4_PORT"
+            ]
+          },
+          {
+            "roomId": "ROOM_MOONIRE",
+            "at": [
+              "D4_STARBOARD"
+            ]
+          },
+          {
+            "roomId": "CRIME_SCENE",
+            "at": [
+              "D4_FORE"
+            ]
+          }
+        ],
+        "stairs": [
+          {
+            "id": "FORE_STAIRS",
+            "between": [
+              "D3_FORE",
+              "D4_FORE"
+            ]
+          },
+          {
+            "id": "AFT_STAIRS",
+            "between": [
+              "D3_AFT",
+              "D4_AFT"
+            ]
+          }
+        ],
+        "deckDirections": [
+          "bow",
+          "stern",
+          "port",
+          "starboard"
+        ]
+      },
+      "transitGraphConcept": "Two navigable deck corridor loops linked by bow and stern stairs. Four cabins and lobby on D3, two cabins and scene on D4.",
+      "mobilityDetailsStatus": "proposed_not_yet_user_approved",
+      "evidenceCandidateTags": [
+        "ship_cabin_key",
+        "interdeck_stair_witness",
+        "ship_announcement",
+        "port_starboard_alibi"
+      ]
     },
     "MUSIC_BROADCAST": {
-      "status": "user_confirmed_theme_layout_proposed",
+      "status": "user_confirmed_theme_revised_distinct_layout_proposed",
       "layoutDocument": "MUSIC_BROADCAST_LAYOUT.md",
       "replacesTheme": "MUSEUM",
-      "themeDescription": "Music show studio backstage waiting rooms and communal greenroom lobby",
+      "themeDescription": "One-floor U-shaped backstage: left and right greenroom wings, central communal waiting lounge, rear VIP crime-scene room",
+      "structureType": "single_floor_u_backstage_loop_8",
+      "levelRoomCounts": [
+        8
+      ],
       "levels": [
         {
-          "id": "1F",
-          "name": "1층 · 출연자 대기구역",
+          "id": "BACKSTAGE_1F",
+          "name": "단층 · 음악방송 관계자 대기 구역",
           "rooms": [
             {
               "roomId": "LOBBY",
               "displayNumber": null,
               "displayName": "공동 대기홀",
               "features": [
-                "schedule_board",
-                "welcome_desk",
-                "lounge"
+                "show_cue_board",
+                "waiting_lounge",
+                "two_wing_exits"
               ]
             },
             {
-              "roomId": "ROOM_JIRO",
-              "displayNumber": "D-101",
-              "displayName": "찌로 대기실"
-            },
-            {
-              "roomId": "ROOM_MOONIRE",
-              "displayNumber": "D-102",
-              "displayName": "문이레 대기실"
+              "roomId": "ROOM_MATTO",
+              "displayNumber": "A01",
+              "displayName": "마또 대기실",
+              "location": "left_front"
             },
             {
               "roomId": "ROOM_MARIHI",
-              "displayNumber": "D-103",
-              "displayName": "마리히 대기실"
-            }
-          ]
-        },
-        {
-          "id": "2F",
-          "name": "2층 · 특별 대기구역",
-          "rooms": [
+              "displayNumber": "A02",
+              "displayName": "마리히 대기실",
+              "location": "left_middle"
+            },
+            {
+              "roomId": "ROOM_MOONIRE",
+              "displayNumber": "A03",
+              "displayName": "문이레 대기실",
+              "location": "left_rear"
+            },
+            {
+              "roomId": "ROOM_JIRO",
+              "displayNumber": "B01",
+              "displayName": "찌로 대기실",
+              "location": "right_front"
+            },
             {
               "roomId": "ROOM_NAZ",
-              "displayNumber": "D-201",
-              "displayName": "나즈 대기실"
+              "displayNumber": "B02",
+              "displayName": "나즈 대기실",
+              "location": "right_middle"
             },
             {
               "roomId": "ROOM_BOKI",
-              "displayNumber": "D-202",
-              "displayName": "보키 대기실"
-            },
-            {
-              "roomId": "ROOM_MATTO",
-              "displayNumber": "D-203",
-              "displayName": "마또 대기실"
+              "displayNumber": "B03",
+              "displayName": "보키 대기실",
+              "location": "right_rear"
             },
             {
               "roomId": "CRIME_SCENE",
-              "displayNumber": "D-204",
-              "displayName": "특별 대기실 · 살해 현장"
+              "displayNumber": "VIP-01",
+              "displayName": "특별 대기실 · 살해 현장",
+              "location": "rear_center"
             }
           ]
         }
       ],
-      "transitGraphConcept": "backstage access corridor and stairs between 1F/2F; no additional investigable rooms",
-      "mobilityDetailsStatus": "proposed_not_yet_approved",
+      "topology": {
+        "interpretation": "One-floor undirected U-shaped loop; corridor nodes are transit not extra investigable rooms; scene door only rear cross-corridor",
+        "transitNodes": [
+          "LEFT_FRONT",
+          "LEFT_MID",
+          "LEFT_REAR",
+          "REAR_CROSS",
+          "RIGHT_REAR",
+          "RIGHT_MID",
+          "RIGHT_FRONT"
+        ],
+        "transitEdges": [
+          [
+            "LEFT_FRONT",
+            "LEFT_MID"
+          ],
+          [
+            "LEFT_MID",
+            "LEFT_REAR"
+          ],
+          [
+            "LEFT_REAR",
+            "REAR_CROSS"
+          ],
+          [
+            "REAR_CROSS",
+            "RIGHT_REAR"
+          ],
+          [
+            "RIGHT_REAR",
+            "RIGHT_MID"
+          ],
+          [
+            "RIGHT_MID",
+            "RIGHT_FRONT"
+          ]
+        ],
+        "roomEntrances": [
+          {
+            "roomId": "LOBBY",
+            "at": [
+              "LEFT_FRONT",
+              "RIGHT_FRONT"
+            ]
+          },
+          {
+            "roomId": "ROOM_MATTO",
+            "at": [
+              "LEFT_FRONT"
+            ]
+          },
+          {
+            "roomId": "ROOM_MARIHI",
+            "at": [
+              "LEFT_MID"
+            ]
+          },
+          {
+            "roomId": "ROOM_MOONIRE",
+            "at": [
+              "LEFT_REAR"
+            ]
+          },
+          {
+            "roomId": "ROOM_JIRO",
+            "at": [
+              "RIGHT_FRONT"
+            ]
+          },
+          {
+            "roomId": "ROOM_NAZ",
+            "at": [
+              "RIGHT_MID"
+            ]
+          },
+          {
+            "roomId": "ROOM_BOKI",
+            "at": [
+              "RIGHT_REAR"
+            ]
+          },
+          {
+            "roomId": "CRIME_SCENE",
+            "at": [
+              "REAR_CROSS"
+            ]
+          }
+        ],
+        "alternateApproachesToCrimeScene": "LEFT wing or RIGHT wing from LOBBY to REAR_CROSS",
+        "stairs": []
+      },
+      "transitGraphConcept": "Central lobby opens to left/right waiting-room corridors; both wings connect at rear crosspassage; one VIP scene door at rear",
+      "mobilityDetailsStatus": "proposed_not_yet_user_approved",
       "evidenceCandidateTags": [
         "show_cue_sheet",
         "call_time",
-        "access_badge",
+        "backstage_access_badge",
         "dressing_mirror",
         "costume_rack",
         "broadcast_call_light"
       ],
       "nonRoomAreas": [
-        "backstage_corridor",
-        "stairs",
-        "stage_backdrop_only"
+        "left_corridor",
+        "right_corridor",
+        "rear_cross_corridor",
+        "stage_background_only"
       ]
     }
   },
@@ -254,12 +506,12 @@
       "status": "saved_user_working_baseline"
     },
     "cruise": {
-      "status": "draft_layout_existing"
+      "status": "revised_asymmetric_5_3_decks_draft"
     },
     "musicBroadcast": {
-      "status": "user_confirmed_theme_layout_draft"
+      "status": "user_confirmed_music_broadcast_theme_u_shaped_layout_draft"
     },
     "replacedTheme": "MUSEUM",
-    "replacedThemePolicy": "Museum is not an active third theme; use MUSIC_BROADCAST instead."
+    "replacedThemePolicy": "Museum is not an active third theme; music broadcast is the third theme and uses a proposed single-floor U layout"
   }
 }
