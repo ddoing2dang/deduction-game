@@ -1,0 +1,421 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-11-08",
+  "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
+  "implementationStatus": "design_only_unity_not_integrated",
+  "userConfirmedConstraints": {
+    "weaponTypeCount": 12,
+    "weaponTypesSameAcrossThemes": [
+      "HOTEL",
+      "CRUISE",
+      "MUSIC_BROADCAST"
+    ],
+    "findWeaponObjectsOnlyInNpcPersonalRooms": true,
+    "weaponSlotsPerNpcRoom": 3,
+    "baseAssignedSlotsPerNpc": 2,
+    "crossRoomSharedIncomingSlotsPerNpc": 1,
+    "totalNpcRooms": 6,
+    "noWeaponObjectInLobbyOrCrimeScene": true
+  },
+  "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
+  "weaponCatalogStatus": "proposal_for_specific_names_and_base_owners",
+  "methodCatalogStatus": "recommended_5_not_yet_user_approved",
+  "weapons": [
+    {
+      "id": "W01",
+      "name": "커터칼",
+      "primaryMethodId": "M01",
+      "compatibleMethodIds": [
+        "M01"
+      ],
+      "baseOwner": "ROOM_MATTO"
+    },
+    {
+      "id": "W02",
+      "name": "금속 손전등",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02"
+      ],
+      "baseOwner": "ROOM_MATTO"
+    },
+    {
+      "id": "W03",
+      "name": "다목적 가위",
+      "primaryMethodId": "M01",
+      "compatibleMethodIds": [
+        "M01"
+      ],
+      "baseOwner": "ROOM_JIRO"
+    },
+    {
+      "id": "W04",
+      "name": "목도리",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03"
+      ],
+      "baseOwner": "ROOM_JIRO"
+    },
+    {
+      "id": "W05",
+      "name": "유리 문진",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02"
+      ],
+      "baseOwner": "ROOM_MARIHI"
+    },
+    {
+      "id": "W06",
+      "name": "휴대용 고데기",
+      "primaryMethodId": "M05",
+      "compatibleMethodIds": [
+        "M05",
+        "M02"
+      ],
+      "baseOwner": "ROOM_MARIHI"
+    },
+    {
+      "id": "W07",
+      "name": "충전 케이블",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03",
+        "M05"
+      ],
+      "baseOwner": "ROOM_NAZ"
+    },
+    {
+      "id": "W08",
+      "name": "작은 약병",
+      "primaryMethodId": "M04",
+      "compatibleMethodIds": [
+        "M04"
+      ],
+      "baseOwner": "ROOM_NAZ"
+    },
+    {
+      "id": "W09",
+      "name": "유리 음료병",
+      "primaryMethodId": "M04",
+      "compatibleMethodIds": [
+        "M04",
+        "M02"
+      ],
+      "baseOwner": "ROOM_BOKI"
+    },
+    {
+      "id": "W10",
+      "name": "금속 텀블러",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02",
+        "M04"
+      ],
+      "baseOwner": "ROOM_BOKI"
+    },
+    {
+      "id": "W11",
+      "name": "멀티탭",
+      "primaryMethodId": "M05",
+      "compatibleMethodIds": [
+        "M05"
+      ],
+      "baseOwner": "ROOM_MOONIRE"
+    },
+    {
+      "id": "W12",
+      "name": "과도",
+      "primaryMethodId": "M01",
+      "compatibleMethodIds": [
+        "M01"
+      ],
+      "baseOwner": "ROOM_MOONIRE"
+    }
+  ],
+  "methods": [
+    {
+      "id": "M01",
+      "name": "날붙이 공격",
+      "key": "SHARP_INJURY",
+      "aliases": [
+        "날붙이로 공격",
+        "자상",
+        "찌르기",
+        "베기"
+      ],
+      "evidenceTypes": [
+        "injury_pattern",
+        "tool_trace_comparison",
+        "access_timeline"
+      ],
+      "approvalStatus": "recommended_not_yet_user_confirmed"
+    },
+    {
+      "id": "M02",
+      "name": "둔기 타격",
+      "key": "BLUNT_IMPACT",
+      "aliases": [
+        "둔기로 공격",
+        "타격",
+        "가격",
+        "충격"
+      ],
+      "evidenceTypes": [
+        "blunt_impact_pattern",
+        "object_damage_trace",
+        "access_timeline"
+      ],
+      "approvalStatus": "recommended_not_yet_user_confirmed"
+    },
+    {
+      "id": "M03",
+      "name": "목 압박·교살",
+      "key": "NECK_COMPRESSION",
+      "aliases": [
+        "목을 조름",
+        "교살",
+        "목 압박"
+      ],
+      "evidenceTypes": [
+        "neck_compression_findings",
+        "fiber_comparison",
+        "access_timeline"
+      ],
+      "approvalStatus": "recommended_not_yet_user_confirmed"
+    },
+    {
+      "id": "M04",
+      "name": "약물·독성물질 중독",
+      "key": "TOXIC_EFFECT",
+      "aliases": [
+        "약물로 사망",
+        "중독",
+        "독살",
+        "독극물"
+      ],
+      "evidenceTypes": [
+        "toxicology_report",
+        "container_residue_findings",
+        "access_timeline"
+      ],
+      "approvalStatus": "recommended_not_yet_user_confirmed"
+    },
+    {
+      "id": "M05",
+      "name": "전기장비에 의한 감전",
+      "key": "ELECTRICAL_INJURY",
+      "aliases": [
+        "감전",
+        "전기 충격",
+        "전기에 의한 사망"
+      ],
+      "evidenceTypes": [
+        "electrical_exam_report",
+        "device_forensic_findings",
+        "access_timeline"
+      ],
+      "approvalStatus": "recommended_not_yet_user_confirmed"
+    }
+  ],
+  "npcRoomAssignments": [
+    {
+      "roomId": "ROOM_MATTO",
+      "npcId": "MATTO",
+      "npcDisplayName": "마또",
+      "baseWeaponIds": [
+        "W01",
+        "W02"
+      ],
+      "borrowedWeaponId": "W11",
+      "borrowedFromRoomId": "ROOM_MOONIRE",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W01",
+          "instanceId": "ROOM_MATTO_W01"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W02",
+          "instanceId": "ROOM_MATTO_W02"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W11",
+          "instanceId": "ROOM_MATTO_W11",
+          "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+        }
+      ]
+    },
+    {
+      "roomId": "ROOM_JIRO",
+      "npcId": "JJIRO",
+      "npcDisplayName": "찌로",
+      "baseWeaponIds": [
+        "W03",
+        "W04"
+      ],
+      "borrowedWeaponId": "W02",
+      "borrowedFromRoomId": "ROOM_MATTO",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W03",
+          "instanceId": "ROOM_JIRO_W03"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W04",
+          "instanceId": "ROOM_JIRO_W04"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W02",
+          "instanceId": "ROOM_JIRO_W02",
+          "originalTypeOwnerRoomId": "ROOM_MATTO"
+        }
+      ]
+    },
+    {
+      "roomId": "ROOM_MARIHI",
+      "npcId": "MARIHI",
+      "npcDisplayName": "마리히",
+      "baseWeaponIds": [
+        "W05",
+        "W06"
+      ],
+      "borrowedWeaponId": "W03",
+      "borrowedFromRoomId": "ROOM_JIRO",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W05",
+          "instanceId": "ROOM_MARIHI_W05"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W06",
+          "instanceId": "ROOM_MARIHI_W06"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W03",
+          "instanceId": "ROOM_MARIHI_W03",
+          "originalTypeOwnerRoomId": "ROOM_JIRO"
+        }
+      ]
+    },
+    {
+      "roomId": "ROOM_NAZ",
+      "npcId": "NAZ",
+      "npcDisplayName": "나즈",
+      "baseWeaponIds": [
+        "W07",
+        "W08"
+      ],
+      "borrowedWeaponId": "W05",
+      "borrowedFromRoomId": "ROOM_MARIHI",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W07",
+          "instanceId": "ROOM_NAZ_W07"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W08",
+          "instanceId": "ROOM_NAZ_W08"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W05",
+          "instanceId": "ROOM_NAZ_W05",
+          "originalTypeOwnerRoomId": "ROOM_MARIHI"
+        }
+      ]
+    },
+    {
+      "roomId": "ROOM_BOKI",
+      "npcId": "BOKI",
+      "npcDisplayName": "보키",
+      "baseWeaponIds": [
+        "W09",
+        "W10"
+      ],
+      "borrowedWeaponId": "W07",
+      "borrowedFromRoomId": "ROOM_NAZ",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W09",
+          "instanceId": "ROOM_BOKI_W09"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W10",
+          "instanceId": "ROOM_BOKI_W10"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W07",
+          "instanceId": "ROOM_BOKI_W07",
+          "originalTypeOwnerRoomId": "ROOM_NAZ"
+        }
+      ]
+    },
+    {
+      "roomId": "ROOM_MOONIRE",
+      "npcId": "MOONIRE",
+      "npcDisplayName": "문이레",
+      "baseWeaponIds": [
+        "W11",
+        "W12"
+      ],
+      "borrowedWeaponId": "W09",
+      "borrowedFromRoomId": "ROOM_BOKI",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W11",
+          "instanceId": "ROOM_MOONIRE_W11"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W12",
+          "instanceId": "ROOM_MOONIRE_W12"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W09",
+          "instanceId": "ROOM_MOONIRE_W09",
+          "originalTypeOwnerRoomId": "ROOM_BOKI"
+        }
+      ]
+    }
+  ],
+  "weaponInstanceRules": {
+    "weaponId": "Item TYPE used in answer",
+    "instanceId": "Distinct physical copy in an NPC room, required to track traces and access",
+    "copyPolicy": "Same weaponId in two rooms denotes distinct physical objects of the same type. Never treat one physical object as simultaneously present in two rooms.",
+    "crimeScenePolicy": "Only non-weapon evidence such as marks, residue, records and traces in CRIME_SCENE/LOBBY; no physical weapon instance appears outside 6 NPC personal rooms during investigation.",
+    "timelinePolicy": "If a weapon copy was used at the crime scene, a valid case timeline must account for access, transport and return before investigation; otherwise the case is rejected.",
+    "evidencePolicy": "Finding a tool alone does not prove it was used, the method or the culprit. Forensic support + NPC knowledge/access + timeline + unique proof graph required."
+  },
+  "methodSelectionPolicy": {
+    "proposedCount": 5,
+    "primaryMethodsArePhysicalCauseOfDeath": true,
+    "secondaryStoryModifiersAreNotAnswerAxes": [
+      "기습",
+      "유인",
+      "우발적 다툼",
+      "사고 위장"
+    ],
+    "methodAndWeaponMustBeCompatible": true,
+    "weaponOwnershipNeverAutomaticallyDeterminesGuilt": true,
+    "culpritMustBeSampledFromSixWithoutPersistentBias": true,
+    "neverInventUnapprovedEvidence": true,
+    "caseNeedsProofOfMethodBeyondWeaponPresence": true
+  }
+}
