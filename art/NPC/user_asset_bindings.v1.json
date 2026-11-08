@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "documentedAt": "2026-11-08",
   "status": "user_uploaded_asset_mapping_design_only_not_unity_integrated",
   "sources": [
@@ -23,9 +23,9 @@
     {
       "sourceFolder": "NPC_Sprites/01_silver",
       "npcId": "MATTO",
-      "npcDisplayName": "서은별",
+      "npcDisplayName": "마도아",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MATTO_SeoEunbyeol",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MATTO_MaDoa",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -33,14 +33,14 @@
       },
       "legacyNpcDisplayName": "마또",
       "hairColorKo": "은발",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     },
     {
       "sourceFolder": "NPC_Sprites/02_blonde",
       "npcId": "MARIHI",
-      "npcDisplayName": "윤서린",
+      "npcDisplayName": "마리희",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_YunSeorin",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRihui",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -48,14 +48,14 @@
       },
       "legacyNpcDisplayName": "마리히",
       "hairColorKo": "금발",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     },
     {
       "sourceFolder": "NPC_Sprites/03_brown",
       "npcId": "NAZ",
-      "npcDisplayName": "한소담",
+      "npcDisplayName": "나주아",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/NAZ_HanSodam",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/NAZ_NaJua",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -63,14 +63,14 @@
       },
       "legacyNpcDisplayName": "나즈",
       "hairColorKo": "갈색",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     },
     {
       "sourceFolder": "NPC_Sprites/04_red",
       "npcId": "BOKI",
-      "npcDisplayName": "강다현",
+      "npcDisplayName": "보희",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_KangDahyeon",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_BoHui",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -78,14 +78,14 @@
       },
       "legacyNpcDisplayName": "보키",
       "hairColorKo": "빨강",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     },
     {
       "sourceFolder": "NPC_Sprites/05_green",
       "npcId": "JJIRO",
-      "npcDisplayName": "이다온",
+      "npcDisplayName": "지로아",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/JJIRO_LeeDaon",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -93,14 +93,14 @@
       },
       "legacyNpcDisplayName": "찌로",
       "hairColorKo": "연두",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     },
     {
       "sourceFolder": "NPC_Sprites/06_purple",
       "npcId": "MOONIRE",
-      "npcDisplayName": "백시은",
+      "npcDisplayName": "문이래",
       "identityStatus": "user_confirmed_color_to_legacy_id",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_BaekSieun",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrae",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
@@ -108,7 +108,7 @@
       },
       "legacyNpcDisplayName": "문이레",
       "hairColorKo": "보라",
-      "displayNameStatus": "new_korean_name_authored_for_user_request"
+      "displayNameStatus": "phonetic_korean_recreation_user_requested"
     }
   ],
   "approvedNpcIds": [
