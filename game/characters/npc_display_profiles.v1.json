@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "documentedAt": "2026-11-08",
   "status": "authored_new_korean_display_names_source_mapping_user_confirmed_not_unity_integrated",
   "purpose": "6 NPC의 컬러 스프라이트를 기존 내부 ID와 안전히 연결하되 플레이어 화면에는 새 한국식 이름만 표시.",
@@ -10,83 +10,84 @@
     "fallbackWhenNoMapping": "reject_unmapped_npc_instead_of_guessing",
     "dialogueLineIdMustRemainUnchanged": true,
     "doNotRewriteOriginal714Lines": true,
-    "noVillainVisualCues": true
+    "noVillainVisualCues": true,
+    "displayNameRevision": "prefer maximum phonetic similarity to original character name while sounding like Korean personal name"
   },
   "characters": [
     {
       "npcId": "MATTO",
-      "displayName": "서은별",
+      "displayName": "마도아",
       "legacyName": "마또",
       "hairColorKo": "은발",
       "sourceSpriteSlot": "01_silver",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/MATTO_SeoEunbyeol",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MATTO_MaDoa",
       "personalitySummary": "활발하고 엉뚱하지만 속마음을 쉽게 드러내지 않음",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     },
     {
       "npcId": "MARIHI",
-      "displayName": "윤서린",
+      "displayName": "마리희",
       "legacyName": "마리히",
       "hairColorKo": "금발",
       "sourceSpriteSlot": "02_blonde",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_YunSeorin",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRihui",
       "personalitySummary": "문학과 상상을 좋아하는 명랑한 성격",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     },
     {
       "npcId": "NAZ",
-      "displayName": "한소담",
+      "displayName": "나주아",
       "legacyName": "나즈",
       "hairColorKo": "갈색",
       "sourceSpriteSlot": "03_brown",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/NAZ_HanSodam",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/NAZ_NaJua",
       "personalitySummary": "포근하고 다정하면서도 기준이 분명함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     },
     {
       "npcId": "BOKI",
-      "displayName": "강다현",
+      "displayName": "보희",
       "legacyName": "보키",
       "hairColorKo": "빨강",
       "sourceSpriteSlot": "04_red",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/BOKI_KangDahyeon",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/BOKI_BoHui",
       "personalitySummary": "소탈하고 친근하며 음식 취향이 독특함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     },
     {
       "npcId": "JJIRO",
-      "displayName": "이다온",
+      "displayName": "지로아",
       "legacyName": "찌로",
       "hairColorKo": "연두",
       "sourceSpriteSlot": "05_green",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_LeeDaon",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "personalitySummary": "털털하고 긍정적이며 사람을 배려함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     },
     {
       "npcId": "MOONIRE",
-      "displayName": "백시은",
+      "displayName": "문이래",
       "legacyName": "문이레",
       "hairColorKo": "보라",
       "sourceSpriteSlot": "06_purple",
-      "assetFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_BaekSieun",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrae",
       "personalitySummary": "조용하고 여리지만 자기 생각은 단단함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "new Korean-name creative assignment at user request"
+      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
     }
   ],
   "lookupByNpcId": {
-    "MATTO": "서은별",
-    "MARIHI": "윤서린",
-    "NAZ": "한소담",
-    "BOKI": "강다현",
-    "JJIRO": "이다온",
-    "MOONIRE": "백시은"
+    "MATTO": "마도아",
+    "MARIHI": "마리희",
+    "NAZ": "나주아",
+    "BOKI": "보희",
+    "JJIRO": "지로아",
+    "MOONIRE": "문이래"
   },
   "themes": [
     "HOTEL",
