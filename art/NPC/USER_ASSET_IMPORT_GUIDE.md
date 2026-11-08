@@ -14,9 +14,17 @@
 
 카드 중앙 투명창 **아래**에 NPC 초상화/사진을 깔고, **위**에 카드 프레임 및 제목·설명 UI 텍스트를 배치한다. 카드 PNG 속 제목칸/설명칸에 문자 래스터화하지 않는다.
 
-## NPC 스프라이트 6개 슬롯
-`01_silver`, `02_blonde`, `03_brown`, `04_red`, `05_green`, `06_purple`. 이 ZIP의 제작 README에는 이름 대응표가 없다. **마또·마리히·나즈·찌로·보키·문이레 이름을 임의로 배정하지 않는다.** 확인된 사용자 기준 원화와 6개 ID 대응을 확정하면 `user_asset_bindings.v1.json`의 `npcId`를 채운다.
+## NPC 스프라이트 6개 슬롯 — 사용자 직접 제공한 색상별 정체 + 신규 한국식 이름
+| 머리색/소스 폴더 | 내부 npcId | 기존 이름(기술 참조만) | 신규 게임 표시 이름 |
+|---|---|---|---|
+| 은발 / `01_silver` | `MATTO` | 마또 | **서은별** |
+| 금발 / `02_blonde` | `MARIHI` | 마리히 | **윤서린** |
+| 갈색 / `03_brown` | `NAZ` | 나즈 | **한소담** |
+| 빨강 / `04_red` | `BOKI` | 보키 | **강다현** |
+| 연두 / `05_green` | `JJIRO` | 찌로 | **이다온** |
+| 보라 / `06_purple` | `MOONIRE` | 문이레 | **백시은** |
 
+새 이름은 화면 표시용이며 사용자 제공 색상-캐릭터 대응은 확정됨. `game/characters/npc_display_profiles.v1.json`이 단일 표시 이름 기준표이다. 기존 `npcId`, `roomId`, `lineId`, 714개 대사 원문을 삭제·변형하지 말고 UI에서 `npcId → displayName`으로 치환한다. 기술 폴더 기본명은 `MATTO_SeoEunbyeol` 형식을 사용한다.
 - `MapIdle_N/NE/E/SE/S/SW/W/NW.png`: 8방향 **정적** 맵 배치. 걷기 애니메이션으로 오인하지 않는다.
 - `DialoguePortrait_neutral/smile/surprise/worried/angry/serious.png`: 대사 `emotionTag`와 정확히 매핑해 심문에 사용한다.
 - `ReactionGesture_explaining/startled/thoughtful.png`: 상황에 맞는 정적 반응. `animationTag`의 `react` 하나만 보고 포즈를 고정 배정하지 않는다.
@@ -26,11 +34,11 @@
 
 ## 저장된 대사 480개와 연결 규칙
 - 공통 `game/dialogue/curated/common_situations.v1.json` 156개 + 호텔·크루즈·방송 `game/dialogue/curated/{hotel,cruise,music_broadcast}.v1.json` 각각 108개.
-- 선택된 `lineId` → 승인 조건 검증 → `npcId`(확정 매핑 필요) → `emotionTag`로 초상화 선택 → 텍스트 표시.
+- 선택된 `lineId` → 승인 조건 검증 → 사용자 확정 대응의 `npcId` → 신규 표시명 + `emotionTag`로 초상화 선택 → 텍스트 표시.
 - NPC 지식/실제 증거/사건 사실/작가 승인 없이 사건 조건부 대사 사용 금지. 캐릭터 외형만으로 범인을 고정 암시하지 않는다.
 - 다른 서사에서 쓰인 카드 UI는 과거 카드 손패/블러핑 게임 규칙을 복구하는 용도가 아니다.
 
 ## 실행 상태
-**자산 내용 확인 + GitHub 바인딩 설명 문서 저장은 완료, NPC PNG 바이너리 GitHub 적재·Unity 임포트·씬 연결·기능 테스트·빌드·배포는 미실시.** 기존 Unity 게임파일 및 원본 아트는 수정하지 않았다.
+**자산 내용 확인 + 색상·이름 확정 바인딩/새 표시명 문서 저장은 완료, NPC PNG 바이너리 GitHub 적재·Unity 임포트·씬 연결·기능 테스트·빌드·배포는 미실시.** 기존 Unity 게임파일 및 원본 아트는 수정하지 않았다.
 
 상세 규격과 연결 설계는 `art/NPC/user_asset_bindings.v1.json`, `NPC_SPRITE_SPEC.md`, `game/dialogue/curated/README.md`를 참조.
