@@ -1,5 +1,11 @@
 # 새 Unity 프로젝트 시작 가이드 (기존 구현 전체 초기화)
 
+## 신규 제작 기록 (2026-11-09)
+
+`game/UnityProject`에 Unity **6000.3.26f1 / URP 17.3.0** 신규 프로젝트와 `DialoguePrototype` 씬, `DialoguePanel` 프리팹을 생성했다. 구형 로컬 프로젝트는 수정·삭제하지 않고 별도 clone에서 작업했다. Unity MCP 도구가 연결되어 있지 않아 설치된 Universal 3D 템플릿과 Unity Editor batch Edit Mode를 사용했다. **Unity Hub GUI로 생성한 것은 아니다.**
+
+자유 질문·NPC별 대화 기록·3테마 프레임 교체·범인 전용 거짓 진술 게이트 코드를 포함한다. 승인된 실제 사건/대사 선택 어댑터는 미연결이며 미승인 대사는 출력하지 않는다. 기능 테스트·Play Mode·빌드는 실행하지 않았다. 실제 생성 파일, 보존 방식, 미완료 범위는 [`UnityProject/README.md`](UnityProject/README.md)를 참조한다. 아래는 리셋 당시 기록과 재생성 지침이다.
+
 **현재 상태 (2026-11-09):** 기존 `game/UnityProject/` 구형 프로젝트 파일 **18개를 GitHub main에서 제거**함. Unity 씬·C# 자동 생성/카드/턴/구형 맵·프로젝트 설정은 재사용하지 않는다.
 
 ## 완전한 되돌리기 지점

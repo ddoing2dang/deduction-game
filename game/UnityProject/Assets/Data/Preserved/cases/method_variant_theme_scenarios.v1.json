@@ -1,0 +1,3293 @@
+{
+  "schemaVersion": "1.4.0",
+  "createdAt": "2026-11-08",
+  "purpose": "27 authored case blueprints = nine proposed subtypes × three approved world themes",
+  "implementationStatus": "design_only_not_playable_or_validated",
+  "approvedMethodCategoryCount": 4,
+  "proposedMethodVariantCount": 9,
+  "scenariosCount": 27,
+  "weaponTypeConstraint": {
+    "globalWeaponTypeCount": 12,
+    "npcRoomCount": 6,
+    "weaponObjectsPerRoom": 3,
+    "sharedTypeInstances": 18,
+    "onlyNPCPersonalRoomItems": true
+  },
+  "methodGradingContract": {
+    "culpritCorrectRequired": true,
+    "methodParentCategoryCorrectRequired": true,
+    "weaponTypeCorrectRequired": true,
+    "methodVariantCorrectRequired": false,
+    "methodVariantNotInScoringKeys": true,
+    "playerExplicitSubtypeParsedToParent": true,
+    "finalAnswerFields": [
+      "culpritNpcId",
+      "methodId",
+      "weaponId"
+    ],
+    "fourParentOnlyScoring": true
+  },
+  "constraints": "Blueprints are ingredient proposals and do not specify actual culprit, victim, method-forensic proof, timeline, or approved NPC knowledge. None is an accepted/generated playable case until validated separately.",
+  "dialogueSource": "game/dialogue/method_variant_theme_lines.v1.json",
+  "scenarios": [
+    {
+      "scenarioId": "HOTEL_M01_V1",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V1",
+      "methodVariantName": "찌르기형(자창)",
+      "weaponId": "W12",
+      "weaponName": "과일칼",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W12"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 찌른 상처와 관련된 검사 기록을 확인한다. 과일칼의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M01_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "찌른 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M01_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "과일칼 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M01_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "204호 앞 복도 출입 시각표 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "자창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M01_V1_MATTO_EVIDENCE_01",
+        "HOTEL_M01_V1_MATTO_ROUTE_01",
+        "HOTEL_M01_V1_MATTO_ITEM_01",
+        "HOTEL_M01_V1_JJIRO_EVIDENCE_01",
+        "HOTEL_M01_V1_JJIRO_ROUTE_01",
+        "HOTEL_M01_V1_JJIRO_ITEM_01",
+        "HOTEL_M01_V1_MARIHI_EVIDENCE_01",
+        "HOTEL_M01_V1_MARIHI_ROUTE_01",
+        "HOTEL_M01_V1_MARIHI_ITEM_01",
+        "HOTEL_M01_V1_NAZ_EVIDENCE_01",
+        "HOTEL_M01_V1_NAZ_ROUTE_01",
+        "HOTEL_M01_V1_NAZ_ITEM_01",
+        "HOTEL_M01_V1_BOKI_EVIDENCE_01",
+        "HOTEL_M01_V1_BOKI_ROUTE_01",
+        "HOTEL_M01_V1_BOKI_ITEM_01",
+        "HOTEL_M01_V1_MOONIRE_EVIDENCE_01",
+        "HOTEL_M01_V1_MOONIRE_ROUTE_01",
+        "HOTEL_M01_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "찌름과 베임 감식 구분",
+        "도구·상처의 비교 기록 유무",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "일상적인 날붙이 도구. 각 테마 반입 규정과 상황에 맞을 때만 개인실 배치; 반드시 감식으로 사용 입증.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M01_V1",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V1",
+      "methodVariantName": "찌르기형(자창)",
+      "weaponId": "W01",
+      "weaponName": "커터칼",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W01"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 찌른 상처와 관련된 검사 기록을 확인한다. 커터칼의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M01_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "찌른 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M01_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "커터칼 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M01_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "앞계단과 403호 접근 목격 진술 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "자창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M01_V1_MATTO_EVIDENCE_01",
+        "CRUISE_M01_V1_MATTO_ROUTE_01",
+        "CRUISE_M01_V1_MATTO_ITEM_01",
+        "CRUISE_M01_V1_JJIRO_EVIDENCE_01",
+        "CRUISE_M01_V1_JJIRO_ROUTE_01",
+        "CRUISE_M01_V1_JJIRO_ITEM_01",
+        "CRUISE_M01_V1_MARIHI_EVIDENCE_01",
+        "CRUISE_M01_V1_MARIHI_ROUTE_01",
+        "CRUISE_M01_V1_MARIHI_ITEM_01",
+        "CRUISE_M01_V1_NAZ_EVIDENCE_01",
+        "CRUISE_M01_V1_NAZ_ROUTE_01",
+        "CRUISE_M01_V1_NAZ_ITEM_01",
+        "CRUISE_M01_V1_BOKI_EVIDENCE_01",
+        "CRUISE_M01_V1_BOKI_ROUTE_01",
+        "CRUISE_M01_V1_BOKI_ITEM_01",
+        "CRUISE_M01_V1_MOONIRE_EVIDENCE_01",
+        "CRUISE_M01_V1_MOONIRE_ROUTE_01",
+        "CRUISE_M01_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "찌름과 베임 감식 구분",
+        "도구·상처의 비교 기록 유무",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "익숙한 작은 날붙이. 실제 상처 형태와 흔적이 맞아야 사용 가능.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M01_V1",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V1",
+      "methodVariantName": "찌르기형(자창)",
+      "weaponId": "W03",
+      "weaponName": "가위",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W03"
+        },
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W03"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 찌른 상처와 관련된 검사 기록을 확인한다. 가위의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "찌른 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_JIRO",
+            "ROOM_MARIHI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "가위 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "VIP-01 방문 시간과 호출 순서표 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "자창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M01_V1_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M01_V1_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M01_V1_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M01_V1_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M01_V1_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M01_V1_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V1_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "찌름과 베임 감식 구분",
+        "도구·상처의 비교 기록 유무",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "가방이나 개인실에 있을 법한 흔한 도구. 상처와 개별 물건의 흔적이 맞아야 사용 가능.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M01_V2",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V2",
+      "methodVariantName": "베기형(절창)",
+      "weaponId": "W03",
+      "weaponName": "가위",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W03"
+        },
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W03"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 베인 상처와 관련된 검사 기록을 확인한다. 가위의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M01_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "베인 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M01_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_JIRO",
+            "ROOM_MARIHI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "가위 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M01_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "2층 객실 출입 표식 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "절창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M01_V2_MATTO_EVIDENCE_01",
+        "HOTEL_M01_V2_MATTO_ROUTE_01",
+        "HOTEL_M01_V2_MATTO_ITEM_01",
+        "HOTEL_M01_V2_JJIRO_EVIDENCE_01",
+        "HOTEL_M01_V2_JJIRO_ROUTE_01",
+        "HOTEL_M01_V2_JJIRO_ITEM_01",
+        "HOTEL_M01_V2_MARIHI_EVIDENCE_01",
+        "HOTEL_M01_V2_MARIHI_ROUTE_01",
+        "HOTEL_M01_V2_MARIHI_ITEM_01",
+        "HOTEL_M01_V2_NAZ_EVIDENCE_01",
+        "HOTEL_M01_V2_NAZ_ROUTE_01",
+        "HOTEL_M01_V2_NAZ_ITEM_01",
+        "HOTEL_M01_V2_BOKI_EVIDENCE_01",
+        "HOTEL_M01_V2_BOKI_ROUTE_01",
+        "HOTEL_M01_V2_BOKI_ITEM_01",
+        "HOTEL_M01_V2_MOONIRE_EVIDENCE_01",
+        "HOTEL_M01_V2_MOONIRE_ROUTE_01",
+        "HOTEL_M01_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "절창 소견과 자창을 구별",
+        "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "가방이나 개인실에 있을 법한 흔한 도구. 상처와 개별 물건의 흔적이 맞아야 사용 가능.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M01_V2",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V2",
+      "methodVariantName": "베기형(절창)",
+      "weaponId": "W12",
+      "weaponName": "과일칼",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W12"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 베인 상처와 관련된 검사 기록을 확인한다. 과일칼의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M01_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "베인 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M01_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "과일칼 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M01_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "4데크 선실 복도 출입 시각 메모 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "절창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M01_V2_MATTO_EVIDENCE_01",
+        "CRUISE_M01_V2_MATTO_ROUTE_01",
+        "CRUISE_M01_V2_MATTO_ITEM_01",
+        "CRUISE_M01_V2_JJIRO_EVIDENCE_01",
+        "CRUISE_M01_V2_JJIRO_ROUTE_01",
+        "CRUISE_M01_V2_JJIRO_ITEM_01",
+        "CRUISE_M01_V2_MARIHI_EVIDENCE_01",
+        "CRUISE_M01_V2_MARIHI_ROUTE_01",
+        "CRUISE_M01_V2_MARIHI_ITEM_01",
+        "CRUISE_M01_V2_NAZ_EVIDENCE_01",
+        "CRUISE_M01_V2_NAZ_ROUTE_01",
+        "CRUISE_M01_V2_NAZ_ITEM_01",
+        "CRUISE_M01_V2_BOKI_EVIDENCE_01",
+        "CRUISE_M01_V2_BOKI_ROUTE_01",
+        "CRUISE_M01_V2_BOKI_ITEM_01",
+        "CRUISE_M01_V2_MOONIRE_EVIDENCE_01",
+        "CRUISE_M01_V2_MOONIRE_ROUTE_01",
+        "CRUISE_M01_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "절창 소견과 자창을 구별",
+        "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "일상적인 날붙이 도구. 각 테마 반입 규정과 상황에 맞을 때만 개인실 배치; 반드시 감식으로 사용 입증.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M01_V2",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M01",
+      "methodName": "자상·절창",
+      "methodVariantId": "M01_V2",
+      "methodVariantName": "베기형(절창)",
+      "weaponId": "W01",
+      "weaponName": "커터칼",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W01"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 베인 상처와 관련된 검사 기록을 확인한다. 커터칼의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "베인 상처와 관련된 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "커터칼 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M01_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "좌우 대기실 앞 목격 및 출연 순서표 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "절창 감식과 도구 흔적 비교",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M01_V2_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M01_V2_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M01_V2_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M01_V2_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M01_V2_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M01_V2_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M01_V2_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M01_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "절창 소견과 자창을 구별",
+        "물건이 단순히 날붙이라는 사실만으로 수법 확정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "익숙한 작은 날붙이. 실제 상처 형태와 흔적이 맞아야 사용 가능.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M02_V1",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V1",
+      "methodVariantName": "직접 타격형",
+      "weaponId": "W05",
+      "weaponName": "아령",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W05"
+        },
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W05"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 무거운 물건에 부딪힌 흔적에 관한 검사 기록을 확인한다. 아령의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M02_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "무거운 물건에 부딪힌 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M02_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MARIHI",
+            "ROOM_NAZ"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "아령 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M02_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "204호 복도에서의 목격 진술 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "둔력 손상 감식·물체 접촉 기록",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M02_V1_MATTO_EVIDENCE_01",
+        "HOTEL_M02_V1_MATTO_ROUTE_01",
+        "HOTEL_M02_V1_MATTO_ITEM_01",
+        "HOTEL_M02_V1_JJIRO_EVIDENCE_01",
+        "HOTEL_M02_V1_JJIRO_ROUTE_01",
+        "HOTEL_M02_V1_JJIRO_ITEM_01",
+        "HOTEL_M02_V1_MARIHI_EVIDENCE_01",
+        "HOTEL_M02_V1_MARIHI_ROUTE_01",
+        "HOTEL_M02_V1_MARIHI_ITEM_01",
+        "HOTEL_M02_V1_NAZ_EVIDENCE_01",
+        "HOTEL_M02_V1_NAZ_ROUTE_01",
+        "HOTEL_M02_V1_NAZ_ITEM_01",
+        "HOTEL_M02_V1_BOKI_EVIDENCE_01",
+        "HOTEL_M02_V1_BOKI_ROUTE_01",
+        "HOTEL_M02_V1_BOKI_ITEM_01",
+        "HOTEL_M02_V1_MOONIRE_EVIDENCE_01",
+        "HOTEL_M02_V1_MOONIRE_ROUTE_01",
+        "HOTEL_M02_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "직접 타격 흔적과 동선이 일치",
+        "소지품 종류만으로 상처 원인 단정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인이 운동용으로 소지할 수 있는 무거운 도구. 해당 객실에 가져온 합리적인 사연과 사건 물리 구조가 없으면 사용 불가.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M02_V1",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V1",
+      "methodVariantName": "직접 타격형",
+      "weaponId": "W08",
+      "weaponName": "망치",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W08"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 무거운 물건에 부딪힌 흔적에 관한 검사 기록을 확인한다. 망치의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M02_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "무거운 물건에 부딪힌 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M02_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_NAZ"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "망치 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M02_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "선수·선미 계단 양쪽 목격 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "둔력 손상 감식·물체 접촉 기록",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M02_V1_MATTO_EVIDENCE_01",
+        "CRUISE_M02_V1_MATTO_ROUTE_01",
+        "CRUISE_M02_V1_MATTO_ITEM_01",
+        "CRUISE_M02_V1_JJIRO_EVIDENCE_01",
+        "CRUISE_M02_V1_JJIRO_ROUTE_01",
+        "CRUISE_M02_V1_JJIRO_ITEM_01",
+        "CRUISE_M02_V1_MARIHI_EVIDENCE_01",
+        "CRUISE_M02_V1_MARIHI_ROUTE_01",
+        "CRUISE_M02_V1_MARIHI_ITEM_01",
+        "CRUISE_M02_V1_NAZ_EVIDENCE_01",
+        "CRUISE_M02_V1_NAZ_ROUTE_01",
+        "CRUISE_M02_V1_NAZ_ITEM_01",
+        "CRUISE_M02_V1_BOKI_EVIDENCE_01",
+        "CRUISE_M02_V1_BOKI_ROUTE_01",
+        "CRUISE_M02_V1_BOKI_ITEM_01",
+        "CRUISE_M02_V1_MOONIRE_EVIDENCE_01",
+        "CRUISE_M02_V1_MOONIRE_ROUTE_01",
+        "CRUISE_M02_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "직접 타격 흔적과 동선이 일치",
+        "소지품 종류만으로 상처 원인 단정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "눈에 익은 공구. 호텔·선실·대기실에 가져온 이유와 출입·이동 사연을 사건에서 설명해야 함.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M02_V1",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V1",
+      "methodVariantName": "직접 타격형",
+      "weaponId": "W09",
+      "weaponName": "유리병",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W09"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W09"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 무거운 물건에 부딪힌 흔적에 관한 검사 기록을 확인한다. 유리병의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "무거운 물건에 부딪힌 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_BOKI",
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "유리병 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "공동 대기홀 호출 패널 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "둔력 손상 감식·물체 접촉 기록",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M02_V1_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M02_V1_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M02_V1_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M02_V1_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M02_V1_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M02_V1_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V1_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "직접 타격 흔적과 동선이 일치",
+        "소지품 종류만으로 상처 원인 단정 금지",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인이 가진 유리 용기. 둔력 손상의 의학적·물리적 원인으로 성립할 때만 인정.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M02_V2",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V2",
+      "methodVariantName": "낙하물 충격형",
+      "weaponId": "W08",
+      "weaponName": "망치",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W08"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 떨어진 물건에 부딪혔는지 살펴본 검사 기록을 확인한다. 망치의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M02_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "떨어진 물건에 부딪혔는지 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M02_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_NAZ"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "망치 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M02_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "204호 인접 소품 위치 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "충격 원인·물체 위치·시각의 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Falling-object variant requires feasible room geometry and genuine culpable causal evidence; do not automatically enable it without architectural review."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M02_V2_MATTO_EVIDENCE_01",
+        "HOTEL_M02_V2_MATTO_ROUTE_01",
+        "HOTEL_M02_V2_MATTO_ITEM_01",
+        "HOTEL_M02_V2_JJIRO_EVIDENCE_01",
+        "HOTEL_M02_V2_JJIRO_ROUTE_01",
+        "HOTEL_M02_V2_JJIRO_ITEM_01",
+        "HOTEL_M02_V2_MARIHI_EVIDENCE_01",
+        "HOTEL_M02_V2_MARIHI_ROUTE_01",
+        "HOTEL_M02_V2_MARIHI_ITEM_01",
+        "HOTEL_M02_V2_NAZ_EVIDENCE_01",
+        "HOTEL_M02_V2_NAZ_ROUTE_01",
+        "HOTEL_M02_V2_NAZ_ITEM_01",
+        "HOTEL_M02_V2_BOKI_EVIDENCE_01",
+        "HOTEL_M02_V2_BOKI_ROUTE_01",
+        "HOTEL_M02_V2_BOKI_ITEM_01",
+        "HOTEL_M02_V2_MOONIRE_EVIDENCE_01",
+        "HOTEL_M02_V2_MOONIRE_ROUTE_01",
+        "HOTEL_M02_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "사건실 공간에 작은 소품의 위치 변화가 가능한지 3D 도면 승인 필요",
+        "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
+        "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "눈에 익은 공구. 호텔·선실·대기실에 가져온 이유와 출입·이동 사연을 사건에서 설명해야 함.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M02_V2",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V2",
+      "methodVariantName": "낙하물 충격형",
+      "weaponId": "W09",
+      "weaponName": "유리병",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W09"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W09"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 떨어진 물건에 부딪혔는지 살펴본 검사 기록을 확인한다. 유리병의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M02_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "떨어진 물건에 부딪혔는지 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M02_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_BOKI",
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "유리병 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M02_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "4데크 선실 보관 위치 자료 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "충격 원인·물체 위치·시각의 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Falling-object variant requires feasible room geometry and genuine culpable causal evidence; do not automatically enable it without architectural review."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M02_V2_MATTO_EVIDENCE_01",
+        "CRUISE_M02_V2_MATTO_ROUTE_01",
+        "CRUISE_M02_V2_MATTO_ITEM_01",
+        "CRUISE_M02_V2_JJIRO_EVIDENCE_01",
+        "CRUISE_M02_V2_JJIRO_ROUTE_01",
+        "CRUISE_M02_V2_JJIRO_ITEM_01",
+        "CRUISE_M02_V2_MARIHI_EVIDENCE_01",
+        "CRUISE_M02_V2_MARIHI_ROUTE_01",
+        "CRUISE_M02_V2_MARIHI_ITEM_01",
+        "CRUISE_M02_V2_NAZ_EVIDENCE_01",
+        "CRUISE_M02_V2_NAZ_ROUTE_01",
+        "CRUISE_M02_V2_NAZ_ITEM_01",
+        "CRUISE_M02_V2_BOKI_EVIDENCE_01",
+        "CRUISE_M02_V2_BOKI_ROUTE_01",
+        "CRUISE_M02_V2_BOKI_ITEM_01",
+        "CRUISE_M02_V2_MOONIRE_EVIDENCE_01",
+        "CRUISE_M02_V2_MOONIRE_ROUTE_01",
+        "CRUISE_M02_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "사건실 공간에 작은 소품의 위치 변화가 가능한지 3D 도면 승인 필요",
+        "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
+        "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인이 가진 유리 용기. 둔력 손상의 의학적·물리적 원인으로 성립할 때만 인정.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M02_V2",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M02",
+      "methodName": "둔력 손상",
+      "methodVariantId": "M02_V2",
+      "methodVariantName": "낙하물 충격형",
+      "weaponId": "W05",
+      "weaponName": "아령",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W05"
+        },
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W05"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 떨어진 물건에 부딪혔는지 살펴본 검사 기록을 확인한다. 아령의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "떨어진 물건에 부딪혔는지 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MARIHI",
+            "ROOM_NAZ"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "아령 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M02_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "무대 소품 정리표와 VIP-01 출입 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "충격 원인·물체 위치·시각의 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Falling-object variant requires feasible room geometry and genuine culpable causal evidence; do not automatically enable it without architectural review."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M02_V2_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M02_V2_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M02_V2_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M02_V2_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M02_V2_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M02_V2_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M02_V2_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M02_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "사건실 공간에 작은 소품의 위치 변화가 가능한지 3D 도면 승인 필요",
+        "낙하/충격의 인과와 물건의 개인실 복귀를 확인하지 못하면 템플릿 선택 금지",
+        "둔력 손상은 직접 타격형과 구별되는 검증 기록 필요",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인이 운동용으로 소지할 수 있는 무거운 도구. 해당 객실에 가져온 합리적인 사연과 사건 물리 구조가 없으면 사용 불가.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "variantEnabledForGameplay": false,
+      "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M03_V1",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V1",
+      "methodVariantName": "목 압박·교살형",
+      "weaponId": "W04",
+      "weaponName": "벨트",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W04"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 목이 눌린 흔적에 관한 검사 기록을 확인한다. 벨트의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M03_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "목이 눌린 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M03_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_JIRO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "벨트 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M03_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "객실 번호가 적힌 로비 메모 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "목 압박 소견과 실물 흔적의 일치",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M03_V1_MATTO_EVIDENCE_01",
+        "HOTEL_M03_V1_MATTO_ROUTE_01",
+        "HOTEL_M03_V1_MATTO_ITEM_01",
+        "HOTEL_M03_V1_JJIRO_EVIDENCE_01",
+        "HOTEL_M03_V1_JJIRO_ROUTE_01",
+        "HOTEL_M03_V1_JJIRO_ITEM_01",
+        "HOTEL_M03_V1_MARIHI_EVIDENCE_01",
+        "HOTEL_M03_V1_MARIHI_ROUTE_01",
+        "HOTEL_M03_V1_MARIHI_ITEM_01",
+        "HOTEL_M03_V1_NAZ_EVIDENCE_01",
+        "HOTEL_M03_V1_NAZ_ROUTE_01",
+        "HOTEL_M03_V1_NAZ_ITEM_01",
+        "HOTEL_M03_V1_BOKI_EVIDENCE_01",
+        "HOTEL_M03_V1_BOKI_ROUTE_01",
+        "HOTEL_M03_V1_BOKI_ITEM_01",
+        "HOTEL_M03_V1_MOONIRE_EVIDENCE_01",
+        "HOTEL_M03_V1_MOONIRE_ROUTE_01",
+        "HOTEL_M03_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "목 압박 관련 법의학 소견이 존재",
+        "천/가방끈의 단순 소지는 교살 증거가 아님",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인 의복에 있는 평범한 소지품. 목 압박 소견이 독립적으로 입증된 경우에만 범행 도구 후보.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M03_V1",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V1",
+      "methodVariantName": "목 압박·교살형",
+      "weaponId": "W07",
+      "weaponName": "가방끈",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_NAZ",
+          "instanceId": "ROOM_NAZ_W07"
+        },
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W07"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 목이 눌린 흔적에 관한 검사 기록을 확인한다. 가방끈의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M03_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "목이 눌린 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M03_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_NAZ",
+            "ROOM_BOKI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "가방끈 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M03_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "3데크 선실과 403호 동선 메모 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "목 압박 소견과 실물 흔적의 일치",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M03_V1_MATTO_EVIDENCE_01",
+        "CRUISE_M03_V1_MATTO_ROUTE_01",
+        "CRUISE_M03_V1_MATTO_ITEM_01",
+        "CRUISE_M03_V1_JJIRO_EVIDENCE_01",
+        "CRUISE_M03_V1_JJIRO_ROUTE_01",
+        "CRUISE_M03_V1_JJIRO_ITEM_01",
+        "CRUISE_M03_V1_MARIHI_EVIDENCE_01",
+        "CRUISE_M03_V1_MARIHI_ROUTE_01",
+        "CRUISE_M03_V1_MARIHI_ITEM_01",
+        "CRUISE_M03_V1_NAZ_EVIDENCE_01",
+        "CRUISE_M03_V1_NAZ_ROUTE_01",
+        "CRUISE_M03_V1_NAZ_ITEM_01",
+        "CRUISE_M03_V1_BOKI_EVIDENCE_01",
+        "CRUISE_M03_V1_BOKI_ROUTE_01",
+        "CRUISE_M03_V1_BOKI_ITEM_01",
+        "CRUISE_M03_V1_MOONIRE_EVIDENCE_01",
+        "CRUISE_M03_V1_MOONIRE_ROUTE_01",
+        "CRUISE_M03_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "목 압박 관련 법의학 소견이 존재",
+        "천/가방끈의 단순 소지는 교살 증거가 아님",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "평범한 가방 소품. 실제 목 압박 관련 흔적이 대조된 경우만 사용.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M03_V1",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V1",
+      "methodVariantName": "목 압박·교살형",
+      "weaponId": "W04",
+      "weaponName": "벨트",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W04"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 목이 눌린 흔적에 관한 검사 기록을 확인한다. 벨트의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "목이 눌린 흔적에 관한 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_JIRO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "벨트 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "A/B 복도의 이동 목격 진술 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "목 압박 소견과 실물 흔적의 일치",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M03_V1_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M03_V1_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M03_V1_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M03_V1_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M03_V1_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M03_V1_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V1_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "목 압박 관련 법의학 소견이 존재",
+        "천/가방끈의 단순 소지는 교살 증거가 아님",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "개인 의복에 있는 평범한 소지품. 목 압박 소견이 독립적으로 입증된 경우에만 범행 도구 후보.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M03_V2",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V2",
+      "methodVariantName": "호흡 차단형",
+      "weaponId": "W11",
+      "weaponName": "베개",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W11"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W11"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 숨이 막힌 원인을 살펴본 검사 기록을 확인한다. 베개의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M03_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "숨이 막힌 원인을 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M03_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "베개 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M03_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "204호 주변 천 조각 조사 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "목 압박형과 구별되는 호흡기 감식",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M03_V2_MATTO_EVIDENCE_01",
+        "HOTEL_M03_V2_MATTO_ROUTE_01",
+        "HOTEL_M03_V2_MATTO_ITEM_01",
+        "HOTEL_M03_V2_JJIRO_EVIDENCE_01",
+        "HOTEL_M03_V2_JJIRO_ROUTE_01",
+        "HOTEL_M03_V2_JJIRO_ITEM_01",
+        "HOTEL_M03_V2_MARIHI_EVIDENCE_01",
+        "HOTEL_M03_V2_MARIHI_ROUTE_01",
+        "HOTEL_M03_V2_MARIHI_ITEM_01",
+        "HOTEL_M03_V2_NAZ_EVIDENCE_01",
+        "HOTEL_M03_V2_NAZ_ROUTE_01",
+        "HOTEL_M03_V2_NAZ_ITEM_01",
+        "HOTEL_M03_V2_BOKI_EVIDENCE_01",
+        "HOTEL_M03_V2_BOKI_ROUTE_01",
+        "HOTEL_M03_V2_BOKI_ITEM_01",
+        "HOTEL_M03_V2_MOONIRE_EVIDENCE_01",
+        "HOTEL_M03_V2_MOONIRE_ROUTE_01",
+        "HOTEL_M03_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "호흡 차단 소견을 교살과 구별하는 검증 기록",
+        "직물 관련 감식과 개별 인스턴스 조사",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "세 테마 개인실에 자연스러운 침구/개인 쿠션. 목 압박이 아닌 호흡 차단 원인은 독립적인 감식으로 입증해야 함.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "CRUISE_M03_V2",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V2",
+      "methodVariantName": "호흡 차단형",
+      "weaponId": "W11",
+      "weaponName": "베개",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W11"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W11"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 숨이 막힌 원인을 살펴본 검사 기록을 확인한다. 베개의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M03_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "숨이 막힌 원인을 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M03_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "베개 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M03_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "선실 린넨 사용 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "목 압박형과 구별되는 호흡기 감식",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M03_V2_MATTO_EVIDENCE_01",
+        "CRUISE_M03_V2_MATTO_ROUTE_01",
+        "CRUISE_M03_V2_MATTO_ITEM_01",
+        "CRUISE_M03_V2_JJIRO_EVIDENCE_01",
+        "CRUISE_M03_V2_JJIRO_ROUTE_01",
+        "CRUISE_M03_V2_JJIRO_ITEM_01",
+        "CRUISE_M03_V2_MARIHI_EVIDENCE_01",
+        "CRUISE_M03_V2_MARIHI_ROUTE_01",
+        "CRUISE_M03_V2_MARIHI_ITEM_01",
+        "CRUISE_M03_V2_NAZ_EVIDENCE_01",
+        "CRUISE_M03_V2_NAZ_ROUTE_01",
+        "CRUISE_M03_V2_NAZ_ITEM_01",
+        "CRUISE_M03_V2_BOKI_EVIDENCE_01",
+        "CRUISE_M03_V2_BOKI_ROUTE_01",
+        "CRUISE_M03_V2_BOKI_ITEM_01",
+        "CRUISE_M03_V2_MOONIRE_EVIDENCE_01",
+        "CRUISE_M03_V2_MOONIRE_ROUTE_01",
+        "CRUISE_M03_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "호흡 차단 소견을 교살과 구별하는 검증 기록",
+        "직물 관련 감식과 개별 인스턴스 조사",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "세 테마 개인실에 자연스러운 침구/개인 쿠션. 목 압박이 아닌 호흡 차단 원인은 독립적인 감식으로 입증해야 함.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M03_V2",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M03",
+      "methodName": "질식사",
+      "methodVariantId": "M03_V2",
+      "methodVariantName": "호흡 차단형",
+      "weaponId": "W11",
+      "weaponName": "베개",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W11"
+        },
+        {
+          "roomId": "ROOM_MOONIRE",
+          "instanceId": "ROOM_MOONIRE_W11"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 숨이 막힌 원인을 살펴본 검사 기록을 확인한다. 베개의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "숨이 막힌 원인을 살펴본 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_MOONIRE"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "베개 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M03_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "VIP-01 근처 대기실 비품 목록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "목 압박형과 구별되는 호흡기 감식",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M03_V2_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M03_V2_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M03_V2_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M03_V2_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M03_V2_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M03_V2_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M03_V2_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M03_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "호흡 차단 소견을 교살과 구별하는 검증 기록",
+        "직물 관련 감식과 개별 인스턴스 조사",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "세 테마 개인실에 자연스러운 침구/개인 쿠션. 목 압박이 아닌 호흡 차단 원인은 독립적인 감식으로 입증해야 함.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+    },
+    {
+      "scenarioId": "HOTEL_M04_V1",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V1",
+      "methodVariantName": "독극물 중독형",
+      "weaponId": "W02",
+      "weaponName": "독약병",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W02"
+        },
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W02"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 독극물 관련 검사 기록을 확인한다. 독약병의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M04_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "독극물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_JIRO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "독약병 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "호텔 로비의 음료 확인표 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "독성 검출 여부 및 용기·기록의 정합성",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M04_V1_MATTO_EVIDENCE_01",
+        "HOTEL_M04_V1_MATTO_ROUTE_01",
+        "HOTEL_M04_V1_MATTO_ITEM_01",
+        "HOTEL_M04_V1_JJIRO_EVIDENCE_01",
+        "HOTEL_M04_V1_JJIRO_ROUTE_01",
+        "HOTEL_M04_V1_JJIRO_ITEM_01",
+        "HOTEL_M04_V1_MARIHI_EVIDENCE_01",
+        "HOTEL_M04_V1_MARIHI_ROUTE_01",
+        "HOTEL_M04_V1_MARIHI_ITEM_01",
+        "HOTEL_M04_V1_NAZ_EVIDENCE_01",
+        "HOTEL_M04_V1_NAZ_ROUTE_01",
+        "HOTEL_M04_V1_NAZ_ITEM_01",
+        "HOTEL_M04_V1_BOKI_EVIDENCE_01",
+        "HOTEL_M04_V1_BOKI_ROUTE_01",
+        "HOTEL_M04_V1_BOKI_ITEM_01",
+        "HOTEL_M04_V1_MOONIRE_EVIDENCE_01",
+        "HOTEL_M04_V1_MOONIRE_ROUTE_01",
+        "HOTEL_M04_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 검사에서 원인 판별을 뒷받침하는 기록",
+        "용기 자체와 검출된 물질은 다름",
+        "구체 독물 종류/사용 절차를 대사에 담지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "극중 독성 물질이 담긴 작은 병. 실제 독성 관련 검사 기록이 있을 때만 범행 도구로 인정하고, 구체 물질·용량·사용 절차는 설정하지 않는다.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+    },
+    {
+      "scenarioId": "CRUISE_M04_V1",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V1",
+      "methodVariantName": "독극물 중독형",
+      "weaponId": "W02",
+      "weaponName": "독약병",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W02"
+        },
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W02"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 독극물 관련 검사 기록을 확인한다. 독약병의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M04_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "독극물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_JIRO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "독약병 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "선내 음료 정리표 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "독성 검출 여부 및 용기·기록의 정합성",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M04_V1_MATTO_EVIDENCE_01",
+        "CRUISE_M04_V1_MATTO_ROUTE_01",
+        "CRUISE_M04_V1_MATTO_ITEM_01",
+        "CRUISE_M04_V1_JJIRO_EVIDENCE_01",
+        "CRUISE_M04_V1_JJIRO_ROUTE_01",
+        "CRUISE_M04_V1_JJIRO_ITEM_01",
+        "CRUISE_M04_V1_MARIHI_EVIDENCE_01",
+        "CRUISE_M04_V1_MARIHI_ROUTE_01",
+        "CRUISE_M04_V1_MARIHI_ITEM_01",
+        "CRUISE_M04_V1_NAZ_EVIDENCE_01",
+        "CRUISE_M04_V1_NAZ_ROUTE_01",
+        "CRUISE_M04_V1_NAZ_ITEM_01",
+        "CRUISE_M04_V1_BOKI_EVIDENCE_01",
+        "CRUISE_M04_V1_BOKI_ROUTE_01",
+        "CRUISE_M04_V1_BOKI_ITEM_01",
+        "CRUISE_M04_V1_MOONIRE_EVIDENCE_01",
+        "CRUISE_M04_V1_MOONIRE_ROUTE_01",
+        "CRUISE_M04_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 검사에서 원인 판별을 뒷받침하는 기록",
+        "용기 자체와 검출된 물질은 다름",
+        "구체 독물 종류/사용 절차를 대사에 담지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "극중 독성 물질이 담긴 작은 병. 실제 독성 관련 검사 기록이 있을 때만 범행 도구로 인정하고, 구체 물질·용량·사용 절차는 설정하지 않는다.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M04_V1",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V1",
+      "methodVariantName": "독극물 중독형",
+      "weaponId": "W02",
+      "weaponName": "독약병",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MATTO",
+          "instanceId": "ROOM_MATTO_W02"
+        },
+        {
+          "roomId": "ROOM_JIRO",
+          "instanceId": "ROOM_JIRO_W02"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 독극물 관련 검사 기록을 확인한다. 독약병의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V1_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "독극물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V1_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MATTO",
+            "ROOM_JIRO"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "독약병 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V1_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "공용 대기홀 음료 배치 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "독성 검출 여부 및 용기·기록의 정합성",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M04_V1_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V1_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V1_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V1_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M04_V1_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V1_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V1_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V1_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 검사에서 원인 판별을 뒷받침하는 기록",
+        "용기 자체와 검출된 물질은 다름",
+        "구체 독물 종류/사용 절차를 대사에 담지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "극중 독성 물질이 담긴 작은 병. 실제 독성 관련 검사 기록이 있을 때만 범행 도구로 인정하고, 구체 물질·용량·사용 절차는 설정하지 않는다.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+    },
+    {
+      "scenarioId": "HOTEL_M04_V2",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V2",
+      "methodVariantName": "약물 관련 중독형",
+      "weaponId": "W06",
+      "weaponName": "수면제",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W06"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 약물 관련 검사 기록을 확인한다. 수면제의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M04_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "약물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MARIHI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "수면제 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "로비의 약 관련 메모 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "약물 검사와 피해자 기록의 구분",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M04_V2_MATTO_EVIDENCE_01",
+        "HOTEL_M04_V2_MATTO_ROUTE_01",
+        "HOTEL_M04_V2_MATTO_ITEM_01",
+        "HOTEL_M04_V2_JJIRO_EVIDENCE_01",
+        "HOTEL_M04_V2_JJIRO_ROUTE_01",
+        "HOTEL_M04_V2_JJIRO_ITEM_01",
+        "HOTEL_M04_V2_MARIHI_EVIDENCE_01",
+        "HOTEL_M04_V2_MARIHI_ROUTE_01",
+        "HOTEL_M04_V2_MARIHI_ITEM_01",
+        "HOTEL_M04_V2_NAZ_EVIDENCE_01",
+        "HOTEL_M04_V2_NAZ_ROUTE_01",
+        "HOTEL_M04_V2_NAZ_ITEM_01",
+        "HOTEL_M04_V2_BOKI_EVIDENCE_01",
+        "HOTEL_M04_V2_BOKI_ROUTE_01",
+        "HOTEL_M04_V2_BOKI_ITEM_01",
+        "HOTEL_M04_V2_MOONIRE_EVIDENCE_01",
+        "HOTEL_M04_V2_MOONIRE_ROUTE_01",
+        "HOTEL_M04_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "약물 관련 의학 기록과 원인 검증",
+        "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
+        "약물 명칭·용량·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "약물 관련 사건 후보. 해당 약물의 치명적 영향이 의학적 기록으로 입증된 경우에만 사용; 약 이름·양·사용 방법은 제공하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+    },
+    {
+      "scenarioId": "CRUISE_M04_V2",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V2",
+      "methodVariantName": "약물 관련 중독형",
+      "weaponId": "W06",
+      "weaponName": "수면제",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W06"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 약물 관련 검사 기록을 확인한다. 수면제의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M04_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "약물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MARIHI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "수면제 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "선실 약 관련 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "약물 검사와 피해자 기록의 구분",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M04_V2_MATTO_EVIDENCE_01",
+        "CRUISE_M04_V2_MATTO_ROUTE_01",
+        "CRUISE_M04_V2_MATTO_ITEM_01",
+        "CRUISE_M04_V2_JJIRO_EVIDENCE_01",
+        "CRUISE_M04_V2_JJIRO_ROUTE_01",
+        "CRUISE_M04_V2_JJIRO_ITEM_01",
+        "CRUISE_M04_V2_MARIHI_EVIDENCE_01",
+        "CRUISE_M04_V2_MARIHI_ROUTE_01",
+        "CRUISE_M04_V2_MARIHI_ITEM_01",
+        "CRUISE_M04_V2_NAZ_EVIDENCE_01",
+        "CRUISE_M04_V2_NAZ_ROUTE_01",
+        "CRUISE_M04_V2_NAZ_ITEM_01",
+        "CRUISE_M04_V2_BOKI_EVIDENCE_01",
+        "CRUISE_M04_V2_BOKI_ROUTE_01",
+        "CRUISE_M04_V2_BOKI_ITEM_01",
+        "CRUISE_M04_V2_MOONIRE_EVIDENCE_01",
+        "CRUISE_M04_V2_MOONIRE_ROUTE_01",
+        "CRUISE_M04_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "약물 관련 의학 기록과 원인 검증",
+        "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
+        "약물 명칭·용량·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "약물 관련 사건 후보. 해당 약물의 치명적 영향이 의학적 기록으로 입증된 경우에만 사용; 약 이름·양·사용 방법은 제공하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M04_V2",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V2",
+      "methodVariantName": "약물 관련 중독형",
+      "weaponId": "W06",
+      "weaponName": "수면제",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_MARIHI",
+          "instanceId": "ROOM_MARIHI_W06"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 약물 관련 검사 기록을 확인한다. 수면제의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "약물 관련 검사 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_MARIHI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "수면제 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V2_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "출연 순서표와 개인 물품 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "약물 검사와 피해자 기록의 구분",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M04_V2_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V2_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V2_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V2_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M04_V2_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V2_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V2_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V2_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "약물 관련 의학 기록과 원인 검증",
+        "정상적인 약통 소지 사실을 범죄로 단정하지 말 것",
+        "약물 명칭·용량·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "약물 관련 사건 후보. 해당 약물의 치명적 영향이 의학적 기록으로 입증된 경우에만 사용; 약 이름·양·사용 방법은 제공하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+    },
+    {
+      "scenarioId": "HOTEL_M04_V3",
+      "themeId": "HOTEL",
+      "themeLabel": "호텔",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V3",
+      "methodVariantName": "심각한 알레르기 반응형",
+      "weaponId": "W10",
+      "weaponName": "땅콩 과자",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W10"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "204호",
+      "investigativePremise": "204호에서 심한 알레르기 반응과 관련된 의료 기록을 확인한다. 땅콩 과자의 실제 사용 여부와 호텔 로비와 2층 204호를 잇는 계단·복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_HOTEL_M04_V3_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "심한 알레르기 반응과 관련된 의료 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V3_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_BOKI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "땅콩 과자 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_HOTEL_M04_V3_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "투숙객의 알레르기 관련 승인 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "1층 로비부터 계단과 2층 객실 복도까지",
+      "forensicProofRequirement": "알레르기 관련 검사·과거 병력의 인과적 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Allergic cause is medically distinct from toxic poisoning; supported prior allergy knowledge and forensic findings are required, with no procedural allergen details."
+      ],
+      "dialogueLineIds": [
+        "HOTEL_M04_V3_MATTO_EVIDENCE_01",
+        "HOTEL_M04_V3_MATTO_ROUTE_01",
+        "HOTEL_M04_V3_MATTO_ITEM_01",
+        "HOTEL_M04_V3_JJIRO_EVIDENCE_01",
+        "HOTEL_M04_V3_JJIRO_ROUTE_01",
+        "HOTEL_M04_V3_JJIRO_ITEM_01",
+        "HOTEL_M04_V3_MARIHI_EVIDENCE_01",
+        "HOTEL_M04_V3_MARIHI_ROUTE_01",
+        "HOTEL_M04_V3_MARIHI_ITEM_01",
+        "HOTEL_M04_V3_NAZ_EVIDENCE_01",
+        "HOTEL_M04_V3_NAZ_ROUTE_01",
+        "HOTEL_M04_V3_NAZ_ITEM_01",
+        "HOTEL_M04_V3_BOKI_EVIDENCE_01",
+        "HOTEL_M04_V3_BOKI_ROUTE_01",
+        "HOTEL_M04_V3_BOKI_ITEM_01",
+        "HOTEL_M04_V3_MOONIRE_EVIDENCE_01",
+        "HOTEL_M04_V3_MOONIRE_ROUTE_01",
+        "HOTEL_M04_V3_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "객실 출입 근거가 실제로 존재하는지",
+        "2층 204호 주변 목격 관측 위치가 실제 지도와 맞는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 중독과 급성 알레르기를 감식에서 구분",
+        "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
+        "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "특정 피해자에게 생명을 위협하는 알레르기가 있었다는 의학적 증거가 있는 가상 사건에 한해 사용. 구체적 유발 방법은 서술하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+    },
+    {
+      "scenarioId": "CRUISE_M04_V3",
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V3",
+      "methodVariantName": "심각한 알레르기 반응형",
+      "weaponId": "W10",
+      "weaponName": "땅콩 과자",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W10"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "403호",
+      "investigativePremise": "403호에서 심한 알레르기 반응과 관련된 의료 기록을 확인한다. 땅콩 과자의 실제 사용 여부와 3데크 로비와 403호로 가는 앞·뒤 계단의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_CRUISE_M04_V3_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "심한 알레르기 반응과 관련된 의료 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V3_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_BOKI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "땅콩 과자 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_CRUISE_M04_V3_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "선내 개인별 알레르기 정보 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "3데크 아트리움과 앞·뒤 계단을 거치는 403호 접근 경로",
+      "forensicProofRequirement": "알레르기 관련 검사·과거 병력의 인과적 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Allergic cause is medically distinct from toxic poisoning; supported prior allergy knowledge and forensic findings are required, with no procedural allergen details."
+      ],
+      "dialogueLineIds": [
+        "CRUISE_M04_V3_MATTO_EVIDENCE_01",
+        "CRUISE_M04_V3_MATTO_ROUTE_01",
+        "CRUISE_M04_V3_MATTO_ITEM_01",
+        "CRUISE_M04_V3_JJIRO_EVIDENCE_01",
+        "CRUISE_M04_V3_JJIRO_ROUTE_01",
+        "CRUISE_M04_V3_JJIRO_ITEM_01",
+        "CRUISE_M04_V3_MARIHI_EVIDENCE_01",
+        "CRUISE_M04_V3_MARIHI_ROUTE_01",
+        "CRUISE_M04_V3_MARIHI_ITEM_01",
+        "CRUISE_M04_V3_NAZ_EVIDENCE_01",
+        "CRUISE_M04_V3_NAZ_ROUTE_01",
+        "CRUISE_M04_V3_NAZ_ITEM_01",
+        "CRUISE_M04_V3_BOKI_EVIDENCE_01",
+        "CRUISE_M04_V3_BOKI_ROUTE_01",
+        "CRUISE_M04_V3_BOKI_ITEM_01",
+        "CRUISE_M04_V3_MOONIRE_EVIDENCE_01",
+        "CRUISE_M04_V3_MOONIRE_ROUTE_01",
+        "CRUISE_M04_V3_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "앞계단의 짧은 접근 경로와 뒤계단 우회 경로를 혼동하지 않는지",
+        "항해 상황·선실 이용 수칙을 새 사실로 가정하지 않는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 중독과 급성 알레르기를 감식에서 구분",
+        "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
+        "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "특정 피해자에게 생명을 위협하는 알레르기가 있었다는 의학적 증거가 있는 가상 사건에 한해 사용. 구체적 유발 방법은 서술하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+    },
+    {
+      "scenarioId": "MUSIC_BROADCAST_M04_V3",
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "status": "candidate_weapon_and_dialogue_design_validated_two_pass_factual_case_pending",
+      "methodId": "M04",
+      "methodName": "독살·물질 반응",
+      "methodVariantId": "M04_V3",
+      "methodVariantName": "심각한 알레르기 반응형",
+      "weaponId": "W10",
+      "weaponName": "땅콩 과자",
+      "weaponTypeCatalogShared": true,
+      "eligibleWeaponInstances": [
+        {
+          "roomId": "ROOM_BOKI",
+          "instanceId": "ROOM_BOKI_W10"
+        }
+      ],
+      "weaponInstanceId": "SELECT_PER_CASE_SEED_AND_PROVE_ACCESS",
+      "crimeSceneRoomId": "CRIME_SCENE",
+      "crimeSceneDisplayNumber": "VIP-01",
+      "investigativePremise": "VIP-01에서 심한 알레르기 반응과 관련된 의료 기록을 확인한다. 땅콩 과자의 실제 사용 여부와 공동 대기홀과 VIP-01 사이 중앙 통로·좌우 대기실 복도의 이동 시각은 각각 증거로 검증해야 한다.",
+      "evidenceBlueprint": [
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_FORENSIC",
+          "roomId": "CRIME_SCENE",
+          "kind": "forensic_record",
+          "description": "심한 알레르기 반응과 관련된 의료 기록",
+          "role": "method_variant_proof",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_ITEM",
+          "roomId": "SELECT_FROM_ELIGIBLE_NPC_PERSONAL_ROOMS",
+          "eligibleRoomIds": [
+            "ROOM_BOKI"
+          ],
+          "kind": "weapon_instance_forensic",
+          "description": "땅콩 과자 실물과 발견 장소, 검사 기록을 비교",
+          "role": "weapon_type_and_instance_access_proof",
+          "isPhysicalWeapon": true,
+          "requiresAuthoredSceneTruth": true
+        },
+        {
+          "evidenceId": "EV_MUSIC_BROADCAST_M04_V3_ROUTE",
+          "roomId": "LOBBY",
+          "kind": "theme_specific_record",
+          "description": "승인된 알레르기 주의사항·출연 관련 기록 후보",
+          "role": "cross_validate_timeline_and_access",
+          "isPhysicalWeapon": false,
+          "requiresAuthoredSceneTruth": true
+        }
+      ],
+      "routeQuestionFocus": "공동 대기홀의 중앙 통로와 좌우 대기실 날개에서 VIP-01로 이어지는 경로",
+      "forensicProofRequirement": "알레르기 관련 검사·과거 병력의 인과적 검증",
+      "logicConstraints": [
+        "No fixed culprit or victim is assigned by this blueprint; each of 6 NPC culprits needs an independently validated truth/timeline/knowledge variation.",
+        "The crime scene and lobby may contain only non-weapon traces and records, never the recoverable physical weapon object.",
+        "The selected weapon instance must be found at an NPC personal room when the player investigates; all movement before the search must be causally timed.",
+        "Do not infer the real perpetrator from owner or displayed weapon room.",
+        "Thematic record is a proposed evidence source, not an actual fact until authored scenario truth confirms existence and values.",
+        "Case must prove culprit+method category+weapon type uniquely and distinguish its selected method variant on the proof board.",
+        "Allergic cause is medically distinct from toxic poisoning; supported prior allergy knowledge and forensic findings are required, with no procedural allergen details."
+      ],
+      "dialogueLineIds": [
+        "MUSIC_BROADCAST_M04_V3_MATTO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_MATTO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_MATTO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V3_JJIRO_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_JJIRO_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_JJIRO_ITEM_01",
+        "MUSIC_BROADCAST_M04_V3_MARIHI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_MARIHI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_MARIHI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V3_NAZ_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_NAZ_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_NAZ_ITEM_01",
+        "MUSIC_BROADCAST_M04_V3_BOKI_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_BOKI_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_BOKI_ITEM_01",
+        "MUSIC_BROADCAST_M04_V3_MOONIRE_EVIDENCE_01",
+        "MUSIC_BROADCAST_M04_V3_MOONIRE_ROUTE_01",
+        "MUSIC_BROADCAST_M04_V3_MOONIRE_ITEM_01"
+      ],
+      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
+      "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
+      "caseAuthorThemeChecks": [
+        "VIP-01 현장을 복도 끝에 고립된 방으로 묘사하지 않는지",
+        "호출표·출입 기록은 승인 사건팩에 존재할 때만 사용하는지"
+      ],
+      "caseAuthorVariantChecks": [
+        "독성 중독과 급성 알레르기를 감식에서 구분",
+        "사전 병력·노출 기록이 사건 내부에서 합리적으로 확인",
+        "알레르기 원인 물질·투여 경로·방법을 대사에 포함하지 말 것",
+        "Weapon has plausible potential for serious harm, but this specific murder cause needs case-specific medical and physical evidence.",
+        "NPCs do not possess knowledge merely from their personality or item-room location."
+      ],
+      "weaponThemePlacementRationale": "특정 피해자에게 생명을 위협하는 알레르기가 있었다는 의학적 증거가 있는 가상 사건에 한해 사용. 구체적 유발 방법은 서술하지 않음.",
+      "sceneSpecificDirection": "Forensic proof cannot be deduced from possession; do not assign one permanent culprit or victim history",
+      "useInRandomCaseGeneratorOnlyIf": [
+        "TRUE_CASE_TIMELINE_AUTHORED",
+        "CULPRIT_CANDIDATE_ACCESS_PROVEN",
+        "METHOD_VARIANT_FORENSIC_PROOF_VALIDATED",
+        "WEAPON_INSTANCE_RETURN_PROVEN",
+        "NPC_KNOWLEDGE_STATEMENTS_APPROVED",
+        "PROOF_GRAPH_UNIQUE",
+        "PLAIN_LANGUAGE_DOES_NOT_IMPLY_PROVEN_CAUSE"
+      ],
+      "designReviews": {
+        "round1": "plausibility_weapon_origin_theme_transit_reviewed",
+        "round2": "medical_forensic_branch_and_personality_dialogue_gate_reviewed",
+        "runtimeGameplayValidated": false
+      },
+      "plainKoreanPresentation": true,
+      "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+    }
+  ],
+  "weaponDesignUpdate": "2026-11-08_user_requested_genuinely_plausible_potentially_lethal_12_types",
+  "reviewStatus": "two_design_editorial_rounds_and_27_cross_ref_checks_done_case_truth_and_Unity_gameplay_validation_not_done"
+}
