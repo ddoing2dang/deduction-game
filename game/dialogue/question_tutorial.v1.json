@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "locale": "ko-KR",
+  "type": "investigation_question_tutorial",
+  "status": "authored_copy_and_design_only",
+  "notes": "These are UI guide lines, NOT dialogue utterances; show only when trigger conditions are satisfied. Questions are examples and never automatically submitted or selected as answers. Not evidence of any in-game fact.",
+  "persistentHelp": {
+    "title": "질문이 막힐 때",
+    "subtitle": "NPC에게 직접 타이핑해 물어보세요. 정해진 질문을 고를 필요는 없어요.",
+    "disclaimer": "질문 예시는 참고용이에요. 같은 뜻이라면 다른 말로 물어봐도 돼요.",
+    "categories": [
+      {
+        "id": "BASIC",
+        "title": "먼저 물어보기",
+        "prompts": [
+          "어제 피해자와 만난 적 있어?",
+          "사건이 벌어질 즈음 어디에 있었어?",
+          "마지막으로 피해자를 본 건 언제야?"
+        ]
+      },
+      {
+        "id": "TIMELINE",
+        "title": "시간과 행적 확인",
+        "prompts": [
+          "그곳에 몇 시부터 있었어?",
+          "그때 같이 있던 사람은 누구야?",
+          "그걸 직접 본 거야, 아니면 들은 거야?"
+        ]
+      },
+      {
+        "id": "OBJECTS",
+        "title": "물건과 단서 확인",
+        "prompts": [
+          "이 물건을 본 적 있어?",
+          "이 기록에 대해 아는 게 있어?",
+          "누가 그 물건을 사용했는지 알아?"
+        ]
+      },
+      {
+        "id": "CONFRONT",
+        "title": "진술 대조하고 추궁",
+        "prompts": [
+          "아까 했던 말과 지금 말이 다른데?",
+          "이 증거는 네 설명과 맞지 않는데 어떻게 생각해?",
+          "왜 아까 그 부분은 이야기하지 않았어?"
+        ]
+      },
+      {
+        "id": "METHOD",
+        "title": "범행 과정을 추론",
+        "prompts": [
+          "그때 어떤 순서로 일이 벌어졌다고 생각해?",
+          "사건 현장에서 이상하다고 느낀 점은 뭐야?",
+          "그 물건과 사건의 연관성을 알고 있어?"
+        ]
+      }
+    ]
+  },
+  "onboarding": [
+    {
+      "step": 1,
+      "title": "먼저 인물에게 물어보세요",
+      "body": "NPC를 만나 자유롭게 질문해 보세요. 처음엔 피해자와의 접촉이나 사건 당시 행적을 물어보면 좋아요.",
+      "example": "어제 피해자와 무슨 이야기를 나눴어?",
+      "trigger": "FIRST_NPC_CONVERSATION",
+      "dismissible": true
+    },
+    {
+      "step": 2,
+      "title": "시간을 구체적으로 물어보세요",
+      "body": "언제, 어디에서, 누구와 있었는지 나눠서 물으면 알리바이를 비교하기 쉬워요.",
+      "example": "그때 몇 시쯤이었고 누구와 함께 있었어?",
+      "trigger": "AFTER_FIRST_NPC_RESPONSE",
+      "dismissible": true
+    },
+    {
+      "step": 3,
+      "title": "단서를 근거로 다시 질문해 보세요",
+      "body": "찾아낸 물증이나 기록을 언급하면, 같은 NPC라도 다른 대사를 선택할 수 있어요.",
+      "example": "내가 발견한 기록을 보면 네 말과 다른데, 설명해 줄래?",
+      "trigger": "AFTER_FIRST_EVIDENCE_FOUND",
+      "dismissible": true
+    },
+    {
+      "step": 4,
+      "title": "말의 차이를 찾아보세요",
+      "body": "NPC가 전에 한 말을 기억해 두고 다른 NPC의 증언 및 기록과 비교해 보세요.",
+      "example": "아까는 다른 말을 했잖아. 왜 달라졌어?",
+      "trigger": "AFTER_MULTIPLE_RELEVANT_STATEMENTS",
+      "dismissible": true
+    }
+  ],
+  "contextualHints": [
+    {
+      "id": "GENERIC_QUESTION",
+      "trigger": "QUESTION_TOO_BROAD",
+      "title": "질문을 조금 더 구체적으로",
+      "body": "누구, 언제, 어디에서, 무엇을 했는지 중 하나를 더 물어보세요.",
+      "example": "어제 저녁엔 피해자와 함께 있었어?",
+      "cooldown": "ONCE_PER_NPC"
+    },
+    {
+      "id": "NO_APPROVED_LINE",
+      "trigger": "DIALOGUE_FALLBACK_UNKNOWN_2_TIMES",
+      "title": "다른 방향으로 물어보세요",
+      "body": "지금 상황에 맞는 구체적 대사가 없을 수 있어요. 시간이나 물건처럼 다른 주제로 질문을 바꿔 보세요.",
+      "example": "사건이 벌어질 즈음 어디에 있었어?",
+      "cooldown": "ONCE_PER_NPC_SESSION"
+    },
+    {
+      "id": "NO_EVIDENCE",
+      "trigger": "NO_EVIDENCE_COLLECTED",
+      "title": "먼저 주변을 조사해 보세요",
+      "body": "대화만으로 풀리지 않는 질문은 사건 현장이나 각 방의 물건을 조사한 뒤 다시 물어보세요.",
+      "example": "이 물건에 대해 아는 게 있어?",
+      "cooldown": "ONE_TIME"
+    },
+    {
+      "id": "EVIDENCE_READY",
+      "trigger": "NEW_EVIDENCE_DISCOVERED",
+      "title": "발견한 증거를 대화에 사용해 보세요",
+      "body": "발견한 증거를 직접 언급하거나 조사 노트에서 함께 제시해 보세요.",
+      "example": "이 기록이랑 네가 했던 말을 비교해 줄래?",
+      "cooldown": "EACH_DISTINCT_RELEVANT_EVIDENCE"
+    },
+    {
+      "id": "STATEMENT_CONFLICT",
+      "trigger": "VALID_STATEMENT_CONFLICT_DISCOVERED",
+      "title": "모순을 직접 지적해 보세요",
+      "body": "어느 진술이 왜 다르게 보이는지 구체적으로 물어보세요.",
+      "example": "아까 말한 시간과 이 기록의 시간이 다르잖아. 이유가 뭐야?",
+      "cooldown": "EACH_DISTINCT_CONFLICT"
+    },
+    {
+      "id": "REPEAT_QUESTION",
+      "trigger": "SAME_INTENT_REPEATED_WITHOUT_NEW_FACTS",
+      "title": "같은 질문 대신 단서를 연결해 보세요",
+      "body": "같은 질문에 대한 답이 바뀌지 않는다면 다른 NPC나 장소에서 근거를 찾아보세요.",
+      "example": "그 이야기를 확인해 줄 다른 사람이 있어?",
+      "cooldown": "ONE_TIME_PER_INTENT"
+    },
+    {
+      "id": "EARLY_ACCUSATION",
+      "trigger": "ACCUSATION_WITH_NO_VALID_EVIDENCE",
+      "title": "의심과 증명은 달라요",
+      "body": "용의자를 지목하기 전에 언제 어디서 무엇을 했는지 뒷받침하는 근거를 더 찾아보세요.",
+      "example": "네 설명을 확인할 기록이나 목격자가 있어?",
+      "cooldown": "ONCE_PER_NPC"
+    },
+    {
+      "id": "BEFORE_FINAL",
+      "trigger": "PLAYER_OPENS_FINAL_DEDUCTION",
+      "title": "최종 추리 정리",
+      "body": "범인, 범행수법, 흉기를 구분해서 생각하고 근거를 자유로운 문장으로 적어 보세요. 예시의 인물·흉기는 실제 정답과 무관해요.",
+      "example": "나는 [범인]이 [범행수법]으로 [흉기]를 이용했다고 생각해. 근거는 …",
+      "cooldown": "ONE_TIME"
+    }
+  ],
+  "displayRules": {
+    "presentation": "Nonblocking small help text under question input, optional help (?) panel, no modal forced outside short first-use tutorial",
+    "noFixedQuestionButtons": true,
+    "noAutoSubmit": true,
+    "noAnswerLeak": true,
+    "showOnlyWhenEventExists": true,
+    "neverInventEvidence": true,
+    "neverRevealSuspectGuilt": true,
+    "referenceOnlyApprovedKnownEvidence": true,
+    "enableDismissAndReopen": true,
+    "persistTutorialDismissedPerPlayer": true,
+    "avoidRepeatSpam": true,
+    "priority": "validated event > help panel > first use",
+    "separateFromNpcDialogueCatalog": true,
+    "doesNotConsumeGameAction": true
+  },
+  "uiCopy": {
+    "questionPlaceholder": "NPC에게 궁금한 점을 자유롭게 물어보세요…",
+    "firstConversationInline": "무엇을 물어볼지 막막한가요? ‘어제 피해자와 만난 적 있어?’부터 시작해 보세요.",
+    "helpPanelLabel": "어떤 질문을 하면 좋을까?",
+    "tutorialSkip": "알고 있어요. 바로 심문할게요.",
+    "tutorialBack": "이전 설명",
+    "tutorialNext": "다음",
+    "tutorialDone": "직접 질문해 보기",
+    "contextualHintDismiss": "힌트 닫기"
+  }
+}
