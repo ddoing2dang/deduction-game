@@ -1,6 +1,24 @@
-# Unity 구조
-책임 분리: GameState, TurnManager, BoardManager, PlayerState, InvestigationManager, DeductionManager, AbilityManager, EventManager, AIController, UIManager.
-진행: MatchSetup→역할/정답/손패/능력→R1 이전 전원 초기 배치(3P)→R1~R5(각 턴 기본 2P, 공식 최종 추리 금지)→R6~R11(각 턴 기본 2P, 공식 최종 추리 가능, R7 과학수사 공개 안내)→R12(각 턴 기본 2P, 활성 수사자의 최종 추리 1회 강제)→라운드 종료 시 공식 정답자 수로 해당 테마 점수 정산→3개 테마 모두 진행 후 누적점수로 우승 결정.
-공식 최종 추리는 수사자별 테마당 최대 2회·같은 라운드 최대 1회다. 예: R6 첫 추리 실패 시 R6 재추리는 불가하고 R7에 두 번째 추리는 가능하다(추가 쿨타임 없음). 2회 실패하면 해당 테마에서 관전 전환. 같은 라운드의 수사자가 모두 행동하기 전에는 첫 정답 제출만으로 테마를 끝내지 않는다. 범인 가짜추리 1회 의무와 범인 0/1/2점 생존 득점은 GAME_RULES.md 최신 LOCK을 따른다.
-룰/콘텐츠 수치는 가능한 ScriptableObject/설정 데이터로 분리.
-개발 순서: 싱글 상태/카드→맵/이동→수사→추리/승패/관전→능력→이벤트→AI→12R 시뮬레이션/밸런스→UI/연출→싱글 전체검증→멀티/재접속/서버권한.
+# 마또 사건 해결형 머더미스터리 — 신규 소프트웨어 아키텍처 초안
+
+> 상태: 제안 설계. 과거 6인 PvP/카드/12R 구현은 무효이며 새 게임에 맞게 재설계한다.
+
+## 권장 책임 분리
+- `CaseSession`: 현재 사건 단계, 플레이어 탐정, 발견한 증거, 추리 상태.
+- `CaseTruthGenerator`: 시드로 진실(범인, 장소, 흉기, 사건 시간, 동선)을 구성.
+- `CaseValidator`: 사건의 물리적 개연성, 단서 간 일치, 추론 가능성 검증.
+- `NpcKnowledgeService`: NPC별 실제 지식·추억·알리바이와 진술, 범인의 의도적 거짓말.
+- `EnvironmentInvestigationService`: 장소/오브젝트 조사, 증거 획득, 재방문.
+- `DialogueAndConfrontationService`: 심문/질문/증거 제시/모순 지적.
+- `EvidenceJournal`: 획득 증거·목격·의심·사건 시간표.
+- `DeductionBoard`: 증거·인물·장소·흉기를 플레이어가 수동 연결.
+- `AccusationResolver`: 최종 범인/범행 장소/흉기 판정과 엔딩.
+- `BoardWorldPresenter`: 3D 쿼터뷰 지도와 고품질 2D NPC 비주얼.
+- `SaveLoad`: 사건 시드와 조사 진행 상태 영속화.
+
+## 기본 흐름
+사건 생성/검증 → 사건 도입 → 자유 탐색·NPC 대화 → 증거 수집/심문·모순 지적 → 추리 보드 → 최종 고발 → 사건 결말.
+
+구체적 행동 제한, NPC 스케줄, 재도전 규칙과 맵 방 수는 미확정이며 임의로 이전 12라운드 체계를 가져오지 않는다.
+
+## 구현 출발점
+기존 Unity `game/UnityProject`는 자산/프로젝트 기반으로 유지하되 과거 Card/TurnManager/AIController 중심 코드는 새 게임에 재사용 가능성을 평가하기 전 **Legacy**로 취급한다. 현 시점 구현/컴파일/Play Mode 검증은 수행하지 않았다.
