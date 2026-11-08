@@ -49,7 +49,7 @@ Canvas (1920×1080 / Scale With Screen Size / Expand)
 - 추후 승인된 대사 어댑터는 현재 NPC의 사건 권한을 검증한 뒤 `ShowNpcReply(string)`로 표시할 수 있다. UI 자체가 NPC 답변이나 사건 사실을 생성하지 않는다. 범인 전용 거짓말 규칙을 판정할 사건/대사 엔진은 이번 UI 범위에 포함하지 않았다.
 - `DialogueImeInput`은 현재 프로젝트의 **Input System 전용 설정을 유지**하면서 TMP의 IME 조합 문자열/후보 위치를 Keyboard API로 연결한다. `BaseInputModule.inputOverride`가 직렬화되지 않으므로 활성화 시 다시 바인딩한다.
 - 이전 대화는 NPC별 **현재 실행 세션 메모리**에 유지한다. 디스크 저장·실제 사건·AI 검색 연동은 추가하지 않았다.
-- 한국어 글꼴은 Noto Sans KR Regular, SIL OFL 1.1이며 원본과 라이선스를 함께 포함했다. TMP 동적 다중 atlas를 사용한다.
+- 이전 기본 폰트 Noto Sans KR은 기존 에셋으로 보존. **신규 적용 폰트는 MaruBuri(이름/대사) + Pretendard(입력/기록/버튼/상태)**이며 `Assets/UI/Fonts/TYPOGRAPHY.md`의 Edit Mode 자동 적용 스크립트를 통해 생성·프리팹 갱신한다. 설치된 Unity Editor에서 프리팹 저장이 완료되기 전에는 기존 폰트가 보일 수 있다.
 
 ## 확인 및 미실시
 
@@ -62,3 +62,35 @@ Canvas (1920×1080 / Scale With Screen Size / Expand)
 `game/UnityProject/Assets/`에는 현재 mystery에서 생성한 UI 에셋, 미리보기 씬과 필수 TMP 리소스만 복사해 전달한다. **새 로컬 Unity 프로젝트를 만든 경로가 아니다.** 기존 mystery에 적용하는 에셋 묶음이며 구형 프로젝트 설정/게임 코드는 포함하지 않는다. 의존 패키지는 현재 프로젝트의 UGUI 2.0.0, Input System 1.20.0, URP 17.3.0이다. 새 프로젝트 생성 없이 기존 mystery의 동일 Assets 상대 경로에서 사용한다.
 
 원본 출처/해시는 `DialogueFrameSources.json`, 정적 에디터 보고서는 `DialogueAuthoringReport.json`에 별도로 기록했다.
+
+## 2026-11-09 대화창 폰트 교체
+
+# mystery dialogue typography — MaruBuri + Pretendard
+
+## Roles applied to the existing `Assets/UI/Prefabs/DialoguePanel.prefab`
+- `NpcName`: **MaruBuri SemiBold**
+- `NpcDialogue`: **MaruBuri Regular**
+- `Text` (TMP_InputField), `Placeholder`, `HistoryText`, `Status`: **Pretendard Regular**
+- `HistoryTitle` and SendButton's `Label`: **Pretendard SemiBold**
+
+The original themed PNGs, Canvas, positioning, colors, events and Input System settings are unchanged.
+
+## Applying on an already-open Unity project
+The GitHub branch contains `Assets/UI/Editor/ApplyDialogueTypography.cs` and the **actual original OTF font bytes for MaruBuri Regular + SemiBold**. After updating the `mystery` project with this branch, Unity's Editor imports the script and **tries the one-time font migration automatically in Edit Mode**.
+
+If network access prevents the migration, run **Mystery > UI > Apply MaruBuri + Pretendard Fonts** once after Internet is available. The script downloads **Pretendard Regular + SemiBold directly from the original author**, pinned to commit `7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae`, verifies their Git blob hashes, creates four dynamic TMP SDF assets under this folder, and saves the existing prefab with all eight text components assigned to their new fonts.
+
+Pretendard OTF files are **not yet GitHub-committed** because GitHub's connected text-file interface does not retrieve original OTF binary files larger than 1 MB; the editor installer downloads them instead. **After Unity runs the installer, commit the generated Pretendard OTFs, TMP SDF assets and their `.meta` files from the local `mystery` project to make the branch entirely self-contained.**
+
+This change was prepared against the GitHub files. It was not executed in the user's local Unity editor from this conversation. No Play Mode, function testing, or executable build was run.
+
+## Sources and licensing
+- **MaruBuri**, copyright NAVER Corporation and NAVER Cultural Foundation: https://hangeul.naver.com/font and https://help.naver.com/service/30016/contents/18088?osType=PC
+  - The fonts may be embedded and redistributed under NAVER's open font license. The font files must not be sold alone.
+  - Source font mirror, file hashes verified against repository blobs: https://github.com/fonts-archive/MaruBuri
+- **Pretendard**, copyright Kil Hyung-jin and contributors, SIL Open Font License 1.1: https://github.com/orioncactus/pretendard
+  - Exact license text is included as `Pretendard-OFL.txt`.
+
+## Verification boundaries
+The GitHub code and font import assets can be reviewed statically. **Actual TMP font generation and prefab reserialization take place inside Unity Editor** when this change is imported; this response does not claim they already ran on your PC.
+
