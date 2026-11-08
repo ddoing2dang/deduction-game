@@ -24,3 +24,10 @@
 
 ## 참조
 `GAME_RULES.md` 최상위, `MAPS.md` 8개 방, `CASE_DESIGN.md` 시드/사건 생성, `RANDOM_CASE_AI_DESIGN.md` 제약 기반 랜덤 사건, `NPC_FREE_DIALOGUE.md` 사전 대사 선택형 자유 대화/기억, `NPC_SPRITE_SPEC.md` NPC 전용 최소 아트, `NATURAL_LANGUAGE_DEDUCTION.md` 자유 입력 판정, `PRODUCTION_STANDARD_2_5D.md` 시각 기준, `AGENTS.md` Codex 정책.
+
+## 테마별 UI 최종 아트 확정 (2026-11-08)
+- 사용자 최종 확정: **클래식 반투명 이름표+대화창 3종**을 공식 테마별 UI 아트로 사용.
+- 대저택/호텔 **블랙·레드**, 크루즈 **블루·화이트**, 음악방송 대기실 **골드·핑크**.
+- 대화창 내부 RGBA alpha **64/255(불투명도 약 25%)**, 이름표 내부 **89/255(약 35%)**, 외부 배경 **0**, 테두리·장식 선명도 보존.
+- 최종 승인 PNG와 검증 SHA, 자산 상세는 [`art/UI/DialogueFrames/Translucent/README.md`](art/UI/DialogueFrames/Translucent/README.md) 및 같은 폴더의 PNG 3종 참조. 예전 불투명판/다른 임의 재생성본으로 교체하지 않는다.
+- PNG 3종 GitHub 저장 확인 완료. **게임/UI 연동은 별도 작업**, 사용자 요청 없이 Unity 기능 테스트·빌드/배포하지 않는다.
