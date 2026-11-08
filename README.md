@@ -1,22 +1,29 @@
-# 마또 머더미스터리 — 1인 탐정형 보드게임
+# 마또 머더미스터리 — AI 추리형 2.5D 보드게임
 
-**2026-11-08 새 기획 구조 확정:** 플레이어는 탐정 **1명**, 마또·마리히·나즈·찌로·보키·문이레는 **NPC 용의자 6명**, 그중 **매 판 랜덤 범인 1명**.
+## 2026-11-08 최신 확정 구조
 
-카드 블러핑 대신 **현장 탐색·물증 조사·NPC 심문·진술 모순 대조·추리 보드**로 범인 / 실제 범행 장소 / 흉기 3항목의 진상을 밝혀낸다.
+- **플레이어:** 탐정 1명.
+- **NPC 용의자:** 마또 / 마리히 / 나즈 / 찌로 / 보키 / 문이레 — 6명.
+- **범인:** NPC 6명 중 매 판 1명 랜덤.
+- **맵:** 공동 로비 1 + NPC 개인실 6 + 피해자가 실제 살해된 사건 현장 1 = **총 8개 방**.
+- **수사:** NPC 알리바이 대조 + 현장/개인실 증거 연결 + 논리적으로 변화하는 무작위 사건 + 시간표/동선 사건 재구성 + 증거 기반 추궁.
+- **최종 정답:** **범인 + 범행수법 + 흉기**. **범행 장소는 정답 대상에서 제외.**
+- **정답 입력:** **한국어 자유 문장 직접 타이핑**. AI는 해석, 별도 정답 엔진은 판정.
+- **그래픽:** 새 고품질 8방 쿼터뷰 3D 디오라마 + 고품질 2D NPC 스프라이트. 기존 그레이박스 최종 아트 불채택.
 
-## 신규 유효 문서
-- [신규 게임 규칙](GAME_RULES.md)
-- [기획 베이스라인](DESIGN_BASELINE.md)
-- [사건 생성 및 증거 퍼즐 제안](CASE_DESIGN.md)
-- [NPC 대화·지식 설계](AI.md)
-- [새 맵 디자인 기준](MAPS.md)
-- [2.5D 제작 기준](PRODUCTION_STANDARD_2_5D.md)
-- [Codex 작업 지침](AGENTS.md)
-- [소프트웨어 구조](ARCHITECTURE.md)
-- [UI 흐름](UI_FLOW.md)
+## 현행 최상위 문서
+- [GAME_RULES.md](GAME_RULES.md) — 확정 룰
+- [DESIGN_BASELINE.md](DESIGN_BASELINE.md) — 고정 기획
+- [MAPS.md](MAPS.md) — 총 8개 방
+- [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
+- [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
+- [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
+- [UI_FLOW.md](UI_FLOW.md) — 자유 타이핑 고발·추리보드 UI
+- [PRODUCTION_STANDARD_2_5D.md](PRODUCTION_STANDARD_2_5D.md) — 고품질 아트/Unity 기준
+- [ARCHITECTURE.md](ARCHITECTURE.md) — 권장 기술 구조
+- [AGENTS.md](AGENTS.md) — Codex 작업 제약
+- [LEGACY_IMPLEMENTATION.md](LEGACY_IMPLEMENTATION.md) — 이전 런타임 현황
 
-**폐기:** 과거 6인 PvP, 손패·카드 블러핑, 수사자/범인 능력, 12라운드, 3테마 점수제, 구형 맵 배치와 밸런스 시뮬레이션은 새 게임 기준에 포함되지 않는다.
+**종전 전체 스냅샷:** [archive/pre-single-detective-reboot-20261108](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-single-detective-reboot-20261108). 구형 6인 PvP/카드/12R/9방 구조는 폐기.
 
-기존 GitHub 전체 스냅샷: [재설계 전 백업 브랜치](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-single-detective-reboot-20261108).
-
-현재는 **게임 기획·문서 변경만 적용**한 상태이며, 기존 Unity 소스와 씬은 자동 전환되지 않았다.
+**구현 상태:** 새 규칙을 GitHub 문서에 반영했으며 기존 Unity 씬·C# 런타임 자체를 새 게임으로 전환한 것은 아니다. 사용자 별도 요청 없이 테스트·빌드·배포하지 않았다.
