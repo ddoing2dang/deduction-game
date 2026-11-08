@@ -21,6 +21,9 @@
 - [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
 - [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
 - [NPC_FREE_DIALOGUE.md](NPC_FREE_DIALOGUE.md) — 자유 질문 → 사전 검수 NPC 대사 선택·기억·추궁
+- [CHARACTERS_PERSONALITY.md](CHARACTERS_PERSONALITY.md) — 사용자 확정 6명 성격과 말투
+- [game/dialogue/npc_dialogue_catalog.v1.json](game/dialogue/npc_dialogue_catalog.v1.json) — **6명 × 38상황 = 기초 대사 228개 저장**
+- [game/dialogue/README.md](game/dialogue/README.md) — 대사 ID·상황 해금·AI 검색 연결 가이드
 - [RANDOM_CASE_AI_DESIGN.md](RANDOM_CASE_AI_DESIGN.md) — 제약 기반 랜덤 사건·증거 검증·난이도 설계
 - [NPC_SPRITE_SPEC.md](NPC_SPRITE_SPEC.md) — NPC 6명 전용 최소 스프라이트 제작 명세
 - [UI_FLOW.md](UI_FLOW.md) — 자유 타이핑 고발·추리보드 UI
@@ -31,4 +34,4 @@
 
 **종전 전체 스냅샷:** [archive/pre-single-detective-reboot-20261108](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-single-detective-reboot-20261108). 구형 6인 PvP/카드/12R/9방 구조는 폐기.
 
-**구현 상태:** 새 규칙을 GitHub 문서에 반영했으며 기존 Unity 씬·C# 런타임 자체를 새 게임으로 전환한 것은 아니다. 사용자 별도 요청 없이 테스트·빌드·배포하지 않았다.
+**구현 상태:** 6인 성격 및 기초 상황별 대사 JSON(228개)을 저장했으며, 새 규칙을 GitHub 문서에 반영했지만 기존 Unity 씬·C# 런타임 자체를 새 게임으로 전환한 것은 아니다. 사용자 별도 요청 없이 테스트·빌드·배포하지 않았다.
