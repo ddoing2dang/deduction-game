@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "userLockedAt": "2026-11-08",
+  "status": "USER_LOCK_DESIGN_ONLY_NOT_UNITY_RUNTIME_ENABLED",
+  "ruleId": "ONLY_CULPRIT_MAY_PROVIDE_FALSE_INFORMATION",
+  "scope": [
+    "HOTEL",
+    "CRUISE",
+    "MUSIC_BROADCAST"
+  ],
+  "canonicalRule": "현재 사건 caseTruth.culpritNpcId와 동일한 NPC만 허위 사실을 의도적으로 진술할 수 있다. 무고한 5명은 사소한 이유/사생활/기억 착오를 포함해 사실과 다른 정보를 전달하면 안 된다.",
+  "requirements": {
+    "innocentNpcCount": 5,
+    "culpritNpcCount": 1,
+    "innocent": {
+      "canMakeFalseStatements": false,
+      "canFabricateAlibi": false,
+      "canLieAboutPrivateMatters": false,
+      "canInventWitnessEvents": false,
+      "canMakeObjectivelyWrongMemoryClaims": false,
+      "canGuessUnseenFactsAsFacts": false,
+      "canStateKnownVerifiedFacts": true,
+      "canExplicitlySayUnknown": true,
+      "canRefusePersonalQuestionsWithoutFalseFacts": true,
+      "mustQualifySubjectiveImpressions": true,
+      "unknownResponse": "자신이 실제로 알지 못하는 사실은 '모른다/못 봤다'로 구분해서 말한다. 목격했는데 안 봤다고 부정하면 거짓말이므로 불가."
+    },
+    "culprit": {
+      "canMakeFalseStatements": true,
+      "falseStatementRequiresAuthorApproval": true,
+      "falseStatementMustHaveActualContradictoryCaseFact": true,
+      "falseStatementRequiresReachableContradictionEvidence": true,
+      "mayTellTruth": true,
+      "canRefuseOrSayUnknown": true,
+      "cannotChangeCaseTruth": true,
+      "cannotInventUnapprovedFakeEvidence": true
+    },
+    "allNpcs": {
+      "mustOnlyUsePreauthoredApprovedLines": true,
+      "mustHaveSpeakerKnowledgeForClaim": true,
+      "noRuntimeGenerationOfNewFacts": true,
+      "uncertainMemoryMustNotBecomeDefiniteFalseClaim": true,
+      "preserveEarlierStatementsWhenCorrected": true
+    }
+  },
+  "runtimeSelectionGate": {
+    "inputKeys": [
+      "caseTruth.culpritNpcId",
+      "activeNpcId",
+      "lineId",
+      "statement.truthStatus",
+      "statement.requiredFactIds",
+      "NpcKnowledge",
+      "caseEvidence",
+      "priorStatements"
+    ],
+    "allowConditions": [
+      "line is authored and approved for the current exact case",
+      "statement is permitted by speaker knowledge and prerequisite evidence/previous statement state",
+      "if statement.truthStatus == AUTHOR_APPROVED_FALSE then activeNpcId == caseTruth.culpritNpcId AND statement has verified contradictory facts AND refutable evidence route",
+      "if activeNpcId != caseTruth.culpritNpcId then every factual claim must be verified true in the current case; truthStatus FALSE or UNKNOWN_PROVENANCE must be rejected",
+      "unclear or unobserved information must use a truthful non-assertive preauthored reply"
+    ],
+    "rejects": [
+      "an innocent NPC making a fabricated, deliberately misleading or mistaken factual claim",
+      "using innocent privacy, embarrassment or red-herring status to justify false facts",
+      "a contradiction-accepted or retraction-of-false-claim line on an innocent NPC",
+      "a contradiction that relies on a wrong quote or facts the speaker could not know",
+      "an AI model deciding truthfulness or enabling lying by itself"
+    ],
+    "truthLabels": [
+      "TRUE_PROPOSED",
+      "FALSE_CULPRIT_PROPOSED",
+      "VERIFIED_TRUE",
+      "AUTHOR_APPROVED_FALSE",
+      "UNKNOWN_NO_ASSERTION",
+      "DECLINED_NO_ASSERTION"
+    ],
+    "failClosedWhenUnknown": true,
+    "roleAuthority": "caseTruth.culpritNpcId, never visual appearance/personality/name"
+  },
+  "authoringChecks": [
+    "All six NPC identities are distinct, and culpritNpcId is one of them.",
+    "There are exactly five innocent NPCs and none has a FALSE_CULPRIT_PROPOSED/AUTHOR_APPROVED_FALSE statement.",
+    "Every claim given to an innocent must trace to a consistent, knowable event in the validated case.",
+    "Every culprit false claim must point to a contradictory verified fact and a discoverable refutation.",
+    "CONFRONT_VALID/RETRACT_VALID/MISREMEMBER_VALID involving a false original claim may only target the culprit.",
+    "Proof graph, timeline and all physical evidence remain objectively truthful; falsehoods are dialogue only.",
+    "No fake contradiction or false rumor may be generated for an innocent to mimic a culprit."
+  ],
+  "sourceMaterial": "game/cases/prototypes/evidence_driven_dialogue_cases.v1.json",
+  "legacyCatalogHandling": "Original 228+486 and curated 480 draft lines remain preserved; role-agnostic unverified lines must not be enabled until this policy has been enforced by the game runtime.",
+  "implementationStatus": {
+    "policyJsonCommitted": true,
+    "existingPrototypesAnnotated": true,
+    "unityDialogueSelectorGateIntegrated": false,
+    "functionalTestPerformed": false,
+    "buildPerformed": false
+  }
+}
