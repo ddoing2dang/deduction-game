@@ -12,6 +12,13 @@
 - AI는 문장 해석을 담당하되, 진실·채점 권한을 주지 않는다. 구조화된 사건 정답 `culpritNpcId/methodId/weaponId`와 독립 판정하여 **동의어/표현 차이는 인정**, 애매한 문장은 정답 판정 전에 확인 요청.
 - 아트 방향은 **고품질 쿼터뷰 2.5D**(3D 디오라마 + 2D 방향별 NPC 스프라이트). 낡은 Unity 기본도형 맵은 최종 아트로 사용하지 않는다.
 
+## 1-1. 사용자 확정 캐릭터 성격 및 상황별 대사 데이터
+- 캐릭터별 고정 성격/말투는 `CHARACTERS_PERSONALITY.md`에서 최상위 참조한다. **마또 엉뚱·내면 여림 숨김·외향적 / 찌로 털털·사려 깊음·긍정적 / 마리히 문학소녀·오타쿠·긍정적·상상력 풍부 / 나즈 포근·누나미·줏대·안정형 / 보키 약한 사투리·미소녀·괴식 선호·일반인 느낌 / 문이레 조용·나긋·소심·고집 강함**.
+- **작가 작성 초기 대사 228개(6 NPC×38상황)**가 `game/dialogue/npc_dialogue_catalog.v1.json`에 저장되어 있다. Unity 게임에 연동된 것은 아니다.
+- `game/dialogue/README.md`의 `requiredState` 게이트, `lineId` 고유성, 감정/애니메이션 태그, 사건 진술의 승인된 슬롯 매핑을 지킨다.
+- 구체적 사건 사실이 들어가는 대사/알리바이/목격은 아직 작성되지 않은 사건별 증언팩 없이 임의 출력하거나 NPC 대사가 사실을 만들어내지 않도록 한다. 캐릭터의 성격과 대사집을 사용자 승인 없이 재해석·덮어쓰기하지 않는다.
+- 초기 대사는 작성된 베이스 원문이며 사건별 유효성/게임 내 검증 완료로 보고하지 않는다.
+
 ## 2. 최상위 문서 및 세부 지침
 1. `GAME_RULES.md`: 현행 확정 룰
 2. `DESIGN_BASELINE.md`: 변경 불가 베이스라인
@@ -22,7 +29,8 @@
 7. `NPC_SPRITE_SPEC.md`: NPC 6명 최소 스프라이트(8방향 정적/표정/입모양/반응), 워크/런 조건부 제작
 8. `NATURAL_LANGUAGE_DEDUCTION.md`: 최종 자유 타이핑 및 AI/결정론적 채점 분리
 9. `AI.md`: NPC의 지식·거짓 진술·심문 응답
-10. `UI_FLOW.md`, `ARCHITECTURE.md`, `PRODUCTION_STANDARD_2_5D.md`: 화면·구조·아트
+10. `CHARACTERS_PERSONALITY.md`, `game/dialogue/README.md`, `game/dialogue/npc_dialogue_catalog.v1.json`: 6인 성격·사전 작성 대사·상황 게이트
+11. `UI_FLOW.md`, `ARCHITECTURE.md`, `PRODUCTION_STANDARD_2_5D.md`: 화면·구조·아트
 
 ## 3. 구현 시 금지
 - 폐기된 **수사자 5명 vs 범인 1명 PvP**, 12R, 2P/3P, 카드/협조/블러핑, B1 능력, 3테마 누적점수, 구형 9개 방과 고정 연결 재사용 금지.
