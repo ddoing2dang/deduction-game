@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "documentedAt": "2026-11-08",
   "status": "user_uploaded_asset_mapping_design_only_not_unity_integrated",
   "sources": [
@@ -22,75 +22,93 @@
   "npcVisualSlots": [
     {
       "sourceFolder": "NPC_Sprites/01_silver",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/01_silver",
+      "npcId": "MATTO",
+      "npcDisplayName": "서은별",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MATTO_SeoEunbyeol",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "마또",
+      "hairColorKo": "은발",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     },
     {
       "sourceFolder": "NPC_Sprites/02_blonde",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/02_blonde",
+      "npcId": "MARIHI",
+      "npcDisplayName": "윤서린",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_YunSeorin",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "마리히",
+      "hairColorKo": "금발",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     },
     {
       "sourceFolder": "NPC_Sprites/03_brown",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/03_brown",
+      "npcId": "NAZ",
+      "npcDisplayName": "한소담",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/NAZ_HanSodam",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "나즈",
+      "hairColorKo": "갈색",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     },
     {
       "sourceFolder": "NPC_Sprites/04_red",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/04_red",
+      "npcId": "BOKI",
+      "npcDisplayName": "강다현",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_KangDahyeon",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "보키",
+      "hairColorKo": "빨강",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     },
     {
       "sourceFolder": "NPC_Sprites/05_green",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/05_green",
+      "npcId": "JJIRO",
+      "npcDisplayName": "이다온",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/JJIRO_LeeDaon",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "찌로",
+      "hairColorKo": "연두",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     },
     {
       "sourceFolder": "NPC_Sprites/06_purple",
-      "npcId": null,
-      "npcDisplayName": null,
-      "identityStatus": "unconfirmed_do_not_guess",
-      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/06_purple",
+      "npcId": "MOONIRE",
+      "npcDisplayName": "백시은",
+      "identityStatus": "user_confirmed_color_to_legacy_id",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_BaekSieun",
       "assetPatterns": {
         "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
         "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
         "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
-      }
+      },
+      "legacyNpcDisplayName": "문이레",
+      "hairColorKo": "보라",
+      "displayNameStatus": "new_korean_name_authored_for_user_request"
     }
   ],
   "approvedNpcIds": [
@@ -162,10 +180,13 @@
     "cardFramesPresentInRepo": true,
     "npcBinaryPNGsCommitted": false,
     "unitySpriteImportConfigured": false,
-    "npcNameMappingsConfirmed": false,
+    "npcNameMappingsConfirmed": true,
     "unityRuntimeHooked": false,
     "functionalTestPerformed": false,
-    "buildPerformed": false
+    "buildPerformed": false,
+    "displayNamesConfiguredInJSON": true
   },
-  "note": "Never claim six colored slots are mapped to the named suspects until confirmed by the original image identity. This manifest establishes paths and reuse for the next asset-integration work."
+  "note": "User confirmed source-color->legacy-identity mappings. New Korean display names are assigned for UI use; old IDs/names are retained only as legacy references. Unity wiring and binary repo upload not yet performed.",
+  "playerFacingNamesSource": "game/characters/npc_display_profiles.v1.json",
+  "displayNamePolicy": "UI shows authored new Korean displayName; internal npcId/roomId/lineId and preserved original authored dialogue remain unchanged. Do not use deprecated names in new visible UI."
 }
