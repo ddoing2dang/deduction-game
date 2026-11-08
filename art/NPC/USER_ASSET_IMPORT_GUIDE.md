@@ -17,12 +17,12 @@
 ## NPC 스프라이트 6개 슬롯 — 사용자 직접 제공한 색상별 정체 + 신규 한국식 이름
 | 머리색/소스 폴더 | 내부 npcId | 기존 이름(기술 참조만) | 신규 게임 표시 이름 |
 |---|---|---|---|
-| 은발 / `01_silver` | `MATTO` | 마또 | **서은별** |
-| 금발 / `02_blonde` | `MARIHI` | 마리히 | **윤서린** |
-| 갈색 / `03_brown` | `NAZ` | 나즈 | **한소담** |
-| 빨강 / `04_red` | `BOKI` | 보키 | **강다현** |
-| 연두 / `05_green` | `JJIRO` | 찌로 | **이다온** |
-| 보라 / `06_purple` | `MOONIRE` | 문이레 | **백시은** |
+| 은발 / `01_silver` | `MATTO` | 마또 | **마도아** |
+| 금발 / `02_blonde` | `MARIHI` | 마리히 | **마리희** |
+| 갈색 / `03_brown` | `NAZ` | 나즈 | **나주아** |
+| 빨강 / `04_red` | `BOKI` | 보키 | **보희** |
+| 연두 / `05_green` | `JJIRO` | 찌로 | **지로아** |
+| 보라 / `06_purple` | `MOONIRE` | 문이레 | **문이래** |
 
 새 이름은 화면 표시용이며 사용자 제공 색상-캐릭터 대응은 확정됨. `game/characters/npc_display_profiles.v1.json`이 단일 표시 이름 기준표이다. 기존 `npcId`, `roomId`, `lineId`, 714개 대사 원문을 삭제·변형하지 말고 UI에서 `npcId → displayName`으로 치환한다. 기술 폴더 기본명은 `MATTO_SeoEunbyeol` 형식을 사용한다.
 - `MapIdle_N/NE/E/SE/S/SW/W/NW.png`: 8방향 **정적** 맵 배치. 걷기 애니메이션으로 오인하지 않는다.
