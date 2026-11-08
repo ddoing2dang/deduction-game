@@ -1,5 +1,10 @@
 # 마또 머더미스터리 — AI 추리형 2.5D 보드게임
 
+**최신 플랫폼 확정(2026-11-09): Windows PC 64비트 전용. Android/iOS/macOS 및 모바일 개발·최적화·빌드·배포 제외. 기존 Unity 파일/에셋은 보존하고 사용자 별도 요청 없이 실행 테스트·Play Mode·EXE 빌드를 하지 않는다.**
+
+**맵 제작 매뉴얼:** [PC_MAP_BUILD_MANUAL.md](PC_MAP_BUILD_MANUAL.md) · **준비된 CC0 3D 모델 19개:** [art/Environment/](art/Environment/)
+
+
 ## 2026-11-08 최신 확정 구조
 
 - **플레이어:** 탐정 1명.

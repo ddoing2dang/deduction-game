@@ -1,5 +1,8 @@
 # 마또 머더미스터리 — 신규 기술 구조 (2026-11-08)
 
+**최신 플랫폼 확정(2026-11-09): Windows PC 64비트 전용. Android/iOS/macOS 및 모바일 개발·최적화·빌드·배포 제외. 기존 Unity 파일/에셋은 보존하고 사용자 별도 요청 없이 실행 테스트·Play Mode·EXE 빌드를 하지 않는다.**
+
+
 > 구형 6인 PvP/카드/12라운드 구현은 LEGACY. 목표: **탐정 1명 + NPC 용의자 6명 + 고정된 8개 방 + 자유 타이핑 최종 고발**.
 
 ## 주요 시스템 책임
@@ -37,4 +40,4 @@
 - 사건 사실 데이터·LLM 생성 발화·자연어 최종 추리 입력을 서로 격리한다. 대화 결과는 검증된 상태 변경만 적용.
 - `NPC_FREE_DIALOGUE.md`와 `RANDOM_CASE_AI_DESIGN.md`를 구현 계약으로 사용하고, 자연어 분류/대사 검색 연결 시 lineId 유효성/해금 권한 검증/프롬프트 주입 차단/비밀키 서버 보관/지연·장애 복구를 설계한다. NPC 아트 범위는 `NPC_SPRITE_SPEC.md`를 따른다.
 - 예전 GameState/TurnManager/Card/AIController/AbilityManager/장소 정답 체크 코드는 새 설계에 자동 합류하지 않는다.
-- 구형 `game/UnityProject`는 원본 보존. 새 코드 구현과 Unity Play Mode/모바일 성능 테스트는 아직 수행하지 않았다.
+- 구형 `game/UnityProject`는 원본 보존. 새 코드 구현과 Unity Play Mode/Windows PC 성능 테스트는 아직 수행하지 않았다.

@@ -1,5 +1,10 @@
 # 마또 머더미스터리 — Codex / AI 최상위 작업 지침 (2026-11-08)
 
+**최신 플랫폼 확정(2026-11-09): Windows PC 64비트 전용. Android/iOS/macOS 및 모바일 개발·최적화·빌드·배포 제외. 기존 Unity 파일/에셋은 보존하고 사용자 별도 요청 없이 실행 테스트·Play Mode·EXE 빌드를 하지 않는다.**
+
+**PC 맵 제작:** [PC_MAP_BUILD_MANUAL.md](PC_MAP_BUILD_MANUAL.md). 유료 자산 무단 업로드 금지, CC0 출처 및 원본 라이선스 보존. `art/Environment/ThirdParty/KayKitFurnitureBits/`의 모델 19개는 현재 아트 스테이징이며 Unity에 임포트/작동 검증한 것으로 말하지 않는다.
+
+
 ## 1. 현재 게임 USER LOCK (최우선)
 - **새 Unity 프로젝트 리셋 (2026-11-09):** 이전 `game/UnityProject/`의 구형 코드·패키지·설정 18개 Git 추적 파일은 `main`에서 제거. 삭제 전 현재 전체 작업은 `archive/pre-fresh-unity-project-20261109`에 백업. 기획 문서, 캐릭터·대화창 원본 PNG, 사건/대사 JSON은 **그대로 보존**. 신규 프로젝트는 Unity Hub에서 `game/UnityProject`에 Universal 3D(URP) 템플릿으로 생성. `game/UNITY_RESTART_GUIDE.md` 참조. PC 로컬 Unity 프로젝트는 GitHub 작업만으로 삭제·생성되지 않음. 새 씬/프리팹, 게임 기능, 테스트/빌드 미실시.
 

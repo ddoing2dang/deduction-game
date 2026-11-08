@@ -1,5 +1,10 @@
 # 추리 게임 — 새 Unity 프로젝트 시작 (2026-11-09)
 
+**최신 플랫폼 확정(2026-11-09): Windows PC 64비트 전용. Android/iOS/macOS 및 모바일 개발·최적화·빌드·배포 제외. 기존 Unity 파일/에셋은 보존하고 사용자 별도 요청 없이 실행 테스트·Play Mode·EXE 빌드를 하지 않는다.**
+
+[Windows PC 맵 제작 매뉴얼](../PC_MAP_BUILD_MANUAL.md) · [환경 에셋 19종](../art/Environment/)
+
+
 **이전 `UnityProject/` 프로젝트와 구형 6인 PvP/카드/턴/씬 자동 생성 코드는 `main`에서 초기화되었다.** 삭제 전 전체 상태는 [백업 브랜치](https://github.com/ddoing2dang/deduction-game/tree/archive/pre-fresh-unity-project-20261109)에 있다.
 
 새 프로젝트는 **Unity Hub → New Project → Universal 3D (URP)**, 프로젝트 이름 `UnityProject`, 저장 위치 `<repo>/game`로 생성한다. 버전은 기존 사용하던 Unity **6000.3.26f1** 권장. [자세한 새 프로젝트 생성/이관 절차](UNITY_RESTART_GUIDE.md) 참조.
