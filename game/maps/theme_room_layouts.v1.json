@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-11-08",
+  "usage": "Design data only, not loaded by Unity; no in-game implementation claimed",
+  "sharedConstraints": {
+    "totalInvestigableRooms": 8,
+    "perLayoutLevelCount": 2,
+    "roomsPerLevel": 4,
+    "npcSuspects": [
+      "MATTO",
+      "MARIHI",
+      "NAZ",
+      "JJIRO",
+      "BOKI",
+      "MOONIRE"
+    ],
+    "culpritCount": 1,
+    "answerAxes": [
+      "culpritNpcId",
+      "methodId",
+      "weaponId"
+    ],
+    "logicalRoomIds": [
+      "LOBBY",
+      "ROOM_MATTO",
+      "ROOM_JIRO",
+      "ROOM_BOKI",
+      "ROOM_MARIHI",
+      "ROOM_NAZ",
+      "ROOM_MOONIRE",
+      "CRIME_SCENE"
+    ],
+    "transitAreasNotCountedAsRooms": [
+      "stairs",
+      "corridors",
+      "landings",
+      "elevator"
+    ]
+  },
+  "themes": {
+    "HOTEL": {
+      "status": "saved_working_baseline_user_approved",
+      "layoutDocument": "HOTEL_LAYOUT.md",
+      "levels": [
+        {
+          "id": "1F",
+          "name": "1층",
+          "rooms": [
+            {
+              "roomId": "LOBBY",
+              "displayNumber": null,
+              "displayName": "공동 로비",
+              "features": [
+                "front_desk",
+                "lounge",
+                "entrance"
+              ]
+            },
+            {
+              "roomId": "ROOM_MATTO",
+              "displayNumber": "101",
+              "displayName": "마또의 방"
+            },
+            {
+              "roomId": "ROOM_JIRO",
+              "displayNumber": "102",
+              "displayName": "찌로의 방"
+            },
+            {
+              "roomId": "ROOM_BOKI",
+              "displayNumber": "103",
+              "displayName": "보키의 방"
+            }
+          ]
+        },
+        {
+          "id": "2F",
+          "name": "2층",
+          "rooms": [
+            {
+              "roomId": "ROOM_MARIHI",
+              "displayNumber": "201",
+              "displayName": "마리히의 방"
+            },
+            {
+              "roomId": "ROOM_NAZ",
+              "displayNumber": "202",
+              "displayName": "나즈의 방"
+            },
+            {
+              "roomId": "ROOM_MOONIRE",
+              "displayNumber": "203",
+              "displayName": "문이레의 방"
+            },
+            {
+              "roomId": "CRIME_SCENE",
+              "displayNumber": "204",
+              "displayName": "살해 현장"
+            }
+          ]
+        }
+      ],
+      "transitGraphConcept": "single central stair between 1F lobby/corridor and 2F corridor; corridor travel not a 9th room",
+      "mobilityDetailsStatus": "unimplemented"
+    },
+    "CRUISE": {
+      "status": "proposed_not_yet_user_approved",
+      "layoutDocument": "CRUISE_LAYOUT.md",
+      "levels": [
+        {
+          "id": "DECK_3",
+          "name": "3데크",
+          "rooms": [
+            {
+              "roomId": "LOBBY",
+              "displayNumber": null,
+              "displayName": "공동 아트리움 로비",
+              "features": [
+                "welcome_desk",
+                "lounge",
+                "atrium"
+              ]
+            },
+            {
+              "roomId": "ROOM_NAZ",
+              "displayNumber": "301",
+              "displayName": "나즈 선실"
+            },
+            {
+              "roomId": "ROOM_BOKI",
+              "displayNumber": "302",
+              "displayName": "보키 선실"
+            },
+            {
+              "roomId": "ROOM_MOONIRE",
+              "displayNumber": "303",
+              "displayName": "문이레 선실"
+            }
+          ]
+        },
+        {
+          "id": "DECK_4",
+          "name": "4데크",
+          "rooms": [
+            {
+              "roomId": "ROOM_MATTO",
+              "displayNumber": "401",
+              "displayName": "마또 선실"
+            },
+            {
+              "roomId": "ROOM_JIRO",
+              "displayNumber": "402",
+              "displayName": "찌로 선실"
+            },
+            {
+              "roomId": "ROOM_MARIHI",
+              "displayNumber": "403",
+              "displayName": "마리히 선실"
+            },
+            {
+              "roomId": "CRIME_SCENE",
+              "displayNumber": "404",
+              "displayName": "살해 현장 선실"
+            }
+          ]
+        }
+      ],
+      "transitGraphConcept": "forward and aft stairs, port and starboard corridors, no additional investigable rooms",
+      "mobilityDetailsStatus": "proposed_only"
+    }
+  }
+}
