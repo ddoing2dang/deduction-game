@@ -14,6 +14,7 @@
 - `culpritNpcId`: 6 NPC 중 1명.
 - `methodId`: 범행수법의 핵심 원리/진행 과정을 식별하는 **사건별 수법 ID**.
 - `methodVariantId`: 4대 분류 안에서 사건의 검증 가능한 **세부 사망 기제**(현재 9개 제안 중 사용 가능한 것)를 가리키는 선택적 구분 ID. **최종 고발에 추가 4번째 답변 항목이 아니며**, `methodId`의 올바른 대분류 표현을 인정한다. 정확한 세부 유형은 추리보드 및 사건 인과 검증에서만 요구한다.
+- **USER LOCK:** 세부 9개 중 어떤 분기라도 **플레이어가 4대 상위 범주만 맞혀도 수법 정답**. 고발 판정은 `caseTruth.methodId` 비교만 사용하고 `caseTruth.methodVariantId`와 비교하지 않는다. 상세 사례 27개는 `METHOD_THEME_CASES.md` 및 `game/cases/method_variant_theme_scenarios.v1.json` 참조.
 - `weaponId`: 사용된 흉기의 ID.
 - `weaponInstanceId`: 동일한 흉기 종류의 여러 물리 실물 중 **실제 사용한 1개 인스턴스**를 추적하기 위한 사건 내부 ID. 플레이어 정답에는 종류 `weaponId`만 요구한다.
 - `weaponSourceRoomId`, `weaponReturnRoomId`: 실물 흉기가 다른 공간에서 쓰인 경우 사건 발생 전후의 실제 접근·회수·원위치 인과를 명시한다. 수사 시 흉기 실물은 6 NPC방에만 존재해야 한다.
