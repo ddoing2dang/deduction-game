@@ -1,0 +1,111 @@
+{
+  "projectPath": "C:/UnityProjects/DeductionGame/mystery/Assets",
+  "unityVersion": "6000.3.26f1",
+  "isPlaying": false,
+  "referenceFields": [
+    {
+      "name": "mansionFrame",
+      "assigned": true
+    },
+    {
+      "name": "cruiseFrame",
+      "assigned": true
+    },
+    {
+      "name": "musicBroadcastFrame",
+      "assigned": true
+    },
+    {
+      "name": "frame",
+      "assigned": true
+    },
+    {
+      "name": "speakerName",
+      "assigned": true
+    },
+    {
+      "name": "dialogueBody",
+      "assigned": true
+    },
+    {
+      "name": "questionInput",
+      "assigned": true
+    },
+    {
+      "name": "sendButton",
+      "assigned": true
+    },
+    {
+      "name": "historyScroll",
+      "assigned": true
+    },
+    {
+      "name": "historyText",
+      "assigned": true
+    },
+    {
+      "name": "statusText",
+      "assigned": true
+    }
+  ],
+  "buttons": [
+    "SendButton"
+  ],
+  "inputFields": 1,
+  "scrollRects": 1,
+  "themeNames": [
+    "MANSION",
+    "CRUISE",
+    "MUSIC_BROADCAST"
+  ],
+  "npcNames": [
+    "마도아",
+    "마리예",
+    "나주아",
+    "복희",
+    "지로아",
+    "문이린"
+  ],
+  "scene": "Assets/Scenes/DialoguePreview.unity",
+  "roots": [
+    "Main Camera",
+    "Canvas",
+    "EventSystem"
+  ],
+  "dependencies": [
+    "Assets/UI/Fonts/NotoSansKR SDF.asset",
+    "Assets/UI/Art/DialogueFrames/Cruise.png",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionAsset.cs",
+    "Assets/UI/Fonts/NotoSansKR-Regular.otf",
+    "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalCameraData.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/ContentSizeFitter.cs",
+    "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputSystemUIInputModule@64.png",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/ScrollRect.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/CanvasScaler.cs",
+    "Assets/UI/Art/DialogueFrames/Mansion.png",
+    "Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Input Field Icon.psd",
+    "Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+    "Packages/com.unity.ugui/Runtime/TMP/TextMeshProUGUI.cs",
+    "Assets/Scenes/DialoguePreview.unity",
+    "Packages/com.unity.ugui/Runtime/TMP/TMP_InputField.cs",
+    "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+    "Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+    "Assets/UI/Scripts/DialoguePanel.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/GraphicRaycaster.cs",
+    "Assets/UI/Scripts/DialogueImeInput.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Button.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/EventSystem/EventSystem.cs",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionReference.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Image.cs",
+    "Packages/com.unity.ugui/Runtime/TMP/TMP_FontAsset.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/RectMask2D.cs",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/UI/InputSystemUIInputModule.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/VerticalLayoutGroup.cs",
+    "Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Scrollbar.cs",
+    "Assets/UI/Art/DialogueFrames/MusicBroadcast.png",
+    "Assets/UI/Prefabs/DialoguePanel.prefab"
+  ],
+  "functionalTestsPerformed": false,
+  "playModeEntered": false,
+  "buildsPerformed": false
+}

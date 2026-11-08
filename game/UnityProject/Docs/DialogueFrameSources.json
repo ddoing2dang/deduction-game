@@ -1,0 +1,35 @@
+{
+  "verifiedProject": "C:/UnityProjects/DeductionGame/mystery",
+  "ref": "main",
+  "repository": "ddoing2dang/deduction-game",
+  "sourceCommit": "1b1db6d89e7d3f843372d1783e0773b710d968a1",
+  "frames": [
+    {
+      "originalBytesUnchanged": true,
+      "height": 682,
+      "importedPath": "Assets/UI/Art/DialogueFrames/Mansion.png",
+      "width": 2048,
+      "source": "https://raw.githubusercontent.com/ddoing2dang/deduction-game/main/art/UI/DialogueFrames/ThemeDialogue_v1/Mansion.png",
+      "sha256": "8831c89c8a8cd7fc3e359166894d7a3055a974a9df164247d03c1e7d5d222f7e",
+      "theme": "MANSION"
+    },
+    {
+      "originalBytesUnchanged": true,
+      "height": 682,
+      "importedPath": "Assets/UI/Art/DialogueFrames/Cruise.png",
+      "width": 2048,
+      "source": "https://raw.githubusercontent.com/ddoing2dang/deduction-game/main/art/UI/DialogueFrames/ThemeDialogue_v1/Cruise.png",
+      "sha256": "3d6348f9407c96903f9d12ab225cfaf884948a1bc4ea9ba99cf1cb1194a3103b",
+      "theme": "CRUISE"
+    },
+    {
+      "originalBytesUnchanged": true,
+      "height": 682,
+      "importedPath": "Assets/UI/Art/DialogueFrames/MusicBroadcast.png",
+      "width": 2048,
+      "source": "https://raw.githubusercontent.com/ddoing2dang/deduction-game/main/art/UI/DialogueFrames/ThemeDialogue_v1/MusicBroadcast.png",
+      "sha256": "2a70601ab2a8524d34952c774e23818d73d2a87baedc584554a2fc1c2e0fa62e",
+      "theme": "MUSIC_BROADCAST"
+    }
+  ]
+}
