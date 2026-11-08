@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentedAt": "2026-11-08",
+  "status": "authored_new_korean_display_names_source_mapping_user_confirmed_not_unity_integrated",
+  "purpose": "6 NPC의 컬러 스프라이트를 기존 내부 ID와 안전히 연결하되 플레이어 화면에는 새 한국식 이름만 표시.",
+  "policy": {
+    "preserveStableInternalNpcId": true,
+    "legacyNamesOnlyForMigrationAndSourceTracing": true,
+    "newPlayerFacingNameField": "displayName",
+    "fallbackWhenNoMapping": "reject_unmapped_npc_instead_of_guessing",
+    "dialogueLineIdMustRemainUnchanged": true,
+    "doNotRewriteOriginal714Lines": true,
+    "noVillainVisualCues": true
+  },
+  "characters": [
+    {
+      "npcId": "MATTO",
+      "displayName": "서은별",
+      "legacyName": "마또",
+      "hairColorKo": "은발",
+      "sourceSpriteSlot": "01_silver",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MATTO_SeoEunbyeol",
+      "personalitySummary": "활발하고 엉뚱하지만 속마음을 쉽게 드러내지 않음",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    },
+    {
+      "npcId": "MARIHI",
+      "displayName": "윤서린",
+      "legacyName": "마리히",
+      "hairColorKo": "금발",
+      "sourceSpriteSlot": "02_blonde",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_YunSeorin",
+      "personalitySummary": "문학과 상상을 좋아하는 명랑한 성격",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    },
+    {
+      "npcId": "NAZ",
+      "displayName": "한소담",
+      "legacyName": "나즈",
+      "hairColorKo": "갈색",
+      "sourceSpriteSlot": "03_brown",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/NAZ_HanSodam",
+      "personalitySummary": "포근하고 다정하면서도 기준이 분명함",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    },
+    {
+      "npcId": "BOKI",
+      "displayName": "강다현",
+      "legacyName": "보키",
+      "hairColorKo": "빨강",
+      "sourceSpriteSlot": "04_red",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/BOKI_KangDahyeon",
+      "personalitySummary": "소탈하고 친근하며 음식 취향이 독특함",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    },
+    {
+      "npcId": "JJIRO",
+      "displayName": "이다온",
+      "legacyName": "찌로",
+      "hairColorKo": "연두",
+      "sourceSpriteSlot": "05_green",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_LeeDaon",
+      "personalitySummary": "털털하고 긍정적이며 사람을 배려함",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    },
+    {
+      "npcId": "MOONIRE",
+      "displayName": "백시은",
+      "legacyName": "문이레",
+      "hairColorKo": "보라",
+      "sourceSpriteSlot": "06_purple",
+      "assetFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_BaekSieun",
+      "personalitySummary": "조용하고 여리지만 자기 생각은 단단함",
+      "sourceIdentityStatus": "explicitly_user_confirmed",
+      "displayNameOrigin": "new Korean-name creative assignment at user request"
+    }
+  ],
+  "lookupByNpcId": {
+    "MATTO": "서은별",
+    "MARIHI": "윤서린",
+    "NAZ": "한소담",
+    "BOKI": "강다현",
+    "JJIRO": "이다온",
+    "MOONIRE": "백시은"
+  },
+  "themes": [
+    "HOTEL",
+    "CRUISE",
+    "MUSIC_BROADCAST"
+  ],
+  "applicability": [
+    "NPC name tags",
+    "investigation free-text chat speaker labels",
+    "character portrait UI",
+    "room labels generated from npcId",
+    "future localized UI"
+  ],
+  "roomIdAndDialogueSourcePolicy": "ROOM_MATTO, ROOM_JIRO etc. and source npcName strings in dialogue drafts are technical/legacy records; UI must resolve via this table and must not use legacy source npcName for final labels.",
+  "integrated": false
+}
