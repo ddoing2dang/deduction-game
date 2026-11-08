@@ -27,7 +27,8 @@
 - [MUSIC_BROADCAST_LAYOUT.md](MUSIC_BROADCAST_LAYOUT.md) — 박물관 대체 음악방송 단층 U자형 8공간 확정 배치
 - [game/maps/theme_room_layouts.v1.json](game/maps/theme_room_layouts.v1.json) — 호텔·크루즈·음악방송 테마별 표시 번호와 논리 방 ID 대응
 - [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
-- **사용자 지시 반영:** 기존 흉기 후보 12종 이름을 모두 바꿔도 됨 → **12종 전면 재선정**, 방당 3개/총 18실물 구조 유지. **9세부×3테마=27개 흉기·증거 구성안**, NPC 조건부 대사 486개 초안을 추가. **수법 정답은 상위 4분류만 맞아도 인정**; 세부 9종 정답 추가 강제 금지.
+- **흉기 품목 최신 작업안:** 사용자의 요청으로 **실제로 치명적인 결과가 가능한 흔한 물건 12종**(커터칼·독약병·가위·벨트·아령·수면제·가방끈·망치·유리병·땅콩 과자·베개·과일칼)으로 전면 교체. **3개 테마 공통·NPC 개인실마다 3개·총 18개** 수량 유지. 약물/알레르기/낙하물은 사건별 객관 증명이 없으면 사용 불가.
+- **테마별 범행 구상:** 9세부×3테마=27개 사건 설계 후보, 캐릭터 성격에 맞춰 구어체로 전면 재작성한 조건부 대사 486개. **상위 4분류의 수법만 맞혀도 수법 정답 인정**하며 범인·흉기 종류도 별도 판정. 현재 자료·대사 편집 단계로 Unity 게임플레이 미검증.
 - [WEAPON_METHOD_DESIGN.md](WEAPON_METHOD_DESIGN.md) — 흉기 12종·NPC 방당 3개 공유 배치와 공통 수법 4대 확정 분류와 세부 유형 9개 탐색안
 - [METHOD_THEME_CASES.md](METHOD_THEME_CASES.md) — 4대 분류 정답과 9세부×3테마 총 27개 흉기·증거·대사 구성안
 - [game/cases/method_variant_theme_scenarios.v1.json](game/cases/method_variant_theme_scenarios.v1.json) — 27개 사건 구성안 데이터
