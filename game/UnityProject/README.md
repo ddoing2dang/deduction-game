@@ -7,6 +7,8 @@ Unity Hub에서 실제 `game/UnityProject` 폴더를 사용한다. **현재 Unit
 - NPC: 마또/마리히/나즈/찌로/보키/문이레, 범인 1명 랜덤.
 - 맵: 공동 로비 1 + NPC 개인실 6 + 피해자 살해 현장 1 = 8개 방.
 - 수사: 알리바이 대조/증거 연결/랜덤 사건/시간표 재구성/증거 추궁.
+- **NPC 심문**: 6명 전원 질문 선택지 없이 한국어 자유 타이핑/실시간 AI 대화. NPC별 지식·대화 기억·진술 원문·모순 증거·발언 검증.
+- **랜덤 사건**: 검증된 템플릿 + 제약/시드 생성, 진실 동결, 증거 도달성/유일 정답 검증.
 - 최종 고발: **범인 + 범행수법 + 흉기**를 한국어 문장으로 자유 타이핑. AI 파서 + 별도 사건 진실 판정.
 - 아트: 고품질 쿼터뷰 2.5D 맵/8방향 NPC 스프라이트.
 
@@ -15,6 +17,8 @@ Unity Hub에서 실제 `game/UnityProject` 폴더를 사용한다. **현재 Unit
 - [MAPS.md](../../MAPS.md)
 - [CASE_DESIGN.md](../../CASE_DESIGN.md)
 - [NATURAL_LANGUAGE_DEDUCTION.md](../../NATURAL_LANGUAGE_DEDUCTION.md)
+- [NPC_FREE_DIALOGUE.md](../../NPC_FREE_DIALOGUE.md)
+- [RANDOM_CASE_AI_DESIGN.md](../../RANDOM_CASE_AI_DESIGN.md)
 - [PRODUCTION_STANDARD_2_5D.md](../../PRODUCTION_STANDARD_2_5D.md)
 - [AGENTS.md](../../AGENTS.md)
 
