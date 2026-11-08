@@ -1,5 +1,7 @@
 # 새 Unity 프로젝트 시작 가이드 (기존 구현 전체 초기화)
 
+**최신 플랫폼 USER LOCK (2026-11-09): Windows PC x64 전용. Android/iOS/macOS 및 모바일 제작·배포 대상 제외.**
+
 **현재 상태 (2026-11-09):** 기존 `game/UnityProject/` 구형 프로젝트 파일 **18개를 GitHub main에서 제거**함. Unity 씬·C# 자동 생성/카드/턴/구형 맵·프로젝트 설정은 재사용하지 않는다.
 
 ## 완전한 되돌리기 지점
@@ -23,6 +25,8 @@
 - 범인만 의도적 허위 진술: `game/cases/culprit_only_deception_policy.v1.json`.
 - NPC 원본 스프라이트 ZIP은 예전 채팅 첨부에서 확인·작업 설계 저장한 상태이며, **NPC 개별 PNG 102개는 아직 GitHub 저장소 안에 업로드되지 않음**. 원본 ZIP/임포트 패키지가 별도로 필요하다.
 
+**이번에 GitHub에 가져온 CC0 모델·맵 제작 지침:** [PC_MAP_BUILD_MANUAL.md](../PC_MAP_BUILD_MANUAL.md) · [환경 에셋](../art/Environment/). 모델 19개는 아직 새 Unity 프로젝트에 임포트하지 않았음.
+
 ## 다음 작업 순서
 1. 신규 Unity 프로젝트를 Unity Hub로 만든다.
 2. **독립 대저택 대화창 프리팹**을 신규 씬에 제작: 원본 투명 PNG + 이름표 TextMeshPro + 대사 TextMeshPro + 자유 질문 TMP_InputField + 이전 대화 스크롤.
@@ -30,4 +34,4 @@
 4. 실제 게임용으로 검증된 사건 진실·증거 게이트·NPC 지식별 대사 선택을 연결한다. 범인 1명만 거짓말, 무고한 5명은 진실만 말함. AI는 승인된 대사 ID만 선택한다.
 5. 맵 8개/3테마 2.5D 디오라마, 인물 및 수사 시스템을 순차 구현한다.
 
-**Unity Play Mode·기능 테스트·EXE/APK 빌드/배포는 별도 사용자 요청 전까지 실행하지 않는다.** 본 문서는 신규 프로젝트의 작업 기준이고 Unity Hub 프로젝트 생성을 원격 GitHub에서 대신 실행한 것은 아니다.
+**Unity Play Mode·기능 테스트·Windows EXE 빌드/배포는 별도 사용자 요청 전까지 실행하지 않는다.** 본 문서는 신규 프로젝트의 작업 기준이고 Unity Hub 프로젝트 생성을 원격 GitHub에서 대신 실행한 것은 아니다.
