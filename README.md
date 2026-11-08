@@ -7,7 +7,7 @@
 - **범인:** NPC 6명 중 매 판 1명 랜덤.
 - **맵:** 공동 로비 1 + NPC 개인실 6 + 피해자가 실제 살해된 사건 현장 1 = **총 8개 방**.
 - **흉기 배치(사용자 확정):** 3개 테마 동일 12종, NPC 개인실 6개에 각 3개씩만 실물 발견(기본 배정 2 + 타방 종류 공유 1), 실물 18개 배치. 로비/사건 현장에는 흉기 실물 대신 흔적·기록 배치.
-- **범행수법:** 세 테마 **공통 사용(확정)**. 1~4번 날붙이/둔기/목 압박·교살/중독 유지, 기존 5번 감전은 제외. **대체 5번 후보 검토 중**, 전체 5종은 추천 수량(아직 개별 항목 최종 미승인).
+- **범행수법(4대 분류 사용자 확정·세 테마 공통):** 자상·절창(날붙이), 둔력 손상(타박상/둔기), 질식사(교살·호흡 차단), 독살·물질 반응(독극물·약물·알레르기). **추가 5번 없음, 감전 폐기.** 내부 세부 수법 9개는 탐색·검증 중인 추천안.
 - **호텔 테마(저장된 현행 기준):** 1F 공동 로비·101~103, 2F 201~204(현장). 객실 번호는 표시용.
 - **크루즈 테마(사용자 카드 배치 확정 저장):** **3데크 5공간**(공동 아트리움·301~304호), **4데크 3공간**(401~403호, 403호 사건 현장). 길쭉한 선박의 좌현/우현 복도·앞뒤 계단 2개. **로비 앞계단 가까운 403호 사건 현장**.
 - **음악방송 대기실 테마(박물관 대체 확정):** **단층 U자형 8개** = 중앙 공동 대기홀 + 왼쪽 A01~A03 + 오른쪽 B01~B03 + **공동 대기홀 바로 뒤편 가까운 VIP-01 특별 대기실 사건 현장**. 사용자가 방 번호·인물 배정·VIP-01의 로비 인접 동선까지 확정 저장.
@@ -27,8 +27,8 @@
 - [MUSIC_BROADCAST_LAYOUT.md](MUSIC_BROADCAST_LAYOUT.md) — 박물관 대체 음악방송 단층 U자형 8공간 확정 배치
 - [game/maps/theme_room_layouts.v1.json](game/maps/theme_room_layouts.v1.json) — 호텔·크루즈·음악방송 테마별 표시 번호와 논리 방 ID 대응
 - [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
-- [WEAPON_METHOD_DESIGN.md](WEAPON_METHOD_DESIGN.md) — 흉기 12종·NPC 방당 3개 공유 배치와 공통 수법 5번 교체 후보
-- [game/cases/weapon_method_catalog.v1.json](game/cases/weapon_method_catalog.v1.json) — 12종/18개 실물 인스턴스, M05 교체 대안·방별 배정 데이터
+- [WEAPON_METHOD_DESIGN.md](WEAPON_METHOD_DESIGN.md) — 흉기 12종·NPC 방당 3개 공유 배치와 공통 수법 4대 확정 분류와 세부 유형 9개 탐색안
+- [game/cases/weapon_method_catalog.v1.json](game/cases/weapon_method_catalog.v1.json) — 12종/18개 실물 인스턴스, 4대 수법·9개 세부 변형 제안·방별 배정 데이터
 - [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
 - [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
 - [NPC_FREE_DIALOGUE.md](NPC_FREE_DIALOGUE.md) — 자유 질문 → 사전 검수 NPC 대사 선택·기억·추궁
