@@ -5,7 +5,7 @@
 - 매 판 NPC 6명 중 **범인 1명 랜덤**, 정답은 **범인 + 범행수법 + 흉기**. 과거 **범행 장소 정답은 폐기**.
 - **맵 정확히 8개 공간:** 공동 로비 1, NPC 개인실 6(각 NPC 명의 1개), 피해자 살해 현장 1.
 - **흉기 분포 USER LOCK (2026-11-08):** HOTEL/CRUISE/MUSIC_BROADCAST 전부 **동일 12종**, 흉기 실물은 **NPC 6개 개인실에만 존재**, NPC 방당 **3개(기본 배정 2 + 타방 기본 품목의 공유 복제 1)**. 총 18개 물리 인스턴스/12개 종류. 원 배정 2개가 모두 엄격한 방 전용일 수는 없다는 수량상의 제약을 지킨다. 사건 현장/로비에는 흔적·기록만 배치하고 흉기 실물은 두지 않는다. 구조 및 현재 추천 품목은 `WEAPON_METHOD_DESIGN.md`, `game/cases/weapon_method_catalog.v1.json`.
-- **범행수법 공통화 USER LOCK:** HOTEL/CRUISE/MUSIC_BROADCAST 세 테마는 **같은 범행수법 카탈로그**를 사용. 기존 추천 1~4번(날붙이/둔기/교살/중독)은 유지, **기존 5번 감전은 사용자 요청으로 제외**. 5번 교체 후보 6개를 추천 중이며 **아직 하나를 확정하지 않았다**. 목표 5종은 권장 수량(미확정); M05는 selectable=false. 상세 `WEAPON_METHOD_DESIGN.md`, `game/cases/weapon_method_catalog.v1.json`. M05에 연결되던 흉기 호환도 재검토 전까지 추첨 금지.
+- **범행수법 4대 분류 USER LOCK (3테마 공통):** **① 자상(날붙이·칼, 절창 포함) ② 타박상(둔력 손상) ③ 질식사(교살·호흡 차단 포함) ④ 독살(독극물·약물·심각한 알레르기 반응 포함)**만 활성 대분류. **다섯 번째 수법 및 감전안 폐기**. 하위 9개 세부 수법은 **탐색 후보(미확정)**. 범인+수법(4대 분류)+흉기 3축 최종 정답 유지; `methodVariantId`는 사건 진실 및 추리보드에 사용하되 최종 고발 필수 답변으로 추가하지 않는다. 상세 `WEAPON_METHOD_DESIGN.md`, `game/cases/weapon_method_catalog.v1.json`. W11 멀티탭 등 구 감전 전용 흉기 호환을 재검토한다.
 - **테마별 맵 현행 상태:** 사용자 요청으로 HOTEL 구조를 **저장된 작업 기준안**으로 확정: 1F 공동 로비 + 101/102/103, 2F 201/202/203/204(현장). 상세 `HOTEL_LAYOUT.md`.
 - **CRUISE 사용자 확정/저장 배치:** **3데크 5공간** = 아트리움 로비+301 마또/302 나즈/303 보키/304 찌로, **4데크 3공간** = 401 마리히/402 문이레/403 살해 현장. **길쭉한 좌현/우현 복도 순환 및 선수·선미 계단 두 개**, **로비→앞계단→403호 현장 근접 배치**. 세부 물리 치수와 도어 위치는 미정. 상세 `CRUISE_LAYOUT.md`.
 - **세 번째 테마와 전체 방 배치 USER LOCK:** 박물관 대신 **음악방송 대기실**, **단층 8개 U자형**: 중앙 공동 대기홀 + 왼쪽 A01 마또/A02 마리히/A03 문이레 + 오른쪽 B01 찌로/B02 나즈/B03 보키 + **대기홀 바로 뒤편 VIP-01 살해 현장(짧은 CENTRAL_LINK 통로)**. 사용자 최종 확정. 좌우 복도는 후면에서 연결되어 우회 동선도 존재. **방 번호·NPC 배정도 확정**; 무대/분장실을 별도 9번째 방으로 추가 금지. 상세 `MUSIC_BROADCAST_LAYOUT.md`.
@@ -30,7 +30,7 @@
 2. `DESIGN_BASELINE.md`: 변경 불가 베이스라인
 3. `MAPS.md`, `HOTEL_LAYOUT.md`, `CRUISE_LAYOUT.md`, `MUSIC_BROADCAST_LAYOUT.md`, `game/maps/theme_room_layouts.v1.json`: 8개 공통 방, 호텔 기준안, 크루즈 추천안, 음악방송 대기실 최종 확정 단층 U자형 배치, 테마별 번호/층 상태 구분
 4. `CASE_DESIGN.md`: 알리바이·현장 증거·재구성·랜덤 사건 설계
-4-1. `WEAPON_METHOD_DESIGN.md`, `game/cases/weapon_method_catalog.v1.json`: 사용자 확정 수량 12종/각 NPC방 3개/타방 공유 및 5개 수법 추천안, item instance/타임라인 규칙
+4-1. `WEAPON_METHOD_DESIGN.md`, `game/cases/weapon_method_catalog.v1.json`: 사용자 확정 수량 12종/각 NPC방 3개/타방 공유·4대 수법 분류 확정 및 세부 유형 9개 탐색안, item instance/타임라인 규칙
 5. `NPC_FREE_DIALOGUE.md`: NPC 6명 모두 완전 자유 심문, 기억, 지식 게이트와 대화 출력 검증
 6. `RANDOM_CASE_AI_DESIGN.md`: 사건 템플릿·제약 랜덤 생성·시간표·증거 그래프·유일해 검증
 7. `NPC_SPRITE_SPEC.md`: NPC 6명 최소 스프라이트(8방향 정적/표정/입모양/반응), 워크/런 조건부 제작
