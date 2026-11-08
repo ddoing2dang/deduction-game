@@ -27,7 +27,11 @@
 - [MUSIC_BROADCAST_LAYOUT.md](MUSIC_BROADCAST_LAYOUT.md) — 박물관 대체 음악방송 단층 U자형 8공간 확정 배치
 - [game/maps/theme_room_layouts.v1.json](game/maps/theme_room_layouts.v1.json) — 호텔·크루즈·음악방송 테마별 표시 번호와 논리 방 ID 대응
 - [CASE_DESIGN.md](CASE_DESIGN.md) — 랜덤 사건·알리바이·증거·재구성
+- **사용자 지시 반영:** 기존 흉기 후보 12종 이름을 모두 바꿔도 됨 → **12종 전면 재선정**, 방당 3개/총 18실물 구조 유지. **9세부×3테마=27개 흉기·증거 구성안**, NPC 조건부 대사 486개 초안을 추가. **수법 정답은 상위 4분류만 맞아도 인정**; 세부 9종 정답 추가 강제 금지.
 - [WEAPON_METHOD_DESIGN.md](WEAPON_METHOD_DESIGN.md) — 흉기 12종·NPC 방당 3개 공유 배치와 공통 수법 4대 확정 분류와 세부 유형 9개 탐색안
+- [METHOD_THEME_CASES.md](METHOD_THEME_CASES.md) — 4대 분류 정답과 9세부×3테마 총 27개 흉기·증거·대사 구성안
+- [game/cases/method_variant_theme_scenarios.v1.json](game/cases/method_variant_theme_scenarios.v1.json) — 27개 사건 구성안 데이터
+- [game/dialogue/method_variant_theme_lines.v1.json](game/dialogue/method_variant_theme_lines.v1.json) — 486개 NPC 조건부 대사 초안
 - [game/cases/weapon_method_catalog.v1.json](game/cases/weapon_method_catalog.v1.json) — 12종/18개 실물 인스턴스, 4대 수법·9개 세부 변형 제안·방별 배정 데이터
 - [NATURAL_LANGUAGE_DEDUCTION.md](NATURAL_LANGUAGE_DEDUCTION.md) — 한국어 타이핑과 AI 채점 분리
 - [AI.md](AI.md) — NPC별 지식·거짓 진술·심문
