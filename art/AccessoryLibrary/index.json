@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "units": "meters",
+  "orientation": "Y up and +Z forward; origin at accessory mounting point",
+  "count": 34,
+  "assets": [
+    {
+      "name": "ACC_Buckle_Gold",
+      "category": "belt",
+      "description_ko": "벨트/가터의 사각 버클",
+      "file": "glb/ACC_Buckle_Gold.glb",
+      "triangles": 88
+    },
+    {
+      "name": "ACC_Buckle_Silver",
+      "category": "belt",
+      "description_ko": "벨트/가터의 사각 버클",
+      "file": "glb/ACC_Buckle_Silver.glb",
+      "triangles": 88
+    },
+    {
+      "name": "ACC_Buckle_Black",
+      "category": "belt",
+      "description_ko": "벨트/가터의 사각 버클",
+      "file": "glb/ACC_Buckle_Black.glb",
+      "triangles": 88
+    },
+    {
+      "name": "ACC_Buckle_Oval",
+      "category": "belt",
+      "description_ko": "타원 버클",
+      "file": "glb/ACC_Buckle_Oval.glb",
+      "triangles": 552
+    },
+    {
+      "name": "ACC_Double_Clasp",
+      "category": "belt",
+      "description_ko": "더블 스트랩 체결 장치",
+      "file": "glb/ACC_Double_Clasp.glb",
+      "triangles": 1132
+    },
+    {
+      "name": "ACC_Bow_Burgundy",
+      "category": "ribbon",
+      "description_ko": "블라우스/치마/헤어 리본",
+      "file": "glb/ACC_Bow_Burgundy.glb",
+      "triangles": 76
+    },
+    {
+      "name": "ACC_Bow_Black",
+      "category": "ribbon",
+      "description_ko": "블라우스/치마/헤어 리본",
+      "file": "glb/ACC_Bow_Black.glb",
+      "triangles": 76
+    },
+    {
+      "name": "ACC_Bow_Ivory",
+      "category": "ribbon",
+      "description_ko": "블라우스/치마/헤어 리본",
+      "file": "glb/ACC_Bow_Ivory.glb",
+      "triangles": 76
+    },
+    {
+      "name": "ACC_Bow_Purple",
+      "category": "ribbon",
+      "description_ko": "블라우스/치마/헤어 리본",
+      "file": "glb/ACC_Bow_Purple.glb",
+      "triangles": 76
+    },
+    {
+      "name": "ACC_Ribbon_DoubleTail",
+      "category": "ribbon",
+      "description_ko": "리본 긴 꼬리",
+      "file": "glb/ACC_Ribbon_DoubleTail.glb",
+      "triangles": 52
+    },
+    {
+      "name": "ACC_Heart_Pendant",
+      "category": "pendant",
+      "description_ko": "골드 하트 참",
+      "file": "glb/ACC_Heart_Pendant.glb",
+      "triangles": 1536
+    },
+    {
+      "name": "ACC_Heart_RedGem",
+      "category": "pendant",
+      "description_ko": "붉은 하트 보석",
+      "file": "glb/ACC_Heart_RedGem.glb",
+      "triangles": 1280
+    },
+    {
+      "name": "ACC_Star_Brooch",
+      "category": "brooch",
+      "description_ko": "별 배지",
+      "file": "glb/ACC_Star_Brooch.glb",
+      "triangles": 136
+    },
+    {
+      "name": "ACC_Cross_Charm",
+      "category": "pendant",
+      "description_ko": "십자가 장식",
+      "file": "glb/ACC_Cross_Charm.glb",
+      "triangles": 120
+    },
+    {
+      "name": "ACC_Crescent_Moon",
+      "category": "pendant",
+      "description_ko": "초승달 장식",
+      "file": "glb/ACC_Crescent_Moon.glb",
+      "triangles": 496
+    },
+    {
+      "name": "ACC_Butterfly_Pin",
+      "category": "brooch",
+      "description_ko": "나비 핀 장식",
+      "file": "glb/ACC_Butterfly_Pin.glb",
+      "triangles": 348
+    },
+    {
+      "name": "ACC_Flower_White",
+      "category": "brooch",
+      "description_ko": "흰 꽃 장식",
+      "file": "glb/ACC_Flower_White.glb",
+      "triangles": 576
+    },
+    {
+      "name": "ACC_Rose_Brooch",
+      "category": "brooch",
+      "description_ko": "장미 핀",
+      "file": "glb/ACC_Rose_Brooch.glb",
+      "triangles": 1536
+    },
+    {
+      "name": "ACC_Gem_Brooch_Violet",
+      "category": "brooch",
+      "description_ko": "보석 브로치",
+      "file": "glb/ACC_Gem_Brooch_Violet.glb",
+      "triangles": 536
+    },
+    {
+      "name": "ACC_Gem_Brooch_Emerald",
+      "category": "brooch",
+      "description_ko": "보석 브로치",
+      "file": "glb/ACC_Gem_Brooch_Emerald.glb",
+      "triangles": 536
+    },
+    {
+      "name": "ACC_Button_Gold",
+      "category": "button",
+      "description_ko": "버튼/소매 장식",
+      "file": "glb/ACC_Button_Gold.glb",
+      "triangles": 992
+    },
+    {
+      "name": "ACC_Button_Black",
+      "category": "button",
+      "description_ko": "버튼/소매 장식",
+      "file": "glb/ACC_Button_Black.glb",
+      "triangles": 992
+    },
+    {
+      "name": "ACC_Chain_Short",
+      "category": "chain",
+      "description_ko": "연결 체인",
+      "file": "glb/ACC_Chain_Short.glb",
+      "triangles": 4608
+    },
+    {
+      "name": "ACC_Chain_Drape",
+      "category": "chain",
+      "description_ko": "U형 드레이프 체인",
+      "file": "glb/ACC_Chain_Drape.glb",
+      "triangles": 1392
+    },
+    {
+      "name": "ACC_Pearl_Strand",
+      "category": "chain",
+      "description_ko": "진주 스트랜드",
+      "file": "glb/ACC_Pearl_Strand.glb",
+      "triangles": 1056
+    },
+    {
+      "name": "ACC_Key_Charm",
+      "category": "pendant",
+      "description_ko": "열쇠 참",
+      "file": "glb/ACC_Key_Charm.glb",
+      "triangles": 548
+    },
+    {
+      "name": "ACC_Lock_Charm",
+      "category": "pendant",
+      "description_ko": "자물쇠 참",
+      "file": "glb/ACC_Lock_Charm.glb",
+      "triangles": 620
+    },
+    {
+      "name": "ACC_Zipper_Pull",
+      "category": "fastener",
+      "description_ko": "지퍼 손잡이",
+      "file": "glb/ACC_Zipper_Pull.glb",
+      "triangles": 540
+    },
+    {
+      "name": "ACC_Eyelet_Pair",
+      "category": "fastener",
+      "description_ko": "작은 아일렛 쌍",
+      "file": "glb/ACC_Eyelet_Pair.glb",
+      "triangles": 1024
+    },
+    {
+      "name": "ACC_Stud_Triple",
+      "category": "fastener",
+      "description_ko": "장식 스터드",
+      "file": "glb/ACC_Stud_Triple.glb",
+      "triangles": 324
+    },
+    {
+      "name": "ACC_Crest_Badge",
+      "category": "brooch",
+      "description_ko": "가슴 문장 배지",
+      "file": "glb/ACC_Crest_Badge.glb",
+      "triangles": 64
+    },
+    {
+      "name": "ACC_Flame_Brooch",
+      "category": "brooch",
+      "description_ko": "불꽃 펜던트",
+      "file": "glb/ACC_Flame_Brooch.glb",
+      "triangles": 40
+    },
+    {
+      "name": "ACC_Lace_Ruffle",
+      "category": "trim",
+      "description_ko": "장식 레이스 띠",
+      "file": "glb/ACC_Lace_Ruffle.glb",
+      "triangles": 540
+    },
+    {
+      "name": "ACC_Heart_Chain",
+      "category": "chain",
+      "description_ko": "하트 참 달린 체인",
+      "file": "glb/ACC_Heart_Chain.glb",
+      "triangles": 1104
+    }
+  ]
+}

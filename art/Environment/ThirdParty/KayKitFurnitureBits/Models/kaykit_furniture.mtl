@@ -1,0 +1,9 @@
+# KayKit Furniture Bits CC0 - placeholder palette (original texture not bundled)
+newmtl furniture_texture
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.18 0.18 0.18
+Ns 80
+d 1
+illum 2
+map_Kd kaykit_palette_Neutral.tga
