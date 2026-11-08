@@ -167,6 +167,99 @@
       ],
       "transitGraphConcept": "forward and aft stairs, port and starboard corridors, no additional investigable rooms",
       "mobilityDetailsStatus": "proposed_only"
+    },
+    "MUSIC_BROADCAST": {
+      "status": "user_confirmed_theme_layout_proposed",
+      "layoutDocument": "MUSIC_BROADCAST_LAYOUT.md",
+      "replacesTheme": "MUSEUM",
+      "themeDescription": "Music show studio backstage waiting rooms and communal greenroom lobby",
+      "levels": [
+        {
+          "id": "1F",
+          "name": "1층 · 출연자 대기구역",
+          "rooms": [
+            {
+              "roomId": "LOBBY",
+              "displayNumber": null,
+              "displayName": "공동 대기홀",
+              "features": [
+                "schedule_board",
+                "welcome_desk",
+                "lounge"
+              ]
+            },
+            {
+              "roomId": "ROOM_JIRO",
+              "displayNumber": "D-101",
+              "displayName": "찌로 대기실"
+            },
+            {
+              "roomId": "ROOM_MOONIRE",
+              "displayNumber": "D-102",
+              "displayName": "문이레 대기실"
+            },
+            {
+              "roomId": "ROOM_MARIHI",
+              "displayNumber": "D-103",
+              "displayName": "마리히 대기실"
+            }
+          ]
+        },
+        {
+          "id": "2F",
+          "name": "2층 · 특별 대기구역",
+          "rooms": [
+            {
+              "roomId": "ROOM_NAZ",
+              "displayNumber": "D-201",
+              "displayName": "나즈 대기실"
+            },
+            {
+              "roomId": "ROOM_BOKI",
+              "displayNumber": "D-202",
+              "displayName": "보키 대기실"
+            },
+            {
+              "roomId": "ROOM_MATTO",
+              "displayNumber": "D-203",
+              "displayName": "마또 대기실"
+            },
+            {
+              "roomId": "CRIME_SCENE",
+              "displayNumber": "D-204",
+              "displayName": "특별 대기실 · 살해 현장"
+            }
+          ]
+        }
+      ],
+      "transitGraphConcept": "backstage access corridor and stairs between 1F/2F; no additional investigable rooms",
+      "mobilityDetailsStatus": "proposed_not_yet_approved",
+      "evidenceCandidateTags": [
+        "show_cue_sheet",
+        "call_time",
+        "access_badge",
+        "dressing_mirror",
+        "costume_rack",
+        "broadcast_call_light"
+      ],
+      "nonRoomAreas": [
+        "backstage_corridor",
+        "stairs",
+        "stage_backdrop_only"
+      ]
     }
+  },
+  "themeSelection": {
+    "hotel": {
+      "status": "saved_user_working_baseline"
+    },
+    "cruise": {
+      "status": "draft_layout_existing"
+    },
+    "musicBroadcast": {
+      "status": "user_confirmed_theme_layout_draft"
+    },
+    "replacedTheme": "MUSEUM",
+    "replacedThemePolicy": "Museum is not an active third theme; use MUSIC_BROADCAST instead."
   }
 }
