@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentedAt": "2026-11-08",
+  "status": "user_uploaded_asset_mapping_design_only_not_unity_integrated",
+  "sources": [
+    {
+      "archive": "NPC_Sprites_6_Characters.zip",
+      "sha256": "9815adcb90a5a16c4fa4d3ade36d60a66f1fc337554f8cb0d2aa4f27b3f4b3d1",
+      "sourceStatus": "user_chat_attachment_not_yet_imported_to_git_repository",
+      "imageCount": 120,
+      "individualSpriteCount": 102,
+      "sheetCount": 18
+    },
+    {
+      "archive": "Portrait_Card_Frames_v2.zip",
+      "sha256": "effa3a0a41bcbd43b13312edb0e8b223893966efa18a493030a12d4c64c40430",
+      "sourceStatus": "all_three_original_png_already_present_in_git_repository_and_verified_identical",
+      "imageCount": 3
+    }
+  ],
+  "importedAssetRootProposal": "Assets/MattoMystery/Art",
+  "npcVisualSlots": [
+    {
+      "sourceFolder": "NPC_Sprites/01_silver",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/01_silver",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    },
+    {
+      "sourceFolder": "NPC_Sprites/02_blonde",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/02_blonde",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    },
+    {
+      "sourceFolder": "NPC_Sprites/03_brown",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/03_brown",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    },
+    {
+      "sourceFolder": "NPC_Sprites/04_red",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/04_red",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    },
+    {
+      "sourceFolder": "NPC_Sprites/05_green",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/05_green",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    },
+    {
+      "sourceFolder": "NPC_Sprites/06_purple",
+      "npcId": null,
+      "npcDisplayName": null,
+      "identityStatus": "unconfirmed_do_not_guess",
+      "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/06_purple",
+      "assetPatterns": {
+        "mapIdle": "MapIdle_{N,NE,E,SE,S,SW,W,NW}.png",
+        "dialoguePortrait": "DialoguePortrait_{neutral,smile,surprise,worried,angry,serious}.png",
+        "reactionGesture": "ReactionGesture_{explaining,startled,thoughtful}.png"
+      }
+    }
+  ],
+  "approvedNpcIds": [
+    "MATTO",
+    "JJIRO",
+    "MARIHI",
+    "NAZ",
+    "BOKI",
+    "MOONIRE"
+  ],
+  "sheetPolicy": "For Unity runtime use the 102 individual PNGs or the 18 atlases, not both. User attachment contains both; import pack uses only individual PNGs.",
+  "sizeAndAnchors": {
+    "npcIndividualPNG": [
+      512,
+      512
+    ],
+    "allNpcPNGChannels": "RGBA",
+    "cardFramePNG": [
+      590,
+      860
+    ],
+    "allCardFrameChannels": "RGBA",
+    "mapAndReactionPivot": [
+      0.5,
+      0.0625
+    ],
+    "cardFramePivot": [
+      0.5,
+      0.5
+    ],
+    "dialoguePortraitAlignment": "UI bottom center"
+  },
+  "themeCardFramePaths": {
+    "HOTEL": "art/UI/CardFrames/InvitationPortrait_v2/Mansion.png",
+    "CRUISE": "art/UI/CardFrames/InvitationPortrait_v2/Cruise.png",
+    "MUSIC_BROADCAST": "art/UI/CardFrames/InvitationPortrait_v2/DressingRoom.png"
+  },
+  "themeCardComposition": {
+    "behindFrame": "NPC DialoguePortrait or approved scene art masked to central transparent picture opening",
+    "foreground": "theme frame PNG",
+    "aboveFrame": "UI title and description text; preserve transparent picture area"
+  },
+  "dialogueLink": {
+    "sourceCuratedCommon": "game/dialogue/curated/common_situations.v1.json",
+    "sourceCuratedThemes": [
+      "game/dialogue/curated/hotel.v1.json",
+      "game/dialogue/curated/cruise.v1.json",
+      "game/dialogue/curated/music_broadcast.v1.json"
+    ],
+    "emotionTagToFilename": {
+      "neutral": "DialoguePortrait_neutral.png",
+      "smile": "DialoguePortrait_smile.png",
+      "surprise": "DialoguePortrait_surprise.png",
+      "worried": "DialoguePortrait_worried.png",
+      "angry": "DialoguePortrait_angry.png",
+      "serious": "DialoguePortrait_serious.png"
+    },
+    "optionalReactionGestureVariants": [
+      "ReactionGesture_explaining.png",
+      "ReactionGesture_startled.png",
+      "ReactionGesture_thoughtful.png"
+    ],
+    "gestureSelectionPolicy": "If animationTag is gesture/react, game author chooses contextually appropriate reaction; do not infer one specific gesture from generic tag alone",
+    "strictEvidenceAndKnowledgeGating": true,
+    "noRuntimeGeneratedNPCDialogue": true
+  },
+  "integrationStatus": {
+    "assetUsageManifestCommitted": true,
+    "cardFramesPresentInRepo": true,
+    "npcBinaryPNGsCommitted": false,
+    "unitySpriteImportConfigured": false,
+    "npcNameMappingsConfirmed": false,
+    "unityRuntimeHooked": false,
+    "functionalTestPerformed": false,
+    "buildPerformed": false
+  },
+  "note": "Never claim six colored slots are mapped to the named suspects until confirmed by the original image identity. This manifest establishes paths and reuse for the next asset-integration work."
+}
