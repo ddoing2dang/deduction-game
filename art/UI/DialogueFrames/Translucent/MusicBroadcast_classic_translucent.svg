@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 682" width="2048" height="682">
+ <title>MusicBroadcast - classic translucent dialogue panel and nameplate</title>
+ <desc>Translucent main interior 42 percent opacity, nameplate 52 percent opacity. Transparent canvas with original themed colors and restrained ornaments.</desc>
+ <defs><linearGradient id="sheen" x1="0" y1="0" x2="0.35" y2="1"><stop stop-color="#ffffff" stop-opacity=".10"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".14"/></linearGradient></defs>
+ <g stroke-linejoin="round">
+ <path d="M93 173 H1952 Q1978 173 1980 196 L2015 221 Q2031 231 2031 254 V519 Q2031 543 2004 556 L1982 572 Q1974 596 1944 596 H106 Q77 596 70 574 L41 554 Q20 544 20 519 V264 Q20 232 43 222 L71 195 Q74 173 93 173Z" fill="#c79457" stroke="#c79457" stroke-width="7"/>
+ <path d="M96 189 H1948 Q1966 190 1968 214 L2002 237 Q2016 243 2016 263 V513 Q2015 533 1993 544 L1971 558 Q1963 580 1941 580 H107 Q90 580 84 558 L57 544 Q39 535 39 514 V264 Q39 245 59 234 L85 216 Q84 192 96 189Z" fill="#fcf4fa" fill-opacity=".42" stroke="#d4ab6a" stroke-width="5"/>
+ <path d="M105 203 H1940 Q1950 204 1950 222 L1990 251 V517 L1956 549 Q1954 566 1932 566 H118 Q97 566 97 549 L55 514 V265 L96 228Z" fill="none" stroke="#d897b1" stroke-opacity=".62" stroke-width="2.8"/>
+ <path d="M97 250 Q500 198 992 212 L1862 214" fill="none" stroke="#ffffff" stroke-opacity=".33" stroke-width="2"/>
+ <path d="M92 83 H603 Q634 83 639 107 L646 137 V178 Q644 209 612 224 H93 Q43 224 41 188 V133 Q43 96 92 83Z" fill="#c79457" stroke="#c79457" stroke-width="6"/>
+ <path d="M96 98 H597 Q621 98 626 123 V178 Q625 202 591 208 H99 Q57 206 58 176 V133 Q58 105 96 98Z" fill="#fcf4fa" fill-opacity=".52" stroke="#d4ab6a" stroke-width="4"/>
+ <path d="M102 111 H586 Q608 113 612 138 V174 Q608 193 584 194 H103 Q73 192 73 170 V138 Q75 111 102 111Z" stroke="#d897b1" stroke-opacity=".45" stroke-width="2" fill="none"/>
+ <path d="M1017 559 L1031 542 L1047 558 L1031 576Z" fill="#d897b1" stroke="#d4ab6a" stroke-width="3"/>
+ <g transform="translate(325 76)">
+ <path d="M-19 12 L-26 22 L-5 17 L0 25 L5 17 L26 22 L19 12" fill="#e3acc1" stroke="#d4ab6a" stroke-width="3"/>
+ <rect x="-10" y="-30" width="20" height="39" rx="9" fill="#e4ba7e" stroke="#a1773f" stroke-width="2"/>
+ <path d="M-5 -24 V3 M0 -26 V3 M5 -24 V3" stroke="#8c653d" stroke-width="2"/>
+ <path d="M-16 -4 Q-14 19 0 19 Q14 19 16 -4 M0 19 V25 M-10 25 H10" stroke="#a4773a" fill="none" stroke-width="3"/>
+ <path d="M-48 -10 L-44 0 L-34 4 L-44 8 L-48 17 L-52 8 L-61 4 L-52 0Z M48 -10 L44 0 L34 4 L44 8 L48 17 L52 8 L61 4 L52 0Z" fill="#e5bd83"/>
+ </g>
+ <path d="M998 576 Q1028 551 1059 575" stroke="#d4ab6a" stroke-width="3" fill="none"/></g>
+ </svg>
