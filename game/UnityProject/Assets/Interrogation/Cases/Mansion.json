@@ -1,47 +1,96 @@
 {
-  "caseId": "mansion_draft",
+  "caseId": "mansion_01_stopped_clock_draft",
   "theme": 0,
   "approved": false,
-  "culpritSpeaker": -1,
+  "culpritSpeaker": 4,
   "profiles": [
     {
       "speaker": 0,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "서재 기록 담당. 꼼꼼하고 차분하다. 자료 폐기를 둘러싸고 서현석과 다툰 이력.",
+      "alibiNotes": "21:06~21:12 서쪽 전시 회랑에서 문일혜와 문서 정리. 21:08 비상전원 CCTV에 포착.",
+      "knowledgeNotes": "서고의 재단 회계 사본 존재를 알고, 21:30 공개 회의가 예고된 사실을 기록함."
     },
     {
       "speaker": 1,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "대저택 행사 진행자. 따뜻하고 솔직하다. 미지급 행사비 때문에 피해자에게 항의함.",
+      "alibiNotes": "21:06~21:13 주방에서 이복희와 발주표 작성. 주방 기록과 동료 증언이 남음.",
+      "knowledgeNotes": "정전 직전 진루나가 서재 쪽을 신경 쓰던 모습만 기억하나 이동은 목격하지 못함."
     },
     {
       "speaker": 2,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "골동 시계 수리사. 예민하지만 논리적. 수리비 지급 문제로 피해자와 갈등.",
+      "alibiNotes": "21:06~21:12 동쪽 시계 공방에 있었다고 진술. 21:09 작업 사진이 있으나 전 시간대의 연속적 알리바이는 아님.",
+      "knowledgeNotes": "현관 시계는 사건 전날 20:17 태엽 고장으로 멈췄고 그 정비 노트를 작성함."
     },
     {
       "speaker": 3,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "전속 요리사. 직설적이고 관찰력이 뛰어나다. 식단을 둘러싼 말다툼이 있었음.",
+      "alibiNotes": "21:06~21:13 마루희와 주방. 21:15 서재에 차를 가져갔다가 피해자를 발견해 사람들을 부름.",
+      "knowledgeNotes": "20:45 서재 선반에서 청동 책받침을 목격함."
     },
     {
       "speaker": 4,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "온실 관리자. 침착하지만 희귀식물 보존에 집착. 승인 없이 후원금을 온실 설비비로 전용한 잠정 범인.",
+      "alibiNotes": "실제 21:08 G3 카드로 온실 서비스 문을 열고 서재 진입. 21:09 서현석과 다투다 청동 책받침으로 공격. 21:11 같은 문을 거쳐 온실 복귀. 초기 진술에서는 온실에만 있었다고 거짓말.",
+      "knowledgeNotes": "G3 유일한 정식 사용자. 작업화의 젖은 흙과 손상된 굽, 청록색 작업복 실밥이 서비스 문 부근에 남음."
     },
     {
       "speaker": 5,
-      "personalityNotes": "",
-      "alibiNotes": "",
-      "knowledgeNotes": ""
+      "personalityNotes": "재단 법률 고문. 정확하고 신중하다. 과거 기부 계약 분쟁으로 피해자와 감정이 나쁨.",
+      "alibiNotes": "21:06~21:12 서쪽 회랑에서 마도연과 보관 계약서 정리. 21:08 비상전원 CCTV에 두 사람 모두 포착.",
+      "knowledgeNotes": "21:30에 피해자가 후원금 사용 내역을 공개하려 했음을 알고 있음."
     }
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "id": "m01_invitation",
+      "title": "21:30 후원금 공개 회의 초대장"
+    },
+    {
+      "id": "m01_breaker",
+      "title": "21:06~21:12 자동 차단기 정전 기록"
+    },
+    {
+      "id": "m01_lock",
+      "title": "21:08·21:11 서비스 문 G3 출입 기록"
+    },
+    {
+      "id": "m01_key",
+      "title": "온실 관리자 G3 카드 지급 대장"
+    },
+    {
+      "id": "m01_mud",
+      "title": "서비스 문 앞 젖은 온실 흙 발자국"
+    },
+    {
+      "id": "m01_thread",
+      "title": "서비스 문에 걸린 청록색 작업복 실밥"
+    },
+    {
+      "id": "m01_ledger",
+      "title": "온실 설비비로 전용된 재단 후원금 회계 사본"
+    },
+    {
+      "id": "m01_clock",
+      "title": "전날 20:17 현관 시계 고장 정비 노트"
+    },
+    {
+      "id": "m01_camera",
+      "title": "21:08 비상전원 회랑 CCTV 화면"
+    },
+    {
+      "id": "m01_kitchen",
+      "title": "21:07·21:11 주방 발주 기록"
+    },
+    {
+      "id": "m01_bookend",
+      "title": "서재 책상 아래 청동 책받침"
+    },
+    {
+      "id": "m01_photo",
+      "title": "21:09 동쪽 공방 시계 수리 사진"
+    }
+  ],
   "topics": [
     {
       "id": "alibi",
@@ -49,23 +98,96 @@
         "알리바이",
         "어디 있었",
         "어디있었",
-        "그때 어디",
-        "무엇을 하고 있었"
+        "그때 어디"
       ],
       "requiredEvidenceIds": [],
-      "statements": []
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "정전 때는 서쪽 회랑에서 문일혜 씨와 문서 상자를 정리했습니다. 21시 08분 CCTV에 둘 다 나옵니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "21시 06분부터 13분까지 이복희 씨와 주방에서 발주표를 만들었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "동쪽 시계 공방에 있었어요. 21시 09분 작업 사진이 있지만 그 시간 전체를 증명하는 건 아니죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "마루희 씨와 주방에 있었어요. 21시 15분 서재로 갔다가 피해자를 발견했습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "21시 08분 서비스 문을 열고 서재에 들어갔다가 21시 11분에 돌아왔습니다.",
+          "deceptiveText": "정전 내내 온실에 있었습니다. 서재 쪽에는 간 적 없어요.",
+          "deceptionBrokenByEvidenceId": "m01_lock"
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "마도연 씨와 서쪽 회랑에서 서류를 정리했습니다. 비상전원 CCTV에도 나와요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
     },
     {
       "id": "timeline",
       "aliases": [
-        "일정",
         "몇 시",
         "언제 왔",
         "언제 갔",
-        "동선"
+        "동선",
+        "사건 시간"
       ],
       "requiredEvidenceIds": [],
-      "statements": []
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "20시 50분 회계 공개 안내가 나왔습니다. 21시 08분에는 회랑에서 문일혜 씨와 있었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "정전은 21시 06분부터 12분까지였고 주방에 있었습니다. 15분에 발견 소식을 들었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "21시 09분에 시계 수리 사진을 찍었어요. 사건 발견은 15분쯤이었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "20시 45분 서재에 차를 드렸고, 21시 15분 다시 갔을 때 피해자를 발견했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "21시 08분 서재에 들어가 09분쯤 다퉜고 11분에 온실로 돌아왔습니다.",
+          "deceptiveText": "정전 동안 온실에 있어서 시간을 정확히 보지는 못했어요.",
+          "deceptionBrokenByEvidenceId": "m01_lock"
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "21시 08분엔 마도연 씨와 회랑에 있었습니다. 정전은 그 전후로 계속됐죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
     },
     {
       "id": "witness",
@@ -76,28 +198,93 @@
         "누가 있었"
       ],
       "requiredEvidenceIds": [],
-      "statements": []
-    },
-    {
-      "id": "evidence",
-      "aliases": [
-        "증거",
-        "단서",
-        "흔적",
-        "잃어버린 물건"
-      ],
-      "requiredEvidenceIds": [],
-      "statements": []
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "정전 동안 서쪽 회랑에서는 문일혜 씨를 봤습니다. 서재 안은 보지 못했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "주방에서 이복희 씨와 함께 있었습니다. 정전 전 진루나 씨의 표정이 굳어 있었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "공방에서는 아무도 보지 못했어요. 문 밖의 일을 단정할 수 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "마루희 씨와 주방에 있었어요. 서재에 들어갔을 때는 혼자였습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "서재에는 피해자만 있었습니다. 제가 들어간 뒤 둘이서 말다툼했습니다.",
+          "deceptiveText": "온실에서 누구도 만나지 못했어요. 서재 쪽은 모르겠어요.",
+          "deceptionBrokenByEvidenceId": "m01_lock"
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "서쪽 회랑에서 마도연 씨와 함께 있었습니다. 서재 쪽은 보지 못했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
     },
     {
       "id": "relationship",
       "aliases": [
         "관계",
         "아는 사이",
-        "친했"
+        "친했",
+        "어떤 사이",
+        "피해자와"
       ],
       "requiredEvidenceIds": [],
-      "statements": []
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "서현석 관장님의 자료를 관리했습니다. 기록 폐기 문제로 의견이 달랐죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "행사를 관리하는 계약 관계였어요. 비용 정산으로 불만이 있었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "골동 시계 수리로 알게 됐어요. 수리비 때문에 다툰 적도 있습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "오래 일한 전속 요리사입니다. 메뉴 때문에 말다툼하곤 했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "관장님에게 온실 예산을 승인받는 관계였습니다. 저는 온실을 지키고 싶었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "재단 법률 고문이었습니다. 기부 계약 문제로 예전에 다퉜어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
     },
     {
       "id": "motive",
@@ -105,10 +292,454 @@
         "동기",
         "원한",
         "다툼",
-        "싸웠"
+        "싸웠",
+        "죽일 이유"
       ],
       "requiredEvidenceIds": [],
-      "statements": []
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "자료 폐기 문제로 충돌한 적은 있습니다. 하지만 그 사실을 숨기지 않겠습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "행사비를 제때 못 받아 항의했어요. 기분이 상했지만 주방에 있었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "수리비 때문에 언쟁했죠. 그건 사실이지만 제가 범행했다는 뜻은 아닙니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "식단 문제로 언짢았던 건 사실이에요. 저는 정전 때 주방에 있었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "제가 재단 후원금을 승인 없이 온실 설비비로 돌렸습니다. 공개되면 모든 걸 잃을까 두려웠어요.",
+          "deceptiveText": "예산 관련해서는 관장님과 다툰 일이 없었어요.",
+          "deceptionBrokenByEvidenceId": "m01_ledger"
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "과거 기부 계약 문제로 관장님과 법적으로 다툰 적이 있습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "aliases": [
+        "증거",
+        "단서",
+        "흔적",
+        "물증",
+        "수상한 점"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "서고에 회계 사본이 있습니다. 공개 예정이었던 문서를 확인해 보세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "주방 발주표가 남아 있어요. 복희 씨도 함께 기록했습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "현관 시계는 사건 이전에 멈춘 거예요. 제 정비 기록을 먼저 보세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "20시 45분 서재 선반에서 청동 책받침을 봤습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "저는 젖은 분갈이 흙이 묻은 신발로 서비스 문을 지났습니다.",
+          "deceptiveText": "온실 흙은 다른 곳으로 나갈 수 없어요. 저는 온실만 지켰으니까요.",
+          "deceptionBrokenByEvidenceId": "m01_mud"
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "비상전원 CCTV가 정전 때 회랑을 녹화했는지 보안실에서 확인하세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "aliases": [
+        "정전",
+        "차단기",
+        "전기 꺼짐",
+        "불이 나갔"
+      ],
+      "requiredEvidenceIds": [
+        "m01_breaker"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "기록상 21시 06분부터 12분까지 본관 전원이 끊겼습니다. 회랑 CCTV는 예비전원이었죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "정전 동안 주방에서 손전등으로 발주표를 확인했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "공방 조명이 나가 휴대전화 조명을 켜고 작업을 계속했어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "불이 꺼져 손전등을 켰습니다. 마루희 씨와 함께 있었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "정전은 제가 일으킨 게 아닙니다. 전기가 나간 사이 통로가 어두워졌죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "회랑 CCTV의 예비전원 표시등이 켜져 있었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "aliases": [
+        "현관 시계",
+        "멈춘 시계",
+        "시계 고장",
+        "시계가 멈췄"
+      ],
+      "requiredEvidenceIds": [
+        "m01_clock"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "현관 시계는 사건 전날부터 멈췄습니다. 실제 사건 시각과 혼동하면 안 됩니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "전날부터 현관 시계가 움직이지 않았어요. 저도 봤어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "전날 20시 17분 태엽 고장으로 멈췄습니다. 정비 노트에 적었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "시계가 고장 났다는 말을 들었습니다. 그 바늘이 사망 시각은 아니에요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "현관 시계가 고장 난 건 알고 있었습니다. 서재 출입과는 상관없어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "정비 노트가 있다면 시계 바늘을 사건 시각으로 해석할 수 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "aliases": [
+        "출입 기록",
+        "카드 기록",
+        "G3카드",
+        "G3",
+        "서비스문 기록"
+      ],
+      "requiredEvidenceIds": [
+        "m01_lock"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "서비스 문은 G3 카드로 21시 08분과 11분에 열렸습니다. 지급 대장과 대조해 보세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "저는 G3 카드가 없어요. 그 문으로 간 적도 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "제 열쇠는 시계 공방용입니다. G3 출입 카드는 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "서비스 문은 주방 문과 다릅니다. 저는 마루희 씨와 주방에 있었어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "G3는 제 카드이고 제가 그 두 시간에 사용했습니다. 서재로 갔던 것도 맞습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "저에게 G3 카드가 발급된 적은 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "soil",
+      "aliases": [
+        "발자국",
+        "흙자국",
+        "신발 자국",
+        "신발 밑창"
+      ],
+      "requiredEvidenceIds": [
+        "m01_mud"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "서비스 문 앞의 흙 발자국에는 굽 한쪽이 삼각형으로 닳은 흔적이 보입니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "저는 주방에서 일했어요. 젖은 온실 흙을 신발에 묻히지 않았습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "특정 신발의 손상된 굽 모양이 반복되면 대조할 수 있습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "제 정문 출입로와 흙 발자국이 남은 서비스 문 통로는 다릅니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "제 작업화 굽에는 삼각형으로 닳은 부분이 있습니다. 그 흔적은 제 신발에서 난 겁니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "제 구두 밑창에는 그런 손상 자국이 없습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "ledger",
+      "aliases": [
+        "회계 장부",
+        "후원금",
+        "가짜 영수증",
+        "영수증 사본",
+        "온실 예산"
+      ],
+      "requiredEvidenceIds": [
+        "m01_ledger"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "회계 사본에 후원금 일부가 온실 설비비로 무단 전용된 내역이 있습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "회계 발표 소식은 들었지만 자금 사용 내역까지는 몰랐습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "그 항목은 시계 수리비와 다릅니다. 제 계약과 무관해요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "주방 예산과 다른 재단 후원금 항목입니다. 제가 처리한 돈이 아니에요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "제가 승인 없이 후원금을 온실 설비비에 사용했습니다. 공개되면 해고될까 두려웠어요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "문서상으로는 재단 회계 절차를 위반한 지출입니다. 관장님이 그걸 발표할 예정이었죠.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "weapon",
+      "aliases": [
+        "책받침",
+        "흉기",
+        "청동 물건",
+        "청동 받침",
+        "서재 선반"
+      ],
+      "requiredEvidenceIds": [
+        "m01_bookend"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "20시 45분에는 선반에 있었다고 합니다. 나중에 누가 옮겼는지는 더 확인해야 합니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "저는 서재 선반에 손대지 않았어요. 그 물건은 잘 몰랐습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "서재의 골동 책받침이군요. 저는 공방에서 시계만 만졌습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "20시 45분에는 선반에 있었어요. 21시 15분엔 책상 아래에 떨어져 있었습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "서재에 들어갔을 때 그 청동 책받침을 보았습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "정확한 범행 도구인지는 현장 증거와 함께 판단해야겠네요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
+    },
+    {
+      "id": "confront",
+      "aliases": [
+        "당신이 범인",
+        "범인은 누구",
+        "범행을 인정",
+        "진실을 말해",
+        "증거를 종합",
+        "살인했어"
+      ],
+      "requiredEvidenceIds": [
+        "m01_lock",
+        "m01_mud",
+        "m01_ledger"
+      ],
+      "statements": [
+        {
+          "speaker": 0,
+          "truthfulText": "G3 출입 기록, 작업화 흔적, 회계 사본을 한 사람의 동선으로 연결해 보세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 1,
+          "truthfulText": "저와 복희 씨는 계속 주방에 있었어요. 그 세 단서의 주인에게 물어보세요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 2,
+          "truthfulText": "멈춘 시계는 무관합니다. 실제로 남은 것은 출입 로그와 작업화 자국이에요.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 3,
+          "truthfulText": "피해자가 발견되기 전에 서비스 문을 오간 사람이 핵심일 겁니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 4,
+          "truthfulText": "맞아요. 제가 서재에서 관장님과 다투다가 청동 책받침으로 쳤습니다. 후원금 전용이 드러날까 두려웠어요. 21시 11분에 온실로 돌아가 숨기려 했습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        },
+        {
+          "speaker": 5,
+          "truthfulText": "세 단서가 한 사람을 가리킨다면 우연이라 보기 어렵습니다.",
+          "deceptiveText": "",
+          "deceptionBrokenByEvidenceId": ""
+        }
+      ]
     }
   ]
 }
