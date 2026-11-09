@@ -8,15 +8,61 @@ namespace Mystery.Interrogation
     [DisallowMultipleComponent, RequireComponent(typeof(DialoguePanel))]
     public sealed class DialogueInterrogationAdapter : MonoBehaviour
     {
-        [Header("Approved JSON case files, by theme")]
+        [Header("Author-approved JSON case files, by theme")]
         [SerializeField] private TextAsset mansionCase;
         [SerializeField] private TextAsset cruiseCase;
         [SerializeField] private TextAsset musicBroadcastCase;
 
+        public event Action EvidenceChanged;
+
         private DialoguePanel panel;
-        private readonly Dictionary<DialogueTheme, CaseFile> files = new Dictionary<DialogueTheme, CaseFile>();
+        private readonly Dictionary<DialogueTheme, CaseFile> files
+            = new Dictionary<DialogueTheme, CaseFile>();
         private readonly Dictionary<string, HashSet<string>> collected
             = new Dictionary<string, HashSet<string>>(StringComparer.Ordinal);
+        private readonly Dictionary<string, int> failedAccusations
+            = new Dictionary<string, int>(StringComparer.Ordinal);
+        private readonly HashSet<string> solvedCases
+            = new HashSet<string>(StringComparer.Ordinal);
+
+        public DialogueTheme CurrentTheme => panel != null ? panel.Theme : DialogueTheme.MANSION;
+        public CaseFile CurrentCase
+        {
+            get
+            {
+                files.TryGetValue(CurrentTheme, out var file);
+                return file;
+            }
+        }
+        public bool CaseReady
+        {
+            get
+            {
+                var file = CurrentCase;
+                return file != null && file.approved
+                    && InterrogationResolver.Validate(file, CurrentTheme) == null
+                    && AccusationVerdictRules.ValidateVerdict(file) == null;
+            }
+        }
+        public int EvidenceTotal => CurrentCase?.evidence?.Length ?? 0;
+        public bool CaseSolved
+        {
+            get
+            {
+                var file = CurrentCase;
+                return file != null && solvedCases.Contains(Key(file));
+            }
+        }
+        public int RemainingAccusations
+        {
+            get
+            {
+                var file = CurrentCase;
+                if (file == null || file.verdict == null) return 0;
+                failedAccusations.TryGetValue(Key(file), out int wrong);
+                return Math.Max(0, file.verdict.maxWrongAccusations - wrong);
+            }
+        }
 
         private void OnEnable()
         {
@@ -27,7 +73,6 @@ namespace Mystery.Interrogation
             Read(DialogueTheme.MUSIC_BROADCAST, musicBroadcastCase);
             if (panel != null) panel.questionSubmitted.AddListener(HandleQuestion);
         }
-
         private void OnDisable()
         {
             if (panel != null) panel.questionSubmitted.RemoveListener(HandleQuestion);
@@ -56,43 +101,91 @@ namespace Mystery.Interrogation
         private void HandleQuestion(string question)
         {
             if (!Application.IsPlaying(gameObject) || panel == null) return;
-            files.TryGetValue(panel.Theme, out var file);
-            var reply = InterrogationResolver.Answer(file, panel.Theme, panel.Speaker,
-                question, GetEvidence(file));
+            var file = CurrentCase;
+            var reply = InterrogationResolver.Answer(
+                file, panel.Theme, panel.Speaker, question, GetEvidence(file));
             if (reply.IsNpcSpeech) panel.ShowNpcReply(reply.Text);
             else panel.ShowInterrogationNotice(reply.Text);
         }
 
-        // To be called by verified evidence discovery gameplay, not player text.
+        // Evidence is granted only by approved interactive clue sources.
+        // Text typed by a player is NOT an evidence source.
         public bool UnlockEvidence(string id)
         {
-            if (!Application.IsPlaying(gameObject) || panel == null
-                || !files.TryGetValue(panel.Theme, out var file) || !file.approved
-                || !InterrogationResolver.KnownEvidence(file, id)) return false;
-            return GetOrCreate(file.caseId).Add(id);
+            if (!Application.IsPlaying(gameObject) || !CaseReady) return false;
+            var file = CurrentCase;
+            if (!InterrogationResolver.KnownEvidence(file, id)) return false;
+            if (!GetOrCreate(Key(file)).Add(id)) return false;
+            EvidenceChanged?.Invoke();
+            return true;
         }
 
         public bool HasEvidence(string id)
         {
-            return panel != null && files.TryGetValue(panel.Theme, out var file)
-                && GetEvidence(file).Contains(id);
+            var file = CurrentCase;
+            return file != null && GetEvidence(file).Contains(id);
+        }
+
+        // Reveal only evidence the player actually acquired, never every case clue.
+        public List<EvidenceDefinition> DiscoveredEvidence()
+        {
+            var result = new List<EvidenceDefinition>();
+            var file = CurrentCase;
+            if (file?.evidence == null) return result;
+            var owned = GetEvidence(file);
+            foreach (var clue in file.evidence)
+                if (clue != null && owned.Contains(clue.id))
+                    result.Add(clue);
+            return result;
+        }
+
+        public VerdictOutcome Accuse(int suspectIndex, ICollection<string> presentedIds)
+        {
+            if (!Application.IsPlaying(gameObject) || !CaseReady)
+                return new VerdictOutcome(VerdictState.NotReady,
+                    "확정된 사건과 증거가 준비되기 전에는 범인을 지목할 수 없습니다.");
+            var file = CurrentCase;
+            string key = Key(file);
+            if (solvedCases.Contains(key))
+                return new VerdictOutcome(VerdictState.AlreadySolved, "이 사건은 이미 해결되었습니다.");
+
+            failedAccusations.TryGetValue(key, out int wrong);
+            if (wrong >= file.verdict.maxWrongAccusations)
+                return new VerdictOutcome(VerdictState.Locked,
+                    "지목 기회를 모두 사용했습니다. 사건을 처음부터 다시 진행해야 합니다.");
+
+            var outcome = AccusationVerdictRules.Evaluate(
+                file, CurrentTheme, suspectIndex, GetEvidence(file), presentedIds);
+            if (outcome.State == VerdictState.Incorrect)
+                failedAccusations[key] = wrong + 1;
+            else if (outcome.State == VerdictState.Solved)
+                solvedCases.Add(key);
+            return outcome;
         }
 
         public void ClearSessionEvidence()
         {
-            if (Application.IsPlaying(gameObject)) collected.Clear();
+            if (!Application.IsPlaying(gameObject)) return;
+            collected.Clear();
+            failedAccusations.Clear();
+            solvedCases.Clear();
+            EvidenceChanged?.Invoke();
         }
 
         private ISet<string> GetEvidence(CaseFile file)
         {
             return file == null || string.IsNullOrWhiteSpace(file.caseId)
-                ? new HashSet<string>(StringComparer.Ordinal) : GetOrCreate(file.caseId);
+                ? new HashSet<string>(StringComparer.Ordinal)
+                : GetOrCreate(Key(file));
         }
-
-        private HashSet<string> GetOrCreate(string id)
+        private static string Key(CaseFile file)
         {
-            if (!collected.TryGetValue(id, out var found))
-                collected[id] = found = new HashSet<string>(StringComparer.Ordinal);
+            return file.theme + ":" + file.caseId;
+        }
+        private HashSet<string> GetOrCreate(string key)
+        {
+            if (!collected.TryGetValue(key, out var found))
+                collected[key] = found = new HashSet<string>(StringComparer.Ordinal);
             return found;
         }
     }

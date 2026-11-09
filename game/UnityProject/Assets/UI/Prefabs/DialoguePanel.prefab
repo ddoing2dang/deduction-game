@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 2784255089660094376}
   - component: {fileID: 5790520792546265574}
   - component: {fileID: 855701001000000001}
+  - component: {fileID: 855701001000000002}
   m_Layer: 0
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -2143,3 +2144,18 @@ MonoBehaviour:
   mansionCase: {fileID: 4900000, guid: b1e1fd340e2a4e60a7a6fc2983825401, type: 3}
   cruiseCase: {fileID: 4900000, guid: 95d8fcce1c33494da168cb049e4033c0, type: 3}
   musicBroadcastCase: {fileID: 4900000, guid: ba6ef229504c4a6d93c058ee0724f6a1, type: 3}
+
+--- !u!114 &855701001000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119af43ae7b144f999ec0fedf941d7ab, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.InvestigationNotebookView
+  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
+  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}

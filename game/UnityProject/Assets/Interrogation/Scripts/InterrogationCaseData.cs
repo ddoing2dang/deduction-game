@@ -15,6 +15,7 @@ namespace Mystery.Interrogation
         public NpcProfile[] profiles = Array.Empty<NpcProfile>();
         public EvidenceDefinition[] evidence = Array.Empty<EvidenceDefinition>();
         public CaseTopic[] topics = Array.Empty<CaseTopic>();
+        public CaseVerdict verdict;
     }
     [Serializable] public sealed class NpcProfile
     {

@@ -741,5 +741,15 @@
         }
       ]
     }
-  ]
+  ],
+  "verdict": {
+    "requiredEvidenceIds": [
+      "m01_lock",
+      "m01_key",
+      "m01_mud",
+      "m01_ledger"
+    ],
+    "maxWrongAccusations": 2,
+    "successText": "출입 카드 기록과 지급 대장, 온실 흙 발자국, 후원금 회계 장부가 하나의 동선을 가리킨다. 사건의 진실을 밝혀냈다."
+  }
 }
