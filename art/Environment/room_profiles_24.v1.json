@@ -1,0 +1,667 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "art-direction-only",
+  "project": "Matto murder mystery 24 room visual differentiation",
+  "createdDate": "2026-11-09",
+  "platform": "Windows-x64",
+  "roomsPerTheme": 8,
+  "roomCount": 24,
+  "signatureModelRule": "Every room must have a globally unique hero asset",
+  "visualDifferenceRule": "Distinct silhouette, architecture, materials, key light color/temperature, and prop set. Same room package cannot be cloned to another room.",
+  "restrictions": [
+    "No Unity scene, prefab, map file or gameplay logic changed.",
+    "Game room / NPC assignment is not defined by this art-only plan.",
+    "Specified floors/walls/colors are art direction and may need actual texture authoring.",
+    "These stylized low-poly CC0 props are source materials, not polished finished maps."
+  ],
+  "rooms": [
+    {
+      "theme": "HOTEL",
+      "roomId": "H00",
+      "level": "1F",
+      "roomType": "lobby",
+      "title": "대저택 중앙 로비",
+      "heroAsset": "art/Environment/ThirdParty/KenneyCastleKit/Models/stairs-stone-square.obj",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/armchair_pillows.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeSofaLong.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRound.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/lamp_standing.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-tea.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/paneling.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/tower-square-arch.obj",
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/wall-pillar.obj"
+      ],
+      "floorFinish": "기하학 흑백 대리석",
+      "wallFinish": "황동 줄무늬 월넛",
+      "accentHex": "#8F343F",
+      "keyLightKelvin": 3000,
+      "spatialSignature": "중앙 계단과 긴 대칭축, 양측 대기 소파",
+      "propStory": "차를 올린 테이블과 중앙 카펫",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H01",
+      "level": "1F",
+      "roomType": "private",
+      "title": "고서재형 개인실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bookcaseClosedDoors.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/deskCorner.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/book_set.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/armchair.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/lamp_table.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_large_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffee.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/wall-narrow-wood.obj",
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/door.obj"
+      ],
+      "floorFinish": "짙은 밤색 플로어링",
+      "wallFinish": "세로형 벽난로 느낌 원목 패널",
+      "accentHex": "#765A36",
+      "keyLightKelvin": 2700,
+      "spatialSignature": "한 면 전체 책장, 반대쪽 단독 집필 코너",
+      "propStory": "책 더미·독서등·골드 프레임",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H02",
+      "level": "1F",
+      "roomType": "private",
+      "title": "골동품 수집실",
+      "heroAsset": "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cabinet_medium_decorated.obj",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/shelf_B_large_decorated.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/rug_oval_B.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_small_A.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/glass-wine.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/chair_B_wood.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/pillar_A.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/wall-stud.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/paneling.glb"
+      ],
+      "floorFinish": "어두운 체커 마루",
+      "wallFinish": "석재 수집품 진열벽",
+      "accentHex": "#A88452",
+      "keyLightKelvin": 2900,
+      "spatialSignature": "방 둘레 진열장과 중간 둥근 러그",
+      "propStory": "진열품마다 스포트 강조, 높은 빈 벽 최소화",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H03",
+      "level": "1F",
+      "roomType": "private",
+      "title": "레트로 객실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/televisionVintage.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/bed_double_A.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_standing_B.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/lamp_table.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/sideTableDrawers.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/rug_rectangle_stripes_A.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffeeGlass.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/door.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_window_closed.obj"
+      ],
+      "floorFinish": "와인색 카펫",
+      "wallFinish": "크림 벽지와 낮은 몰딩",
+      "accentHex": "#B06762",
+      "keyLightKelvin": 2600,
+      "spatialSignature": "침대가 벽 뒤쪽, 입구 옆 빈티지 TV",
+      "propStory": "오래된 TV와 개인 액자, 낮고 부드러운 조도",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H04",
+      "level": "2F",
+      "roomType": "private",
+      "title": "식물 애호가 스위트",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/pottedPlant.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cactus_medium_A.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cactus_small_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeDesignChair.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/table_small.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/grapes.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRound.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallWindow.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/pillar_B.obj"
+      ],
+      "floorFinish": "따뜻한 테라코타 타일",
+      "wallFinish": "창가 밝은 회벽",
+      "accentHex": "#6A8D69",
+      "keyLightKelvin": 4600,
+      "spatialSignature": "창가에 다층 식물, 창을 향한 독서 의자",
+      "propStory": "식물 3종 크기와 책·과일로 낮/밤 대비",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H05",
+      "level": "2F",
+      "roomType": "private",
+      "title": "욕실 포함 특실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathtub.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathroomSink.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathroomCabinetDrawer.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampWall.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeChair.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/rug_rectangle_B.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pillow_B.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_window_open.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallCorner.glb"
+      ],
+      "floorFinish": "아이보리-흑백 타일",
+      "wallFinish": "청록 대리석과 황동 프레임",
+      "accentHex": "#72A5A6",
+      "keyLightKelvin": 3900,
+      "spatialSignature": "욕실과 수면 공간을 낮은 파티션으로 구획",
+      "propStory": "세면대·욕조 중심의 특실 형태",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H06",
+      "level": "2F",
+      "roomType": "private",
+      "title": "절제된 방문객 객실",
+      "heroAsset": "art/Environment/ThirdParty/KayKitFurnitureBits/Models/bed_double_B.obj",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/cabinetBedDrawer.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_medium.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/lamp_standing.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/televisionModern.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRectangle.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/apple.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/paneling.glb"
+      ],
+      "floorFinish": "중간 톤 오크",
+      "wallFinish": "청회색 도장 벽",
+      "accentHex": "#667F9E",
+      "keyLightKelvin": 3300,
+      "spatialSignature": "기능적인 침대와 수납장, 벽면 TV",
+      "propStory": "과한 장식 없이 개인용 과일과 작은 액자",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "HOTEL",
+      "roomId": "H07",
+      "level": "2F",
+      "roomType": "incident",
+      "title": "아치형 사건 현장",
+      "heroAsset": "art/Environment/ThirdParty/KenneyCastleKit/Models/tower-square-arch.obj",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/table_medium_long.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeChairRelax.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/shelf_A_big.obj",
+        "art/Environment/ThirdParty/KenneyPirateKit/Models/chest.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-saucer.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampWall.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/metal-gate.obj",
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/wall-half.obj"
+      ],
+      "floorFinish": "어두운 광택 없는 돌바닥",
+      "wallFinish": "고풍스러운 회갈색 패널",
+      "accentHex": "#5B505D",
+      "keyLightKelvin": 2300,
+      "spatialSignature": "높은 아치로 공간을 나누고 사선 가구 배치",
+      "propStory": "사건 고정 스포일러 없이 단서를 나중에 놓는 빈 공간 확보",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C00",
+      "level": "D3",
+      "roomType": "lobby",
+      "title": "아트리움 라운지",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeSofaCorner.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableGlass.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/chair_A_wood.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/couch_pillows.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampRoundFloor.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cocktail.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRectangle.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_window_open.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/pillar_A.obj"
+      ],
+      "floorFinish": "청남색 러그와 밝은 목재",
+      "wallFinish": "흰 선실 벽과 금빛 선",
+      "accentHex": "#397CA4",
+      "keyLightKelvin": 4300,
+      "spatialSignature": "긴 전망창을 향한 L자 라운지",
+      "propStory": "음료 제공 코너, 바다 전망 시야 확보",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C01",
+      "level": "D3",
+      "roomType": "private",
+      "title": "오션뷰 승객실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeChairRelax.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/bed_single_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampRoundTable.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffeeGlass.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/frappe.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_small_B.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cactus_small_A.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_window_closed.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_A.obj"
+      ],
+      "floorFinish": "내추럴 오크",
+      "wallFinish": "푸른 창 패널과 베이지 텍스타일",
+      "accentHex": "#74B9D6",
+      "keyLightKelvin": 5100,
+      "spatialSignature": "창가 리클라이너, 낮은 침대",
+      "propStory": "유리 테이블의 음료와 작은 식물",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C02",
+      "level": "D3",
+      "roomType": "private",
+      "title": "선내 다이닝 객실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenBar.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/table_round_B.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/plate.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/menu.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/bowl.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/croissant.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/stoolBar.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_orderwindow.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/pillar_B.obj"
+      ],
+      "floorFinish": "밝은 체크 타일",
+      "wallFinish": "바 코너와 아이보리 패널",
+      "accentHex": "#D4B079",
+      "keyLightKelvin": 3800,
+      "spatialSignature": "전면 음식 바, 좌우 원형 테이블",
+      "propStory": "메뉴/식기/작은 빵으로 사용 중인 선내 식당",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C03",
+      "level": "D3",
+      "roomType": "private",
+      "title": "VIP 스위트 객실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffeeGlass.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeDesignSofa.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRound.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/glass-wine.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/sideTableDrawers.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/lamp_table.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/televisionModern.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallWindow.glb"
+      ],
+      "floorFinish": "네이비 러그와 밝은 나뭇결",
+      "wallFinish": "진주색 무광 패널",
+      "accentHex": "#C7AC86",
+      "keyLightKelvin": 3400,
+      "spatialSignature": "긴 소파와 유리 가구로 넓어 보이는 배치",
+      "propStory": "개인 테이블·야간 조명·프리미엄 재질",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C04",
+      "level": "D3",
+      "roomType": "private",
+      "title": "선내 팬트리 객실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenFridgeLarge.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/kitchencounter_sink.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/fridge_A.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/dishrack.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/plate_small.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/banana.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenMicrowave.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_doorway.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/floor_kitchen.obj"
+      ],
+      "floorFinish": "백색 미끄럼 방지 타일",
+      "wallFinish": "스테인리스 느낌 낮은 패널",
+      "accentHex": "#7E9FA6",
+      "keyLightKelvin": 5000,
+      "spatialSignature": "서빙 동선 우선, 카운터 일렬 배치",
+      "propStory": "냉장고·식기와 주방 보관물",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C05",
+      "level": "D4",
+      "roomType": "private",
+      "title": "선원 공용 침실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bedBunk.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/coatRack.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/kitchentable_A.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/chair_stool_wood.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/bowl-cereal.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cabinet_small.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampSquareCeiling.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_half.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallDoorway.glb"
+      ],
+      "floorFinish": "내구성 회색 비닐 바닥",
+      "wallFinish": "얇은 흰색 벽체",
+      "accentHex": "#728896",
+      "keyLightKelvin": 4800,
+      "spatialSignature": "2층 침대 중심, 좁은 통로, 작은 생활 테이블",
+      "propStory": "실용 수납과 소박한 식사 흔적",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C06",
+      "level": "D4",
+      "roomType": "private",
+      "title": "항해 도구 보관 선실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyPirateKit/Models/mast-ropes.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyPirateKit/Models/platform-planks.glb",
+        "art/Environment/ThirdParty/KenneyPirateKit/Models/bottle.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/table_medium_long.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/desk.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/radio.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampRoundTable.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_window_open.obj",
+        "art/Environment/ThirdParty/KenneyCastleKit/Models/wall-pillar.obj"
+      ],
+      "floorFinish": "짙은 해양용 목재",
+      "wallFinish": "줄무늬 선실 패널",
+      "accentHex": "#9B805F",
+      "keyLightKelvin": 3200,
+      "spatialSignature": "벽 한쪽에 항해용 밧줄, 작은 작업 테이블",
+      "propStory": "해양 테마 분위기용 장식, 실제 항해 장비는 추가 제작 필요",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "CRUISE",
+      "roomId": "C07",
+      "level": "D4",
+      "roomType": "incident",
+      "title": "적재물 보관 사건 현장",
+      "heroAsset": "art/Environment/ThirdParty/KenneyPirateKit/Models/chest.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyPirateKit/Models/barrel.glb",
+        "art/Environment/ThirdParty/KenneyPirateKit/Models/crate-bottles.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/jar_A_large.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/shelf_B_small.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampWall.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/table_low.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_B.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall.obj"
+      ],
+      "floorFinish": "무광 회색 선박 바닥",
+      "wallFinish": "벽에 고정된 적재물 선반",
+      "accentHex": "#526E82",
+      "keyLightKelvin": 2800,
+      "spatialSignature": "높은 적재 선반 + 통로 중앙 빈 공간",
+      "propStory": "적재물을 고정한 창고 느낌; 범행 단서 고정하지 않음",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M00",
+      "level": "1F",
+      "roomType": "lobby",
+      "title": "공동 대기 홀",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeDesignSofa.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeSofaOttoman.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffee.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/pottedPlant.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/televisionModern.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampRoundFloor.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-coffee.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/paneling.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_decorated.obj"
+      ],
+      "floorFinish": "베이지 포세린 타일",
+      "wallFinish": "로즈색 벽면 그래픽 영역",
+      "accentHex": "#E7A9B7",
+      "keyLightKelvin": 4800,
+      "spatialSignature": "로비 중앙 소파 군집, 공용 안내 화면",
+      "propStory": "실내 식물·커피·TV 라운지로 밝은 분위기",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M01",
+      "level": "1F",
+      "roomType": "private",
+      "title": "메이크업 준비실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathroomMirror.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathroomCabinetDrawer.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/stoolBarSquare.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampWall.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-tea.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_small_C.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/coatRackStanding.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallWindow.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_doorway.obj"
+      ],
+      "floorFinish": "밝은 화이트 타일",
+      "wallFinish": "로즈골드 화장대 패널",
+      "accentHex": "#F6B4C3",
+      "keyLightKelvin": 5500,
+      "spatialSignature": "거울 벽을 중심으로 개별 좌석 2개",
+      "propStory": "향후 전구 테두리, 분장 도구 전용 자산 추가 필요",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M02",
+      "level": "1F",
+      "roomType": "private",
+      "title": "헤어 스타일링실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/coatRackStanding.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/washer.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/bathroomSink.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/chairDesk.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffee.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cabinet_small.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-saucer.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_decorated.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallCorner.glb"
+      ],
+      "floorFinish": "라이트 그레이 논슬립 타일",
+      "wallFinish": "실버-핑크 기능성 패널",
+      "accentHex": "#C1A3CD",
+      "keyLightKelvin": 5200,
+      "spatialSignature": "의자 열과 세면대가 중심인 작업 동선",
+      "propStory": "헤어 기기·스프레이/드라이어는 추가 전용 에셋 필요",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M03",
+      "level": "1F",
+      "roomType": "private",
+      "title": "무대 의상 준비실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/cabinetTelevisionDoors.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/cabinetBedDrawer.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pillow_A.obj",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_standing_A.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/sideTableDrawers.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRectangle.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/benchCushion.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_A.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/paneling.glb"
+      ],
+      "floorFinish": "진한 로즈 카펫",
+      "wallFinish": "패브릭 질감 강조 벽",
+      "accentHex": "#B47E96",
+      "keyLightKelvin": 4100,
+      "spatialSignature": "행거·수납장 벽, 중앙 피팅 공간",
+      "propStory": "의상 행거와 옷걸이 상세 모델은 추후 별도 구매/제작",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M04",
+      "level": "1F",
+      "roomType": "private",
+      "title": "음향 모니터링실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/speaker.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/speakerSmall.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/computerScreen.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/computerKeyboard.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/computerMouse.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/deskCorner.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampSquareCeiling.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallDoorway.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_half.obj"
+      ],
+      "floorFinish": "차콜 흡음 카펫",
+      "wallFinish": "어두운 흡음 패널",
+      "accentHex": "#6265A6",
+      "keyLightKelvin": 3900,
+      "spatialSignature": "듀얼 스피커를 향한 책상과 모니터",
+      "propStory": "음향 조절실처럼 모니터/스피커 실루엣 강조",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M05",
+      "level": "1F",
+      "roomType": "private",
+      "title": "휴대 장비 리허설실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/radio.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/laptop.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeChair.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/televisionVintage.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cup-coffee.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/chair_B.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/rugRound.glb"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wall.glb",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/door_B.obj"
+      ],
+      "floorFinish": "밝은 나무 마루",
+      "wallFinish": "크림-살구 파스텔",
+      "accentHex": "#F1C18E",
+      "keyLightKelvin": 4600,
+      "spatialSignature": "중앙 휴식 의자, 모서리 미디어 장비",
+      "propStory": "실제 악기와 마이크는 추후 별도 에셋 필요",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M06",
+      "level": "1F",
+      "roomType": "private",
+      "title": "간식·휴게실",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenCoffeeMachine.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenBarEnd.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/kitchenMicrowave.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/donut-sprinkles.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/cookie.glb",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/frappe.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/table_small.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_orderwindow.obj",
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/pillar_B.obj"
+      ],
+      "floorFinish": "차분한 테라조 타일",
+      "wallFinish": "민트와 분홍의 간식 코너",
+      "accentHex": "#87C4AA",
+      "keyLightKelvin": 5200,
+      "spatialSignature": "사각 간식대와 벽면 개수대",
+      "propStory": "음식·커피·소형 주방 설비",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    },
+    {
+      "theme": "MUSIC_BROADCAST",
+      "roomId": "M07",
+      "level": "1F",
+      "roomType": "incident",
+      "title": "VIP 별실 사건 현장",
+      "heroAsset": "art/Environment/ThirdParty/KenneyFurnitureKit/Models/desk.glb",
+      "supportingAssets": [
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/loungeSofaLong.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/tableCoffeeGlass.glb",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/lampRoundTable.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/pictureframe_large_B.obj",
+        "art/Environment/ThirdParty/KenneyFoodKit/Models/chocolate.glb",
+        "art/Environment/ThirdParty/KayKitFurnitureBits/Models/cactus_small_B.obj"
+      ],
+      "architecturalAssets": [
+        "art/Environment/ThirdParty/KayKitRestaurantBits/Models/wall_doorway.obj",
+        "art/Environment/ThirdParty/KenneyFurnitureKit/Models/wallWindow.glb"
+      ],
+      "floorFinish": "적갈색 원목",
+      "wallFinish": "골드 프레임의 더 진한 로즈 패널",
+      "accentHex": "#C78B65",
+      "keyLightKelvin": 3000,
+      "spatialSignature": "작은 별실 안 고급 책상·소파 코너",
+      "propStory": "범행 원인은 고정하지 않고 조사 가능한 빈 면적 확보",
+      "designStatus": "visual dressing proposal; not a completed Unity room or confirmed gameplay layout"
+    }
+  ]
+}
