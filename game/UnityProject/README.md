@@ -40,7 +40,7 @@ Canvas (1920×1080 / Scale With Screen Size / Expand)
 2. **Game 탭을 Play 없이** 열고 화면 비율을 1920×1080 또는 16:9로 선택하면 정적 미리보기를 볼 수 있다.
 3. Hierarchy의 `Canvas > DialoguePanel`을 선택한다.
 4. Inspector의 **Dialogue Panel > Inspector presentation**에서 **Theme**을 `MANSION`, `CRUISE`, `MUSIC_BROADCAST` 중 선택한다. 이름표/본문/입력창은 공유하고 프레임 Sprite만 교체한다. 게임 화면에는 테마 버튼을 추가하지 않았다.
-5. **Speaker**에서 마도아·마리예·나주아·복희·지로아·문이린을 선택한다. **Preview Text**는 정적 미리보기용 안내 문구이며 사건 대사가 아니다.
+5. **Speaker**에서 마도아·마리예·나주아·복희·지로아·문일혜을 선택한다. **Preview Text**는 정적 미리보기용 안내 문구이며 사건 대사가 아니다.
 6. 프리팹 자체를 편집하려면 `Assets/UI/Prefabs/DialoguePanel.prefab`을 더블클릭한다. 프리팹 모드에서도 Inspector로 표시를 조정할 수 있다.
 
 ## 연결 범위
@@ -94,3 +94,14 @@ This change was prepared against the GitHub files. It was not executed in the us
 ## Verification boundaries
 The GitHub code and font import assets can be reviewed statically. **Actual TMP font generation and prefab reserialization take place inside Unity Editor** when this change is imported; this response does not claim they already ran on your PC.
 
+
+
+## UI 마무리 — 이름 변경 및 초상화 슬롯 (2026-11-09)
+
+- 이름: **문이린 → 문일혜**. 나머지 다섯 NPC 이름, 기존 enum 순서, 기존 테마 PNG/알파는 유지.
+- `DialoguePanel`의 이름표는 `speaker.ToString()`에서 표시되므로, Inspector Speaker의 여섯 번째 옵션부터 **문일혜**로 표시.
+- `NpcPortrait`는 **실제 승인된 Sprite가 있을 때만 보이는** 선택적 이미지 슬롯. 아직 캐릭터 초상화 6개의 원본 PNG가 GitHub에 없으므로 임의 이미지를 생성하거나 연결하지 않음.
+- `speakerPortraits` 배열에 NPC별 Sprite를 넣으면 자동 전환. 초상화가 연결되면 원본 프레임 오른쪽에 표시하며, 대사가 겹치지 않도록 본문 폭을 줄임. 초상화가 없으면 기존 대화창 배치 유지.
+- 새로운 Editor 코드 `Assets/UI/Editor/FinalizeDialogueUI.cs`는 기존 프리팹을 **Edit Mode에서만** 열고 필요한 Sprite 슬롯 및 6개 바인딩을 추가해 저장. 기존 씬, UI PNG, TMP 입력·대사기록, EventSystem 및 버튼 동작을 변경하지 않음.
+- 기존 MaruBuri/Pretendard Edit Mode 폰트 적용 스크립트는 별도로 작동. GitHub 코드 저장은 완료되지만 로컬 Unity에서 실행해야 실제 에셋과 프리팹 직렬화가 완료됨.
+- **테스트, Play Mode, 빌드 없음.** 로컬 Unity 조작은 이번 대화에서 불가능하므로 실제 적용 성공을 주장하지 않음.

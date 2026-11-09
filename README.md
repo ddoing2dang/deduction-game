@@ -24,3 +24,8 @@
 
 ## 로컬 PC 안내
 기존 mystery의 Project 창에서 `Assets/Scenes/DialoguePreview.unity`를 더블클릭하고, Game 탭을 Play 없이 열어 미리 봅니다. GitHub의 Assets 사본은 기존 Unity 프로젝트에 적용하는 자료이며 프로젝트를 다시 만들라는 안내가 아닙니다.
+
+
+## UI 업데이트
+
+`mystery`의 UI 작업 브랜치에는 NPC 이름 **문일혜** 변경과 대화창 **실제 NPC 스프라이트용 선택적 초상화 슬롯**을 포함합니다. 캐릭터 원본 PNG를 임의로 대체하지 않습니다. 기존 테마별 대화창 PNG는 변경하지 않았습니다.

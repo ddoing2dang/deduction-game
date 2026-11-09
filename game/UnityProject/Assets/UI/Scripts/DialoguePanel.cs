@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Mystery.UI
 {
     public enum DialogueTheme { MANSION, CRUISE, MUSIC_BROADCAST }
-    public enum DialogueSpeaker { 마도아, 마리예, 나주아, 복희, 지로아, 문이린 }
+    public enum DialogueSpeaker { 마도아, 마리예, 나주아, 복희, 지로아, 문일혜 }
 
     /// <summary>Shared presentation only. No case data or generated NPC answers.</summary>
     [ExecuteAlways, DisallowMultipleComponent]
@@ -33,6 +33,15 @@ namespace Mystery.UI
         [SerializeField] private ScrollRect historyScroll;
         [SerializeField] private TMP_Text historyText;
         [SerializeField] private TMP_Text statusText;
+        [Header("Optional portraits (never synthesize missing NPC art)")]
+        [SerializeField] private Image npcPortrait;
+        [Serializable]
+        public struct SpeakerPortrait
+        {
+            public DialogueSpeaker speaker;
+            public Sprite portrait;
+        }
+        [SerializeField] private SpeakerPortrait[] speakerPortraits = Array.Empty<SpeakerPortrait>();
         [Header("Optional approved dialogue adapter")]
         public UnityEvent<string> questionSubmitted = new UnityEvent<string>();
 
@@ -80,11 +89,56 @@ namespace Mystery.UI
             frame.color = Color.white;
             frame.preserveAspect = true;
             speakerName.text = speaker.ToString();
+            RefreshPortrait();
             bool playing = Application.IsPlaying(gameObject);
             dialogueBody.text = playing ? (latestReplies.TryGetValue(speaker, out var reply) ? reply : "") : previewText;
             if (lastSpeaker != speaker && questionInput != null) questionInput.SetTextWithoutNotify("");
             lastSpeaker = speaker;
             RefreshHistory();
+        }
+
+        // Portrait art is assigned explicitly per NPC in the Inspector or by a later asset importer.
+        // The slot stays invisible if its actual user-approved sprite is not present.
+        public void SetSpeakerPortrait(DialogueSpeaker npc, Sprite sprite)
+        {
+            if (speakerPortraits == null) speakerPortraits = Array.Empty<SpeakerPortrait>();
+            for (int i = 0; i < speakerPortraits.Length; i++)
+            {
+                if (speakerPortraits[i].speaker != npc) continue;
+                speakerPortraits[i].portrait = sprite;
+                ApplyPresentation();
+                return;
+            }
+            int count = speakerPortraits.Length;
+            Array.Resize(ref speakerPortraits, count + 1);
+            speakerPortraits[count] = new SpeakerPortrait { speaker = npc, portrait = sprite };
+            ApplyPresentation();
+        }
+
+        private void RefreshPortrait()
+        {
+            if (npcPortrait == null || dialogueBody == null) return;
+            Sprite selected = null;
+            if (speakerPortraits != null)
+            {
+                for (int i = 0; i < speakerPortraits.Length; i++)
+                {
+                    if (speakerPortraits[i].speaker != speaker) continue;
+                    selected = speakerPortraits[i].portrait;
+                    break;
+                }
+            }
+
+            npcPortrait.sprite = selected;
+            npcPortrait.preserveAspect = true;
+            npcPortrait.raycastTarget = false;
+            npcPortrait.enabled = selected != null;
+
+            // Reserve dialogue-body space only when an actual portrait has been assigned.
+            // With no portrait, preserve the exact established theme-frame layout.
+            var rect = dialogueBody.rectTransform;
+            rect.anchoredPosition = selected != null ? new Vector2(-105, -38) : new Vector2(0, -38);
+            rect.sizeDelta = selected != null ? new Vector2(1320, 224) : new Vector2(1560, 224);
         }
 
         private void OnInputSubmit(string _) => SubmitQuestion();
