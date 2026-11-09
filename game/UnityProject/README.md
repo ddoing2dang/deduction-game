@@ -104,7 +104,7 @@ The GitHub code and font import assets can be reviewed statically. **Actual TMP 
 
 - 이름: **문이린 → 문일혜**. 나머지 다섯 NPC 이름, 기존 enum 순서, 기존 테마 PNG/알파는 유지.
 - `DialoguePanel`의 이름표는 `speaker.ToString()`에서 표시되므로, Inspector Speaker의 여섯 번째 옵션부터 **문일혜**로 표시.
-- `NpcPortrait`는 **실제 승인된 Sprite가 있을 때만 보이는** 선택적 이미지 슬롯. 아직 캐릭터 초상화 6개의 원본 PNG가 GitHub에 없으므로 임의 이미지를 생성하거나 연결하지 않음.
+- `NpcPortrait`는 사용자 원본 PNG 6종을 사용하며 실제 Sprite 6개를 모두 연결함. 별도 이미지 재생성은 하지 않음.
 - `speakerPortraits` 배열에 NPC별 Sprite를 넣으면 자동 전환. 초상화가 연결되면 원본 프레임 오른쪽에 표시하며, 대사가 겹치지 않도록 본문 폭을 줄임. 초상화가 없으면 기존 대화창 배치 유지.
 - 새로운 Editor 코드 `Assets/UI/Editor/FinalizeDialogueUI.cs`는 기존 프리팹을 **Edit Mode에서만** 열고 필요한 Sprite 슬롯 및 6개 바인딩을 추가해 저장. 기존 씬, UI PNG, TMP 입력·대사기록, EventSystem 및 버튼 동작을 변경하지 않음.
 - 기존 MaruBuri/Pretendard Edit Mode 폰트 적용 스크립트는 별도로 작동. GitHub 코드 저장은 완료되지만 로컬 Unity에서 실행해야 실제 에셋과 프리팹 직렬화가 완료됨.
@@ -128,8 +128,10 @@ NPC 이름은 **마도연 · 마루희 · 나주은 · 이복희 · 진루나 ·
 | 4 | 진루나 | 초록 | `Jinruna.png` |
 | 5 | 문일혜 | 보라 | `Munilhye.png` |
 
-**이미지 원본은 ChatGPT 대화에서 제공한 ZIP으로 별도 전달**했습니다. 해당 ZIP의 `Assets/` 폴더를 현재 `C:/UnityProjects/DeductionGame/mystery` 아래에 그대로 합치세요. **원본 PNG 바이너리는 이 GitHub 커밋에 들어 있지 않습니다.** GitHub 업로드 기능이 원본 바이너리 전달을 지원하지 않아, 소스/설정 및 해시 목록만 저장했습니다.
+**원본 PNG 6장과 `.png.meta` 6개는 작업 브랜치의 `game/UnityProject/Assets/UI/Art/NPCPortraits/`에 저장 완료**되었습니다. Unity의 `Assets/UI/Art/NPCPortraits/`로 프로젝트를 가져오면 기존 `DialoguePanel.prefab`에 Sprite 참조 6개가 연결된 상태입니다. 2026-11-09 커밋 `ae4d24c0aafa7ec6767da12b1f4300f7d4b54c85`에서 확인했습니다.
 
 이후 Unity에서 자동으로 Editor 메뉴 `Mystery > UI > Bind Six NPC Portraits` 명령이 준비되며, PNG 임포트 시 기존 `DialoguePanel.prefab`의 `speakerPortraits` 6개에 연결을 시도합니다. 자동 적용되지 않으면 이 메뉴를 한 번 실행하세요. 기존 이름표·대사·질문·대화 기록, 테마별 대화창 PNG는 변경하지 않습니다. Sprite importer는 투명 alpha 보존, Mipmap off, 압축 off입니다.
 
-마지막으로 로컬 Unity에서 생성된 `Assets/UI/Art/NPCPortraits` PNG와 메타데이터, 프리팹을 **GitHub 작업 브랜치에 커밋**하면 저장소에도 초상화 파일까지 들어 있는 최종본이 됩니다. Play Mode, 기능 테스트, EXE 빌드 미실시.
+PNG 6장 및 메타 6장과 수정 프리팹은 GitHub 작업 브랜치에 푸시 완료. 프리팹의 Sprite GUID와 `.meta` GUID가 여섯 명 모두 일치하는 것을 GitHub에서 확인했습니다. Play Mode, 기능 테스트, EXE 빌드 미실시.
+
+> 최신 상태 (2026-11-09): NPC 초상화 **6/6 연결**, PNG/.meta **각 6/6 GitHub 저장**. 과거 문서의 미완료 문구는 당시 작업 이력이며 현재 상태가 아닙니다.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "project": "mystery",
-  "status": "six original user-provided PNGs prepared separately in a ZIP; source PNG bytes not uploaded to GitHub by this connection",
+  "status": "complete: all six PNGs and matching .meta files are committed on work branch; DialoguePanel prefab has six valid matching GUID references",
   "target": "Assets/UI/Art/NPCPortraits",
   "speakerOrder": [
     "마도연",
@@ -54,5 +54,6 @@
       "file": "Munilhye.png",
       "sha256": "16537714b64742335db6ff84bbb677b18bc6905bd1edea90454e12b820aece61"
     }
-  ]
+  ],
+  "completedCommit": "ae4d24c0aafa7ec6767da12b1f4300f7d4b54c85"
 }

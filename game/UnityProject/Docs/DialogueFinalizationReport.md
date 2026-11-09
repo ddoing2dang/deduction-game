@@ -6,8 +6,13 @@
 - 기존 DialoguePreview 씬에서 1920×1080 정적 렌더로 Mansion, Cruise, MusicBroadcast의 한글 표시와 배치를 확인했다. 세 프레임의 원본 PNG 해시가 작업 시작 시 파일과 일치한다. 기존 질문 입력창, 전송 버튼, 기록 ScrollRect 및 IME 코드를 유지했다.
 - 마도연, 마루희, 나주은, 이복희, 진루나, 문일혜를 Edit Mode에서 순서대로 선택해 이름표를 확인했다. 기존 enum 인덱스 0~5를 유지했다.
 
-## 남은 작업
+## NPC 초상화 6종 연결 완료 (2026-11-09)
 
-초상화 원본 ZIP 및 PNG 6장이 작업 브랜치, GitHub 이력 또는 릴리스에 없었으므로 초상화 연결은 0/6이다. Madoyeon.png, Maruhee.png, Najueun.png, Ibokhee.png, Jinruna.png, Munilhye.png와 각각의 .meta가 필요하다. 원본이 제공되면 NPCPortraitMapping.json의 SHA-256과 대조하고 기존 연결 도구로 프리팹에 할당한 뒤 세 테마에서 배치를 다시 확인해야 한다.
+- 이전 보고 시점의 `0/6` 미완료 상태를 최신 작업 커밋 `ae4d24c0aafa7ec6767da12b1f4300f7d4b54c85` 기준으로 갱신.
+- PNG 6개 + 각 `.png.meta` 6개가 `game/UnityProject/Assets/UI/Art/NPCPortraits/` 경로에 **원격 GitHub 저장 완료**.
+- 마도연(`Madoyeon.png`), 마루희(`Maruhee.png`), 나주은(`Najueun.png`), 이복희(`Ibokhee.png`), 진루나(`Jinruna.png`), 문일혜(`Munilhye.png`) 순서로 기존 0~5 enum 유지.
+- `DialoguePanel.prefab`의 `speakerPortraits` 6개 GUID와 각 `.png.meta` GUID가 모두 정확히 일치함을 GitHub 원격 파일에서 확인.
+- Unity Edit Mode에서 이름·초상화 매핑, 투명도, 비율, 대사 영역과 겹치지 않는 배치를 확인했다는 작업 완료 보고를 받음. 이 문서 갱신에서 Unity를 추가 실행하지 않음.
+- 원본 PNG와 프리팹 바이너리·직렬화 데이터는 이 **문서 갱신 커밋에서 수정하지 않음**.
 
 Play Mode, 기능 테스트, 실행 파일 빌드는 실시하지 않았다.
