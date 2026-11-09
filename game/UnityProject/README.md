@@ -1,3 +1,11 @@
+## 2026-11-10 · Unity Edit Mode 정적 점검 메뉴 추가
+
+최신 심문·조사·저장·결말 코드가 로컬 Unity 프로젝트에 **정확히 반영되었는지** 읽기 전용으로 점검하는 메뉴를 만들었습니다. `Mystery > Verification > Inspect Current Project (Edit Mode)`에서 프리팹·NPC 원본 SHA-256·사건 JSON 6종·대저택 단서 연결을 검사할 수 있습니다. [점검 순서](Docs/MysteryEditModePreflight.md).
+
+**이번 변경은 GitHub 코드 추가만 수행했습니다. 로컬 Unity에서 검증 메뉴 실행·컴파일 확인·Play Mode·기능 테스트·빌드 모두 미실시.** 세 사건의 `approved: false`와 로컬 폰트 보존 정책을 유지합니다.
+
+---
+
 ## 2026-11-10 · 사건별 진행 저장·불러오기와 결말 화면
 
 증거 수집·범인 지목 횟수·사건 해결 상태·NPC별 대화 기록을 **사건별 Windows 저장 파일**에 자동/수동 저장하도록 코드를 추가했습니다. 승인된 사건을 해결하면 결말 UI가 나타나고 저장 파일에서 복원한 해결 기록의 결말도 다시 열 수 있습니다. 기존 대화창에 **진행 저장 / 사건 결말** 탭을 추가했으며 기존 자산은 보존합니다. [저장·결말 기능 설계](Docs/CaseProgressAndConclusion.md).
