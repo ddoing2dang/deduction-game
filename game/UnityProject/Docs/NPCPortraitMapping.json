@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "project": "mystery",
+  "status": "six original user-provided PNGs prepared separately in a ZIP; source PNG bytes not uploaded to GitHub by this connection",
+  "target": "Assets/UI/Art/NPCPortraits",
+  "speakerOrder": [
+    "마도연",
+    "마루희",
+    "나주은",
+    "이복희",
+    "진루나",
+    "문일혜"
+  ],
+  "portraits": [
+    {
+      "speakerIndex": 0,
+      "name": "마도연",
+      "hairColor": "은발",
+      "file": "Madoyeon.png",
+      "sha256": "0d0d4dc1c8b35df832a1719719fb28f639dc231cab6fe7b2c9b2102a32a12058"
+    },
+    {
+      "speakerIndex": 1,
+      "name": "마루희",
+      "hairColor": "금발",
+      "file": "Maruhee.png",
+      "sha256": "9dbb247f886e97dc53bff951e16989799b83e10e31baf236b2ee2f863b98a34d"
+    },
+    {
+      "speakerIndex": 2,
+      "name": "나주은",
+      "hairColor": "갈색",
+      "file": "Najueun.png",
+      "sha256": "8e3e8d0d003a170e373b7cff1252b6e1d5b759dd4e0068e0e4127d7aae7d98e5"
+    },
+    {
+      "speakerIndex": 3,
+      "name": "이복희",
+      "hairColor": "빨강",
+      "file": "Ibokhee.png",
+      "sha256": "9fea0e73dbc13c7c1d9ccabd0bc7573d7bce8749a2f3dbfad824f2b83eb3ccdb"
+    },
+    {
+      "speakerIndex": 4,
+      "name": "진루나",
+      "hairColor": "초록",
+      "file": "Jinruna.png",
+      "sha256": "52e926f7c760f1ca84c789fd53ff94a38649028a03bb563e0038b7129944527e"
+    },
+    {
+      "speakerIndex": 5,
+      "name": "문일혜",
+      "hairColor": "보라",
+      "file": "Munilhye.png",
+      "sha256": "16537714b64742335db6ff84bbb677b18bc6905bd1edea90454e12b820aece61"
+    }
+  ]
+}

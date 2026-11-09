@@ -110,3 +110,22 @@ The GitHub code and font import assets can be reviewed statically. **Actual TMP 
 ### 2026-11-09 NPC 이름 최신 변경
 
 NPC 이름은 **마도연 · 마루희 · 나주은 · 이복희 · 진루나 · 문일혜**로 확정. 기존 6인 순서 및 `DialogueSpeaker` enum 직렬화 숫자(0~5)를 유지하고, 초기 대화창 이름표 프리팹 텍스트도 마도연으로 변경. 기존 PNG와 프리팹 구조·캐릭터 선택 인덱스·UI 동작은 변경하지 않았습니다. 로컬 Unity Editor 동작 확인, Play Mode 및 빌드는 미실시.
+
+## mystery / NPC 6종 초상화 연결 (2026-11-09)
+
+사용자가 제공한 **원본 RGBA 투명 PNG 6장**을 확인했고, 다음 캐릭터/색상/에셋명을 확정했습니다.
+
+| Unity Speaker index | 이름 | 머리색 | 가져올 PNG |
+|---|---|---|---|
+| 0 | 마도연 | 은발 | `Madoyeon.png` |
+| 1 | 마루희 | 금발 | `Maruhee.png` |
+| 2 | 나주은 | 갈색 | `Najueun.png` |
+| 3 | 이복희 | 빨강 | `Ibokhee.png` |
+| 4 | 진루나 | 초록 | `Jinruna.png` |
+| 5 | 문일혜 | 보라 | `Munilhye.png` |
+
+**이미지 원본은 ChatGPT 대화에서 제공한 ZIP으로 별도 전달**했습니다. 해당 ZIP의 `Assets/` 폴더를 현재 `C:/UnityProjects/DeductionGame/mystery` 아래에 그대로 합치세요. **원본 PNG 바이너리는 이 GitHub 커밋에 들어 있지 않습니다.** GitHub 업로드 기능이 원본 바이너리 전달을 지원하지 않아, 소스/설정 및 해시 목록만 저장했습니다.
+
+이후 Unity에서 자동으로 Editor 메뉴 `Mystery > UI > Bind Six NPC Portraits` 명령이 준비되며, PNG 임포트 시 기존 `DialoguePanel.prefab`의 `speakerPortraits` 6개에 연결을 시도합니다. 자동 적용되지 않으면 이 메뉴를 한 번 실행하세요. 기존 이름표·대사·질문·대화 기록, 테마별 대화창 PNG는 변경하지 않습니다. Sprite importer는 투명 alpha 보존, Mipmap off, 압축 off입니다.
+
+마지막으로 로컬 Unity에서 생성된 `Assets/UI/Art/NPCPortraits` PNG와 메타데이터, 프리팹을 **GitHub 작업 브랜치에 커밋**하면 저장소에도 초상화 파일까지 들어 있는 최종본이 됩니다. Play Mode, 기능 테스트, EXE 빌드 미실시.
