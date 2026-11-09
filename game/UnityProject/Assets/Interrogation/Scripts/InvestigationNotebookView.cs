@@ -204,8 +204,20 @@ namespace Mystery.Interrogation
         private void ToggleWindow()
         {
             if (notebookWindow == null) return;
-            notebookWindow.SetActive(!notebookWindow.activeSelf);
-            if (notebookWindow.activeSelf) Refresh();
+            bool opening = !notebookWindow.activeSelf;
+            if (opening)
+            {
+                var investigation = GetComponent<InvestigationSceneView>();
+                if (investigation != null) investigation.HideWindow();
+            }
+            notebookWindow.SetActive(opening);
+            if (opening) Refresh();
+        }
+
+        // Called by the investigation view so the two panels never overlap.
+        public void HideWindow()
+        {
+            if (notebookWindow != null) notebookWindow.SetActive(false);
         }
 
         private void SelectSuspect(int suspect)
