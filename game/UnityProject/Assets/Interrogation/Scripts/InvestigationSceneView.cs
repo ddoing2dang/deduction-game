@@ -154,7 +154,7 @@ namespace Mystery.Interrogation
             label.color = heading ? Foreground : Muted;
             label.fontSize = fontSize;
             label.alignment = TextAlignmentOptions.Center;
-            label.enableWordWrapping = true;
+            label.textWrappingMode = TextWrappingModes.Normal;
             label.raycastTarget = false;
             label.text = text;
             return label;

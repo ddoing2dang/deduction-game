@@ -110,7 +110,7 @@ namespace Mystery.Interrogation
             text.fontSize = fontSize;
             text.color = Light;
             text.alignment = TextAlignmentOptions.Center;
-            text.enableWordWrapping = true;
+            text.textWrappingMode = TextWrappingModes.Normal;
             text.raycastTarget = false;
             text.text = value;
             return text;
