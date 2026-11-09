@@ -33,7 +33,7 @@ namespace Mystery.UI.Editor
                 return;
             }
             if (AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath) == null) return;
-            if (PortraitFiles.Any(f => AssetDatabase.LoadAssetAtPath<Sprite>(PortraitFolder + f) == null))
+            if (PortraitFiles.Any(f => !(AssetImporter.GetAtPath(PortraitFolder + f) is TextureImporter)))
                 return;
             try { Bind(); }
             catch (Exception e) { Debug.LogWarning("[mystery portraits] " + e.Message); }
@@ -54,11 +54,20 @@ namespace Mystery.UI.Editor
                 var importer = AssetImporter.GetAtPath(path) as TextureImporter;
                 if (importer == null) throw new InvalidOperationException("Missing portrait: " + path);
 
+                importer.GetSourceTextureWidthAndHeight(out int width, out int height);
+                int maxSize = Mathf.Max(2048, Mathf.NextPowerOfTwo(Mathf.Max(width, height)));
+                var standalone = importer.GetPlatformTextureSettings("Standalone");
+                bool adjustStandalone = standalone.overridden &&
+                    (standalone.maxTextureSize < maxSize || standalone.format != TextureImporterFormat.RGBA32
+                        || standalone.crunchedCompression);
                 bool adjust = importer.textureType != TextureImporterType.Sprite
                     || importer.spriteImportMode != SpriteImportMode.Single
+                    || importer.alphaSource != TextureImporterAlphaSource.FromInput
                     || !importer.alphaIsTransparency || importer.mipmapEnabled
+                    || importer.npotScale != TextureImporterNPOTScale.None
                     || importer.textureCompression != TextureImporterCompression.Uncompressed
-                    || importer.maxTextureSize < 2048;
+                    || importer.crunchedCompression || importer.maxTextureSize < maxSize
+                    || adjustStandalone;
                 if (adjust)
                 {
                     importer.textureType = TextureImporterType.Sprite;
@@ -67,8 +76,16 @@ namespace Mystery.UI.Editor
                     importer.alphaIsTransparency = true;
                     importer.mipmapEnabled = false;
                     importer.npotScale = TextureImporterNPOTScale.None;
-                    importer.maxTextureSize = 2048;
+                    importer.maxTextureSize = Mathf.Max(importer.maxTextureSize, maxSize);
                     importer.textureCompression = TextureImporterCompression.Uncompressed;
+                    importer.crunchedCompression = false;
+                    if (adjustStandalone)
+                    {
+                        standalone.maxTextureSize = Mathf.Max(standalone.maxTextureSize, maxSize);
+                        standalone.format = TextureImporterFormat.RGBA32;
+                        standalone.crunchedCompression = false;
+                        importer.SetPlatformTextureSettings(standalone);
+                    }
                     importer.SaveAndReimport();
                 }
                 sprites[i] = AssetDatabase.LoadAssetAtPath<Sprite>(path);
@@ -174,7 +191,7 @@ namespace Mystery.UI.Editor
                 "Ibokhee.png", "Jinruna.png", "Munilhye.png"
             })
             {
-                if (AssetDatabase.LoadAssetAtPath<Sprite>(root + file) == null) return;
+                if (!(AssetImporter.GetAtPath(root + file) is TextureImporter)) return;
             }
             try { BindNpcPortraits.Bind(); }
             catch (Exception e) { Debug.LogWarning("[mystery portraits] " + e.Message); }

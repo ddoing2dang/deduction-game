@@ -1,3 +1,7 @@
+## 2026-11-09 Edit Mode 작업 결과
+
+MaruBuri·Pretendard TMP 에셋과 프리팹을 Unity에서 저장했습니다. 초상화 원본 6종은 아직 필요합니다. [작업 보고서](Docs/DialogueFinalizationReport.md)에 확인 결과와 남은 항목을 기록했습니다. 아래는 이전 작업 이력입니다.
+
 # mystery — DialoguePanel 제작 결과
 
 현재 실행 중인 Unity의 `Library/EditorInstance.json`, 에디터 로그, Unity Pipeline/MCP 상태에서 실제 프로젝트 경로 **`C:/UnityProjects/DeductionGame/mystery`**를 확인했다. 새 Unity 프로젝트를 생성하거나 에디터를 다시 실행하지 않았다. 현재 열린 **Unity 6000.3.26f1**에 **Unity MCP**로 직접 제작 명령을 보내 저장했다.
