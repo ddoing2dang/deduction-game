@@ -1,3 +1,11 @@
+## 2026-11-09 · NPC 자유 심문 v1
+
+대화창 프리팹에 NPC 심문 어댑터를 연결하고 3테마 사건 JSON 초안, 범인 전용 거짓말·증거 해제 규칙, NPC+테마별 대화 기록을 추가했습니다. 실제 사건 데이터는 사용자 승인 전이므로 답변은 비활성화되어 있습니다. [심문 시스템 설계/작성법](Docs/InterrogationSystem.md).
+
+**로컬 Unity Editor/Play Mode/기능 테스트/빌드는 실행하지 않았습니다.**
+
+---
+
 ## 2026-11-09 Edit Mode 작업 결과
 
 MaruBuri·Pretendard TMP 에셋과 프리팹을 Unity에서 저장했습니다. 초상화 원본 6종은 아직 필요합니다. [작업 보고서](Docs/DialogueFinalizationReport.md)에 확인 결과와 남은 항목을 기록했습니다. 아래는 이전 작업 이력입니다.

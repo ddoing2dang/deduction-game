@@ -46,10 +46,25 @@ namespace Mystery.UI
         public UnityEvent<string> questionSubmitted = new UnityEvent<string>();
 
         private sealed class Entry { public string who, text; }
-        private readonly Dictionary<DialogueSpeaker, List<Entry>> histories = new Dictionary<DialogueSpeaker, List<Entry>>();
-        private readonly Dictionary<DialogueSpeaker, string> latestReplies = new Dictionary<DialogueSpeaker, string>();
+        // Histories and last replies are scoped to the CASE THEME and NPC.
+        private readonly struct ContextKey : IEquatable<ContextKey>
+        {
+            public readonly DialogueTheme theme;
+            public readonly DialogueSpeaker speaker;
+            public ContextKey(DialogueTheme theme, DialogueSpeaker speaker)
+            { this.theme = theme; this.speaker = speaker; }
+            public bool Equals(ContextKey other) => theme == other.theme && speaker == other.speaker;
+            public override bool Equals(object obj) => obj is ContextKey other && Equals(other);
+            public override int GetHashCode() => unchecked(((int)theme * 397) ^ (int)speaker);
+        }
+        private ContextKey CurrentContext => new ContextKey(theme, speaker);
+        private readonly Dictionary<ContextKey, List<Entry>> histories
+            = new Dictionary<ContextKey, List<Entry>>();
+        private readonly Dictionary<ContextKey, string> latestReplies
+            = new Dictionary<ContextKey, string>();
         private bool presentationDirty;
         private DialogueSpeaker lastSpeaker;
+        private DialogueTheme lastTheme;
 
         public DialogueTheme Theme { get => theme; set { theme = value; ApplyPresentation(); } }
         public DialogueSpeaker Speaker { get => speaker; set { speaker = value; ApplyPresentation(); } }
@@ -91,9 +106,13 @@ namespace Mystery.UI
             speakerName.text = speaker.ToString();
             RefreshPortrait();
             bool playing = Application.IsPlaying(gameObject);
-            dialogueBody.text = playing ? (latestReplies.TryGetValue(speaker, out var reply) ? reply : "") : previewText;
-            if (lastSpeaker != speaker && questionInput != null) questionInput.SetTextWithoutNotify("");
+            dialogueBody.text = playing
+                ? (latestReplies.TryGetValue(CurrentContext, out var reply) ? reply : "")
+                : previewText;
+            if ((lastSpeaker != speaker || lastTheme != theme) && questionInput != null)
+                questionInput.SetTextWithoutNotify("");
             lastSpeaker = speaker;
+            lastTheme = theme;
             RefreshHistory();
         }
 
@@ -160,14 +179,25 @@ namespace Mystery.UI
         public void ShowNpcReply(string approvedText)
         {
             if (!Application.IsPlaying(gameObject) || string.IsNullOrWhiteSpace(approvedText)) return;
-            latestReplies[speaker] = approvedText;
+            latestReplies[CurrentContext] = approvedText;
             dialogueBody.text = approvedText;
-            statusText.text = "";
+            if (statusText != null) statusText.text = "";
             AddEntry(speaker.ToString(), approvedText);
         }
+
+        // For unapproved/missing case data: never impersonate an NPC.
+        public void ShowInterrogationNotice(string notice)
+        {
+            if (!Application.IsPlaying(gameObject) || string.IsNullOrWhiteSpace(notice)) return;
+            if (statusText != null) statusText.text = "승인된 진술 없음 · 대화 기록을 확인하세요.";
+            AddEntry("안내", notice.Trim());
+        }
+
         private void AddEntry(string who, string text)
         {
-            if (!histories.TryGetValue(speaker, out var entries)) histories[speaker] = entries = new List<Entry>();
+            var context = CurrentContext;
+            if (!histories.TryGetValue(context, out var entries))
+                histories[context] = entries = new List<Entry>();
             entries.Add(new Entry { who = who, text = text });
             RefreshHistory();
         }
@@ -175,7 +205,7 @@ namespace Mystery.UI
         {
             if (historyText == null) return;
             var result = new StringBuilder();
-            if (histories.TryGetValue(speaker, out var entries))
+            if (histories.TryGetValue(CurrentContext, out var entries))
                 foreach (var entry in entries) result.Append(entry.who).Append(" · ").AppendLine(entry.text);
             historyText.text = result.Length == 0 ? "아직 대화 기록이 없습니다." : result.ToString();
             if (Application.IsPlaying(gameObject) && historyScroll != null)
