@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "project": "마또 머더미스터리",
   "platforms": [
     "Windows x64"
@@ -7,14 +7,16 @@
   "stagingOnly": true,
   "lastUpdated": "2026-11-09",
   "licensePolicy": "Only verified CC0-1.0 source assets have been added. All third-party pack licenses included.",
-  "totalNew3DModels": 103,
-  "modelCountTotal": 122,
+  "totalNew3DModels": 187,
+  "modelCountTotal": 206,
   "existingAccessoryLibraryGLBCount": 34,
   "packCounts": {
     "KayKitFurnitureBits": 53,
     "KayKitRestaurantBits": 36,
     "KenneyCastleKit": 15,
-    "KenneyFurnitureKit": 18
+    "KenneyFurnitureKit": 78,
+    "KenneyPirateKit": 6,
+    "KenneyFoodKit": 18
   },
   "themes": {
     "HOTEL": {
@@ -103,10 +105,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/armchair.obj",
+      "file": "Models/armchair_pillows.obj",
       "format": "OBJ",
-      "gitBlobSha": "d909595a0ce40bd43fc3cab48d46f8dd73b4da15",
-      "originalSourceGitBlobSha": "7005b3d4b70d9fdbf56537420703e225a936fc06"
+      "gitBlobSha": "bcbf0c94a2cf3c997a4ab6e00e95f9dd199093d5",
+      "originalSourceGitBlobSha": "890cae0405a201709432f7f2077b450781ccc211"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -114,10 +116,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/armchair_pillows.obj",
+      "file": "Models/armchair.obj",
       "format": "OBJ",
-      "gitBlobSha": "bcbf0c94a2cf3c997a4ab6e00e95f9dd199093d5",
-      "originalSourceGitBlobSha": "890cae0405a201709432f7f2077b450781ccc211"
+      "gitBlobSha": "d909595a0ce40bd43fc3cab48d46f8dd73b4da15",
+      "originalSourceGitBlobSha": "7005b3d4b70d9fdbf56537420703e225a936fc06"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -191,17 +193,6 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/cabinet_medium.obj",
-      "format": "OBJ",
-      "gitBlobSha": "809a1a0692a188e4a495f2aa85064a8070ead579",
-      "originalSourceGitBlobSha": "a721cc63f6ec5056a557bc97cb8916ac8c2b0df3"
-    },
-    {
-      "pack": "KayKitFurnitureBits",
-      "author": "Kay Lousberg",
-      "license": "CC0-1.0",
-      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
-      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
       "file": "Models/cabinet_medium_decorated.obj",
       "format": "OBJ",
       "gitBlobSha": "3b2d217c682b7272d40e886f0ac4a388733a9314",
@@ -213,10 +204,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/cabinet_small.obj",
+      "file": "Models/cabinet_medium.obj",
       "format": "OBJ",
-      "gitBlobSha": "024cc160041984ea79395e003abbea14f9ce499b",
-      "originalSourceGitBlobSha": "788fd3f51f444962b068021ba7c1c099d53c2e14"
+      "gitBlobSha": "809a1a0692a188e4a495f2aa85064a8070ead579",
+      "originalSourceGitBlobSha": "a721cc63f6ec5056a557bc97cb8916ac8c2b0df3"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -228,6 +219,17 @@
       "format": "OBJ",
       "gitBlobSha": "02628f99ee433ea78481c4ee4392fa1e69ff1c2b",
       "originalSourceGitBlobSha": "2b0d1eba77275455337c6a6fd338f7538ba8f07e"
+    },
+    {
+      "pack": "KayKitFurnitureBits",
+      "author": "Kay Lousberg",
+      "license": "CC0-1.0",
+      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
+      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
+      "file": "Models/cabinet_small.obj",
+      "format": "OBJ",
+      "gitBlobSha": "024cc160041984ea79395e003abbea14f9ce499b",
+      "originalSourceGitBlobSha": "788fd3f51f444962b068021ba7c1c099d53c2e14"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -279,17 +281,6 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/chair_A.obj",
-      "format": "OBJ",
-      "gitBlobSha": "e89f756883d0eb96868684193a4832b04a077456",
-      "originalSourceGitBlobSha": "510ea08f49cd52589a900b5e7cd1250010d6a168"
-    },
-    {
-      "pack": "KayKitFurnitureBits",
-      "author": "Kay Lousberg",
-      "license": "CC0-1.0",
-      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
-      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
       "file": "Models/chair_A_wood.obj",
       "format": "OBJ",
       "gitBlobSha": "6d7e2a724f2a6f6dfe2f5f282e2b21e707e609da",
@@ -301,10 +292,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/chair_B.obj",
+      "file": "Models/chair_A.obj",
       "format": "OBJ",
-      "gitBlobSha": "4d90cab080ff5c52ef51245a12f1d8f729dbbae3",
-      "originalSourceGitBlobSha": "39274ad5294d950f2d4c066c9044afd58489916e"
+      "gitBlobSha": "e89f756883d0eb96868684193a4832b04a077456",
+      "originalSourceGitBlobSha": "510ea08f49cd52589a900b5e7cd1250010d6a168"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -323,10 +314,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/chair_C.obj",
+      "file": "Models/chair_B.obj",
       "format": "OBJ",
-      "gitBlobSha": "9f878c57661e0ebd72c240b594a850c582b97057",
-      "originalSourceGitBlobSha": "e210cbcd76274fb6db7fde3cacfa6909bf8d5201"
+      "gitBlobSha": "4d90cab080ff5c52ef51245a12f1d8f729dbbae3",
+      "originalSourceGitBlobSha": "39274ad5294d950f2d4c066c9044afd58489916e"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -334,10 +325,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/chair_stool.obj",
+      "file": "Models/chair_C.obj",
       "format": "OBJ",
-      "gitBlobSha": "1b0c5ec00b35b530e8a8e22ce99cde84c4e31bee",
-      "originalSourceGitBlobSha": "04b707e99d38d7106998cf1a9d114450b89601c9"
+      "gitBlobSha": "9f878c57661e0ebd72c240b594a850c582b97057",
+      "originalSourceGitBlobSha": "e210cbcd76274fb6db7fde3cacfa6909bf8d5201"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -356,10 +347,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/couch.obj",
+      "file": "Models/chair_stool.obj",
       "format": "OBJ",
-      "gitBlobSha": "6966b4f7f3000ab459a3c26038960c1f8be273ef",
-      "originalSourceGitBlobSha": "742e49ba6b82557682c603d9ae8cd849f7461448"
+      "gitBlobSha": "1b0c5ec00b35b530e8a8e22ce99cde84c4e31bee",
+      "originalSourceGitBlobSha": "04b707e99d38d7106998cf1a9d114450b89601c9"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -371,6 +362,17 @@
       "format": "OBJ",
       "gitBlobSha": "a4af845367cb07519917ea5172e010e11085cea0",
       "originalSourceGitBlobSha": "17cb03608c9043ff3bdd6ec3dadf483b1e2984e1"
+    },
+    {
+      "pack": "KayKitFurnitureBits",
+      "author": "Kay Lousberg",
+      "license": "CC0-1.0",
+      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
+      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
+      "file": "Models/couch.obj",
+      "format": "OBJ",
+      "gitBlobSha": "6966b4f7f3000ab459a3c26038960c1f8be273ef",
+      "originalSourceGitBlobSha": "742e49ba6b82557682c603d9ae8cd849f7461448"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -598,17 +600,6 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/shelf_B_large.obj",
-      "format": "OBJ",
-      "gitBlobSha": "66feecb6bf18793fac36d7e8380d0c568b366d90",
-      "originalSourceGitBlobSha": "8298fa8cea770b154783c62a27a47a0cc6f05905"
-    },
-    {
-      "pack": "KayKitFurnitureBits",
-      "author": "Kay Lousberg",
-      "license": "CC0-1.0",
-      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
-      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
       "file": "Models/shelf_B_large_decorated.obj",
       "format": "OBJ",
       "gitBlobSha": "250c4de1281d020477daecdfb10f6120e0091c5f",
@@ -620,10 +611,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/shelf_B_small.obj",
+      "file": "Models/shelf_B_large.obj",
       "format": "OBJ",
-      "gitBlobSha": "62e6cf0329fefbe93b1d245a58720cf1f40317ac",
-      "originalSourceGitBlobSha": "4503fc3c234f667fbb0b405a938bbceab71f592f"
+      "gitBlobSha": "66feecb6bf18793fac36d7e8380d0c568b366d90",
+      "originalSourceGitBlobSha": "8298fa8cea770b154783c62a27a47a0cc6f05905"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -642,10 +633,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/table_low.obj",
+      "file": "Models/shelf_B_small.obj",
       "format": "OBJ",
-      "gitBlobSha": "e4a8f1ae8ec863dea8e238a810999b1027834299",
-      "originalSourceGitBlobSha": "2d710faca0bd9bd5792a73b4f717f1cf4d1d62f1"
+      "gitBlobSha": "62e6cf0329fefbe93b1d245a58720cf1f40317ac",
+      "originalSourceGitBlobSha": "4503fc3c234f667fbb0b405a938bbceab71f592f"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -653,10 +644,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
-      "file": "Models/table_medium.obj",
+      "file": "Models/table_low.obj",
       "format": "OBJ",
-      "gitBlobSha": "c71b936e01a01fb6758c8b08977464fde017481f",
-      "originalSourceGitBlobSha": "bf38ba6b1d9f1d9daf148177431fa28e33118920"
+      "gitBlobSha": "e4a8f1ae8ec863dea8e238a810999b1027834299",
+      "originalSourceGitBlobSha": "2d710faca0bd9bd5792a73b4f717f1cf4d1d62f1"
     },
     {
       "pack": "KayKitFurnitureBits",
@@ -675,6 +666,17 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/furniture-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
+      "file": "Models/table_medium.obj",
+      "format": "OBJ",
+      "gitBlobSha": "c71b936e01a01fb6758c8b08977464fde017481f",
+      "originalSourceGitBlobSha": "bf38ba6b1d9f1d9daf148177431fa28e33118920"
+    },
+    {
+      "pack": "KayKitFurnitureBits",
+      "author": "Kay Lousberg",
+      "license": "CC0-1.0",
+      "officialSource": "https://kaylousberg.itch.io/furniture-bits",
+      "sourceRepo": "KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
       "file": "Models/table_small.obj",
       "format": "OBJ",
       "gitBlobSha": "11e5351dc3452f31531999871dc582835c45b6bf",
@@ -686,10 +688,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/bowl.obj",
+      "file": "Models/bowl_small.obj",
       "format": "OBJ",
-      "gitBlobSha": "500ab22d4c1f54e6257282204e3d5d57c12e7fdd",
-      "originalSourceGitBlobSha": "39fb5af2766878c9b87dfa57246775c0e779b336"
+      "gitBlobSha": "439b3de58cc2e8b0d3d6252aa7119572d73570b9",
+      "originalSourceGitBlobSha": "bcc3ccd5f96b691c0c3c193ddc282ebc64ee354e"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -697,10 +699,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/bowl_small.obj",
+      "file": "Models/bowl.obj",
       "format": "OBJ",
-      "gitBlobSha": "439b3de58cc2e8b0d3d6252aa7119572d73570b9",
-      "originalSourceGitBlobSha": "bcc3ccd5f96b691c0c3c193ddc282ebc64ee354e"
+      "gitBlobSha": "500ab22d4c1f54e6257282204e3d5d57c12e7fdd",
+      "originalSourceGitBlobSha": "39fb5af2766878c9b87dfa57246775c0e779b336"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -818,10 +820,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/kitchencabinet.obj",
+      "file": "Models/kitchencabinet_corner.obj",
       "format": "OBJ",
-      "gitBlobSha": "5860be1494a142a48bb193c68fdb3dc7d26ad154",
-      "originalSourceGitBlobSha": "fc6e662dfe46160270e5d069334ddb85a7c2d355"
+      "gitBlobSha": "591d3784ba1192256b44c20d51b095f761df74c2",
+      "originalSourceGitBlobSha": "7c98480c48b26d68f3e7ec69445790af53a35042"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -829,10 +831,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/kitchencabinet_corner.obj",
+      "file": "Models/kitchencabinet.obj",
       "format": "OBJ",
-      "gitBlobSha": "591d3784ba1192256b44c20d51b095f761df74c2",
-      "originalSourceGitBlobSha": "7c98480c48b26d68f3e7ec69445790af53a35042"
+      "gitBlobSha": "5860be1494a142a48bb193c68fdb3dc7d26ad154",
+      "originalSourceGitBlobSha": "fc6e662dfe46160270e5d069334ddb85a7c2d355"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -873,10 +875,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/kitchentable_A.obj",
+      "file": "Models/kitchentable_A_large.obj",
       "format": "OBJ",
-      "gitBlobSha": "35b93809c80c026a6189088f61e23892bc59d74e",
-      "originalSourceGitBlobSha": "364f4578c4711d647dc730872dd9a0f113eacf28"
+      "gitBlobSha": "6679ba6344a714e5ade34bca7995c03b32c94f64",
+      "originalSourceGitBlobSha": "eacc1e38adb9ff3ea4275cdc3643ebfe16963282"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -884,10 +886,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/kitchentable_A_large.obj",
+      "file": "Models/kitchentable_A.obj",
       "format": "OBJ",
-      "gitBlobSha": "6679ba6344a714e5ade34bca7995c03b32c94f64",
-      "originalSourceGitBlobSha": "eacc1e38adb9ff3ea4275cdc3643ebfe16963282"
+      "gitBlobSha": "35b93809c80c026a6189088f61e23892bc59d74e",
+      "originalSourceGitBlobSha": "364f4578c4711d647dc730872dd9a0f113eacf28"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -939,10 +941,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/plate.obj",
+      "file": "Models/plate_small.obj",
       "format": "OBJ",
-      "gitBlobSha": "3e4b2cc6e301b5691412aea06c2e5bdec01e59b7",
-      "originalSourceGitBlobSha": "b254c6556e32a93b85c7f7cb896cddaa5c27ffe4"
+      "gitBlobSha": "b68ae96451d235f47ed852336bd437a0b512b280",
+      "originalSourceGitBlobSha": "9021bd99beba50a43e8c4d7933a6ac0b5f683de3"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -950,10 +952,10 @@
       "license": "CC0-1.0",
       "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
       "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/plate_small.obj",
+      "file": "Models/plate.obj",
       "format": "OBJ",
-      "gitBlobSha": "b68ae96451d235f47ed852336bd437a0b512b280",
-      "originalSourceGitBlobSha": "9021bd99beba50a43e8c4d7933a6ac0b5f683de3"
+      "gitBlobSha": "3e4b2cc6e301b5691412aea06c2e5bdec01e59b7",
+      "originalSourceGitBlobSha": "b254c6556e32a93b85c7f7cb896cddaa5c27ffe4"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -998,17 +1000,6 @@
       "format": "OBJ",
       "gitBlobSha": "475f059c3aed8583cec241b8ef50164818b1a690",
       "originalSourceGitBlobSha": "3eab26c1d1f04d36dad309e7863519ae98757cba"
-    },
-    {
-      "pack": "KayKitRestaurantBits",
-      "author": "Kay Lousberg",
-      "license": "CC0-1.0",
-      "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
-      "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
-      "file": "Models/wall.obj",
-      "format": "OBJ",
-      "gitBlobSha": "576ee5f76e036062b05ca2436af6334ea27899a3",
-      "originalSourceGitBlobSha": "1433b3904e8b40797af225f2111631c1da192fbf"
     },
     {
       "pack": "KayKitRestaurantBits",
@@ -1075,6 +1066,17 @@
       "format": "OBJ",
       "gitBlobSha": "f018ef56c565d21a49a40ea28dab5f00fcb1eff6",
       "originalSourceGitBlobSha": "2c7c5d9a38d98b4696adb06df301f64f198fe019"
+    },
+    {
+      "pack": "KayKitRestaurantBits",
+      "author": "Kay Lousberg",
+      "license": "CC0-1.0",
+      "officialSource": "https://kaylousberg.itch.io/restaurant-bits",
+      "sourceRepo": "KayKit-Game-Assets/KayKit-Restaurant-Bits-1.0",
+      "file": "Models/wall.obj",
+      "format": "OBJ",
+      "gitBlobSha": "576ee5f76e036062b05ca2436af6334ea27899a3",
+      "originalSourceGitBlobSha": "1433b3904e8b40797af225f2111631c1da192fbf"
     },
     {
       "pack": "KenneyCastleKit",
@@ -1242,6 +1244,215 @@
       "originalSourceGitBlobSha": "07e61870a3378bf307c2a7d191e9ca9c66e8d093"
     },
     {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/apple.glb",
+      "format": "GLB",
+      "gitBlobSha": "ca37b42743688c2f12b5af8032002836ef8b3f68",
+      "originalSourceGitBlobSha": "ca37b42743688c2f12b5af8032002836ef8b3f68"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/bag.glb",
+      "format": "GLB",
+      "gitBlobSha": "6aa5459a0135a51aeb771b814985b68516b67559",
+      "originalSourceGitBlobSha": "6aa5459a0135a51aeb771b814985b68516b67559"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/banana.glb",
+      "format": "GLB",
+      "gitBlobSha": "86df90926907e9645b7bca4e3b4d9c04a7baede1",
+      "originalSourceGitBlobSha": "86df90926907e9645b7bca4e3b4d9c04a7baede1"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/bowl-cereal.glb",
+      "format": "GLB",
+      "gitBlobSha": "3962ebab4bb400d2d0c14b2370212262258c132b",
+      "originalSourceGitBlobSha": "3962ebab4bb400d2d0c14b2370212262258c132b"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cake-birthday.glb",
+      "format": "GLB",
+      "gitBlobSha": "157167568315f2a7185f36125595b6edf19482aa",
+      "originalSourceGitBlobSha": "157167568315f2a7185f36125595b6edf19482aa"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cake.glb",
+      "format": "GLB",
+      "gitBlobSha": "6bdd1dff33eaf41e0cd2fa8fb80078d2efabcf2e",
+      "originalSourceGitBlobSha": "6bdd1dff33eaf41e0cd2fa8fb80078d2efabcf2e"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/carton.glb",
+      "format": "GLB",
+      "gitBlobSha": "9d166cdbb6dffafd5f66c87de5201381b599b364",
+      "originalSourceGitBlobSha": "9d166cdbb6dffafd5f66c87de5201381b599b364"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/chocolate.glb",
+      "format": "GLB",
+      "gitBlobSha": "a40f0690707b51407d105d7d06f232f5db03236a",
+      "originalSourceGitBlobSha": "a40f0690707b51407d105d7d06f232f5db03236a"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cocktail.glb",
+      "format": "GLB",
+      "gitBlobSha": "e3c1503f5801a091f10943300b3ef235a42c8143",
+      "originalSourceGitBlobSha": "e3c1503f5801a091f10943300b3ef235a42c8143"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cookie.glb",
+      "format": "GLB",
+      "gitBlobSha": "af66b9a8df6a96e57347427ee699bf0960e526e1",
+      "originalSourceGitBlobSha": "af66b9a8df6a96e57347427ee699bf0960e526e1"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/croissant.glb",
+      "format": "GLB",
+      "gitBlobSha": "228048f2bc0f1e1f9b966a945294f1051136f174",
+      "originalSourceGitBlobSha": "228048f2bc0f1e1f9b966a945294f1051136f174"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cup-coffee.glb",
+      "format": "GLB",
+      "gitBlobSha": "37cff52a462ec1c843ba8abe0ac45e0e7905af50",
+      "originalSourceGitBlobSha": "37cff52a462ec1c843ba8abe0ac45e0e7905af50"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cup-saucer.glb",
+      "format": "GLB",
+      "gitBlobSha": "3a6177ec20c7ce0e9b1e18a2cb6ebe9bb1f25b9d",
+      "originalSourceGitBlobSha": "3a6177ec20c7ce0e9b1e18a2cb6ebe9bb1f25b9d"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/cup-tea.glb",
+      "format": "GLB",
+      "gitBlobSha": "6a2009a2092053ecc445f6fac0f4df1a1cf856ee",
+      "originalSourceGitBlobSha": "6a2009a2092053ecc445f6fac0f4df1a1cf856ee"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/donut-sprinkles.glb",
+      "format": "GLB",
+      "gitBlobSha": "3334ec64dd8cd1d047238726bfd27f4bd0bf5186",
+      "originalSourceGitBlobSha": "3334ec64dd8cd1d047238726bfd27f4bd0bf5186"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/frappe.glb",
+      "format": "GLB",
+      "gitBlobSha": "23fb90356ed114fd1bde6fd9d10c579a6a858ec3",
+      "originalSourceGitBlobSha": "23fb90356ed114fd1bde6fd9d10c579a6a858ec3"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/glass-wine.glb",
+      "format": "GLB",
+      "gitBlobSha": "c8e9c99469961019631be3a20e2216b0a0fb356a",
+      "originalSourceGitBlobSha": "c8e9c99469961019631be3a20e2216b0a0fb356a"
+    },
+    {
+      "pack": "KenneyFoodKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/food-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/grapes.glb",
+      "format": "GLB",
+      "gitBlobSha": "9d41038868d54c4708c423fae894f3c07ab0cc5b",
+      "originalSourceGitBlobSha": "9d41038868d54c4708c423fae894f3c07ab0cc5b"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bathroomCabinet.glb",
+      "format": "GLB",
+      "gitBlobSha": "67fbd79a71b3959f4350089ea84cbc8d6b7551ae",
+      "originalSourceGitBlobSha": "67fbd79a71b3959f4350089ea84cbc8d6b7551ae"
+    },
+    {
       "pack": "KenneyFurnitureKit",
       "author": "Kenney",
       "license": "CC0-1.0",
@@ -1269,6 +1480,182 @@
       "license": "CC0-1.0",
       "officialSource": "https://kenney.nl/assets/furniture-kit",
       "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bathroomSink.glb",
+      "format": "GLB",
+      "gitBlobSha": "a35d3c119e0d0348199c313da693849123a2eaf8",
+      "originalSourceGitBlobSha": "a35d3c119e0d0348199c313da693849123a2eaf8"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bathtub.glb",
+      "format": "GLB",
+      "gitBlobSha": "ece65b92558f10698d754018fc4b41531d198456",
+      "originalSourceGitBlobSha": "ece65b92558f10698d754018fc4b41531d198456"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bedBunk.glb",
+      "format": "GLB",
+      "gitBlobSha": "ac0820c0c6f56a269c1929bea4ce2170510c2e60",
+      "originalSourceGitBlobSha": "ac0820c0c6f56a269c1929bea4ce2170510c2e60"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bedDouble.glb",
+      "format": "GLB",
+      "gitBlobSha": "1b0efacc4dda050a6abc34974cb692010d29b81c",
+      "originalSourceGitBlobSha": "1b0efacc4dda050a6abc34974cb692010d29b81c"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bedSingle.glb",
+      "format": "GLB",
+      "gitBlobSha": "eb79d7ae7cb9a69dc8e27c5c37db72e6759ce0a0",
+      "originalSourceGitBlobSha": "eb79d7ae7cb9a69dc8e27c5c37db72e6759ce0a0"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/benchCushion.glb",
+      "format": "GLB",
+      "gitBlobSha": "56380ad9d2f78b45ddacf1163d00fe2c48c11a5e",
+      "originalSourceGitBlobSha": "56380ad9d2f78b45ddacf1163d00fe2c48c11a5e"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bookcaseClosed.glb",
+      "format": "GLB",
+      "gitBlobSha": "43197a4cee475ab1af36309fb388402b25b85d84",
+      "originalSourceGitBlobSha": "43197a4cee475ab1af36309fb388402b25b85d84"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bookcaseClosedDoors.glb",
+      "format": "GLB",
+      "gitBlobSha": "3c80bf981b1018d91a3263a0b7554adc4fc1da5c",
+      "originalSourceGitBlobSha": "3c80bf981b1018d91a3263a0b7554adc4fc1da5c"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bookcaseOpen.glb",
+      "format": "GLB",
+      "gitBlobSha": "9a0cce7691e94277f3409719e9e68c910c25aa2c",
+      "originalSourceGitBlobSha": "9a0cce7691e94277f3409719e9e68c910c25aa2c"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/bookcaseOpenLow.glb",
+      "format": "GLB",
+      "gitBlobSha": "3daa396e11c843a5da87ab6547a279731e6eba58",
+      "originalSourceGitBlobSha": "3daa396e11c843a5da87ab6547a279731e6eba58"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/books.glb",
+      "format": "GLB",
+      "gitBlobSha": "615aaa9632cf1b262c257f2cb7c208a6f199ab84",
+      "originalSourceGitBlobSha": "615aaa9632cf1b262c257f2cb7c208a6f199ab84"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/cabinetBed.glb",
+      "format": "GLB",
+      "gitBlobSha": "df64c6689d28cac0b08f7be9a58c7cec68219a6c",
+      "originalSourceGitBlobSha": "df64c6689d28cac0b08f7be9a58c7cec68219a6c"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/cabinetBedDrawer.glb",
+      "format": "GLB",
+      "gitBlobSha": "3159b358756a150d874f82b0d06af0395554687e",
+      "originalSourceGitBlobSha": "3159b358756a150d874f82b0d06af0395554687e"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/cabinetBedDrawerTable.glb",
+      "format": "GLB",
+      "gitBlobSha": "96221245be060add35f10930aa38169d36912e8b",
+      "originalSourceGitBlobSha": "96221245be060add35f10930aa38169d36912e8b"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/cabinetTelevision.glb",
+      "format": "GLB",
+      "gitBlobSha": "eb73b4c130f066eefdf8e586b543449bf4e7cf10",
+      "originalSourceGitBlobSha": "eb73b4c130f066eefdf8e586b543449bf4e7cf10"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/cabinetTelevisionDoors.glb",
+      "format": "GLB",
+      "gitBlobSha": "6221e85a796d9aefc0b8c910994c46d1585bf465",
+      "originalSourceGitBlobSha": "6221e85a796d9aefc0b8c910994c46d1585bf465"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
       "file": "Models/ceilingFan.glb",
       "format": "GLB",
       "gitBlobSha": "db49a5a847cae56864abe2e6702cdee87345abfc",
@@ -1284,6 +1671,39 @@
       "format": "GLB",
       "gitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed",
       "originalSourceGitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/chairModernCushion.glb",
+      "format": "GLB",
+      "gitBlobSha": "a6c18d94ec17231807043b0fb18e766b020ec81e",
+      "originalSourceGitBlobSha": "a6c18d94ec17231807043b0fb18e766b020ec81e"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/chairRounded.glb",
+      "format": "GLB",
+      "gitBlobSha": "f0b8e91011a1d664e4e4e40afdae8a82b3637a48",
+      "originalSourceGitBlobSha": "f0b8e91011a1d664e4e4e40afdae8a82b3637a48"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/coatRack.glb",
+      "format": "GLB",
+      "gitBlobSha": "3cddd8beed819c9553749ccd75a2475b1ca1f7d4",
+      "originalSourceGitBlobSha": "3cddd8beed819c9553749ccd75a2475b1ca1f7d4"
     },
     {
       "pack": "KenneyFurnitureKit",
@@ -1357,6 +1777,94 @@
       "license": "CC0-1.0",
       "officialSource": "https://kenney.nl/assets/furniture-kit",
       "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/doorway.glb",
+      "format": "GLB",
+      "gitBlobSha": "16ae8b84ad818153e2bf37257531e137fc6ef55a",
+      "originalSourceGitBlobSha": "16ae8b84ad818153e2bf37257531e137fc6ef55a"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/floorFull.glb",
+      "format": "GLB",
+      "gitBlobSha": "3861276342492222b1019aea63ed50e6e52e83b3",
+      "originalSourceGitBlobSha": "3861276342492222b1019aea63ed50e6e52e83b3"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenBar.glb",
+      "format": "GLB",
+      "gitBlobSha": "4202f2783d43c45b6b06cb9d4a083ae1aa6c0a1a",
+      "originalSourceGitBlobSha": "4202f2783d43c45b6b06cb9d4a083ae1aa6c0a1a"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenBarEnd.glb",
+      "format": "GLB",
+      "gitBlobSha": "23c1887f4c5b26661cae45925d6daf0bf66d3f57",
+      "originalSourceGitBlobSha": "23c1887f4c5b26661cae45925d6daf0bf66d3f57"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenBlender.glb",
+      "format": "GLB",
+      "gitBlobSha": "c2068a71ccd628c7ccd9850242b04fba597967c6",
+      "originalSourceGitBlobSha": "c2068a71ccd628c7ccd9850242b04fba597967c6"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenCoffeeMachine.glb",
+      "format": "GLB",
+      "gitBlobSha": "f10641b44f34270570796a6115e524b53a4ecb71",
+      "originalSourceGitBlobSha": "f10641b44f34270570796a6115e524b53a4ecb71"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenFridgeLarge.glb",
+      "format": "GLB",
+      "gitBlobSha": "4d28fb70cbe14d1ad35a3911ccccbe47b5bec0e2",
+      "originalSourceGitBlobSha": "4d28fb70cbe14d1ad35a3911ccccbe47b5bec0e2"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/kitchenMicrowave.glb",
+      "format": "GLB",
+      "gitBlobSha": "1ef2100740f1935324f9ea7d3875d00b9f0659c0",
+      "originalSourceGitBlobSha": "1ef2100740f1935324f9ea7d3875d00b9f0659c0"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
       "file": "Models/lampRoundFloor.glb",
       "format": "GLB",
       "gitBlobSha": "69f7c9df4fb9e2fb327c59f3b20e8669faf7df0d",
@@ -1372,6 +1880,17 @@
       "format": "GLB",
       "gitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe",
       "originalSourceGitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/lampSquareCeiling.glb",
+      "format": "GLB",
+      "gitBlobSha": "8aaf95cd620ab2b96b326012137af3e8534a2e4d",
+      "originalSourceGitBlobSha": "8aaf95cd620ab2b96b326012137af3e8534a2e4d"
     },
     {
       "pack": "KenneyFurnitureKit",
@@ -1401,6 +1920,28 @@
       "license": "CC0-1.0",
       "officialSource": "https://kenney.nl/assets/furniture-kit",
       "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeChair.glb",
+      "format": "GLB",
+      "gitBlobSha": "fb3537daa44d3fa6ae3d13344dff5e726c82df2f",
+      "originalSourceGitBlobSha": "fb3537daa44d3fa6ae3d13344dff5e726c82df2f"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeChairRelax.glb",
+      "format": "GLB",
+      "gitBlobSha": "42e0a707ca2fcc1d7433983b8e46a9b13cd0d5db",
+      "originalSourceGitBlobSha": "42e0a707ca2fcc1d7433983b8e46a9b13cd0d5db"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
       "file": "Models/loungeDesignChair.glb",
       "format": "GLB",
       "gitBlobSha": "50526dab735dd80c2dde5a08582bf621939cfbcb",
@@ -1423,6 +1964,61 @@
       "license": "CC0-1.0",
       "officialSource": "https://kenney.nl/assets/furniture-kit",
       "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeSofa.glb",
+      "format": "GLB",
+      "gitBlobSha": "7761b15cc9d53b9cd5e28d5a5dc5eaea72a648a7",
+      "originalSourceGitBlobSha": "7761b15cc9d53b9cd5e28d5a5dc5eaea72a648a7"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeSofaCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "6cfc3c9a5d0c6f6e63b00b7a77ade0b0779546d5",
+      "originalSourceGitBlobSha": "6cfc3c9a5d0c6f6e63b00b7a77ade0b0779546d5"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeSofaLong.glb",
+      "format": "GLB",
+      "gitBlobSha": "8816aabe08a41566ab1a64a7014a4f23ef407a41",
+      "originalSourceGitBlobSha": "8816aabe08a41566ab1a64a7014a4f23ef407a41"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/loungeSofaOttoman.glb",
+      "format": "GLB",
+      "gitBlobSha": "ee2b991a5795b0566504294c6cd14917fbb3b997",
+      "originalSourceGitBlobSha": "ee2b991a5795b0566504294c6cd14917fbb3b997"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/paneling.glb",
+      "format": "GLB",
+      "gitBlobSha": "b78d053c27022f6d287b540aa31585285bcbd884",
+      "originalSourceGitBlobSha": "b78d053c27022f6d287b540aa31585285bcbd884"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
       "file": "Models/pottedPlant.glb",
       "format": "GLB",
       "gitBlobSha": "774d659a2d2be3f9af3fea78e13b2f250fdbb262",
@@ -1438,7 +2034,342 @@
       "format": "GLB",
       "gitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29",
       "originalSourceGitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/rugRectangle.glb",
+      "format": "GLB",
+      "gitBlobSha": "2ca3bb1a8a54f863d782c62d2bcc32bb15c9a733",
+      "originalSourceGitBlobSha": "2ca3bb1a8a54f863d782c62d2bcc32bb15c9a733"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/rugRound.glb",
+      "format": "GLB",
+      "gitBlobSha": "ed464bca440a58a90319b80195576caaf75e7ab9",
+      "originalSourceGitBlobSha": "ed464bca440a58a90319b80195576caaf75e7ab9"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/shower.glb",
+      "format": "GLB",
+      "gitBlobSha": "1182c52a9ed82250056eaeb4db7121648a7dde16",
+      "originalSourceGitBlobSha": "1182c52a9ed82250056eaeb4db7121648a7dde16"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/sideTableDrawers.glb",
+      "format": "GLB",
+      "gitBlobSha": "a801b290f9cd51a0dec7d5e0777ad839a727969d",
+      "originalSourceGitBlobSha": "a801b290f9cd51a0dec7d5e0777ad839a727969d"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/speaker.glb",
+      "format": "GLB",
+      "gitBlobSha": "2d259cedf89d98413d565a3bbc41dee2d6fbeb9b",
+      "originalSourceGitBlobSha": "2d259cedf89d98413d565a3bbc41dee2d6fbeb9b"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/speakerSmall.glb",
+      "format": "GLB",
+      "gitBlobSha": "5673177a3db49c2bc65e8131babde9092a2c3ed4",
+      "originalSourceGitBlobSha": "5673177a3db49c2bc65e8131babde9092a2c3ed4"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/stairs.glb",
+      "format": "GLB",
+      "gitBlobSha": "6416fcab01eab2a1d0ec5b9ebecd1b29f9b1cf26",
+      "originalSourceGitBlobSha": "6416fcab01eab2a1d0ec5b9ebecd1b29f9b1cf26"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/stairsCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "ba055b95dbdeec2375042eb6ee10f9e1339b991a",
+      "originalSourceGitBlobSha": "ba055b95dbdeec2375042eb6ee10f9e1339b991a"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/stairsOpen.glb",
+      "format": "GLB",
+      "gitBlobSha": "4cf8af20b0f0a61b7b26efb319cbc12e9b76d7d3",
+      "originalSourceGitBlobSha": "4cf8af20b0f0a61b7b26efb319cbc12e9b76d7d3"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/stoolBar.glb",
+      "format": "GLB",
+      "gitBlobSha": "d068c012765129e8b634284ff53fd7770bb8bf4c",
+      "originalSourceGitBlobSha": "d068c012765129e8b634284ff53fd7770bb8bf4c"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/stoolBarSquare.glb",
+      "format": "GLB",
+      "gitBlobSha": "aa4a9900142f038b5510281efb389476348598fb",
+      "originalSourceGitBlobSha": "aa4a9900142f038b5510281efb389476348598fb"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/tableCloth.glb",
+      "format": "GLB",
+      "gitBlobSha": "ea19cba05cd4a4c646ce777aa10133f69ae80d21",
+      "originalSourceGitBlobSha": "ea19cba05cd4a4c646ce777aa10133f69ae80d21"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/tableCoffee.glb",
+      "format": "GLB",
+      "gitBlobSha": "945caf455a089fcdd2dbe909db6f78326b9b4cc3",
+      "originalSourceGitBlobSha": "945caf455a089fcdd2dbe909db6f78326b9b4cc3"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/tableCoffeeGlass.glb",
+      "format": "GLB",
+      "gitBlobSha": "78e0f07f84ef6670da3c599b1bb6a9f64b7f0bab",
+      "originalSourceGitBlobSha": "78e0f07f84ef6670da3c599b1bb6a9f64b7f0bab"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/tableGlass.glb",
+      "format": "GLB",
+      "gitBlobSha": "47223952fe25e098b593a206db9eb2ce4679f3f3",
+      "originalSourceGitBlobSha": "47223952fe25e098b593a206db9eb2ce4679f3f3"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/tableRound.glb",
+      "format": "GLB",
+      "gitBlobSha": "885fdcd356eff8cc379e306d7b3b1ef3c5ca7475",
+      "originalSourceGitBlobSha": "885fdcd356eff8cc379e306d7b3b1ef3c5ca7475"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/televisionModern.glb",
+      "format": "GLB",
+      "gitBlobSha": "f047576f3d77a469e59059b1ae0aa1cdbbae7d0f",
+      "originalSourceGitBlobSha": "f047576f3d77a469e59059b1ae0aa1cdbbae7d0f"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/televisionVintage.glb",
+      "format": "GLB",
+      "gitBlobSha": "93d8795b15042f50f95afe7f39417eb5f14ebeab",
+      "originalSourceGitBlobSha": "93d8795b15042f50f95afe7f39417eb5f14ebeab"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/toilet.glb",
+      "format": "GLB",
+      "gitBlobSha": "81589c8b63063ff52533a95d92b09e14cd77ecea",
+      "originalSourceGitBlobSha": "81589c8b63063ff52533a95d92b09e14cd77ecea"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/wall.glb",
+      "format": "GLB",
+      "gitBlobSha": "ba5b8d2a16bdb6042750d1bef5e7afe78c9b0091",
+      "originalSourceGitBlobSha": "ba5b8d2a16bdb6042750d1bef5e7afe78c9b0091"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/wallCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "2a5f37ec39059115467893fbae2db5e235e6f3de",
+      "originalSourceGitBlobSha": "2a5f37ec39059115467893fbae2db5e235e6f3de"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/wallDoorway.glb",
+      "format": "GLB",
+      "gitBlobSha": "ea8af570824cc2197500f2a69676eede7195bd0b",
+      "originalSourceGitBlobSha": "ea8af570824cc2197500f2a69676eede7195bd0b"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/wallWindow.glb",
+      "format": "GLB",
+      "gitBlobSha": "19a394ffdd7a8398ae5cffcea3b7d33f40efecf9",
+      "originalSourceGitBlobSha": "19a394ffdd7a8398ae5cffcea3b7d33f40efecf9"
+    },
+    {
+      "pack": "KenneyFurnitureKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/furniture-kit",
+      "sourceRepo": "ChingAmazing/OpenHome3D-html",
+      "file": "Models/washer.glb",
+      "format": "GLB",
+      "gitBlobSha": "1a5922b09c142c82a0219e7267f447b9a72df094",
+      "originalSourceGitBlobSha": "1a5922b09c142c82a0219e7267f447b9a72df094"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/barrel.glb",
+      "format": "GLB",
+      "gitBlobSha": "042823713f7de36f7c1e28fd09b68a82c02c6612",
+      "originalSourceGitBlobSha": "042823713f7de36f7c1e28fd09b68a82c02c6612"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/bottle.glb",
+      "format": "GLB",
+      "gitBlobSha": "6580d7f57390f95ee2debb5637f29144cdfb7f4f",
+      "originalSourceGitBlobSha": "6580d7f57390f95ee2debb5637f29144cdfb7f4f"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/chest.glb",
+      "format": "GLB",
+      "gitBlobSha": "70d09c51690f878ee1959ff93623a53468b8af00",
+      "originalSourceGitBlobSha": "70d09c51690f878ee1959ff93623a53468b8af00"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/crate-bottles.glb",
+      "format": "GLB",
+      "gitBlobSha": "e36d4ffa5af11721345dffcba0be16248b338da7",
+      "originalSourceGitBlobSha": "e36d4ffa5af11721345dffcba0be16248b338da7"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/mast-ropes.glb",
+      "format": "GLB",
+      "gitBlobSha": "995a836104ded394870c84535e740f80343751d0",
+      "originalSourceGitBlobSha": "995a836104ded394870c84535e740f80343751d0"
+    },
+    {
+      "pack": "KenneyPirateKit",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "officialSource": "https://kenney.nl/assets/pirate-kit",
+      "sourceRepo": "Hidencod/tge-assets",
+      "file": "Models/platform-planks.glb",
+      "format": "GLB",
+      "gitBlobSha": "e3b7d37635d9fd7bc898a4ed87cc668ef518190f",
+      "originalSourceGitBlobSha": "e3b7d37635d9fd7bc898a4ed87cc668ef518190f"
     }
   ],
-  "note": "Legacy existing game-map/Unity scene files and game scripts remain untouched/absent. These are reusable source props only, not authored final maps."
+  "note": "All 206 reusable 3D models are on GitHub main; 24 room art-only designs reference 140 existing assets; no maps, scenes, game logic or Unity builds changed.",
+  "modelsAdded20261109SecondWave": 84,
+  "modelCountExcludingExistingAccessories": 206,
+  "visualRoomPlan": "art/Environment/room_profiles_24.v1.json",
+  "roomCountPlanned": 24,
+  "uniqueRoomHeroAssets": 24
 }

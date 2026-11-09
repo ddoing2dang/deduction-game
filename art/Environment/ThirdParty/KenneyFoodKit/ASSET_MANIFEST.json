@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.2",
+  "packageName": "KenneyFoodKit",
+  "license": "CC0-1.0",
+  "licenseFile": "LICENSE.txt",
+  "author": "Kenney",
+  "officialSource": "https://kenney.nl/assets/food-kit",
+  "gitMirrorUsed": "Hidencod/tge-assets",
+  "sourceModelCount": 18,
+  "importStyle": "GLB (requires Unity glTFast)",
+  "files": [
+    {
+      "file": "Models/apple.glb",
+      "format": "GLB",
+      "gitBlobSha": "ca37b42743688c2f12b5af8032002836ef8b3f68",
+      "originalSourceGitBlobSha": "ca37b42743688c2f12b5af8032002836ef8b3f68"
+    },
+    {
+      "file": "Models/bag.glb",
+      "format": "GLB",
+      "gitBlobSha": "6aa5459a0135a51aeb771b814985b68516b67559",
+      "originalSourceGitBlobSha": "6aa5459a0135a51aeb771b814985b68516b67559"
+    },
+    {
+      "file": "Models/banana.glb",
+      "format": "GLB",
+      "gitBlobSha": "86df90926907e9645b7bca4e3b4d9c04a7baede1",
+      "originalSourceGitBlobSha": "86df90926907e9645b7bca4e3b4d9c04a7baede1"
+    },
+    {
+      "file": "Models/bowl-cereal.glb",
+      "format": "GLB",
+      "gitBlobSha": "3962ebab4bb400d2d0c14b2370212262258c132b",
+      "originalSourceGitBlobSha": "3962ebab4bb400d2d0c14b2370212262258c132b"
+    },
+    {
+      "file": "Models/cake-birthday.glb",
+      "format": "GLB",
+      "gitBlobSha": "157167568315f2a7185f36125595b6edf19482aa",
+      "originalSourceGitBlobSha": "157167568315f2a7185f36125595b6edf19482aa"
+    },
+    {
+      "file": "Models/cake.glb",
+      "format": "GLB",
+      "gitBlobSha": "6bdd1dff33eaf41e0cd2fa8fb80078d2efabcf2e",
+      "originalSourceGitBlobSha": "6bdd1dff33eaf41e0cd2fa8fb80078d2efabcf2e"
+    },
+    {
+      "file": "Models/carton.glb",
+      "format": "GLB",
+      "gitBlobSha": "9d166cdbb6dffafd5f66c87de5201381b599b364",
+      "originalSourceGitBlobSha": "9d166cdbb6dffafd5f66c87de5201381b599b364"
+    },
+    {
+      "file": "Models/chocolate.glb",
+      "format": "GLB",
+      "gitBlobSha": "a40f0690707b51407d105d7d06f232f5db03236a",
+      "originalSourceGitBlobSha": "a40f0690707b51407d105d7d06f232f5db03236a"
+    },
+    {
+      "file": "Models/cocktail.glb",
+      "format": "GLB",
+      "gitBlobSha": "e3c1503f5801a091f10943300b3ef235a42c8143",
+      "originalSourceGitBlobSha": "e3c1503f5801a091f10943300b3ef235a42c8143"
+    },
+    {
+      "file": "Models/cookie.glb",
+      "format": "GLB",
+      "gitBlobSha": "af66b9a8df6a96e57347427ee699bf0960e526e1",
+      "originalSourceGitBlobSha": "af66b9a8df6a96e57347427ee699bf0960e526e1"
+    },
+    {
+      "file": "Models/croissant.glb",
+      "format": "GLB",
+      "gitBlobSha": "228048f2bc0f1e1f9b966a945294f1051136f174",
+      "originalSourceGitBlobSha": "228048f2bc0f1e1f9b966a945294f1051136f174"
+    },
+    {
+      "file": "Models/cup-coffee.glb",
+      "format": "GLB",
+      "gitBlobSha": "37cff52a462ec1c843ba8abe0ac45e0e7905af50",
+      "originalSourceGitBlobSha": "37cff52a462ec1c843ba8abe0ac45e0e7905af50"
+    },
+    {
+      "file": "Models/cup-saucer.glb",
+      "format": "GLB",
+      "gitBlobSha": "3a6177ec20c7ce0e9b1e18a2cb6ebe9bb1f25b9d",
+      "originalSourceGitBlobSha": "3a6177ec20c7ce0e9b1e18a2cb6ebe9bb1f25b9d"
+    },
+    {
+      "file": "Models/cup-tea.glb",
+      "format": "GLB",
+      "gitBlobSha": "6a2009a2092053ecc445f6fac0f4df1a1cf856ee",
+      "originalSourceGitBlobSha": "6a2009a2092053ecc445f6fac0f4df1a1cf856ee"
+    },
+    {
+      "file": "Models/donut-sprinkles.glb",
+      "format": "GLB",
+      "gitBlobSha": "3334ec64dd8cd1d047238726bfd27f4bd0bf5186",
+      "originalSourceGitBlobSha": "3334ec64dd8cd1d047238726bfd27f4bd0bf5186"
+    },
+    {
+      "file": "Models/frappe.glb",
+      "format": "GLB",
+      "gitBlobSha": "23fb90356ed114fd1bde6fd9d10c579a6a858ec3",
+      "originalSourceGitBlobSha": "23fb90356ed114fd1bde6fd9d10c579a6a858ec3"
+    },
+    {
+      "file": "Models/glass-wine.glb",
+      "format": "GLB",
+      "gitBlobSha": "c8e9c99469961019631be3a20e2216b0a0fb356a",
+      "originalSourceGitBlobSha": "c8e9c99469961019631be3a20e2216b0a0fb356a"
+    },
+    {
+      "file": "Models/grapes.glb",
+      "format": "GLB",
+      "gitBlobSha": "9d41038868d54c4708c423fae894f3c07ab0cc5b",
+      "originalSourceGitBlobSha": "9d41038868d54c4708c423fae894f3c07ab0cc5b"
+    }
+  ],
+  "caveats": [
+    "Eighteen CC0 room-service, catering, snack and personal belongings GLBs.",
+    "Saved GLB blob SHAs verified identical to source when transferred. Actual Unity material and rendering not tested.",
+    "Not finished high-detail map scenes."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.2",
+  "packageName": "KenneyPirateKit",
+  "license": "CC0-1.0",
+  "licenseFile": "LICENSE.txt",
+  "author": "Kenney",
+  "officialSource": "https://kenney.nl/assets/pirate-kit",
+  "gitMirrorUsed": "Hidencod/tge-assets",
+  "sourceModelCount": 6,
+  "importStyle": "GLB (requires Unity glTFast)",
+  "files": [
+    {
+      "file": "Models/barrel.glb",
+      "format": "GLB",
+      "gitBlobSha": "042823713f7de36f7c1e28fd09b68a82c02c6612",
+      "originalSourceGitBlobSha": "042823713f7de36f7c1e28fd09b68a82c02c6612"
+    },
+    {
+      "file": "Models/bottle.glb",
+      "format": "GLB",
+      "gitBlobSha": "6580d7f57390f95ee2debb5637f29144cdfb7f4f",
+      "originalSourceGitBlobSha": "6580d7f57390f95ee2debb5637f29144cdfb7f4f"
+    },
+    {
+      "file": "Models/chest.glb",
+      "format": "GLB",
+      "gitBlobSha": "70d09c51690f878ee1959ff93623a53468b8af00",
+      "originalSourceGitBlobSha": "70d09c51690f878ee1959ff93623a53468b8af00"
+    },
+    {
+      "file": "Models/crate-bottles.glb",
+      "format": "GLB",
+      "gitBlobSha": "e36d4ffa5af11721345dffcba0be16248b338da7",
+      "originalSourceGitBlobSha": "e36d4ffa5af11721345dffcba0be16248b338da7"
+    },
+    {
+      "file": "Models/mast-ropes.glb",
+      "format": "GLB",
+      "gitBlobSha": "995a836104ded394870c84535e740f80343751d0",
+      "originalSourceGitBlobSha": "995a836104ded394870c84535e740f80343751d0"
+    },
+    {
+      "file": "Models/platform-planks.glb",
+      "format": "GLB",
+      "gitBlobSha": "e3b7d37635d9fd7bc898a4ed87cc668ef518190f",
+      "originalSourceGitBlobSha": "e3b7d37635d9fd7bc898a4ed87cc668ef518190f"
+    }
+  ],
+  "caveats": [
+    "Six source CC0 ship-detail GLBs; stylistically nautical/pirate, only use where appropriate for a modern cruise setting.",
+    "Saved GLB blob SHAs verified identical to source when transferred. Actual Unity material and rendering not tested.",
+    "Not finished high-detail map scenes."
+  ]
+}

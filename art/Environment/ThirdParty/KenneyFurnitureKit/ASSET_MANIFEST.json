@@ -1,19 +1,20 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "packageName": "KenneyFurnitureKit",
   "license": "CC0-1.0",
   "licenseFile": "LICENSE.txt",
   "author": "Kenney",
   "officialSource": "https://kenney.nl/assets/furniture-kit",
   "gitMirrorUsed": "ChingAmazing/OpenHome3D-html",
+  "sourceModelCount": 78,
   "importStyle": "GLB (requires Unity glTFast)",
-  "sourceModelCount": 18,
-  "originalTextureIncluded": false,
-  "caveats": [
-    "Unity does not import .glb as a native FBX/OBJ by default; install Unity glTFast com.unity.cloud.gltfast before importing these GLBs.",
-    "Self-contained GLB copied byte-for-byte from licensed public mirror and verified with Git blob SHA."
-  ],
   "files": [
+    {
+      "file": "Models/bathroomCabinet.glb",
+      "format": "GLB",
+      "gitBlobSha": "67fbd79a71b3959f4350089ea84cbc8d6b7551ae",
+      "originalSourceGitBlobSha": "67fbd79a71b3959f4350089ea84cbc8d6b7551ae"
+    },
     {
       "file": "Models/bathroomCabinetDrawer.glb",
       "format": "GLB",
@@ -27,6 +28,102 @@
       "originalSourceGitBlobSha": "8e3604f44c3c640aca9c08e7e598058f9af88aa9"
     },
     {
+      "file": "Models/bathroomSink.glb",
+      "format": "GLB",
+      "gitBlobSha": "a35d3c119e0d0348199c313da693849123a2eaf8",
+      "originalSourceGitBlobSha": "a35d3c119e0d0348199c313da693849123a2eaf8"
+    },
+    {
+      "file": "Models/bathtub.glb",
+      "format": "GLB",
+      "gitBlobSha": "ece65b92558f10698d754018fc4b41531d198456",
+      "originalSourceGitBlobSha": "ece65b92558f10698d754018fc4b41531d198456"
+    },
+    {
+      "file": "Models/bedBunk.glb",
+      "format": "GLB",
+      "gitBlobSha": "ac0820c0c6f56a269c1929bea4ce2170510c2e60",
+      "originalSourceGitBlobSha": "ac0820c0c6f56a269c1929bea4ce2170510c2e60"
+    },
+    {
+      "file": "Models/bedDouble.glb",
+      "format": "GLB",
+      "gitBlobSha": "1b0efacc4dda050a6abc34974cb692010d29b81c",
+      "originalSourceGitBlobSha": "1b0efacc4dda050a6abc34974cb692010d29b81c"
+    },
+    {
+      "file": "Models/bedSingle.glb",
+      "format": "GLB",
+      "gitBlobSha": "eb79d7ae7cb9a69dc8e27c5c37db72e6759ce0a0",
+      "originalSourceGitBlobSha": "eb79d7ae7cb9a69dc8e27c5c37db72e6759ce0a0"
+    },
+    {
+      "file": "Models/benchCushion.glb",
+      "format": "GLB",
+      "gitBlobSha": "56380ad9d2f78b45ddacf1163d00fe2c48c11a5e",
+      "originalSourceGitBlobSha": "56380ad9d2f78b45ddacf1163d00fe2c48c11a5e"
+    },
+    {
+      "file": "Models/bookcaseClosed.glb",
+      "format": "GLB",
+      "gitBlobSha": "43197a4cee475ab1af36309fb388402b25b85d84",
+      "originalSourceGitBlobSha": "43197a4cee475ab1af36309fb388402b25b85d84"
+    },
+    {
+      "file": "Models/bookcaseClosedDoors.glb",
+      "format": "GLB",
+      "gitBlobSha": "3c80bf981b1018d91a3263a0b7554adc4fc1da5c",
+      "originalSourceGitBlobSha": "3c80bf981b1018d91a3263a0b7554adc4fc1da5c"
+    },
+    {
+      "file": "Models/bookcaseOpen.glb",
+      "format": "GLB",
+      "gitBlobSha": "9a0cce7691e94277f3409719e9e68c910c25aa2c",
+      "originalSourceGitBlobSha": "9a0cce7691e94277f3409719e9e68c910c25aa2c"
+    },
+    {
+      "file": "Models/bookcaseOpenLow.glb",
+      "format": "GLB",
+      "gitBlobSha": "3daa396e11c843a5da87ab6547a279731e6eba58",
+      "originalSourceGitBlobSha": "3daa396e11c843a5da87ab6547a279731e6eba58"
+    },
+    {
+      "file": "Models/books.glb",
+      "format": "GLB",
+      "gitBlobSha": "615aaa9632cf1b262c257f2cb7c208a6f199ab84",
+      "originalSourceGitBlobSha": "615aaa9632cf1b262c257f2cb7c208a6f199ab84"
+    },
+    {
+      "file": "Models/cabinetBed.glb",
+      "format": "GLB",
+      "gitBlobSha": "df64c6689d28cac0b08f7be9a58c7cec68219a6c",
+      "originalSourceGitBlobSha": "df64c6689d28cac0b08f7be9a58c7cec68219a6c"
+    },
+    {
+      "file": "Models/cabinetBedDrawer.glb",
+      "format": "GLB",
+      "gitBlobSha": "3159b358756a150d874f82b0d06af0395554687e",
+      "originalSourceGitBlobSha": "3159b358756a150d874f82b0d06af0395554687e"
+    },
+    {
+      "file": "Models/cabinetBedDrawerTable.glb",
+      "format": "GLB",
+      "gitBlobSha": "96221245be060add35f10930aa38169d36912e8b",
+      "originalSourceGitBlobSha": "96221245be060add35f10930aa38169d36912e8b"
+    },
+    {
+      "file": "Models/cabinetTelevision.glb",
+      "format": "GLB",
+      "gitBlobSha": "eb73b4c130f066eefdf8e586b543449bf4e7cf10",
+      "originalSourceGitBlobSha": "eb73b4c130f066eefdf8e586b543449bf4e7cf10"
+    },
+    {
+      "file": "Models/cabinetTelevisionDoors.glb",
+      "format": "GLB",
+      "gitBlobSha": "6221e85a796d9aefc0b8c910994c46d1585bf465",
+      "originalSourceGitBlobSha": "6221e85a796d9aefc0b8c910994c46d1585bf465"
+    },
+    {
       "file": "Models/ceilingFan.glb",
       "format": "GLB",
       "gitBlobSha": "db49a5a847cae56864abe2e6702cdee87345abfc",
@@ -37,6 +134,24 @@
       "format": "GLB",
       "gitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed",
       "originalSourceGitBlobSha": "131101f3dbc72f41ca624ddd77ce53d8bafea9ed"
+    },
+    {
+      "file": "Models/chairModernCushion.glb",
+      "format": "GLB",
+      "gitBlobSha": "a6c18d94ec17231807043b0fb18e766b020ec81e",
+      "originalSourceGitBlobSha": "a6c18d94ec17231807043b0fb18e766b020ec81e"
+    },
+    {
+      "file": "Models/chairRounded.glb",
+      "format": "GLB",
+      "gitBlobSha": "f0b8e91011a1d664e4e4e40afdae8a82b3637a48",
+      "originalSourceGitBlobSha": "f0b8e91011a1d664e4e4e40afdae8a82b3637a48"
+    },
+    {
+      "file": "Models/coatRack.glb",
+      "format": "GLB",
+      "gitBlobSha": "3cddd8beed819c9553749ccd75a2475b1ca1f7d4",
+      "originalSourceGitBlobSha": "3cddd8beed819c9553749ccd75a2475b1ca1f7d4"
     },
     {
       "file": "Models/coatRackStanding.glb",
@@ -75,6 +190,54 @@
       "originalSourceGitBlobSha": "98fb683035e8508aac7f79504bfbf71be328ea3b"
     },
     {
+      "file": "Models/doorway.glb",
+      "format": "GLB",
+      "gitBlobSha": "16ae8b84ad818153e2bf37257531e137fc6ef55a",
+      "originalSourceGitBlobSha": "16ae8b84ad818153e2bf37257531e137fc6ef55a"
+    },
+    {
+      "file": "Models/floorFull.glb",
+      "format": "GLB",
+      "gitBlobSha": "3861276342492222b1019aea63ed50e6e52e83b3",
+      "originalSourceGitBlobSha": "3861276342492222b1019aea63ed50e6e52e83b3"
+    },
+    {
+      "file": "Models/kitchenBar.glb",
+      "format": "GLB",
+      "gitBlobSha": "4202f2783d43c45b6b06cb9d4a083ae1aa6c0a1a",
+      "originalSourceGitBlobSha": "4202f2783d43c45b6b06cb9d4a083ae1aa6c0a1a"
+    },
+    {
+      "file": "Models/kitchenBarEnd.glb",
+      "format": "GLB",
+      "gitBlobSha": "23c1887f4c5b26661cae45925d6daf0bf66d3f57",
+      "originalSourceGitBlobSha": "23c1887f4c5b26661cae45925d6daf0bf66d3f57"
+    },
+    {
+      "file": "Models/kitchenBlender.glb",
+      "format": "GLB",
+      "gitBlobSha": "c2068a71ccd628c7ccd9850242b04fba597967c6",
+      "originalSourceGitBlobSha": "c2068a71ccd628c7ccd9850242b04fba597967c6"
+    },
+    {
+      "file": "Models/kitchenCoffeeMachine.glb",
+      "format": "GLB",
+      "gitBlobSha": "f10641b44f34270570796a6115e524b53a4ecb71",
+      "originalSourceGitBlobSha": "f10641b44f34270570796a6115e524b53a4ecb71"
+    },
+    {
+      "file": "Models/kitchenFridgeLarge.glb",
+      "format": "GLB",
+      "gitBlobSha": "4d28fb70cbe14d1ad35a3911ccccbe47b5bec0e2",
+      "originalSourceGitBlobSha": "4d28fb70cbe14d1ad35a3911ccccbe47b5bec0e2"
+    },
+    {
+      "file": "Models/kitchenMicrowave.glb",
+      "format": "GLB",
+      "gitBlobSha": "1ef2100740f1935324f9ea7d3875d00b9f0659c0",
+      "originalSourceGitBlobSha": "1ef2100740f1935324f9ea7d3875d00b9f0659c0"
+    },
+    {
       "file": "Models/lampRoundFloor.glb",
       "format": "GLB",
       "gitBlobSha": "69f7c9df4fb9e2fb327c59f3b20e8669faf7df0d",
@@ -85,6 +248,12 @@
       "format": "GLB",
       "gitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe",
       "originalSourceGitBlobSha": "53776bc3e72a8bd09d96a227adb959153e00debe"
+    },
+    {
+      "file": "Models/lampSquareCeiling.glb",
+      "format": "GLB",
+      "gitBlobSha": "8aaf95cd620ab2b96b326012137af3e8534a2e4d",
+      "originalSourceGitBlobSha": "8aaf95cd620ab2b96b326012137af3e8534a2e4d"
     },
     {
       "file": "Models/lampWall.glb",
@@ -99,6 +268,18 @@
       "originalSourceGitBlobSha": "5a30fe5caac134e2c14aa9ee50a258bc11e456ba"
     },
     {
+      "file": "Models/loungeChair.glb",
+      "format": "GLB",
+      "gitBlobSha": "fb3537daa44d3fa6ae3d13344dff5e726c82df2f",
+      "originalSourceGitBlobSha": "fb3537daa44d3fa6ae3d13344dff5e726c82df2f"
+    },
+    {
+      "file": "Models/loungeChairRelax.glb",
+      "format": "GLB",
+      "gitBlobSha": "42e0a707ca2fcc1d7433983b8e46a9b13cd0d5db",
+      "originalSourceGitBlobSha": "42e0a707ca2fcc1d7433983b8e46a9b13cd0d5db"
+    },
+    {
       "file": "Models/loungeDesignChair.glb",
       "format": "GLB",
       "gitBlobSha": "50526dab735dd80c2dde5a08582bf621939cfbcb",
@@ -111,6 +292,36 @@
       "originalSourceGitBlobSha": "c3640d2b87a260fb893a54fba862212695afe4d6"
     },
     {
+      "file": "Models/loungeSofa.glb",
+      "format": "GLB",
+      "gitBlobSha": "7761b15cc9d53b9cd5e28d5a5dc5eaea72a648a7",
+      "originalSourceGitBlobSha": "7761b15cc9d53b9cd5e28d5a5dc5eaea72a648a7"
+    },
+    {
+      "file": "Models/loungeSofaCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "6cfc3c9a5d0c6f6e63b00b7a77ade0b0779546d5",
+      "originalSourceGitBlobSha": "6cfc3c9a5d0c6f6e63b00b7a77ade0b0779546d5"
+    },
+    {
+      "file": "Models/loungeSofaLong.glb",
+      "format": "GLB",
+      "gitBlobSha": "8816aabe08a41566ab1a64a7014a4f23ef407a41",
+      "originalSourceGitBlobSha": "8816aabe08a41566ab1a64a7014a4f23ef407a41"
+    },
+    {
+      "file": "Models/loungeSofaOttoman.glb",
+      "format": "GLB",
+      "gitBlobSha": "ee2b991a5795b0566504294c6cd14917fbb3b997",
+      "originalSourceGitBlobSha": "ee2b991a5795b0566504294c6cd14917fbb3b997"
+    },
+    {
+      "file": "Models/paneling.glb",
+      "format": "GLB",
+      "gitBlobSha": "b78d053c27022f6d287b540aa31585285bcbd884",
+      "originalSourceGitBlobSha": "b78d053c27022f6d287b540aa31585285bcbd884"
+    },
+    {
       "file": "Models/pottedPlant.glb",
       "format": "GLB",
       "gitBlobSha": "774d659a2d2be3f9af3fea78e13b2f250fdbb262",
@@ -121,6 +332,155 @@
       "format": "GLB",
       "gitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29",
       "originalSourceGitBlobSha": "6a810e8a7fcbd0386a46bbf82a05213ff223ff29"
+    },
+    {
+      "file": "Models/rugRectangle.glb",
+      "format": "GLB",
+      "gitBlobSha": "2ca3bb1a8a54f863d782c62d2bcc32bb15c9a733",
+      "originalSourceGitBlobSha": "2ca3bb1a8a54f863d782c62d2bcc32bb15c9a733"
+    },
+    {
+      "file": "Models/rugRound.glb",
+      "format": "GLB",
+      "gitBlobSha": "ed464bca440a58a90319b80195576caaf75e7ab9",
+      "originalSourceGitBlobSha": "ed464bca440a58a90319b80195576caaf75e7ab9"
+    },
+    {
+      "file": "Models/shower.glb",
+      "format": "GLB",
+      "gitBlobSha": "1182c52a9ed82250056eaeb4db7121648a7dde16",
+      "originalSourceGitBlobSha": "1182c52a9ed82250056eaeb4db7121648a7dde16"
+    },
+    {
+      "file": "Models/sideTableDrawers.glb",
+      "format": "GLB",
+      "gitBlobSha": "a801b290f9cd51a0dec7d5e0777ad839a727969d",
+      "originalSourceGitBlobSha": "a801b290f9cd51a0dec7d5e0777ad839a727969d"
+    },
+    {
+      "file": "Models/speaker.glb",
+      "format": "GLB",
+      "gitBlobSha": "2d259cedf89d98413d565a3bbc41dee2d6fbeb9b",
+      "originalSourceGitBlobSha": "2d259cedf89d98413d565a3bbc41dee2d6fbeb9b"
+    },
+    {
+      "file": "Models/speakerSmall.glb",
+      "format": "GLB",
+      "gitBlobSha": "5673177a3db49c2bc65e8131babde9092a2c3ed4",
+      "originalSourceGitBlobSha": "5673177a3db49c2bc65e8131babde9092a2c3ed4"
+    },
+    {
+      "file": "Models/stairs.glb",
+      "format": "GLB",
+      "gitBlobSha": "6416fcab01eab2a1d0ec5b9ebecd1b29f9b1cf26",
+      "originalSourceGitBlobSha": "6416fcab01eab2a1d0ec5b9ebecd1b29f9b1cf26"
+    },
+    {
+      "file": "Models/stairsCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "ba055b95dbdeec2375042eb6ee10f9e1339b991a",
+      "originalSourceGitBlobSha": "ba055b95dbdeec2375042eb6ee10f9e1339b991a"
+    },
+    {
+      "file": "Models/stairsOpen.glb",
+      "format": "GLB",
+      "gitBlobSha": "4cf8af20b0f0a61b7b26efb319cbc12e9b76d7d3",
+      "originalSourceGitBlobSha": "4cf8af20b0f0a61b7b26efb319cbc12e9b76d7d3"
+    },
+    {
+      "file": "Models/stoolBar.glb",
+      "format": "GLB",
+      "gitBlobSha": "d068c012765129e8b634284ff53fd7770bb8bf4c",
+      "originalSourceGitBlobSha": "d068c012765129e8b634284ff53fd7770bb8bf4c"
+    },
+    {
+      "file": "Models/stoolBarSquare.glb",
+      "format": "GLB",
+      "gitBlobSha": "aa4a9900142f038b5510281efb389476348598fb",
+      "originalSourceGitBlobSha": "aa4a9900142f038b5510281efb389476348598fb"
+    },
+    {
+      "file": "Models/tableCloth.glb",
+      "format": "GLB",
+      "gitBlobSha": "ea19cba05cd4a4c646ce777aa10133f69ae80d21",
+      "originalSourceGitBlobSha": "ea19cba05cd4a4c646ce777aa10133f69ae80d21"
+    },
+    {
+      "file": "Models/tableCoffee.glb",
+      "format": "GLB",
+      "gitBlobSha": "945caf455a089fcdd2dbe909db6f78326b9b4cc3",
+      "originalSourceGitBlobSha": "945caf455a089fcdd2dbe909db6f78326b9b4cc3"
+    },
+    {
+      "file": "Models/tableCoffeeGlass.glb",
+      "format": "GLB",
+      "gitBlobSha": "78e0f07f84ef6670da3c599b1bb6a9f64b7f0bab",
+      "originalSourceGitBlobSha": "78e0f07f84ef6670da3c599b1bb6a9f64b7f0bab"
+    },
+    {
+      "file": "Models/tableGlass.glb",
+      "format": "GLB",
+      "gitBlobSha": "47223952fe25e098b593a206db9eb2ce4679f3f3",
+      "originalSourceGitBlobSha": "47223952fe25e098b593a206db9eb2ce4679f3f3"
+    },
+    {
+      "file": "Models/tableRound.glb",
+      "format": "GLB",
+      "gitBlobSha": "885fdcd356eff8cc379e306d7b3b1ef3c5ca7475",
+      "originalSourceGitBlobSha": "885fdcd356eff8cc379e306d7b3b1ef3c5ca7475"
+    },
+    {
+      "file": "Models/televisionModern.glb",
+      "format": "GLB",
+      "gitBlobSha": "f047576f3d77a469e59059b1ae0aa1cdbbae7d0f",
+      "originalSourceGitBlobSha": "f047576f3d77a469e59059b1ae0aa1cdbbae7d0f"
+    },
+    {
+      "file": "Models/televisionVintage.glb",
+      "format": "GLB",
+      "gitBlobSha": "93d8795b15042f50f95afe7f39417eb5f14ebeab",
+      "originalSourceGitBlobSha": "93d8795b15042f50f95afe7f39417eb5f14ebeab"
+    },
+    {
+      "file": "Models/toilet.glb",
+      "format": "GLB",
+      "gitBlobSha": "81589c8b63063ff52533a95d92b09e14cd77ecea",
+      "originalSourceGitBlobSha": "81589c8b63063ff52533a95d92b09e14cd77ecea"
+    },
+    {
+      "file": "Models/wall.glb",
+      "format": "GLB",
+      "gitBlobSha": "ba5b8d2a16bdb6042750d1bef5e7afe78c9b0091",
+      "originalSourceGitBlobSha": "ba5b8d2a16bdb6042750d1bef5e7afe78c9b0091"
+    },
+    {
+      "file": "Models/wallCorner.glb",
+      "format": "GLB",
+      "gitBlobSha": "2a5f37ec39059115467893fbae2db5e235e6f3de",
+      "originalSourceGitBlobSha": "2a5f37ec39059115467893fbae2db5e235e6f3de"
+    },
+    {
+      "file": "Models/wallDoorway.glb",
+      "format": "GLB",
+      "gitBlobSha": "ea8af570824cc2197500f2a69676eede7195bd0b",
+      "originalSourceGitBlobSha": "ea8af570824cc2197500f2a69676eede7195bd0b"
+    },
+    {
+      "file": "Models/wallWindow.glb",
+      "format": "GLB",
+      "gitBlobSha": "19a394ffdd7a8398ae5cffcea3b7d33f40efecf9",
+      "originalSourceGitBlobSha": "19a394ffdd7a8398ae5cffcea3b7d33f40efecf9"
+    },
+    {
+      "file": "Models/washer.glb",
+      "format": "GLB",
+      "gitBlobSha": "1a5922b09c142c82a0219e7267f447b9a72df094",
+      "originalSourceGitBlobSha": "1a5922b09c142c82a0219e7267f447b9a72df094"
     }
+  ],
+  "caveats": [
+    "Self-contained Kenney CC0 GLB, requires Unity glTFast; 60 new GLBs added, 18 previously stored.",
+    "Saved GLB blob SHAs verified identical to source when transferred. Actual Unity material and rendering not tested.",
+    "Not finished high-detail map scenes."
   ]
 }
