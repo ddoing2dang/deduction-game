@@ -45,6 +45,18 @@ namespace Mystery.UI
         [Header("Optional approved dialogue adapter")]
         public UnityEvent<string> questionSubmitted = new UnityEvent<string>();
 
+        [Serializable]
+        public sealed class TranscriptEntry { public string who; public string text; }
+        [Serializable]
+        public sealed class SpeakerTranscript
+        {
+            public int speaker;
+            public TranscriptEntry[] entries = Array.Empty<TranscriptEntry>();
+            public string latestReply;
+        }
+
+        public event Action DialogueChanged;
+
         private sealed class Entry { public string who, text; }
         // Histories and last replies are scoped to the CASE THEME and NPC.
         private readonly struct ContextKey : IEquatable<ContextKey>
@@ -200,7 +212,79 @@ namespace Mystery.UI
                 histories[context] = entries = new List<Entry>();
             entries.Add(new Entry { who = who, text = text });
             RefreshHistory();
+            DialogueChanged?.Invoke();
         }
+
+        // Snapshot only a single case theme. Every NPC remains in its own thread.
+        public SpeakerTranscript[] ExportTranscripts(DialogueTheme target)
+        {
+            var result = new List<SpeakerTranscript>();
+            for (int i = 0; i < 6; i++)
+            {
+                var key = new ContextKey(target, (DialogueSpeaker)i);
+                histories.TryGetValue(key, out var entries);
+                latestReplies.TryGetValue(key, out var reply);
+                if ((entries == null || entries.Count == 0) && string.IsNullOrEmpty(reply))
+                    continue;
+                var copy = new List<TranscriptEntry>();
+                if (entries != null)
+                    foreach (var entry in entries)
+                        copy.Add(new TranscriptEntry { who = entry.who, text = entry.text });
+                result.Add(new SpeakerTranscript
+                {
+                    speaker = i,
+                    entries = copy.ToArray(),
+                    latestReply = reply ?? ""
+                });
+            }
+            return result.ToArray();
+        }
+
+        // Validation happens before either dialogue or evidence state is changed.
+        public static bool ValidateTranscripts(SpeakerTranscript[] threads)
+        {
+            if (threads == null || threads.Length > 6) return false;
+            var unique = new HashSet<int>();
+            foreach (var thread in threads)
+            {
+                if (thread == null || thread.speaker < 0 || thread.speaker > 5
+                    || !unique.Add(thread.speaker)
+                    || thread.entries == null || thread.entries.Length > 500
+                    || (thread.latestReply != null && thread.latestReply.Length > 5000))
+                    return false;
+                foreach (var item in thread.entries)
+                    if (item == null || string.IsNullOrWhiteSpace(item.who)
+                        || item.who.Length > 100 || item.text == null
+                        || item.text.Length > 5000) return false;
+            }
+            return true;
+        }
+
+        public bool RestoreTranscripts(DialogueTheme target, SpeakerTranscript[] threads)
+        {
+            if (!Application.IsPlaying(gameObject) || !ValidateTranscripts(threads))
+                return false;
+            for (int i = 0; i < 6; i++)
+            {
+                var key = new ContextKey(target, (DialogueSpeaker)i);
+                histories.Remove(key);
+                latestReplies.Remove(key);
+            }
+            foreach (var thread in threads)
+            {
+                var key = new ContextKey(target, (DialogueSpeaker)thread.speaker);
+                var entries = new List<Entry>();
+                foreach (var item in thread.entries)
+                    entries.Add(new Entry { who = item.who, text = item.text });
+                if (entries.Count != 0) histories[key] = entries;
+                if (!string.IsNullOrEmpty(thread.latestReply))
+                    latestReplies[key] = thread.latestReply;
+            }
+            if (theme == target) ApplyPresentation();
+            DialogueChanged?.Invoke();
+            return true;
+        }
+
         private void RefreshHistory()
         {
             if (historyText == null) return;

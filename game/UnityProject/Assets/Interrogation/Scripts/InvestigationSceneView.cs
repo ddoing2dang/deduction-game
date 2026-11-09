@@ -257,6 +257,10 @@ namespace Mystery.Interrogation
             {
                 var notebook = GetComponent<InvestigationNotebookView>();
                 if (notebook != null) notebook.HideWindow();
+                var saveMenu = GetComponent<CaseProgressSaveController>();
+                if (saveMenu != null) saveMenu.HideWindow();
+                var conclusion = GetComponent<CaseConclusionView>();
+                if (conclusion != null) conclusion.HideWindow();
             }
             window.SetActive(open);
             if (open) Refresh();

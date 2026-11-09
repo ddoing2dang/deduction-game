@@ -209,6 +209,10 @@ namespace Mystery.Interrogation
             {
                 var investigation = GetComponent<InvestigationSceneView>();
                 if (investigation != null) investigation.HideWindow();
+                var saveMenu = GetComponent<CaseProgressSaveController>();
+                if (saveMenu != null) saveMenu.HideWindow();
+                var conclusion = GetComponent<CaseConclusionView>();
+                if (conclusion != null) conclusion.HideWindow();
             }
             notebookWindow.SetActive(opening);
             if (opening) Refresh();

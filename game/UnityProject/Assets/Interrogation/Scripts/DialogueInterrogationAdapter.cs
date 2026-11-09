@@ -14,6 +14,8 @@ namespace Mystery.Interrogation
         [SerializeField] private TextAsset musicBroadcastCase;
 
         public event Action EvidenceChanged;
+        public event Action<VerdictOutcome> VerdictChanged;
+        public event Action ProgressChanged;
 
         private DialoguePanel panel;
         private readonly Dictionary<DialogueTheme, CaseFile> files
@@ -117,6 +119,7 @@ namespace Mystery.Interrogation
             if (!InterrogationResolver.KnownEvidence(file, id)) return false;
             if (!GetOrCreate(Key(file)).Add(id)) return false;
             EvidenceChanged?.Invoke();
+            ProgressChanged?.Invoke();
             return true;
         }
 
@@ -160,6 +163,11 @@ namespace Mystery.Interrogation
                 failedAccusations[key] = wrong + 1;
             else if (outcome.State == VerdictState.Solved)
                 solvedCases.Add(key);
+            if (outcome.State == VerdictState.Incorrect || outcome.State == VerdictState.Solved)
+            {
+                ProgressChanged?.Invoke();
+                VerdictChanged?.Invoke(outcome);
+            }
             return outcome;
         }
 
@@ -170,6 +178,63 @@ namespace Mystery.Interrogation
             failedAccusations.Clear();
             solvedCases.Clear();
             EvidenceChanged?.Invoke();
+            ProgressChanged?.Invoke();
+        }
+
+        // Saving and restoring never bypass case approval or evidence-ID validation.
+        public CaseProgressSave ExportProgress()
+        {
+            if (!CaseReady) return null;
+            var file = CurrentCase;
+            failedAccusations.TryGetValue(Key(file), out var wrong);
+            var owned = GetEvidence(file);
+            var ordered = new List<string>();
+            foreach (var clue in file.evidence)
+                if (clue != null && owned.Contains(clue.id)) ordered.Add(clue.id);
+            return new CaseProgressSave
+            {
+                schemaVersion = 1,
+                caseId = file.caseId,
+                theme = file.theme,
+                evidenceIds = ordered.ToArray(),
+                wrongAccusations = wrong,
+                solved = solvedCases.Contains(Key(file))
+            };
+        }
+
+        public bool ValidateProgress(CaseProgressSave state)
+        {
+            if (!CaseReady || state == null || state.schemaVersion != 1) return false;
+            var file = CurrentCase;
+            if (state.theme != file.theme
+                || !string.Equals(state.caseId, file.caseId, StringComparison.Ordinal)
+                || state.evidenceIds == null || state.evidenceIds.Length > file.evidence.Length
+                || state.wrongAccusations < 0
+                || state.wrongAccusations > file.verdict.maxWrongAccusations) return false;
+            var unique = new HashSet<string>(StringComparer.Ordinal);
+            foreach (var id in state.evidenceIds)
+                if (!InterrogationResolver.KnownEvidence(file, id) || !unique.Add(id))
+                    return false;
+            if (state.solved)
+                foreach (var id in file.verdict.requiredEvidenceIds)
+                    if (!unique.Contains(id)) return false;
+            return true;
+        }
+
+        public bool RestoreProgress(CaseProgressSave state)
+        {
+            if (!Application.IsPlaying(gameObject) || !ValidateProgress(state)) return false;
+            var file = CurrentCase;
+            string key = Key(file);
+            var inventory = GetOrCreate(key);
+            inventory.Clear();
+            foreach (var id in state.evidenceIds) inventory.Add(id);
+            failedAccusations[key] = state.wrongAccusations;
+            if (state.solved) solvedCases.Add(key);
+            else solvedCases.Remove(key);
+            EvidenceChanged?.Invoke();
+            ProgressChanged?.Invoke();
+            return true;
         }
 
         private ISet<string> GetEvidence(CaseFile file)
