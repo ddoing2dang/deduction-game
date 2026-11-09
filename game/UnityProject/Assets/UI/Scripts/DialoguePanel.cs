@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Mystery.UI
 {
     public enum DialogueTheme { MANSION, CRUISE, MUSIC_BROADCAST }
-    public enum DialogueSpeaker { 마도연, 마리예, 나주은, 이복희, 진루나, 문일혜 }
+    public enum DialogueSpeaker { 마도연, 마루희, 나주은, 이복희, 진루나, 문일혜 }
 
     /// <summary>Shared presentation only. No case data or generated NPC answers.</summary>
     [ExecuteAlways, DisallowMultipleComponent]

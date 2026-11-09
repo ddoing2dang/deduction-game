@@ -40,7 +40,7 @@ Canvas (1920×1080 / Scale With Screen Size / Expand)
 2. **Game 탭을 Play 없이** 열고 화면 비율을 1920×1080 또는 16:9로 선택하면 정적 미리보기를 볼 수 있다.
 3. Hierarchy의 `Canvas > DialoguePanel`을 선택한다.
 4. Inspector의 **Dialogue Panel > Inspector presentation**에서 **Theme**을 `MANSION`, `CRUISE`, `MUSIC_BROADCAST` 중 선택한다. 이름표/본문/입력창은 공유하고 프레임 Sprite만 교체한다. 게임 화면에는 테마 버튼을 추가하지 않았다.
-5. **Speaker**에서 마도연·마리예·나주은·이복희·진루나·문일혜를 선택한다. **Preview Text**는 정적 미리보기용 안내 문구이며 사건 대사가 아니다.
+5. **Speaker**에서 마도연·마루희·나주은·이복희·진루나·문일혜를 선택한다. **Preview Text**는 정적 미리보기용 안내 문구이며 사건 대사가 아니다.
 6. 프리팹 자체를 편집하려면 `Assets/UI/Prefabs/DialoguePanel.prefab`을 더블클릭한다. 프리팹 모드에서도 Inspector로 표시를 조정할 수 있다.
 
 ## 연결 범위
@@ -109,4 +109,4 @@ The GitHub code and font import assets can be reviewed statically. **Actual TMP 
 
 ### 2026-11-09 NPC 이름 최신 변경
 
-NPC 이름은 **마도연 · 마리예 · 나주은 · 이복희 · 진루나 · 문일혜**로 확정. 기존 6인 순서 및 `DialogueSpeaker` enum 직렬화 숫자(0~5)를 유지하고, 초기 대화창 이름표 프리팹 텍스트도 마도연으로 변경. 기존 PNG와 프리팹 구조·캐릭터 선택 인덱스·UI 동작은 변경하지 않았습니다. 로컬 Unity Editor 동작 확인, Play Mode 및 빌드는 미실시.
+NPC 이름은 **마도연 · 마루희 · 나주은 · 이복희 · 진루나 · 문일혜**로 확정. 기존 6인 순서 및 `DialogueSpeaker` enum 직렬화 숫자(0~5)를 유지하고, 초기 대화창 이름표 프리팹 텍스트도 마도연으로 변경. 기존 PNG와 프리팹 구조·캐릭터 선택 인덱스·UI 동작은 변경하지 않았습니다. 로컬 Unity Editor 동작 확인, Play Mode 및 빌드는 미실시.
