@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Mystery.UI
 {
     public enum DialogueTheme { MANSION, CRUISE, MUSIC_BROADCAST }
-    public enum DialogueSpeaker { 마도아, 마리예, 나주아, 복희, 지로아, 문일혜 }
+    public enum DialogueSpeaker { 마도연, 마리예, 나주은, 이복희, 진루나, 문일혜 }
 
     /// <summary>Shared presentation only. No case data or generated NPC answers.</summary>
     [ExecuteAlways, DisallowMultipleComponent]
@@ -18,7 +18,7 @@ namespace Mystery.UI
     {
         [Header("Inspector presentation")]
         [SerializeField] private DialogueTheme theme = DialogueTheme.MANSION;
-        [SerializeField] private DialogueSpeaker speaker = DialogueSpeaker.마도아;
+        [SerializeField] private DialogueSpeaker speaker = DialogueSpeaker.마도연;
         [TextArea(2, 5)] [SerializeField] private string previewText = "대사 미리보기입니다.\n실제 NPC 대사는 별도로 연결합니다.";
         [Header("Original frames — no slicing or tint")]
         [SerializeField] private Sprite mansionFrame;

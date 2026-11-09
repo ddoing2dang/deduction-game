@@ -104,7 +104,7 @@ namespace Mystery.UI.Editor
                 var frame = frameRect.gameObject.AddComponent<Image>();
                 frame.sprite = frames[0]; frame.color = Color.white;
                 frame.type = Image.Type.Simple; frame.preserveAspect = true; frame.raycastTarget = false;
-                var name = Text("NpcName", frameRect, new Vector2(-590, 150), new Vector2(390, 68), "마도아", 36, Ink);
+                var name = Text("NpcName", frameRect, new Vector2(-590, 150), new Vector2(390, 68), "마도연", 36, Ink);
                 name.alignment = TextAlignmentOptions.Center;
                 var body = Text("NpcDialogue", frameRect, new Vector2(0, -38), new Vector2(1560, 224), "", 32, Ink);
                 body.alignment = TextAlignmentOptions.TopLeft;

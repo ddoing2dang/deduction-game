@@ -107,7 +107,7 @@ namespace Mystery.UI.Editor
             TMP_FontAsset pretendardSemi = GetOrCreateFont("Pretendard-SemiBold.otf", PretendardSemiBoldAsset);
 
             // Prewarm visible Korean labels; Dynamic font assets remain capable of rendering user input.
-            Warm(maruSemi, "마도아마리예나주아복희지로아문일혜");
+            Warm(maruSemi, "마도연마리예나주은이복희진루나문일혜");
             Warm(maruRegular, "대사 미리보기입니다. 실제 NPC 대사는 별도로 연결합니다.");
             Warm(pretendardRegular, "궁금한 내용을 한국어로 자유롭게 입력해 주세요. 아직 대화 기록이 없습니다.");
             Warm(pretendardSemi, "이전 대화 기록 전송");
