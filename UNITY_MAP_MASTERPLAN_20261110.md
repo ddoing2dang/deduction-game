@@ -25,7 +25,7 @@
 3. 확인 후 Unity에서 씬/에셋 저장, **현재 Editor 닫기**.
 4. 사용자 명시 실행: `powershell -File .\Connect-Case464Unity.ps1 -UnityProjectPath "D:\\경로\\내Unity프로젝트" -WorkspacePath "D:\\Case464-GitHub" -Apply`
 5. 이 스크립트는 원본의 `Assets/`, `Packages/`, `ProjectSettings/`를 복제 저장소 `game/UnityProject/`로 복사. 캐시 `Library/`, `Temp/`, `Logs/`, `obj/` 등은 복사하지 않음. 원본은 변경하지 않고 자동 commit/push 없음.
-6. 필요하면 나중에 `-StageArt`를 **최초 작업 전에만** 사용해 라이선스 원본 포함 CC0 에셋을 복사할 수 있음. GLB를 쓰기 전 glTFast가 필요하며 복사 자체는 품질 승인 아님. 이미 연결한 프로젝트에 `-Apply`를 반복하지 말 것.
+6. CC0 원본 모델도 함께 준비하려면 **최초 적용 명령에만** `-Apply -StageArt`를 같이 사용. GLB를 쓰기 전 glTFast가 필요하며 복사 자체는 품질 승인 아님. 이미 연결한 프로젝트에 `-Apply`를 반복하지 말 것.
 7. Unity Hub에서 **복사본** `D:\\Case464-GitHub\\game\\UnityProject`를 프로젝트로 열기. 프로젝트 이름과 경로를 확인해 원본/복제본을 혼동하지 않기.
 8. Unity `Edit > Project Settings > Editor > Asset Serialization`을 **Force Text**로, `Version Control`을 **Visible Meta Files**로 설정. `Assets/*.meta`를 누락하지 말고 커밋. `Library`, `Temp`, `Logs`는 .gitignore대로 제외.
 9. GitHub Desktop 또는 Git CLI로 작업된 파일 목록을 **리뷰**한 뒤 승인된 변경만 stage/commit/push. 일단 로컬 복사만으로 **GitHub 원격 반영 완료라고 주장하지 않음**.
@@ -59,6 +59,14 @@ git -C "D:\Case464-GitHub" status --short
 9. 맵 제작에 필요한 tool group(scene, asset, material, object, prefab, lighting, screenshot 등)을 활성화. 빌드·테스트 도구는 사용자 허가 없이 실행하지 말 것.
 
 **주의**: 연결 상태 표시는 로컬 클라이언트에서 확인해야 한다. GitHub MCP는 **코드/문서/에셋 파일**을 다룰 수 있지만, 그 사실만으로 로컬 Unity 메모리의 씬을 조작하지 못한다.
+
+### ChatGPT 자체 연결을 원하는 경우
+- 일반 ChatGPT 웹 대화가 `http://localhost:8080/mcp` 같은 로컬 주소를 곧바로 호출하는 방식은 지원되지 않는다. 현재 ChatGPT는 승인된 원격 MCP 서버 또는 해당 제품에서 제공하는 **Secure MCP Tunnel** 방식으로 사설 MCP에 접근할 수 있다.
+- ChatGPT 맞춤형 MCP 앱의 쓰기/수정 기능은 제품/요금제/권한에 따라 지원 범위가 다르다. **현재 대화에는 Unity Editor MCP 도구가 연결되어 있지 않으므로 Unity 장면을 직접 고칠 수 없다.** 지원되지 않는 요금제나 환경에서 억지 우회하지 말 것.
+- 실용적인 1차 제작 경로는 **로컬 Unity Editor + CoplayDev Unity MCP + Codex/VS Code 등의 지원 MCP 클라이언트**이고, 지금 ChatGPT GitHub 연결로 코드를 버전 관리한다.
+- OpenAI 공식 연결 가이드: https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt
+- 로컬/사설 MCP 보안: https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+- 로컬 Unity MCP 서버를 인증 없이 외부에 개방하거나 무분별한 터널로 퍼블릭 인터넷에 노출하지 않는다.
 
 ## C. Unity 내 제작 패키지/공식 소스
 
