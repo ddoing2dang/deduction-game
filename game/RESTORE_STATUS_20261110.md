@@ -56,3 +56,14 @@
 - `tools/unity/Case464MapWorkshop.cs`의 승인 프리팹 리뷰 카메라를 60° 고각·고정 검은 외부 배경 및 조정 가능한 시점 파라미터로 변경. **사용자의 로컬 Unity에서 컴파일/실행·시각 확인 미실시**.
 - 맵 시각 참고용 스틸은 GitHub에 재업로드하지 않았음. 공식 캐릭터·장면·방/사건 데이터는 유지.
 - 실제 Unity 프로젝트 및 MCP 연결은 아직 확인되지 않아 프리팹/씬/게임 진행도에는 영향 없음.
+
+
+## 2026-11-10 Codex Desktop Unity MCP tool visibility blocker
+- GitHub `main` includes local user's Unity project under `game/UnityProject/`, uploaded by user at commit `483a29c6dbc3887aed6b377c3ce857eeb6748c66` (remote verified at the time).
+- User's Unity MCP for Unity v10.3.0 showed `Session Active (UnityProject)` and `Codex: Configured`, server URL `http://127.0.0.1:8080/mcp`.
+- On Windows `codex mcp list` (via `codex.cmd`) confirmed `unityMCP` registered, status `enabled`, auth `Unsupported` (Auth display does NOT imply connection failure).
+- In Codex Desktop, native Unity MCP tools count: **0**. Resource lookup returned `unknown MCP server 'unityMCP'`. User stopped after repeated inability to discover tools, per 2-fail stop policy.
+- This is **not proof of a Unity project or scene error**. Actual remote-editor path, active scene and Console remain unverified. No Play Mode, build, scene modification or functional tests performed.
+- Independent public issue reports describe Codex Desktop HTTP MCP failing to expose Unity tools, and Codex Desktop dropping tools that CLI can discover: https://github.com/CoplayDev/unity-mcp/issues/1193 ; https://github.com/openai/codex/issues/51920. **Root cause for this user's exact configuration is not proven.**
+- Next permitted step: **switch MCP client environment, not retry the same Desktop session**. Prefer an existing standalone Codex CLI using `codex.cmd` and the same registered `unityMCP` server; check only the tool list/Unity project path. If native tools still unavailable, STOP and prepare a supported alternate client or vendor fix. No ad-hoc PowerShell HTTP or unapproved public tunnel.
+- Last verified project checkpoint before this documentation entry: `483a29c6dbc3887aed6b377c3ce857eeb6748c66`. On resumption, review current branch tip before any project changes.
