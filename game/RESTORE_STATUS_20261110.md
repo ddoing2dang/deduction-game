@@ -67,3 +67,15 @@
 - Independent public issue reports describe Codex Desktop HTTP MCP failing to expose Unity tools, and Codex Desktop dropping tools that CLI can discover: https://github.com/CoplayDev/unity-mcp/issues/1193 ; https://github.com/openai/codex/issues/51920. **Root cause for this user's exact configuration is not proven.**
 - Next permitted step: **switch MCP client environment, not retry the same Desktop session**. Prefer an existing standalone Codex CLI using `codex.cmd` and the same registered `unityMCP` server; check only the tool list/Unity project path. If native tools still unavailable, STOP and prepare a supported alternate client or vendor fix. No ad-hoc PowerShell HTTP or unapproved public tunnel.
 - Last verified project checkpoint before this documentation entry: `483a29c6dbc3887aed6b377c3ce857eeb6748c66`. On resumption, review current branch tip before any project changes.
+
+
+## 2026-11-10 오후 — Unity MCP CLI 직접 조회 성공 (사용자 제공 Codex CLI 결과)
+- 이전 Codex Desktop 도구 0개 문제는 **Codex CLI에서 별도로 연결 성공**. 같은 Desktop 오류를 다시 해결 대상으로 삼지 않는다.
+- Codex CLI가 `unityMCP`로 실제 읽기 전용 조회 수행. **프로젝트 경로 일치**: `C:\UnityProjects\Case464-GitHub\game\UnityProject`.
+- 사용자 제공 결과: Unity **6000.3.26f1**, 활성 씬은 **이름 없는 새 씬(변경 표시 없음)**, hierarchy에 `Main Camera`, `Directional Light`, Console 오류 **0개**, 프로젝트 에셋 약 **133개**.
+- 저장된 씬: `SampleScene`, `DialoguePreview`; 프리팹: `DialoguePanel` 1개. **H00 제작 씬은 없음**.
+- 제작 기반 존재: URP 설정, `Case464MapWorkshop.cs`, `room_profiles_24.v1.json`. 하지만 호텔 건축/가구 3D 프리팹, 프리미엄 PBR 재질의 **Unity 프로젝트 임포트/품질 승인은 미확인**.
+- GitHub에 206개 CC0 모델이 있어도 대부분 저폴리 **소스 재료**이며 Unity 에셋 임포트/완성맵 준비와 동일하지 않음.
+- 사용자의 Codex CLI 결과를 진행도 근거로 기록한 것이며, 이 ChatGPT 세션에서 로컬 Unity를 직접 호출/검증하지 않았음.
+- 다음 작업은 **H00 품질용 소스 확보/검토 → 블렌더/Unity 건축 제작 → 별도 신규 H00 작업 씬 → 시각 검수**. 기존 `SampleScene`/`DialoguePreview`/프리팹 덮어쓰기 금지.
+- **반복 기술 실패 2회면 즉시 중단**하고 마지막 성공 단계·필요한 도구/에셋과 재개 지점 보고. Unity Play Mode/기능 테스트/빌드 사용자 별도 요청 전 금지.
