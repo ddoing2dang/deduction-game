@@ -1,0 +1,180 @@
+{
+  "caseId": "mansion_01_stopped_clock_draft",
+  "theme": 0,
+  "locations": [
+    {
+      "id": "entry_hall",
+      "title": "현관 홀",
+      "description": "초대 손님에게 배포된 안내문과 오래된 현관 장식들이 남아 있다.",
+      "spots": [
+        {
+          "id": "hall_invitation",
+          "label": "공지판의 종이",
+          "observation": "재단 후원금 사용 내역을 21시 30분에 공개한다는 초대장이다. 발표는 시작되지 못했다.",
+          "evidenceId": "m01_invitation",
+          "requiresEvidenceIds": []
+        },
+        {
+          "id": "hall_clock",
+          "label": "멈춘 대형 시계",
+          "observation": "시곗바늘이 20시 17분을 가리킨다. 정확히 언제 멈췄는지는 이 자리에서 알 수 없다.",
+          "evidenceId": "",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "title": "기록 서고",
+      "description": "재단 기록과 정산 서류를 모아 둔 공간. 자료를 확인하려면 관련 공지를 먼저 알아야 한다.",
+      "spots": [
+        {
+          "id": "archive_ledger",
+          "label": "봉인된 회계 서류함",
+          "observation": "공개 회의의 관련 서류다. 후원금 일부가 승인 없는 온실 설비비 지출로 기록돼 있다.",
+          "evidenceId": "m01_ledger",
+          "requiresEvidenceIds": [
+            "m01_invitation"
+          ]
+        },
+        {
+          "id": "archive_empty",
+          "label": "낡은 보관 상자",
+          "observation": "인수인계용 종이가 담긴 상자다. 사건과 직접 관련된 증거는 발견되지 않았다.",
+          "evidenceId": "",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "power_room",
+      "title": "분전반 기록실",
+      "description": "정전 사고 기록과 비상 전원 점검표가 보관된 방.",
+      "spots": [
+        {
+          "id": "breaker_terminal",
+          "label": "자동 차단기 기록",
+          "observation": "정전은 21시 06분부터 12분까지였으며 차단기 오류가 기록돼 있다.",
+          "evidenceId": "m01_breaker",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "보안 기록실",
+      "description": "출입 기록 단말과 비상 전원 녹화 장치가 있다.",
+      "spots": [
+        {
+          "id": "security_access",
+          "label": "출입 카드 단말",
+          "observation": "G3 카드로 21시 08분과 11분에 온실 연결 서비스 문이 열렸다.",
+          "evidenceId": "m01_lock",
+          "requiresEvidenceIds": []
+        },
+        {
+          "id": "security_camera",
+          "label": "비상전원 CCTV",
+          "observation": "21시 08분 정전 중 회랑 화면에 마도연과 문일혜가 함께 보인다.",
+          "evidenceId": "m01_camera",
+          "requiresEvidenceIds": [
+            "m01_breaker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greenhouse",
+      "title": "온실 관리실",
+      "description": "온실 관리자가 출입 카드와 작업 장비를 보관하는 작은 공간.",
+      "spots": [
+        {
+          "id": "greenhouse_cards",
+          "label": "카드 지급 대장",
+          "observation": "서재로 이어지는 서비스 문용 G3 카드는 진루나에게 정식 발급돼 있다.",
+          "evidenceId": "m01_key",
+          "requiresEvidenceIds": []
+        },
+        {
+          "id": "greenhouse_tools",
+          "label": "작업 장갑 선반",
+          "observation": "분갈이에 쓴 장갑과 흙 묻은 도구들이 있지만 직접적인 단서는 아니다.",
+          "evidenceId": "",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "service_door",
+      "title": "온실 연결 통로",
+      "description": "온실과 서재 사이를 잇는 좁은 서비스 문. 바닥과 문틀을 자세히 살펴볼 수 있다.",
+      "spots": [
+        {
+          "id": "corridor_floor",
+          "label": "젖은 바닥 자국",
+          "observation": "젖은 온실 흙 발자국이 남아 있다. 굽 한쪽의 삼각형 손상 무늬가 반복된다.",
+          "evidenceId": "m01_mud",
+          "requiresEvidenceIds": []
+        },
+        {
+          "id": "corridor_hinge",
+          "label": "문 경첩 주변",
+          "observation": "문틀에 청록색 작업복의 실밥이 걸려 있다.",
+          "evidenceId": "m01_thread",
+          "requiresEvidenceIds": [
+            "m01_mud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "title": "시계 공방",
+      "description": "골동 시계와 수리 노트가 놓인 작업실.",
+      "spots": [
+        {
+          "id": "workshop_logbook",
+          "label": "시계 정비 노트",
+          "observation": "현관 시계는 사건 전날 20시 17분 태엽 불량으로 멈췄다는 정비 기록이 있다.",
+          "evidenceId": "m01_clock",
+          "requiresEvidenceIds": []
+        },
+        {
+          "id": "workshop_camera",
+          "label": "작업 사진 목록",
+          "observation": "나주은이 사건 당일 21시 09분에 남긴 동쪽 공방의 작업 사진이다.",
+          "evidenceId": "m01_photo",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": "주방",
+      "description": "주방 직원들의 근무 및 식자재 발주 기록이 남아 있다.",
+      "spots": [
+        {
+          "id": "kitchen_orders",
+          "label": "식자재 발주표",
+          "observation": "21시 07분과 11분에 마루희와 이복희의 발주 기록이 확인된다.",
+          "evidenceId": "m01_kitchen",
+          "requiresEvidenceIds": []
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "title": "서재",
+      "description": "사건이 발견된 장소. 손대지 않은 물건들의 위치를 살펴본다.",
+      "spots": [
+        {
+          "id": "study_desk",
+          "label": "책상 아래 물건",
+          "observation": "서재에서 발견된 청동 책받침이다. 20시 45분에는 선반에 있었다는 증언이 있다.",
+          "evidenceId": "m01_bookend",
+          "requiresEvidenceIds": []
+        }
+      ]
+    }
+  ]
+}

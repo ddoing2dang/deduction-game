@@ -1,0 +1,114 @@
+{
+  "caseId": "music_broadcast_draft",
+  "theme": 2,
+  "approved": false,
+  "culpritSpeaker": -1,
+  "profiles": [
+    {
+      "speaker": 0,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    },
+    {
+      "speaker": 1,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    },
+    {
+      "speaker": 2,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    },
+    {
+      "speaker": 3,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    },
+    {
+      "speaker": 4,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    },
+    {
+      "speaker": 5,
+      "personalityNotes": "",
+      "alibiNotes": "",
+      "knowledgeNotes": ""
+    }
+  ],
+  "evidence": [],
+  "topics": [
+    {
+      "id": "alibi",
+      "aliases": [
+        "알리바이",
+        "어디 있었",
+        "어디있었",
+        "그때 어디",
+        "무엇을 하고 있었"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    },
+    {
+      "id": "timeline",
+      "aliases": [
+        "일정",
+        "몇 시",
+        "언제 왔",
+        "언제 갔",
+        "동선"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    },
+    {
+      "id": "witness",
+      "aliases": [
+        "목격",
+        "누구 봤",
+        "누굴 봤",
+        "누가 있었"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    },
+    {
+      "id": "evidence",
+      "aliases": [
+        "증거",
+        "단서",
+        "흔적",
+        "잃어버린 물건"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    },
+    {
+      "id": "relationship",
+      "aliases": [
+        "관계",
+        "아는 사이",
+        "친했"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    },
+    {
+      "id": "motive",
+      "aliases": [
+        "동기",
+        "원한",
+        "다툼",
+        "싸웠"
+      ],
+      "requiredEvidenceIds": [],
+      "statements": []
+    }
+  ]
+}
