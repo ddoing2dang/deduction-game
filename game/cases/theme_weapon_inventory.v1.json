@@ -1,0 +1,696 @@
+{
+  "schemaVersion": "1.0.0",
+  "savedAt": "2026-11-08",
+  "status": "theme_inventory_design_snapshot_not_runtime_loaded",
+  "description": "각 테마에 동일한 12개 흉기 종류, NPC 6명 개인실 3개씩 총 18개 개별 실물을 보여 주는 편집용 스냅샷. 사용 여부는 사건마다 별도 입증.",
+  "authoritativeSources": [
+    "game/cases/weapon_method_catalog.v1.json",
+    "game/maps/theme_room_layouts.v1.json"
+  ],
+  "approvalScope": {
+    "confirmed": "3테마 공통 12종/각 NPC 방 3개/장소 8개/흉기 실물은 개인실만",
+    "candidate": "12종 구체 품목명·사건별 실제 도구·9세부 수법은 추가 검수 대상",
+    "noAutomaticGameplayIntegration": true
+  },
+  "itemTypes": [
+    {
+      "weaponId": "W01",
+      "name": "커터칼",
+      "primaryMethodId": "M01",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ],
+      "category": "날붙이"
+    },
+    {
+      "weaponId": "W02",
+      "name": "독약병",
+      "primaryMethodId": "M04",
+      "compatibleVariantIds": [
+        "M04_V1"
+      ],
+      "category": "독·약·음식"
+    },
+    {
+      "weaponId": "W03",
+      "name": "가위",
+      "primaryMethodId": "M01",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ],
+      "category": "날붙이"
+    },
+    {
+      "weaponId": "W04",
+      "name": "벨트",
+      "primaryMethodId": "M03",
+      "compatibleVariantIds": [
+        "M03_V1"
+      ],
+      "category": "천·침구"
+    },
+    {
+      "weaponId": "W05",
+      "name": "아령",
+      "primaryMethodId": "M02",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "category": "무거운 물건"
+    },
+    {
+      "weaponId": "W06",
+      "name": "수면제",
+      "primaryMethodId": "M04",
+      "compatibleVariantIds": [
+        "M04_V2"
+      ],
+      "category": "독·약·음식"
+    },
+    {
+      "weaponId": "W07",
+      "name": "가방끈",
+      "primaryMethodId": "M03",
+      "compatibleVariantIds": [
+        "M03_V1"
+      ],
+      "category": "천·침구"
+    },
+    {
+      "weaponId": "W08",
+      "name": "망치",
+      "primaryMethodId": "M02",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "category": "무거운 물건"
+    },
+    {
+      "weaponId": "W09",
+      "name": "유리병",
+      "primaryMethodId": "M02",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "category": "무거운 물건"
+    },
+    {
+      "weaponId": "W10",
+      "name": "땅콩 과자",
+      "primaryMethodId": "M04",
+      "compatibleVariantIds": [
+        "M04_V3"
+      ],
+      "category": "독·약·음식"
+    },
+    {
+      "weaponId": "W11",
+      "name": "베개",
+      "primaryMethodId": "M03",
+      "compatibleVariantIds": [
+        "M03_V2"
+      ],
+      "category": "천·침구"
+    },
+    {
+      "weaponId": "W12",
+      "name": "과일칼",
+      "primaryMethodId": "M01",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ],
+      "category": "날붙이"
+    }
+  ],
+  "themeInventories": [
+    {
+      "themeId": "HOTEL",
+      "themeLabel": "호텔(대저택)",
+      "crimeSceneNumber": "204호",
+      "roomCount": 8,
+      "npcRoomCount": 6,
+      "uniqueWeaponTypeCount": 12,
+      "physicalWeaponInstanceCount": 18,
+      "rooms": [
+        {
+          "npcId": "MATTO",
+          "npcName": "마또",
+          "roomId": "ROOM_MATTO",
+          "roomNumber": "101",
+          "roomName": "마또의 방",
+          "levelId": "1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W01",
+              "weaponName": "커터칼",
+              "instanceId": "ROOM_MATTO_W01"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_MATTO_W02"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MATTO_W11",
+              "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+            }
+          ]
+        },
+        {
+          "npcId": "JJIRO",
+          "npcName": "찌로",
+          "roomId": "ROOM_JIRO",
+          "roomNumber": "102",
+          "roomName": "찌로의 방",
+          "levelId": "1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_JIRO_W03"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W04",
+              "weaponName": "벨트",
+              "instanceId": "ROOM_JIRO_W04"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_JIRO_W02",
+              "originalTypeOwnerRoomId": "ROOM_MATTO"
+            }
+          ]
+        },
+        {
+          "npcId": "MARIHI",
+          "npcName": "마리히",
+          "roomId": "ROOM_MARIHI",
+          "roomNumber": "201",
+          "roomName": "마리히의 방",
+          "levelId": "2F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_MARIHI_W05"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W06",
+              "weaponName": "수면제",
+              "instanceId": "ROOM_MARIHI_W06"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_MARIHI_W03",
+              "originalTypeOwnerRoomId": "ROOM_JIRO"
+            }
+          ]
+        },
+        {
+          "npcId": "NAZ",
+          "npcName": "나즈",
+          "roomId": "ROOM_NAZ",
+          "roomNumber": "202",
+          "roomName": "나즈의 방",
+          "levelId": "2F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_NAZ_W07"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W08",
+              "weaponName": "망치",
+              "instanceId": "ROOM_NAZ_W08"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_NAZ_W05",
+              "originalTypeOwnerRoomId": "ROOM_MARIHI"
+            }
+          ]
+        },
+        {
+          "npcId": "BOKI",
+          "npcName": "보키",
+          "roomId": "ROOM_BOKI",
+          "roomNumber": "103",
+          "roomName": "보키의 방",
+          "levelId": "1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_BOKI_W09"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W10",
+              "weaponName": "땅콩 과자",
+              "instanceId": "ROOM_BOKI_W10"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_BOKI_W07",
+              "originalTypeOwnerRoomId": "ROOM_NAZ"
+            }
+          ]
+        },
+        {
+          "npcId": "MOONIRE",
+          "npcName": "문이레",
+          "roomId": "ROOM_MOONIRE",
+          "roomNumber": "203",
+          "roomName": "문이레의 방",
+          "levelId": "2F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MOONIRE_W11"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W12",
+              "weaponName": "과일칼",
+              "instanceId": "ROOM_MOONIRE_W12"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_MOONIRE_W09",
+              "originalTypeOwnerRoomId": "ROOM_BOKI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "themeId": "CRUISE",
+      "themeLabel": "크루즈",
+      "crimeSceneNumber": "403호",
+      "roomCount": 8,
+      "npcRoomCount": 6,
+      "uniqueWeaponTypeCount": 12,
+      "physicalWeaponInstanceCount": 18,
+      "rooms": [
+        {
+          "npcId": "MATTO",
+          "npcName": "마또",
+          "roomId": "ROOM_MATTO",
+          "roomNumber": "301",
+          "roomName": "마또 선실",
+          "levelId": "DECK_3",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W01",
+              "weaponName": "커터칼",
+              "instanceId": "ROOM_MATTO_W01"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_MATTO_W02"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MATTO_W11",
+              "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+            }
+          ]
+        },
+        {
+          "npcId": "JJIRO",
+          "npcName": "찌로",
+          "roomId": "ROOM_JIRO",
+          "roomNumber": "304",
+          "roomName": "찌로 선실",
+          "levelId": "DECK_3",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_JIRO_W03"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W04",
+              "weaponName": "벨트",
+              "instanceId": "ROOM_JIRO_W04"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_JIRO_W02",
+              "originalTypeOwnerRoomId": "ROOM_MATTO"
+            }
+          ]
+        },
+        {
+          "npcId": "MARIHI",
+          "npcName": "마리히",
+          "roomId": "ROOM_MARIHI",
+          "roomNumber": "401",
+          "roomName": "마리히 선실",
+          "levelId": "DECK_4",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_MARIHI_W05"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W06",
+              "weaponName": "수면제",
+              "instanceId": "ROOM_MARIHI_W06"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_MARIHI_W03",
+              "originalTypeOwnerRoomId": "ROOM_JIRO"
+            }
+          ]
+        },
+        {
+          "npcId": "NAZ",
+          "npcName": "나즈",
+          "roomId": "ROOM_NAZ",
+          "roomNumber": "302",
+          "roomName": "나즈 선실",
+          "levelId": "DECK_3",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_NAZ_W07"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W08",
+              "weaponName": "망치",
+              "instanceId": "ROOM_NAZ_W08"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_NAZ_W05",
+              "originalTypeOwnerRoomId": "ROOM_MARIHI"
+            }
+          ]
+        },
+        {
+          "npcId": "BOKI",
+          "npcName": "보키",
+          "roomId": "ROOM_BOKI",
+          "roomNumber": "303",
+          "roomName": "보키 선실",
+          "levelId": "DECK_3",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_BOKI_W09"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W10",
+              "weaponName": "땅콩 과자",
+              "instanceId": "ROOM_BOKI_W10"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_BOKI_W07",
+              "originalTypeOwnerRoomId": "ROOM_NAZ"
+            }
+          ]
+        },
+        {
+          "npcId": "MOONIRE",
+          "npcName": "문이레",
+          "roomId": "ROOM_MOONIRE",
+          "roomNumber": "402",
+          "roomName": "문이레 선실",
+          "levelId": "DECK_4",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MOONIRE_W11"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W12",
+              "weaponName": "과일칼",
+              "instanceId": "ROOM_MOONIRE_W12"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_MOONIRE_W09",
+              "originalTypeOwnerRoomId": "ROOM_BOKI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "themeId": "MUSIC_BROADCAST",
+      "themeLabel": "음악방송 대기실",
+      "crimeSceneNumber": "VIP-01",
+      "roomCount": 8,
+      "npcRoomCount": 6,
+      "uniqueWeaponTypeCount": 12,
+      "physicalWeaponInstanceCount": 18,
+      "rooms": [
+        {
+          "npcId": "MATTO",
+          "npcName": "마또",
+          "roomId": "ROOM_MATTO",
+          "roomNumber": "A01",
+          "roomName": "마또 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W01",
+              "weaponName": "커터칼",
+              "instanceId": "ROOM_MATTO_W01"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_MATTO_W02"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MATTO_W11",
+              "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+            }
+          ]
+        },
+        {
+          "npcId": "JJIRO",
+          "npcName": "찌로",
+          "roomId": "ROOM_JIRO",
+          "roomNumber": "B01",
+          "roomName": "찌로 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_JIRO_W03"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W04",
+              "weaponName": "벨트",
+              "instanceId": "ROOM_JIRO_W04"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W02",
+              "weaponName": "독약병",
+              "instanceId": "ROOM_JIRO_W02",
+              "originalTypeOwnerRoomId": "ROOM_MATTO"
+            }
+          ]
+        },
+        {
+          "npcId": "MARIHI",
+          "npcName": "마리히",
+          "roomId": "ROOM_MARIHI",
+          "roomNumber": "A02",
+          "roomName": "마리히 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_MARIHI_W05"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W06",
+              "weaponName": "수면제",
+              "instanceId": "ROOM_MARIHI_W06"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W03",
+              "weaponName": "가위",
+              "instanceId": "ROOM_MARIHI_W03",
+              "originalTypeOwnerRoomId": "ROOM_JIRO"
+            }
+          ]
+        },
+        {
+          "npcId": "NAZ",
+          "npcName": "나즈",
+          "roomId": "ROOM_NAZ",
+          "roomNumber": "B02",
+          "roomName": "나즈 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_NAZ_W07"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W08",
+              "weaponName": "망치",
+              "instanceId": "ROOM_NAZ_W08"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W05",
+              "weaponName": "아령",
+              "instanceId": "ROOM_NAZ_W05",
+              "originalTypeOwnerRoomId": "ROOM_MARIHI"
+            }
+          ]
+        },
+        {
+          "npcId": "BOKI",
+          "npcName": "보키",
+          "roomId": "ROOM_BOKI",
+          "roomNumber": "B03",
+          "roomName": "보키 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_BOKI_W09"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W10",
+              "weaponName": "땅콩 과자",
+              "instanceId": "ROOM_BOKI_W10"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W07",
+              "weaponName": "가방끈",
+              "instanceId": "ROOM_BOKI_W07",
+              "originalTypeOwnerRoomId": "ROOM_NAZ"
+            }
+          ]
+        },
+        {
+          "npcId": "MOONIRE",
+          "npcName": "문이레",
+          "roomId": "ROOM_MOONIRE",
+          "roomNumber": "A03",
+          "roomName": "문이레 대기실",
+          "levelId": "BACKSTAGE_1F",
+          "weaponSlots": [
+            {
+              "slotId": "BASE_1",
+              "weaponId": "W11",
+              "weaponName": "베개",
+              "instanceId": "ROOM_MOONIRE_W11"
+            },
+            {
+              "slotId": "BASE_2",
+              "weaponId": "W12",
+              "weaponName": "과일칼",
+              "instanceId": "ROOM_MOONIRE_W12"
+            },
+            {
+              "slotId": "SHARED_FROM_OTHER_NPC",
+              "weaponId": "W09",
+              "weaponName": "유리병",
+              "instanceId": "ROOM_MOONIRE_W09",
+              "originalTypeOwnerRoomId": "ROOM_BOKI"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "investigationPolicy": {
+    "physicalWeaponsOnlyInNpcRooms": true,
+    "crimeSceneAndLobbyOnlyTraces": true,
+    "copyOfSameWeaponTypeIsDistinctObject": true,
+    "weaponOwnedByNpcDoesNotProveGuilt": true,
+    "weaponUseRequiresCaseTruthMedicalEvidenceAndTimeline": true,
+    "fallingObjectVariantM02V2": "not_playable_until_geometry_forensic_and_timeline_signoff"
+  }
+}

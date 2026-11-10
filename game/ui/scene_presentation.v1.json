@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentedAt": "2026-11-10",
+  "status": "DESIGN_ONLY_NOT_IMPORTED_IN_UNITY",
+  "product": "마또 머더미스테리",
+  "platform": "Windows x64",
+  "view": "3D quarter-view exploration + 2D close-up cinematic conversation",
+  "referencePolicy": "Use cinematic framing, dialogue rhythm and interrogation emphasis, not third-party artwork, text or effects.",
+  "rules": {
+    "player": "single detective",
+    "npcCount": 6,
+    "roomCountPerTheme": 8,
+    "culpritOnlyMayLie": true,
+    "questionInput": "free Korean text",
+    "npcOutput": "approved lineId only",
+    "finalAnswer": [
+      "culpritNpcId",
+      "methodId",
+      "weaponId"
+    ],
+    "methodCategoryCount": 4
+  },
+  "sourcePaths": {
+    "npcNames": "game/characters/npc_display_profiles.v1.json",
+    "npcKnowledgeGate": "game/cases/culprit_only_deception_policy.v1.json",
+    "npcDialogues": "game/dialogue/curated/",
+    "casePrototypes": "game/cases/prototypes/evidence_driven_dialogue_cases.v1.json",
+    "themeRooms": "game/maps/theme_room_layouts.v1.json",
+    "themeFrameManifest": "art/UI/DialogueFrames/ThemeDialogue_v1/dialogue_frame_manifest.v1.json",
+    "legacyPortraits": "art/NPC/LegacyPortraits/",
+    "characterImportBindings": "art/NPC/user_asset_bindings.v1.json"
+  },
+  "themes": [
+    {
+      "id": "HOTEL",
+      "frame": "art/UI/DialogueFrames/ThemeDialogue_v1/Mansion.png",
+      "background": "current room 3D scene",
+      "palette": "burgundy gold black"
+    },
+    {
+      "id": "CRUISE",
+      "frame": "art/UI/DialogueFrames/ThemeDialogue_v1/Cruise.png",
+      "background": "current room 3D scene",
+      "palette": "navy white gold"
+    },
+    {
+      "id": "MUSIC_BROADCAST",
+      "frame": "art/UI/DialogueFrames/ThemeDialogue_v1/MusicBroadcast.png",
+      "background": "current room 3D scene",
+      "palette": "pink gold"
+    }
+  ],
+  "canvas": {
+    "targetReferenceResolution": [
+      1920,
+      1080
+    ],
+    "scaleMode": "Scale With Screen Size",
+    "referenceAspect": "16:9",
+    "layers": [
+      "3dSceneBackground",
+      "cinematicFocusOverlay",
+      "npcPortrait",
+      "themeDialogueFrame",
+      "speakerNameText",
+      "dialogueText",
+      "questionInput",
+      "evidencePresentation",
+      "interrogationImpact",
+      "accessibility"
+    ],
+    "dialogueFrameSourceResolution": [
+      2048,
+      682
+    ],
+    "dialogueFrameImageType": "Simple",
+    "preserveOriginalAlpha": true,
+    "layouts": {
+      "NPC_DIALOGUE": {
+        "portraitSide": "contextual-left-or-right",
+        "portraitHeightPercent": [
+          65,
+          80
+        ],
+        "bottomPanelHeightPercent": [
+          25,
+          34
+        ],
+        "nameFrom": "displayName",
+        "typewriterTextOptional": true,
+        "questionInput": "separate from npc response"
+      },
+      "INVESTIGATION": {
+        "visualFocus": "investigated 3d object",
+        "evidencePanel": true,
+        "showSource": true
+      },
+      "SUSPICION": {
+        "visualFocus": "npc close-up",
+        "statementClaimLabel": "NPC 주장",
+        "playerHypothesisLabel": "플레이어 가설",
+        "noCulpritIndicator": true
+      },
+      "CONFRONT": {
+        "visualFocus": "portrait close-up plus evidence and statement",
+        "successEffectOnlyAfterRuleGate": true
+      },
+      "ACCUSATION": {
+        "input": "Korean free text",
+        "requiresStructuredInterpretationConfirmation": true,
+        "judge": "deterministic"
+      }
+    }
+  },
+  "sceneStates": [
+    {
+      "id": "EXPLORE",
+      "playerAction": "choose room or inspect interactable",
+      "next": [
+        "INSPECT",
+        "DIALOGUE",
+        "RECONSTRUCT",
+        "ACCUSE"
+      ]
+    },
+    {
+      "id": "INSPECT",
+      "playerAction": "inspect and acquire validated evidence",
+      "next": [
+        "EXPLORE",
+        "DIALOGUE"
+      ]
+    },
+    {
+      "id": "DIALOGUE",
+      "playerAction": "type Korean free question, optional attach discovered evidence",
+      "next": [
+        "SUSPICION",
+        "CONFRONT",
+        "EXPLORE"
+      ]
+    },
+    {
+      "id": "SUSPICION",
+      "playerAction": "review npc statement and evidence without declaring guilt",
+      "next": [
+        "DIALOGUE",
+        "CONFRONT",
+        "RECONSTRUCT"
+      ]
+    },
+    {
+      "id": "CONFRONT",
+      "playerAction": "submit valid statementId and evidenceId",
+      "guard": "ConfrontationRules",
+      "next": [
+        "DIALOGUE",
+        "RECONSTRUCT",
+        "EXPLORE"
+      ]
+    },
+    {
+      "id": "RECONSTRUCT",
+      "playerAction": "link time/person/room/evidence",
+      "next": [
+        "EXPLORE",
+        "DIALOGUE",
+        "ACCUSE"
+      ]
+    },
+    {
+      "id": "ACCUSE",
+      "playerAction": "free text, parse, confirm, judge",
+      "guard": "AccusationResolver",
+      "next": [
+        "RESOLUTION",
+        "ACCUSE"
+      ]
+    },
+    {
+      "id": "RESOLUTION",
+      "playerAction": "view ending after resolved judgement",
+      "next": []
+    }
+  ],
+  "npcEmotionTags": [
+    "neutral",
+    "smile",
+    "surprise",
+    "worried",
+    "angry",
+    "serious"
+  ],
+  "npcAnimationTags": [
+    "idle",
+    "talk",
+    "gesture",
+    "react"
+  ],
+  "security": {
+    "notAuthorizedToAlterCaseTruth": [
+      "UI",
+      "NPCDialogueSelectorAI",
+      "TextMeshPro",
+      "CinematicScenePresenter"
+    ],
+    "lieOutputAllowedIf": "speakerNpcId == caseTruth.culpritNpcId AND approved evidence-backed false line",
+    "confrontationSuccessRequires": [
+      "statementId",
+      "evidenceId",
+      "caseState"
+    ],
+    "cannotAutoUnlockUnseenEvidence": true,
+    "unvalidatedPrototypeLinesNotSelectable": true,
+    "noAnswerLeakInSuspicionOrAnimations": true
+  },
+  "integrationStatus": {
+    "githubDataPresentAfterRestore": true,
+    "unityProjectOnMain": false,
+    "unitySceneOrPrefabConnected": false,
+    "unityLocalEditorAccessibleFromThisSession": false,
+    "playModeOrFunctionalTestPerformed": false,
+    "buildPerformed": false
+  }
+}
