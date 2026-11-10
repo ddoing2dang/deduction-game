@@ -285,15 +285,36 @@ namespace Mystery.UI
             return true;
         }
 
+        public void ReflowHistory()
+        {
+            RefreshHistory();
+        }
+
         private void RefreshHistory()
         {
             if (historyText == null) return;
             var result = new StringBuilder();
             if (histories.TryGetValue(CurrentContext, out var entries))
-                foreach (var entry in entries) result.Append(entry.who).Append(" · ").AppendLine(entry.text);
-            historyText.text = result.Length == 0 ? "아직 대화 기록이 없습니다." : result.ToString();
-            if (Application.IsPlaying(gameObject) && historyScroll != null)
-            { Canvas.ForceUpdateCanvases(); historyScroll.verticalNormalizedPosition = 0; }
+                foreach (var entry in entries)
+                    result.Append(entry.who).Append(" · ").AppendLine(entry.text);
+            historyText.text = result.Length == 0
+                ? "아직 대화 기록이 없습니다." : result.ToString();
+
+            if (!Application.IsPlaying(gameObject) || historyScroll == null) return;
+            // Keep all messages scrollable instead of squeezing long transcripts
+            // into the fixed-height log panel.
+            var content = historyScroll.content;
+            if (content != null)
+            {
+                float width = Mathf.Max(120f, historyText.rectTransform.rect.width);
+                var preferred = historyText.GetPreferredValues(historyText.text, width, 32768f);
+                float viewportHeight = historyScroll.viewport != null
+                    ? historyScroll.viewport.rect.height : 180f;
+                content.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,
+                    Mathf.Max(viewportHeight, preferred.y + 20f));
+            }
+            Canvas.ForceUpdateCanvases();
+            historyScroll.verticalNormalizedPosition = 0f;
         }
     }
 }
