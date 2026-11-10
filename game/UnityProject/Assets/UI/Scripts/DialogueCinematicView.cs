@@ -50,6 +50,7 @@ namespace Mystery.UI
             visibility = GetComponent<CanvasGroup>();
             if (visibility == null) visibility = gameObject.AddComponent<CanvasGroup>();
             dialogue.UseExternalPortraits = true;
+            dialogue.ApplyPresentation();
 
             BuildBackdrop();
             BuildPortraits();
@@ -65,7 +66,11 @@ namespace Mystery.UI
         {
             if (captureRoutine != null) StopCoroutine(captureRoutine);
             captureRoutine = null;
-            if (dialogue != null) dialogue.UseExternalPortraits = false;
+            if (dialogue != null)
+            {
+                dialogue.UseExternalPortraits = false;
+                dialogue.ApplyPresentation();
+            }
             DisposeMapCapture();
             if (Application.IsPlaying(gameObject))
             {

@@ -1,3 +1,18 @@
+## 2026-11-10 · 시네마틱 대화창 컴파일 오류 수정
+
+커밋 `6d1c929`의 `DialogueCinematicView.cs`가 참조하는 공개 API를 이전 커밋의 `DialoguePanel.cs`에 병합하는 과정에서 누락한 문제를 수정했습니다. `UseExternalPortraits`, `GetPortraitFor`, `SpeakerNameLabel`, `NpcDialogueLabel`, `HistoryLabel`, `HistoryHeadingLabel`, `StatusLabel`, `InputField`를 명시적으로 복구했습니다. **GitHub 코드 자체의 불일치 문제였으며 로컬 동기화 오류가 아니었습니다.**
+
+- 큰 NPC 일러스트 활성화 시 기존 작은 프레임 내 초상화는 숨기고, 시네마틱 해제 시 원래 표시 방식을 복구하도록 수정
+- `Mystery > Verification > Inspect Current Project (Edit Mode)`에 **현재 열린 씬의 Missing Script가 붙은 정확한 오브젝트 경로**를 출력하는 읽기 전용 검사 추가
+- 기존 `DialoguePreview.unity`, 프리팹 원본·폰트·NPC PNG·사건 JSON은 건드리지 않음
+- `Scene` Missing Script 1개는 **컴파일 오류 때문에 발생한 현상일 가능성도 있으나, 실제 로컬 Unity 재검사 전에는 원인 미확정**. 씬의 컴포넌트를 추정해서 삭제하지 않음
+- 실제 맵 씬이 GitHub 프로젝트에 없으므로 **월드 배경 블러는 실제 맵에서 아직 검증 불가**
+- 원격에 코드 수정만 했으며 로컬 컴파일/Play Mode/스크린샷/빌드는 진행하지 않음. 이전 승인되지 않은 사건의 `approved: false` 유지
+
+**다음 검증:** 이번 두 C# 파일 + 검증 도구 1개만 로컬에 동기화 → Unity Edit Mode 컴파일 오류·경고 확인 → Missing Script 진단 결과 확인 → 오류가 없다면 (사용자 승인한 조건에 따라) Play Mode 최대 1회로 대화 UI 화면 캡처. 맵이 여전히 없으면 그 사실과 배경 블러 미검증을 보고할 것.
+
+---
+
 ## 2026-11-10 · 대화 화면 시네마틱 배치 개편
 
 기존 맵을 대화 시작 순간 캡처해 흐릿하게 뒤에 두고, **플레이어 일러스트(좌) / NPC 원본 일러스트(우) / 하단 대화창 / 상단 중앙 기록창** 형태로 UI를 개편했습니다. TMP 텍스트 8곳의 자동 크기 조절과 대화 기록 스크롤을 보강했습니다. [설계 및 1회 테스트 가이드](Docs/CinematicDialogueLayout.md).

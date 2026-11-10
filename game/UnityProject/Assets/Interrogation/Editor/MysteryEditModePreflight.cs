@@ -9,6 +9,7 @@ using Mystery.UI;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Mystery.Interrogation.Editor
@@ -88,10 +89,44 @@ namespace Mystery.Interrogation.Editor
             if (prefab == null) { audit.Publish(); return; }
 
             CheckComponents(prefab, audit);
+            CheckOpenSceneMissingScripts(audit);
             CheckDialogueReferences(prefab, audit);
             CheckPortraits(prefab, audit);
             CheckCases(prefab, audit);
             audit.Publish();
+        }
+
+        private static void CheckOpenSceneMissingScripts(Audit audit)
+        {
+            var scene = SceneManager.GetActiveScene();
+            if (!scene.IsValid() || !scene.isLoaded)
+            {
+                audit.Note("현재 열려 있는 씬이 없어 Missing Script 검사는 건너뜀");
+                return;
+            }
+
+            int count = 0;
+            foreach (var root in scene.GetRootGameObjects())
+            {
+                foreach (var current in root.GetComponentsInChildren<Transform>(true))
+                {
+                    foreach (var behaviour in current.GetComponents<MonoBehaviour>())
+                    {
+                        if (behaviour != null) continue;
+                        count++;
+                        var path = current.name;
+                        var parent = current.parent;
+                        while (parent != null)
+                        {
+                            path = parent.name + "/" + path;
+                            parent = parent.parent;
+                        }
+                        audit.Note("Missing Script가 있는 씬 오브젝트: " + path);
+                    }
+                }
+            }
+            audit.Check(count == 0,
+                scene.name + " 열린 씬 Missing Script " + count + "개");
         }
 
         private static void CheckComponents(GameObject prefab, Audit audit)

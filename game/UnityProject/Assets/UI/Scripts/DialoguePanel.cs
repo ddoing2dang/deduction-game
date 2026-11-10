@@ -81,6 +81,26 @@ namespace Mystery.UI
         public DialogueTheme Theme { get => theme; set { theme = value; ApplyPresentation(); } }
         public DialogueSpeaker Speaker { get => speaker; set { speaker = value; ApplyPresentation(); } }
 
+        // The cinematic presenter reads existing serialized UI references,
+        // without changing any NPC sprite, font or original dialogue frame.
+        public TMP_Text SpeakerNameLabel => speakerName;
+        public TMP_Text NpcDialogueLabel => dialogueBody;
+        public TMP_Text HistoryLabel => historyText;
+        public TMP_Text HistoryHeadingLabel =>
+            transform.Find("HistoryTitle")?.GetComponent<TMP_Text>();
+        public TMP_Text StatusLabel => statusText;
+        public TMP_InputField InputField => questionInput;
+
+        public bool UseExternalPortraits { get; set; }
+
+        public Sprite GetPortraitFor(DialogueSpeaker target)
+        {
+            if (speakerPortraits == null) return null;
+            foreach (var item in speakerPortraits)
+                if (item.speaker == target) return item.portrait;
+            return null;
+        }
+
         private void OnEnable()
         {
             if (Application.IsPlaying(gameObject))
@@ -163,10 +183,13 @@ namespace Mystery.UI
             npcPortrait.sprite = selected;
             npcPortrait.preserveAspect = true;
             npcPortrait.raycastTarget = false;
-            npcPortrait.enabled = selected != null;
+            npcPortrait.enabled = selected != null && !UseExternalPortraits;
 
-            // Reserve dialogue-body space only when an actual portrait has been assigned.
-            // With no portrait, preserve the exact established theme-frame layout.
+            // Cinematic mode handles text layout and portraits separately.
+            // Switching NPCs must not undo its responsive layout.
+            if (UseExternalPortraits) return;
+
+            // Legacy layout remains available when cinematic mode is disabled.
             var rect = dialogueBody.rectTransform;
             rect.anchoredPosition = selected != null ? new Vector2(-105, -38) : new Vector2(0, -38);
             rect.sizeDelta = selected != null ? new Vector2(1320, 224) : new Vector2(1560, 224);
