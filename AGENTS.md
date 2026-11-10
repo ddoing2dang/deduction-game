@@ -5,6 +5,7 @@
 - 맵 가이드: `UNITY_MAP_MASTERPLAN_20261110.md`, 안전 복제 스크립트 `tools/windows/Connect-Case464Unity.ps1`, read-only 체크 `tools/windows/Check-Case464Readiness.ps1`, 에디터 도구 `tools/unity/Case464MapWorkshop.cs`.
 - 사용자가 실행 중인 Windows Unity Editor에 이 GitHub MCP 도구만으로 접근 가능한 것으로 가장하지 마라. 로컬 Unity MCP의 실제 에디터 인스턴스/클라이언트 핸드셰이크를 확인하기 전에는 로컬 연결/컴파일/시각 검증을 '완료'로 보고하지 않는다.
 - 원본 Unity 프로젝트/현재 씬/에셋/메타파일은 절대 삭제/덮어쓰지 않는다. 필요 시 새 GitHub 복제 작업 폴더 `game/UnityProject`로 비파괴 복사. 기존 `git reset --hard`, `git clean -fd`, 강제 push 금지.
+- **2026-11-10 사용자 이미지 확정: 지붕 없는 고각 3D 컷어웨이 디오라마** — 카메라 기본 고도각 60°(비교 후보 55°/65°), 검은 바깥 배경, 실제 두께를 가진 벽·가구·소품·PBR 조명. 테마마다 전체맵→층별→방 포커스→조사 클로즈업. 기준 문서 `art/Environment/CUTAWAY_DIORAMA_MAP_REFERENCE_20261110.md`, 설정 `game/maps/cutaway_camera_presentation.v1.json`. 참고 TV 스틸·자막·세트 복제 금지. 3테마 × 8개 조사 공간 유지.
 - **프리미엄 3D 쿼터뷰 품질 게이트:** 206개 CC0 모델은 제작 원재료이지 최종 퀄리티가 아니다. 큐브/저폴리/빈 재질을 완성맵 대체물로 사용하거나 같은 방을 색만 바꿔 24개 만드는 것 금지. 처음 HOTEL 로비 1개 아트 승인 이후 나머지를 진행. 모델/텍스처/프로젝트 연결 준비물이 없으면 중단하고 설치/제공 목록을 안내.
 - **반복 오류 2회면 즉시 중단**. 재시도 남발/임시 우회 금지. 원문 오류, 시도 2회, 마지막 성공 SHA, 필요한 준비물·사용자 단계·정확한 재개 명령을 작업상태 문서에 기록. 동일 실패 원인으로 억지로 계속하지 않는다.
 - 새 게임 8개 방/테마, 흉기 개인실 규칙, 6 NPC 심문/범인만 거짓말/사전 승인 대사/3축 고발 등 기존 룰 변경 금지.
