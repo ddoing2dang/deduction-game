@@ -36,6 +36,9 @@ namespace Case464.MapWorkshop
         public bool artDirectorApproved;
         public string artApprovalReference;
         public Vector3 cameraTarget = new Vector3(0, 1.4f, 0);
+        [Range(45f, 75f)] public float cameraElevationDegrees = 60f; // Reference style: high-angle cutaway
+        [Range(0f, 360f)] public float cameraAzimuthDegrees = 225f;
+        public float cameraDistance = 20f; // Orthographic perspective; distance controls clipping, not scale.
         public float cameraOrthoSize = 7;
         public List<ApprovedPlacement> placements = new List<ApprovedPlacement>();
     }
@@ -189,6 +192,12 @@ namespace Case464.MapWorkshop
             if (details < 3) errors.Add("at least three close-up detail placements required");
             if (prefabGuids.Count < 5) errors.Add("insufficient unique art assets (five minimum)");
             if (b.cameraOrthoSize < 1) errors.Add("cameraOrthoSize must be positive");
+            if (b.cameraElevationDegrees < 45f || b.cameraElevationDegrees > 75f)
+                errors.Add("cameraElevationDegrees must be between 45 and 75");
+            if (b.cameraAzimuthDegrees < 0f || b.cameraAzimuthDegrees > 360f)
+                errors.Add("cameraAzimuthDegrees must be between 0 and 360");
+            if (b.cameraDistance <= 1f)
+                errors.Add("cameraDistance must be positive and provide clipping clearance");
             warnings.Add("Geometry beauty, PBR realism, UVs, texel density, occlusion, lighting and composition require human visual review.");
             if (verbose || errors.Count > 0)
             {
@@ -240,7 +249,16 @@ namespace Case464.MapWorkshop
             cam.orthographicSize = b.cameraOrthoSize;
             cam.nearClipPlane = 0.05f;
             cam.farClipPlane = 250f;
-            cameraObject.transform.position = b.cameraTarget + new Vector3(-13f, 12f, -13f);
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = new Color(0.012f, 0.012f, 0.017f, 1f);
+            float elevation = b.cameraElevationDegrees * Mathf.Deg2Rad;
+            float azimuth = b.cameraAzimuthDegrees * Mathf.Deg2Rad;
+            float horizontalDistance = b.cameraDistance * Mathf.Cos(elevation);
+            Vector3 offset = new Vector3(
+                Mathf.Sin(azimuth) * horizontalDistance,
+                Mathf.Sin(elevation) * b.cameraDistance,
+                Mathf.Cos(azimuth) * horizontalDistance);
+            cameraObject.transform.position = b.cameraTarget + offset;
             cameraObject.transform.LookAt(b.cameraTarget);
 
             if (!EditorSceneManager.SaveScene(scene, path))
