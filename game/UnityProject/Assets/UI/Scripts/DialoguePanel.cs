@@ -77,6 +77,13 @@ namespace Mystery.UI
         private bool presentationDirty;
         private DialogueSpeaker lastSpeaker;
         private DialogueTheme lastTheme;
+        // The player question stays visible briefly before the synchronous
+        // rule-based adapter's reply is revealed. This makes BOTH turns visible.
+        private bool hasQueuedReply;
+        private string queuedWho;
+        private string queuedText;
+        private float revealAt;
+        private ContextKey queuedContext;
 
         public DialogueTheme Theme { get => theme; set { theme = value; ApplyPresentation(); } }
         public DialogueSpeaker Speaker { get => speaker; set { speaker = value; ApplyPresentation(); } }
@@ -118,9 +125,14 @@ namespace Mystery.UI
         private void OnValidate() => presentationDirty = true;
         private void Update()
         {
-            if (!presentationDirty) return;
-            presentationDirty = false;
-            ApplyPresentation();
+            if (presentationDirty)
+            {
+                presentationDirty = false;
+                ApplyPresentation();
+            }
+            if (Application.IsPlaying(gameObject) && hasQueuedReply
+                && Time.unscaledTime >= revealAt)
+                RevealQueuedReply();
         }
 
         public void ApplyPresentation()
@@ -135,14 +147,31 @@ namespace Mystery.UI
             frame.type = Image.Type.Simple;
             frame.color = Color.white;
             frame.preserveAspect = true;
-            speakerName.text = speaker.ToString();
             RefreshPortrait();
             bool playing = Application.IsPlaying(gameObject);
-            dialogueBody.text = playing
-                ? (latestReplies.TryGetValue(CurrentContext, out var reply) ? reply : "")
-                : previewText;
-            if ((lastSpeaker != speaker || lastTheme != theme) && questionInput != null)
-                questionInput.SetTextWithoutNotify("");
+            bool contextChanged = lastSpeaker != speaker || lastTheme != theme;
+            if (contextChanged)
+            {
+                hasQueuedReply = false;
+                if (questionInput != null)
+                    questionInput.SetTextWithoutNotify("");
+            }
+
+            if (!playing)
+                SetCurrentLine(speaker.ToString(), previewText);
+            else if (hasQueuedReply && queuedContext.Equals(CurrentContext))
+            {
+                // Keep the player's last question visible until its reply's turn.
+                if (histories.TryGetValue(CurrentContext, out var pending)
+                    && pending.Count >= 2)
+                    SetCurrentLine(pending[pending.Count - 2].who,
+                        pending[pending.Count - 2].text);
+                else
+                    ShowLastLine();
+            }
+            else
+                ShowLastLine();
+
             lastSpeaker = speaker;
             lastTheme = theme;
             RefreshHistory();
@@ -195,6 +224,50 @@ namespace Mystery.UI
             rect.sizeDelta = selected != null ? new Vector2(1320, 224) : new Vector2(1560, 224);
         }
 
+        private void SetCurrentLine(string who, string line)
+        {
+            if (speakerName != null) speakerName.text = who ?? "";
+            if (dialogueBody != null) dialogueBody.text = line ?? "";
+        }
+
+        private void ShowLastLine()
+        {
+            if (histories.TryGetValue(CurrentContext, out var entries)
+                && entries.Count > 0)
+            {
+                var last = entries[entries.Count - 1];
+                SetCurrentLine(last.who, last.text);
+            }
+            else if (latestReplies.TryGetValue(CurrentContext, out var lastReply))
+                SetCurrentLine(speaker.ToString(), lastReply);
+            else
+                SetCurrentLine(speaker.ToString(), "");
+        }
+
+        private void QueueOrShowReply(string who, string line)
+        {
+            if (hasQueuedReply && queuedContext.Equals(CurrentContext))
+            {
+                queuedWho = who;
+                queuedText = line;
+                // Preserve the player's full line for at least a moment
+                // even when the adapter answers within the same frame.
+                revealAt = Mathf.Max(revealAt, Time.unscaledTime + 0.8f);
+            }
+            else
+                SetCurrentLine(who, line);
+        }
+
+        private void RevealQueuedReply()
+        {
+            if (!hasQueuedReply) return;
+            hasQueuedReply = false;
+            if (queuedContext.Equals(CurrentContext) && !string.IsNullOrEmpty(queuedWho))
+                SetCurrentLine(queuedWho, queuedText);
+            // If no adapter answered, leave the player's question on screen.
+            queuedWho = queuedText = null;
+        }
+
         private void OnInputSubmit(string _) => SubmitQuestion();
         public void SubmitQuestion()
         {
@@ -203,9 +276,14 @@ namespace Mystery.UI
             if (input != null && !string.IsNullOrEmpty(input.compositionString)) return;
             string question = questionInput.text.Trim();
             if (question.Length == 0) return;
+            hasQueuedReply = true;
+            queuedContext = CurrentContext;
+            queuedWho = queuedText = null;
+            revealAt = Time.unscaledTime + 0.8f;
+            SetCurrentLine("탐정", question);
             AddEntry("탐정", question);
             questionInput.SetTextWithoutNotify("");
-            statusText.text = "질문을 기록했습니다.";
+            if (statusText != null) statusText.text = "질문을 기록했습니다.";
             questionSubmitted.Invoke(question);
             questionInput.ActivateInputField();
         }
@@ -215,17 +293,19 @@ namespace Mystery.UI
         {
             if (!Application.IsPlaying(gameObject) || string.IsNullOrWhiteSpace(approvedText)) return;
             latestReplies[CurrentContext] = approvedText;
-            dialogueBody.text = approvedText;
             if (statusText != null) statusText.text = "";
             AddEntry(speaker.ToString(), approvedText);
+            QueueOrShowReply(speaker.ToString(), approvedText);
         }
 
         // For unapproved/missing case data: never impersonate an NPC.
         public void ShowInterrogationNotice(string notice)
         {
             if (!Application.IsPlaying(gameObject) || string.IsNullOrWhiteSpace(notice)) return;
+            string message = notice.Trim();
             if (statusText != null) statusText.text = "승인된 진술 없음 · 대화 기록을 확인하세요.";
-            AddEntry("안내", notice.Trim());
+            AddEntry("안내", message);
+            QueueOrShowReply("안내", message);
         }
 
         private void AddEntry(string who, string text)
@@ -303,6 +383,8 @@ namespace Mystery.UI
                 if (!string.IsNullOrEmpty(thread.latestReply))
                     latestReplies[key] = thread.latestReply;
             }
+            hasQueuedReply = false;
+            queuedWho = queuedText = null;
             if (theme == target) ApplyPresentation();
             DialogueChanged?.Invoke();
             return true;

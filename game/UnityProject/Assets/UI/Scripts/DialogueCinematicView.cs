@@ -236,15 +236,17 @@ namespace Mystery.UI
                 {
                     var rect = nameLabel.rectTransform;
                     rect.anchorMin = rect.anchorMax = new Vector2(.5f, .5f);
-                    rect.anchoredPosition = new Vector2(510, 151);
-                    rect.sizeDelta = new Vector2(510, 68);
+                    // Nameplate stays on the LEFT, below the portrait edges.
+                    rect.anchoredPosition = new Vector2(-590, 125);
+                    rect.sizeDelta = new Vector2(400, 54);
                 }
                 if (textLabel != null)
                 {
                     var rect = textLabel.rectTransform;
                     rect.anchorMin = rect.anchorMax = new Vector2(.5f, .5f);
-                    rect.anchoredPosition = new Vector2(0, -22);
-                    rect.sizeDelta = new Vector2(1500, 255);
+                    // Dialogue text sits between the nameplate and input row.
+                    rect.anchoredPosition = Vector2.zero;
+                    rect.sizeDelta = new Vector2(1500, 220);
                 }
             }
 
@@ -283,13 +285,15 @@ namespace Mystery.UI
                 if (bar != null) SetAnchored(bar, new Vector2(364, 0), new Vector2(12, 180));
             }
 
-            // Keep question input across the lower edge, inside its original panel.
+            // A clear separation from the decorative lower frame border:
+            // text ends near y=190, status occupies y=162–186,
+            // and the question row occupies y=80–150.
             SetAnchored(transform.Find("QuestionInput") as RectTransform,
-                new Vector2(-105, 65), new Vector2(1538, 70));
+                new Vector2(-105, 115), new Vector2(1538, 70));
             SetAnchored(transform.Find("SendButton") as RectTransform,
-                new Vector2(790, 65), new Vector2(180, 70));
+                new Vector2(790, 115), new Vector2(180, 70));
             SetAnchored(transform.Find("Status") as RectTransform,
-                new Vector2(0, 123), new Vector2(1500, 34));
+                new Vector2(0, 174), new Vector2(1500, 24));
 
             if (playerImage != null)
                 SetAnchored(playerImage.rectTransform, new Vector2(-560, 690),

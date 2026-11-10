@@ -1,3 +1,11 @@
+## 2026-11-10 · 대화 화자·대사 턴별 갱신 및 UI 겹침 수정
+
+플레이어 질문 전송 시 이름표와 본문이 **'탐정' / 실제 질문**으로 바뀌고, NPC 답변 시 **NPC 이름 / 해당 NPC 답변**으로 변경되도록 처리했습니다. 미승인 사건은 '안내' 화자로 표시합니다. 왼쪽 이름표/대사 본문/질문 입력줄 위치를 정리해 이전 Game 화면의 이름표 오른쪽 쏠림과 프레임 하단 테두리 겹침을 수정했습니다. [구현 및 1회 검증 가이드](Docs/DialogueTurnAndLayoutFix.md).
+
+**로컬 Unity Play Mode 1회 및 실화면 캡처는 아직 수행하지 않았습니다.** 원본 초상화·폰트·사건 JSON은 유지합니다.
+
+---
+
 ## 2026-11-10 · 시네마틱 대화창 컴파일 오류 수정
 
 커밋 `6d1c929`의 `DialogueCinematicView.cs`가 참조하는 공개 API를 이전 커밋의 `DialoguePanel.cs`에 병합하는 과정에서 누락한 문제를 수정했습니다. `UseExternalPortraits`, `GetPortraitFor`, `SpeakerNameLabel`, `NpcDialogueLabel`, `HistoryLabel`, `HistoryHeadingLabel`, `StatusLabel`, `InputField`를 명시적으로 복구했습니다. **GitHub 코드 자체의 불일치 문제였으며 로컬 동기화 오류가 아니었습니다.**
