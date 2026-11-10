@@ -28,6 +28,8 @@
 - [3테마 8방](MAPS.md)
 - [3테마 원본 대화창](art/UI/DialogueFrames/ThemeDialogue_v1/README.md)
 - [24개 공간 시각 차별화 자료](art/Environment/ROOM_DISTINCTION_24.md)
+- [2026-11-10 사용자 참고 이미지 반영: 지붕 없는 3D 컷어웨이 디오라마 맵](art/Environment/CUTAWAY_DIORAMA_MAP_REFERENCE_20261110.md)
+- [고각 쿼터뷰 카메라·검은 스테이지·층별/방별 화면 설정](game/maps/cutaway_camera_presentation.v1.json)
 - [HOTEL 중앙 로비 첫 고품질 제작 브리프](art/Environment/HOTEL_H00_PREMIUM_BRIEF.md)
 - [Unity 신규 프로젝트 재시작 안내](game/UNITY_RESTART_GUIDE.md)
 
