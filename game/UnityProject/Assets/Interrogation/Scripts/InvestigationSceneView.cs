@@ -151,6 +151,7 @@ namespace Mystery.Interrogation
                 new Vector2(.5f, .5f), new Vector2(.5f, .5f));
             var label = rect.gameObject.AddComponent<TextMeshProUGUI>();
             label.font = (heading ? headingFont : regularFont) ?? TMP_Settings.defaultFontAsset;
+            label.fontStyle = FontStyles.Bold;
             label.color = heading ? Foreground : Muted;
             label.fontSize = fontSize;
             label.alignment = TextAlignmentOptions.Center;

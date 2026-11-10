@@ -225,7 +225,7 @@ namespace Mystery.UI
             if (frame != null)
             {
                 // The original 2048:682 theme frame stays at native aspect ratio.
-                SetAnchored(frame, new Vector2(0, 300), new Vector2(1800, 599.414f));
+                SetAnchored(frame, new Vector2(0, 370), new Vector2(1800, 599.414f));
             }
             if (dialogue != null)
             {
@@ -237,16 +237,16 @@ namespace Mystery.UI
                     var rect = nameLabel.rectTransform;
                     rect.anchorMin = rect.anchorMax = new Vector2(.5f, .5f);
                     // Nameplate stays on the LEFT, below the portrait edges.
-                    rect.anchoredPosition = new Vector2(-590, 125);
-                    rect.sizeDelta = new Vector2(400, 54);
+                    rect.anchoredPosition = new Vector2(-615, 164);
+                    rect.sizeDelta = new Vector2(405, 74);
                 }
                 if (textLabel != null)
                 {
                     var rect = textLabel.rectTransform;
                     rect.anchorMin = rect.anchorMax = new Vector2(.5f, .5f);
                     // Dialogue text sits between the nameplate and input row.
-                    rect.anchoredPosition = Vector2.zero;
-                    rect.sizeDelta = new Vector2(1500, 220);
+                    rect.anchoredPosition = new Vector2(0, -10);
+                    rect.sizeDelta = new Vector2(1480, 210);
                 }
             }
 
@@ -285,22 +285,35 @@ namespace Mystery.UI
                 if (bar != null) SetAnchored(bar, new Vector2(364, 0), new Vector2(12, 180));
             }
 
-            // A clear separation from the decorative lower frame border:
-            // text ends near y=190, status occupies y=162–186,
-            // and the question row occupies y=80–150.
+            // Frame bottom is y~=70. The question row is BELOW it (y=8..62):
+            // neither the placeholder nor the send button covers its gold trim.
             SetAnchored(transform.Find("QuestionInput") as RectTransform,
-                new Vector2(-105, 115), new Vector2(1538, 70));
+                new Vector2(-105, 35), new Vector2(1538, 54));
             SetAnchored(transform.Find("SendButton") as RectTransform,
-                new Vector2(790, 115), new Vector2(180, 70));
+                new Vector2(790, 35), new Vector2(180, 54));
+            // Center the text and placeholder inside the shortened input.
+            var inputRoot = transform.Find("QuestionInput");
+            var textArea = inputRoot != null ? inputRoot.Find("Text Area") as RectTransform : null;
+            if (textArea != null)
+            {
+                textArea.sizeDelta = new Vector2(1492, 46);
+                foreach (string childName in new[] { "Text", "Placeholder" })
+                {
+                    var child = textArea.Find(childName) as RectTransform;
+                    if (child != null) child.sizeDelta = new Vector2(1492, 46);
+                }
+            }
+            var sendLabel = transform.Find("SendButton/Label") as RectTransform;
+            if (sendLabel != null) sendLabel.sizeDelta = new Vector2(174, 44);
             SetAnchored(transform.Find("Status") as RectTransform,
-                new Vector2(0, 174), new Vector2(1500, 24));
+                new Vector2(0, 143), new Vector2(1500, 29));
 
             if (playerImage != null)
-                SetAnchored(playerImage.rectTransform, new Vector2(-560, 690),
-                    new Vector2(450, 470));
+                SetAnchored(playerImage.rectTransform, new Vector2(-555, 810),
+                    new Vector2(410, 430));
             if (npcImage != null)
-                SetAnchored(npcImage.rectTransform, new Vector2(560, 690),
-                    new Vector2(450, 470));
+                SetAnchored(npcImage.rectTransform, new Vector2(555, 810),
+                    new Vector2(410, 430));
             // Portraits visually overlap only the upper frame edge, not its text.
             // The history panel fits into the free space between both portraits.
             if (dialogue != null) dialogue.ReflowHistory();
@@ -309,8 +322,8 @@ namespace Mystery.UI
         private void ConfigureAdaptiveFonts()
         {
             if (dialogue == null) return;
-            Configure(dialogue.SpeakerNameLabel, 42, 22, 45);
-            Configure(dialogue.NpcDialogueLabel, 34, 18, 37);
+            Configure(dialogue.SpeakerNameLabel, 40, 23, 42);
+            Configure(dialogue.NpcDialogueLabel, 33, 18, 36);
             Configure(dialogue.HistoryLabel, 23, 16, 25);
             if (dialogue.HistoryLabel != null)
                 dialogue.HistoryLabel.overflowMode = TextOverflowModes.Overflow;
@@ -328,6 +341,7 @@ namespace Mystery.UI
         {
             if (label == null) return;
             label.enableAutoSizing = true;
+            label.fontStyle |= FontStyles.Bold;
             label.fontSize = preferred;
             label.fontSizeMin = min;
             label.fontSizeMax = max;

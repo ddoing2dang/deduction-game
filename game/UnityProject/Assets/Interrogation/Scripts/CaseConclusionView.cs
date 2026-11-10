@@ -92,6 +92,7 @@ namespace Mystery.Interrogation
                 new Vector2(.5f, .5f));
             var text = rect.gameObject.AddComponent<TextMeshProUGUI>();
             text.font = (heading ? headingFont : regularFont) ?? TMP_Settings.defaultFontAsset;
+            text.fontStyle = FontStyles.Bold;
             text.fontSize = fontSize;
             text.color = Light;
             text.textWrappingMode = TextWrappingModes.Normal;

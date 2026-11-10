@@ -285,6 +285,16 @@ namespace Mystery.UI
             questionInput.SetTextWithoutNotify("");
             if (statusText != null) statusText.text = "질문을 기록했습니다.";
             questionSubmitted.Invoke(question);
+            // The current interrogation resolver is synchronous. If no adapter
+            // handled this event, never leave the player's question stalled.
+            if (hasQueuedReply && string.IsNullOrEmpty(queuedWho))
+            {
+                var adapter = GetComponent<Mystery.Interrogation.DialogueInterrogationAdapter>();
+                if (adapter == null || !adapter.CaseReady)
+                    ShowInterrogationNotice("사건 설정이 아직 확정되지 않아 진술을 제공할 수 없습니다.");
+                else
+                    ShowInterrogationNotice("응답 연결이 확인되지 않았습니다. 심문 설정을 점검해 주세요.");
+            }
             questionInput.ActivateInputField();
         }
 
