@@ -9,6 +9,14 @@
 - 자유 한국어 질문 → **AI는 사전 검수된 대사만 선택**, 거짓 정보는 해당 판 범인만 진술 가능.
 - 최종 고발은 **범인·범행수법·흉기**를 한국어 문장으로 직접 제출. 범행 장소는 채점하지 않음.
 
+## 현재 Unity 고품질 맵 작업
+- [Unity·GitHub·MCP 연결 + 프리미엄 3D 쿼터뷰 제작 전체 가이드](UNITY_MAP_MASTERPLAN_20261110.md)
+- [Windows Unity 비파괴 GitHub 연결 스크립트](tools/windows/Connect-Case464Unity.ps1)
+- [Windows Unity/GitHub 로컬 준비 상태 읽기 전용 검사](tools/windows/Check-Case464Readiness.ps1)
+- [Unity 에디터 고품질 맵 워크숍 소스](tools/unity/Case464MapWorkshop.cs)
+- **현재 GitHub에서 도구 소스와 가이드만 저장. 사용자 PC에서 열린 Unity에 MCP 연결 또는 해당 스크립트 적용은 아직 확인되지 않음.**
+- 동일 오류 2회 반복 시 중단·준비물 요청·마지막 성공 지점 기록을 최우선으로 함.
+
 ## 현재 주요 문서
 - [게임 최상위 확정 규칙](GAME_RULES.md)
 - [시네마틱 대화·조사·의심·추궁 장면 설계 (2026-11-10)](UI_CINEMATIC_PRESENTATION_20261110.md)
