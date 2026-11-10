@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "사건파일 No.464",
+  "authoredAt": "2026-11-10",
+  "status": "ART_AND_CAMERA_CONTRACT_ONLY_UNITY_NOT_CONNECTED",
+  "referencePolicy": "Reference the user-provided images for high-angle cutaway diorama composition only; do not copy sets, graphics, logos, labels, textures, or props.",
+  "rendering": {
+    "pipeline": "URP",
+    "background": {
+      "mode": "SolidColor",
+      "colorRGBA": [
+        0.012,
+        0.012,
+        0.017,
+        1
+      ],
+      "rule": "Dark outer stage only; interiors remain naturally lit"
+    },
+    "camera": {
+      "projection": "Orthographic",
+      "defaultElevationDeg": 60,
+      "comparisonElevationsDeg": [
+        55,
+        60,
+        65
+      ],
+      "initialAzimuthDeg": 225,
+      "orthographicSize": "per-scene-reviewed"
+    },
+    "geometry": {
+      "roof": "hidden in overview",
+      "frontWalls": "selectively cut away based on camera, not deleted from real scene",
+      "rearAndSideWalls": "retain actual thickness, details, windows, and doors"
+    },
+    "roomLabels": "only on map inspection, hover or selected room",
+    "roomSelectionHighlight": "subtle selection outline, no culprit implication",
+    "quality": "approved authored architecture, PBR materials, unique props, real lighting, actual camera closeup review; 206 CC0 source models are not preapproved finished art"
+  },
+  "cameraStates": [
+    {
+      "id": "WORLD_OVERVIEW",
+      "projection": "Orthographic",
+      "startingElevationDeg": 60,
+      "focus": "complete theme map",
+      "roofHidden": true,
+      "frontWallsCutaway": true
+    },
+    {
+      "id": "FLOOR_OVERVIEW",
+      "projection": "Orthographic",
+      "startingElevationDeg": 60,
+      "focus": "selected floor or exploded side-by-side level display",
+      "topologyUnchanged": true
+    },
+    {
+      "id": "ROOM_FOCUS",
+      "projection": "Orthographic",
+      "startingElevationDeg": 55,
+      "allowedRangeDeg": [
+        50,
+        65
+      ],
+      "focus": "selected validated game roomId",
+      "unseenEvidenceHighlight": false
+    },
+    {
+      "id": "OBJECT_INSPECT",
+      "projection": "PerspectiveOrOrthographic",
+      "focus": "known interactable under approved evidence rules"
+    },
+    {
+      "id": "NPC_DIALOGUE",
+      "projection": "3D environment plus authored NPC portrait",
+      "dialoguePolicy": "approved lineId only"
+    },
+    {
+      "id": "CONFRONT",
+      "projection": "cinematic portrait plus evidence/statement panel",
+      "guard": "verified statementId and discovered evidenceId"
+    }
+  ],
+  "themes": {
+    "HOTEL": {
+      "investigableRooms": 8,
+      "levelRoomCounts": [
+        4,
+        4
+      ],
+      "overview": "1F + 2F optionally separated as exhibits",
+      "scene": "204",
+      "source": "HOTEL_LAYOUT.md"
+    },
+    "CRUISE": {
+      "investigableRooms": 8,
+      "levelRoomCounts": [
+        5,
+        3
+      ],
+      "overview": "long, split 3-deck + 4-deck vessel",
+      "scene": "403",
+      "source": "CRUISE_LAYOUT.md"
+    },
+    "MUSIC_BROADCAST": {
+      "investigableRooms": 8,
+      "levelRoomCounts": [
+        8
+      ],
+      "overview": "one U-shaped floor, common hall next to VIP-01",
+      "scene": "VIP-01",
+      "source": "MUSIC_BROADCAST_LAYOUT.md"
+    }
+  },
+  "approval": {
+    "noPrimitivesAsFinalArt": true,
+    "noLowPolyAsFinishedRooms": true,
+    "manualBeautyReviewRequired": true,
+    "firstRoom": "HOTEL_H00",
+    "gameplayId": "LOBBY",
+    "massDuplicate23OtherRooms": false
+  },
+  "implementation": {
+    "localUnityConnected": false,
+    "unitySceneCreated": false,
+    "cameraRendered": false,
+    "testOrBuildPerformed": false
+  }
+}
