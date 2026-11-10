@@ -28,6 +28,7 @@
 - [3테마 8방](MAPS.md)
 - [3테마 원본 대화창](art/UI/DialogueFrames/ThemeDialogue_v1/README.md)
 - [24개 공간 시각 차별화 자료](art/Environment/ROOM_DISTINCTION_24.md)
+- [HOTEL 중앙 로비 첫 고품질 제작 브리프](art/Environment/HOTEL_H00_PREMIUM_BRIEF.md)
 - [Unity 신규 프로젝트 재시작 안내](game/UNITY_RESTART_GUIDE.md)
 
 ## 이전 데이터와 백업
