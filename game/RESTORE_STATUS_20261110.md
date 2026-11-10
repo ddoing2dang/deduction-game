@@ -38,3 +38,13 @@
 - 우선 `HOTEL` 테마의 대화 장면 한 개를 새 프로젝트에 연결하고, 세 개 대화창 이미지/6 NPC 이름/승인된 대사 선택을 점진적으로 결합.
 - 심문 데이터는 `culprit_only_deception_policy` 및 `evidence_driven_dialogue_cases`의 승인을 거쳐 적용. AI가 즉흥적으로 사건 사실을 만들게 하지 않음.
 - 사용자 명시 요청 이전에는 Play Mode/테스트/새 EXE 배포 금지.
+
+
+## 2026-11-10 추가 — Unity 고품질 맵 도구/연결 작업
+- GitHub `main`에 `tools/windows/Connect-Case464Unity.ps1` 추가: 현재 Unity 프로젝트를 새 GitHub 작업 폴더로 **비파괴·기본 dry-run** 복사하도록 설계. 실제 PC에서 실행 안 함.
+- `tools/windows/Check-Case464Readiness.ps1` 추가: Git origin/로컬 Unity 설정/패키지/씬·메타/아트 준비 상태 확인용 **읽기 전용 도구**. 실행 안 함.
+- `tools/unity/Case464MapWorkshop.cs` 추가: 24개 미술 작업용 blueprint 자산 생성, 승인 프리팹 프리플라이트, 새 additive 리뷰 씬 생성용 C# Editor 도구. **현재 Unity에서 컴파일/실행하지 않아 미검증**.
+- `UNITY_MAP_MASTERPLAN_20261110.md` 추가: CoplayDev Unity MCP 설치, GitHub 연결, glTFast/ProBuilder/Blender, 고품질 쿼터뷰 PBR·조명·24방 제작 기준.
+- 사용자 PC의 **실제 열려 있는 Unity 프로젝트 루트 경로/Unity MCP 활성 연결/패키지/씬 화면**은 확인하지 못함. 준비물 확보·로컬 읽기 검사 완료 전에는 연결 성공 주장 금지.
+- 206개 기존 저폴리 CC0 에셋은 원본 그대로 보존. 고품질 완성 맵·24개 실제 Unity 씬은 아직 없음.
+- 반복 검증 실패 2회 시 중단·오류 기록·부족한 준비물 요청·복구 경로를 작성. Play Mode/EXE 빌드는 수행하지 않음.
