@@ -38,7 +38,7 @@
     {
       "sourceFolder": "NPC_Sprites/02_blonde",
       "npcId": "MARIHI",
-      "npcDisplayName": "마루희",
+      "npcDisplayName": "마혜인",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "assetPatterns": {
@@ -68,7 +68,7 @@
     {
       "sourceFolder": "NPC_Sprites/04_red",
       "npcId": "BOKI",
-      "npcDisplayName": "백보미",
+      "npcDisplayName": "김보희",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_BokHui",
       "assetPatterns": {
@@ -189,5 +189,5 @@
   "note": "User confirmed source-color->legacy-identity mappings. New Korean display names are assigned for UI use; old IDs/names are retained only as legacy references. Unity wiring and binary repo upload not yet performed.",
   "playerFacingNamesSource": "game/characters/npc_display_profiles.v1.json",
   "displayNamePolicy": "UI shows authored new Korean displayName; internal npcId/roomId/lineId and preserved original authored dialogue remain unchanged. Do not use deprecated names in new visible UI.",
-  "lastDisplayNameRevision": "2026-11-12: player-facing names updated in game/characters/npc_display_profiles.v1.json; sprite asset folder paths and internal IDs remain stable"
+  "lastDisplayNameRevision": "2026-11-12: finalized player-facing names MARIHI=마혜인 and BOKI=김보희 (others unchanged); sprite asset folder paths and internal IDs remain stable"
 }
