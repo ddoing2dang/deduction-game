@@ -71,7 +71,7 @@
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "103",
-              "displayName": "백보미의 방"
+              "displayName": "김보희의 방"
             }
           ]
         },
@@ -82,7 +82,7 @@
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "201",
-              "displayName": "마루희의 방"
+              "displayName": "마혜인의 방"
             },
             {
               "roomId": "ROOM_NAZ",
@@ -150,7 +150,7 @@
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "303",
-              "displayName": "백보미 선실",
+              "displayName": "김보희 선실",
               "location": "starboard_forward"
             },
             {
@@ -168,7 +168,7 @@
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "401",
-              "displayName": "마루희 선실",
+              "displayName": "마혜인 선실",
               "location": "upper_port"
             },
             {
@@ -363,7 +363,7 @@
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "A02",
-              "displayName": "마루희 대기실",
+              "displayName": "마혜인 대기실",
               "location": "left_middle"
             },
             {
@@ -387,7 +387,7 @@
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "B03",
-              "displayName": "백보미 대기실",
+              "displayName": "김보희 대기실",
               "location": "right_rear"
             },
             {
@@ -557,5 +557,5 @@
     "replacedTheme": "MUSEUM",
     "replacedThemePolicy": "Museum is not an active third theme; music broadcast is the third theme and uses a proposed single-floor U layout"
   },
-  "lastDisplayNameRevision": "2026-11-12 user-confirmed NPC player-facing names; roomId/displayNumber/topology unchanged"
+  "lastDisplayNameRevision": "2026-11-12 player-facing revision: 마혜인 and 김보희; roomId/displayNumber/topology unchanged"
 }
