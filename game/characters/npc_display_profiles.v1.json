@@ -11,83 +11,83 @@
     "dialogueLineIdMustRemainUnchanged": true,
     "doNotRewriteOriginal714Lines": true,
     "noVillainVisualCues": true,
-    "displayNameRevision": "2026-11-08 user-selected: MARIHI=마리예 BOKI=복희; other characters retain most recently selected names including 문이린"
+    "displayNameRevision": "2026-11-12 ChatGPT user-confirmed: MATTO=마도은, MARIHI=마루희, NAZ=나지수, BOKI=백보미, JJIRO=진서아, MOONIRE=문이현; legacy names and stable NPC IDs preserved"
   },
   "characters": [
     {
       "npcId": "MATTO",
-      "displayName": "마도아",
+      "displayName": "마도은",
       "legacyName": "마또",
       "hairColorKo": "은발",
       "sourceSpriteSlot": "01_silver",
       "assetFolder": "Assets/MattoMystery/Art/NPC/MATTO_MaDoa",
       "personalitySummary": "활발하고 엉뚱하지만 속마음을 쉽게 드러내지 않음",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     },
     {
       "npcId": "MARIHI",
-      "displayName": "마리예",
+      "displayName": "마루희",
       "legacyName": "마리히",
       "hairColorKo": "금발",
       "sourceSpriteSlot": "02_blonde",
       "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "personalitySummary": "문학과 상상을 좋아하는 명랑한 성격",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     },
     {
       "npcId": "NAZ",
-      "displayName": "나주아",
+      "displayName": "나지수",
       "legacyName": "나즈",
       "hairColorKo": "갈색",
       "sourceSpriteSlot": "03_brown",
       "assetFolder": "Assets/MattoMystery/Art/NPC/NAZ_NaJua",
       "personalitySummary": "포근하고 다정하면서도 기준이 분명함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     },
     {
       "npcId": "BOKI",
-      "displayName": "복희",
+      "displayName": "백보미",
       "legacyName": "보키",
       "hairColorKo": "빨강",
       "sourceSpriteSlot": "04_red",
       "assetFolder": "Assets/MattoMystery/Art/NPC/BOKI_BokHui",
       "personalitySummary": "소탈하고 친근하며 음식 취향이 독특함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     },
     {
       "npcId": "JJIRO",
-      "displayName": "지로아",
+      "displayName": "진서아",
       "legacyName": "찌로",
       "hairColorKo": "연두",
       "sourceSpriteSlot": "05_green",
       "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "personalitySummary": "털털하고 긍정적이며 사람을 배려함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     },
     {
       "npcId": "MOONIRE",
-      "displayName": "문이린",
+      "displayName": "문이현",
       "legacyName": "문이레",
       "hairColorKo": "보라",
       "sourceSpriteSlot": "06_purple",
       "assetFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrin",
       "personalitySummary": "조용하고 여리지만 자기 생각은 단단함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "phonetic Korean name redesign per user follow-up (2026-11-08)"
+      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
     }
   ],
   "lookupByNpcId": {
-    "MATTO": "마도아",
-    "MARIHI": "마리예",
-    "NAZ": "나주아",
-    "BOKI": "복희",
-    "JJIRO": "지로아",
-    "MOONIRE": "문이린"
+    "MATTO": "마도은",
+    "MARIHI": "마루희",
+    "NAZ": "나지수",
+    "BOKI": "백보미",
+    "JJIRO": "진서아",
+    "MOONIRE": "문이현"
   },
   "themes": [
     "HOTEL",
@@ -102,5 +102,6 @@
     "future localized UI"
   ],
   "roomIdAndDialogueSourcePolicy": "ROOM_MATTO, ROOM_JIRO etc. and source npcName strings in dialogue drafts are technical/legacy records; UI must resolve via this table and must not use legacy source npcName for final labels.",
-  "integrated": false
+  "integrated": false,
+  "lastRevisedAt": "2026-11-12"
 }
