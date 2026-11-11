@@ -9,6 +9,10 @@
 - 자유 한국어 질문 → **AI는 사전 검수된 대사만 선택**, 거짓 정보는 해당 판 범인만 진술 가능.
 - 최종 고발은 **범인·범행수법·흉기**를 한국어 문장으로 직접 제출. 범행 장소는 채점하지 않음.
 
+## 2026-11-12 대저택 8개 방 맵 제작 보고
+- 사용자가 8개 가구 완성형 실내 공간의 에디터 화면을 제공. [축소 미리보기](art/Environment/References/HOTEL_8ROOM_EDITOR_OVERVIEW_20261112.webp) 및 [다음 개발 작업표](game/MAP_PROGRESS_20261112.md)를 GitHub에 저장했다.
+- 맵 원본 Unity 씬·프리팹의 최신 업로드/플레이 동작은 이 스크린샷만으로 확인하지 않았다. 기존 8방, 최신 NPC 표시명, 싱글 플레이·랜덤 범인 규칙 유지.
+
 ## 현재 Unity 고품질 맵 작업
 - [Unity·GitHub·MCP 연결 + 프리미엄 3D 쿼터뷰 제작 전체 가이드](UNITY_MAP_MASTERPLAN_20261110.md)
 - [Windows Unity 비파괴 GitHub 연결 스크립트](tools/windows/Connect-Case464Unity.ps1)
