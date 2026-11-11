@@ -23,7 +23,7 @@
     {
       "sourceFolder": "NPC_Sprites/01_silver",
       "npcId": "MATTO",
-      "npcDisplayName": "마도아",
+      "npcDisplayName": "마도은",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MATTO_MaDoa",
       "assetPatterns": {
@@ -38,7 +38,7 @@
     {
       "sourceFolder": "NPC_Sprites/02_blonde",
       "npcId": "MARIHI",
-      "npcDisplayName": "마리예",
+      "npcDisplayName": "마루희",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "assetPatterns": {
@@ -53,7 +53,7 @@
     {
       "sourceFolder": "NPC_Sprites/03_brown",
       "npcId": "NAZ",
-      "npcDisplayName": "나주아",
+      "npcDisplayName": "나지수",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/NAZ_NaJua",
       "assetPatterns": {
@@ -68,7 +68,7 @@
     {
       "sourceFolder": "NPC_Sprites/04_red",
       "npcId": "BOKI",
-      "npcDisplayName": "복희",
+      "npcDisplayName": "백보미",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/BOKI_BokHui",
       "assetPatterns": {
@@ -83,7 +83,7 @@
     {
       "sourceFolder": "NPC_Sprites/05_green",
       "npcId": "JJIRO",
-      "npcDisplayName": "지로아",
+      "npcDisplayName": "진서아",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "assetPatterns": {
@@ -98,7 +98,7 @@
     {
       "sourceFolder": "NPC_Sprites/06_purple",
       "npcId": "MOONIRE",
-      "npcDisplayName": "문이린",
+      "npcDisplayName": "문이현",
       "identityStatus": "user_confirmed_color_to_legacy_id",
       "proposedUnityFolder": "Assets/MattoMystery/Art/NPC/MOONIRE_MunIrin",
       "assetPatterns": {
@@ -188,5 +188,6 @@
   },
   "note": "User confirmed source-color->legacy-identity mappings. New Korean display names are assigned for UI use; old IDs/names are retained only as legacy references. Unity wiring and binary repo upload not yet performed.",
   "playerFacingNamesSource": "game/characters/npc_display_profiles.v1.json",
-  "displayNamePolicy": "UI shows authored new Korean displayName; internal npcId/roomId/lineId and preserved original authored dialogue remain unchanged. Do not use deprecated names in new visible UI."
+  "displayNamePolicy": "UI shows authored new Korean displayName; internal npcId/roomId/lineId and preserved original authored dialogue remain unchanged. Do not use deprecated names in new visible UI.",
+  "lastDisplayNameRevision": "2026-11-12: player-facing names updated in game/characters/npc_display_profiles.v1.json; sprite asset folder paths and internal IDs remain stable"
 }
