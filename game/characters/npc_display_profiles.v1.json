@@ -11,7 +11,7 @@
     "dialogueLineIdMustRemainUnchanged": true,
     "doNotRewriteOriginal714Lines": true,
     "noVillainVisualCues": true,
-    "displayNameRevision": "2026-11-12 ChatGPT user-confirmed: MATTO=마도은, MARIHI=마루희, NAZ=나지수, BOKI=백보미, JJIRO=진서아, MOONIRE=문이현; legacy names and stable NPC IDs preserved"
+    "displayNameRevision": "2026-11-12 user-updated final display names: MATTO=마도은, MARIHI=마혜인, NAZ=나지수, BOKI=김보희, JJIRO=진서아, MOONIRE=문이현; internal IDs and source dialogue unchanged"
   },
   "characters": [
     {
@@ -27,14 +27,14 @@
     },
     {
       "npcId": "MARIHI",
-      "displayName": "마루희",
+      "displayName": "마혜인",
       "legacyName": "마리히",
       "hairColorKo": "금발",
       "sourceSpriteSlot": "02_blonde",
       "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "personalitySummary": "문학과 상상을 좋아하는 명랑한 성격",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
+      "displayNameOrigin": "2026-11-12 user-confirmed revised Korean display name in ChatGPT"
     },
     {
       "npcId": "NAZ",
@@ -49,14 +49,14 @@
     },
     {
       "npcId": "BOKI",
-      "displayName": "백보미",
+      "displayName": "김보희",
       "legacyName": "보키",
       "hairColorKo": "빨강",
       "sourceSpriteSlot": "04_red",
       "assetFolder": "Assets/MattoMystery/Art/NPC/BOKI_BokHui",
       "personalitySummary": "소탈하고 친근하며 음식 취향이 독특함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
+      "displayNameOrigin": "2026-11-12 user-confirmed revised Korean display name in ChatGPT"
     },
     {
       "npcId": "JJIRO",
@@ -83,9 +83,9 @@
   ],
   "lookupByNpcId": {
     "MATTO": "마도은",
-    "MARIHI": "마루희",
+    "MARIHI": "마혜인",
     "NAZ": "나지수",
-    "BOKI": "백보미",
+    "BOKI": "김보희",
     "JJIRO": "진서아",
     "MOONIRE": "문이현"
   },
