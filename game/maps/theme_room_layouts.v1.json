@@ -61,17 +61,17 @@
             {
               "roomId": "ROOM_MATTO",
               "displayNumber": "101",
-              "displayName": "마또의 방"
+              "displayName": "마도은의 방"
             },
             {
               "roomId": "ROOM_JIRO",
               "displayNumber": "102",
-              "displayName": "찌로의 방"
+              "displayName": "진서아의 방"
             },
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "103",
-              "displayName": "보키의 방"
+              "displayName": "백보미의 방"
             }
           ]
         },
@@ -82,17 +82,17 @@
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "201",
-              "displayName": "마리히의 방"
+              "displayName": "마루희의 방"
             },
             {
               "roomId": "ROOM_NAZ",
               "displayNumber": "202",
-              "displayName": "나즈의 방"
+              "displayName": "나지수의 방"
             },
             {
               "roomId": "ROOM_MOONIRE",
               "displayNumber": "203",
-              "displayName": "문이레의 방"
+              "displayName": "문이현의 방"
             },
             {
               "roomId": "CRIME_SCENE",
@@ -138,25 +138,25 @@
             {
               "roomId": "ROOM_MATTO",
               "displayNumber": "301",
-              "displayName": "마또 선실",
+              "displayName": "마도은 선실",
               "location": "port_forward"
             },
             {
               "roomId": "ROOM_NAZ",
               "displayNumber": "302",
-              "displayName": "나즈 선실",
+              "displayName": "나지수 선실",
               "location": "port_aft"
             },
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "303",
-              "displayName": "보키 선실",
+              "displayName": "백보미 선실",
               "location": "starboard_forward"
             },
             {
               "roomId": "ROOM_JIRO",
               "displayNumber": "304",
-              "displayName": "찌로 선실",
+              "displayName": "진서아 선실",
               "location": "starboard_aft"
             }
           ]
@@ -168,13 +168,13 @@
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "401",
-              "displayName": "마리히 선실",
+              "displayName": "마루희 선실",
               "location": "upper_port"
             },
             {
               "roomId": "ROOM_MOONIRE",
               "displayNumber": "402",
-              "displayName": "문이레 선실",
+              "displayName": "문이현 선실",
               "location": "upper_starboard"
             },
             {
@@ -357,37 +357,37 @@
             {
               "roomId": "ROOM_MATTO",
               "displayNumber": "A01",
-              "displayName": "마또 대기실",
+              "displayName": "마도은 대기실",
               "location": "left_front"
             },
             {
               "roomId": "ROOM_MARIHI",
               "displayNumber": "A02",
-              "displayName": "마리히 대기실",
+              "displayName": "마루희 대기실",
               "location": "left_middle"
             },
             {
               "roomId": "ROOM_MOONIRE",
               "displayNumber": "A03",
-              "displayName": "문이레 대기실",
+              "displayName": "문이현 대기실",
               "location": "left_rear"
             },
             {
               "roomId": "ROOM_JIRO",
               "displayNumber": "B01",
-              "displayName": "찌로 대기실",
+              "displayName": "진서아 대기실",
               "location": "right_front"
             },
             {
               "roomId": "ROOM_NAZ",
               "displayNumber": "B02",
-              "displayName": "나즈 대기실",
+              "displayName": "나지수 대기실",
               "location": "right_middle"
             },
             {
               "roomId": "ROOM_BOKI",
               "displayNumber": "B03",
-              "displayName": "보키 대기실",
+              "displayName": "백보미 대기실",
               "location": "right_rear"
             },
             {
@@ -556,5 +556,6 @@
     },
     "replacedTheme": "MUSEUM",
     "replacedThemePolicy": "Museum is not an active third theme; music broadcast is the third theme and uses a proposed single-floor U layout"
-  }
+  },
+  "lastDisplayNameRevision": "2026-11-12 user-confirmed NPC player-facing names; roomId/displayNumber/topology unchanged"
 }
