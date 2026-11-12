@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-12T09:46:23.409Z",
+  "sourceMain": "01d15404e4c14d47c0b11a35016f126030b7dfe5",
+  "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+  "unityVersion": "6000.3.26f1",
+  "editModeOnly": true,
+  "actorCount": 6,
+  "cameraUnchanged": true,
+  "anchorsUnchanged": true,
+  "sceneObjectCountBefore": 23217,
+  "sceneObjectCountAfter": 23217,
+  "addedObjects": 0,
+  "removedObjects": 0,
+  "changedSpriteRotationTransforms": 12,
+  "serializedLeanLimits": 6,
+  "onlyRotationAndLeanChanged": true,
+  "actors": [
+    {
+      "id": "MATTO",
+      "room": "ROOM_MATTO",
+      "sprite": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_S.png",
+      "anchor": {
+        "x": 5.071018695831299,
+        "y": 0.0270999688655138,
+        "z": 4.1517767906188965
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.8000001311302185,
+        "y": 0.8000001311302185,
+        "z": 0.8000001311302185
+      },
+      "displayScale": {
+        "x": 0.8000001311302185,
+        "y": 0.8000001311302185,
+        "z": 0.8000001311302185
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    },
+    {
+      "id": "MARIHI",
+      "room": "ROOM_MARIHI",
+      "sprite": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_S.png",
+      "anchor": {
+        "x": 2.352548122406006,
+        "y": 0.0270999688655138,
+        "z": -11.252201080322266
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.8000001907348633,
+        "y": 0.8000001907348633,
+        "z": 0.8000001907348633
+      },
+      "displayScale": {
+        "x": 0.8000001907348633,
+        "y": 0.8000001907348633,
+        "z": 0.8000001907348633
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    },
+    {
+      "id": "NAZ",
+      "room": "ROOM_NAZ",
+      "sprite": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_S.png",
+      "anchor": {
+        "x": -2.0103044509887695,
+        "y": 0.0270999688655138,
+        "z": -8.232847213745117
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.8000001311302185,
+        "y": 0.8000001311302185,
+        "z": 0.8000001311302185
+      },
+      "displayScale": {
+        "x": 0.8000001311302185,
+        "y": 0.8000001311302185,
+        "z": 0.8000001311302185
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    },
+    {
+      "id": "BOKI",
+      "room": "ROOM_BOKI",
+      "sprite": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_S.png",
+      "anchor": {
+        "x": -9.559027671813965,
+        "y": 0.0270999688655138,
+        "z": 18.78182601928711
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "displayScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    },
+    {
+      "id": "JJIRO",
+      "room": "ROOM_JIRO",
+      "sprite": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_S.png",
+      "anchor": {
+        "x": -0.3878493309020996,
+        "y": 0.0270999688655138,
+        "z": 9.61064624786377
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "displayScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    },
+    {
+      "id": "MOONIRE",
+      "room": "ROOM_MOONIRE",
+      "sprite": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_S.png",
+      "anchor": {
+        "x": -12.80782699584961,
+        "y": 0.0270999688655138,
+        "z": 1.4333033561706543
+      },
+      "worldSpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "displaySpriteLocal": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "worldScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "displayScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      },
+      "worldUp": {
+        "x": -0.5,
+        "y": 0.7071067094802856,
+        "z": -0.5000001192092896
+      },
+      "worldRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "displayRotation": {
+        "x": -0.1464466154575348,
+        "y": 0.8535533547401428,
+        "z": -0.35355344414711,
+        "w": -0.35355332493782043
+      },
+      "directions": 8,
+      "leanFromVertical": 45.000003814697266
+    }
+  ],
+  "capturesReviewed": [
+    "Full",
+    "101",
+    "102",
+    "103",
+    "201",
+    "202",
+    "203"
+  ],
+  "beforeCaptureSource": "Unmodified authentic Edit Mode captures delivered in f66ac84663af2d9056c0615b39e27ce2eab236ab; latest pulled main changes only actor source and documentation.",
+  "runtimeVerification": "UNVERIFIED: Play Mode, functional tests and builds not run."
+}

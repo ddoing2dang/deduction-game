@@ -62,3 +62,8 @@
 - 기존 6명 좌표, 객실, 원본 48개 PNG 및 .meta, 배치된 씬, 기존 가구·조명·카메라 구조를 변경하지 않음.
 - **적용 시 재배치 메뉴를 실행하지 말 것**: 새 코드를 GitHub에서 pull한 뒤 최신 `Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity` 씬을 Unity Edit Mode에서 열어 스크립트를 리로드하고 새 스프라이트 회전을 확인·저장.
 - 이 패치는 **소스 코드 변경만 저장**. Unity 에디터 렌더 확인 및 저장은 로컬 실행 필요. Play Mode/기능 테스트/빌드 미실행.
+
+
+## 최신 로컬 Unity 적용 확인 — StandingBillboard
+
+실행 중인 Unity 6000.3.26f1에서 기존 WideAisle 씬의 6명 회전을 갱신하고 실제 저장했습니다. 원본 48장과 8방향 참조, 발 좌표·로컬 피벗·크기를 보존했습니다. 전체·6개 객실 확대 캡처와 직렬화 대조 결과는 art/Environment/HotelNpcPlacement/Standing_20261112/에 있습니다. 이전 본문의 미업로드/미실행 문구는 초기 작성 시점의 기록이며 현재 저장 상태는 최신 배치 납품 기록과 이번 검토 기록을 따릅니다. Play Mode·기능 테스트·빌드는 미실시입니다.

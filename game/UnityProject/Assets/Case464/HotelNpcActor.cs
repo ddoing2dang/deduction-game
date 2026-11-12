@@ -150,10 +150,10 @@ namespace Case464.NPC
             Vector3 spriteUp = (Vector3.up * Mathf.Cos(leanRadians) +
                 screenUpOnFloor.normalized * Mathf.Sin(leanRadians)).normalized;
 
-            // Like the original billboard, use the camera-facing side of the
-            // original PNG. Do not mirror images, alter UVs, or invert sprite up.
+            // Preserve PNG handedness: local +X follows screen-right. Unity sprites
+            // face along local -Z; pointing local +Z away avoids horizontal mirroring.
             Vector3 spriteNormal = Vector3.Cross(
-                -screenRightOnFloor.normalized, spriteUp).normalized;
+                screenRightOnFloor.normalized, spriteUp).normalized;
             return Quaternion.LookRotation(spriteNormal, spriteUp);
         }
 
