@@ -11,7 +11,7 @@
     "dialogueLineIdMustRemainUnchanged": true,
     "doNotRewriteOriginal714Lines": true,
     "noVillainVisualCues": true,
-    "displayNameRevision": "2026-11-12 user-updated final display names: MATTO=마도은, MARIHI=마혜인, NAZ=나지수, BOKI=김보희, JJIRO=진서아, MOONIRE=문이현; internal IDs and source dialogue unchanged"
+    "displayNameRevision": "2026-11-12 user-final: MATTO=마도은, MARIHI=마혜인, NAZ=나지수, BOKI=김보희, JJIRO=진초록, MOONIRE=문이현; stable IDs unchanged"
   },
   "characters": [
     {
@@ -60,14 +60,14 @@
     },
     {
       "npcId": "JJIRO",
-      "displayName": "진서아",
+      "displayName": "진초록",
       "legacyName": "찌로",
       "hairColorKo": "연두",
       "sourceSpriteSlot": "05_green",
       "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "personalitySummary": "털털하고 긍정적이며 사람을 배려함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "2026-11-12 user-selected final Korean player-facing name in ChatGPT"
+      "displayNameOrigin": "2026-11-12 user-confirmed Korean final display name 진초록"
     },
     {
       "npcId": "MOONIRE",
@@ -86,7 +86,7 @@
     "MARIHI": "마혜인",
     "NAZ": "나지수",
     "BOKI": "김보희",
-    "JJIRO": "진서아",
+    "JJIRO": "진초록",
     "MOONIRE": "문이현"
   },
   "themes": [
