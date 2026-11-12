@@ -1,0 +1,21 @@
+{
+  "project": "C:\\UnityProjects\\Case464-GitHub\\game\\UnityProject",
+  "utc": "2026-11-12T10:13:44.2227684Z",
+  "id": "e5c96ae0e6fa491683b7ea92dbf07897",
+  "phase": "Complete",
+  "error": "",
+  "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+  "unityVersion": "6000.3.26f1",
+  "refreshCount": 1,
+  "reloadCount": 1,
+  "spritesLoaded": 48,
+  "compiling": false,
+  "updating": false,
+  "playing": false,
+  "saved": true,
+  "npcAnchorsPreserved": true,
+  "sceneObjectCountBefore": 23217,
+  "sceneObjectCountAfter": 23217,
+  "allNpcTransformsMapFurnitureCamerasLightsPreserved": true,
+  "sceneSerializationNote": "Unity recalculated seven layout values in the existing hidden DialoguePanel prefab instance; no art, NPC, camera or light changes."
+}
