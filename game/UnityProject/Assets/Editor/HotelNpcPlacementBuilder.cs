@@ -165,6 +165,163 @@ namespace Case464.Editor
                 OutputScene + ". Approved base map is intact. No Play Mode/tests/build.");
         }
 
+        /// <summary>
+        /// Apply user-provided still NPCs to the CURRENTLY OPEN hotel scene.
+        /// Supports newer authored hotel scene paths: we inspect its room anchors,
+        /// not its filename. A separate backup .unity is created before saving.
+        /// This is an explicit Edit Mode menu command, never an auto-import.
+        /// </summary>
+        [MenuItem("Case464/Hotel NPC/Apply 6 NPCs to OPEN Latest Map (Edit Mode)")]
+        public static void ApplyToOpenLatestMap()
+        {
+            if (EditorApplication.isPlayingOrWillChangePlaymode)
+                throw new InvalidOperationException("Exit Play Mode before applying NPCs.");
+
+            Scene scene = SceneManager.GetActiveScene();
+            if (!scene.IsValid() || !scene.isLoaded || string.IsNullOrEmpty(scene.path) ||
+                !scene.path.StartsWith("Assets/", StringComparison.Ordinal) ||
+                !scene.path.EndsWith(".unity", StringComparison.OrdinalIgnoreCase))
+                throw new InvalidOperationException(
+                    "Open your latest saved hotel .unity scene in Edit Mode.");
+            if (scene.isDirty)
+                throw new InvalidOperationException(
+                    "Save the CURRENT hotel scene first (Ctrl+S). NPC placement has not started.");
+
+            // Discover map layout and camera only within the ACTIVE scene,
+            // so a preview/additive scene cannot silently influence placement.
+            var layouts = UnityEngine.Object.FindObjectsByType<HotelFinalPolishLayout>(
+                FindObjectsInactive.Include, FindObjectsSortMode.None)
+                .Where(x => x.gameObject.scene == scene).ToArray();
+            var cameras = UnityEngine.Object.FindObjectsByType<HotelMapCameraController>(
+                FindObjectsInactive.Include, FindObjectsSortMode.None)
+                .Where(x => x.gameObject.scene == scene).ToArray();
+            var areas = UnityEngine.Object.FindObjectsByType<HotelOverviewRoomArea>(
+                FindObjectsInactive.Include, FindObjectsSortMode.None)
+                .Where(x => x.gameObject.scene == scene).ToArray();
+            if (layouts.Length != 1 || cameras.Length != 1 || layouts[0].rooms == null)
+                throw new InvalidOperationException(
+                    "This is not a uniquely identified final hotel map. Expected one HotelFinalPolishLayout and one HotelMapCameraController.");
+
+            if (UnityEngine.Object.FindObjectsByType<HotelNpcActor>(
+                FindObjectsInactive.Include, FindObjectsSortMode.None)
+                .Any(x => x.gameObject.scene == scene))
+                throw new InvalidOperationException(
+                    "This scene already has NPC actors. Aborted to prevent duplicate placement.");
+
+            HotelFinalPolishLayout layout = layouts[0];
+            HotelMapCameraController camera = cameras[0];
+            var poses = new Sprite[People.Length][];
+            var positions = new Vector3[People.Length];
+            var offsets = new Vector3[People.Length];
+            var scales = new float[People.Length];
+
+            // Fully resolve the user's 48 original sprites and room anchors
+            // BEFORE creating the backup or modifying anything in the scene.
+            for (int i = 0; i < People.Length; i++)
+            {
+                Entry item = People[i];
+                poses[i] = new Sprite[Directions.Length];
+                for (int d = 0; d < Directions.Length; d++)
+                {
+                    string file = "MapIdle_" + Directions[d] + ".png";
+                    string preferred = SpriteRoot + item.id + "/" + file;
+                    poses[i][d] = AssetDatabase.LoadAssetAtPath<Sprite>(preferred);
+                    if (poses[i][d] == null)
+                    {
+                        string earlier = "Assets/MattoMystery/Art/NPC/" +
+                            ExistingImportFolders[i] + "/" + file;
+                        poses[i][d] = AssetDatabase.LoadAssetAtPath<Sprite>(earlier);
+                    }
+                    if (poses[i][d] == null)
+                        throw new InvalidOperationException(
+                            "Missing original NPC sprite: " + preferred +
+                            " — import the supplied six-person map sprite ZIP into Assets first.");
+                }
+
+                var matchingMetrics = layout.rooms.Where(m => m != null &&
+                    (m.roomId == item.room || m.number == item.number ||
+                     m.number == item.number + "호")).ToArray();
+                var matchingAreas = areas.Where(a =>
+                    a.RoomId == item.room || a.DisplayNumber == item.number ||
+                    a.DisplayNumber == item.number + "호").ToArray();
+                if (matchingMetrics.Length != 1 || matchingAreas.Length != 1)
+                    throw new InvalidOperationException(
+                        "Latest map room anchors are not unique for " +
+                        item.number + " " + item.name + ". No guessed coordinates used.");
+
+                var room = matchingMetrics[0];
+                var area = matchingAreas[0];
+                if (room.floor != item.floor || area.Floor != item.floor ||
+                    room.floorBounds.size.x <= .5f || room.floorBounds.size.z <= .5f)
+                    throw new InvalidOperationException(
+                        "Floor/bounds mismatch for " + item.number +
+                        ". Use an approved latest hotel map with accurate room anchors.");
+
+                Vector3 boundsCenter = room.floorBounds.center;
+                Vector3 entryInside = room.inside != null ? room.inside.position : boundsCenter;
+                Vector3 point = Vector3.Lerp(entryInside, boundsCenter, .50f);
+                point.x = Mathf.Clamp(point.x, room.floorBounds.min.x + .25f,
+                    room.floorBounds.max.x - .25f);
+                point.z = Mathf.Clamp(point.z, room.floorBounds.min.z + .25f,
+                    room.floorBounds.max.z - .25f);
+                point.y = room.floorBounds.max.y + .035f;
+
+                positions[i] = point;
+                offsets[i] = area.DisplayPosition - area.PhysicalPosition;
+                float desiredHeight = Mathf.Clamp(
+                    Mathf.Min(room.floorBounds.size.x, room.floorBounds.size.z) * .20f,
+                    1.1f, 1.9f);
+                scales[i] = desiredHeight /
+                    Mathf.Max(.01f, poses[i][(int)HotelNpcFacing.S].bounds.size.y);
+            }
+
+            // Keep an unmodified copy BEFORE directly updating the open map.
+            string backupPath = AssetDatabase.GenerateUniqueAssetPath(
+                scene.path.Substring(0, scene.path.Length - ".unity".Length) +
+                "_Before_NPC_Placement.unity");
+            if (!AssetDatabase.CopyAsset(scene.path, backupPath))
+                throw new InvalidOperationException(
+                    "Could not create a backup of the current hotel map. No NPCs were placed.");
+
+            var group = new GameObject("NPC Placement - 6 suspects (user originals)");
+            SceneManager.MoveGameObjectToScene(group, scene);
+            Undo.RegisterCreatedObjectUndo(group, "Place 6 hotel NPCs");
+
+            for (int i = 0; i < People.Length; i++)
+            {
+                Entry item = People[i];
+                var obj = new GameObject(item.number + " " + item.name + " (" + item.id + ")");
+                obj.transform.SetParent(group.transform, false);
+                obj.transform.position = positions[i];
+                var actor = obj.AddComponent<HotelNpcActor>();
+                var physical = CreateImage("World Sprite", obj.transform,
+                    Vector3.zero, scales[i], out var physicalBox);
+                var split = CreateImage("Split-Floor Display Sprite", obj.transform,
+                    offsets[i], scales[i], out var splitBox);
+                physical.sprite = poses[i][(int)HotelNpcFacing.S];
+                split.sprite = poses[i][(int)HotelNpcFacing.S];
+                physical.gameObject.AddComponent<HotelNpcClickProxy>().Configure(actor);
+                split.gameObject.AddComponent<HotelNpcClickProxy>().Configure(actor);
+                actor.Configure(item.id, item.name, item.room, item.floor, item.speaker,
+                    poses[i], physical, split, physicalBox, splitBox, camera);
+            }
+
+            EditorSceneManager.MarkSceneDirty(scene);
+            if (!EditorSceneManager.SaveScene(scene))
+                throw new InvalidOperationException(
+                    "The original scene backup exists, but saving the NPC scene failed: " +
+                    backupPath);
+            Selection.activeGameObject = group;
+            Debug.Log("[Case464 NPC] Added six original 8-way idle NPCs to OPEN latest hotel map: " +
+                scene.path + " (backup: " + backupPath +
+                "). No Play Mode/tests/build executed.");
+            EditorUtility.DisplayDialog("대저택 NPC 배치 완료",
+                "현재 열린 맵에 NPC 6명을 배치하고 저장했습니다.\\n" +
+                "원본 맵 백업: " + backupPath +
+                "\\nUnity Editor에서 배치 위치를 직접 확인하세요.\\n" +
+                "(Play Mode/기능 테스트/빌드 미실시)", "확인");
+        }
+
         private static SpriteRenderer CreateImage(string name, Transform parent,
             Vector3 localPosition, float scale, out BoxCollider hitbox)
         {
