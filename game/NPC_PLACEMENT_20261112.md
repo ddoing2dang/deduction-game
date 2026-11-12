@@ -20,6 +20,18 @@
 
 `LOBBY`는 탐정 시작점, `CRIME_SCENE`(204)는 사건 현장으로 유지. NPC 배치 단계에서 7번째/8번째 캐릭터를 만들지 않는다.
 
+## 최신 맵에 **직접** 적용하는 명령 (2026-11-12 추가)
+
+1. 최신 GitHub `main`을 받는다.
+2. 필요하면 `장미대저택_6인_맵스프라이트_배치용.zip`의 `Assets/`를 로컬 `game/UnityProject/Assets/`로 병합한다.
+3. Unity **Edit Mode**에서 실제 사용 중인 **최신 대저택 .unity 씬**을 열고 `Ctrl+S`로 저장한다. (반드시 해당 씬이 활성 씬이어야 한다.)
+4. 메뉴 `Case464 > Hotel NPC > Apply 6 NPCs to OPEN Latest Map (Edit Mode)` 실행.
+5. 이 메뉴는 **현재 열려 있는 씬**의 `HotelFinalPolishLayout`, `HotelMapCameraController`, 6개 객실 `HotelOverviewRoomArea`를 읽고 원본 48장의 8방향 스프라이트로 NPC들을 배치한다.
+6. **현재 씬 이름 옆에 `_Before_NPC_Placement.unity` 백업**을 자동 저장한 후, 현재 열린 .unity 씬 자체에 NPC 6명을 추가해 저장한다. 씬에 이미 `HotelNpcActor`가 있으면 중복 추가하지 않고 중단한다.
+7. 맵이 바뀌어 필수 객실/층 정보가 맞지 않거나 스프라이트가 누락된 경우 임의 좌표로 배치하지 않고 중단한다. 에디터의 Console에 구체적인 오류가 표시된다.
+
+**주의:** 명령을 만든 코드는 GitHub에 업로드되었으나 **사용자 로컬 Unity에서 실제로 실행되지는 않았다**. 위치·클릭·빌드 기능 검증은 별도 요청 전 수행하지 않는다. 기존 `Build 6 NPCs in Separate Scene` 메뉴는 이전 기능이고, 최신 맵 직접 적용은 위의 `Apply ... OPEN Latest Map` 메뉴를 써야 한다.
+
 ## Unity 적용 — 원본 맵 보호
 
 1. 준비된 **장미대저택_6인_맵스프라이트_배치용.zip**의 `Assets/`를 로컬 `game/UnityProject/`에 병합한다. 최종 에셋은 `Assets/Case464/NPC/MapIdle/{npcId}/MapIdle_{direction}.png`.
