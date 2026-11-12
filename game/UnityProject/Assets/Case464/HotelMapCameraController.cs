@@ -59,6 +59,8 @@ namespace Case464.Hotel
         private bool transitioning;
 
         public HotelMapView Mode => mode;
+        public string SelectedRoom => selectedRoom;
+        public string SelectedRegion => selectedRegion;
         public bool AllWalls => allWalls;
         public Camera ReviewCamera => reviewCamera;
         public HotelVisualGroup[] Groups => groups;
