@@ -1,6 +1,6 @@
 # 사건파일 No.464 — 1인 탐정·시네마틱 추리 게임
 
-**현재 개발 기준: Windows PC x64 · Unity 6 URP 신규 프로젝트 예정**. 2026-11-10 현재 GitHub `main`에 **새 Unity 프로젝트/씬/프리팹/런타임 코드는 없음**. 실제 에디터 연결·실행·빌드가 됐다고 주장하지 않는다.
+**현재 개발 기준: Windows PC x64 · Unity 6 URP 프로젝트**. 2026-11-12 GitHub `main`에 Unity 프로젝트, 최종 승인 대저택 맵 씬 및 기존 대화/조사 코드가 저장되어 있다. 이 채팅에서 로컬 Unity 에디터의 실제 실행·게임 동작·빌드를 확인한 것은 아니다.
 
 ## 확정된 게임 구조
 - 탐정 플레이어 1명, NPC 6명(마도은·마혜인·나지수·김보희·진초록·문이현), 매 사건 범인 1명 랜덤.
@@ -18,8 +18,9 @@
 - [Windows Unity 비파괴 GitHub 연결 스크립트](tools/windows/Connect-Case464Unity.ps1)
 - [Windows Unity/GitHub 로컬 준비 상태 읽기 전용 검사](tools/windows/Check-Case464Readiness.ps1)
 - [Unity 에디터 고품질 맵 워크숍 소스](tools/unity/Case464MapWorkshop.cs)
-- **현재 GitHub에서 도구 소스와 가이드만 저장. 사용자 PC에서 열린 Unity에 MCP 연결 또는 해당 스크립트 적용은 아직 확인되지 않음.**
+- [최종 승인된 대저택 맵 및 의존 에셋](art/Environment/HotelFinalDelivery/README.md)이 GitHub에 저장되어 있다. 사용자 PC에서 열린 Unity의 실제 런타임 구동과 새 변경의 적용 상태는 별도 확인 전이다.
 - 동일 오류 2회 반복 시 중단·준비물 요청·마지막 성공 지점 기록을 최우선으로 함.
+- [대저택 6명 기본 초상화 및 매핑](game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/README.md): 6개의 원본 이미지·Unity GUID·HOTEL 전용 대화창 Sprite 바인딩 코드 저장. Unity Editor 적용/실화면은 미확인.
 
 ## 현재 주요 문서
 - [게임 최상위 확정 규칙](GAME_RULES.md)
