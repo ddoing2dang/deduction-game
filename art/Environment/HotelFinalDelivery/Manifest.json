@@ -1,0 +1,3692 @@
+{
+  "finalScene": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity",
+  "finalSceneSha256": "21f36ef9daaa00a371c17a56730275499ddaaba1e4448dd5a3809ede99b20a01",
+  "validationPasses": 2,
+  "finalResaved": true,
+  "scope": "Final hotel scene and dependency closure only; no intermediate scenes",
+  "assetFiles": [
+    {
+      "path": "art/Environment/HotelFinalDelivery/README.md",
+      "size": 2023,
+      "sha": "2d4f06e17a31819b89a67ed2843eca820644e925",
+      "sha256": "20f1ecd14a0b6308459dbe3cb9281c574d138c463074cb29d9731bd71a3793d5"
+    },
+    {
+      "path": "art/Environment/HotelFinalDelivery/Validation.json",
+      "size": 168004,
+      "sha": "af202d7c6a48beeca475c18d921fecfb1d580419",
+      "sha256": "2c3780c99d5c031ee7e0e1ea515f9cf50924c45da4bc6ee091e0ce87a880d741"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464.meta",
+      "size": 172,
+      "sha": "0f3354fd8fd528df1a3b5975afc96a224b85ce8a",
+      "sha256": "8751a9dd5ff4835b60b9294627e1dd907dbb5c20299c3ad6aeaec236d6d726df"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art.meta",
+      "size": 172,
+      "sha": "49dd1c25c399a49c70dafd43538e097019302a5e",
+      "sha256": "acda152f69c44f0d5c8a11ae58898c0f1691fea83148d52b011aec26c56be122"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom.meta",
+      "size": 172,
+      "sha": "512ef9555532d3d556799a10e7ded7dad2ae6429",
+      "sha256": "f596a1a505066f9d4f11ed824ed4fa35e805c24aa9f9bffd95b0e3d504aafb7d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/202_ClearUpperGlass.mat",
+      "size": 3928,
+      "sha": "6454b1f5b1c554af9a21c2e80b66c1cea28b30e7",
+      "sha256": "f3170d43566fb4e8dc1dbffd04a060ae4b5f390ff55213bbeb6dd5e33490acd6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/202_ClearUpperGlass.mat.meta",
+      "size": 188,
+      "sha": "2797c0e8d33c416ff0d9e39738814042e986a8cb",
+      "sha256": "68bacbf58b824f2f7dede2b9b4f01fb00ba93c91a3db8623bb06c8749597f5bb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/202_SatinPrivacyGlass.mat",
+      "size": 4038,
+      "sha": "3365d42594c9d446dadfac0674aaec61deb290a0",
+      "sha256": "9531ea8fb371ed4f5f3c38d38ba8f95ca89f23aa1858224ef94e68738b988a0e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/202_SatinPrivacyGlass.mat.meta",
+      "size": 188,
+      "sha": "8e086b7b5820b5d2da0d4d4c5702c73011aaf1c4",
+      "sha256": "957f5423c5cbf69dfb65184419457962ee7092929619cbf6678dab337e5e8269"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/MicroEtchedGlass.png",
+      "size": 34822,
+      "sha": "374b9b201a2a51326dbd8457071218ebf7a9a5ac",
+      "sha256": "323d048987ed4818970bd9c6e6da9f05f50a0dff1b8c1b742987746015f0a9c5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/Hotel202GlassBathroom/MicroEtchedGlass.png.meta",
+      "size": 2652,
+      "sha": "396e26924f346ae47c4614ea7cfe4e63c86aac39",
+      "sha256": "0ed102e7a8aa62189f25ab6aef9a23c6872c1c2eaa6e9c3e4259a54e50c4a13e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview.meta",
+      "size": 172,
+      "sha": "a96337e665406d433ba5c035f4e9c5fb305cbb9c",
+      "sha256": "be1c7b6b5aac2f3aab2f2a051d59059cafce1251975976f27bd598cbb88495ef"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/ChalkOutline.asset",
+      "size": 51618,
+      "sha": "4ad9c7688a8dada4fef1a68f3a6c366592e48627",
+      "sha256": "80fa5b76050be64a86fa97177518d8178a7d50b99bf64b476c2b4576832034cd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/ChalkOutline.asset.meta",
+      "size": 188,
+      "sha": "f6a20ce8a714d40242641dea41dfcc8ff6852093",
+      "sha256": "7128df95e8ea5a076a828134d1a2c1b30ca841ba0aa94971d824f375fb4147c1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/ProceduralChalkGrain.png",
+      "size": 10872,
+      "sha": "400150816971f2206619aac457c432241d60211a",
+      "sha256": "953700b5082f87c8c7ddaf00334b2c8a1b9b20ee19a84c61aaf61b61ac01b7b2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/ProceduralChalkGrain.png.meta",
+      "size": 2652,
+      "sha": "44843d6ae956ca7e473ba1e75304f9aa035a369f",
+      "sha256": "15d37014a83d7d1045f38ec2f784b20823d4593e80455b2627852b47bb27e632"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/WhiteChalk.mat",
+      "size": 2067,
+      "sha": "32959285fb580c0edb89c037a1d71d55d93b447b",
+      "sha256": "cac90d903b99116419664a452b61c766fc7d6c2c52a522d591317703909a32ee"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelBeddingChalkReview/WhiteChalk.mat.meta",
+      "size": 188,
+      "sha": "eda40918d8adc1ee6e1cf8e24426a1199d6a12b8",
+      "sha256": "1e7446a2b2a246fc4077d8c587c9d7570f566c5ab954834650642cf0759c35e9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish.meta",
+      "size": 172,
+      "sha": "0d7e2ad2ecdecdca9d55d3302e6738f3bba3502a",
+      "sha256": "9faf4572b9ccef806a02eea5c37639ab9c455666f43ddde106ed0b909bce8db6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models.meta",
+      "size": 172,
+      "sha": "b2f88b794fb29187cd43fcb114eb9d788ce48b08",
+      "sha256": "d0e193543959078c14ef2fae106c6e972085dd5a73912b1187a522d52c3a7297"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH01_FinalPolish.fbx",
+      "size": 13563148,
+      "sha": "ceb98632bca342b0008be5d906e0c7b0694e463f",
+      "sha256": "046c2ba90fdfaf16d175ce47602666d8fb047e8420432bcc62f64064eefb934f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH01_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "9211634d40d7f4746459616af3b5696b6dddabfd",
+      "sha256": "929d9f9ffa28dde10b7efcf609873a7c9449ab01719ef145222f5f63f4a0a0a5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH02_FinalPolish.fbx",
+      "size": 9047964,
+      "sha": "ddf80fdd2fb15480415185cd43c828dd3df2cef5",
+      "sha256": "4b57f283d1e838ced627aed92760bc62a66e36e8aefdf9da1a515cf7b19b028a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH02_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "546fc7c07ffeeb9a700dc7870388116d6ef09df6",
+      "sha256": "e01f7863aae22b7332cff1e2ca4767edb998b57f221829a3f20cf5a52ea23456"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH03_FinalPolish.fbx",
+      "size": 7588188,
+      "sha": "1e0b29361b3b6336e7852bf8e8f5af71e50a7dae",
+      "sha256": "55490d7631f5bf10e636edb7c481a6b1805c1576b23b6eb2b2a2614afd2a1530"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH03_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "7651a79d0022dc8390c650a8b32141d26187c0c2",
+      "sha256": "dac88773be6d07b1de37c5244930726ffdef533ee02cdf68872cd7f62435b7e4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH04_FinalPolish.fbx",
+      "size": 9022204,
+      "sha": "d82602f0a9b3cb3360301665b1cb51516a9e05d1",
+      "sha256": "ba01bcc631eaa1fc8bd13dc7ab7cccbc63b8e1737aa895b74e01dbb8f6fd8dd6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH04_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "c1a90a3aed73123143b06ff0990be4c114cded35",
+      "sha256": "dd687d8c8d37724dfbe8ab387a16a9b6f90dad2354d3e7e5779b49f637903bc1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH05_FinalPolish.fbx",
+      "size": 8485788,
+      "sha": "8655f15f883288304812a10cb76270b296b8f845",
+      "sha256": "6fba45e15a4391eb83089a4536a316ea351d977fb58b66a4a7e0a457e9771c49"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH05_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "bb5d645525251b2779d5419c42ddc278c559b216",
+      "sha256": "b4d06c56a2d111cc6d53df194d0a720da8f66917ead8a0e8ba8e44433b083750"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH06_FinalPolish.fbx",
+      "size": 7791548,
+      "sha": "643326227968287190ef3caa718b8f2ea73dc8b7",
+      "sha256": "28fb71239d776fa42ad3395775b7c94f0967bfae72dfbb511e9d21bd2953e99c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH06_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "90858388daffc0053151e1c2409e64bc424362fd",
+      "sha256": "96f2c3d46954a43ee37ab4ed5491013ba7e31569ea791a2013d4876926a19f6f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH07_FinalPolish.fbx",
+      "size": 5897164,
+      "sha": "1f6ad3d0d3dd606617631722f96628a9c3060bb6",
+      "sha256": "608cf2caa1126d1aafc59e1d7206501bc8334282db27bfbcb902f2205c3b5f29"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFinalPolish/Models/HotelH07_FinalPolish.fbx.meta",
+      "size": 2891,
+      "sha": "8f82316b4e79a50969a76e2beec8a73f5a18c4b6",
+      "sha256": "1126533221334d97fb8dd5e5ea8b7fb8f8653a41c5ac805ea397eedd8ce1473e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFourPointRepair.meta",
+      "size": 172,
+      "sha": "71c5f0e929ac5bb4f4ea8f6b3851ea07ad53398a",
+      "sha256": "316d04abf3ee4042e638f7682fef1f68fa6867755627339b21bfafb8c12f09a1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFourPointRepair/Models.meta",
+      "size": 172,
+      "sha": "7787e0113a34e26e0fe55c07183a5b7d72276bff",
+      "sha256": "aefab547c9dab529b2d877b03b8ab9909e6f6fc6b8a276eada182adc94ca77e5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFourPointRepair/Models/HotelH00_FourPointDelta.fbx",
+      "size": 448652,
+      "sha": "b139ac68007156cafd80d9b881612e6d4db20bb5",
+      "sha256": "730b9d21c1a62b8861f5587363e665d7df6bb2c8eff8c485feb411c3d8e09932"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelFourPointRepair/Models/HotelH00_FourPointDelta.fbx.meta",
+      "size": 2891,
+      "sha": "b6c489450df71f83ef867bfad66e55fa1e73dfaf",
+      "sha256": "4abac42fc33ac8a9cb1e9fbb2c78e8ad5ca538ab020316737dc086826c0f6237"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00.meta",
+      "size": 172,
+      "sha": "a38d8e8c342008e4c5a21449fed3759c73665da3",
+      "sha256": "2c1353d768b823762c44682a77969572e00fe6b31ac45485d9f71561dbd72798"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials.meta",
+      "size": 172,
+      "sha": "a776e3827ef5ac176f9df595cfa13194130de7a4",
+      "sha256": "3dc5db8935dcac14919d2332ae6022844eaff80aa52c110e498a3fb25cb9f48d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Blue_Window_Glazing.mat",
+      "size": 3870,
+      "sha": "4867301e60f6f3eb2c0f3274e692b32f7e5810c3",
+      "sha256": "650387ac53ed6de3afda393f9225a0f77d32a144a5f2211c9c7a1e1ee6d06312"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Blue_Window_Glazing.mat.meta",
+      "size": 188,
+      "sha": "bdb31fe253f59e3e76249d62a05ce5258e34e555",
+      "sha256": "a239a5478bd5a777d91f540ab74392ae734845464720cd7395b4f7c7eadc97e4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Botanical_Green.mat",
+      "size": 3873,
+      "sha": "b326ca1d2b4a0e9ef358d97ee016269b45d860e6",
+      "sha256": "d85a190040fbf14c970438acf238cc36858a56c5b8442339bb1d781bf68fd72a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Botanical_Green.mat.meta",
+      "size": 188,
+      "sha": "12676d339639fa015fb29814a755b0ef7b341d1c",
+      "sha256": "f8d5bc52b0a1941149e2fb325273216b5372267994784a323cd0b4090e36beb4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Brushed_Brass.mat",
+      "size": 4104,
+      "sha": "0bd54353dfff29aba5aa368e0b689e2ecf4e0400",
+      "sha256": "f2c3162ac323d4c0915c236922cbc6343598f0d0927228e2f659af4cc2d41460"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Brushed_Brass.mat.meta",
+      "size": 188,
+      "sha": "dd8f8ef258e4f9ab6520aa54ab6f900d97361be7",
+      "sha256": "98e7ce1805d5875da019665ebae397d6678a890a2272683e67f8c9f4214b65ea"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Dark_Marble.mat",
+      "size": 4094,
+      "sha": "3580cdc6df6dfa92ad607229acf77f33e0ed6dea",
+      "sha256": "ba3cc38924feb6fedac053a0a971d752e950352e304eb0801f2ee52179373bab"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Dark_Marble.mat.meta",
+      "size": 188,
+      "sha": "8e7ae5daf8fa74ddedc91f88fd8873f1196ee1e6",
+      "sha256": "82f77c4d2782536b1bff2a7faff8aa86e235de73949777a570702a9f4e5890b5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Honed_Stone.mat",
+      "size": 4093,
+      "sha": "4a4af8a180f8dcef5a538774b08987e3e7ff4bd4",
+      "sha256": "1285c5a4eac790568c061d40ca5ea033d86267fdfa03acadfd55abfcb4b03fb7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Honed_Stone.mat.meta",
+      "size": 188,
+      "sha": "630accb9a873670e03f9570c8f106cdd92c9d9c3",
+      "sha256": "eefaeb7617af041f23846243306f200e8a2d436d3cda21317555904dcd4e3820"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Ivory_Marble.mat",
+      "size": 4103,
+      "sha": "579342fd37b73b627ee3f12529170557d25c5c19",
+      "sha256": "ceb6ca9795cebca6e57a2e10545113cb124f19779e60c4228b4c9fe0f419e460"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Ivory_Marble.mat.meta",
+      "size": 188,
+      "sha": "d33f04bf99a968a373609ce495a62be56e5600c8",
+      "sha256": "874aabcc5a4a4ad7242c77ee2301ee2b738843eecded6309306853c590db0f24"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Walnut.mat",
+      "size": 4098,
+      "sha": "6435155f527ed4f62a2a4321a52ba5040a5ba87a",
+      "sha256": "70a8da0766d7ed1a10ede24aadab49c6b6c5e3853aa8a68d479a80c1e31fadc9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Walnut.mat.meta",
+      "size": 188,
+      "sha": "0a4a45d1a45aeb9c792017422783b54b5936fe08",
+      "sha256": "33354138446a7889a265ca6805bc0575c72e7ea17424b201971d669883f9d2c2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Walnut_Dark.mat",
+      "size": 4110,
+      "sha": "3f820507512b2c4f9300381d6652540cdd63e651",
+      "sha256": "713353221c8cd6fe007f6238382eb1e20ad0c761cfab99d31a85aaf3865743f7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Walnut_Dark.mat.meta",
+      "size": 188,
+      "sha": "9da33b88426f44962326377332bafd42abdbe192",
+      "sha256": "8ebe0332fc070a41e19736fc77bec4da714c0e4f99338597c7aed50ac0965d05"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Warm_Opal.mat",
+      "size": 3895,
+      "sha": "4394086a177234a2a6d2fdf5dd1ec6fc4353dba9",
+      "sha256": "beac4a5311182c662286217bcb7c6884833e217d0eba5672ffec26ae7599a319"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Warm_Opal.mat.meta",
+      "size": 188,
+      "sha": "225c89a8de36143166517a019f8fac0962cac87d",
+      "sha256": "00fb8df648d511f7fc611def5f398c8bcac5e0c4e479113adb40fa39da8d14e1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Warm_Plaster.mat",
+      "size": 4095,
+      "sha": "6a114ada2a38567e7ef7cccab16bdd402fb5ce02",
+      "sha256": "812bc39c2b242606b34f9e6ac85328ba505c4f70cb26bca1d801eb4dcd034257"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Materials/H00_Warm_Plaster.mat.meta",
+      "size": 188,
+      "sha": "4a1f991f5e22313a1dbd0bdfd8d0ea6c8bd3f034",
+      "sha256": "6f722f2ed5c11a5083e022c981daf28794347ce6cdb9580448a2bec86ec1f20d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Models.meta",
+      "size": 172,
+      "sha": "1c9e1be240d3c8e22fd9424fdd80784080c3959d",
+      "sha256": "3f3076b118fdbef01be58e36778f3142fd7776734a5087eda33b2e7fee913766"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Models/HotelH00.fbx",
+      "size": 10750524,
+      "sha": "a58cdc57240e269badab3dd0d12d3ac1f256c9b3",
+      "sha256": "c348450fbcb78e6e601238beca19339546a38ef2eb9b1c546e563c9ff501e47c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Models/HotelH00.fbx.meta",
+      "size": 2891,
+      "sha": "63657e403b14a0f0df33f0aa1d1dc1982f6f079a",
+      "sha256": "0c323e31515255b8ace4e4466b5181bd633348a3b691c02c682c910f534040ce"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures.meta",
+      "size": 172,
+      "sha": "0ba3a5d0123adba832b1e1ad65d14afb825bd71e",
+      "sha256": "d0c201230c515479affa1e10039d0ed02c684cfcb5873a68b92faf9b41e30738"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0.meta",
+      "size": 172,
+      "sha": "3f5cd978998bf51193da1402e062700e5dcaf834",
+      "sha256": "54ce425f84f92777ced463fbec9dfa2bf22723a289c609cfef9276ab49d53b61"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/CC0-1.0.txt",
+      "size": 7048,
+      "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/CC0-1.0.txt.meta",
+      "size": 158,
+      "sha": "12453c5433f92c769637dcc263fa4939735c824d",
+      "sha256": "0d2ec0cd07612901e900cc12923adbb64aa420197424b6fe64f560be2416ad01"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_Base.jpg",
+      "size": 5140918,
+      "sha": "6d1422c9a898ef08c7e8fdb48c035073afb5c3c6",
+      "sha256": "cdb95bab77e422c604bd73c2a723c13b617d406bb9dcd971015b839d9c4b4077"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_Base.jpg.meta",
+      "size": 2652,
+      "sha": "bc3207e19623accddcd3d1683b71520d43c2339d",
+      "sha256": "b5472460e3ea11195b8cbb589582a78805933898a4b69159bea1a966a3c28445"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_MetalSmooth.png",
+      "size": 3083377,
+      "sha": "50b439ec3d35595b1514cf53667e2513b70b9978",
+      "sha256": "a58fcabfdf74812af326227f883cb6c491fd80a9e262a05d6ea3b9029b9d3137"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "61e08ac8f4bdfff5732a7a5330c76af0e307ab02",
+      "sha256": "0dc12eb74649c74307fea672cf22ab8683acb3b5f12858afea170b0dd4421e38"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_Normal.jpg",
+      "size": 1438028,
+      "sha": "39a21e6037bdb0f8bfd9cbafcb0b1259240342a2",
+      "sha256": "e8b828cdcf3f58277219cf64a56bc69bebd09b96f43c5935c070b39d50948b02"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble006_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "c6f2eb5f9858c6d564a4534092edc88cd9fae7ed",
+      "sha256": "7d14043dd637a0164d4e63935b37f7f0c86fe6e94bcbe6cf9155444eb3d7ae31"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_Base.jpg",
+      "size": 5139092,
+      "sha": "78ce704845852317310299e4e2b086cf1803a2c3",
+      "sha256": "1e1ef2d556dcda237181590b4a7543a66ea49223ccf2d455000e05f37e8a8ec5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_Base.jpg.meta",
+      "size": 2652,
+      "sha": "ce2bc66b21af0a8af408a3708b723809341732fd",
+      "sha256": "54500ada39e2ef2fa8cd0a26898eb9d3095ae9155ddc7e5a7a26c4e71ea46b8c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_MetalSmooth.png",
+      "size": 3190639,
+      "sha": "7d8da31753689744ebc770932d2fefe118cd2fac",
+      "sha256": "aab1129272bcc00eb2a681071485721e4e1a6378754847479b6e2b743ae89a72"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "e6d9af059318bfc1060ee637dc2421c3b8c9bdc0",
+      "sha256": "8864272d0bd61a3901f8bfb00d8dd7dac229ef1089f52f8ac7de8046dc506fd5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_Normal.jpg",
+      "size": 1418258,
+      "sha": "a1efaaf3a5f0dd4fbe7598eca3edac468a790009",
+      "sha256": "0e295859c9e55ba2dd147aed37a674aba90decaf91d3622d5aa8386441020649"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble012_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "56a393772d43f497262d987e1e6368b22b173dee",
+      "sha256": "a842b537aaa7715541b629f157ae311b0cf8eed5e5cc54e803f85c095a9af079"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_Base.jpg",
+      "size": 3945678,
+      "sha": "44c5f3e75edf14b45213c206f1e48834116257c4",
+      "sha256": "d5c8799bd4465a93e9e01e429021b4d08c73bb9edc2a44be3ee316f4e8d22e06"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_Base.jpg.meta",
+      "size": 2652,
+      "sha": "2c732e5ad8e2c85bfae91aff1b7671b332e4a113",
+      "sha256": "a70d38d598cf1b01e0b8048c245f8e78e674abac0e25e852cf1fe66bd12484a1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_MetalSmooth.png",
+      "size": 3389487,
+      "sha": "1462976fd3f8d24b28cc15b1c89f4450afb422ef",
+      "sha256": "1b4944d1f50086a7cc47b0b9176a71e8b65cbc8065de508528763e567bc17d23"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "ea5a87fe18a59b61cd7a698c9036881897755c61",
+      "sha256": "8fa5ce2b4c1b92d1ad7836d898801eee86c24b92efdbc850f6dd95d3bf2ba40c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_Normal.jpg",
+      "size": 1288531,
+      "sha": "9c8e6f72a0d61b05f99128e7240a2602c3b5d861",
+      "sha256": "f40b9459b5f592d86e30645443127556412c8d8d818c9b11badc6a7082161357"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/Marble018_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "0b7ea8fa6cd1e6e4317d65bf777e7d6a29209e3d",
+      "sha256": "5766ab904cb3ba9505fa9f0e4938d03ca4d9234d22e61a3e0afcc6e98cc625d7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_Base.jpg",
+      "size": 1698111,
+      "sha": "ecb497b723e4ae482d848b66bca098a2f875a991",
+      "sha256": "325fdcc47a50a2c4f343998bdee71ac78b7a1b3e0fd897075bb6b09ddd9d7a6b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_Base.jpg.meta",
+      "size": 2652,
+      "sha": "6d58146c3dcbbb6b5146c75ea77098d34e951fed",
+      "sha256": "4686a840be680b9f5d1ca90e6da8629c27b64c6f603869dcbb6cbb21fb894b83"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_MetalSmooth.png",
+      "size": 4046343,
+      "sha": "c15dd09b005e0f658f88c673d7369638e1099649",
+      "sha256": "4da374bedd317329d0110d00cc420feb09982923cf81bda70419b230e46e1330"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "8e1a128703571b24439c9c2b2fc7910e0e748120",
+      "sha256": "675b9e26f5bc9141a04b7c8232dabda07e998bfe02d941a6c4c3488297ad070d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_Normal.jpg",
+      "size": 4206196,
+      "sha": "459a821699a2f6ecf2eae5ffed85a511cc704828",
+      "sha256": "1d4491970ccd27fe775c3ae9a827ed4654d9efa9874baf8bb7875c8bc34335e0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/MetalPlates001_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "27a0b17608f9893b38c2344bbb03cd6891bc938b",
+      "sha256": "4efbb837ce75944cc307a195c141fa73c15c34b5313594a5ceb0d2652078816f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/SOURCES.md",
+      "size": 2432,
+      "sha": "39576152cab4c910d1a01586383fee06fc6e77ba",
+      "sha256": "84ab3a26499e005c177b32887a7eb8141d5a51608a5c60e319d240a6ab445caa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/SOURCES.md.meta",
+      "size": 158,
+      "sha": "789c7fee31545a54c129d17877aca2313db5f4e6",
+      "sha256": "8daf707eb35a67cdbc58f59e60178ea24f4d1580daff702508029273257c266b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/StudioReflection.exr",
+      "size": 1469189,
+      "sha": "f09d8e073cc2ba4781c00eae4419f4e450a0d235",
+      "sha256": "6c41a5f0c2d42c8dc6b4a5b698e952949b4660ecc2ed5158a20676cacd181c74"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/StudioReflection.exr.meta",
+      "size": 2652,
+      "sha": "6359a43bbb3e9306cfacb97f2a79d532cfc8bd4b",
+      "sha256": "dfdc86a09a1d41346474201acb7c21989dcf4be2b9629b4422f3391c89bbb844"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_Base.jpg",
+      "size": 3195339,
+      "sha": "18531dfa40f50e1a9251cf08ebdd25f63f61fc64",
+      "sha256": "7c81a1577f50a023825d8d5e26ec7f8596e47534d8ff601aa0b074980833e875"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_Base.jpg.meta",
+      "size": 2652,
+      "sha": "8065132f73a6be6cf7395d0ef5f9f0bf9940e9ba",
+      "sha256": "22c09656d7fb1027f70aac9ffff4f44d87d1971fc925759e87616df746a3a58b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_MetalSmooth.png",
+      "size": 4821439,
+      "sha": "f256e6f277831a33ed2cedeeeffbbd544b6343a8",
+      "sha256": "10a35a01768026e3487ebcae988c87e2bd6bfbb96f902eed437bbf4d8c22de98"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "a0b6d7614f0cbf7204c4a860582e50196fbef768",
+      "sha256": "e157178a77d06af0f2eb0d59569ec59ecfd5935c12f79b7b935a0eec59d492de"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_Normal.jpg",
+      "size": 2656496,
+      "sha": "ac9fc247e760f3bc522cf2fbbb578caadea44c41",
+      "sha256": "20207c7b1e4328f8b8b635435d33d5adf23c44f045d1f711b4105999d1883745"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/velour_velvet_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "c03c99e4ba88e1f74c8f460b320c32bba4973ccb",
+      "sha256": "a22ca0fd8f860178d106ab2cac9fe1e5126e94b8be51168b46743918ca4a48bd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_Base.jpg",
+      "size": 2060618,
+      "sha": "a0b4f71d06f819455402f34fc5c89ac191f6bddb",
+      "sha256": "66c73defcc62ac090cb838e8455b8c1febbfea29a15c8f40a5e2d398b2ba4733"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_Base.jpg.meta",
+      "size": 2652,
+      "sha": "2132c78181c0511a33b93c952ccd41f7397db3dc",
+      "sha256": "bbd4c7c6ce5681be71a32bf4a56bc07c5769e0766eae84e56130b04452809bb1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_MetalSmooth.png",
+      "size": 4088687,
+      "sha": "dacfebb59762783da939c6dc2c42e52f011c6744",
+      "sha256": "1e0baad20dd2bbcb1d364b812f3638b3670a21ba836daa0b23c48d5c3e55a8c3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "f1bc4e4dd554981403eb4d6740c51b26854ff52c",
+      "sha256": "ffade24f95d9ba6ad3c1e2ecc9cac74cded186791984cef6785e88e80c037839"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_Normal.jpg",
+      "size": 1891517,
+      "sha": "460d7d55a4f7ba644bede9a9e8c19a62b18b6713",
+      "sha256": "544d3feffd325a0f6f7db5dc94ae99820349bb3d53ce3651e4647d5e66336cba"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/walnut_veneer_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "b37a9f166d4d91ec9276595ccb7e2c12acbeda33",
+      "sha256": "e7aed0a888bcac66cc3485b1a1db650f70cb920f78fa35b059db9ac0b9bfb88e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_Base.jpg",
+      "size": 2568315,
+      "sha": "2c552bc56088a909a52de7417182da443229e0e8",
+      "sha256": "0ca5245ba70777d3e41ff4566c9f8d363855461891802c55cb7dc0f6f85f084e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_Base.jpg.meta",
+      "size": 2652,
+      "sha": "a557f70dfccce583a23d683bd06f13f9710637f2",
+      "sha256": "e3c700e579c7d3e830badb146491817a5db593171f7c411bd68b4329395e19eb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_MetalSmooth.png",
+      "size": 3772266,
+      "sha": "49ad1eb9247fe10b9f3bfbe027470df26ced7a10",
+      "sha256": "39bbf3ca7c2d87c7de72ac8da31f9a2730f04ed9f6788361d971d08d8e18128a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "0965cc3578c53c549e7ef681ff90e73f101cb72c",
+      "sha256": "2552901f3ea6cbb6cfe18951ed58368697ac56539f77e05bd6379c45500272ff"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_Normal.jpg",
+      "size": 3379814,
+      "sha": "77d6ea9132c16f7b9388e6e8df1f0b0146d06d06",
+      "sha256": "083579b03a8f31ec1886512e5972f3b893610bf26a2098f97910e0f46745cdc9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH00/Textures/CC0/white_plaster_02_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "62def4cd8ba9b5bd7c62222bc76f48f07e680efd",
+      "sha256": "16d43d67fff5ea649bfbac956122f7c5801b80e1b8e1a58667a454e350bd8a97"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01.meta",
+      "size": 172,
+      "sha": "19a4d87f0eaedb2a62edf731011f92eba9ca5720",
+      "sha256": "aaf3234dcc026a0681d3127befadbb452faf54f31d8b30248b7ea648e20880bd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials.meta",
+      "size": 172,
+      "sha": "2a8343c54df18d32bc856fdc843b0a289a35b625",
+      "sha256": "82ca34eb48046bbf0f3411c6ae435c343d5293935acaedd9f8210e9bf698700e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Archival_Paper.mat",
+      "size": 3870,
+      "sha": "261c6a15b3aea1850a7daf69ffeec231c3532ab9",
+      "sha256": "b1e1229acb8b71afccd2dbea960f9967d8c631834ac9934a59a6818943167b5f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Archival_Paper.mat.meta",
+      "size": 188,
+      "sha": "04721666e49c2179a8579a7290e465eb40b25353",
+      "sha256": "c76c3644cb85b8949838b768f4f78d144b71cae04a711273b3d0e38060611ebd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Cognac.mat",
+      "size": 3868,
+      "sha": "56e16824ea6ab0a914f69d2139a264f26b8fae50",
+      "sha256": "25c3a1ad1277ca63a415b298d8458890ba40965afdf725f2f42884693dcf11ca"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Cognac.mat.meta",
+      "size": 188,
+      "sha": "55363186895e4329e917273803eb48ba9ff360db",
+      "sha256": "6e8a085327dae10d8d387cf6ead0ce7065874e09dff56477dc0c17603064a8e6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Ink.mat",
+      "size": 3859,
+      "sha": "a8a3298c6d67b8078f30af8038efb4ef8390b378",
+      "sha256": "e4e2a4fde92c0a57ed3088d057a4989c40a18e20229ae7ffae8897f176ae17ba"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Ink.mat.meta",
+      "size": 188,
+      "sha": "75b33f41d2e776fc2659e1fbe2a6ed645937f347",
+      "sha256": "d635f183b4c520e0ec670dc0e7e2a3d11cad0dfebf450ab7cc40883e187cf38a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Moss.mat",
+      "size": 3861,
+      "sha": "aec73c75d9776afed8b92ecdacb6dc12d24c1c36",
+      "sha256": "182c1b933a25a312e0133dceae78bc2f21abeab0047b147bf4c946e4c0c397c9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Moss.mat.meta",
+      "size": 188,
+      "sha": "274f8417d47fa2824b1d4938e1a691d371459422",
+      "sha256": "b03b860b6087e48811468820367cb5cefe6931ad416d89fb294bd7ddf27ffbb6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Wine.mat",
+      "size": 3865,
+      "sha": "e4bc8fe44120e1580388a703983d4125803be98d",
+      "sha256": "0ea8e8b0656e7278a8813a8fe244df90f7f894712b44e4e35a5fbc113451ab32"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Book_Wine.mat.meta",
+      "size": 188,
+      "sha": "aa954ce0847854ac96b8f1ea78eeb0e27506cd12",
+      "sha256": "36dcc794e505e5829a6675d70184cb207a5740b1fbfce474507daa4de5607bef"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Chestnut_Floor.mat",
+      "size": 4130,
+      "sha": "b52c03cb83139b1ae5acadea7158929680885546",
+      "sha256": "f12adbd9a451b45af4d82ceae858fe47ef45f670a83115dfef006bd5d005083c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Chestnut_Floor.mat.meta",
+      "size": 188,
+      "sha": "d9330b0d6cc24c71d164c52a5789484d7d2f4982",
+      "sha256": "a9a924dcba63dccd94cf6a2c5051c090b55a0ed53fd19296c824ba6773c67e97"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Dark_Walnut.mat",
+      "size": 4126,
+      "sha": "bbdf07973de035f8451ba957a5501d56dfe6b460",
+      "sha256": "ab202214646d106184ff7d2f8cc5198dca8cb9c5110edbb7c92f65fd9db92c0e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Dark_Walnut.mat.meta",
+      "size": 188,
+      "sha": "e5a645e1ba30e0b74e7b910a6a3b3439e32b15d9",
+      "sha256": "0074c3720b07e4f0b8e88b2184ba3bef5733c4891e02e469719d77b29417b0fc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Opal.mat",
+      "size": 3875,
+      "sha": "1c5cbb01b6a4c57e96bbe27ea87f3038595bc5f1",
+      "sha256": "1b603b28f264a4e747e32a1275ebf69124eaa590f0b735bb20d88914ef83171e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Opal.mat.meta",
+      "size": 188,
+      "sha": "d27fe974f9904b632ad713cd9c6bfb3475f0305f",
+      "sha256": "915fd3ef3fb9977b776934362bedddb3336befee6188396f7ff8abad29cf9db1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Satin_Brass.mat",
+      "size": 4119,
+      "sha": "9cadb2a996b9287846400c4369c1291ecff24e58",
+      "sha256": "749804915f0d5b295699a5cad2ce873832480ea2952fdbcc818d1527e9eaa30c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Satin_Brass.mat.meta",
+      "size": 188,
+      "sha": "5d3a16b40226848aed9d70fa92528898769fc89e",
+      "sha256": "ee8ad63da7e94e8ead916ea66064546b5f9646e0f63e5bbc9514f0940af10237"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Walnut_Casework.mat",
+      "size": 4134,
+      "sha": "4999c96db6bf76edfdfd6e9d0d10d503a84fd4da",
+      "sha256": "6acd0978eeddd569ade71679d92197a145ffd3f2a3257786dc1abdbcca3fa927"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Walnut_Casework.mat.meta",
+      "size": 188,
+      "sha": "9cf3e9439648e6caf8383268bb4da183b81eaf79",
+      "sha256": "73eefd49214f89297418537c2f9fa6858e950825a454b8efc2f20441bda9cf1c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Warm_Plaster.mat",
+      "size": 4126,
+      "sha": "fbe1ed64cda52ed9cdee5e14bf26f36c87528f1e",
+      "sha256": "8e867ce1f0b8738ff34015fe7a7be4a7e711f006029780f2a87142ec90760025"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Warm_Plaster.mat.meta",
+      "size": 188,
+      "sha": "bd10eab4da43fe1da8b1499a2bc6d143723f6638",
+      "sha256": "dcf0ce994811b8f43f68e88f890fa0af960356844b97f857fcb80c5b095d6e94"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Window_Glass.mat",
+      "size": 3861,
+      "sha": "b9aa446e76d11ed74fee135810c88e9718feb405",
+      "sha256": "a0150a06371caebb361fd8de21e2e0e3e4361886b4baf11d68a20901a78b95a1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Materials/H01_Window_Glass.mat.meta",
+      "size": 188,
+      "sha": "847f2ffad314e21b971196af05b04163e1815945",
+      "sha256": "fd8d51d5b9a6bef61f1e3858a0d019f01b3f2e8a2496e09458d60852ce357f7e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures.meta",
+      "size": 172,
+      "sha": "df5e1e3a9e844f9d4733064e80c6a6ca16d22d15",
+      "sha256": "124a2ca6ac5eb122babc76d12c0cd11bc5048b2307495fdf253882be78da4df9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0.meta",
+      "size": 172,
+      "sha": "41c7929fe76a8bf19de71f0cf96bde85bc30f106",
+      "sha256": "f59a44aa6d4ada3a8925b06b902d79f56d8d9da2aab2f267c8765b210c36e2d5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/CC0-1.0.txt",
+      "size": 7048,
+      "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/CC0-1.0.txt.meta",
+      "size": 158,
+      "sha": "4bc00a50c4e0711b7014e9081ca698117ec5beb6",
+      "sha256": "2476df78883e6373bd1609f3646d403d2a11a96f96fd71c7172524191dee7f42"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_Base.jpg",
+      "size": 2137518,
+      "sha": "6738f8e371a1631cd89e7a99d4884b08210621d2",
+      "sha256": "b0de2403a31efa31e501b0028c0bd8e504d5bd6318f4a5ce90c550c3067f96d8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_Base.jpg.meta",
+      "size": 2652,
+      "sha": "a5f82c3c42f0643ccadb716d6fb36ee33726cd7c",
+      "sha256": "ba48e30fd597057d069c8365bab03ce6856e639cea84e0b4c15c8203c037fdc3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_MetalSmooth.png",
+      "size": 6128830,
+      "sha": "7c0df5fd195dee03efde82dc1c91ce4fb536c8f2",
+      "sha256": "892a9db7eeb3038b83ad4bd1cd05b6a8467afe019914a6851932fa11b6aa953d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "420e5494d77fe6aba62e89b36d2fbabade243d07",
+      "sha256": "54b82be5d83e6cf4e611661bcfbf451c905c387a184ed41c6cb6a02cfdf9c015"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_Normal.jpg",
+      "size": 3030702,
+      "sha": "bd9be4db63a8ee0eebc4c714bcbb2db011bfeaa7",
+      "sha256": "3386277290af50b4d464dc9a9f195bbf8dd6f137b9ae0274552397d2f0135c98"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/brown_leather_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "e3ec46131695dd074bd585eacad79337b1dc129b",
+      "sha256": "43f50537632bb0397a3eee6edcf6268bb87c594af3dfdbba6d8a648b3ebaedd7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_Base.jpg",
+      "size": 2894186,
+      "sha": "7167c4c0c36ed768633e54f220eb1050d5e0180f",
+      "sha256": "ff811f97ab46f1148f2753451fd9d64abf0ab9101e85922ed9f45fc3595a3cf2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_Base.jpg.meta",
+      "size": 2652,
+      "sha": "ffa99c8a828909371f234feaa57c2d5bfe8457b1",
+      "sha256": "3931c523b1b4b4fdd050b7920f62b0ce96b2ecdf860c91ae5b9a21f83364901f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_MetalSmooth.png",
+      "size": 3882422,
+      "sha": "36372f14ed0f9599fcfe3442556fb01a245f227a",
+      "sha256": "70246283c16169d92986576d303fa7a510b60920b289ac0af85725249fdabf91"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "1b53dfc1c334f0e6fb0bc67ba05a138ddf388723",
+      "sha256": "fdbeabd8d32ce28533b1d1fe5efd95af936eeed113312b685757ae8ea23fec4e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_Normal.jpg",
+      "size": 1603278,
+      "sha": "120755a4ddcf4bc42e98299c036ddcdd27eb6e02",
+      "sha256": "624c7262c726cbc7da8ad02941dc6c95dec104fdc20e2804560ea112814b1d5d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH01/Textures/CC0/dark_wood_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "8c616a61aaa3af0e75f679edeb0dc243404a45c8",
+      "sha256": "703cb3930f0c9b621ce6a4a49db98006ccbbab4b31c8f63dd8dada1cfc45620e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02.meta",
+      "size": 172,
+      "sha": "44eea896ca77494b314c44c352204081d415f60d",
+      "sha256": "f84a177887b4adfcd1ab003f3817d8093694e581930d2a993c410152ee77e562"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials.meta",
+      "size": 172,
+      "sha": "ed50c33a90349611310939231f0c2a56649f3529",
+      "sha256": "a915105b1e9d6bce3493deed18cdfb667e6597e152c4f4683580f1efc4a304f8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Aged_Brass.mat",
+      "size": 4120,
+      "sha": "2f6f2298795b737e217f4dc2863824ec80149ce9",
+      "sha256": "dabdcfc772b08cb9f630f1c55c6715edc17ed480d0eb4bfa824206ce0181c710"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Aged_Brass.mat.meta",
+      "size": 188,
+      "sha": "a8b4c9ef7305cdc8cacf4de540c44f5ffdc3cf10",
+      "sha256": "dbd75fc672c7c1ac254b606ffd1743c32760150bc9ff30179edb283c1e2b7e8a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Cabinet_Glass.mat",
+      "size": 3960,
+      "sha": "7c15a8d3bea8955ffb8505da8eea2dc0f43d2ddb",
+      "sha256": "89a5207fd434a7d5df59a24f9b060ab76f8b26f46ca86d6402fe7c9ad4f4c329"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Cabinet_Glass.mat.meta",
+      "size": 188,
+      "sha": "0d93064a0d494cc57efeca9e51833bdf37d2ff6c",
+      "sha256": "f7f7bf06313102d083e478a1c1d5c94af3fb04208ba120a96911e7d5f39d5564"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Carpet_Ochre.mat",
+      "size": 4016,
+      "sha": "30c0cbd4b46eb40cccc0956858151dd6d7ab0db4",
+      "sha256": "c0f84c568b0ddf19ea2e9730b4aa5341be3e902cb2dbae82fb6d23c4d8a8f923"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Carpet_Ochre.mat.meta",
+      "size": 188,
+      "sha": "fd0f5c2cfe9a87775036950493079b33e8f71112",
+      "sha256": "02a8bf86b7ab1e8a68d172ccb94b7bd0f78ac4726b82c99004054ed48aecd4b1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Celadon_Glaze.mat",
+      "size": 3862,
+      "sha": "2339fe3de297b03247a582ccd47608e51d6249cd",
+      "sha256": "b6dd0fd07247682b6c6bbdf969e9a4a0c2ecfbde4003ffe8382a46a028c47e79"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Celadon_Glaze.mat.meta",
+      "size": 188,
+      "sha": "4215c291d57498ab0ce7065089c7eb1dbacb8db3",
+      "sha256": "46cd5a98ce7f733ff6ec53414107c8733012287b15e2a832e2850050fc35d52d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Ceramic_Ivory.mat",
+      "size": 3857,
+      "sha": "00934f009e2acd20a84042a74cd0865ca8b566c3",
+      "sha256": "d3c6d272ffdb2e8e44a8e7ccb6eeaae0db40a97bdff18790f9ef704a16dd33cf"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Ceramic_Ivory.mat.meta",
+      "size": 188,
+      "sha": "9b771a24ebd5fd5cd86eb344f23d3860995eb2ec",
+      "sha256": "1a4c57bac16c6b086335d7dc2a8054ca84b12f3e7292b6aca7224d40e9faec70"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Cobalt_Glaze.mat",
+      "size": 3862,
+      "sha": "808961f40547c75766b0255c89b5afa0f0fa7dfe",
+      "sha256": "62dd1ae7f982489784647366cd4db3f8edd7049625334b0f91f8917519a2f9a7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Cobalt_Glaze.mat.meta",
+      "size": 188,
+      "sha": "7993320061b8a8422d48a3c3f51cc774b9bc9ed3",
+      "sha256": "eb51ac6e5acd8b61ca8e02ef58ed6f0a0ddcc5d0462d86bb4d2e5d4ebfc055b4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Deep_Petrol.mat",
+      "size": 4126,
+      "sha": "afc45d4fe8a6104621402aa91180a4fdb5fc9045",
+      "sha256": "d4f0b80f17e5d21ca712aa9fb6ffe5bb42dce4fd94007ac31d6422d9d1cb22e6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Deep_Petrol.mat.meta",
+      "size": 188,
+      "sha": "6c171732b4c70407ce0076e8c429b604d9946f98",
+      "sha256": "41198dbbe2f28620bdb6f1e3945a4388b956ba60ca6300d3abbd336b7f31eeed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Inkwood.mat",
+      "size": 4122,
+      "sha": "bab2694dd62ceb29c7db36322d4e6fe1fe0ce1ab",
+      "sha256": "acff311d69a366047720856d9d07bc8606e6ff0f87e9e74bd3157646ee1094cd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Inkwood.mat.meta",
+      "size": 188,
+      "sha": "df6daa43e8bff74b33494a578118369eb88b2da3",
+      "sha256": "6ad7b0ed21759a06df4b0fc07d8ea8a103b1e14ad012bd98ffd2314fbf386a79"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Opal.mat",
+      "size": 3876,
+      "sha": "6041f9f9a598d7b66fe6676b5be4adad685758ab",
+      "sha256": "7f2be4e964e77eaa9ecaff7509cd7f997fbdf0118c5254096a2cd7cb2054f5bb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Opal.mat.meta",
+      "size": 188,
+      "sha": "8b5fccb1fe2d5010490cd2ecfc814b9e5df45b7d",
+      "sha256": "3608e57d1e4c9356a678ef254be5150b4aa6363ca746ea509d965d38d21f4c62"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Oxblood_Lacquer.mat",
+      "size": 3866,
+      "sha": "a3ed0304828e1dfa861fb07dbc930c36ed894cc3",
+      "sha256": "c700b336a75c9aef3e2018749c69b833b1eb8c38a336a881f51bc63efb8257ec"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Oxblood_Lacquer.mat.meta",
+      "size": 188,
+      "sha": "3c381590818a0f3a7fe105e3f4169d490061a1e4",
+      "sha256": "3b097791d49418cd61964b3497601ebb18a8256dc7073e426c9c567ae0a0e0b7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Rosewood.mat",
+      "size": 4127,
+      "sha": "b7355104d5e36575d3afb20d4572fb691dd1bee8",
+      "sha256": "73a188c97b20cd3ec8630293552d0baf7cc9ba39ad230bc432a1c16f343b82af"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Rosewood.mat.meta",
+      "size": 188,
+      "sha": "0da058ea75ebe3732171ab197c7091f1975763d1",
+      "sha256": "8b158506f390c4f257f890790a9119f9dc472bcb58212711570bf42758a5f3d7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Smoked_Oak.mat",
+      "size": 4129,
+      "sha": "b495eebefd3fd2da9845d4a37e75dd23e9187474",
+      "sha256": "a1b41d52099fd3d8ebb8f25eea0eedf0aa5f6766da7c007eb7a8672cd5bab079"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Smoked_Oak.mat.meta",
+      "size": 188,
+      "sha": "aebf113a282df530dd14de4fec4d0375fc8e87ba",
+      "sha256": "1b4e25c2ee5c919e09d46f3bcc934660ab2629f2e052ff36587a0876cdb9a23d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Teal_Velvet.mat",
+      "size": 4018,
+      "sha": "8ef0c06c6175fdfac2a5cd0905e9ffacb9b2ef21",
+      "sha256": "2394530792a31efc6bd7dd21cd471e95e7fe4831882dd1a44fd407bc5ec5bfd6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH02/Materials/H02_Teal_Velvet.mat.meta",
+      "size": 188,
+      "sha": "072eb26bcfb20cbaf425fc3e6527ff75fba06304",
+      "sha256": "c9e82c248bd1a8093801626a01f0deee2bc5c50b8e460f3df20cea31715d911b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03.meta",
+      "size": 172,
+      "sha": "e8a60c3f0e3f305b4f571f2ba173c070472bcfb5",
+      "sha256": "44081ada4f5ea599a3607212ad05d963f5ba18d4af017715d2b670626a37cd5c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials.meta",
+      "size": 172,
+      "sha": "2250ae170bbcaf16d21466996c2a4d9a5f17a2c6",
+      "sha256": "024450e6247afea396fd64545549eb97f47aa2ca733386a01374db716d8ebbae"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_CRT_Glass.mat",
+      "size": 3858,
+      "sha": "4256592c71a66c63a5fdd527d65715c541045e3c",
+      "sha256": "1b1637c1958edee30e7426465c65604d19a990a3a71ad8aebc60d294e49a383d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_CRT_Glass.mat.meta",
+      "size": 182,
+      "sha": "594a2f0b0700747bdccf8e0790f827a503725ce8",
+      "sha256": "cf808b52f7891ded7aa35c61ad48c4a4154aff7904a497a84b47680287751b73"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Champagne_Molding.mat",
+      "size": 3878,
+      "sha": "24d07be9dbab43f34b33d33e618978d2be398e46",
+      "sha256": "eaf630b84253396df35f016b8a301bc8247a733f8fc515b035dfc64a7cce0528"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Champagne_Molding.mat.meta",
+      "size": 182,
+      "sha": "9f2e39534b1af33213dfdc4d7cf5b0a95a403ce4",
+      "sha256": "ed8ad155aa5dc72bb443ebfa26fdd8faadae45ec7d05af548036eb69b28992e9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Cream_Wallpaper.mat",
+      "size": 4129,
+      "sha": "73d98323e4b61b4a5ac1d0b180d5a007d2801fc7",
+      "sha256": "1eaff1185cce5dbaee44eb11fbcd27510e527e15aa5e45484085771b16a06aea"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Cream_Wallpaper.mat.meta",
+      "size": 182,
+      "sha": "c21fe2d3cfdca1c5141500599cf52f492e44f420",
+      "sha256": "01d81448a24c4ca41da5c988d92d4d4acebf489870598d358c8328bcb865574c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Deep_Teal_Accent.mat",
+      "size": 3864,
+      "sha": "e4ad3e55a48d844cc43f66e42eb849dc951c062e",
+      "sha256": "d28c525cb5de6145c3132bdd34f4d9b486291b48503abba930da41c4430c1c1f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Deep_Teal_Accent.mat.meta",
+      "size": 182,
+      "sha": "d75b79b2f552f180e16e14b2bc8727f3cc183687",
+      "sha256": "5c5c6095fd694303fedd04f55727a395ad32132135b8f917226555b5049bfdd9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Frosted_Opal.mat",
+      "size": 3890,
+      "sha": "15a296507d9ac168659df6dfbd4b03e241bad4b3",
+      "sha256": "29f1dcd601ee61de38c19829139cfa9466f5bf68d1dc0f2112e7a3bfbc30e0eb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Frosted_Opal.mat.meta",
+      "size": 182,
+      "sha": "b2df21b0ffb8b855178cb6042fe29d8b5ab6cf07",
+      "sha256": "decc3a63edb59401760d712086d3e4c43c44d85ecd97f6b3d2b72bc3eb47ed92"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Ivory_Linen.mat",
+      "size": 4018,
+      "sha": "465c36ef23d726d325db80a2c86c170e90e39691",
+      "sha256": "280bb69f35482729c0a557eaeae4444216d84af5028a2c77b74224e0685be2ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Ivory_Linen.mat.meta",
+      "size": 182,
+      "sha": "4e808a1f43ee1be7ed7afad1f649e30382b84f4b",
+      "sha256": "e1002eb36f479bf8ce1333ed8cba2345f925876949bfc7c8f6dbfd9c494aeec0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Mahogany_Floor.mat",
+      "size": 4133,
+      "sha": "724e5d1150b5a98e3e539b7cea808a9c7602f17c",
+      "sha256": "615331d0f9d497f87beba13862c89686d40ca2204a1678bdfe39432564581759"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Mahogany_Floor.mat.meta",
+      "size": 182,
+      "sha": "8f9cd4db95b3fcf65f70f968c651fcb3b8024361",
+      "sha256": "139a571539672877aabbd5dbc0bcefd4e55d7d7df18a807640b3b4a3bfdbf7c6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Paper.mat",
+      "size": 3849,
+      "sha": "30b8b01537beecaa90cc6b7786d31902acc39caf",
+      "sha256": "20ab0f9ee14e1b990e43c5cc7985e0d4b099e31711ce821aacb99c6ee7ae5b42"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Paper.mat.meta",
+      "size": 182,
+      "sha": "5106007b313944e5c428edc240dd1df82870ff42",
+      "sha256": "4251a403e5d175ea5e8a8189e3eb724ae55a8c56e36ffda42327b9e5d7840181"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Rose_Quilt.mat",
+      "size": 4014,
+      "sha": "0dc0f319951c6e1bb88992fff35034102758e100",
+      "sha256": "20ae0827a5162aa80cd7410febcd6cf894c166bb613af74d700811402ef1b5be"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Rose_Quilt.mat.meta",
+      "size": 182,
+      "sha": "8dd4951038486ccb1129896098b02c87967a4bf3",
+      "sha256": "eca9bd8e98293f2c3c01525efed5f157e109e913b28df2a5f570bcfdc33325c5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Satin_Brass.mat",
+      "size": 4124,
+      "sha": "5bd77c803978c7b06a365ee55270860d087fa94f",
+      "sha256": "51950acfdb87becff9b413e8087465286ce7836f3596ae29dda280c47cfbcebe"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Satin_Brass.mat.meta",
+      "size": 182,
+      "sha": "6f214323ad956e0a5d6bd95f8c9e9a0b945a8006",
+      "sha256": "50476c45826a71d67f15fdc22d51c926a3f26a269f34b5c71a8154b5122ec35d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Smoked_Walnut.mat",
+      "size": 4134,
+      "sha": "62a899d68f4ada1c39b2d56996ea3817b8b135d8",
+      "sha256": "6398374cea95e15675ab1f2622388bc3347dc80d858119b484ffc62cb106ce9d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Smoked_Walnut.mat.meta",
+      "size": 182,
+      "sha": "c3951835d9c8007044df0a13448408983088606c",
+      "sha256": "d0f95964fe904b9a0b8e83e5cd1d4f062bd6843e82cd7a3c3881540436fe0cca"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_TV_Bakelite.mat",
+      "size": 3859,
+      "sha": "8e24a7f85efc20d864338549aebf5676f60c4f69",
+      "sha256": "0f72f3d680cb2846ed51fc1eba9a423f613482f8e27bb7a47d64bfc9fe84819c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_TV_Bakelite.mat.meta",
+      "size": 182,
+      "sha": "2b8ff870cdd6343e6b850bbf438e98558912a0c7",
+      "sha256": "b889bdb56e1fba1564d58a2011e01bbdffb7fb821d3e1749017390b1ab3b88ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Window_Glass.mat",
+      "size": 3859,
+      "sha": "93d3fc8b004e084ab53f8890df15934f07f70024",
+      "sha256": "d3290f88a2a2ffec2fbbdc065d5d21fba3408a0d1960dfa58568651dc80d7e1f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Window_Glass.mat.meta",
+      "size": 182,
+      "sha": "45466f12e6de8108d03bac118d1ed372452c0d95",
+      "sha256": "1bb7f72f153bd0890c99d054599545e2b2a96da41fe100b6684dcdfd1d0bfb62"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Wine_Carpet.mat",
+      "size": 4019,
+      "sha": "1f4601947fa915a2c5ef4ff4142eccc43422209a",
+      "sha256": "8a2f8c140d8a52366cb8665b1bb33ba4962d42fcc96011fe313acd117f22d51e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH03/Materials/H03_Wine_Carpet.mat.meta",
+      "size": 182,
+      "sha": "0515c9c0ae80a119afdc3ea608777e04e657c3fc",
+      "sha256": "d3a920c6fceaf5cbf15feb9f6153bc70162660232db75144f920d5bf01a56148"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04.meta",
+      "size": 172,
+      "sha": "626f0ad5ecbc0e27dfca141d356aa9c950bcbded",
+      "sha256": "d3623beef2abff793a27e4cbc81b8432ee22988ef304f105cdb6ebb7798f3f95"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials.meta",
+      "size": 172,
+      "sha": "3098187c29e7a8713d58f47818751ef90363957a",
+      "sha256": "4270996f669191da3c8100d1f91c06f5eaba9aee5e8e75ce7cd8df09586ccec5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Bark_and_Soil.mat",
+      "size": 3861,
+      "sha": "41cb9aa6b35b059b83858e51348b2dc67b79a0bd",
+      "sha256": "29a9156e0204497b6f28287a2f6df9638c19cb960d0acb3f2bf9724529aa195c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Bark_and_Soil.mat.meta",
+      "size": 182,
+      "sha": "e2e511d1631b122cd4180557c01f9a67e5f0cb26",
+      "sha256": "33add654eb3bff6d4af4e06305829255672f321c06bcc6f63b46d45f7ddc779a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Celadon_Glaze.mat",
+      "size": 3860,
+      "sha": "b56c97978fc3d86d73964c5c0556528d8ded1d66",
+      "sha256": "6d1cf8e30ec9dfc388be5257b381726a1cc3f69c5f8800a6f2a314531912d2e4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Celadon_Glaze.mat.meta",
+      "size": 182,
+      "sha": "0fd2eaf90f801471befa3a40fc7fb8f77023b835",
+      "sha256": "02ba24b4cde32e1b86153caccff5689612fe5bcd5a44e90a9a545c9b1e84b5fc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Cream_Ceramic.mat",
+      "size": 3873,
+      "sha": "b751a19892129a177541eb17844a8b438aa07953",
+      "sha256": "662d2bafaa845142b33ea42479d7ad46cd7c458ff010f0e6c31be23a86eb1b0e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Cream_Ceramic.mat.meta",
+      "size": 182,
+      "sha": "295bc0d617cc20d3ce379bfc423623e4c947fb07",
+      "sha256": "3b666d88bb7f2995628f6660a50eb5e6cf7fefbc924b20e06d42eb44e2066474"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Flax_Linen.mat",
+      "size": 4011,
+      "sha": "408536e094b20253e45c6c5e1ef9186ccda806ef",
+      "sha256": "d267eacdf93088914bdeb88c6ba24ed52eb89e4d21a8e9c7623af42d37eeef03"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Flax_Linen.mat.meta",
+      "size": 182,
+      "sha": "0fa7a991ea811bfd2db3efff5a5dbb910ba31e25",
+      "sha256": "1f14802e723e240659f56a3a5a66c0fe2c718670f4aca4156fa54a029435f663"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Honey_Oak.mat",
+      "size": 4123,
+      "sha": "19cc5839f69a17a8e344641da5f8aa87d5e38695",
+      "sha256": "559dd52ebe04554228a40283203d4ce48bca4f053dd6b201f96ae98f03fa129d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Honey_Oak.mat.meta",
+      "size": 182,
+      "sha": "54f8516939474b7d826d225dc862d4225722590e",
+      "sha256": "6e74ee06a9548c541f5da80a19d6dd984ab714639794c8d32d671664cd641aea"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Ivory_Plaster.mat",
+      "size": 4129,
+      "sha": "8de07f2e832d7ac85147a01a1ca41d4cd043d18f",
+      "sha256": "c5b50b5a76e58ff32fcdd2fe80d65a6c70893023857b7fa1d1d5ba37271455be"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Ivory_Plaster.mat.meta",
+      "size": 182,
+      "sha": "5d3680b92313f70a1bb1426d6f257e161396f20b",
+      "sha256": "a9f9bfa021a98fbd290e481ebc57fb8ddaa6c0c69a435e6471499fcca65b2f42"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Emerald.mat",
+      "size": 3860,
+      "sha": "e31c98ba3a7eed213139d11b0bfb514921a2a24e",
+      "sha256": "67d1ac46f606ac57227dce894ea14277c3d28d27af97654c4c38aa6f7549d7ef"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Emerald.mat.meta",
+      "size": 182,
+      "sha": "dc240f6bb760fc774e8b2296b359edd73c170345",
+      "sha256": "1f94932527596be009a75d43823baa5cb5d4b1d0a331ebc8a7a47495828436fb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Fern.mat",
+      "size": 3856,
+      "sha": "0193a291aaeb9a0c610afe822cd2d3897e0bce16",
+      "sha256": "d73fb4cf31c29f3a4a9a3cc81a7a0f7b8097c83ccc08f81d680ee71f2ec43438"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Fern.mat.meta",
+      "size": 182,
+      "sha": "270678209fe4b224266cd8dcf833b4a35b0d95ff",
+      "sha256": "90b29309d0293388f2be2cd1a83abbe8ce62b2e29de479552444793703d6a283"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Olive.mat",
+      "size": 3858,
+      "sha": "b88cad193ed921c172a0639b9ad59bcb8fa251cf",
+      "sha256": "6e232c271e8e5ccf1b94f967f58e12d75d16458dc490314fe5b5f0baa840d65c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Olive.mat.meta",
+      "size": 182,
+      "sha": "84c3d27ae7d8cf38d087b288ac5a144bcf6de52f",
+      "sha256": "f26538f143f80114e1e912df7e1fc56beed90e089fbc1872fa6777ad42e5f211"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Pale_Edge.mat",
+      "size": 3861,
+      "sha": "40939de303a8bf0d0534e6fcf7a171c65721e849",
+      "sha256": "17d052dccc22dcecdde05da6db1fc91b45fc5f1ed6ccdb44b0728f5dfdd13989"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Leaf_Pale_Edge.mat.meta",
+      "size": 182,
+      "sha": "f214a3ffaa18a054debd6fc5df77105055e1a5a7",
+      "sha256": "02eb35f12c6a7f63a631f8ced2bc07f32177f13c64add9cd1846a441d03351d5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Matte_Clay.mat",
+      "size": 3856,
+      "sha": "6289e7ba071b449e2adc236b1e4af050ff706beb",
+      "sha256": "a0ca43a1fcd92e0529d5623a3c6af3782ad2a030e5d4490922da07e6c22b66bb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Matte_Clay.mat.meta",
+      "size": 182,
+      "sha": "4d5223cd4c310d6b41faea9e33c7f7bc4fb6241e",
+      "sha256": "b07c67207daa729edbcab48e93bb998ca343e63d37843f2558c059bacc3bc783"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Paper.mat",
+      "size": 3849,
+      "sha": "1edf61c609a6a1a3ddbf183a72c0f5f95d2bf080",
+      "sha256": "dd222614a37c7a25c8e929bac7aab578adf0d2cfab667ec2bf64b9a012b4ecd4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Paper.mat.meta",
+      "size": 182,
+      "sha": "43c9212b584cae67dcf88991788bb861b6dd13d5",
+      "sha256": "be136c697734233684e25ddac99b4459c125b8bea161620ebaa1e640b9f8e70f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Sage_Textile.mat",
+      "size": 4014,
+      "sha": "0fbaa249975684390dfd4613fc719a34cae4b6cc",
+      "sha256": "2cb4eb1a357fa605d26b344f845e20657fe6ee025d9b51fcea166bcb14f240ea"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Sage_Textile.mat.meta",
+      "size": 182,
+      "sha": "4a3f5edff327c8e470aed9d52f028d5850272ba7",
+      "sha256": "5ca9f972a155bc06e2a3164fe07b48f325bb6c0e5537f95980189fa768dc4fd7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Satin_Brass.mat",
+      "size": 4125,
+      "sha": "f49d6a717312c2a71c496c6db37fe9ea1fec2789",
+      "sha256": "1abc3ca7edfbb0849d8df55b8994ee0a8ff85f57130a84e6f2eb4ea6c1141534"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Satin_Brass.mat.meta",
+      "size": 182,
+      "sha": "87ea3fe7e4991b1bfb0538c669df776bf94aba09",
+      "sha256": "a1f17bd8c7422910e501c0b4cc2522ad8b1b1b1681d78cfb252cdc0f00341e53"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Terracotta.mat",
+      "size": 4126,
+      "sha": "b76a78cec4baa94d85c4aa720aa93d4303038c0a",
+      "sha256": "03a934e18d4871d2264ea49b5874c4b66bdbbb981cc60a126e93998c355007e4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Terracotta.mat.meta",
+      "size": 182,
+      "sha": "4a83610827157e9fcc55bf1888251fc8cb88aafb",
+      "sha256": "af2cecb916e1ea81f72c96ef7cf8c76c0e35acebb89b3eef96b8637d3c0bda66"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Window_Glass.mat",
+      "size": 3956,
+      "sha": "3cd47052f4a78e3d27f3112cb36a67c3287b9ded",
+      "sha256": "eef313b6efa66de408b382f0b25289aa3dc7ab9f644f7e026a43e912d2f87513"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Materials/H04_Window_Glass.mat.meta",
+      "size": 182,
+      "sha": "5d044e35dd7036ae8249ec57dcc53e5a07916c4d",
+      "sha256": "61ecf4bf80414b2e6c2eb6cc4fa2b8b5405c56a381176c8310410df7cb9cdf41"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures.meta",
+      "size": 172,
+      "sha": "34f047d27d5d7417b04c352de2858141c63f1efe",
+      "sha256": "88f4e149b66b92b1a886c1ddfb15fe6dc4277f607c1fd85fda331359c960a55a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0.meta",
+      "size": 172,
+      "sha": "83a55c6084ab0997a46b02b0475f33d23ff957a1",
+      "sha256": "c41827bf82f0eee6e5e5ec3bc561bc096ea9ff6d48a3b3680e97e6f969467bac"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/CC0-1.0.txt",
+      "size": 7048,
+      "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/CC0-1.0.txt.meta",
+      "size": 158,
+      "sha": "31354a6718b6a907193a489b0fa9c6c8fa50286f",
+      "sha256": "262893d13aa1654806feda124d7a8bcaf8e7073af63ee7ec2c47032142d38579"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_Base.jpg",
+      "size": 3052490,
+      "sha": "c4ead79771c61a53107a2b58e709b01f77a52389",
+      "sha256": "d8e10fafa1b8ed0b489ae3d95ed0b1ddaa7ffecda689778eea26311c28e6d8ef"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_Base.jpg.meta",
+      "size": 2652,
+      "sha": "eab9eaf6c7bf4278c625eaba2549c9b37f52e3b4",
+      "sha256": "defd1b98b96a54d5221fddad0b1f22ff146f0abe8604374dce255729cbc24f86"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_MetalSmooth.png",
+      "size": 3215877,
+      "sha": "7aed12eeb4ebdfbd5f90ba82d95c144e4169145d",
+      "sha256": "19d4a184fd1ea5910dccf0f002914c8f58136d193503a7b84f339a637c17771a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "2a658d0e5899fffa7d8f833c18ba8b9645b55ea5",
+      "sha256": "34f1e33f5c25f5928e3caa971017111e07671b964da21dca3641efc0ea5fa14b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_Normal.jpg",
+      "size": 1728553,
+      "sha": "76275ccb07dd1c5d85a3d483c7fd5ecb77c0cebd",
+      "sha256": "f806bf1f09c4981c4fee9d1adefdb42b545b622d2ac3ceee68789ab78dad1e3b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/patio_tiles_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "a76da92091d320bbb04eb4f6b7b06d2faac5a5be",
+      "sha256": "9ae0fb4e8a0ac1c2d12c79bdde0ae1b15846f36f2b46deef305289c428f63131"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/rough_linen_MetalSmooth.png",
+      "size": 5939786,
+      "sha": "913cbb5b071256f489d869fb5cc8f76472651695",
+      "sha256": "adf6aeb9c95a251177c84197dfce0ba21cb63e34fc297ff1c39326a9e7f55852"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/rough_linen_MetalSmooth.png.meta",
+      "size": 2652,
+      "sha": "18d9d0c1b762a07c9c43a0fd8a32b0d470a438dd",
+      "sha256": "4f893aa63eb0f17d60177201a8d9900767a340db8a812217e538a95a4932e317"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/rough_linen_Normal.jpg",
+      "size": 3849356,
+      "sha": "cb35456faad69c3c52c029cc53c87036a6bd80c8",
+      "sha256": "c5733ad50cfe0f90c546f3d4076590c1c78a4fd1a83c967cc9c92dc8175b99e6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04/Textures/CC0/rough_linen_Normal.jpg.meta",
+      "size": 2652,
+      "sha": "058bc0d01c216fe4883f450a6aaa783d59afcf78",
+      "sha256": "286b53104db5803d97ecbf320811b354a513a8e2ad3a11b8337ffe4282f59ba3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04FrameCompact.meta",
+      "size": 172,
+      "sha": "3ed999e1d32546a73f972a89b35c15e10dbf4943",
+      "sha256": "6f6bf8f9d10159d97ba73bdb266c8a19733ba1723d52dbf2b2a9f9ad9dfdc99e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04FrameCompact/H04Border.asset",
+      "size": 8899,
+      "sha": "2360d3adc899012ceb1ce0015f0971840fa8a87a",
+      "sha256": "9af71005dcba43afa19b8755d1e96240488fb947f917b9a97c4d0c91a300dd9e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH04FrameCompact/H04Border.asset.meta",
+      "size": 188,
+      "sha": "9175f4987cf4749672daedf1db598d3dd6b27f3b",
+      "sha256": "46ec7481e6031b1a1763558e5e4d8fcc4f96100a33cf55cd18f0b2a64c1fcb4d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05.meta",
+      "size": 172,
+      "sha": "977f1c96045a8810dfd7c17e2002190b9547de32",
+      "sha256": "d892ab86ddcc2e18d094875bd3d6ed1787b6d111ba33b41899f717584d98d3f3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials.meta",
+      "size": 172,
+      "sha": "bd44b243301c03bc6f0790881dc37905c4206da4",
+      "sha256": "68976d20ef07644a785324896137a2c35e011609543027bdb159c5494f33aee2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Almond_Linen.mat",
+      "size": 4015,
+      "sha": "16fed63400580119eeaed3e83d376f71251f46e9",
+      "sha256": "c4d22fd027302fb74dca06a277309699b782ceb052b9202fd8e31c6652513dad"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Almond_Linen.mat.meta",
+      "size": 182,
+      "sha": "cf1b456b7b2fbaf037fc08d223bc6b5371386786",
+      "sha256": "1df4c274e5a8edbf3325fffe758d4c9aad30f69df7a24a4dd7f3605f314b6a8c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Architectural_Bronze.mat",
+      "size": 3871,
+      "sha": "c6af8bdf36d7c14ebff1411416353b6307fe61a0",
+      "sha256": "0792f28b68cebd6e9736246e642d03457af2341dafcd890209a78ffa69376cc3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Architectural_Bronze.mat.meta",
+      "size": 182,
+      "sha": "9b831180beb989e72cdb338c3e4833b83f9ff866",
+      "sha256": "54cce9c4104f4c6e5eeaf2708f2efb70e3ae329ee76f47a31d445796ec174832"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Black_Marble.mat",
+      "size": 4128,
+      "sha": "1fe367759566169afd0f9fa1ffcf0aac88415506",
+      "sha256": "d595eb8fb7e410929c640dba7c8428ce7cc4b33e76827fa91fc59d7afd00f393"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Black_Marble.mat.meta",
+      "size": 182,
+      "sha": "c27d65764255c8eb62b7cb501625776bd83aa824",
+      "sha256": "5efe27662aa377d98f6d15eabd5458b826e1ae754c0ea037307691f5a800fa84"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Ceramic_Jade.mat",
+      "size": 3859,
+      "sha": "0275d5f6f4ef6bea0d95d0abe19409dec604d0b2",
+      "sha256": "e439f2e2f4d40997cd8d876087dd81d66c0f44692f0231c46fd61b30ce0a8f68"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Ceramic_Jade.mat.meta",
+      "size": 182,
+      "sha": "26198a9070d1247eda39ae848aeb18dbc2f6cf08",
+      "sha256": "2b365d27dcb45f96710639476d67f057d80b8e91eac7bd7325c70eebb492428c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Ivory_Marble.mat",
+      "size": 4128,
+      "sha": "5b38a8b13a6533c9ccd7ce8d28a155012887ca6e",
+      "sha256": "7b5672e05b9c1775cf86bb5ffbd97d86b0bec86b0dd308236e27ad657214d3ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Ivory_Marble.mat.meta",
+      "size": 182,
+      "sha": "1e060d77ff44d121c595ac45db3304358b6cf2b2",
+      "sha256": "3f992edaa05ad59cd0108602e277549c63268b5b5bbbdf5f49f848057b7127b1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Mineral_Teal_Textile.mat",
+      "size": 4015,
+      "sha": "739e10a1401b32b96f230896cd3e750d256ce141",
+      "sha256": "2e63d69419cb14e9f88b9cb2b7e8e1daeee5f67d603f788edaaa9aa7bd340eeb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Mineral_Teal_Textile.mat.meta",
+      "size": 182,
+      "sha": "9d4c6a9f8aabd6905fd2f8ead6805cb2cb31836c",
+      "sha256": "00f5f208f3904dffd2aeea860ca2fc6035506404436ffbf1a1d88b81da154751"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Polished_Mirror.mat",
+      "size": 3864,
+      "sha": "c7441e5c5b901cd65d90e4d1eba04f985d16cc5f",
+      "sha256": "a251354897d27f7654f00f9fd2f018a5bd352dc46ad059327aef693d83e0dac6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Polished_Mirror.mat.meta",
+      "size": 182,
+      "sha": "16f74fa166bcacbcb51fa119f9b549594e3ccc9e",
+      "sha256": "5cafe29d2d944328fa11927e8631d468c739d1b37557dd232d23067a5ed8eaa4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Porcelain.mat",
+      "size": 3855,
+      "sha": "c6257cc0ea5e8d7377f93193003b1827226e99dd",
+      "sha256": "d58041e28511a51d1c87d2b5d265f996b7521153048ac4cbc8ee5b0ba99d4db0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Porcelain.mat.meta",
+      "size": 182,
+      "sha": "c4efa2868a353577a218d19dc690fab687374a08",
+      "sha256": "ec286000b3c710c844a8739a3043152b6e15465205aced1e5efae0dd8f7a7429"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Satin_Brass.mat",
+      "size": 4118,
+      "sha": "6dd41f86f2480ab314a7c4bc0a80bfa4283164d9",
+      "sha256": "7dea7c599ce42998696f240c8a6bc9ab635d0ee737b57a71213b5595d8a1f379"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Satin_Brass.mat.meta",
+      "size": 182,
+      "sha": "f43f4799ae7067294ea8ed788d4da00f6e8bbf7e",
+      "sha256": "47063e73daeb48891c4958d51d4da43480bc33934a8a10dab8ac740e3a7c2792"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Shower_Glass.mat",
+      "size": 3955,
+      "sha": "422887c52e177529e124b00bd77105b3e0e70a58",
+      "sha256": "18b71fef92b4e3967b0b53cdf2ade25c1db50d1281ab3af1aab3ebc59412e418"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Shower_Glass.mat.meta",
+      "size": 182,
+      "sha": "7babb8fc646bee1bece2bd5e87d078a19a74fa26",
+      "sha256": "b49a23de00ad6de62a876be699fbef2098c5924428d939bdbbc6647ef014e308"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Smoked_Oak.mat",
+      "size": 4129,
+      "sha": "7abe05877edd24149e3745021a22ba9c9dbeb01d",
+      "sha256": "c50b1d893e9217d4c8b8ad1a1c2a601e1526cd5e03d9ce06c440da9ce687a7f9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Smoked_Oak.mat.meta",
+      "size": 182,
+      "sha": "4e50614cf7a6b3a14f5e86536b7ba70bd755f9be",
+      "sha256": "c76232fc944c63d3a51f7f7736883f5b044104818c194f79df4adc533b63ea35"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Spa_Amber.mat",
+      "size": 3857,
+      "sha": "fded67cd2bec04b3a8830f6870317af833485e15",
+      "sha256": "e0e00ebde907a6d76057623117f442e973b16a93d66e27f99b55e5ebe4e641d5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Spa_Amber.mat.meta",
+      "size": 182,
+      "sha": "de329ba965addf587c1b6df8fb70bc13c9e7c0c3",
+      "sha256": "4106ef474579300290245dd8da9877130f4822430f6a7af4c64e88db01243566"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Teal_Marble.mat",
+      "size": 4131,
+      "sha": "eb08bbeb1a6d53779c096b2bb0c831c38d522dd3",
+      "sha256": "e9040fa6900d39745963ceba5076926ab996a8a64c028524e3fd1893ed2546dd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Teal_Marble.mat.meta",
+      "size": 182,
+      "sha": "e27fb49ffc406a3cc5dd9e818eb34feb295bc7f0",
+      "sha256": "5e612d2d5954769671db8529074b9d17327262b24576d97052bf2a0447e1e46f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Warm_Opal.mat",
+      "size": 3890,
+      "sha": "d87cfc1135a14f63a2965c73ef2d6fb95a6364c8",
+      "sha256": "ee284ea0ad076f75e8b1e156dd797753fb38bf7aecdb8a7bc51eeb1e2cf3b780"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Warm_Opal.mat.meta",
+      "size": 182,
+      "sha": "64257c9ec80a4b21ce20882d90a4a9c630585c4b",
+      "sha256": "06d754f43bd2bcdc5b24692618630b16db3bc9e885764d31d502638c0d2d74cc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Warm_Plaster.mat",
+      "size": 4129,
+      "sha": "7a352abef5ac387cfc2fa9b63613a68ba6a7b1e4",
+      "sha256": "7b3f5f264cc789ce375e6d1243742404f812dcc0c57a953e9927fd599f455b44"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH05/Materials/H05_Warm_Plaster.mat.meta",
+      "size": 182,
+      "sha": "d93a27ffa899e1fb2b27b202cec2c2b6099c30a8",
+      "sha256": "d6066c2b05f2da4e2709c493322ddc70e0cc473b6fdcc32285fb0f103c3de051"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06.meta",
+      "size": 172,
+      "sha": "7c5657eed9cf79dd3e266db100b3fe562308b49c",
+      "sha256": "8098d38dda932b45984cab06767d15d94c870b8bbe006a7ecc90c0e40ee9be69"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials.meta",
+      "size": 172,
+      "sha": "6c7de4b094a9a675006e8f696404a179d9d6bf0f",
+      "sha256": "4d1325440b6dadfde15c75872805b11b9f20e5442babb02e4f9731497c25d10f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Blue_Gray.mat",
+      "size": 4131,
+      "sha": "202701d772f969100758a06316a14736427b742f",
+      "sha256": "fd8deeaa2ceb461882842a192f67c18ca7e7a5822be9f2e7cfb99335af2a81b6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Blue_Gray.mat.meta",
+      "size": 182,
+      "sha": "6c2447bc0fa6627bf891c0084d78536f577c8982",
+      "sha256": "465869c35e2c8699fe5d74b29ad62e8dfe89e99bc3449c43eba406ffb0f49150"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ceramic.mat",
+      "size": 3854,
+      "sha": "e465391bc8c56dd8ce7c312a5ac04b54b48ad835",
+      "sha256": "d098c8da37dc5eb080d035e58aa72852417568f314e906eefd9a753e408274b9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ceramic.mat.meta",
+      "size": 182,
+      "sha": "f55a3b965c25f61cb744cf00600666f6ed43894c",
+      "sha256": "8a4b87d6e37d152eef53711c0d1f5355cdbb9e85ccf08dd4512593a03c454948"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Glass.mat",
+      "size": 3947,
+      "sha": "7209b527febd8f0f9b77909487a0271383d5370a",
+      "sha256": "69fbf06f802f1909094de398ca5675192efac128eceb623b5a7734210d3da01f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Glass.mat.meta",
+      "size": 182,
+      "sha": "8dc087ab9cdea744e8c93f65ff1b5d0a5751fddc",
+      "sha256": "0e9480b099c882cdcd7b255fb9efbf200ab869d7699c4609a6c47ec753e349dc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Graphite.mat",
+      "size": 3860,
+      "sha": "d8e8155f8cc9f2d8dbd0dfd31a8f1b644625e437",
+      "sha256": "fdbc1c832eef3c9a660dfb7c0f1b76401d79189cf566bf3db6d2678314d23642"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Graphite.mat.meta",
+      "size": 182,
+      "sha": "f25d710b1904b8bffc721491c8453476656af475",
+      "sha256": "5ee1cda408c77bcb6d99dd5e1b2fd7a1ffcd00d2ae87b0cfc891462276dd3dbb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ivory_Weave.mat",
+      "size": 4008,
+      "sha": "84465df76e23562bb1dcbd79b560968ce63fbfce",
+      "sha256": "938f925c82c8c260ecc4465b830a40362d8f1ca29cf97b3cb59fa6b1f75fd3a3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ivory_Weave.mat.meta",
+      "size": 182,
+      "sha": "57a637071968e7dd5e8d2104b7494f6feb02140d",
+      "sha256": "bc7088542ffda688cf1f3b254e818db504bb8c190a1d96ee011adee0a3289ec8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Oak.mat",
+      "size": 4134,
+      "sha": "5518f21dc3ecdc37b172ee7cb0910922bc31316c",
+      "sha256": "1473a12d34f06fb644ed4448f9081cf343128ed8381fd765bdaebf73a9195d71"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Oak.mat.meta",
+      "size": 182,
+      "sha": "12d85ffd3d85c5c254e9f181e2c45f4d957a1771",
+      "sha256": "12998dae29b4781f141bfc2ca0191b507901f45930b3b3fe619877aa28ebda9f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ochre.mat",
+      "size": 3852,
+      "sha": "c47befdfce6ed10ac7ee31b51dff8336d95d39e2",
+      "sha256": "9e7ea3a8d00c52b09b58e810d4bfeaa36e2b9f4569f1d04dbd235ad78088fec9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Ochre.mat.meta",
+      "size": 182,
+      "sha": "986a27aeac0c49b8c3da54257d1c3b60164f39c5",
+      "sha256": "bb5320e659ce3a4ff9fb77c93785e37298e5301442bf6c29dc4ba2549779ceb9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Opal.mat",
+      "size": 3856,
+      "sha": "75d024a810f4f57693ad40c0085dcfc6990e4bb5",
+      "sha256": "3c1ce10ac8a7f729593ede7b327488ac1ad56fe6bbf0bbf7f1c236f24b52b53c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Opal.mat.meta",
+      "size": 182,
+      "sha": "3300d85f509e6a6207a4fa6bc23ea60d265d89a3",
+      "sha256": "fa511c47af6572eb8be983cd2100d10a68b44bae48c0229fc0935dcd5c75dfc1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Panel_Blue.mat",
+      "size": 4118,
+      "sha": "bc179e2eb94f4cc4b4b6b8be220559eb520bd185",
+      "sha256": "1aa1f633e53824254aaaf570101e976486de4b716561492364b595d364184f49"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Panel_Blue.mat.meta",
+      "size": 182,
+      "sha": "d287561477fd25b92a9a1060b22ca72f1622bce4",
+      "sha256": "04f15b76e13f9fde16bd55ff05be410a38c6dfa7dda13f2a91b90f19e3c1c56d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Paper.mat",
+      "size": 3866,
+      "sha": "d5d216bcbc94680e00b39189053344cb3f6b5726",
+      "sha256": "377e4ce4a798782ec6fec127521d66758b12bf98688b8bc40b9f162723eacccf"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Paper.mat.meta",
+      "size": 182,
+      "sha": "ae5cdd4607440e67cc500d1ab53cbc5461194411",
+      "sha256": "72a118f1665e60dd4a5dea3b8247127973acb2aa90ae4c027cf8e4f5942d44b8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Satin_Brass.mat",
+      "size": 4122,
+      "sha": "4644af2ada50faff73d85cbb3c1c44136a9390f3",
+      "sha256": "d8474f5f027ef2c86cf247ed1c86fb9968fd7a8e2b79feaeac7348abb1a3e6f2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Satin_Brass.mat.meta",
+      "size": 182,
+      "sha": "d029b22e1bae25bdc56a454c1e22c96af2779448",
+      "sha256": "e2f33e223ed72746a0700471360aede38720e381245adddaa26204336ad94058"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Screen.mat",
+      "size": 3858,
+      "sha": "30d30f306d3b3c177dcdb57a8f9467b128e89324",
+      "sha256": "bfb84b08c1865e86d9b6af2ae19f66c928506648dd278f5028960bdf7ef034da"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Screen.mat.meta",
+      "size": 182,
+      "sha": "5614565fcf57967976baab6c59b7195da532181b",
+      "sha256": "d0e17e93b9456beec906c7887286097939a3b81a46de124113adf93be7915460"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Slate_Weave.mat",
+      "size": 4025,
+      "sha": "2ba951cca636ee3864e9726e665c699cf99a98f1",
+      "sha256": "17870d81aebffcf8fb02659ddd8565704d77e0c5d6ebabadce38beee40c69129"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Slate_Weave.mat.meta",
+      "size": 182,
+      "sha": "2b017e91a892ca71f07be7b6478f9b5e70881df3",
+      "sha256": "0039d6bda37d4bfbdaa9b4d749f0845872d14eb63bd2731065f7adaa08177f61"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Taupe_Weave.mat",
+      "size": 4024,
+      "sha": "fc7c66435d0eb02dd42093435e03c3ce5773f5a8",
+      "sha256": "1ea288bc35ef7584c001f021ebc65c93e1c314a491b38e5541eaf86107b680cb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06/Materials/H06_Taupe_Weave.mat.meta",
+      "size": 182,
+      "sha": "12f85804d4f52db110a220f002e28226d81f32a3",
+      "sha256": "0e86d8a33a8ede07861d5f55fe41256e932106d8bca6efa8224e9ee68ad06aec"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding.meta",
+      "size": 172,
+      "sha": "1bee95f4e772f9f111fd0f4fb627696a3603247c",
+      "sha256": "2a69e785e9579cb520230e4ff029bb21c625a1c7f762883f56b6f87a69b70f80"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models.meta",
+      "size": 172,
+      "sha": "b895723bbb7f7677281bcd98818a24dbc2b3ab3e",
+      "sha256": "cd5583d7e37af5aae84aa376b2a0166202ee564f88250148d0598cbecdc022fa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH03_H06StyleBedding.fbx",
+      "size": 342860,
+      "sha": "bfd01c9a926d8b22d7609545da37447d02fd44c6",
+      "sha256": "b1c4cb7d25f58d5c8a5f501857879bbd648eddac9c65ac9a52fc37bda5c6ce81"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH03_H06StyleBedding.fbx.meta",
+      "size": 2891,
+      "sha": "bc45d224e61f4b2767b80a3b0466e02d4006a0dd",
+      "sha256": "9320889b9754713277f87e5ebd7ec3f83a8b2f209b90599f19090e531d9cd302"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH04_H06StyleBedding.fbx",
+      "size": 342668,
+      "sha": "559261f0e4b6cdc6860a261bc8adda5d48335686",
+      "sha256": "3e8c654543a72d5189a8ad231f59bd17e500991d756a8d10b9df75b75cb6bfce"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH04_H06StyleBedding.fbx.meta",
+      "size": 2891,
+      "sha": "a6fd080836fa52a9e195dde7336c29f5b772e8a6",
+      "sha256": "32d761cdf5969d8c0501f840093a308d7fe4a801242f6d34f91a147cd75721ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH05_H06StyleBedding.fbx",
+      "size": 343164,
+      "sha": "7489771b6b5dd632310b96c5565a5e4e36cd3e2a",
+      "sha256": "df1b290fee6967834a6012a91c0c57096da1c2d3273652b95279b4dd0ec213cc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH06StyleBedding/Models/HotelH05_H06StyleBedding.fbx.meta",
+      "size": 2891,
+      "sha": "f1302fb415197c5dd63d12e003961463d74e564c",
+      "sha256": "5938aa778ed4e5dddd0d3453ee0fc66e4601c94c87cf822c4ac9e9b05d198ead"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07.meta",
+      "size": 172,
+      "sha": "95452b1cbd5772dd41c18ba547524c03279d2ddb",
+      "sha256": "fa527527668158926dae40eb672018b0e83961743b1fb87ba0cb3c2ca5357a1d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials.meta",
+      "size": 172,
+      "sha": "185203c3590b886c5e16bd4667162f71d19db355",
+      "sha256": "c7b7fa2211c7ccb2f83e047e98becdd4a5ed1d59bab1a75e0f8ed7635f480742"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Ashlar.mat",
+      "size": 4138,
+      "sha": "36af8193e4449af2e682f25aefdfad4bb297beb9",
+      "sha256": "7abc224381eeed8ad7eab0a178517d636cbb8e340f33e4e114b03aa18697409b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Ashlar.mat.meta",
+      "size": 182,
+      "sha": "c9e2f237a93762e18d559e717fc8c37873f51e5b",
+      "sha256": "da70ab671aad90f938ec266858e1ec1746b430550590b18c06fbb48e60463c51"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Brushed_Brass.mat",
+      "size": 4138,
+      "sha": "60d5638984ca0b9e80948c41130e100209819f99",
+      "sha256": "e05dd4350a8e7737015242016431a85cada3db55c893ed7dbb13d452ad6bb388"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Brushed_Brass.mat.meta",
+      "size": 182,
+      "sha": "2e767bd5ff3af3d45789dd0f6fe8d03bbb6676a3",
+      "sha256": "dfd5cefd6978c0fa8a4332daed7cd488e449b58cacb328eedb9396b52cfc5957"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Ceramic.mat",
+      "size": 3867,
+      "sha": "2844a75525109e7371572b628422fff342787d64",
+      "sha256": "df06caac67d1d355a8bfd4725ef91c7f8a656ec72aef0d8c367f743deb7c476a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Ceramic.mat.meta",
+      "size": 182,
+      "sha": "9a7c019f524b41cea452afde4a3b6bb4c4997c99",
+      "sha256": "26d746d1d635d7d86f8855947f8fcdb53d994c7dded6bb350c679b98d9ff7394"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Flax_Linen.mat",
+      "size": 4022,
+      "sha": "47c6e4764fe81f83341ad84883d2e2e8e0ea713d",
+      "sha256": "ca445d623f88238ed8ed7110de70da15520c5a59a93d5bee9769622fd67ed3eb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Flax_Linen.mat.meta",
+      "size": 182,
+      "sha": "753951561abbd3838ae1a2d4cf3d10d860276e63",
+      "sha256": "4e3c9b8cb03d8580e6bdf253cc9023808a86433fda9e63b51fc0bdbb5f264630"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Fumed_Walnut.mat",
+      "size": 4145,
+      "sha": "c83b1f5f855b978b8f9a659ca9fa48bca6622250",
+      "sha256": "e7ce071211ad25f6b267ed0731e291c2943789042aa8ef33c5fd7fe8280ca0aa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Fumed_Walnut.mat.meta",
+      "size": 182,
+      "sha": "1d45ddd35a3f091f17d1c1583193bcddcfd86b05",
+      "sha256": "1ab416d6d5938045d78a5259f3d16b36b373999d807a2a7204414580c048c120"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Honed_Stone.mat",
+      "size": 4142,
+      "sha": "9ac04af6420cff23f2c9865d1cc90c0f025f98e0",
+      "sha256": "09f4ebdcc0dc621424cd53423092a7635215d417de412c635d07c20b26437412"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Honed_Stone.mat.meta",
+      "size": 182,
+      "sha": "006c1ad74299165047229d92ae167e0866f210b0",
+      "sha256": "b9f2ef513327fb3c9e58f87532d7e0ee2aeff3fe501a8a56f5fe90f2aeae32b6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Olive_Linen.mat",
+      "size": 4025,
+      "sha": "8f0d9ae60f3103c723a32681e0e540804e85cfe4",
+      "sha256": "0343d3e76f0255054bab06025cac73fdddbc44a685fbaa1d4a66b8a6c54540bc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Olive_Linen.mat.meta",
+      "size": 182,
+      "sha": "34ceda9256cb4f9bae367e9d464d2cf562ef9ce0",
+      "sha256": "c3de4b06ed662fafd4110a828b9b2337adbb65a387029bf8667f63faa74a7dc8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Opal.mat",
+      "size": 3858,
+      "sha": "2fc0aeba46e6c8c8e67d2d928ec920f65d98dec6",
+      "sha256": "d0f2ddbdd92c19c55dce6223f8010929085793859e9d46df635fc933d05ec0ec"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Opal.mat.meta",
+      "size": 182,
+      "sha": "f22bc75ddecda8b94e7c694ee556fc277da1803e",
+      "sha256": "55083a2226a176e4d92556c088b871084c4273b627f56e627ced15701106959a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Plaster.mat",
+      "size": 4138,
+      "sha": "e57d23bdbfd36bb2043c896f7ae27004b84a1208",
+      "sha256": "179d3b8f5eb9bcf0465e0a8321d360b0d488149516561bb107c393064350a2b1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Plaster.mat.meta",
+      "size": 182,
+      "sha": "e6e5f184d10db0bc379882b7605d24831eef1a11",
+      "sha256": "b9809202db228e805ea03cc21a82df96047da30a874569c7fdb3b80e3d3cc213"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Walnut.mat",
+      "size": 4136,
+      "sha": "d6cce9556497fdf7c6f47ef9ab7771f6c87fb00f",
+      "sha256": "b72e506a95424d17fc72910e50246b73e067a79cbf146a64357f8a974c768faf"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelH07/Materials/H07_Walnut.mat.meta",
+      "size": 182,
+      "sha": "856b63dcd558c20f3625963cce312a5186a1e76c",
+      "sha256": "146b081e1f2f2baad6ab9732595d551194e806ffae3d884251adcc2fcc4e5abe"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90.meta",
+      "size": 172,
+      "sha": "7aa0be022eee97ea6723f780de2b6589896e3e41",
+      "sha256": "27fd5eb114f4c7c564b92b401d57e2e2975d2a77fe064ee9a9d17cdd9f041ad6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_CRIME_SCENE.asset",
+      "size": 8908,
+      "sha": "b48312bfec979410e5213a1cd4d31d1ecf48e4d1",
+      "sha256": "f9972714b5c23100a53d95ed2f2a04b01eb93527e01d4adafec11ef4480e90ea"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_CRIME_SCENE.asset.meta",
+      "size": 188,
+      "sha": "5ff5f7fb292c34f65402f659ac5a1bf86c6d3bed",
+      "sha256": "7717c1b9b6e6690e056f3ab27f07daa1df01648c60b508161efb7340bcade11b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_LOBBY.asset",
+      "size": 8902,
+      "sha": "85702ba1a412652abbfe80688e3eba6e68c2fd7f",
+      "sha256": "b9acce7f1a5d9e7ca46c724aabf53df9a27f851d444fdbe48bbcb3863e2e8076"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_LOBBY.asset.meta",
+      "size": 188,
+      "sha": "c04ede70107d479cd7eb0d6a6818053310b0b5b2",
+      "sha256": "3ccf94178e276de8232b64d7edef90ce2363223a3c60f131b474f09f8d040577"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_BOKI.asset",
+      "size": 8906,
+      "sha": "1abd954a063d2ee5983efbc7329b2869e4bb6944",
+      "sha256": "ed3cc77787c1f29303fa07fe2425656c4287a070e160d4788113bb1557df77b7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_BOKI.asset.meta",
+      "size": 188,
+      "sha": "c67511174a1aebdfad3502864f3eb8f5061b0167",
+      "sha256": "123c84c1f0927b1f0aa4c3cdf76ad043b4470ab47bff3e09830b536b61e33fcb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_JIRO.asset",
+      "size": 8906,
+      "sha": "5779d63132f02412354164dadff199ce9c14f67d",
+      "sha256": "f6301a7164d6fa4eb9102724ceb0dd31a990ce774170faa022c30520bd368a55"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_JIRO.asset.meta",
+      "size": 188,
+      "sha": "6989dcff05dac155b72150260101cc57637319eb",
+      "sha256": "a99a9d4fbd22039d43ffbc6c16b3d98c79e7fdce6c4adda324753f461b25311f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_MATTO.asset",
+      "size": 8909,
+      "sha": "2539cfd258326418585ffb37a43d94b5d2298689",
+      "sha256": "83c119220ae2c9a1f70494df305d62dfe6b6649b43925a0eda31ad3969b19efc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_MATTO.asset.meta",
+      "size": 188,
+      "sha": "d03dab9c094bf294fd2da21cf9cabfa1f7c62b0b",
+      "sha256": "64e67d079b1389f18d56d4d881066d156d07a8d2c0be51ee6773b7d706deaabb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_MOONIRE.asset",
+      "size": 8909,
+      "sha": "f64615c6ff60d5f857d650749d70988b19b92f69",
+      "sha256": "1663ca8c1ba09a2226bda7eedfba2ee34fdeb68085a946b2c4dc9619f90acbc8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_MOONIRE.asset.meta",
+      "size": 188,
+      "sha": "055c8f6cce87e7810027c44ab79eaf91116e804d",
+      "sha256": "ffb1212d4cc1305f2ca930317f5b7d3fc3456a7195f1e67883fed906864bc6af"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_NAZ.asset",
+      "size": 8907,
+      "sha": "91b28c084d638f8d276807c445f85f99ad8b8bae",
+      "sha256": "a01234533f2dbcac838dd02781ff9956ee2f35b86352e3718725478a81f16d31"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/Border_ROOM_NAZ.asset.meta",
+      "size": 188,
+      "sha": "9f042131974b79c2a2342e2b4be4fe29fd96fd48",
+      "sha256": "8d46ae15a9955f2cd7c227f3e5ac8a84ea9a6cd96a71f95a016f184d837d3d5c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/MapBoard_Black.mat",
+      "size": 1876,
+      "sha": "b4b4c350f3554626f14aaa561eb795a17cf3cff5",
+      "sha256": "5cd423d46b89a0187f9a47c40bc938c922a2140c1fd6f7880723205973a13000"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/MapBoard_Black.mat.meta",
+      "size": 188,
+      "sha": "7ee7321208da0bc06c11718e8761782107fb846f",
+      "sha256": "d6b84b0794d1bc95d61e0dbc714051b87615e38c16457d9abaf6813f15d18449"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/SharedBlackFloor.asset",
+      "size": 3715,
+      "sha": "68a82006a16f4ecfb813dc2e1071ca7738ee272c",
+      "sha256": "2bc349bf26d1f8507e89777a3f284aab446487ffcbd2db9fe2c2525176d7177b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/SharedBlackFloor.asset.meta",
+      "size": 188,
+      "sha": "7fa4eb0a6e515e6738410f3b1372524957d46fb9",
+      "sha256": "5d2f4e8a4aa7d61dcbff796cc3f384abcac9b10eaec65265b99094c945784111"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/ZoneBorder_White.mat",
+      "size": 1878,
+      "sha": "8efefd51cd6551e650b9d5210f834a05fe46c447",
+      "sha256": "313172c2f99227527bcaef4fcb745bd8afb2ebf1bf85c44468fe9e114af3e234"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90/ZoneBorder_White.mat.meta",
+      "size": 188,
+      "sha": "4103ae978fce5beec4851026454f4cf5082f9135",
+      "sha256": "bca513dfd7f690a28308a352d17a3a644867b895c4856fe6a19914298701b617"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish.meta",
+      "size": 172,
+      "sha": "e8e2b5687b1c2259b1e2a96382c24a53e6665d0b",
+      "sha256": "27ef0ecbb6015779e01fccc88006d48d3b95d5e541b0b240c2fe6784426febbb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/BevelledThresholdTile.asset",
+      "size": 4421,
+      "sha": "36844f6accf0fd7798da5be147bfacef558fb490",
+      "sha256": "7be446141c62c21b4fc1315ae7803b7287234d95dacb633cc8b200efb2959dde"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/BevelledThresholdTile.asset.meta",
+      "size": 188,
+      "sha": "228f11de2ad98fa1d0c2e5751a52b6dcb53b4032",
+      "sha256": "8d2a180979ef94dfd3d7d0b5a03d50a70aefd887f78b69db3e1be12c33f14d84"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_ObsidianMarble.mat",
+      "size": 4108,
+      "sha": "6ce986a67aa2cea1df99faa17d8e301149cf0fd6",
+      "sha256": "6b82edb7dab8ab08f7a34fd83263ce12196656ee62baf6074cb123ef2ba0b0ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_ObsidianMarble.mat.meta",
+      "size": 188,
+      "sha": "28ebd031e24acbbc70c3833afc60aca1cf175c37",
+      "sha256": "1d9cfdfd501b466576e2eb89cd9d6436eaf616a2ab6401c2fbe87e49b51ca971"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_OxbloodMarble.mat",
+      "size": 4138,
+      "sha": "6fa7c6c07563eb0de501d9933400d61e380eb82d",
+      "sha256": "026369452c73462624419191ad107bdc77fac7a684d1dc26e2e85833183db50f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_OxbloodMarble.mat.meta",
+      "size": 188,
+      "sha": "3885a3d04e4e1482c3e354eaf4848a8dc6304335",
+      "sha256": "60257dfc0e75a59257e6f036a7dee6829864bc0185814a2b92f92e84c5806426"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_OxbloodVelvet.mat",
+      "size": 4110,
+      "sha": "785bd31cc5aac19451ecf8cf218c6e9d2821fd04",
+      "sha256": "10a859c865e92a9bada3f861efd54f07d4e6d4536ee9dd367d32ac3a8ba6420d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RoseHotel_OxbloodVelvet.mat.meta",
+      "size": 188,
+      "sha": "e33b2dd63b18cf8796421ee94e87cc2e93bde671",
+      "sha256": "c4b87ad09f248e115c500ec11f0a6d74b122570a656f32c899a108dd3186e361"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RosePetalInlay.asset",
+      "size": 65202,
+      "sha": "f899c1cbf3d3c535f4ad8854456c29bdbe6f4bd8",
+      "sha256": "2e9697099ca2588cdd9841ab88a95714b63efb9d8f2d0d1813cc758ffbb06cfa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFinish/RosePetalInlay.asset.meta",
+      "size": 188,
+      "sha": "bc2ad4254d114890f0b023787c6eaf8a66405463",
+      "sha256": "7a56e0eabe6bcb9d40ca412d3ae29e33425bb86264832ad61fe0b141cad4913d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish.meta",
+      "size": 172,
+      "sha": "eb74f9e56d0a82d2b3f93cb69c415ff787bc66b8",
+      "sha256": "b38f1d30b32e786fb0f82d9184207466bb7268afeb1b621659907c42214c1ed2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2.meta",
+      "size": 172,
+      "sha": "5f236c58234ed645e6b92468b477cc8663f0dd96",
+      "sha256": "a55155281eaa1502213824fe2d6136f1b68bfd4bf7ac7891a15b924c558a2052"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_10.asset",
+      "size": 47698,
+      "sha": "d90fdc5019443ff3c29ca45ec69a7bbfce9de6f8",
+      "sha256": "6aa19ab5914ba0d81fa64ed9279b10542545ce991e16f324a3bf2382ee5d91db"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_10.asset.meta",
+      "size": 188,
+      "sha": "9ffedbfe6f779b34ce8a3cf26dfeab47c4747c33",
+      "sha256": "c52d967258b48d304acd1b5513e84502ca85c0c88e2d9cf417ef613448fbfb09"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_11.asset",
+      "size": 47221,
+      "sha": "14764bd5e182eaa86190b3d67e1ca4b720d131fa",
+      "sha256": "3537d5766df9ee5d5db7fc9b8d40d572dfcaab0c1ea62b8b2160373709e20c40"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_11.asset.meta",
+      "size": 188,
+      "sha": "634b8b8b73639b0510a7fb5d1b7862d80e2f69fc",
+      "sha256": "5114261232b4dddc3f5dedc2bf14ef248c8da70b1dfcd5628767e0183ec8aaf3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_6.asset",
+      "size": 47376,
+      "sha": "b994ac263e29eb4e70d2cec517531e0452e6b6b7",
+      "sha256": "53e81c0ce8f624680b2ae235456eff09e6dcce676ae9e7c0c54d9f632c3ce969"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_6.asset.meta",
+      "size": 188,
+      "sha": "f6761a8078318949ea58f1489b3e81e393f75728",
+      "sha256": "10c7aa4c8f4ca71c1751f1701cadf40d83da0dd7238b3ff9518724f645d9c86f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_7.asset",
+      "size": 47579,
+      "sha": "1e7150e4c19d74635c720eb0b30183867d39e266",
+      "sha256": "cc8762c552deed8f189f1d378c50ae5831600c2142c5299ff6d9065955f1e1f4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_7.asset.meta",
+      "size": 188,
+      "sha": "01c1bf68e908a905d47b22d9489f8b86f170b977",
+      "sha256": "2026eec20f799330075bff83c2daa16073d0716be46afda3b4703d85ca0ca6b2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_8.asset",
+      "size": 47566,
+      "sha": "5dee7c9df40bb5510cdb0569da72b94147ec0f2a",
+      "sha256": "70b9e24d09c2148463d0982056942ca06e72fff6e260143b3b8bdbe720ff8397"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_8.asset.meta",
+      "size": 188,
+      "sha": "a5907e665d43a3b2da67e303d988447dd6cdfe39",
+      "sha256": "94352a268586cffac79772c6dd040fbe6bf49100f91f98c99871affec1f447b5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_9.asset",
+      "size": 47397,
+      "sha": "57e5d286470f4ed022e198cc16365c0395406fb9",
+      "sha256": "1b708eeb56f8394fb379572b9494d90bf5e0b75a0314ff2c5f5ff844ee06c63d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/101_Wall_9.asset.meta",
+      "size": 188,
+      "sha": "a83b9f887e2690fc241a55ba8a85557e155312ca",
+      "sha256": "b965681bfc80f234d8921867a6878bbadc2a07110da605995604b531fb5b083a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_12.asset",
+      "size": 47565,
+      "sha": "9a5b8e4ea5000abd42da78d168693adadc4b2be8",
+      "sha256": "b3134a4590cd4bd17d8dd4f65453875ae276d8f368f917db4fb84e740e038548"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_12.asset.meta",
+      "size": 188,
+      "sha": "5ff00298931c1b3afc66875fd75c75ffa6c74670",
+      "sha256": "c83769cbb41566dc3c333795f0393adf4d10e05cbbf0f654c0799b057487c1ca"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_13.asset",
+      "size": 47472,
+      "sha": "9c647f77f2308a487f8eebbcb1fbd228b3b12939",
+      "sha256": "3e68740d137e0a8a93e0ec9afa128b88e0534577087c96b215e5972a70866eb6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_13.asset.meta",
+      "size": 188,
+      "sha": "54fad9f4cd9cce82b78152df1b8ec859b537fb15",
+      "sha256": "1850976cb03bad16bffe72af92c62dc39315e83b7e4a91e082345d6200fdf3b1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_14.asset",
+      "size": 47389,
+      "sha": "77fb0f4927ed194911b1c8aa8a0b47ff9083c56e",
+      "sha256": "be1e75c31b8fff0411d0c64ef62b6108b76159d642aa119b7282f400f879a27f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/102_Wall_14.asset.meta",
+      "size": 188,
+      "sha": "649423d9165df87b2d7dd24da9f62543e6a3468e",
+      "sha256": "4919bf73dbd6b5f395c56af5cd989c4a29ff07c6832daa5ceed8668fa21f8a61"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_15.asset",
+      "size": 47377,
+      "sha": "53f764382bf1006f1a42793c762e161cf2f28049",
+      "sha256": "e9715358806501c5c25b97987730f91d976a9610c4a5377b0f89df110824382b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_15.asset.meta",
+      "size": 188,
+      "sha": "021cc24853b1ff48a5b4dd902c4fde2633aed7c2",
+      "sha256": "4ba26898919a620df03630024b8959112d31760d40ced80c19c41075a3baccd2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_16.asset",
+      "size": 47580,
+      "sha": "ef5d6ccebbe08454383d12670d284401165a249b",
+      "sha256": "92db26eef8a7aa47dd393a2222dc7403f2da4605349ef573971c2d123529dae8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_16.asset.meta",
+      "size": 188,
+      "sha": "f90111b51f039115b9ef3f3c2ee72a31db0f8e74",
+      "sha256": "b809bd4e8ff6223bcde36db988253d099ff20a04961ac5bf98ef2a9e20b6090d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_17.asset",
+      "size": 47567,
+      "sha": "641591a49628a8c8804434c6c43494d8f7c1a2fa",
+      "sha256": "5fae17012b4acc81dceebf2a4d6ce50075b20de4fdcda27655c95bf4ccf4b9db"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_17.asset.meta",
+      "size": 188,
+      "sha": "a6f8da260a24836f88159193bc3ef6e7fbb1f988",
+      "sha256": "3eb6006c5e03f9e9eee834403c6fe74a8574ce2e42b185bc8daa31ef755b445a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_18.asset",
+      "size": 47398,
+      "sha": "35c8d8d07847faa395848c8ec0d44f1c2a906f30",
+      "sha256": "90fdf5a7d0863539934aa196bc87753008a7eb17e2372a94b0a99f021366ec77"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_18.asset.meta",
+      "size": 188,
+      "sha": "0ee5a09d548aa55df9d42343e8d52ffee6d29467",
+      "sha256": "24a3e511fc2fbd29e3f725af691cd1dbfa885d779014866510f10b82bffa2eaa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_19.asset",
+      "size": 47698,
+      "sha": "9907b4dd9905e10cef7c44ee516eac12f3077eb6",
+      "sha256": "5e9793ffdca22075bd4167f5a409546cbc5fe412541df3ecc7858c6f94a523ed"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_19.asset.meta",
+      "size": 188,
+      "sha": "e92b64a2b1405962ff0dce67346c26825f81827b",
+      "sha256": "f40a15e7a047138f2dcba04d3885ec54c31e5fd3b82b8e1ff60261be4dd3b1d2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_20.asset",
+      "size": 47221,
+      "sha": "b4219d7805befdfae9008d900a80004df28964d8",
+      "sha256": "4ee079a8ae1a6c44b80d82e5117b68f7c8fb931cdeddf1a61c78fad699b3e7ab"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/103_Wall_20.asset.meta",
+      "size": 188,
+      "sha": "65383e27a327ee0e13c3cf512d73e171f5933b1a",
+      "sha256": "c8f480a9924e0462c9a91da4a424349ec80a12d05e1864a69decca21b6978996"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_21.asset",
+      "size": 13531,
+      "sha": "56415762fb804838e9f5e8791bfc54596cc04600",
+      "sha256": "cba2e6fe5daae6428d7a05401d5a10b0754ef2197dc3482f303058bb023a2219"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_21.asset.meta",
+      "size": 188,
+      "sha": "f0b18c15f7480becccc9a0d3a53d318e930fac6b",
+      "sha256": "2a22babc30ef8335630fdd1698c276e843dd0a47ecd94349843aea9c234fd777"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_22.asset",
+      "size": 13531,
+      "sha": "e35c117272f61ca0175ae7269988cfc277a77459",
+      "sha256": "5c31a2c2dbe89a7410001e08f7eaccf46c3deaf35b59c2e1cabf27a5515ea487"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_22.asset.meta",
+      "size": 188,
+      "sha": "6c64ffdb6f3538af5725f85bd391160b9854835c",
+      "sha256": "f24cfd54e57680ec43c46eb93dda1a4b112b90eadf0de4dcf85f4a88dfa5a60d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_23.asset",
+      "size": 13518,
+      "sha": "9641c4096eb08571246b227a6921498b32c6f108",
+      "sha256": "9c499396eec3ca7764b872f4fd5a9e0c078fab1471cb56499c8dd15ee0094c76"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/201_Wall_23.asset.meta",
+      "size": 188,
+      "sha": "1bc40111244328bcb8cfe0d6b7a87296925c2d8d",
+      "sha256": "e4a0c7660005c44eee9165e9500e2e9db1cf8801e3519b4a874c3ff8ee6ba26e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_24.asset",
+      "size": 47676,
+      "sha": "5d4a44bf25d9efaf729b008292957150639ef0d7",
+      "sha256": "479bdadf70def49b074ba25308a05663900ffdc80e73e17978d13d31ddce3554"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_24.asset.meta",
+      "size": 188,
+      "sha": "b10692d9f375ed0575e9f0bde681a316ad929c47",
+      "sha256": "8d9e1b56ebeb4d2cee8811e6b3c74add36af1f07db02483ad48106d89a3db0c8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_25.asset",
+      "size": 47567,
+      "sha": "d0b7a296424e4cd07896ed2eafa3d59ec6aae684",
+      "sha256": "d8b607182d3a9936dd4e20d453534d13f3d9af3ea6e1263478dec1fc51f99ce5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_25.asset.meta",
+      "size": 188,
+      "sha": "b0cb47617605d0074316bc7f95603ebe15c608f9",
+      "sha256": "16bb06d698b059b0ad4697783501c5b92a96237cd304ef5d1575ac57f2544e1f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_26.asset",
+      "size": 47398,
+      "sha": "076f570a4f432ac74b048fe1708bea9c633950fc",
+      "sha256": "b4ca31faf010d77b6b8bd68723f04e954c0340aa7a23a20092056d93185fa352"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/202_Wall_26.asset.meta",
+      "size": 188,
+      "sha": "7aa0c334272b1099955654c855cfeff097b1ea94",
+      "sha256": "8632c75d095bcd0eda779e1345ffd34557e6154baf37b6900095d1fa2bf85696"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_27.asset",
+      "size": 13531,
+      "sha": "c23d98a347c860e915508cf992cd6ae5879f66ba",
+      "sha256": "413912a1fac28c09defc14590e4858426a149771dca3af32e48b07fdceb372cf"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_27.asset.meta",
+      "size": 188,
+      "sha": "5c40da34ddf5dfb25b3eb64debd39f4680e0a79a",
+      "sha256": "a2ddb9458a7cafe0860a7751d9456cfc2b7411e1e904bfcd5d8c452647931c82"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_28.asset",
+      "size": 13531,
+      "sha": "d6aa8111fa2d98a83e94fd3fff86982e72854e37",
+      "sha256": "5c532ad150761b066a4b42d5c1d34e5f0af4759423ad4b133ce730058b68b7ce"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_28.asset.meta",
+      "size": 188,
+      "sha": "e93851af6de95d7ec6af0644c626862fb83939b6",
+      "sha256": "046264e7ad1737a5bd4346e5026bfe5427eb09132bb853f9768d1be73217dc1d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_29.asset",
+      "size": 13518,
+      "sha": "e1671f05007c9413dbb94a3c6d5de772309a5292",
+      "sha256": "1b3a85c3c675f22409f6aa6dfb73ef21123d02d1783f61f3cae2e022f95bded5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/203_Wall_29.asset.meta",
+      "size": 188,
+      "sha": "be93641faccbb7e30ffbcedcd661acf497a6c0ca",
+      "sha256": "4ee9b4f78ae1c2aaaa60720a642951e2850593adcf9088f91dbb5afbe009c1f4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_30.asset",
+      "size": 47676,
+      "sha": "17fd42fc91aad86fdfd2fe19eb4b1c32e4713316",
+      "sha256": "3ea47527039392c661325d854e8e0ad68977ca66308d1e5dba3a221e8d517845"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_30.asset.meta",
+      "size": 188,
+      "sha": "d0ecd9359ca174193947a029adb3e7bf8dfd9405",
+      "sha256": "08bfc33816b84339bebef594a8d7d06d0bed3f040c182c2472af971088ca4350"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_31.asset",
+      "size": 47567,
+      "sha": "fc24b16d1b39147903df81956236284b557f2160",
+      "sha256": "8de9bf4b8d98a577957c2cde39daa25b9b5cddfc15f6c243462ac496cf195286"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_31.asset.meta",
+      "size": 188,
+      "sha": "a28328f178ac6390634bb837cfa9cefde8944f21",
+      "sha256": "0780818184ef801eaf648af9c127e25f9aa529ffa8cd0b01ff0fc946f94a4711"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_32.asset",
+      "size": 47398,
+      "sha": "700475a54f6e45ed23ed471de4799643df3be988",
+      "sha256": "e4a325eabb7585ab0d8db981bbb1bf47509d54a9683cbf8b3e1aceae08e2d0a7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/204_Wall_32.asset.meta",
+      "size": 188,
+      "sha": "b7f988036de269dd8107e27595315e2cb25f2afe",
+      "sha256": "529f36e926d416effbdd367d7925d6c8bfe16bd570b5829eb1c7a1dda6483e31"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_0.asset",
+      "size": 192595,
+      "sha": "28a2339b109c9d15cf40e179bd2ffff238258373",
+      "sha256": "96b82c9737a77424da97411beba3f0064933f1c538c571c41493b9310892c59b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_0.asset.meta",
+      "size": 188,
+      "sha": "a273e246d6fe1022d1f6eb94b61cac8b91115dcd",
+      "sha256": "c943adbe435966ddf60bc2ffb93c9fbea6b5e7422039aaa8b8b4e04d01c61f71"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_1.asset",
+      "size": 8747834,
+      "sha": "3d25a5c661e8a6c4a7c60b526691f46614b9cbb7",
+      "sha256": "880964e7eb837e0e613480f01fad3f9985d9f1bfa604aed22d9cb077501135a3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_1.asset.meta",
+      "size": 188,
+      "sha": "5e449c55fdb599bd285bcf931a81bb537a300109",
+      "sha256": "1c221af88244fff6e4cf3075ec6fba5c84fbb47550fac0b34387bf11f169b24a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_2.asset",
+      "size": 21158050,
+      "sha": "f1184bf5b96237d868577fd1409a18d52ac02b3b",
+      "sha256": "37166992075023991782b4650454660e381a20f97a3affa20c75f00ed313e25f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_2.asset.meta",
+      "size": 188,
+      "sha": "1e357b6a17bb184e77f6af23a3a1ff73a8c4e94e",
+      "sha256": "439a644e9d5de18d6ecd786e2d9ab55b86d4a1595d1d681fd8687086b4b3211c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_3.asset",
+      "size": 188755,
+      "sha": "2d2ea99011fa33f272a55e8e2400aaebccd64d9a",
+      "sha256": "eb3c2075ccd6433a81946964ac4b9db7be5c56becd12761cdc2062ac1a1a77d1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_101_3.asset.meta",
+      "size": 188,
+      "sha": "a54d0b818c31c53fcaf9936f267149db269040b3",
+      "sha256": "6ac9c04a25428b4d919d75624714b30927d8e3ca732af7b42b3191b97c918861"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_0.asset",
+      "size": 192587,
+      "sha": "a420cf1583373714243a0c552eb5fb966999b784",
+      "sha256": "ef012bb6a34b116a7a5823c6fc17ce59e4f8ad8f67da6541c63b8947070812b1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_0.asset.meta",
+      "size": 188,
+      "sha": "97864c4222467b3176a203a62acdb0ca7a915412",
+      "sha256": "4036636b94cdae911768cc4a5c521c7e7f2187716e36048661c3aa02a8a8f343"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_1.asset",
+      "size": 8747822,
+      "sha": "bba08bcd210a491610a6a4d84dc66d9ee60cd978",
+      "sha256": "147c1020755677a0ce324f2078f925626ed7b8cf8a6471eba554d9f82b582c25"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_1.asset.meta",
+      "size": 188,
+      "sha": "dc0aa25f6a98e8e74e7516b6bfdeccf45844d13c",
+      "sha256": "6aad0e005389f45b5c53759c3fb3162d6e2c503670dc4dd0eda3d5893f47deb2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_2.asset",
+      "size": 21158042,
+      "sha": "833c610299543b4065b682da5caf2a98b2b02805",
+      "sha256": "47b4dfda3901bd8872c0dd06f359c4583f22c1d42cb5a34786cd1e7a58985382"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_2.asset.meta",
+      "size": 188,
+      "sha": "702a269bd305e22c27420333fd315f8e41daedb3",
+      "sha256": "c196ba95754d05c6ec29d5f62b3049f7dbe2e631a6142fd3d4d03f290c6fd6d0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_3.asset",
+      "size": 188747,
+      "sha": "7b4d8089fd2403aa37bfd28812c0e3ac0c6546c6",
+      "sha256": "5a7f66f01cf739547ba7d5bc429dc2a23da8d7dc348f5b8370ea0d082e9f9d5b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_102_3.asset.meta",
+      "size": 188,
+      "sha": "09527cb1f3b078ef918a36eb84d76c00ea17680e",
+      "sha256": "6c96b158c1458ce1bf9fae14bb32300660e7782180e9f91f1d2905f0f38afb2c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_0.asset",
+      "size": 192603,
+      "sha": "b1097f8044cdbe87e2167944442aa5bf88d39359",
+      "sha256": "750252520c88e3d136291ca637907f1c9b35f7abba3565b141729c40adb4b7d6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_0.asset.meta",
+      "size": 188,
+      "sha": "66b4aeba3f6c0ffdef8457a019e2454bdeae731a",
+      "sha256": "a3735096c0de0a636023a8e7a5a5f3402d04568137b95ff10d5ea1c4383b8380"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_1.asset",
+      "size": 8747850,
+      "sha": "31d41d7dee46c493f5d1059f929efe9bb25fe86e",
+      "sha256": "ff1deaf2a1636e2a9eb496b3c1b575023f6beeaed60a882fbe0035485cf5e69f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_1.asset.meta",
+      "size": 188,
+      "sha": "3a6eb0372545d2e8bc8a112c0a04f0b81dfa3593",
+      "sha256": "9bf2cbf0de9ebdbb43c3b8ae431ece900ed37577acd6c17eae28e2f9d0f0fbb1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_2.asset",
+      "size": 21158058,
+      "sha": "5290426fd3c0337084c0bddf49649975f6aba716",
+      "sha256": "58887e6b37029c8562bef67f7fc6d3c308d88bf697a24356616e9e775cf29461"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_2.asset.meta",
+      "size": 188,
+      "sha": "8ab90fdadae8c1cd78e388cca4d8c313e9828d7f",
+      "sha256": "66205fd2daee210bd40eb54a1121973a9406296d05db15c670337fc370e2582d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_3.asset",
+      "size": 188763,
+      "sha": "1eea638b418d55637754c833144819198ba48e68",
+      "sha256": "0a36b2149367d9cba2eb61207aef0e5c910a99c0add4d3a3314047ed3c3dc9ff"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_103_3.asset.meta",
+      "size": 188,
+      "sha": "c1cc1e33e678580141c8e8ac5152df70276c806f",
+      "sha256": "14823ade0870214fea888d6833f6a7daa3b1c800ecd63cf00433534b3366b91f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_0.asset",
+      "size": 192603,
+      "sha": "3c57624a4c73f7eeb93ad5f27e83836f826726ab",
+      "sha256": "b1acce311c28b344b4a59a1933cf0af645eaed65cb15c15a808218df937a6af6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_0.asset.meta",
+      "size": 188,
+      "sha": "f253b48855eebc308b8f285a6927e1a9e4743a4e",
+      "sha256": "ce34f0dc1d3e5e6488dd8012e32119498ccb1d7dee56051d86285f15101a06be"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_1.asset",
+      "size": 8747850,
+      "sha": "a2f4f3705bbdb211f05df87f489bbb4bb1132dc7",
+      "sha256": "1b53a1abe0e4e2685fc6385a91d94a1bf6efaecd0e5af776faf6b3c1572c4468"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_1.asset.meta",
+      "size": 188,
+      "sha": "6d60fae96135c3a496d74231f73ec4d3bdcc3dcb",
+      "sha256": "e030c4695431bb2feaf5e317f53abad446d478303dcfc94c65ae57dade99211f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_2.asset",
+      "size": 21158058,
+      "sha": "a28782d12b72ab6bdef22393d687f5cfdded0e4c",
+      "sha256": "1e22457cbf1a1aecc253feff3d3c750fd83149326e370deecacfc8f19df5d195"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_2.asset.meta",
+      "size": 188,
+      "sha": "e329151d2dbe32247a997108afc377077f35d6e7",
+      "sha256": "d674c2b446c5ddd8e0204d472b59a371de8a1a80633a08ad215ebfeb427daf63"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_3.asset",
+      "size": 188763,
+      "sha": "50eb650ef27c9dbee6447ee0b30af309c47296c4",
+      "sha256": "e6ef92628a55c47907c8455b0364ebee899c2e1ee3619265d0b6d8858ebecd95"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_201_3.asset.meta",
+      "size": 188,
+      "sha": "1aba919ecd5e942e95bc7dec592de1ab213ff4b6",
+      "sha256": "4efc98e19821df80627100bfc910a46e95da6f0a79f1e3fb39450bd4eba92e63"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_0.asset",
+      "size": 192601,
+      "sha": "6106f008af2779be93848d82d0aa53fa78cb5ead",
+      "sha256": "5e78a99fbc2ab8cf3f9d62e1be1975bc49721aa409e2609c63f9caac7f05e656"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_0.asset.meta",
+      "size": 188,
+      "sha": "1bb9ce3fe8a81c13ebcd370be8f7c3cbaaa64722",
+      "sha256": "f60d155a73d8dfda74e579dc1ca6251df6c216dfeae29c7ea9b3a20b9acc7751"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_1.asset",
+      "size": 8747848,
+      "sha": "2835006cd45b21bf851a0ec18adf37899abcac3e",
+      "sha256": "f2668c73cc10a8cf1002ac25406286352c3c3624a5388244fd774759b7972db4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_1.asset.meta",
+      "size": 188,
+      "sha": "401f436d483aa7500c6b0bd9b2898f0818430d60",
+      "sha256": "856d77f337b11b21e3b70b12c77bd9e7f7699ce8a28460e3b6910e01bd7bffb7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_2.asset",
+      "size": 21158056,
+      "sha": "14bf7157292607bf98fbe10b716b1ff31d8f215e",
+      "sha256": "bf131e146c91fef74f74184ac3c1e2d5678874078b0342dff699574c54e04771"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_2.asset.meta",
+      "size": 188,
+      "sha": "44bd8f358c03dbd6c90c65d98a7c3f413dd9e068",
+      "sha256": "2487e155603cab144e9c8ece56533c6286e2bc5c8139b0f93ad4348c265974b9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_3.asset",
+      "size": 188761,
+      "sha": "b344c10e4cbdee3718d5440e9426ec371c0e400c",
+      "sha256": "cb121be3d89a77e5f4697abb1d941cae110785bf16f35d58cb2e9d270f2bed81"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_202_3.asset.meta",
+      "size": 188,
+      "sha": "c1492a02c36dc3882cb2074ab62b7d9cf7f35d3b",
+      "sha256": "ca04f7f91e64291ec115c5ada8fcd70e45e96e8c0e4d4190ed03cae2174d4647"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_0.asset",
+      "size": 192587,
+      "sha": "47214c290e724a2558b5206b4b2fee55b72ac60f",
+      "sha256": "b640e057acd2e248605b029c9601a37c024a57ad5a01d21ae610c0f2b4900c3d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_0.asset.meta",
+      "size": 188,
+      "sha": "7721e711b73220b214411adb50df9c23baf272c1",
+      "sha256": "e294e35b4361414838e5535654ca0bb41584a29b78260860aeab3b70f148794e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_1.asset",
+      "size": 8747822,
+      "sha": "42bd43e14b84372f1662f8adde98bbaf1f121f2a",
+      "sha256": "1d7f099489ee11ee193d23cc7c01d039a9519f1c4a8274bfa95fcef19fc33ae5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_1.asset.meta",
+      "size": 188,
+      "sha": "bef21915ed7948ca769378fd6f1773f54625035b",
+      "sha256": "6b86b82f8be0accfbc94bacb64c5cf9e806dab4e7cee5dd14d5aa89a75bf2ff3"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_2.asset",
+      "size": 21158042,
+      "sha": "cff66361538a4ae9dc1487990cb99e07bdae5a1e",
+      "sha256": "d0b19d1f9193bcfb5c5ee6d7812c513b1cf0224a33fcba6ec313dbfb4d6e0192"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_2.asset.meta",
+      "size": 188,
+      "sha": "c85e0c7e87da648c0c8ffe36a3e112623d898c7e",
+      "sha256": "2c953e21886a42a98d5b800a84202749c1a8af49161db877ee0a578ed81d30cc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_3.asset",
+      "size": 188747,
+      "sha": "40f085f6b791cf15d0f36349dabfa84d484038a6",
+      "sha256": "d07f2d3b460e59b5ea4bd387bce35478fa8d9b8d8e105b594df40ab269707df1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_203_3.asset.meta",
+      "size": 188,
+      "sha": "755e81d11b223ffc10a9e2873b9fa2366bbfc23d",
+      "sha256": "1b1c1230ad40554b670bfa9f736c0e5c415e086e21f9aafd4652b124ea56cd84"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_0.asset",
+      "size": 192599,
+      "sha": "fe63ea81b03439622afd4b146bbff125495a3b72",
+      "sha256": "c3da8bac3a26c8ac624dbab933983092bb96c3b25fb2dcbe1ff9f1504b6b571a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_0.asset.meta",
+      "size": 188,
+      "sha": "da536219e83ba513213e6cd60c0f964bfce9ad6a",
+      "sha256": "61a255080aa84a79f364639301ac4b9d88050db1cbb0598d29b26dc869ce3f79"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_1.asset",
+      "size": 8747846,
+      "sha": "6b589d02aef9a2ad64584c020c9864c62d5637e6",
+      "sha256": "d8608c3a442be234ed92dc216d9251655ecd1d2b78c82db7baac174a66c564cc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_1.asset.meta",
+      "size": 188,
+      "sha": "966d0a2310afcf922c7e2b28276747a0a2a78fbb",
+      "sha256": "4735012f2318c579a7989b748281e9640c52cb636c15b4d2320d71a59dc684bd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_2.asset",
+      "size": 21158054,
+      "sha": "8e2dd7e62f69a45915c9432627ad85892a97f3f2",
+      "sha256": "936faf9be5c7b6e4df59e92972bf8b7d5d1ca68adf24dd08fbf6b994f9dc1035"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_2.asset.meta",
+      "size": 188,
+      "sha": "c6208121398c47b9858c5eec38399d756fa58e9d",
+      "sha256": "4a3f7d7855fe365b13dc8f44eea26c1d412304665a5bf231510727831724b91e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_3.asset",
+      "size": 188759,
+      "sha": "95a7da6efe5589fd93f8e0b1b80e3bd1f07f269e",
+      "sha256": "27f322b0a7a006c6637c4c311eb85f6bff4a85405fa0336270ed1b5c3c17b4ce"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/Floor_204_3.asset.meta",
+      "size": 188,
+      "sha": "63746cff6ca032bb424f957cd132de413150448d",
+      "sha256": "f4ff0863f6617b46ac2cdeac2495d77aba19bd85c75696cf1edcae46fda7ffce"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_0_H00_Walnut_Dark.mat",
+      "size": 4145,
+      "sha": "29a287cc19cd460934d57f6cd399246bb92fd5a9",
+      "sha256": "dfa939f0e40d008de120ea82f476bbfd022da776aa7793b61e8def1f2f3748d9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_0_H00_Walnut_Dark.mat.meta",
+      "size": 188,
+      "sha": "8c3a28f4c309072ccd7ee60d4c13bd9e287512c3",
+      "sha256": "072d990388c50294a2667edf8184c9f561035a5379872b0b859b127e35ed5e79"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_10_H02_Inkwood.mat",
+      "size": 4137,
+      "sha": "61034b08e9675e02220457e31a72a30cf2bca69e",
+      "sha256": "5bf0bee44a1bde51f3676b024509af60adc71c1a99e8f22991b02e8f9693f56b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_10_H02_Inkwood.mat.meta",
+      "size": 188,
+      "sha": "25755ebd5f6536f3c812b8db54ccadc92599d9f2",
+      "sha256": "e1f659afeec42c57d600cd88cf7e4d7572ff19d3e5abfd43d57f96bd040543ca"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_12_H03_Smoked_Walnut.mat",
+      "size": 4149,
+      "sha": "7a10a5cdb0d443964baf395d391e99c5869a3199",
+      "sha256": "62ea515edacd6febac1525cace47ef5b74faa607880c70d2ab30f9596b3ca39d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_12_H03_Smoked_Walnut.mat.meta",
+      "size": 188,
+      "sha": "bc69236d4a7114e90be1afb5c228c981ff9b1c6f",
+      "sha256": "41ae9135f7e6f8f6bdd27eb49b74224843cfe857556279d7368da329acff5b23"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_13_H03_Rose_Quilt.mat",
+      "size": 4029,
+      "sha": "b39e5b501814fba01f526edec94bad4d93f0962c",
+      "sha256": "38c57059b9a5d3102a70aa91fa28019df03d71c643eb7e42f39eb08d4b087fa2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_13_H03_Rose_Quilt.mat.meta",
+      "size": 188,
+      "sha": "85c9430c89b46ba537e5e8b1142b7cb748f5bfd7",
+      "sha256": "aac118a26a9eae6b3b82615f10036b7337f149b0ed2a20c9c8cd63f2d767ebd8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_14_H04_Honey_Oak.mat",
+      "size": 4141,
+      "sha": "c9555678cf017d9ea4996a2fed369b82340f183b",
+      "sha256": "1daaa36c101b45651e3c4d9ba9f4f6feb6b6e2181a903350f889886ea36da417"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_14_H04_Honey_Oak.mat.meta",
+      "size": 188,
+      "sha": "e542b3e7fe49f324af78fab6c1e7c1810e098c12",
+      "sha256": "28422040347dca7de315236b6dc13a024363de8a0fe50ea694dac349674b0ef6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_15_H04_Sage_Textile.mat",
+      "size": 4034,
+      "sha": "78e40d702ce61cec996e9fc5373d837fc1a11641",
+      "sha256": "8e75fafddd0bb75b9fddd557640690702081facb6892ec31ebe14c4e180fdfcd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_15_H04_Sage_Textile.mat.meta",
+      "size": 188,
+      "sha": "9671e4f5ab29dc58742a2ab8efe13df098d24a7a",
+      "sha256": "330ed7cb1202fa76737b0d645d5413ccd7c0ab3641fc287c3f052e313617eeb1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_16_H05_Mineral_Teal_Textile.mat",
+      "size": 4032,
+      "sha": "ecbee93e7413530ee001370b709963d6b29d0df1",
+      "sha256": "957067b106df48c137ce50645fb7ab711f8317c171bdac39443f51874eed99ac"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_16_H05_Mineral_Teal_Textile.mat.meta",
+      "size": 188,
+      "sha": "0a1cb698041e27a72d77519cf700c14f822e63b2",
+      "sha256": "68bd58b86e79e558894492a605e74086bbc06abc5cb6bfc1bc9dde537e43efc4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_17_H05_Smoked_Oak.mat",
+      "size": 4140,
+      "sha": "a4f4f572302d6a9e06520a949237ecfb5ff5f363",
+      "sha256": "bb20655199b11d40976e5efa0b31cc8e5dda31b0f2545baaeae89a6cfc11e6d6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_17_H05_Smoked_Oak.mat.meta",
+      "size": 188,
+      "sha": "2b2bfd251711879b295bd8f21fac8af99205d570",
+      "sha256": "1d6bbd29868fef9b6adf2e1d6fb7eff8ab1fc2b5e76444b99ebcfa3f928431bb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_18_H05_Woven_Rug.mat",
+      "size": 4024,
+      "sha": "5f174937124659b8810aeb2f17526d7c4736f63e",
+      "sha256": "b1ab9817473b8769bf7c3b10723487a63562b7afb072cb7ef2a57b448221a681"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_18_H05_Woven_Rug.mat.meta",
+      "size": 188,
+      "sha": "995177fdf0ff9ba5c138ba2208f5cda42968b3da",
+      "sha256": "5c22813d5cff86cec8dd435f8dc9e8ac63a3207d32cf4f458743461ca93b0a92"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_19_H06_Oak.mat",
+      "size": 4148,
+      "sha": "8ce81ef155a95b018e06dcd572c480c070b29e50",
+      "sha256": "77bf1cde15e5b9f8ba15f4f8402e8bf1316b84f4df2598ae195302cdb720cf69"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_19_H06_Oak.mat.meta",
+      "size": 188,
+      "sha": "4fdbf5e2a387474e9fec6f2c1a05a126da2a7df4",
+      "sha256": "2a92a4c889069c386da4930319652e17fdf69dd520e09ee103faf0c6dd1e2bdc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_1_H00_Walnut.mat",
+      "size": 4130,
+      "sha": "9cbc21db4a0e6eba47fa40ab9f642d87f65e9663",
+      "sha256": "e7d89bfc48617074fbf05bb045aed2ac28e49750fb4e830ef0a1d38b5c1f2b3b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_1_H00_Walnut.mat.meta",
+      "size": 188,
+      "sha": "785e2fd42902cfbf57caab0814e6ab4bcf69527c",
+      "sha256": "b4a4ab51b9ec14d5d612e32c2104ec1a703cacb86dafa02b7a00d8ff9da8c892"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_20_H07_Walnut.mat",
+      "size": 4152,
+      "sha": "7cd6b3a8313c4e772f9f99fd3928bb2be76fbac5",
+      "sha256": "b9850d17049de2544c5cf3e840cd104f8c35e7e0540c0a96d6b95edbf3ba5fbe"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_20_H07_Walnut.mat.meta",
+      "size": 188,
+      "sha": "59bb2cdf966d6ecee78800124b811a00ed36d106",
+      "sha256": "fa730898dd8460454cdcb61f6ad73292b50eb9f574fef49d61616a5e11277bbb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_21_H07_Fumed_Walnut.mat",
+      "size": 4158,
+      "sha": "b002b9b11129d5265f881640fdc887b6a77582d0",
+      "sha256": "a11218c7766089a7a6ff87db867e9f5a9f84aba7fcd241ea04e4a45369cde876"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_21_H07_Fumed_Walnut.mat.meta",
+      "size": 188,
+      "sha": "eb3fd8c8a2f2809f6dfa2c60571d44853cec46f9",
+      "sha256": "afded7c1682d4f196a85f554694def9394b6381b96a1c25e4db64030d9f3fa99"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_2_H00_Walnut.mat",
+      "size": 3903,
+      "sha": "ada993af590c5f8d75fa5d447594a314817f2a99",
+      "sha256": "31155c798cd6108b881dd670feabf3fa0d95e5461f2164fa829e63536930d119"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_2_H00_Walnut.mat.meta",
+      "size": 188,
+      "sha": "78ca29d35102414f9ea7e3d3be428149d6b74c8a",
+      "sha256": "e641161af11b9ed1a41c5b517030539dd8df6ed5679f6fd74fd7eed4bc957230"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_3_H00_Textile_Welt.mat",
+      "size": 4121,
+      "sha": "76052af20fcc6dd128f0bbbfd4a1e530efa53d3c",
+      "sha256": "41b5419bbb2479c4229534520f39f7580722461a6d6e99f267458ee1282fec39"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_3_H00_Textile_Welt.mat.meta",
+      "size": 188,
+      "sha": "a7aa8e5a0808e3553f535651beae1c657b35741b",
+      "sha256": "fb098f87afe31faca2c3779b8fdebd34b07837172120b4e24b2f540dc2275998"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_4_H01_Walnut_Casework.mat",
+      "size": 4148,
+      "sha": "d2ebe56534500f9e08264c510f722cbf8a81af8c",
+      "sha256": "d346d1e0cf1b449777e15088f6f3baabd3a8478a4d995bdd7a6acd8dded64559"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_4_H01_Walnut_Casework.mat.meta",
+      "size": 188,
+      "sha": "4908d14e86524c1d84ed76c0c8cac0242454d81a",
+      "sha256": "cff1eb9be211c54dc9c5bba8454099cf3b88764aabb46cbe9a18387dae983822"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_5_H01_Dark_Walnut.mat",
+      "size": 4138,
+      "sha": "db977385805779a45b78ce9ee68e2b886437b6eb",
+      "sha256": "bae673e33cb22a79160459158367b8eaddd257f5e149013353fde81a87365eac"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_5_H01_Dark_Walnut.mat.meta",
+      "size": 188,
+      "sha": "d8453337ac1c11de1104b56b92ddf98dae7bfc5f",
+      "sha256": "67438202b973e7e03e08c29f4e393df5907a354eaa0a4ef32b07951198f69533"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_6_H01_Brown_Leather.mat",
+      "size": 4141,
+      "sha": "b3537a06ff267e18f0649d10426fc70d9ebad091",
+      "sha256": "26488352709585fdb33091ad5e6f0f38fff5d5751aff0d155d91fd3014b99197"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_6_H01_Brown_Leather.mat.meta",
+      "size": 188,
+      "sha": "e3c54a544f8c5c583f1df3e59990bbde989a4734",
+      "sha256": "9846de04430b4c841cd65faf2cfcd5fe228d2f85aa0cd4e34af9cfd65c496e7a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_7_H01_Oxblood_Rug.mat",
+      "size": 4139,
+      "sha": "b24cbff59734940263cee644c16996b49a13ab82",
+      "sha256": "e6b83557b6b31134b968c4814a56c8da6d962a33805d791643936c23f5fd93e5"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_7_H01_Oxblood_Rug.mat.meta",
+      "size": 188,
+      "sha": "8cd63798e32ec4ce0f80dfc1f92fbcb0b2e14f88",
+      "sha256": "1e412d7f85883fcb7e9a3f2b770b709e930cd9d004a71f368b2e7a3b7696d3f1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_8_H01_Olive_Upholstery.mat",
+      "size": 4034,
+      "sha": "ec046d6c13434ce73885b90cd4500c4afe242c55",
+      "sha256": "7ce65d46494950079aced0e20852b03c333748ca5c2e1239a739c9fe767dc16a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_8_H01_Olive_Upholstery.mat.meta",
+      "size": 188,
+      "sha": "6437fe54fc9f84d554d88516fcc15ce94082d123",
+      "sha256": "c999e9e01f0467907407a0da38cda8882dddc935957a2e64ad81baf8f7d6e002"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_9_H02_Rosewood.mat",
+      "size": 4142,
+      "sha": "91f10b5e8cac84711b1890d3ba1601239903c24e",
+      "sha256": "2b3ab2f185923135a4d32bd01fa3d27c9be4708700cf87099bb17a8581d88b20"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Accent_9_H02_Rosewood.mat.meta",
+      "size": 188,
+      "sha": "771e4baee58cda521adcecf8459e1583c1a6799a",
+      "sha256": "da8aca3e9ab668a7d61727385da30e93ff39ef5f1289061977299d7051c5fe34"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Antique_Brass.mat",
+      "size": 4110,
+      "sha": "43d13e2633bb9c1683dca67a69070796da7e5147",
+      "sha256": "4692a4074926f3d8a0baa3b4667a4ca81843bbe8dc016bcbcb4724c07e229e4b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Antique_Brass.mat.meta",
+      "size": 188,
+      "sha": "7db1649d65f1a3f5817144d4a734a4a531fdc27f",
+      "sha256": "ccc707083597f4b940c0f54cb9a6a3821c29106d8a7562b3fdd260f5f882ab43"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Black_Marble.mat",
+      "size": 4100,
+      "sha": "289870ed21c8ed14dfbfabd97b01c489c943c0c0",
+      "sha256": "47fc875f48c501306dbdf12b305977555485fe4b75cb14f019f47ab89a9a802c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Black_Marble.mat.meta",
+      "size": 188,
+      "sha": "fd1663bb87ee013d2aa7955c350b884da04de289",
+      "sha256": "ba4debd6b4eab7293c1b61cc2000429b54900cb54a42d14408ffa25e549702cb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Blackened_Walnut.mat",
+      "size": 4115,
+      "sha": "be6aaf2e0bab50a3e73e312c693dfe0079e3c9f4",
+      "sha256": "f99abcb1568f1469e0c584c699dfcad22fc6981d6319490a19e036f9a9469195"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Blackened_Walnut.mat.meta",
+      "size": 188,
+      "sha": "998c72a4d0a80d0d05dfea4010fad507579da36d",
+      "sha256": "6c92204091e1b836f1b979dfdab4e22ade4b776346779b45474258b377963192"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Ivory_Marble.mat",
+      "size": 4099,
+      "sha": "146a4871b083c255d6e4e1c1f538a9d60c258a78",
+      "sha256": "757c58a0e9e3052de9113b980b1653e4b4cf1fef92f9c46be4acf70f1f44c933"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Ivory_Marble.mat.meta",
+      "size": 188,
+      "sha": "5f05216050fe54e9ee9042871a88e26c28b2cc52",
+      "sha256": "3fd0722ad07cf37d7ce173213adae9160b7f3b98a701a2c0a54e68908fa5245c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Oxblood_Marble.mat",
+      "size": 4133,
+      "sha": "aec0b4aceeef667a7ab369c0302a596fda29bdc7",
+      "sha256": "0e36055cd76893b842bedfc86db283637642484f6d60a84a6be124a1a1ad3b9e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Oxblood_Marble.mat.meta",
+      "size": 188,
+      "sha": "66072e88626dc0a23e964b09d2e7231f7af16455",
+      "sha256": "877b8dc297f02da730415c3c55f5f27e2ce70ba2e488a53733773dca047a3e5a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Oxblood_Wall_Panel.mat",
+      "size": 4113,
+      "sha": "3cfbfc011b8910865daf683f1a2a06b0cbda22b6",
+      "sha256": "f0c7a25c52d14690ee5324c052f3271fa8f7c0e77f08fbfc8de82c284cc0eada"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Oxblood_Wall_Panel.mat.meta",
+      "size": 188,
+      "sha": "5645091272ac8a343a0d63041e392e7ccb7b9353",
+      "sha256": "51082a5ab4ba43d871d1803b48792d230e8abac930ec9fa7a165d0b529cae3c6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Warm_Ivory_Wall.mat",
+      "size": 4104,
+      "sha": "e5925bb161e5294cfbb56c1c3f2dbcaad2ab5dcd",
+      "sha256": "aa8b5dad6b266d4c7713f4ee022cd32263b99a14ec8c2099cbf2d1caaec5422c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RH_Warm_Ivory_Wall.mat.meta",
+      "size": 188,
+      "sha": "baa3172270b16596dcefc20482e1c26eaab5b91a",
+      "sha256": "9639b21d3d4878d89fbd42e94253306c566251924e8fd64efb69e1dacc1c5f8c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RoseHotelCompleteGrade.asset",
+      "size": 4861,
+      "sha": "9765fc96a1c576f1c47886b4e2e6c0c7c4e15528",
+      "sha256": "d219ddaf3742be4bc725cae2fafc5182901870cf42a74fe46c72d7bdd0246073"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/RoseHotelCompleteGrade.asset.meta",
+      "size": 189,
+      "sha": "1aa3c6829db3ddf682ce3bbc62206920838b7f2d",
+      "sha256": "c5fa8d8ee118c0bb090df6f7d28d669aa86c50675a38fbd203344ccfc31c8e3f"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_0.asset",
+      "size": 26713,
+      "sha": "f4f94ba03c13c97a4b016cc5902d17e80151334e",
+      "sha256": "513ea8821c18c1d51f890dc4f195a358a1187f873ab6864c8997b4dc5aa84051"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_0.asset.meta",
+      "size": 188,
+      "sha": "6dc187f2fdf8d437c0e121429c3f626d29e7dadc",
+      "sha256": "fda3af829a8b648f0c3c76d8ab7b935d1abb0cc58735f3744d54628431f39ecb"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_1.asset",
+      "size": 26698,
+      "sha": "7cd5010f43088918fb6c2501387b374933111818",
+      "sha256": "272a0241dbe71f058896d49063cb597de865742a486c792f6daa58a452153d9c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_1.asset.meta",
+      "size": 188,
+      "sha": "f131285135c9f38cafe7ebe883bd2089ced66a01",
+      "sha256": "32a75cd7605fb3377c5c1f9c74d148616cdd0fcd1ecfc589cedee50b0b8624df"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_2.asset",
+      "size": 26716,
+      "sha": "ec93cafe586ab17caadffe50a20c4f0681b4da12",
+      "sha256": "4ad576535d620e1b947f35e43d0a11182f7704de478efc16266de512cdd749e6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_2.asset.meta",
+      "size": 188,
+      "sha": "e117aa1a1586d8e71aafcbd648bdff898e3aa550",
+      "sha256": "f75c289e0f7612b427bf6d9f8f8518d819d4ea1fa7d5d217009152d004320ea6"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_3.asset",
+      "size": 26709,
+      "sha": "9ba97c79b86a4119e45f61bde869de09833d7703",
+      "sha256": "b98ac7253e004cd02c52e0ec1a415d842d0b3e9a4e502b68e1dec8359ae998b2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_3.asset.meta",
+      "size": 188,
+      "sha": "b564e9716e1f5726fb25f35dbf229514738cf660",
+      "sha256": "8267e5fd7fbbe383dd9f4c15339ea2729b24e7d3a417b99fff28ce5359ea68d0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_4.asset",
+      "size": 26712,
+      "sha": "5c1c0509fc4518482911049e197cb59c2ac3e00b",
+      "sha256": "7b75c11ea9bb7d8ffa6711b4b7a1666238e0755f4216467ac42be0294048f877"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_4.asset.meta",
+      "size": 188,
+      "sha": "e847cd2cb62c859edf0a5ee6aecf4135a8081739",
+      "sha256": "abd7679493cf532a1f713b75d1a23cf7a06924dddd54db4395893afeb5eaf860"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_5.asset",
+      "size": 47040,
+      "sha": "841202c2f197923c0948287d7282832a3f24030e",
+      "sha256": "c8337fd40b25d354873d804e54645975cf6c77c05be7dd301b605e051ffa3bc2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoseBlackFullFinish/Generated_R2/_Wall_5.asset.meta",
+      "size": 188,
+      "sha": "a1efdfe97c7625f083371ae63571c4a324a3e325",
+      "sha256": "5e48e12c60313de30f42beadfedbd0d416db75037575f6d13271f8ba392e3820"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelApprovedLayoutMerge.cs",
+      "size": 1051,
+      "sha": "cb6dccb7477e9d585c18fa36fa3919b594b2a89e",
+      "sha256": "9d75d221b71d1006ac36770659b7a8d7a724a8ccb4877e52b865b4b447f39b17"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelApprovedLayoutMerge.cs.meta",
+      "size": 59,
+      "sha": "2c1f6a5410049e640357eaba38c196bce94bda36",
+      "sha256": "4f6318db88ec1b86e1a2283aa122914f4be184d68600b26d2fcc1b35ede1bc10"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelFinalPolishLayout.cs",
+      "size": 1488,
+      "sha": "f45d72a62e50502e94b27394120f1ae2b61b2b92",
+      "sha256": "1095d16bd36d1a6b13fc302a2ac222203de6c7c1b369655e84da21cbedb664d4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelFinalPolishLayout.cs.meta",
+      "size": 59,
+      "sha": "e2fd558f3ccc4f8a4daece4304ac042baf858a67",
+      "sha256": "7c7b79d260f04316e41b6fda919677efa4d8914c14dd4f5df90afd5dff3e8af2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelFourPointRepairState.cs",
+      "size": 1075,
+      "sha": "cd69c43d9a3da0649109283d9e11a4affc0cb3e0",
+      "sha256": "674c8fce354d18a6d85cbee9be46eb8e0cff2d50b42194ccc0a5627e96e0c3fd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelFourPointRepairState.cs.meta",
+      "size": 59,
+      "sha": "769b350813874244eb1cb6b46bdff6d8df2130cf",
+      "sha256": "53b9de8d7e0e28ba3b7903bf260454de147a0df2b071a78e777ef435868665fa"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs",
+      "size": 15383,
+      "sha": "efc784096f82be1d68d15334eb2dd9aaba2909d2",
+      "sha256": "cef8f6dec3e9459c4f91cb9b11415c58b9fda2bc63762b381d78475f38a21e11"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs.meta",
+      "size": 59,
+      "sha": "567889ef00b7fa8559ffa6b509446aaf43448128",
+      "sha256": "863f82bad5e0b3a9f07c1041667a4b450f102e665bf3e51655aa17584206a02b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelOverviewRoomArea.cs",
+      "size": 1821,
+      "sha": "8a3a0b64028f16cb01fd41e2ce80cac29d085843",
+      "sha256": "0ce289614279ac265caf0dc810988a021feb51e60005eb7677698288140b78df"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelOverviewRoomArea.cs.meta",
+      "size": 59,
+      "sha": "f603b36944e40d93713551f0635762bc46f326de",
+      "sha256": "ec80245e256be12963dac127ac787fd52a30817aca01fef37a2030e2ab9d1c36"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelUpperEntryRepairState.cs",
+      "size": 1159,
+      "sha": "c78d7b621fdc3384a3ad4564abdfa192db2d612c",
+      "sha256": "e9a967b1959f3a2d9c7fef32919005d6b889bddd01b86295c0b98243d544066d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelUpperEntryRepairState.cs.meta",
+      "size": 59,
+      "sha": "4c50cde9d8c2616bd87ffce47762ffa5a74a6669",
+      "sha256": "2b035125b890327a4ea483569634794ddc492deb68152acbf15c240dbdb51bde"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes.meta",
+      "size": 172,
+      "sha": "80856a033aadf751fe4b024da7592fc9504474b5",
+      "sha256": "abba6fde75be2850e2908bad650269d5fb6c3ff3b5ec92bca0d5e697c3015b86"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel.meta",
+      "size": 172,
+      "sha": "6eb3fb64df1c55bf2eac316d73d6152ccd92447b",
+      "sha256": "46b5aebd8c68a055f51d48cd0f05b76b940dbd4db43b2ab0320067f399503604"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_Overview_Compact_Stonework.asset",
+      "size": 13179,
+      "sha": "8f82c8f6bb2230dda32a479dcde8c7732082fea9",
+      "sha256": "a14eb08cbe2b0fb968c82321c9a6cbeab5b46d286c9b36b70b9fa875024ef045"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_Overview_Compact_Stonework.asset.meta",
+      "size": 188,
+      "sha": "0cd166b626120286b10fc50c4bc7e2a3d0aa3f09",
+      "sha256": "045b3455052e8cb045dd56d3023130d9ec129f34e0f7509673630bde2d89a8a2"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity",
+      "size": 15666791,
+      "sha": "3a5c3beb1b3d2e242306af17837dd434ff0a120d",
+      "sha256": "21f36ef9daaa00a371c17a56730275499ddaaba1e4448dd5a3809ede99b20a01"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity.meta",
+      "size": 155,
+      "sha": "3614c628b604a543dfbe3f06601311c016c5da96",
+      "sha256": "87b3bba2d2a0f8ef2420b6f6143fc64a9097cb870ab538ea1f28c92f3acc76e8"
+    },
+    {
+      "path": "game/UnityProject/Assets/Editor/HotelFinalMapReviewControls.cs",
+      "size": 2765,
+      "sha": "e00c93d49bd037e89d6a0e6e8701eb93e81b1470",
+      "sha256": "a074fef8168c43f725c8de04b475ef42b8146224721c2be0a6fb198ffff896a4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings.meta",
+      "size": 172,
+      "sha": "39b94dd76ba033107fe3d6c204e91b9cdc0f8612",
+      "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset",
+      "size": 23987,
+      "sha": "6fb18220034aca0bdf6ce1ca20aaeb02c0595f39",
+      "sha256": "3a6f825e8d07fe8b9f3b52e7d4e2dfa0e22c555b22335adb19f0ecc66dfa38dd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "size": 189,
+      "sha": "53b314adfa72d5417bc331688c0b9e5f060d3e73",
+      "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/Mobile_RPAsset.asset",
+      "size": 4650,
+      "sha": "fedee0759aac64f59136e818187e8fbecb45621d",
+      "sha256": "2d5182d2b8884ac88bc6ed033a0a722c23cfb15a7bc8b7daa38db37227bafd09"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/Mobile_RPAsset.asset.meta",
+      "size": 189,
+      "sha": "3660d1516d2a3761aee80b9e0d61a97b729fe4d8",
+      "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/Mobile_Renderer.asset",
+      "size": 1713,
+      "sha": "ea246b25944b5909ccd96814d2f058f15ee54178",
+      "sha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/Mobile_Renderer.asset.meta",
+      "size": 189,
+      "sha": "a3588b1a9b92579322c8e3256ae87087a842724d",
+      "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/PC_RPAsset.asset",
+      "size": 4669,
+      "sha": "9b2b0467d576f8d9f6dabb0c529a63a916e313e2",
+      "sha256": "08a9c221b335a0dbca1b6967b7de5c42b957c5f0d5e43da9edb36ca8fce5966b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/PC_RPAsset.asset.meta",
+      "size": 189,
+      "sha": "e286b2fdd06e896697ca7b75af321f224ce520f2",
+      "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/PC_Renderer.asset",
+      "size": 3439,
+      "sha": "475b02e55788d3346367feccd62a6b7f954e944e",
+      "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/PC_Renderer.asset.meta",
+      "size": 189,
+      "sha": "ddae6a5f019681e9ab98ea467b7d2ed2a61a1155",
+      "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/SampleSceneProfile.asset",
+      "size": 3703,
+      "sha": "c1b0f6319bcf0c43f2e3186b375c182c5c39340a",
+      "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/SampleSceneProfile.asset.meta",
+      "size": 182,
+      "sha": "b82270c5b2802668616a4cbbe2a6e46fb49e00a5",
+      "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "size": 25579,
+      "sha": "ddfe1c22f0b913c9c66c38fbecb4f1932bddd0ef",
+      "sha256": "27a707d384fa71222ecba012c24189b9ebaffeefbdf447cd01b3f3d4115d48cc"
+    },
+    {
+      "path": "game/UnityProject/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "size": 189,
+      "sha": "81b84f2ae16ada93cf1bea3ad2f74d6d96b5b3e1",
+      "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
+    },
+    {
+      "path": "game/UnityProject/ProjectSettings/GraphicsSettings.asset",
+      "size": 2615,
+      "sha": "84b2182fe3e3bc3e639c1e90e9e979e5a2515cc2",
+      "sha256": "6736f33dc62c35b0e7a88e275242080bc7a1d94c91154d18fceb332b661a6bce"
+    },
+    {
+      "path": "game/UnityProject/ProjectSettings/QualitySettings.asset",
+      "size": 3662,
+      "sha": "f55198a746f15374850c7348fe8a5de9d0c97e5d",
+      "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643"
+    }
+  ],
+  "packageGuidReferences": 183,
+  "legacyUnresolvedSettings": [
+    {
+      "guid": "e5c6678ed2aaa91408dd3df699057aae",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "03cfc4915c15d504a9ed85ecc404e607",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "53a11f4ebaebf4049b3638ef78dc9664",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "8f96cd657dc40064aa21efcc7e50a2e7",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "57d7c4c16e2765b47a4d2069b311bffe",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "24ec0e140fb444a44ab96ee80844e18e",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "b9a23f869c4fd45f19c5ada54dd82176",
+      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
+    },
+    {
+      "guid": "60f3b30c03e6ba64d9a27dc9dba8f28d",
+      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
+    },
+    {
+      "guid": "0fd9ee276a1023e439cf7a9c393195fa",
+      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
+    },
+    {
+      "guid": "5a00a63fdd6bd2a45ab1f2d869305ffd",
+      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
+    },
+    {
+      "guid": "74955a4b0b4243bc87231e8b59ed9140",
+      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
+    }
+  ]
+}

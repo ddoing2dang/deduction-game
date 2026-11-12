@@ -1,0 +1,5058 @@
+{
+    "source": "Assets/Case464/Scenes/Hotel/Hotel_Overview_RoomRows_RoseBlack_202_GlassBathroom_Work.unity",
+    "sourceHash": "7b35e9c3d4dd605884f24311d1421d2e12e400678c793646528ec965a3db186e",
+    "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity",
+    "visual": "UNVERIFIED: captured images need human visual approval",
+    "playMode": "NOT RUN",
+    "pass1": true,
+    "pass2": true,
+    "savedAfterReload": true,
+    "finalSaveCompleted": true,
+    "lightingRepairs": [
+        "103 / ROOM_BOKI: missing local lighting repaired with two bounded spot lights; visual exposure still requires approval.",
+        "201 / ROOM_MARIHI: missing local lighting repaired with two bounded spot lights; visual exposure still requires approval.",
+        "203 / ROOM_MOONIRE: missing local lighting repaired with two bounded spot lights; visual exposure still requires approval."
+    ],
+    "findings": [
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "8 spaces",
+            "status": "PASS",
+            "detail": "Eight unique logical rooms, no added investigation space."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "URP",
+            "status": "PASS",
+            "detail": "Active render pipeline must be URP."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "Post-processing",
+            "status": "PASS",
+            "detail": "URP camera post-processing enabled."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "Grading profile",
+            "status": "PASS",
+            "detail": "A visible grading volume with intact component references exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "LOBBY local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_MATTO local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_JIRO local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_BOKI local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_MARIHI local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_NAZ local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "ROOM_MOONIRE local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "Setup",
+            "item": "CRIME_SCENE local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "00_Full",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_00_Full.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "01_FirstFloor",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_01_FirstFloor.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "02_SecondFloor",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_02_SecondFloor.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "03_DisplayCopies",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_03_DisplayCopies.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_H00",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_H00.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_101",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_101.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_102",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_102.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_103",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_103.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_201",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_201.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_202",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_202.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_203",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_203.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 1,
+            "view": "Room_204",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass1_Room_204.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "8 spaces",
+            "status": "PASS",
+            "detail": "Eight unique logical rooms, no added investigation space."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "URP",
+            "status": "PASS",
+            "detail": "Active render pipeline must be URP."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "Post-processing",
+            "status": "PASS",
+            "detail": "URP camera post-processing enabled."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "Grading profile",
+            "status": "PASS",
+            "detail": "A visible grading volume with intact component references exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "LOBBY local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_MATTO local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_JIRO local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_BOKI local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_MARIHI local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_NAZ local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "ROOM_MOONIRE local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "Setup",
+            "item": "CRIME_SCENE local light",
+            "status": "PASS",
+            "detail": "Registered usable local lighting exists."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "00_Full",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_00_Full.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "01_FirstFloor",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_01_FirstFloor.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "02_SecondFloor",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_02_SecondFloor.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "03_DisplayCopies",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_03_DisplayCopies.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "LOBBY illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_H00",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_H00.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MATTO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_101",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_101.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_JIRO illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_102",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_102.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_BOKI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_103",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_103.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MARIHI illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_201",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_201.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_NAZ illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_202",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_202.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "ROOM_MOONIRE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "CRIME_SCENE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_203",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_203.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "Orthographic/black/angle",
+            "status": "PASS",
+            "detail": "Approved orthographic presentation and black background retained."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "Visible geometry",
+            "status": "PASS",
+            "detail": "Expected room/floor geometry is visible."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "Framing/clipping",
+            "status": "PASS",
+            "detail": "All visible renderer bounds fit 16:9 review camera and clip range."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "Culling/materials",
+            "status": "PASS",
+            "detail": "Camera includes geometry layers; material/shader references are supported."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "LOBBY visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "LOBBY duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "LOBBY hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MATTO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MATTO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MATTO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_JIRO visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_JIRO duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_JIRO hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_BOKI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_BOKI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_BOKI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MARIHI hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_NAZ visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_NAZ duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_NAZ hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "ROOM_MOONIRE hidden lighting",
+            "status": "PASS",
+            "detail": "Hidden room lights do not leak into selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "CRIME_SCENE visibility",
+            "status": "PASS",
+            "detail": "Room visibility matches selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "CRIME_SCENE duplicate lights",
+            "status": "PASS",
+            "detail": "Inactive physical/display light copies are disabled."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "CRIME_SCENE illumination",
+            "status": "PASS",
+            "detail": "At least one visible active light in the selected room/floor."
+        },
+        {
+            "pass": 2,
+            "view": "Room_204",
+            "item": "Render capture",
+            "status": "PASS",
+            "detail": "Pass2_Room_204.png saved and nonblank. Human visual quality remains UNVERIFIED."
+        }
+    ]
+}
