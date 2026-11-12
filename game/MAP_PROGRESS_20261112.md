@@ -45,3 +45,11 @@
 - [ ] 플레이 모드/기능 테스트/빌드 (사용자 명시 요청 이전 수행 금지).
 
 관련 기준: [HOTEL_LAYOUT.md](../HOTEL_LAYOUT.md), [GAME_RULES.md](../GAME_RULES.md), [UNITY_MAP_MASTERPLAN_20261110.md](../UNITY_MAP_MASTERPLAN_20261110.md), [game/maps/cutaway_camera_presentation.v1.json](maps/cutaway_camera_presentation.v1.json).
+
+
+## 2026-11-12 후속 저장 현황 (위의 스크린샷 시점 이후)
+
+- **최종 Unity 맵 저장됨:** `Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity` 및 해당 GUID 의존 에셋이 GitHub `main`에 커밋됨. 제작 검수·제한은 [HotelFinalDelivery README](../art/Environment/HotelFinalDelivery/README.md) 참조. 위 초기 스크린샷 상태에서 미확인으로 적은 항목과 구별한다.
+- **6명 기본 초상화 원본 보관 + 코드 연결 준비 완료:** `Assets/UI/Art/NPCPortraits/RoseMansion`의 원본 PNG·안정적인 `.meta` GUID와 `DialoguePanel` 테마별 우선 선택·`BindRoseMansionPortraits` Edit Mode 바인딩 코드가 커밋됨.
+- **미완료:** 해당 Unity 씬의 8개 RoomAnchor/방 클릭 영역 위치와 1F·2F 동선, 최종 맵에서 NPC 상호작용, 대화창의 실제 에디터/Play Mode 화면 검증. UI의 프리팹 바인딩은 Unity Editor가 프로젝트를 열어 임포트/저장해야 최종 적용된다. 이 GitHub 코드 커밋만으로 실행 완료를 주장하지 않는다.
+- **다음 구현:** 최종 승인 맵의 실제 오브젝트 구조를 기준으로 `LOBBY`~`CRIME_SCENE` 8개 공간에 RoomAnchor를 안전하게 지정한 다음, 방별 조사와 NPC 대화의 최소 루프를 연결한다. 기존 6 NPC / 무작위 범인 / 검수 대사 규칙은 유지.
