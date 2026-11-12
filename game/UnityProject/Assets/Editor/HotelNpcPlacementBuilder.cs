@@ -21,6 +21,11 @@ namespace Case464.Editor
 
         private static readonly string[] Directions =
             { "N", "NE", "E", "SE", "S", "SW", "W", "NW" };
+        // The earlier Unity import pack used numbered source folders.
+        // Reuse it when already imported instead of forcing duplicate PNGs.
+        private static readonly string[] ExistingImportFolders =
+            { "01_silver", "02_blonde", "03_brown",
+              "04_red", "05_green", "06_purple" };
 
         // Order is the EXISTING DialogueSpeaker numeric ID; it is not
         // a license to rename enum constants or alter saved case data.
@@ -69,6 +74,12 @@ namespace Case464.Editor
                 {
                     string asset = SpriteRoot + People[i].id + "/MapIdle_" + Directions[d] + ".png";
                     sprites[d] = AssetDatabase.LoadAssetAtPath<Sprite>(asset);
+                    if (sprites[d] == null)
+                    {
+                        string existing = "Assets/MattoMystery/Art/NPC/" +
+                            ExistingImportFolders[i] + "/MapIdle_" + Directions[d] + ".png";
+                        sprites[d] = AssetDatabase.LoadAssetAtPath<Sprite>(existing);
+                    }
                     if (sprites[d] == null)
                         throw new InvalidOperationException(
                             "Missing original Sprite (install supplied asset pack): " + asset);
