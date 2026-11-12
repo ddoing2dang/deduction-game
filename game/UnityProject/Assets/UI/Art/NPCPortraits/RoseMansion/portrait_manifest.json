@@ -14,7 +14,7 @@
     },
     {
       "npcId": "MARIHI",
-      "displayName": "마혜인",
+      "displayName": "마연희",
       "sourceFilename": "마혜인 기본 대화 초상화.png",
       "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/MARIHI.png"
     },
@@ -32,7 +32,7 @@
     },
     {
       "npcId": "JJIRO",
-      "displayName": "진초록",
+      "displayName": "진소율",
       "sourceFilename": "진초록 기본 대화 초상화.png",
       "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/JJIRO.png"
     },

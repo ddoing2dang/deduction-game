@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.2.1",
   "documentedAt": "2026-11-08",
   "status": "authored_new_korean_display_names_source_mapping_user_confirmed_not_unity_integrated",
   "purpose": "6 NPC의 컬러 스프라이트를 기존 내부 ID와 안전히 연결하되 플레이어 화면에는 새 한국식 이름만 표시.",
@@ -11,7 +11,7 @@
     "dialogueLineIdMustRemainUnchanged": true,
     "doNotRewriteOriginal714Lines": true,
     "noVillainVisualCues": true,
-    "displayNameRevision": "2026-11-12 user-final: MATTO=마도은, MARIHI=마혜인, NAZ=나지수, BOKI=김보희, JJIRO=진초록, MOONIRE=문이현; stable IDs unchanged"
+    "displayNameRevision": "2026-11-13 user-final: MATTO=마도은(은발), BOKI=김보희(빨강), NAZ=나지수(갈색), JJIRO=진소율(초록), MARIHI=마연희(금발), MOONIRE=문이현(보라); stable IDs unchanged"
   },
   "characters": [
     {
@@ -27,14 +27,14 @@
     },
     {
       "npcId": "MARIHI",
-      "displayName": "마혜인",
+      "displayName": "마연희",
       "legacyName": "마리히",
       "hairColorKo": "금발",
       "sourceSpriteSlot": "02_blonde",
       "assetFolder": "Assets/MattoMystery/Art/NPC/MARIHI_MaRiye",
       "personalitySummary": "문학과 상상을 좋아하는 명랑한 성격",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "2026-11-12 user-confirmed revised Korean display name in ChatGPT"
+      "displayNameOrigin": "2026-11-13 user-confirmed final display name 마연희 (blonde hair)"
     },
     {
       "npcId": "NAZ",
@@ -60,14 +60,14 @@
     },
     {
       "npcId": "JJIRO",
-      "displayName": "진초록",
+      "displayName": "진소율",
       "legacyName": "찌로",
-      "hairColorKo": "연두",
+      "hairColorKo": "초록",
       "sourceSpriteSlot": "05_green",
       "assetFolder": "Assets/MattoMystery/Art/NPC/JJIRO_JiRoa",
       "personalitySummary": "털털하고 긍정적이며 사람을 배려함",
       "sourceIdentityStatus": "explicitly_user_confirmed",
-      "displayNameOrigin": "2026-11-12 user-confirmed Korean final display name 진초록"
+      "displayNameOrigin": "2026-11-13 user-confirmed final display name 진소율 (green hair)"
     },
     {
       "npcId": "MOONIRE",
@@ -83,10 +83,10 @@
   ],
   "lookupByNpcId": {
     "MATTO": "마도은",
-    "MARIHI": "마혜인",
+    "MARIHI": "마연희",
     "NAZ": "나지수",
     "BOKI": "김보희",
-    "JJIRO": "진초록",
+    "JJIRO": "진소율",
     "MOONIRE": "문이현"
   },
   "themes": [
@@ -103,5 +103,5 @@
   ],
   "roomIdAndDialogueSourcePolicy": "ROOM_MATTO, ROOM_JIRO etc. and source npcName strings in dialogue drafts are technical/legacy records; UI must resolve via this table and must not use legacy source npcName for final labels.",
   "integrated": false,
-  "lastRevisedAt": "2026-11-12"
+  "lastRevisedAt": "2026-11-13"
 }

@@ -122,10 +122,10 @@ namespace Mystery.UI
             return (int)target switch
             {
                 0 => "마도은",
-                1 => "마혜인",
+                1 => "마연희",
                 2 => "나지수",
                 3 => "김보희",
-                4 => "진초록",
+                4 => "진소율",
                 5 => "문이현",
                 _ => target.ToString()
             };

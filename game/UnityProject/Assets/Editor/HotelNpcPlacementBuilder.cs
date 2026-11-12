@@ -35,10 +35,10 @@ namespace Case464.Editor
         private static readonly Entry[] People =
         {
             new Entry("MATTO", "마도은", "ROOM_MATTO", "101", 1, 0),
-            new Entry("MARIHI", "마혜인", "ROOM_MARIHI", "201", 2, 1),
+            new Entry("MARIHI", "마연희", "ROOM_MARIHI", "201", 2, 1),
             new Entry("NAZ", "나지수", "ROOM_NAZ", "202", 2, 2),
             new Entry("BOKI", "김보희", "ROOM_BOKI", "103", 1, 3),
-            new Entry("JJIRO", "진초록", "ROOM_JIRO", "102", 1, 4),
+            new Entry("JJIRO", "진소율", "ROOM_JIRO", "102", 1, 4),
             new Entry("MOONIRE", "문이현", "ROOM_MOONIRE", "203", 2, 5)
         };
 
