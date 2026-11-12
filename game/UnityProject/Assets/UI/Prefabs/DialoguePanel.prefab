@@ -130,7 +130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734680000000000001}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ca5834af50d765d55626ecbfceda4695, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -242,9 +242,112 @@ MonoBehaviour:
     portrait: {fileID: 21300000, guid: 7706385273fc0cf202be7641a1fc904d, type: 3}
   - speaker: 5
     portrait: {fileID: 21300000, guid: 1de409b186b5d550469828037704199e, type: 3}
+  mansionPortraits:
+  - speaker: 0
+    portrait: {fileID: 21300000, guid: f6bda53fb9384d879b817fe73ab48059, type: 3}
+  - speaker: 1
+    portrait: {fileID: 21300000, guid: 41caea93640b471db6e12c53433e8b02, type: 3}
+  - speaker: 2
+    portrait: {fileID: 21300000, guid: c9cb265fd2fb497e8af59a5c7794f89a, type: 3}
+  - speaker: 3
+    portrait: {fileID: 21300000, guid: 010b4ff083e441bea8b72431faf9e879, type: 3}
+  - speaker: 4
+    portrait: {fileID: 21300000, guid: 336e887a39214710bb18367671d02ab5, type: 3}
+  - speaker: 5
+    portrait: {fileID: 21300000, guid: 8f34962a95074d16b673c9d9f0ff9bbb, type: 3}
   questionSubmitted:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &855701001000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c3e209c3f34e96b1239ee32e10b553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.DialogueInterrogationAdapter
+  mansionCase: {fileID: 4900000, guid: b1e1fd340e2a4e60a7a6fc2983825401, type: 3}
+  cruiseCase: {fileID: 4900000, guid: 95d8fcce1c33494da168cb049e4033c0, type: 3}
+  musicBroadcastCase: {fileID: 4900000, guid: ba6ef229504c4a6d93c058ee0724f6a1, type: 3}
+--- !u!114 &855701001000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119af43ae7b144f999ec0fedf941d7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.InvestigationNotebookView
+  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
+  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
+--- !u!114 &855701001000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9b0d8df3564e4890cc7a6ad4117dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.InvestigationSceneView
+  mansionInvestigation: {fileID: 4900000, guid: 751f4b5a169c4d32a6af18a6bd189a50, type: 3}
+  cruiseInvestigation: {fileID: 4900000, guid: c46d6704ab49489d97695f0695d1a27c, type: 3}
+  musicBroadcastInvestigation: {fileID: 4900000, guid: d14e33cc29ef4a0fbaac6f0084e4c91b, type: 3}
+  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
+  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
+--- !u!114 &855701001000000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3684a0bc69764b1ab612535953110be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.CaseProgressSaveController
+  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
+  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
+--- !u!114 &855701001000000005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7718b99c0984dbf93915be6e7df60a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.CaseConclusionView
+  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
+  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
+--- !u!114 &855701001000000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047134264896875477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eae67c43b5b440bb999283a7ae3bbd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mystery.UI.DialogueCinematicView
+  playerIllustration: {fileID: 0}
+  worldCamera: {fileID: 0}
+  visibleOnStart: 1
+  blurStrength: 2
 --- !u!1 &1632374815785561690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,8 +1149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 1480, y: 210}
+  m_AnchoredPosition: {x: 0, y: -38}
+  m_SizeDelta: {x: 1560, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7536657818997852221
 CanvasRenderer:
@@ -1352,7 +1455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB9C8\uB3C4\uC5F0"
+  m_text: "\uB9C8\uB3C4\uC740"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e7816ee222501e4da6a1f6accb2b6cf, type: 2}
   m_sharedMaterial: {fileID: -6188490122385782523, guid: 3e7816ee222501e4da6a1f6accb2b6cf, type: 2}
@@ -2132,99 +2235,3 @@ MonoBehaviour:
   isAlert: 0
   m_InputValidator: {fileID: 0}
   m_ShouldActivateOnSelect: 1
-
---- !u!114 &855701001000000001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c3e209c3f34e96b1239ee32e10b553, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.DialogueInterrogationAdapter
-  mansionCase: {fileID: 4900000, guid: b1e1fd340e2a4e60a7a6fc2983825401, type: 3}
-  cruiseCase: {fileID: 4900000, guid: 95d8fcce1c33494da168cb049e4033c0, type: 3}
-  musicBroadcastCase: {fileID: 4900000, guid: ba6ef229504c4a6d93c058ee0724f6a1, type: 3}
-
---- !u!114 &855701001000000002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 119af43ae7b144f999ec0fedf941d7ab, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.InvestigationNotebookView
-  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
-  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
-
---- !u!114 &855701001000000003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9b0d8df3564e4890cc7a6ad4117dd9, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.InvestigationSceneView
-  mansionInvestigation: {fileID: 4900000, guid: 751f4b5a169c4d32a6af18a6bd189a50, type: 3}
-  cruiseInvestigation: {fileID: 4900000, guid: c46d6704ab49489d97695f0695d1a27c, type: 3}
-  musicBroadcastInvestigation: {fileID: 4900000, guid: d14e33cc29ef4a0fbaac6f0084e4c91b, type: 3}
-  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
-  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
-
---- !u!114 &855701001000000004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3684a0bc69764b1ab612535953110be0, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.CaseProgressSaveController
-  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
-  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
-
---- !u!114 &855701001000000005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7718b99c0984dbf93915be6e7df60a5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.Interrogation.CaseConclusionView
-  regularFont: {fileID: 11400000, guid: 810b9b4539684914f8d60f8c46e02edf, type: 2}
-  headingFont: {fileID: 11400000, guid: fe5c39af89bdcd04a8bff8cbe78f301b, type: 2}
-
---- !u!114 &855701001000000006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047134264896875477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eae67c43b5b440bb999283a7ae3bbd7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Mystery.UI.DialogueCinematicView
-  playerIllustration: {fileID: 0}
-  worldCamera: {fileID: 0}
-  visibleOnStart: 1
-  blurStrength: 2

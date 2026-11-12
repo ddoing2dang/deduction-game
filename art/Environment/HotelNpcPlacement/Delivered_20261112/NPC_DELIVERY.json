@@ -1,0 +1,734 @@
+{
+  "date": "2026-11-12T09:16:31.230Z",
+  "sourceMain": "fdc03e4055a43997077d18a9a75aebd379cc0cdb",
+  "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+  "unityVersion": "6000.3.26f1",
+  "sourceArchiveSha256": "fb570065dd8191dbd0fe247e6be7ef4f2b46aa2d650aa5fb6fffb9cad143975a",
+  "assets": [
+    {
+      "path": "Assets/Case464/NPC.meta",
+      "size": 169,
+      "originalArchiveSha256": "18fdc4a8e9089419e6e7f71145a8ec30e96eea61e3527f0d32c9f18a4c0d90b5",
+      "installedSha256": "18fdc4a8e9089419e6e7f71145a8ec30e96eea61e3527f0d32c9f18a4c0d90b5"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle.meta",
+      "size": 169,
+      "originalArchiveSha256": "2de0f1d71d14f55a3df484e25668b090f8b0bd559c17d2485b25a1f6ffa4dfd3",
+      "installedSha256": "2de0f1d71d14f55a3df484e25668b090f8b0bd559c17d2485b25a1f6ffa4dfd3"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO.meta",
+      "size": 169,
+      "originalArchiveSha256": "3516796ae239168b6597ebe7a7692a025f2b3bfb9aef76aec573c65dbc1075cd",
+      "installedSha256": "3516796ae239168b6597ebe7a7692a025f2b3bfb9aef76aec573c65dbc1075cd"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI.meta",
+      "size": 169,
+      "originalArchiveSha256": "10b9bfc249d517830c25b1753b84afb26cf786dc0e5c98f682bb4e8ba97e4451",
+      "installedSha256": "10b9bfc249d517830c25b1753b84afb26cf786dc0e5c98f682bb4e8ba97e4451"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ.meta",
+      "size": 169,
+      "originalArchiveSha256": "1308c73b9bc21fab74fc3bb4810ffcb73cd910a045f29e4ef8b430f939e9f4f0",
+      "installedSha256": "1308c73b9bc21fab74fc3bb4810ffcb73cd910a045f29e4ef8b430f939e9f4f0"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI.meta",
+      "size": 169,
+      "originalArchiveSha256": "f0101a160759e107db0a07ce8bdeb2564d6c5c667a863cbfe2488c0ac5f5defa",
+      "installedSha256": "f0101a160759e107db0a07ce8bdeb2564d6c5c667a863cbfe2488c0ac5f5defa"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO.meta",
+      "size": 169,
+      "originalArchiveSha256": "e84235f1e44506442a96a10e2aac4b5d90a250beb4bcae331bb64bffe799f51b",
+      "installedSha256": "e84235f1e44506442a96a10e2aac4b5d90a250beb4bcae331bb64bffe799f51b"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE.meta",
+      "size": 169,
+      "originalArchiveSha256": "3472cbc0e47f4c987fb2255652313fc49178a469a2b4cffbf07de553d7a28790",
+      "installedSha256": "3472cbc0e47f4c987fb2255652313fc49178a469a2b4cffbf07de553d7a28790"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_N.png",
+      "size": 130180,
+      "originalArchiveSha256": "816796e98dd397a365353d9e51196c56271b28581652fcff03fd52e0e7e17b82",
+      "installedSha256": "816796e98dd397a365353d9e51196c56271b28581652fcff03fd52e0e7e17b82"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "74d79dff05a0295cdbe6fe367cc17859399a19a5a2b567e79c145a8dee061f04",
+      "installedSha256": "9a5bbca012518030dbd327c5b14a994a6691131b0a112c66145fac8312fd06f7"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NE.png",
+      "size": 120704,
+      "originalArchiveSha256": "3f10f5d24c03129c3ea8161af57c4532b612dffd6924453efc463f686d8ae4df",
+      "installedSha256": "3f10f5d24c03129c3ea8161af57c4532b612dffd6924453efc463f686d8ae4df"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "e61f6ce9042dba0730c0f10462ae67572610288c422b2c8b93f594a76832e1a2",
+      "installedSha256": "9c2a8dd66930fc0f6c0a8ec7554a5cc3bfba6418ad4176ee7482fe3a28ef0d72"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_E.png",
+      "size": 113714,
+      "originalArchiveSha256": "484ee2ffbe9bef700b0f80a46b0d7571081bd648561fa13a24b45e785c016050",
+      "installedSha256": "484ee2ffbe9bef700b0f80a46b0d7571081bd648561fa13a24b45e785c016050"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "222962bb5a9aa95ef65fe337b80a83a257bf31cdede6ee5a16b883f70faf26f0",
+      "installedSha256": "08bae81215d6196b33a78c3c5e6250530287c8633e4a3bd7abb7a2acb5480ff4"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SE.png",
+      "size": 139833,
+      "originalArchiveSha256": "a6c0747728a5677cfd5904af431dc105ab00f98decac2ab7017672dd25a415f5",
+      "installedSha256": "a6c0747728a5677cfd5904af431dc105ab00f98decac2ab7017672dd25a415f5"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "584d8be144b095c2b34996f3624a3786e450a5b931e288e90f6e4d2c0c78624b",
+      "installedSha256": "28e1d9e910c8260caad1e9e5c94a62ef621477d597a409cedd549405d44aa557"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_S.png",
+      "size": 154104,
+      "originalArchiveSha256": "bc6e0f48099df43a75e7d8c1982fd521c2e8086b3d8032e82170a46d29b03ae2",
+      "installedSha256": "bc6e0f48099df43a75e7d8c1982fd521c2e8086b3d8032e82170a46d29b03ae2"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "c9190f610509457a5ae39a40d7df5cfe8ce6c1d658f350771a84197f06c983bf",
+      "installedSha256": "02c0e1e51cbbd08b8015b4f8cea3f94481b30039675eed4ee049c56868afacce"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SW.png",
+      "size": 141081,
+      "originalArchiveSha256": "f8b837a2c1617aac5c0761e13bd7aa4e06a430a0be3212bb2142c6be3cc5409a",
+      "installedSha256": "f8b837a2c1617aac5c0761e13bd7aa4e06a430a0be3212bb2142c6be3cc5409a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "2c0cafe67103be7616071b1b3970f40ddccb46b1dd9eabcd5634425af3bce23a",
+      "installedSha256": "86f14eeb4f75a4e1858559f14636d832437fdaad8cfbcd998dd1374a56d07b05"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_W.png",
+      "size": 118145,
+      "originalArchiveSha256": "b10aa97f0ee047f584292f74ffa40797cceca8718df7c7f61f417e5b6a50c2c3",
+      "installedSha256": "b10aa97f0ee047f584292f74ffa40797cceca8718df7c7f61f417e5b6a50c2c3"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "145328391c93078e27ae18488f661582091dc5bd7a1e5d96fdb3c6affe587c4e",
+      "installedSha256": "309e81ebac4f15c5b2af54abbbec0d496a066d90a4f9f8606954d8498563acdc"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NW.png",
+      "size": 124220,
+      "originalArchiveSha256": "024d38ca84d81bede5c7bde8f8969d25b869365d0baa2c354b14df8297a751b6",
+      "installedSha256": "024d38ca84d81bede5c7bde8f8969d25b869365d0baa2c354b14df8297a751b6"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "88d87ed0eac8614dfb8a224964cbd8be3f942ec1556be428512b0a7b5f847887",
+      "installedSha256": "2a73353b8b40a2c655c47e3fa5fc6aec2c572da21834e9e750d32d57bbb6ea9e"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_N.png",
+      "size": 188003,
+      "originalArchiveSha256": "c99ba8359ad286f76ae9300184b6e5df725e272e74e414fa22eb205460b80987",
+      "installedSha256": "c99ba8359ad286f76ae9300184b6e5df725e272e74e414fa22eb205460b80987"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "96ae8b5f093c6f256562ce2a03e6431fa91668a7419442c18949ee6eb0973872",
+      "installedSha256": "3dbf09f118b9aa29342ed11badfd5843c82b86d8a88d5d838c6750442ae5b061"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NE.png",
+      "size": 153820,
+      "originalArchiveSha256": "9693f4e7f36d767feeebd998ef7546811190c57f6e4befd6b6d320aba026ce74",
+      "installedSha256": "9693f4e7f36d767feeebd998ef7546811190c57f6e4befd6b6d320aba026ce74"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "bc550bf5681d02d26fc004cee8f7bf14d18207fad14120c58f9580fa99760c76",
+      "installedSha256": "1f062e26deab80c5c61878602c351be5227829276c0b548ddec59a7db2c7dada"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_E.png",
+      "size": 125088,
+      "originalArchiveSha256": "0943b914d7bc837627cbf2579684dbeb5285d0c0264b6a07a49e0044d103236d",
+      "installedSha256": "0943b914d7bc837627cbf2579684dbeb5285d0c0264b6a07a49e0044d103236d"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "f815fdbc18585d69145555eadbfe2d4792911d35b91caf8af2a448f4004469d4",
+      "installedSha256": "0a997246b4834f5c835db88b08e94c01082c37ffe000107882a95a1d5a4553cf"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SE.png",
+      "size": 184102,
+      "originalArchiveSha256": "cfeb479b1ee01da931f7fd3925cbb11f5340d48d081ba7b7c44115dc18151a48",
+      "installedSha256": "cfeb479b1ee01da931f7fd3925cbb11f5340d48d081ba7b7c44115dc18151a48"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "48134aca996e91cdd9913ee4ee140774fc66c323ad87898d4de2e36bc7478b93",
+      "installedSha256": "87de2d62e79f1112bbfd4934e7af8b815303ddca6e5e2687e5ea0e7ec656ebe3"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_S.png",
+      "size": 197270,
+      "originalArchiveSha256": "bca9246f86896d9e3209b6360a01c1bef1f71f3f0660d5f9691ed49148d1f891",
+      "installedSha256": "bca9246f86896d9e3209b6360a01c1bef1f71f3f0660d5f9691ed49148d1f891"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "2dac1b3b0374943565a90b8250c85844126bb1750c0e44b17a04033c6789b438",
+      "installedSha256": "9c44e057b98ec62b3c84ecf4870b6238c9e08ec9e9bb0d89b2eaf233365ac379"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SW.png",
+      "size": 181490,
+      "originalArchiveSha256": "f88afdc2a8c29162503dec6b4dc46787f20cdc11ca11d854f4e9434a0c00c458",
+      "installedSha256": "f88afdc2a8c29162503dec6b4dc46787f20cdc11ca11d854f4e9434a0c00c458"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "f46f39886dfad4a9dca040fe4f8dc4695df0069ceffb6fceec340f9e3833013b",
+      "installedSha256": "5558e02fa4afc90b48a6528aee57e3e39ca8dd5685d72a6f852ff19b0c8ece00"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_W.png",
+      "size": 126999,
+      "originalArchiveSha256": "93c2400b619c9cb50bbd3b848d8868adca9f03390226807740a46e57d1052622",
+      "installedSha256": "93c2400b619c9cb50bbd3b848d8868adca9f03390226807740a46e57d1052622"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "a0bc89511143b2725c508fb8c5b7119d2be30c40b3e043766d42b8cb9cb2bcae",
+      "installedSha256": "f11a10eaef8fda95bad215fae7a9bae92aa43df022c617cb2313cb3a8fa883f9"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NW.png",
+      "size": 159261,
+      "originalArchiveSha256": "0b3e58f4cd1e409a11f5334cedfad3ecd42c77f891d69c130da7b921ceef3900",
+      "installedSha256": "0b3e58f4cd1e409a11f5334cedfad3ecd42c77f891d69c130da7b921ceef3900"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "b0360455a1cd3735aa1e0b36ff33122cd4886461bcd5b68e95b8e11c20ad0eac",
+      "installedSha256": "0af7f1484f7c064ab6d6be5acf52ce5125fc82349b05a89c2dc9d07fbda37038"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_N.png",
+      "size": 179182,
+      "originalArchiveSha256": "c6d3cde7c1615e564f7b1cc5de9086418d024a201c6aa3bacee743cba007f2e1",
+      "installedSha256": "c6d3cde7c1615e564f7b1cc5de9086418d024a201c6aa3bacee743cba007f2e1"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "be709d4614515211bfdf6c1adc87fe692d2b73f59e554c49321e0c1e97b3c93d",
+      "installedSha256": "0b93ee85f907acec367bae8167a7bff70fc9afefa7ca83b165a008d6b5b6d3cd"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NE.png",
+      "size": 157661,
+      "originalArchiveSha256": "b902429e57f0b05e13a085cc83a0b2c828424a4d88e09256870b82f23059b1e0",
+      "installedSha256": "b902429e57f0b05e13a085cc83a0b2c828424a4d88e09256870b82f23059b1e0"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "bed94c31a322dae910b11e69d0bf8b1077bc19f8220b5f77db8950969e6c08c6",
+      "installedSha256": "9258145a8810bcd1f76f2c4bc19baa79fcaf1ac9fdba1120aa27311d893f2c89"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_E.png",
+      "size": 146453,
+      "originalArchiveSha256": "6e677c9a3b3bfcde7d79ce763ff0110419a5ac2758b23a40762e299ae045e50b",
+      "installedSha256": "6e677c9a3b3bfcde7d79ce763ff0110419a5ac2758b23a40762e299ae045e50b"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "d497a1f0cad76f18908877a16309c63418ce58927dc2e8b26ceca2df5589b70c",
+      "installedSha256": "4e0be63297c538de1d25d56da1ea93fcc2b48f983cc3d552e65bd1bd29f842d6"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SE.png",
+      "size": 186822,
+      "originalArchiveSha256": "7f1f31665f5b804c7a3fe3c13b1118d6e3fa3b8c3b651236ff846e24e6b57d3b",
+      "installedSha256": "7f1f31665f5b804c7a3fe3c13b1118d6e3fa3b8c3b651236ff846e24e6b57d3b"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "5369c1316f2a3374dc981fccd6b9f646191bf5e1cf8d567cfd4960a5326264a8",
+      "installedSha256": "f3055500ac408e6ec13acf18c9a92b4407f36f534ab7be452477f776b475c5ec"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_S.png",
+      "size": 167177,
+      "originalArchiveSha256": "bac4c8f87014b7b3566564ccfdaf398196940a358e74a49e3005808aa4aeb227",
+      "installedSha256": "bac4c8f87014b7b3566564ccfdaf398196940a358e74a49e3005808aa4aeb227"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "c96c06533e777308ec9c6abc3167f14763aa38b12508639f69bdbb2a024c6c05",
+      "installedSha256": "68d25d8484d5eaa1a4bd67249054283244adc290a73cbf93a5621180097cd38f"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SW.png",
+      "size": 152837,
+      "originalArchiveSha256": "aebb04fd62cab333865e689c56e263b23d02de8da94cdc09ad3598c6563384d4",
+      "installedSha256": "aebb04fd62cab333865e689c56e263b23d02de8da94cdc09ad3598c6563384d4"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "4b26cf3b8df3dc9759969c8990e1f791ead01a4803f05fd21401205be5fe3e3c",
+      "installedSha256": "6e4821ea708bb8edd59ce1dc662e5c09ac24bb259db7fb57a9dca8868559ba01"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_W.png",
+      "size": 147044,
+      "originalArchiveSha256": "fdefab21eff0220cc76392257775e0f452d9005964a9209f13145e62957976f6",
+      "installedSha256": "fdefab21eff0220cc76392257775e0f452d9005964a9209f13145e62957976f6"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "6c7af7d6049d221b4ca18e53e471c785640b3e80b2a06fd0ab15f55bc4c220e6",
+      "installedSha256": "e02d499a99ebdfca5757839baff1a40e41a199ad0167921e848e4a40c452ca78"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NW.png",
+      "size": 141004,
+      "originalArchiveSha256": "b228dcc17646b3655169b5776ad8c3a38b4d3fdded47c58a3db6323ac6fc0e37",
+      "installedSha256": "b228dcc17646b3655169b5776ad8c3a38b4d3fdded47c58a3db6323ac6fc0e37"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "0868351fbab3e657c499cfd35e31f74915af1ecce647c06de0ba47120eac5550",
+      "installedSha256": "0c6b652cd88b6dcbf06e55d707a44e507d9c4a35a839368eb4408a0101447feb"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_N.png",
+      "size": 136084,
+      "originalArchiveSha256": "21845d5e9c201aa72cf75d1c073fa97f30d1ff58905ffa92da2e771da72166ed",
+      "installedSha256": "21845d5e9c201aa72cf75d1c073fa97f30d1ff58905ffa92da2e771da72166ed"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "6660c4b259fd4d529cded7b6b5f25085581df7fcedb28f5e8d2dfa1960ae84bd",
+      "installedSha256": "73ca6eebfbb818cef229d2494e0e9f96211720480226a54e5e27f6362923c68a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NE.png",
+      "size": 126141,
+      "originalArchiveSha256": "50b23340a08d65e3a0e09e2b79d966eab8e8203dac490855e8f888b5d43221b4",
+      "installedSha256": "50b23340a08d65e3a0e09e2b79d966eab8e8203dac490855e8f888b5d43221b4"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "b0d7560e5131de659e47318021ae9a67344c81ceac85af810217af769768aaab",
+      "installedSha256": "969c019fdb014450d512e668c32d074678451a8bcee3b5e72eff3b95875eeb22"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_E.png",
+      "size": 110170,
+      "originalArchiveSha256": "c3a3b3730415aa853fe2d53916c3b2ac82e37749243e0b3ec931b6e444e21cca",
+      "installedSha256": "c3a3b3730415aa853fe2d53916c3b2ac82e37749243e0b3ec931b6e444e21cca"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "df5978afc44d6db3028e456e6f6667a31469a605e61bf80a5020ba2826fb7278",
+      "installedSha256": "4b39545c04822e1e92728af092617ab272a443ff2d6021a0c26daf0bed813b34"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SE.png",
+      "size": 133722,
+      "originalArchiveSha256": "fd0e55993fbc6db4bcd10c94eae2852a266c3c2ec04b5cf0f794a7911df9799e",
+      "installedSha256": "fd0e55993fbc6db4bcd10c94eae2852a266c3c2ec04b5cf0f794a7911df9799e"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "df4b1e62a1fcc952cfb55672070bfe3821e2fc98f47630abeebde6022e3e3a16",
+      "installedSha256": "3c1baa6514430771ea0205472ef49193586174170e4a26c35e1bc342cb470686"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_S.png",
+      "size": 146659,
+      "originalArchiveSha256": "0dc353c61714bdcd7763b51b35021ce6a798f52694c1bafead98b05013b8e768",
+      "installedSha256": "0dc353c61714bdcd7763b51b35021ce6a798f52694c1bafead98b05013b8e768"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "7f997853a81f6cc152e9558eac4a993fdcdf0da83cbdd5623629a706546c1504",
+      "installedSha256": "7611615eed8076f267cea3b4419f6d612c25960884d6dc0603332d0c76a777ea"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SW.png",
+      "size": 138503,
+      "originalArchiveSha256": "b16b7e173adff3ad875382f7376e4fae2843a385751ce908e6672dd7337c4e20",
+      "installedSha256": "b16b7e173adff3ad875382f7376e4fae2843a385751ce908e6672dd7337c4e20"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "725f23f03d8a36f9a14adf8e5dd56ad25426ca8201d73fd8c17747a7218268c4",
+      "installedSha256": "da86bd8805460300fdd276587188508bbe058cf87ad736441b53f9924854fbd1"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_W.png",
+      "size": 110868,
+      "originalArchiveSha256": "8da2642c56f17c741311d1c66eaceebf75cd66ab19b6824492ab2854b52033e0",
+      "installedSha256": "8da2642c56f17c741311d1c66eaceebf75cd66ab19b6824492ab2854b52033e0"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "5c247cb529816f554019ca1df3abe48fdf92d4922229de00d4bf615eff36ec36",
+      "installedSha256": "7131e0d565959a6c86114a368f2cd19026cc8fe9ccb2ef05f6aaeeec562ab9c9"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NW.png",
+      "size": 128444,
+      "originalArchiveSha256": "7bb0f6a12b247ba9efd2acc98acd2b6168734880af5e6d681b3c6de8f292e8e6",
+      "installedSha256": "7bb0f6a12b247ba9efd2acc98acd2b6168734880af5e6d681b3c6de8f292e8e6"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "2077f8715e94e05830cc52cd37dab86bd530c8eb0b9a4f24ca30bba03020d2a4",
+      "installedSha256": "8ba09f17dc7bd3d9e4afd40ee471ed02f52bc7147ee30420c90c8f8003064c76"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_N.png",
+      "size": 183135,
+      "originalArchiveSha256": "ab601097f0fe213d02debe811b87a712ef0bbf7219a7d2037e493620c4cd0437",
+      "installedSha256": "ab601097f0fe213d02debe811b87a712ef0bbf7219a7d2037e493620c4cd0437"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "79d682196117b3627b5206efcd7052fef9f91e9bb4800ec3694eb23cef315588",
+      "installedSha256": "9fb5fedcfcbd9bfb2e4bc7c735d6068da8edf4f9d3314a44a9142589f3e0c8ba"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NE.png",
+      "size": 154039,
+      "originalArchiveSha256": "5ead224120efcb480bf6098955d7883d7b8c2a805677ed7e93bc5510b495945b",
+      "installedSha256": "5ead224120efcb480bf6098955d7883d7b8c2a805677ed7e93bc5510b495945b"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "c7cbc40b39a03eff5908d127d14158374672af10260c49639913b6d60c87e5d4",
+      "installedSha256": "45256be04b4e3d847177db69056e87d590a803fa7aef0befc882c2f5d614960c"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_E.png",
+      "size": 132960,
+      "originalArchiveSha256": "d0ca373273f2460905eced3f9a315114f773b578b7edc49b1d8f2c00cf99a4aa",
+      "installedSha256": "d0ca373273f2460905eced3f9a315114f773b578b7edc49b1d8f2c00cf99a4aa"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "0b1dbe8cdfbb74986d7e0a646389a6b44ffcc1ee76ce83f87d5d405ce32d0e45",
+      "installedSha256": "d01d8a8edc0a528dd954d7af1e8c731d10f585eb36eb5adf880f3d7ec3c9fc1a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SE.png",
+      "size": 177393,
+      "originalArchiveSha256": "5e8b2142e22871854378caf05dfc79b9bd83087f5124bab1536eff8ff48bac3a",
+      "installedSha256": "5e8b2142e22871854378caf05dfc79b9bd83087f5124bab1536eff8ff48bac3a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "b28c41dd720ca4e0b48251ebd2087512f2fbd7130eccc45997cc766c3dcb1d85",
+      "installedSha256": "ededc1b2f043716f6a27c26fe11f38b695fff2ac5aa493c163421c7e23756b09"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_S.png",
+      "size": 179734,
+      "originalArchiveSha256": "81a41e769fd644740f20b8598d03f3015a7a0fff3e721a5daf11d9bd4e9d720a",
+      "installedSha256": "81a41e769fd644740f20b8598d03f3015a7a0fff3e721a5daf11d9bd4e9d720a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "0dc712c322b2486ec7fc776e1fdd49bf02975de55f32dd73596365c3c9d1b5cc",
+      "installedSha256": "9b733423e0f0fe3b55c410b0297040332f8a71fc1cc37eec6b52017654c14d06"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SW.png",
+      "size": 154281,
+      "originalArchiveSha256": "80abe4d7eebf8fed30502e282d784bd4afecabe639033167226091542ddf7f13",
+      "installedSha256": "80abe4d7eebf8fed30502e282d784bd4afecabe639033167226091542ddf7f13"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "1ffdae0abc8924d09ae0a2a17bfbe41dce163510184a3a25ff0034694d293699",
+      "installedSha256": "f4f1eac4c95b1dd0049000288988a3a67e3d94bf8021ca14fdcf58e997d6b034"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_W.png",
+      "size": 137215,
+      "originalArchiveSha256": "dba5e78ec201e88cdaf98ce623de8a0af1682f80fa5f50374ab87811dd9988a9",
+      "installedSha256": "dba5e78ec201e88cdaf98ce623de8a0af1682f80fa5f50374ab87811dd9988a9"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "398ddafd8c2bbf2e303431f75b116faca25928f42229e5694a46d473b36fb51f",
+      "installedSha256": "fed89511282493b156bebe139eb1d85968f978a5547a27b470590cbfde825eaa"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NW.png",
+      "size": 141920,
+      "originalArchiveSha256": "9699420e4c077189022e8f0e02b9e6d90c70f139d1a6e2e24d259963a815b2a9",
+      "installedSha256": "9699420e4c077189022e8f0e02b9e6d90c70f139d1a6e2e24d259963a815b2a9"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "a3e80e6de1362c86a0d57bf29f8c70d74d4cb533508015a5a907e25f75bd66a8",
+      "installedSha256": "dc32d503a6aabdb55e0880a09345e09884fe3549fde3115dbc177d4659dc2ddb"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_N.png",
+      "size": 170175,
+      "originalArchiveSha256": "48ecc3d70b0af4f23e57e9ea1d3c5ef750d3695b465bf194909b91e3cd716798",
+      "installedSha256": "48ecc3d70b0af4f23e57e9ea1d3c5ef750d3695b465bf194909b91e3cd716798"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_N.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "d115d0dc88d46ed46c2916093bffa0484f5b5675acf5fa4fddeb3a743fa55fef",
+      "installedSha256": "14cdac28b36a7e47d3017c75a1cea65f04bca78610d14b92a2acec7efc6007f7"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NE.png",
+      "size": 157278,
+      "originalArchiveSha256": "e0fc0aeda5b73f6fa85fea116152f4284da707bc5ec661fdf8cbb3fbd53323ec",
+      "installedSha256": "e0fc0aeda5b73f6fa85fea116152f4284da707bc5ec661fdf8cbb3fbd53323ec"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "776aacbf3624ad4a76c17c0c5a659a6455e24faa079107353fd80fe3fe8dada2",
+      "installedSha256": "01a2ba53f36d9ab0aa10639d3e66d487aacb2fe0d09f1f0f7a06cb000951c3dd"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_E.png",
+      "size": 152875,
+      "originalArchiveSha256": "5529662bd3e33e376661e3e2b6b1ff34e69d5eaa4df611e644bdd8d0c0ae3408",
+      "installedSha256": "5529662bd3e33e376661e3e2b6b1ff34e69d5eaa4df611e644bdd8d0c0ae3408"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_E.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "4cfae4acf95758f546c940b54a8dc6383b42895849209784586d8f06e38ffebe",
+      "installedSha256": "4aa92db46c5ae61ac8ecae5f113781c17900e46ebcf8a0a3869dea5065b5da86"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SE.png",
+      "size": 174687,
+      "originalArchiveSha256": "af761d9433bf6fe6e9f61117183c1a1401d67fd33513a903941497ea86c6f9ec",
+      "installedSha256": "af761d9433bf6fe6e9f61117183c1a1401d67fd33513a903941497ea86c6f9ec"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SE.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "7baf86a3c68644e5e8fddec41e78f3fe8d3fad7441e67da2d1643c4d431e4903",
+      "installedSha256": "37a0df6c84742e3078c4003aaef1d0671b40fd52f01e65498c20b3f5ffa62d57"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_S.png",
+      "size": 193475,
+      "originalArchiveSha256": "529fd5e7a8489d100ceb066501428ffca41d9c40a3e91eeec5db3e9dfaf39344",
+      "installedSha256": "529fd5e7a8489d100ceb066501428ffca41d9c40a3e91eeec5db3e9dfaf39344"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_S.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "ab5f4c55060993c8df042e6e3c9a43bb051eab1ebfde715270a9947139f1ea39",
+      "installedSha256": "a8bc771dae0c39c7fe19c299aa694590126d3d65950dc3219a4d30bb475f8363"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SW.png",
+      "size": 174099,
+      "originalArchiveSha256": "c69c01cd9ee6d604f12a6702cb5e63d8b4f7e66946f796332e394e1593aa3709",
+      "installedSha256": "c69c01cd9ee6d604f12a6702cb5e63d8b4f7e66946f796332e394e1593aa3709"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "60470f0dc028e463f9460fca85e5469bc4c4e367829eddd3c00c6c68fb4e38e3",
+      "installedSha256": "10211d70f0a31e8e8a1209c5d7a55e2fff575595f3dfef4a2f236d14d6013d3d"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_W.png",
+      "size": 156240,
+      "originalArchiveSha256": "e96f92ba0e12eb945994529197b082c925d710f1ada7e249952c8ea7a9688f18",
+      "installedSha256": "e96f92ba0e12eb945994529197b082c925d710f1ada7e249952c8ea7a9688f18"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_W.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "a7f6b5b38c2de9eef18f2aa7cfc4250c912db8c5e62e6f6ca4f666f2915af24a",
+      "installedSha256": "f8ad57032688697fe53e59ef3370e5e8cc0373a036ea909ea71278e67bcec43a"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NW.png",
+      "size": 160837,
+      "originalArchiveSha256": "80238a6a19a017aed1433bb80ed8deb5424afd50f00fb97f2b1bafdf63181757",
+      "installedSha256": "80238a6a19a017aed1433bb80ed8deb5424afd50f00fb97f2b1bafdf63181757"
+    },
+    {
+      "path": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NW.png.meta",
+      "size": 2208,
+      "originalArchiveSha256": "b469dfc615a25e5260f566b3f155bbb72c2328c46c69a364df537d03d1ffe341",
+      "installedSha256": "98462f363f18e4c064037a2ac3dacba90f895461bfc31f8cc58613f2e5e65eb1"
+    }
+  ],
+  "actors": [
+    {
+      "id": "MATTO",
+      "room": "ROOM_MATTO",
+      "floor": 1,
+      "position": {
+        "x": 5.071018695831299,
+        "y": 0.0270999688655138,
+        "z": 4.1517767906188965
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_S.png"
+    },
+    {
+      "id": "MARIHI",
+      "room": "ROOM_MARIHI",
+      "floor": 2,
+      "position": {
+        "x": 2.352548122406006,
+        "y": 0.0270999688655138,
+        "z": -11.252201080322266
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_S.png"
+    },
+    {
+      "id": "NAZ",
+      "room": "ROOM_NAZ",
+      "floor": 2,
+      "position": {
+        "x": -2.0103044509887695,
+        "y": 0.0270999688655138,
+        "z": -8.232847213745117
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_S.png"
+    },
+    {
+      "id": "BOKI",
+      "room": "ROOM_BOKI",
+      "floor": 1,
+      "position": {
+        "x": -9.559027671813965,
+        "y": 0.0270999688655138,
+        "z": 18.78182601928711
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_S.png"
+    },
+    {
+      "id": "JJIRO",
+      "room": "ROOM_JIRO",
+      "floor": 1,
+      "position": {
+        "x": -0.3878493309020996,
+        "y": 0.0270999688655138,
+        "z": 9.61064624786377
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_S.png"
+    },
+    {
+      "id": "MOONIRE",
+      "room": "ROOM_MOONIRE",
+      "floor": 2,
+      "position": {
+        "x": -12.80782699584961,
+        "y": 0.0270999688655138,
+        "z": 1.4333033561706543
+      },
+      "spriteCount": 8,
+      "sprite": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_S.png"
+    }
+  ],
+  "actualVerification": {
+    "liveEditorHandshake": true,
+    "menuExecuted": "Case464/Hotel NPC/Apply 6 NPCs to OPEN Latest Map (Edit Mode)",
+    "spritesImported": 48,
+    "actorsAfterSaveAndReopen": 6,
+    "editModeCapturesReviewed": [
+      "Full",
+      "FirstFloor",
+      "SecondFloor",
+      "101",
+      "102",
+      "103",
+      "201",
+      "202",
+      "203"
+    ],
+    "originalSerializedObjects": 23124,
+    "removedOriginalObjects": 0,
+    "originalGeometryFurnitureLightCameraTransformsUnchanged": true,
+    "originalPngHashesMatched": 48,
+    "originalMetaGuidsPreserved": true
+  },
+  "unverified": [
+    "Play Mode and runtime click/dialogue operation deliberately not executed."
+  ],
+  "backup": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle_Before_NPC_Placement.unity",
+  "assetNote": "All 48 PNGs are byte-identical to the supplied archive. Unity upgraded 48 importer .meta serializations; source originals remain in the extraction backup."
+}

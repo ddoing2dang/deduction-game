@@ -13,6 +13,9 @@ namespace Case464.Editor
     // enter Play Mode, execute tests, or build a player.
     public static class HotelNpcPlacementBuilder
     {
+        // Set only by an explicitly requested local authoring operation.
+        // Normal interactive menu use retains its completion dialog.
+        public static bool SuppressCompletionDialog { get; set; }
         private const string SourceScene =
             "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity";
         private const string OutputScene =
@@ -198,9 +201,9 @@ namespace Case464.Editor
             var areas = UnityEngine.Object.FindObjectsByType<HotelOverviewRoomArea>(
                 FindObjectsInactive.Include, FindObjectsSortMode.None)
                 .Where(x => x.gameObject.scene == scene).ToArray();
-            if (layouts.Length != 1 || cameras.Length != 1 || layouts[0].rooms == null)
+            if (layouts.Length > 1 || cameras.Length != 1)
                 throw new InvalidOperationException(
-                    "This is not a uniquely identified final hotel map. Expected one HotelFinalPolishLayout and one HotelMapCameraController.");
+                    "This is not a uniquely identified final hotel map. Expected one HotelMapCameraController and unambiguous actual room areas.");
 
             if (UnityEngine.Object.FindObjectsByType<HotelNpcActor>(
                 FindObjectsInactive.Include, FindObjectsSortMode.None)
@@ -208,7 +211,6 @@ namespace Case464.Editor
                 throw new InvalidOperationException(
                     "This scene already has NPC actors. Aborted to prevent duplicate placement.");
 
-            HotelFinalPolishLayout layout = layouts[0];
             HotelMapCameraController camera = cameras[0];
             var poses = new Sprite[People.Length][];
             var positions = new Vector3[People.Length];
@@ -238,38 +240,28 @@ namespace Case464.Editor
                             " — import the supplied six-person map sprite ZIP into Assets first.");
                 }
 
-                var matchingMetrics = layout.rooms.Where(m => m != null &&
-                    (m.roomId == item.room || m.number == item.number ||
-                     m.number == item.number + "호")).ToArray();
                 var matchingAreas = areas.Where(a =>
                     a.RoomId == item.room || a.DisplayNumber == item.number ||
                     a.DisplayNumber == item.number + "호").ToArray();
-                if (matchingMetrics.Length != 1 || matchingAreas.Length != 1)
+                if (matchingAreas.Length != 1)
                     throw new InvalidOperationException(
                         "Latest map room anchors are not unique for " +
                         item.number + " " + item.name + ". No guessed coordinates used.");
 
-                var room = matchingMetrics[0];
                 var area = matchingAreas[0];
-                if (room.floor != item.floor || area.Floor != item.floor ||
-                    room.floorBounds.size.x <= .5f || room.floorBounds.size.z <= .5f)
+                if (area.Floor != item.floor || area.RoomId != item.room)
                     throw new InvalidOperationException(
                         "Floor/bounds mismatch for " + item.number +
                         ". Use an approved latest hotel map with accurate room anchors.");
 
-                Vector3 boundsCenter = room.floorBounds.center;
-                Vector3 entryInside = room.inside != null ? room.inside.position : boundsCenter;
-                Vector3 point = Vector3.Lerp(entryInside, boundsCenter, .50f);
-                point.x = Mathf.Clamp(point.x, room.floorBounds.min.x + .25f,
-                    room.floorBounds.max.x - .25f);
-                point.z = Mathf.Clamp(point.z, room.floorBounds.min.z + .25f,
-                    room.floorBounds.max.z - .25f);
-                point.y = room.floorBounds.max.y + .035f;
-
-                positions[i] = point;
+                // Rows/signs/aisle authoring moves whole room roots. Historical
+                // layout.floorBounds are stale after those operations (and some
+                // final scenes intentionally omit that authoring-only component).
+                // Use the actual current floor mesh and entrance, never old world coordinates.
+                positions[i] = FindActualRoomPoint(area, out float shorterSide);
                 offsets[i] = area.DisplayPosition - area.PhysicalPosition;
                 float desiredHeight = Mathf.Clamp(
-                    Mathf.Min(room.floorBounds.size.x, room.floorBounds.size.z) * .20f,
+                    shorterSide * .20f,
                     1.1f, 1.9f);
                 scales[i] = desiredHeight /
                     Mathf.Max(.01f, poses[i][(int)HotelNpcFacing.S].bounds.size.y);
@@ -306,6 +298,7 @@ namespace Case464.Editor
                     poses[i], physical, split, physicalBox, splitBox, camera);
             }
 
+            EnsureExistingDialoguePresenter(scene);
             EditorSceneManager.MarkSceneDirty(scene);
             if (!EditorSceneManager.SaveScene(scene))
                 throw new InvalidOperationException(
@@ -315,13 +308,137 @@ namespace Case464.Editor
             Debug.Log("[Case464 NPC] Added six original 8-way idle NPCs to OPEN latest hotel map: " +
                 scene.path + " (backup: " + backupPath +
                 "). No Play Mode/tests/build executed.");
-            EditorUtility.DisplayDialog("대저택 NPC 배치 완료",
+            if (!SuppressCompletionDialog) EditorUtility.DisplayDialog("대저택 NPC 배치 완료",
                 "현재 열린 맵에 NPC 6명을 배치하고 저장했습니다.\\n" +
                 "원본 맵 백업: " + backupPath +
                 "\\nUnity Editor에서 배치 위치를 직접 확인하세요.\\n" +
                 "(Play Mode/기능 테스트/빌드 미실시)", "확인");
         }
 
+        private static Vector3 FindActualRoomPoint(HotelOverviewRoomArea area, out float shorterSide)
+        {
+            var floor = area.GetComponentsInChildren<MeshRenderer>(true)
+                .SingleOrDefault(r => r.name == "Uniform floor substrate");
+            var entry = area.GetComponentsInChildren<Transform>(true)
+                .SingleOrDefault(t => t.name == "Uniform entrance" && t.gameObject.activeInHierarchy);
+            var inside = entry != null ? entry.GetComponentsInChildren<Transform>(true)
+                .SingleOrDefault(t => t.name == "Uniform inside approach") : null;
+            var outside = entry != null ? entry.GetComponentsInChildren<Transform>(true)
+                .SingleOrDefault(t => t.name == "Uniform outside approach") : null;
+            var finish = area.GetComponentsInChildren<Transform>().Where(t =>
+                t.name == "Rose hotel | complete octagonal marble floor" ||
+                t.name == "Rose hotel | 202 matching standard floor").ToArray();
+            if (floor == null || entry == null || inside == null || outside == null || finish.Length != 1)
+                throw new InvalidOperationException("Current floor/entrance/finish geometry is not unique for " + area.DisplayNumber);
+            Vector3 u = Vector3.ProjectOnPlane(area.transform.right, Vector3.up).normalized;
+            Vector3 v = Vector3.ProjectOnPlane(area.transform.forward, Vector3.up).normalized;
+            (float min, float max) Span(MeshRenderer r, Vector3 axis)
+            {
+                var b = r.GetComponent<MeshFilter>().sharedMesh.bounds;
+                float low = float.PositiveInfinity, high = float.NegativeInfinity;
+                for (int i = 0; i < 8; i++)
+                {
+                    var p = r.transform.TransformPoint(new Vector3((i & 1) == 0 ? b.min.x : b.max.x,
+                        (i & 2) == 0 ? b.min.y : b.max.y, (i & 4) == 0 ? b.min.z : b.max.z));
+                    float x = Vector3.Dot(p, axis); low = Mathf.Min(low, x); high = Mathf.Max(high, x);
+                }
+                return (low, high);
+            }
+            var a = Span(floor, u); var bSpan = Span(floor, v);
+            shorterSide = Mathf.Min(a.max - a.min, bSpan.max - bSpan.min);
+            if (shorterSide < 2) throw new InvalidOperationException("Actual floor dimensions are invalid for " + area.DisplayNumber);
+            float level = finish[0].GetComponentsInChildren<MeshRenderer>().Max(r => Span(r, Vector3.up).max);
+            var obstacles = area.GetComponentsInChildren<MeshRenderer>()
+                .Where(r => r.enabled && r.GetComponent<MeshFilter>() != null)
+                .Select(r => (x: Span(r, u), z: Span(r, v), y: Span(r, Vector3.up)))
+                .Where(p => p.y.max > level + .005f && p.y.min < level + 1.65f).ToArray();
+            Vector3 inward = Vector3.ProjectOnPlane(inside.position - outside.position, Vector3.up).normalized;
+            Vector3 centre = u * ((a.min + a.max) / 2) + v * ((bSpan.min + bSpan.max) / 2) + Vector3.up * level;
+            Vector3 preferred = Vector3.Lerp(inside.position, centre, .5f);
+            var candidates = new System.Collections.Generic.List<Vector3>();
+            for (float x = a.min + .50f; x <= a.max - .50f; x += .25f)
+                for (float z = bSpan.min + .50f; z <= bSpan.max - .50f; z += .25f)
+                {
+                    Vector3 point = u * x + v * z + Vector3.up * (level + .025f);
+                    if (Vector3.Dot(point - entry.position, inward) < 1.3f) continue;
+                    // At the approved 90-degree view the billboard spans floor area.
+                    // Clear its whole projected image, not only its foot anchor.
+                    var review = UnityEngine.Object.FindFirstObjectByType<HotelMapCameraController>().ReviewCamera;
+                    Vector3 imageUp = Vector3.ProjectOnPlane(review.transform.up, Vector3.up).normalized;
+                    Vector3 imageRight = Vector3.ProjectOnPlane(review.transform.right, Vector3.up).normalized;
+                    float minU = float.PositiveInfinity, maxU = float.NegativeInfinity;
+                    float minV = float.PositiveInfinity, maxV = float.NegativeInfinity;
+                    foreach (float h in new[] { -.12f, 1.52f })
+                        foreach (float w in new[] { -.48f, .48f })
+                        {
+                            Vector3 corner = point + imageUp * h + imageRight * w;
+                            float cu = Vector3.Dot(corner,u), cv = Vector3.Dot(corner,v);
+                            minU=Mathf.Min(minU,cu);maxU=Mathf.Max(maxU,cu);
+                            minV=Mathf.Min(minV,cv);maxV=Mathf.Max(maxV,cv);
+                        }
+                    if (minU < a.min+.2f || maxU > a.max-.2f || minV < bSpan.min+.2f || maxV > bSpan.max-.2f) continue;
+                    if (obstacles.Any(p => maxU > p.x.min && minU < p.x.max &&
+                                           maxV > p.z.min && minV < p.z.max)) continue;
+                    candidates.Add(point);
+                }
+            if (candidates.Count == 0)
+                throw new InvalidOperationException("No clear in-room NPC footprint found for " + area.DisplayNumber + ". Furniture was not moved.");
+            return candidates.OrderBy(p => (p - preferred).sqrMagnitude).First();
+        }
+
+
+        // Explicit repair of existing actors only; never creates duplicates or moves furniture.
+        public static void RefitExistingNpcAuthoring()
+        {
+            var scene=SceneManager.GetActiveScene();
+            if(EditorApplication.isPlayingOrWillChangePlaymode || scene.isDirty)
+                throw new InvalidOperationException("Save the clean Edit Mode scene before refitting.");
+            var actors=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<HotelNpcActor>(true)).ToArray();
+            var areas=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<HotelOverviewRoomArea>(true)).ToArray();
+            if(actors.Length!=6)throw new InvalidOperationException("Expected six existing original actors.");
+            var positions=actors.Select(actor=>FindActualRoomPoint(areas.Single(r=>r.RoomId==actor.RoomId),out _)).ToArray();
+            EnsureExistingDialoguePresenter(scene);
+            for(int i=0;i<actors.Length;i++){Undo.RecordObject(actors[i].transform,"Clear NPC image footprint");actors[i].transform.position=positions[i];}
+            EditorSceneManager.MarkSceneDirty(scene);
+            if(!EditorSceneManager.SaveScene(scene))throw new InvalidOperationException("NPC position save failed.");
+        }
+
+
+
+        public static void EnsureExistingDialoguePresenter(Scene scene)
+        {
+            var presenters=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Mystery.UI.DialogueCinematicView>(true)).ToArray();
+            if(presenters.Length>1)throw new InvalidOperationException("Ambiguous dialogue presenters; nothing will be replaced.");
+            Mystery.UI.DialogueCinematicView presenter;
+            if(presenters.Length==0)
+            {
+                var prefab=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UI/Prefabs/DialoguePanel.prefab");
+                if(prefab==null || prefab.GetComponent<Mystery.UI.DialogueCinematicView>()==null)
+                    throw new InvalidOperationException("Existing approved dialogue prefab is required.");
+                var canvasObject=new GameObject("Hotel NPC Dialogue Canvas",typeof(RectTransform),typeof(Canvas),typeof(UnityEngine.UI.CanvasScaler),typeof(UnityEngine.UI.GraphicRaycaster));
+                SceneManager.MoveGameObjectToScene(canvasObject,scene);
+                Undo.RegisterCreatedObjectUndo(canvasObject,"Connect existing NPC dialogue");
+                var canvas=canvasObject.GetComponent<Canvas>();canvas.renderMode=RenderMode.ScreenSpaceOverlay;canvas.sortingOrder=100;
+                var scaler=canvasObject.GetComponent<UnityEngine.UI.CanvasScaler>();
+                scaler.uiScaleMode=UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1920,1080);scaler.matchWidthOrHeight=.5f;
+                var panel=(GameObject)PrefabUtility.InstantiatePrefab(prefab,canvasObject.transform);
+                presenter=panel.GetComponent<Mystery.UI.DialogueCinematicView>();
+            }
+            else presenter=presenters[0];
+            var serialized=new SerializedObject(presenter);
+            serialized.FindProperty("visibleOnStart").boolValue=false;
+            serialized.FindProperty("worldCamera").objectReferenceValue=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<HotelMapCameraController>(true)).Single().ReviewCamera;
+            serialized.ApplyModifiedPropertiesWithoutUndo();
+            var visibility=presenter.GetComponent<CanvasGroup>();
+            if(visibility==null)visibility=presenter.gameObject.AddComponent<CanvasGroup>();
+            visibility.alpha=0;visibility.interactable=false;visibility.blocksRaycasts=false;
+            PrefabUtility.RecordPrefabInstancePropertyModifications(presenter);
+            if(!scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<UnityEngine.EventSystems.EventSystem>(true)).Any())
+            {
+                var events=new GameObject("Hotel NPC Dialogue EventSystem",typeof(UnityEngine.EventSystems.EventSystem),typeof(UnityEngine.InputSystem.UI.InputSystemUIInputModule));
+                SceneManager.MoveGameObjectToScene(events,scene);Undo.RegisterCreatedObjectUndo(events,"Connect existing NPC dialogue input");
+            }
+        }
         private static SpriteRenderer CreateImage(string name, Transform parent,
             Vector3 localPosition, float scale, out BoxCollider hitbox)
         {

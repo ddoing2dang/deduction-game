@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 8f34962a95074d16b673c9d9f0ff9bbb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6043533820937013397
+    second: MOONIRE_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -95,15 +98,37 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MOONIRE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1073
+        height: 1466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b677df6820e012ca0800000000000000
+      internalID: -6043533820937013397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-    customData:
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
