@@ -36,6 +36,7 @@ namespace Mystery.UI
         private int lastScreenWidth;
         private int lastScreenHeight;
         private DialogueSpeaker lastSpeaker;
+        private DialogueTheme lastTheme;
         private static readonly Color Frost = new Color32(213, 223, 228, 255);
 
         public bool IsConversationVisible => visible;
@@ -57,6 +58,7 @@ namespace Mystery.UI
             ConfigureAdaptiveFonts();
             ApplyLayout();
             lastSpeaker = dialogue.Speaker;
+            lastTheme = dialogue.Theme;
             lastScreenWidth = Screen.width;
             lastScreenHeight = Screen.height;
             SetConversationVisible(visibleOnStart);
@@ -86,9 +88,10 @@ namespace Mystery.UI
         private void Update()
         {
             if (!Application.IsPlaying(gameObject) || dialogue == null) return;
-            if (lastSpeaker != dialogue.Speaker)
+            if (lastSpeaker != dialogue.Speaker || lastTheme != dialogue.Theme)
             {
                 lastSpeaker = dialogue.Speaker;
+                lastTheme = dialogue.Theme;
                 RefreshPortraits();
             }
             if (lastScreenWidth != Screen.width || lastScreenHeight != Screen.height)
