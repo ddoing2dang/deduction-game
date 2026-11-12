@@ -21,6 +21,7 @@
 - [최종 승인된 대저택 맵 및 의존 에셋](art/Environment/HotelFinalDelivery/README.md)이 GitHub에 저장되어 있다. 사용자 PC에서 열린 Unity의 실제 런타임 구동과 새 변경의 적용 상태는 별도 확인 전이다.
 - 동일 오류 2회 반복 시 중단·준비물 요청·마지막 성공 지점 기록을 최우선으로 함.
 - [대저택 6명 기본 초상화 및 매핑](game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/README.md): 6개의 원본 이미지·Unity GUID·HOTEL 전용 대화창 Sprite 바인딩 코드 저장. Unity Editor 적용/실화면은 미확인.
+- [장미대저택 6 NPC 맵 배치 단계](game/NPC_PLACEMENT_20261112.md): 6명 × 8방향 정지 스프라이트용 에디터 별도 씬 생성 코드 저장. 원본 48장 PNG는 별도 배치용 ZIP으로 준비했으며 GitHub에는 아직 미업로드. Unity 로컬 씬 생성은 미실행.
 
 ## 현재 주요 문서
 - [게임 최상위 확정 규칙](GAME_RULES.md)
