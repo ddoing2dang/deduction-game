@@ -10,7 +10,7 @@ namespace Case464.EditorTools
     // Standalone controls for the approved map: no intermediate scene generators required.
     internal sealed class HotelFinalMapReviewControls : EditorWindow
     {
-        private const string FinalScene="Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity";
+        private const string FinalScene="Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity";
         [MenuItem("Case464/Hotel Final/Review Controls")]
         private static void Open()=>GetWindow<HotelFinalMapReviewControls>("Hotel Final");
         [MenuItem("Case464/Hotel Final/Open Approved Map")]
@@ -24,7 +24,8 @@ namespace Case464.EditorTools
         private void OnGUI()
         {
             var scene=SceneManager.GetActiveScene();
-            var controller=scene.path==FinalScene?scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<HotelMapCameraController>()).SingleOrDefault():null;
+            bool finalMap=scene.path==FinalScene || scene.path=="Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity" || scene.path=="Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns.unity";
+            var controller=finalMap?scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<HotelMapCameraController>()).SingleOrDefault():null;
             EditorGUILayout.HelpBox("Approved hotel map. 1F: H00, 101–103 / 2F: 201–204. Edit Mode camera review only.",MessageType.Info);
             using(new EditorGUI.DisabledScope(controller==null || EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling))
             {

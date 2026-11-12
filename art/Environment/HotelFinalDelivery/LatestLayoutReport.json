@@ -1,0 +1,38 @@
+{
+  "latestScene": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+  "latestSceneSha256": "6812b603d7b8f3dc317a92ddff29c6c6986e403388fc5d5feb51dd0619a23ae2",
+  "latestSceneExists": true,
+  "signCount": 8,
+  "firstFloorSigns": "upper edge / central aisle",
+  "secondFloorSigns": "lower edge / central aisle",
+  "aisle": {
+    "source": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns.unity",
+    "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+    "sourceSha256": "9fe62c5953d683e4cb2be7768a8cc70e7a485818c092ab0e562c412ce48b2971",
+    "visual": "UNVERIFIED",
+    "extraWidth": 1.7999999523162842,
+    "frameGapBefore": 3.0000014305114746,
+    "frameGapAfter": 4.800001621246338,
+    "clearSignGapBefore": 1.0399985313415527,
+    "clearSignGapAfter": 2.839998245239258,
+    "firstFloorShift": {
+      "x": 0.636396050453186,
+      "y": 0,
+      "z": 0.6363961100578308
+    },
+    "secondFloorShift": {
+      "x": -0.636396050453186,
+      "y": 0,
+      "z": -0.6363961100578308
+    }
+  },
+  "baseMapTwoPassValidation": "Original final map only; not repeated after label/wide-aisle changes",
+  "latestVisualReview": "UNVERIFIED",
+  "preservedRemote": [
+    {
+      "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs",
+      "sha": "e79d7188bddce7846c3bf1fbf57879c617730d93",
+      "reason": "Preserve newer remote SelectedRoom/SelectedRegion API additions"
+    }
+  ]
+}

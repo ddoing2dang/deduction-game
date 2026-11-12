@@ -1,15 +1,20 @@
 {
-  "finalScene": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity",
-  "finalSceneSha256": "21f36ef9daaa00a371c17a56730275499ddaaba1e4448dd5a3809ede99b20a01",
-  "validationPasses": 2,
-  "finalResaved": true,
-  "scope": "Final hotel scene and dependency closure only; no intermediate scenes",
+  "latestScene": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+  "latestSceneSha256": "6812b603d7b8f3dc317a92ddff29c6c6986e403388fc5d5feb51dd0619a23ae2",
+  "sourceLayoutGenerated": true,
+  "scope": "Latest wide-aisle map and required assets; remote NPC camera additions preserved",
   "assetFiles": [
     {
+      "path": "art/Environment/HotelFinalDelivery/LatestLayoutReport.json",
+      "size": 1499,
+      "sha": "6bc4652acdab8cd54b7bfd5e495ced399cd9dc07",
+      "sha256": "a2a37da25ac3e2606c80ea270aa60636e9940e3fae901b38c068c67873a16da1"
+    },
+    {
       "path": "art/Environment/HotelFinalDelivery/README.md",
-      "size": 2023,
-      "sha": "2d4f06e17a31819b89a67ed2843eca820644e925",
-      "sha256": "20f1ecd14a0b6308459dbe3cb9281c574d138c463074cb29d9731bd71a3793d5"
+      "size": 2271,
+      "sha": "b93eed96a746497f5d47e83238c4225c9de00072",
+      "sha256": "a4e5263b05433e916b7df2cd205c68e1edb0c687fc25659437a39b8cbdb6c9a3"
     },
     {
       "path": "art/Environment/HotelFinalDelivery/Validation.json",
@@ -2142,6 +2147,120 @@
       "sha256": "146b081e1f2f2baad6ab9732595d551194e806ffae3d884251adcc2fcc4e5abe"
     },
     {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques.meta",
+      "size": 172,
+      "sha": "7a8559da3a657d180179680efdd2f1a51421141f",
+      "sha256": "8cd0d8d3686bd6a1ca8de59d5f8e65cf931a9e7e41c2c3a1fcf42567a3a24f74"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Antique brass lettering frame.mat",
+      "size": 1922,
+      "sha": "e88d31955ab64f19124e1b4fee774bb71881eaf3",
+      "sha256": "96f7d7fdf2d685c9847123907b9bfb345857ed4eac9d6aeb4bf4d67281f9c9d7"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Antique brass lettering frame.mat.meta",
+      "size": 188,
+      "sha": "b3a8894510fe4b114aee7a1dcca789247f3322a9",
+      "sha256": "473813c7635796fd47c74be1714f97bbc3494c57e8039d418b3c3c49a023d347"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Bevel shadow.mat",
+      "size": 1914,
+      "sha": "5d2b5cb70e8849a324a0147314e696331a8253c9",
+      "sha256": "8e183567be15d795e9f98c8db3f5a6c56b232f40d104cfdb9532036ba9e6ad3c"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Bevel shadow.mat.meta",
+      "size": 188,
+      "sha": "683ecd412aec1e5401232d5cb1ab59bf1ea0e91f",
+      "sha256": "87c570fbde1192df5470c7582d460cf7db0e4e6116a2a1e8eabd2e8b074c78a1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Black enamel.mat",
+      "size": 1899,
+      "sha": "e1cc69c81ad1dff630452a200cb39dea17ceef34",
+      "sha256": "f3e96feafad36d3faf0a2993256c2e141edb2c5b8c08029d97197a535f13ca0d"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Black enamel.mat.meta",
+      "size": 188,
+      "sha": "3db226dcfa5e1ff8c310aa76f44e933d577e632c",
+      "sha256": "d22ac5a8cda6ee10186e513476adfec1d6326ee95138a8038d21630d0b197eee"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/BlackBevelledPlaque.asset",
+      "size": 6885,
+      "sha": "0ba99acb4fd62b4def1e66e069ee5519383c7d1d",
+      "sha256": "9340c9528adcaab63158b87b0586f0d39a37998b31ac6047405640b0b0a4e337"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/BlackBevelledPlaque.asset.meta",
+      "size": 188,
+      "sha": "bf9f4ddab24658881b736d32e7ac3d1575a746f8",
+      "sha256": "e6c70002fb4a148cbd6fc25b2c1ea9e1434a6fc80482b0d3a8d88206133d18d1"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/DoubleBrassFrame.asset",
+      "size": 6307,
+      "sha": "36f1d0c3e13acd5de1002303869d216eaef193ca",
+      "sha256": "e71a2564368f9fb13dfdf2796ace9769b9ec13184e369b423a247964dab7fe22"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/DoubleBrassFrame.asset.meta",
+      "size": 188,
+      "sha": "b041419aeb89874fe2f9bfe9d2cd5b0ee8d26f52",
+      "sha256": "2a063776e82f17d2c03d467e2bab7763f8e769f6d2e999a9383c527a0376c1b0"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Muted brass rose leaves.mat",
+      "size": 1922,
+      "sha": "a56530b527d6fb57890c01fab36e2c6fdeeb4ffe",
+      "sha256": "f49288ce2409b94475b72f65aa8877c7efce49d05a345191b83f368bac00f65b"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Muted brass rose leaves.mat.meta",
+      "size": 188,
+      "sha": "e687d5b82ba9772859e339866a0d229aef1c5ad7",
+      "sha256": "b8f6706a5fd0a6c55c82e8a37133bb0b7dc5bb5cd2f433fdc1cd3cbb401de4de"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Oxblood rose.mat",
+      "size": 1905,
+      "sha": "a1e0fa12478bd7998ec95a2c7abf39b65336ea2b",
+      "sha256": "87c9d98799af9320d9d906f89db4ac4e1f1f21ec1eb325ef5f51d101928407bd"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/Oxblood rose.mat.meta",
+      "size": 188,
+      "sha": "07db6024ffb716a1e3da4336dfebec62dfb52ed5",
+      "sha256": "7bb978e880cc4dfcc3765318a28e58ec746d8d7fe94ed6727ca994b25512989e"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/RoomNumbersFont.asset",
+      "size": 2110777,
+      "sha": "ab7758c892042dffa862c8c5828e34412f4e8861",
+      "sha256": "9561057c4b12ee09578e4036b9f6166b012a9a6b1e6e91b81f889a5c75c2a6d4"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/RoomNumbersFont.asset.meta",
+      "size": 189,
+      "sha": "5484e54ea04e68a38ab7de75c50d8855084328d6",
+      "sha256": "49bf8c0151eb320b7963f4cfe145bc735e0741c2d977b552135a190cd2328a46"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/RoseOrnament.asset",
+      "size": 41822,
+      "sha": "a610d3ab7755c1bca3f3fee6391bbc4cc40e26bf",
+      "sha256": "8d0b3a75c564654d279d62365cd0b9eb41dbb3060b38cb45cdaf2f1d3b144f80"
+    },
+    {
+      "path": "game/UnityProject/Assets/Case464/Art/HotelRoomPlaques/RoseOrnament.asset.meta",
+      "size": 188,
+      "sha": "391627248ea8f2fae9af46d704ecfcbc15fb627a",
+      "sha256": "921b439c59760a1d9eecbc987531ea1c6bf2e652ac8eec1be291fa324459cd33"
+    },
+    {
       "path": "game/UnityProject/Assets/Case464/Art/HotelRoomRowsTop90.meta",
       "size": 172,
       "sha": "7aa0be022eee97ea6723f780de2b6589896e3e41",
@@ -3462,12 +3581,6 @@
       "sha256": "53b9de8d7e0e28ba3b7903bf260454de147a0df2b071a78e777ef435868665fa"
     },
     {
-      "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs",
-      "size": 15383,
-      "sha": "efc784096f82be1d68d15334eb2dd9aaba2909d2",
-      "sha256": "cef8f6dec3e9459c4f91cb9b11415c58b9fda2bc63762b381d78475f38a21e11"
-    },
-    {
       "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs.meta",
       "size": 59,
       "sha": "567889ef00b7fa8559ffa6b509446aaf43448128",
@@ -3522,22 +3635,28 @@
       "sha256": "045b3455052e8cb045dd56d3023130d9ec129f34e0f7509673630bde2d89a8a2"
     },
     {
-      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity",
-      "size": 15666791,
-      "sha": "3a5c3beb1b3d2e242306af17837dd434ff0a120d",
-      "sha256": "21f36ef9daaa00a371c17a56730275499ddaaba1e4448dd5a3809ede99b20a01"
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+      "size": 15890847,
+      "sha": "6c016e36d77b99ee26e2a92c75bad0f8f27bcbec",
+      "sha256": "6812b603d7b8f3dc317a92ddff29c6c6986e403388fc5d5feb51dd0619a23ae2"
     },
     {
-      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map.unity.meta",
+      "path": "game/UnityProject/Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity.meta",
       "size": 155,
-      "sha": "3614c628b604a543dfbe3f06601311c016c5da96",
-      "sha256": "87b3bba2d2a0f8ef2420b6f6143fc64a9097cb870ab538ea1f28c92f3acc76e8"
+      "sha": "5d412a84acfb85f4725b042834ec2079a1944ba0",
+      "sha256": "6bda202de36e99779f258c1d18c4a7f515f9375c769dd0093b23d8a0788690fb"
     },
     {
       "path": "game/UnityProject/Assets/Editor/HotelFinalMapReviewControls.cs",
-      "size": 2765,
-      "sha": "e00c93d49bd037e89d6a0e6e8701eb93e81b1470",
-      "sha256": "a074fef8168c43f725c8de04b475ef42b8146224721c2be0a6fb198ffff896a4"
+      "size": 2985,
+      "sha": "83e0c9e3141c59ad280a3def0581a3cdff153cf5",
+      "sha256": "cbe58afbc0c202fdf6d20d2c1b8a178e07e302641867b2e7611f298d8911f813"
+    },
+    {
+      "path": "game/UnityProject/Assets/Editor/HotelFinalMapReviewControls.cs.meta",
+      "size": 59,
+      "sha": "bf3403703490b00be19e68e8971c3d8843fb166f",
+      "sha256": "2a961cebd467fd514d9750805f693064a74f9032facb6cff8730a4dfd7384205"
     },
     {
       "path": "game/UnityProject/Assets/Settings.meta",
@@ -3630,6 +3749,54 @@
       "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
     },
     {
+      "path": "game/UnityProject/Assets/TextMesh Pro.meta",
+      "size": 172,
+      "sha": "f9da8b5e3a1204a3ff0f6062a2684ab860b46b9b",
+      "sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3"
+    },
+    {
+      "path": "game/UnityProject/Assets/TextMesh Pro/Shaders.meta",
+      "size": 172,
+      "sha": "29a90a6a63777322ca8070d3cd4949cfa3cfd455",
+      "sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30"
+    },
+    {
+      "path": "game/UnityProject/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "size": 8074,
+      "sha": "b899d6e9d78c7885a8c90e39574fdc6252d11fe0",
+      "sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4"
+    },
+    {
+      "path": "game/UnityProject/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+      "size": 204,
+      "sha": "2ac6e76cd0c04a8ebf440262c2d6117809f09aba",
+      "sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d"
+    },
+    {
+      "path": "game/UnityProject/Assets/UI/Fonts/MaruBuri-OFL.txt",
+      "size": 4649,
+      "sha": "7197057a19cb2c03b3b237acb069c2a1e2fc6230",
+      "sha256": "04b6a7ef7397c13608ba46b7b79a1cf94d783dba0766c724bfc404d3b5af6b5d"
+    },
+    {
+      "path": "game/UnityProject/Assets/UI/Fonts/MaruBuri-OFL.txt.meta",
+      "size": 158,
+      "sha": "92307fcaf843005d4d726fb88cc501eed81334e3",
+      "sha256": "96a4793418047cdc1e30f80444a355e167014668f8964a755539f0909bac5c6b"
+    },
+    {
+      "path": "game/UnityProject/Assets/UI/Fonts/MaruBuri-SemiBold.otf",
+      "size": 742176,
+      "sha": "28871c1c55fe259f40e769cbbb6ae15a012bd5dd",
+      "sha256": "18dfd1167d44877a5afc1386db5f09c3ea494ab83a5adf0a64953c43c208dd21"
+    },
+    {
+      "path": "game/UnityProject/Assets/UI/Fonts/MaruBuri-SemiBold.otf.meta",
+      "size": 503,
+      "sha": "bcf7a840f9f3a5aeb9249314d49749f835cc3701",
+      "sha256": "e5a2f67e5bae4073949e7bb6d95148aa790f516061cecab4ba45f3dfddee5b5f"
+    },
+    {
       "path": "game/UnityProject/ProjectSettings/GraphicsSettings.asset",
       "size": 2615,
       "sha": "84b2182fe3e3bc3e639c1e90e9e979e5a2515cc2",
@@ -3642,51 +3809,13 @@
       "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643"
     }
   ],
-  "packageGuidReferences": 183,
-  "legacyUnresolvedSettings": [
+  "preservedRemote": [
     {
-      "guid": "e5c6678ed2aaa91408dd3df699057aae",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "03cfc4915c15d504a9ed85ecc404e607",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "53a11f4ebaebf4049b3638ef78dc9664",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "8f96cd657dc40064aa21efcc7e50a2e7",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "57d7c4c16e2765b47a4d2069b311bffe",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "24ec0e140fb444a44ab96ee80844e18e",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "b9a23f869c4fd45f19c5ada54dd82176",
-      "file": "game/UnityProject/Assets/Settings/PC_Renderer.asset"
-    },
-    {
-      "guid": "60f3b30c03e6ba64d9a27dc9dba8f28d",
-      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
-    },
-    {
-      "guid": "0fd9ee276a1023e439cf7a9c393195fa",
-      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
-    },
-    {
-      "guid": "5a00a63fdd6bd2a45ab1f2d869305ffd",
-      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
-    },
-    {
-      "guid": "74955a4b0b4243bc87231e8b59ed9140",
-      "file": "game/UnityProject/Assets/Settings/DefaultVolumeProfile.asset"
+      "path": "game/UnityProject/Assets/Case464/HotelMapCameraController.cs",
+      "sha": "e79d7188bddce7846c3bf1fbf57879c617730d93",
+      "reason": "Preserve newer remote SelectedRoom/SelectedRegion API additions"
     }
-  ]
+  ],
+  "baseValidationPasses": 2,
+  "latestLayoutValidation": "Unity-generated gap/preservation report available; visual UNVERIFIED"
 }
