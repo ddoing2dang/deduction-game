@@ -51,7 +51,7 @@ namespace Case464.Editor
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode)
                 throw new InvalidOperationException("Edit Mode is required.");
-            if (EditorSceneManager.GetActiveScene().isDirty)
+            if (SceneManager.GetActiveScene().isDirty)
                 throw new InvalidOperationException(
                     "Current scene has unsaved changes. Save it before generating the NPC scene.");
             if (AssetDatabase.LoadAssetAtPath<SceneAsset>(OutputScene) != null)
@@ -93,9 +93,9 @@ namespace Case464.Editor
             {
                 Entry item = People[i];
                 HotelPolishRoomMetric metric = map.rooms.FirstOrDefault(m =>
-                    m != null && (m.roomId == item.room || m.number == item.number));
+                    m != null && (m.roomId == item.room || m.number == item.number || m.number == item.number + "호"));
                 HotelOverviewRoomArea area = areas.FirstOrDefault(a =>
-                    a.RoomId == item.room || a.DisplayNumber == item.number);
+                    a.RoomId == item.room || a.DisplayNumber == item.number || a.DisplayNumber == item.number + "호");
                 if (metric == null || area == null)
                     throw new InvalidOperationException(
                         "The approved scene is missing room metrics/area for " + item.room +
