@@ -18,6 +18,9 @@ namespace Case464.NPC
         [SerializeField] private int floor;
         [SerializeField] private int dialogueSpeakerIndex;
         [SerializeField] private HotelNpcFacing facing = HotelNpcFacing.S;
+        // 90-degree overhead maps cannot see a fully vertical 2D sprite.
+        // Limit camera-facing lean so the NPC reads as standing, not painted flat on the floor.
+        [SerializeField, Range(25f, 60f)] private float maximumLeanFromVertical = 45f;
         [SerializeField] private Sprite[] stillDirections = Array.Empty<Sprite>();
         [SerializeField] private SpriteRenderer physical;
         [SerializeField] private SpriteRenderer splitDisplay;
@@ -114,14 +117,44 @@ namespace Case464.NPC
             if (splitHitbox != null)
                 splitHitbox.enabled = Application.isPlaying && visible && split;
 
-            // The image always faces the room-review camera. Feet remain fixed
-            // to their authored world/split anchors (no runtime NPC teleport).
+            // Keep sprite feet in place and its body mostly vertical.
+            // The previous full camera billboard turned the whole XY sprite
+            // parallel to the floor when the hotel camera looked straight down.
             Camera cam = hotelCamera.ReviewCamera;
             if (cam == null) return;
-            Quaternion billboarding = Quaternion.LookRotation(-cam.transform.forward,
-                cam.transform.up);
-            if (physical != null) physical.transform.rotation = billboarding;
-            if (splitDisplay != null) splitDisplay.transform.rotation = billboarding;
+            Quaternion standing = StandingBillboard(cam, maximumLeanFromVertical);
+            if (physical != null) physical.transform.rotation = standing;
+            if (splitDisplay != null) splitDisplay.transform.rotation = standing;
+        }
+
+        private static Quaternion StandingBillboard(Camera camera, float maxLeanDegrees)
+        {
+            // Sprite local +Y must point toward screen-up while retaining a
+            // substantial world-up component. Never rotate the feet anchor.
+            Vector3 screenUpOnFloor = Vector3.ProjectOnPlane(
+                camera.transform.up, Vector3.up);
+            Vector3 screenRightOnFloor = Vector3.ProjectOnPlane(
+                camera.transform.right, Vector3.up);
+
+            // A horizontal camera already sees an upright sprite normally.
+            if (screenUpOnFloor.sqrMagnitude < 0.000001f ||
+                screenRightOnFloor.sqrMagnitude < 0.000001f)
+                return Quaternion.LookRotation(-camera.transform.forward,
+                    camera.transform.up);
+
+            float cameraPitch = Mathf.Asin(Mathf.Clamp(
+                Mathf.Abs(Vector3.Dot(camera.transform.forward, Vector3.up)), 0f, 1f))
+                * Mathf.Rad2Deg;
+            float leanRadians = Mathf.Min(cameraPitch,
+                Mathf.Clamp(maxLeanDegrees, 25f, 60f)) * Mathf.Deg2Rad;
+            Vector3 spriteUp = (Vector3.up * Mathf.Cos(leanRadians) +
+                screenUpOnFloor.normalized * Mathf.Sin(leanRadians)).normalized;
+
+            // Like the original billboard, use the camera-facing side of the
+            // original PNG. Do not mirror images, alter UVs, or invert sprite up.
+            Vector3 spriteNormal = Vector3.Cross(
+                -screenRightOnFloor.normalized, spriteUp).normalized;
+            return Quaternion.LookRotation(spriteNormal, spriteUp);
         }
 
         public void Interact()
