@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "themeId": "HOTEL",
+  "themeDisplayName": "장미대저택",
+  "purpose": "default_dialogue_portraits",
+  "source": "2026-11-12 user-supplied six PNG reference portraits",
+  "notice": "Original PNG bytes preserved; these are theme-specific game art assets. No Unity UI binding or play-test was performed.",
+  "portraits": [
+    {
+      "npcId": "MATTO",
+      "displayName": "마도은",
+      "sourceFilename": "마도은 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/MATTO.png"
+    },
+    {
+      "npcId": "MARIHI",
+      "displayName": "마혜인",
+      "sourceFilename": "마혜인 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/MARIHI.png"
+    },
+    {
+      "npcId": "NAZ",
+      "displayName": "나지수",
+      "sourceFilename": "나지수 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/NAZ.png"
+    },
+    {
+      "npcId": "BOKI",
+      "displayName": "김보희",
+      "sourceFilename": "김보희 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/BOKI.png"
+    },
+    {
+      "npcId": "JJIRO",
+      "displayName": "진초록",
+      "sourceFilename": "진초록 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/JJIRO.png"
+    },
+    {
+      "npcId": "MOONIRE",
+      "displayName": "문이현",
+      "sourceFilename": "문이레 기본 대화 초상화.png",
+      "assetPath": "Assets/UI/Art/NPCPortraits/RoseMansion/MOONIRE.png"
+    }
+  ]
+}
