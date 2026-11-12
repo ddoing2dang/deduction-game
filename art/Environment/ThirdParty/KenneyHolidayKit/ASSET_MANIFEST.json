@@ -1,0 +1,429 @@
+{
+  "pack": "Kenney Holiday Kit 2.0",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/holiday-kit",
+  "download": "https://opengameart.org/sites/default/files/kenney_holiday-kit.zip",
+  "retrieved": "2026-11-12",
+  "original_archive_sha256": "fde4d514d7297388d98058e8933ff614e071886f7ce57f9aea4b00d7698dd769",
+  "selection_count": 40,
+  "format": "OBJ + MTL + PNG",
+  "status": "art staging; not imported into Unity or placed in a scene",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 714,
+      "sha256": "6010f677d95f3ab7935faf873d8f4eb96ad1e5f02fd0e4659c9d92852b768d6a"
+    },
+    {
+      "path": "Models/Textures/colormap.png",
+      "bytes": 12777,
+      "sha256": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863"
+    },
+    {
+      "path": "Models/cabin-roof-snow.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/cabin-roof-snow.obj",
+      "bytes": 9332,
+      "sha256": "4313ca1771b7bcf73078bd748e0d8309a2b2f76b139f37c6cbc2ffb90fe41f64"
+    },
+    {
+      "path": "Models/candy-cane-green.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/candy-cane-green.obj",
+      "bytes": 7532,
+      "sha256": "fddd04c3160ea377a0a69c9558b988a391099756802effa3049723cb3e7d5a13"
+    },
+    {
+      "path": "Models/candy-cane-red.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/candy-cane-red.obj",
+      "bytes": 7589,
+      "sha256": "7893b86c795efc515d1ce5389f3c622c28c504f283588365a9ce61b4fbd67666"
+    },
+    {
+      "path": "Models/floor-wood-snow.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/floor-wood-snow.obj",
+      "bytes": 6813,
+      "sha256": "b53173e925e46aee20d32b4b022f1f79050e28e1274ad529f56f7065d72b1e1e"
+    },
+    {
+      "path": "Models/gingerbread-man.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/gingerbread-man.obj",
+      "bytes": 15585,
+      "sha256": "bcd686bab09e81a593217f1a6fd26553fd916d899d9e2d064d9fe3c001c1c707"
+    },
+    {
+      "path": "Models/gingerbread-woman.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/gingerbread-woman.obj",
+      "bytes": 20693,
+      "sha256": "69b18b3019da06ffec97c9ddde465feba8ee7f90d5031f57ea5842036fa24efd"
+    },
+    {
+      "path": "Models/lantern-hanging.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/lantern-hanging.obj",
+      "bytes": 15593,
+      "sha256": "d4a83a4412096f38bd771d3daa38f7f95d56a24575a702fc0d96db802261cbfc"
+    },
+    {
+      "path": "Models/lantern.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/lantern.obj",
+      "bytes": 17061,
+      "sha256": "6dc6658e2f9b78cefbdccd758063e3074e33717fe1e8f673fa9d5b0b3435148e"
+    },
+    {
+      "path": "Models/lights-colored.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/lights-colored.obj",
+      "bytes": 81943,
+      "sha256": "e7b74f86762827ead0c1ddca24e3d8224de30cf17296a9b9e791fb4c71bd66c3"
+    },
+    {
+      "path": "Models/lights-green.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/lights-green.obj",
+      "bytes": 81916,
+      "sha256": "fc54716e706cb7c55774b668799feadd20f2e961d14ca50f43d9870abc8bbabc"
+    },
+    {
+      "path": "Models/lights-red.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/lights-red.obj",
+      "bytes": 81915,
+      "sha256": "ebf2a4681c065bae8885d0395f1a9265f2e189c36962393c9d416c06882d57ff"
+    },
+    {
+      "path": "Models/present-a-cube.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-a-cube.obj",
+      "bytes": 12965,
+      "sha256": "f0296a74b62c8f20e3e2744de297f81841c4cbc0ad09f121f580d00a27e2d473"
+    },
+    {
+      "path": "Models/present-a-rectangle.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-a-rectangle.obj",
+      "bytes": 13228,
+      "sha256": "c88c07c8a45f6b1138bb83e48036485c2a4611f3c39166ef866ac664dc3f9df1"
+    },
+    {
+      "path": "Models/present-a-round.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-a-round.obj",
+      "bytes": 14625,
+      "sha256": "1b8ddb37f5c18f966588cdf02df6a4ea64ddb643eae31f13d1ea1703ec12eeb5"
+    },
+    {
+      "path": "Models/present-b-cube.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-b-cube.obj",
+      "bytes": 13182,
+      "sha256": "fb855cd6d3541b07c2875faeb322cf5311dd82220beb8adf007cec8f30b01f28"
+    },
+    {
+      "path": "Models/present-b-rectangle.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-b-rectangle.obj",
+      "bytes": 13243,
+      "sha256": "0656914d2435060928771c3d01fae08ee64a367e28c26792aeaf460dd2bbdebd"
+    },
+    {
+      "path": "Models/present-b-round.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/present-b-round.obj",
+      "bytes": 14619,
+      "sha256": "46e05c135a49c3b3c2c1147588bad4167f5818760b1e1cef16f1023e863c07c2"
+    },
+    {
+      "path": "Models/sled-long.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sled-long.obj",
+      "bytes": 17728,
+      "sha256": "af278cfb8875ae2d73f3fa74e540250e53d1738afb0e5b95787c045681800701"
+    },
+    {
+      "path": "Models/sled.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sled.obj",
+      "bytes": 20650,
+      "sha256": "2558129a4f610dfe3e0331bf80f2b20dfeb39f7c9b069a810db8da8b47b874a7"
+    },
+    {
+      "path": "Models/snow-bunker.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snow-bunker.obj",
+      "bytes": 23986,
+      "sha256": "25effcc20f4c55835510cfc8ef768597b3d2b2b26dc0d4da7369de399c1a5931"
+    },
+    {
+      "path": "Models/snow-flat-large.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snow-flat-large.obj",
+      "bytes": 9477,
+      "sha256": "06c4ac744f62bed7472890a3ec8dd7d58d1056800751286d66236dacb7289874"
+    },
+    {
+      "path": "Models/snow-flat.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snow-flat.obj",
+      "bytes": 13598,
+      "sha256": "6dfde2d0eeba1556cedbb791940f325bf3853c0422b5a06097f03d3fcaaa9175"
+    },
+    {
+      "path": "Models/snow-pile.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snow-pile.obj",
+      "bytes": 11793,
+      "sha256": "a63d85032dbb74d69f7b8c1addbcfc50bdfd3e6ef6f19dad5329993445eeee76"
+    },
+    {
+      "path": "Models/snowflake-a.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snowflake-a.obj",
+      "bytes": 24655,
+      "sha256": "c6d8fbfa2680c43e8ff706358782ea9ec49a2877563f881102fefcad48dbbbee"
+    },
+    {
+      "path": "Models/snowflake-b.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snowflake-b.obj",
+      "bytes": 18341,
+      "sha256": "8c9eae3f3b5ee05561e1e8b11b1e11c14bcb6067e83d28b23b0a34d24fe099cb"
+    },
+    {
+      "path": "Models/snowflake-c.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snowflake-c.obj",
+      "bytes": 14405,
+      "sha256": "14bdd249a73e56e366aaf824ee9bee28bfaa1c53745f7de86108edb5b541c664"
+    },
+    {
+      "path": "Models/snowman-hat.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snowman-hat.obj",
+      "bytes": 54427,
+      "sha256": "32ccf1ea5fdeb04f3e94f21bf70eec9f75ee9dee7bf68f8de08479bb5ab22710"
+    },
+    {
+      "path": "Models/snowman.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/snowman.obj",
+      "bytes": 42915,
+      "sha256": "83e6f67bf87c5df350137d7a45d20f763247a1c970aba99b89d18ce4dcd1615c"
+    },
+    {
+      "path": "Models/sock-green-cane.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sock-green-cane.obj",
+      "bytes": 25332,
+      "sha256": "28c9cae98458bc187adf1acf2f9442eff6deee56e789b342fa6816f190c0bcb9"
+    },
+    {
+      "path": "Models/sock-green.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sock-green.obj",
+      "bytes": 16414,
+      "sha256": "91c374621a81f93417d004a3f8ebb538b9678a2083a4f80fbfe52ca54a893be4"
+    },
+    {
+      "path": "Models/sock-red-cane.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sock-red-cane.obj",
+      "bytes": 25315,
+      "sha256": "41243b0bc4ac515088bdaf5ea3590c73ab99b34859be8a466501f327d2b4ec79"
+    },
+    {
+      "path": "Models/sock-red.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/sock-red.obj",
+      "bytes": 16369,
+      "sha256": "caa9a76a3a2adc4fc092f566605c18352a89f6eb73f5033d58daab2145f1bbb0"
+    },
+    {
+      "path": "Models/tree-decorated-snow.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree-decorated-snow.obj",
+      "bytes": 82388,
+      "sha256": "52bec9e9b86739fa36c96770ca97ba06ee879f013ea8748ed6888be3edf42d19"
+    },
+    {
+      "path": "Models/tree-decorated.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree-decorated.obj",
+      "bytes": 65694,
+      "sha256": "d09f64cf44dff45418d5a6fa1f3cd1ebd64b74118ca7fbdb1021c58e677a24fa"
+    },
+    {
+      "path": "Models/tree-snow-a.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree-snow-a.obj",
+      "bytes": 38097,
+      "sha256": "dbf30113b30e0965def9925c0deea3eb95b62a857f53d55173c4de105901c720"
+    },
+    {
+      "path": "Models/tree-snow-b.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree-snow-b.obj",
+      "bytes": 38079,
+      "sha256": "fc4519a79720795823d8f3bb25b98292dcd5179fdccec8ab68247cd7ff412761"
+    },
+    {
+      "path": "Models/tree-snow-c.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree-snow-c.obj",
+      "bytes": 21945,
+      "sha256": "bc22527491d799549978b4ab840f51ca40bc6b5a03db494d2d18dc7bb4456a90"
+    },
+    {
+      "path": "Models/tree.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/tree.obj",
+      "bytes": 21691,
+      "sha256": "e9cb1ad11095034386d2014c998532ba085b7fc1d3d32661f08d2e5015be0565"
+    },
+    {
+      "path": "Models/wreath-decorated.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/wreath-decorated.obj",
+      "bytes": 84840,
+      "sha256": "ae85dc7ac0187e5f8b4ffdf6d5896eb5ec36f6945f7c1e85110a8a58b6b00f6b"
+    },
+    {
+      "path": "Models/wreath.mtl",
+      "bytes": 98,
+      "sha256": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060"
+    },
+    {
+      "path": "Models/wreath.obj",
+      "bytes": 32609,
+      "sha256": "4217d20eaeb56d6beff1e5aa8d3015c09fd170ca7510142b80c1ef503b6bdf40"
+    },
+    {
+      "path": "Preview.png",
+      "bytes": 135291,
+      "sha256": "16a4369df81a0750696c5a087df3c521515486e51f945c83b20e2b76340e8aec"
+    }
+  ]
+}
