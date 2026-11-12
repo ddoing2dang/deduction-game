@@ -54,3 +54,11 @@
 ## 다음 연결
 
 새 씬을 Unity 에디터에서 제작·검토한 다음, 탐정 시작 위치 → NPC 상호작용 → 실제 심문 UI → 증거 획득/사건 상태 연결 순으로 진행한다. 기능 테스트·빌드는 명시 요청 전 수행하지 않는다.
+
+## NPC가 바닥에 누워 보이는 문제 수정 (2026-11-12)
+
+- 원인: `HotelNpcActor.SyncView()`가 `Quaternion.LookRotation(-camera.forward, camera.up)` 전체 빌보딩을 사용해, 거의 수직인 호텔 카메라에서 PNG의 XY 평면이 바닥과 거의 평행해짐. 좌표 자체가 바닥 아래로 잘못 간 문제가 아님.
+- 수정: `HotelNpcActor.StandingBillboard()`로 화면 위쪽 방향을 따르되 세계 Y 상향 성분을 보존하고, 카메라 쪽 기울어짐을 최대 45도로 제한. 수직 카메라에서는 완전 직립 2D PNG가 모서리로만 보여 사라지므로 약간 비스듬한 2.5D 자세를 사용.
+- 기존 6명 좌표, 객실, 원본 48개 PNG 및 .meta, 배치된 씬, 기존 가구·조명·카메라 구조를 변경하지 않음.
+- **적용 시 재배치 메뉴를 실행하지 말 것**: 새 코드를 GitHub에서 pull한 뒤 최신 `Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity` 씬을 Unity Edit Mode에서 열어 스크립트를 리로드하고 새 스프라이트 회전을 확인·저장.
+- 이 패치는 **소스 코드 변경만 저장**. Unity 에디터 렌더 확인 및 저장은 로컬 실행 필요. Play Mode/기능 테스트/빌드 미실행.
