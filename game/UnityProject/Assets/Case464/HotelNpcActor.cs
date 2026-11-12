@@ -2,6 +2,7 @@ using System;
 using Case464.Hotel;
 using Mystery.UI;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Case464.NPC
 {
@@ -18,9 +19,13 @@ namespace Case464.NPC
         [SerializeField] private int floor;
         [SerializeField] private int dialogueSpeakerIndex;
         [SerializeField] private HotelNpcFacing facing = HotelNpcFacing.S;
-        // 90-degree overhead maps cannot see a fully vertical 2D sprite.
-        // Limit camera-facing lean so the NPC reads as standing, not painted flat on the floor.
-        [SerializeField, Range(25f, 60f)] private float maximumLeanFromVertical = 45f;
+        // Source alpha geometry is authored without changing PNGs or importer GUIDs.
+        [SerializeField] private Rect[] opaquePixelBounds = Array.Empty<Rect>();
+        [SerializeField] private Vector2[] footPixels = Array.Empty<Vector2>();
+        [SerializeField] private float visibleBodyHeight = 1.65f;
+        [SerializeField] private bool screenPresentationConfigured;
+        [SerializeField] private Vector3 physicalFootLocal;
+        [SerializeField] private Vector3 displayFootLocal;
         [SerializeField] private Sprite[] stillDirections = Array.Empty<Sprite>();
         [SerializeField] private SpriteRenderer physical;
         [SerializeField] private SpriteRenderer splitDisplay;
@@ -56,12 +61,25 @@ namespace Case464.NPC
         {
             facing = direction;
             ApplyPose();
+            SyncView();
         }
 
         private void OnEnable()
         {
+            RenderPipelineManager.beginCameraRendering -= BeforeCameraRender;
+            RenderPipelineManager.beginCameraRendering += BeforeCameraRender;
             ApplyPose();
             SyncView();
+        }
+
+        private void OnDisable()
+        {
+            RenderPipelineManager.beginCameraRendering -= BeforeCameraRender;
+        }
+
+        private void BeforeCameraRender(ScriptableRenderContext context, Camera camera)
+        {
+            if (hotelCamera != null && camera == hotelCamera.ReviewCamera) SyncView();
         }
 
         private void OnValidate()
@@ -117,44 +135,50 @@ namespace Case464.NPC
             if (splitHitbox != null)
                 splitHitbox.enabled = Application.isPlaying && visible && split;
 
-            // Keep sprite feet in place and its body mostly vertical.
-            // The previous full camera billboard turned the whole XY sprite
-            // parallel to the floor when the hotel camera looked straight down.
             Camera cam = hotelCamera.ReviewCamera;
             if (cam == null) return;
-            Quaternion standing = StandingBillboard(cam, maximumLeanFromVertical);
-            if (physical != null) physical.transform.rotation = standing;
-            if (splitDisplay != null) splitDisplay.transform.rotation = standing;
+            AlignImage(physical, physicalFootLocal, cam);
+            AlignImage(splitDisplay, displayFootLocal, cam);
         }
 
-        private static Quaternion StandingBillboard(Camera camera, float maxLeanDegrees)
+        private void AlignImage(SpriteRenderer renderer, Vector3 footLocal, Camera camera)
         {
-            // Sprite local +Y must point toward screen-up while retaining a
-            // substantial world-up component. Never rotate the feet anchor.
-            Vector3 screenUpOnFloor = Vector3.ProjectOnPlane(
-                camera.transform.up, Vector3.up);
-            Vector3 screenRightOnFloor = Vector3.ProjectOnPlane(
-                camera.transform.right, Vector3.up);
+            if (renderer == null) return;
+            // Exact screen basis: +X = screen-right, +Y = screen-up.
+            // There is no world-upright lean and therefore no cosine foreshortening.
+            renderer.transform.rotation = camera.transform.rotation;
+            renderer.flipX = false; renderer.flipY = false;
+            int index = (int)facing;
+            if (!screenPresentationConfigured || renderer.sprite == null ||
+                opaquePixelBounds.Length != 8 || footPixels.Length != 8) return;
+            var sprite = renderer.sprite;
+            float pixelsHigh = opaquePixelBounds[index].height;
+            if (pixelsHigh < 1) return;
+            float parentScale = renderer.transform.parent != null ?
+                renderer.transform.parent.lossyScale.y : 1f;
+            float uniformScale = visibleBodyHeight * sprite.pixelsPerUnit /
+                (pixelsHigh * Mathf.Max(.0001f, Mathf.Abs(parentScale)));
+            renderer.transform.localScale = Vector3.one * uniformScale;
+            Vector2 pixelOffset = footPixels[index] - sprite.rect.min - sprite.pivot;
+            Vector3 offset = renderer.transform.TransformVector(new Vector3(
+                pixelOffset.x / sprite.pixelsPerUnit, pixelOffset.y / sprite.pixelsPerUnit, 0));
+            renderer.transform.position = transform.TransformPoint(footLocal) - offset;
+        }
 
-            // A horizontal camera already sees an upright sprite normally.
-            if (screenUpOnFloor.sqrMagnitude < 0.000001f ||
-                screenRightOnFloor.sqrMagnitude < 0.000001f)
-                return Quaternion.LookRotation(-camera.transform.forward,
-                    camera.transform.up);
-
-            float cameraPitch = Mathf.Asin(Mathf.Clamp(
-                Mathf.Abs(Vector3.Dot(camera.transform.forward, Vector3.up)), 0f, 1f))
-                * Mathf.Rad2Deg;
-            float leanRadians = Mathf.Min(cameraPitch,
-                Mathf.Clamp(maxLeanDegrees, 25f, 60f)) * Mathf.Deg2Rad;
-            Vector3 spriteUp = (Vector3.up * Mathf.Cos(leanRadians) +
-                screenUpOnFloor.normalized * Mathf.Sin(leanRadians)).normalized;
-
-            // Preserve PNG handedness: local +X follows screen-right. Unity sprites
-            // face along local -Z; pointing local +Z away avoids horizontal mirroring.
-            Vector3 spriteNormal = Vector3.Cross(
-                screenRightOnFloor.normalized, spriteUp).normalized;
-            return Quaternion.LookRotation(spriteNormal, spriteUp);
+        // Explicit Editor authoring supplies measurements from the original alpha pixels.
+        public void ConfigureScreenPresentation(Rect[] bounds, Vector2[] feet, Material material)
+        {
+            if (bounds == null || feet == null || bounds.Length != 8 || feet.Length != 8 || material == null)
+                throw new ArgumentException("Eight original alpha bounds/feet and an NPC material are required.");
+            if (!screenPresentationConfigured)
+            {
+                physicalFootLocal = physical.transform.localPosition;
+                displayFootLocal = splitDisplay.transform.localPosition;
+            }
+            opaquePixelBounds = bounds; footPixels = feet; visibleBodyHeight = 1.65f;
+            screenPresentationConfigured = true;
+            physical.sharedMaterial = material; splitDisplay.sharedMaterial = material;
+            ApplyPose(); SyncView();
         }
 
         public void Interact()

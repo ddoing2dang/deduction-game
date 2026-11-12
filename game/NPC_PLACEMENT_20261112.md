@@ -67,3 +67,8 @@
 ## 최신 로컬 Unity 적용 확인 — StandingBillboard
 
 실행 중인 Unity 6000.3.26f1에서 기존 WideAisle 씬의 6명 회전을 갱신하고 실제 저장했습니다. 원본 48장과 8방향 참조, 발 좌표·로컬 피벗·크기를 보존했습니다. 전체·6개 객실 확대 캡처와 직렬화 대조 결과는 art/Environment/HotelNpcPlacement/Standing_20261112/에 있습니다. 이전 본문의 미업로드/미실행 문구는 초기 작성 시점의 기록이며 현재 저장 상태는 최신 배치 납품 기록과 이번 검토 기록을 따릅니다. Play Mode·기능 테스트·빌드는 미실시입니다.
+
+
+## 최신 렌더링 확정 — Screen-Aligned 2.5D
+
+45도 StandingBillboard 경사 제한은 탑다운 화면에서 몸을 압축하므로 제거했습니다. 현재 최신 씬은 카메라 화면 정렬·알파 불투명 영역 기준 균등 배율·발 픽셀 등록·NPC 전용 URP 합성 재질을 사용합니다. 기존 6명 좌표와 원본 PNG/.meta GUID는 유지합니다. 실제 Edit Mode 전체/층별/6개 객실 캡처 및 수치 결과는 art/Environment/HotelNpcPlacement/ScreenAligned_20261112/에 있습니다. 이전 StandingBillboard 단계로 되돌리지 않습니다.

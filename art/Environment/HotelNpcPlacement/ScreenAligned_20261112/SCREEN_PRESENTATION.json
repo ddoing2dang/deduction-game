@@ -1,0 +1,1972 @@
+{
+    "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Final_Map_RoomSigns_WideAisle.unity",
+    "sources": [
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_N.png",
+            "guid": "5d4e73f1618c59a4827bae40d7030044",
+            "sha256": "816796e98dd397a365353d9e51196c56271b28581652fcff03fd52e0e7e17b82",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 167.0,
+                "y": 32.0,
+                "width": 178.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NE.png",
+            "guid": "3559a93e0dd75b63bef9330b7a306410",
+            "sha256": "3f10f5d24c03129c3ea8161af57c4532b612dffd6924453efc463f686d8ae4df",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 253.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 157.0,
+                "y": 31.0,
+                "width": 166.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_E.png",
+            "guid": "1afaddb2e15a500f83c9de1a174c9558",
+            "sha256": "484ee2ffbe9bef700b0f80a46b0d7571081bd648561fa13a24b45e785c016050",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 165.0,
+                "y": 31.0,
+                "width": 148.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SE.png",
+            "guid": "834ca87864e95cc9a1ce4d21177b26fc",
+            "sha256": "a6c0747728a5677cfd5904af431dc105ab00f98decac2ab7017672dd25a415f5",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 158.0,
+                "y": 31.0,
+                "width": 175.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_S.png",
+            "guid": "27332cd2db905cc19193adf9624dac3c",
+            "sha256": "bc6e0f48099df43a75e7d8c1982fd521c2e8086b3d8032e82170a46d29b03ae2",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 164.0,
+                "y": 31.0,
+                "width": 182.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_SW.png",
+            "guid": "f6fefc75b5bf5083890948bf4f4cecc8",
+            "sha256": "f8b837a2c1617aac5c0761e13bd7aa4e06a430a0be3212bb2142c6be3cc5409a",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 260.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 182.0,
+                "y": 31.0,
+                "width": 170.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_W.png",
+            "guid": "b6e03501dd035ab7a822c13d9a12748f",
+            "sha256": "b10aa97f0ee047f584292f74ffa40797cceca8718df7c7f61f417e5b6a50c2c3",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 194.0,
+                "y": 32.0,
+                "width": 157.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MATTO",
+            "asset": "Assets/Case464/NPC/MapIdle/MATTO/MapIdle_NW.png",
+            "guid": "903db81c4d965d7482ad7309186def26",
+            "sha256": "024d38ca84d81bede5c7bde8f8969d25b869365d0baa2c354b14df8297a751b6",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 177.0,
+                "y": 32.0,
+                "width": 176.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_N.png",
+            "guid": "dc5081cf29695d27b093402525391bb1",
+            "sha256": "ab601097f0fe213d02debe811b87a712ef0bbf7219a7d2037e493620c4cd0437",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 144.0,
+                "y": 31.0,
+                "width": 223.0,
+                "height": 448.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NE.png",
+            "guid": "d7fca1adbbe6543b9305207ad89dac6e",
+            "sha256": "5ead224120efcb480bf6098955d7883d7b8c2a805677ed7e93bc5510b495945b",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 252.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 139.0,
+                "y": 31.0,
+                "width": 174.0,
+                "height": 451.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_E.png",
+            "guid": "839d3645be3e59dc9c9a7a05df29115a",
+            "sha256": "d0ca373273f2460905eced3f9a315114f773b578b7edc49b1d8f2c00cf99a4aa",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 156.0,
+                "y": 31.0,
+                "width": 146.0,
+                "height": 448.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SE.png",
+            "guid": "6174a467f0ff596da97fb80776b3c13e",
+            "sha256": "5e8b2142e22871854378caf05dfc79b9bd83087f5124bab1536eff8ff48bac3a",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 128.0,
+                "y": 31.0,
+                "width": 200.0,
+                "height": 457.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_S.png",
+            "guid": "e69e66add17454f1b22ccf91d45d7b39",
+            "sha256": "81a41e769fd644740f20b8598d03f3015a7a0fff3e721a5daf11d9bd4e9d720a",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 140.0,
+                "y": 32.0,
+                "width": 232.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_SW.png",
+            "guid": "e8ec221036505010a4314afe716bf478",
+            "sha256": "80abe4d7eebf8fed30502e282d784bd4afecabe639033167226091542ddf7f13",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 179.0,
+                "y": 32.0,
+                "width": 199.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_W.png",
+            "guid": "582d2ce2041d5f49bf75621c83760ea7",
+            "sha256": "dba5e78ec201e88cdaf98ce623de8a0af1682f80fa5f50374ab87811dd9988a9",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 210.0,
+                "y": 31.0,
+                "width": 149.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "JJIRO",
+            "asset": "Assets/Case464/NPC/MapIdle/JJIRO/MapIdle_NW.png",
+            "guid": "4276416108635a24900ad81b87539e12",
+            "sha256": "9699420e4c077189022e8f0e02b9e6d90c70f139d1a6e2e24d259963a815b2a9",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 264.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 190.0,
+                "y": 31.0,
+                "width": 186.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_N.png",
+            "guid": "8a0c81f49dfa542f9de21cedc2341423",
+            "sha256": "21845d5e9c201aa72cf75d1c073fa97f30d1ff58905ffa92da2e771da72166ed",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 170.0,
+                "y": 31.0,
+                "width": 171.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NE.png",
+            "guid": "386dda29c70d5702b852958319fd91bc",
+            "sha256": "50b23340a08d65e3a0e09e2b79d966eab8e8203dac490855e8f888b5d43221b4",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 249.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 153.0,
+                "y": 31.0,
+                "width": 166.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_E.png",
+            "guid": "d25ba6669f4c50fea20c744b1c424ef9",
+            "sha256": "c3a3b3730415aa853fe2d53916c3b2ac82e37749243e0b3ec931b6e444e21cca",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 159.0,
+                "y": 31.0,
+                "width": 153.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SE.png",
+            "guid": "5dba6968e1de55f0bcd193af7cb23975",
+            "sha256": "fd0e55993fbc6db4bcd10c94eae2852a266c3c2ec04b5cf0f794a7911df9799e",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 163.0,
+                "y": 31.0,
+                "width": 170.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_S.png",
+            "guid": "0474e45cae5b5f868985d731601c115c",
+            "sha256": "0dc353c61714bdcd7763b51b35021ce6a798f52694c1bafead98b05013b8e768",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 168.0,
+                "y": 32.0,
+                "width": 175.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_SW.png",
+            "guid": "5f7780a5c6e752eaa721770109764fdf",
+            "sha256": "b16b7e173adff3ad875382f7376e4fae2843a385751ce908e6672dd7337c4e20",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 176.0,
+                "y": 31.0,
+                "width": 173.0,
+                "height": 461.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_W.png",
+            "guid": "40f0230f73d35e88a58c6cb80d84928a",
+            "sha256": "8da2642c56f17c741311d1c66eaceebf75cd66ab19b6824492ab2854b52033e0",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 202.0,
+                "y": 31.0,
+                "width": 152.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "BOKI",
+            "asset": "Assets/Case464/NPC/MapIdle/BOKI/MapIdle_NW.png",
+            "guid": "c001552d6edd581897f102f3e1883b08",
+            "sha256": "7bb0f6a12b247ba9efd2acc98acd2b6168734880af5e6d681b3c6de8f292e8e6",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 257.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 182.0,
+                "y": 31.0,
+                "width": 174.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_N.png",
+            "guid": "ba27a0ca34e65cc3bddc32278aa9917d",
+            "sha256": "c99ba8359ad286f76ae9300184b6e5df725e272e74e414fa22eb205460b80987",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 128.0,
+                "y": 31.0,
+                "width": 251.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NE.png",
+            "guid": "fdaf66ccf9765eaf817806a4d76bbdd1",
+            "sha256": "9693f4e7f36d767feeebd998ef7546811190c57f6e4befd6b6d320aba026ce74",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 253.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 122.0,
+                "y": 31.0,
+                "width": 198.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_E.png",
+            "guid": "39fd7adb4d4258f5a69b982f411baa71",
+            "sha256": "0943b914d7bc837627cbf2579684dbeb5285d0c0264b6a07a49e0044d103236d",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 253.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 154.0,
+                "y": 31.0,
+                "width": 157.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SE.png",
+            "guid": "a866c7351338567b8e8fb88042ed5a56",
+            "sha256": "cfeb479b1ee01da931f7fd3925cbb11f5340d48d081ba7b7c44115dc18151a48",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 257.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 127.0,
+                "y": 31.0,
+                "width": 229.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_S.png",
+            "guid": "180deef62f055a66b9c51895cf778727",
+            "sha256": "bca9246f86896d9e3209b6360a01c1bef1f71f3f0660d5f9691ed49148d1f891",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 131.0,
+                "y": 31.0,
+                "width": 246.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_SW.png",
+            "guid": "1a1d821a67e659a1a8736c1ed22ad71e",
+            "sha256": "f88afdc2a8c29162503dec6b4dc46787f20cdc11ca11d854f4e9434a0c00c458",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 254.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 155.0,
+                "y": 31.0,
+                "width": 225.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_W.png",
+            "guid": "3a832c97e9be558abd0d28a327456825",
+            "sha256": "93c2400b619c9cb50bbd3b848d8868adca9f03390226807740a46e57d1052622",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 200.0,
+                "y": 31.0,
+                "width": 155.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MARIHI",
+            "asset": "Assets/Case464/NPC/MapIdle/MARIHI/MapIdle_NW.png",
+            "guid": "eea9d6fed2a05e18aaff0b1c4a5f547c",
+            "sha256": "0b3e58f4cd1e409a11f5334cedfad3ecd42c77f891d69c130da7b921ceef3900",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 258.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 183.0,
+                "y": 32.0,
+                "width": 204.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_N.png",
+            "guid": "d6b4340ebba15b1d80b144a8aeb8164d",
+            "sha256": "c6d3cde7c1615e564f7b1cc5de9086418d024a201c6aa3bacee743cba007f2e1",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 144.0,
+                "y": 31.0,
+                "width": 220.0,
+                "height": 453.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NE.png",
+            "guid": "baa94bcd41c2598ba41ccea9565e5258",
+            "sha256": "b902429e57f0b05e13a085cc83a0b2c828424a4d88e09256870b82f23059b1e0",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 139.0,
+                "y": 32.0,
+                "width": 185.0,
+                "height": 454.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_E.png",
+            "guid": "1651c0407087540fae3caa88dfafc2c8",
+            "sha256": "6e677c9a3b3bfcde7d79ce763ff0110419a5ac2758b23a40762e299ae045e50b",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 139.0,
+                "y": 32.0,
+                "width": 169.0,
+                "height": 451.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SE.png",
+            "guid": "316a4610cd7d50ab85764d854827d151",
+            "sha256": "7f1f31665f5b804c7a3fe3c13b1118d6e3fa3b8c3b651236ff846e24e6b57d3b",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 168.0,
+                "y": 31.0,
+                "width": 214.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_S.png",
+            "guid": "9aad7fc66df255788333ac2669ebe8c5",
+            "sha256": "bac4c8f87014b7b3566564ccfdaf398196940a358e74a49e3005808aa4aeb227",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 146.0,
+                "y": 32.0,
+                "width": 223.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_SW.png",
+            "guid": "6e04d0e86aa75be0b64792accdaa7660",
+            "sha256": "aebb04fd62cab333865e689c56e263b23d02de8da94cdc09ad3598c6563384d4",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 172.0,
+                "y": 32.0,
+                "width": 204.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_W.png",
+            "guid": "bff2ca0824115051b2e4e9d315d0fb0a",
+            "sha256": "fdefab21eff0220cc76392257775e0f452d9005964a9209f13145e62957976f6",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 204.0,
+                "y": 32.0,
+                "width": 169.0,
+                "height": 459.0
+            }
+        },
+        {
+            "npc": "NAZ",
+            "asset": "Assets/Case464/NPC/MapIdle/NAZ/MapIdle_NW.png",
+            "guid": "5fa5bc9493b15602b7f29f6de83d12e4",
+            "sha256": "b228dcc17646b3655169b5776ad8c3a38b4d3fdded47c58a3db6323ac6fc0e37",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 266.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 198.0,
+                "y": 31.0,
+                "width": 194.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_N.png",
+            "guid": "65557242846557739e01b6204a7cd474",
+            "sha256": "48ecc3d70b0af4f23e57e9ea1d3c5ef750d3695b465bf194909b91e3cd716798",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 146.0,
+                "y": 31.0,
+                "width": 217.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NE.png",
+            "guid": "75a75d6fc2dd503b9ab61c4dd757fe06",
+            "sha256": "e0fc0aeda5b73f6fa85fea116152f4284da707bc5ec661fdf8cbb3fbd53323ec",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 262.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 146.0,
+                "y": 31.0,
+                "width": 183.0,
+                "height": 461.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_E.png",
+            "guid": "ea072cf4945156e8ac99649af4d81b1c",
+            "sha256": "5529662bd3e33e376661e3e2b6b1ff34e69d5eaa4df611e644bdd8d0c0ae3408",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 255.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 134.0,
+                "y": 31.0,
+                "width": 184.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SE.png",
+            "guid": "b8c7b5e11a605a27b694ee32fa5cccbe",
+            "sha256": "af761d9433bf6fe6e9f61117183c1a1401d67fd33513a903941497ea86c6f9ec",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 246.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 132.0,
+                "y": 31.0,
+                "width": 199.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_S.png",
+            "guid": "2d9d42316f53508dad395076494e135e",
+            "sha256": "529fd5e7a8489d100ceb066501428ffca41d9c40a3e91eeec5db3e9dfaf39344",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 256.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 141.0,
+                "y": 31.0,
+                "width": 229.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_SW.png",
+            "guid": "29b3964d944558ada3b6329736dd3d6b",
+            "sha256": "c69c01cd9ee6d604f12a6702cb5e63d8b4f7e66946f796332e394e1593aa3709",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 258.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 186.0,
+                "y": 31.0,
+                "width": 192.0,
+                "height": 461.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_W.png",
+            "guid": "6291aaef6b4b572b94958ccb1c36432c",
+            "sha256": "e96f92ba0e12eb945994529197b082c925d710f1ada7e249952c8ea7a9688f18",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 257.0,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 194.0,
+                "y": 31.0,
+                "width": 185.0,
+                "height": 460.0
+            }
+        },
+        {
+            "npc": "MOONIRE",
+            "asset": "Assets/Case464/NPC/MapIdle/MOONIRE/MapIdle_NW.png",
+            "guid": "8027c56bb4dd55b8809ce60d730715e4",
+            "sha256": "80238a6a19a017aed1433bb80ed8deb5424afd50f00fb97f2b1bafdf63181757",
+            "width": 512,
+            "height": 512,
+            "pixelsPerUnit": 256.0,
+            "pivot": {
+                "x": 256.0,
+                "y": 32.0
+            },
+            "opaqueFeet": {
+                "x": 250.5,
+                "y": 31.0
+            },
+            "opaquePixels": {
+                "serializedVersion": "2",
+                "x": 182.0,
+                "y": 31.0,
+                "width": 185.0,
+                "height": 460.0
+            }
+        }
+    ],
+    "views": [
+        {
+            "view": "Full",
+            "npc": "MATTO",
+            "visible": true,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.395651638507843,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "Full",
+            "npc": "JJIRO",
+            "visible": true,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054479837417603,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "Full",
+            "npc": "BOKI",
+            "visible": true,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.38126376271247866,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "Full",
+            "npc": "MARIHI",
+            "visible": true,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347826480865479,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "Full",
+            "npc": "NAZ",
+            "visible": true,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4858399033546448,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "Full",
+            "npc": "MOONIRE",
+            "visible": true,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.49782633781433108,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "MATTO",
+            "visible": true,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3956523835659027,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "JJIRO",
+            "visible": true,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054472088813782,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "BOKI",
+            "visible": true,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3812616765499115,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347838401794434,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4858383238315582,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "FirstFloor",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4978252649307251,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.39565205574035647,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054455399513245,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.38126352429389956,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "MARIHI",
+            "visible": true,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347826480865479,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "NAZ",
+            "visible": true,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583880066871645,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "SecondFloor",
+            "npc": "MOONIRE",
+            "visible": true,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.497826486825943,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "MATTO",
+            "visible": true,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.39565175771713259,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054470896720886,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.38126158714294436,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347827672958374,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583802580833437,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MATTO",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4978269338607788,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3956519365310669,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "JJIRO",
+            "visible": true,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054466128349304,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3812631368637085,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347833037376404,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583823442459109,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "JJIRO",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.497827410697937,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3956524133682251,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054466128349304,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "BOKI",
+            "visible": true,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3812621831893921,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347825288772583,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583897948265078,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "BOKI",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4978262186050415,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3956538736820221,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054469704627991,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3812619745731354,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "MARIHI",
+            "visible": true,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347816348075867,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583877086639407,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MARIHI",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.497825562953949,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.39565303921699526,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054464936256409,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.381263792514801,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347817540168762,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "NAZ",
+            "visible": true,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.48583877086639407,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "NAZ",
+            "npc": "MOONIRE",
+            "visible": false,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.49782463908195498,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "MATTO",
+            "visible": false,
+            "root": {
+                "x": 5.071018695831299,
+                "y": 0.0270999688655138,
+                "z": 4.1517767906188969
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.39565202593803408,
+            "sourceAspect": 0.395652174949646,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "JJIRO",
+            "visible": false,
+            "root": {
+                "x": -0.3878493309020996,
+                "y": 0.0270999688655138,
+                "z": 9.61064624786377
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5054468512535095,
+            "sourceAspect": 0.5054466128349304,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "BOKI",
+            "visible": false,
+            "root": {
+                "x": -9.559027671813965,
+                "y": 0.0270999688655138,
+                "z": 18.78182601928711
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.3812648057937622,
+            "sourceAspect": 0.3812636137008667,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "MARIHI",
+            "visible": false,
+            "root": {
+                "x": 2.352548122406006,
+                "y": 0.0270999688655138,
+                "z": -11.252201080322266
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.5347813963890076,
+            "sourceAspect": 0.5347825884819031,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "NAZ",
+            "visible": false,
+            "root": {
+                "x": -2.0103044509887697,
+                "y": 0.0270999688655138,
+                "z": -8.232847213745118
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4858388900756836,
+            "sourceAspect": 0.48583877086639407,
+            "footPixelError": 0.0
+        },
+        {
+            "view": "MOONIRE",
+            "npc": "MOONIRE",
+            "visible": true,
+            "root": {
+                "x": -12.80782699584961,
+                "y": 0.0270999688655138,
+                "z": 1.4333033561706544
+            },
+            "screenUpDot": 1.0000001192092896,
+            "screenRightDot": 1.000000238418579,
+            "projectedAspect": 0.4978262484073639,
+            "sourceAspect": 0.49782609939575198,
+            "footPixelError": 0.0
+        }
+    ],
+    "rootCoordinatesPreserved": true,
+    "cameraPreserved": true,
+    "saved": true
+}

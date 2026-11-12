@@ -1,0 +1,114 @@
+{
+  "originalPng48AndMeta48Unchanged": true,
+  "sceneObjectsBefore": 23217,
+  "sceneObjectsAfter": 23217,
+  "sceneObjectsAdded": 0,
+  "sceneObjectsRemoved": 0,
+  "unapprovedChangedBlocks": 0,
+  "changedNpcSpriteRenderers": 12,
+  "changedNpcVisualTransforms": 12,
+  "changedNpcConfigurations": 6,
+  "worldCoordinates": [
+    {
+      "npc": "MATTO",
+      "position": {
+        "x": 5.071018695831299,
+        "y": 0.0270999688655138,
+        "z": 4.1517767906188965
+      }
+    },
+    {
+      "npc": "JJIRO",
+      "position": {
+        "x": -0.3878493309020996,
+        "y": 0.0270999688655138,
+        "z": 9.61064624786377
+      }
+    },
+    {
+      "npc": "BOKI",
+      "position": {
+        "x": -9.559027671813965,
+        "y": 0.0270999688655138,
+        "z": 18.78182601928711
+      }
+    },
+    {
+      "npc": "MARIHI",
+      "position": {
+        "x": 2.352548122406006,
+        "y": 0.0270999688655138,
+        "z": -11.252201080322266
+      }
+    },
+    {
+      "npc": "NAZ",
+      "position": {
+        "x": -2.0103044509887695,
+        "y": 0.0270999688655138,
+        "z": -8.232847213745117
+      }
+    },
+    {
+      "npc": "MOONIRE",
+      "position": {
+        "x": -12.80782699584961,
+        "y": 0.0270999688655138,
+        "z": 1.4333033561706543
+      }
+    }
+  ],
+  "mapFurnitureLightsCameraAndDialogueReferencesPreserved": true,
+  "visibilityByView": {
+    "Full": [
+      "MATTO",
+      "JJIRO",
+      "BOKI",
+      "MARIHI",
+      "NAZ",
+      "MOONIRE"
+    ],
+    "FirstFloor": [
+      "MATTO",
+      "JJIRO",
+      "BOKI"
+    ],
+    "SecondFloor": [
+      "MARIHI",
+      "NAZ",
+      "MOONIRE"
+    ],
+    "MATTO": [
+      "MATTO"
+    ],
+    "JJIRO": [
+      "JJIRO"
+    ],
+    "BOKI": [
+      "BOKI"
+    ],
+    "MARIHI": [
+      "MARIHI"
+    ],
+    "NAZ": [
+      "NAZ"
+    ],
+    "MOONIRE": [
+      "MOONIRE"
+    ]
+  },
+  "maxFootPixelError": 0,
+  "maxAspectRatioError": 0.0000020265579223632812,
+  "editModeCapturesReviewed": [
+    "Full",
+    "FirstFloor",
+    "SecondFloor",
+    "MATTO",
+    "JJIRO",
+    "BOKI",
+    "MARIHI",
+    "NAZ",
+    "MOONIRE"
+  ],
+  "runtimeVerification": "UNVERIFIED: no Play Mode, functional tests or builds."
+}
