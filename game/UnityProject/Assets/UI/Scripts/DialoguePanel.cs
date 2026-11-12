@@ -42,6 +42,9 @@ namespace Mystery.UI
             public Sprite portrait;
         }
         [SerializeField] private SpeakerPortrait[] speakerPortraits = Array.Empty<SpeakerPortrait>();
+        // HOTEL / Rose Mansion uses its own approved portraits. Never overwrite
+        // the shared portraits belonging to other themes.
+        [SerializeField] private SpeakerPortrait[] mansionPortraits = Array.Empty<SpeakerPortrait>();
         [Header("Optional approved dialogue adapter")]
         public UnityEvent<string> questionSubmitted = new UnityEvent<string>();
 
@@ -102,10 +105,30 @@ namespace Mystery.UI
 
         public Sprite GetPortraitFor(DialogueSpeaker target)
         {
-            if (speakerPortraits == null) return null;
-            foreach (var item in speakerPortraits)
+            // Missing HOTEL artwork stays blank rather than showing a different
+            // theme's portrait for the same logical NPC ID.
+            var entries = theme == DialogueTheme.MANSION
+                ? mansionPortraits : speakerPortraits;
+            if (entries == null) return null;
+            foreach (var item in entries)
                 if (item.speaker == target) return item.portrait;
             return null;
+        }
+
+        // UI-only display names; DialogueSpeaker numeric values stay unchanged
+        // so previously serialized scenes, saves and case data remain compatible.
+        public static string DisplayNameFor(DialogueSpeaker target)
+        {
+            return (int)target switch
+            {
+                0 => "마도은",
+                1 => "마혜인",
+                2 => "나지수",
+                3 => "김보희",
+                4 => "진초록",
+                5 => "문이현",
+                _ => target.ToString()
+            };
         }
 
         private void OnEnable()
@@ -158,7 +181,7 @@ namespace Mystery.UI
             }
 
             if (!playing)
-                SetCurrentLine(speaker.ToString(), previewText);
+                SetCurrentLine(DisplayNameFor(speaker), previewText);
             else if (hasQueuedReply && queuedContext.Equals(CurrentContext))
             {
                 // Keep the player's last question visible until its reply's turn.
@@ -198,16 +221,7 @@ namespace Mystery.UI
         private void RefreshPortrait()
         {
             if (npcPortrait == null || dialogueBody == null) return;
-            Sprite selected = null;
-            if (speakerPortraits != null)
-            {
-                for (int i = 0; i < speakerPortraits.Length; i++)
-                {
-                    if (speakerPortraits[i].speaker != speaker) continue;
-                    selected = speakerPortraits[i].portrait;
-                    break;
-                }
-            }
+            Sprite selected = GetPortraitFor(speaker);
 
             npcPortrait.sprite = selected;
             npcPortrait.preserveAspect = true;
@@ -239,9 +253,9 @@ namespace Mystery.UI
                 SetCurrentLine(last.who, last.text);
             }
             else if (latestReplies.TryGetValue(CurrentContext, out var lastReply))
-                SetCurrentLine(speaker.ToString(), lastReply);
+                SetCurrentLine(DisplayNameFor(speaker), lastReply);
             else
-                SetCurrentLine(speaker.ToString(), "");
+                SetCurrentLine(DisplayNameFor(speaker), "");
         }
 
         private void QueueOrShowReply(string who, string line)
@@ -304,8 +318,8 @@ namespace Mystery.UI
             if (!Application.IsPlaying(gameObject) || string.IsNullOrWhiteSpace(approvedText)) return;
             latestReplies[CurrentContext] = approvedText;
             if (statusText != null) statusText.text = "";
-            AddEntry(speaker.ToString(), approvedText);
-            QueueOrShowReply(speaker.ToString(), approvedText);
+            AddEntry(DisplayNameFor(speaker), approvedText);
+            QueueOrShowReply(DisplayNameFor(speaker), approvedText);
         }
 
         // For unapproved/missing case data: never impersonate an NPC.
