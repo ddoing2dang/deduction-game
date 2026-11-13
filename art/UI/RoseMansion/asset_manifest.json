@@ -1,0 +1,165 @@
+{
+  "project": "Case464",
+  "area": "RoseMansion",
+  "created": "2026-11-14",
+  "notes": "No existing Unity scenes or legacy images overwritten. Current art and design references separated.",
+  "existing_intro": "game/UnityProject/Assets/UI/Art/Intro/RoseMansion_Intro_Title.png",
+  "assets": [
+    {
+      "index": 1,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Suspicion/Dialogue_Frame_Empty.png",
+      "category": "current",
+      "description": "Dialogue frame with no baked-in name or dialogue text",
+      "bytes": 707408,
+      "dimensions": [
+        2152,
+        393
+      ],
+      "sha256": "f60477377f9128325e49320a39cd9009f7112b8b9cae8b0f00347b35b48cb8dc"
+    },
+    {
+      "index": 2,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Suspicion/Question_Parchment_3EmptyRows.png",
+      "category": "current",
+      "description": "Transparent parchment question frame with three blank rows",
+      "bytes": 384326,
+      "dimensions": [
+        610,
+        490
+      ],
+      "sha256": "26305e1f0dcdea5706edbb1d7b820b16ac8f4a5db295ff6158740df096eb93ef"
+    },
+    {
+      "index": 3,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Suspicion/Title_Suspicion.png",
+      "category": "current",
+      "description": "Small suspicion heading for top-left corner",
+      "bytes": 332414,
+      "dimensions": [
+        882,
+        377
+      ],
+      "sha256": "f1451cb192498185c0ffcee3818ae08684ddb1151dad24e9d55806b4ffb33355"
+    },
+    {
+      "index": 4,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Navigation/Button_Back.png",
+      "category": "current",
+      "description": "Return to previous selection; no question used",
+      "bytes": 478251,
+      "dimensions": [
+        862,
+        455
+      ],
+      "sha256": "5a4d34d3e60a51ab6b9839d28586dce9bbbc8b32d14aa7ba8e54286a519621dd"
+    },
+    {
+      "index": 5,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Investigation/Magnifier_Active.png",
+      "category": "current",
+      "description": "Color magnifier for active investigation spots",
+      "bytes": 549284,
+      "dimensions": [
+        663,
+        669
+      ],
+      "sha256": "6d710c34343aacf043994d1e208d568738d37f03a449f98a55a21df63897372b"
+    },
+    {
+      "index": 6,
+      "path": "game/UnityProject/Assets/UI/Art/RoseMansion/Investigation/Magnifier_Disabled.png",
+      "category": "current",
+      "description": "Grayscale magnifier for used investigation spots",
+      "bytes": 337458,
+      "dimensions": [
+        663,
+        669
+      ],
+      "sha256": "96b1be7d1c40d4e1e3fe4c74731fe8a0102d8679426c89af03b2c794980b89c0"
+    },
+    {
+      "index": 7,
+      "path": "art/UI/RoseMansion/References/QuestionPanel_WithText_Reference.png",
+      "category": "reference",
+      "description": "Previous text-baked question-panel preview; do not use as dynamic buttons",
+      "bytes": 391222,
+      "dimensions": [
+        632,
+        401
+      ],
+      "sha256": "b55b964a4ac02fc170cdb8c132ee09858d73e309e271e56df4e68e8d8dfcbaa8"
+    },
+    {
+      "index": 8,
+      "path": "art/UI/RoseMansion/References/Magnifier_Original_Color.png",
+      "category": "reference",
+      "description": "Original approved color magnifier",
+      "bytes": 714887,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "28adbb6d59200943fc0f132c85ea614451585473095bce3783fb04499e65c442"
+    },
+    {
+      "index": 9,
+      "path": "art/UI/RoseMansion/References/Magnifier_Original_Grayscale.png",
+      "category": "reference",
+      "description": "Original approved grayscale magnifier",
+      "bytes": 450395,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "368d5f1e707dd616c9391f51c9b7d113d02c02745d8bc3b44e12f69d8b131a0c"
+    },
+    {
+      "index": 10,
+      "path": "art/UI/RoseMansion/References/Magnifier_RoseBadge_Reference.png",
+      "category": "reference",
+      "description": "Separate rose-styled magnifier illustration",
+      "bytes": 566360,
+      "dimensions": [
+        722,
+        714
+      ],
+      "sha256": "fdcf437ab11a13080c9c44b992c9c2bb8a8f238305599b2691c574dd9a32cee8"
+    },
+    {
+      "index": 11,
+      "path": "art/UI/RoseMansion/References/Back_RoseBadge_Reference.png",
+      "category": "reference",
+      "description": "Separate rose-styled back illustration",
+      "bytes": 492772,
+      "dimensions": [
+        920,
+        513
+      ],
+      "sha256": "89faff8aec6aba962a541de474c18f6aebec74ff3b3c3fec39a8e69af6fa4e37"
+    },
+    {
+      "index": 12,
+      "path": "art/UI/RoseMansion/References/Dialogue_FormerVersion.png",
+      "category": "reference",
+      "description": "Older transparent dialogue frame for comparison",
+      "bytes": 449099,
+      "dimensions": [
+        1795,
+        297
+      ],
+      "sha256": "7b4964737292a38543f03d345dff0344d45374c8ebbddb5a7b2a02b888852713"
+    },
+    {
+      "index": 13,
+      "path": "art/UI/RoseMansion/References/Question_FormerVersion.png",
+      "category": "reference",
+      "description": "Older reduced-size transparent question frame for comparison",
+      "bytes": 400248,
+      "dimensions": [
+        637,
+        406
+      ],
+      "sha256": "bea11be8751a6ab84e23089891f5017f4cf35f453542607239af9d45d9707361"
+    }
+  ]
+}
