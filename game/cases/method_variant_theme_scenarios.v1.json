@@ -2,7 +2,7 @@
   "schemaVersion": "1.4.0",
   "createdAt": "2026-11-08",
   "purpose": "27 authored case blueprints = nine proposed subtypes × three approved world themes",
-  "implementationStatus": "design_only_not_playable_or_validated",
+  "implementationStatus": "legacy_scenario_blueprints_not_playable_weapon_ids_require_remapping_after_2026_11_13_final_12",
   "approvedMethodCategoryCount": 4,
   "proposedMethodVariantCount": 9,
   "scenariosCount": 27,
@@ -114,7 +114,7 @@
         "HOTEL_M01_V1_MOONIRE_ROUTE_01",
         "HOTEL_M01_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -145,7 +145,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M01_V1",
@@ -231,7 +232,7 @@
         "CRUISE_M01_V1_MOONIRE_ROUTE_01",
         "CRUISE_M01_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -262,7 +263,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V1",
@@ -353,7 +355,7 @@
         "MUSIC_BROADCAST_M01_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M01_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -384,7 +386,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M01_V2",
@@ -475,7 +478,7 @@
         "HOTEL_M01_V2_MOONIRE_ROUTE_01",
         "HOTEL_M01_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -506,7 +509,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M01_V2",
@@ -592,7 +596,7 @@
         "CRUISE_M01_V2_MOONIRE_ROUTE_01",
         "CRUISE_M01_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -623,7 +627,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M01_V2",
@@ -709,7 +714,7 @@
         "MUSIC_BROADCAST_M01_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M01_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -740,7 +745,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M02_V1",
@@ -831,7 +837,7 @@
         "HOTEL_M02_V1_MOONIRE_ROUTE_01",
         "HOTEL_M02_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -862,7 +868,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M02_V1",
@@ -948,7 +955,7 @@
         "CRUISE_M02_V1_MOONIRE_ROUTE_01",
         "CRUISE_M02_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -979,7 +986,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V1",
@@ -1070,7 +1078,7 @@
         "MUSIC_BROADCAST_M02_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M02_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1101,7 +1109,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M02_V2",
@@ -1188,7 +1197,7 @@
         "HOTEL_M02_V2_MOONIRE_ROUTE_01",
         "HOTEL_M02_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1222,7 +1231,8 @@
       "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M02_V2",
@@ -1314,7 +1324,7 @@
         "CRUISE_M02_V2_MOONIRE_ROUTE_01",
         "CRUISE_M02_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1348,7 +1358,8 @@
       "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M02_V2",
@@ -1440,7 +1451,7 @@
         "MUSIC_BROADCAST_M02_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M02_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1474,7 +1485,8 @@
       "disabledReason": "Falling-object causation has not been established in any built level; case-specific geometry, weight, timeline and forensic signoff required before use.",
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M03_V1",
@@ -1560,7 +1572,7 @@
         "HOTEL_M03_V1_MOONIRE_ROUTE_01",
         "HOTEL_M03_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1591,7 +1603,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M03_V1",
@@ -1682,7 +1695,7 @@
         "CRUISE_M03_V1_MOONIRE_ROUTE_01",
         "CRUISE_M03_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1713,7 +1726,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V1",
@@ -1799,7 +1813,7 @@
         "MUSIC_BROADCAST_M03_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M03_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1830,7 +1844,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M03_V2",
@@ -1921,7 +1936,7 @@
         "HOTEL_M03_V2_MOONIRE_ROUTE_01",
         "HOTEL_M03_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -1952,7 +1967,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M03_V2",
@@ -2043,7 +2059,7 @@
         "CRUISE_M03_V2_MOONIRE_ROUTE_01",
         "CRUISE_M03_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2074,7 +2090,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M03_V2",
@@ -2165,7 +2182,7 @@
         "MUSIC_BROADCAST_M03_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M03_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2196,7 +2213,8 @@
       },
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
-      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown"
+      "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M04_V1",
@@ -2287,7 +2305,7 @@
         "HOTEL_M04_V1_MOONIRE_ROUTE_01",
         "HOTEL_M04_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2320,7 +2338,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M04_V1",
@@ -2411,7 +2430,7 @@
         "CRUISE_M04_V1_MOONIRE_ROUTE_01",
         "CRUISE_M04_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2444,7 +2463,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V1",
@@ -2535,7 +2555,7 @@
         "MUSIC_BROADCAST_M04_V1_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V1_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2568,7 +2588,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail."
+      "healthGuard": "Generic fictional poison; no named chemical, preparation or delivery detail.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M04_V2",
@@ -2654,7 +2675,7 @@
         "HOTEL_M04_V2_MOONIRE_ROUTE_01",
         "HOTEL_M04_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2687,7 +2708,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M04_V2",
@@ -2773,7 +2795,7 @@
         "CRUISE_M04_V2_MOONIRE_ROUTE_01",
         "CRUISE_M04_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2806,7 +2828,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V2",
@@ -2892,7 +2915,7 @@
         "MUSIC_BROADCAST_M04_V2_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V2_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -2925,7 +2948,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions."
+      "healthGuard": "Medicine may be used only if medical exam proves causation; no drug, amount or method instructions.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "HOTEL_M04_V3",
@@ -3012,7 +3036,7 @@
         "HOTEL_M04_V3_MOONIRE_ROUTE_01",
         "HOTEL_M04_V3_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -3045,7 +3069,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "CRUISE_M04_V3",
@@ -3132,7 +3157,7 @@
         "CRUISE_M04_V3_MOONIRE_ROUTE_01",
         "CRUISE_M04_V3_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -3165,7 +3190,8 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     },
     {
       "scenarioId": "MUSIC_BROADCAST_M04_V3",
@@ -3252,7 +3278,7 @@
         "MUSIC_BROADCAST_M04_V3_MOONIRE_ROUTE_01",
         "MUSIC_BROADCAST_M04_V3_MOONIRE_ITEM_01"
       ],
-      "weaponChoiceStatus": "preauthored_recommended_not_user_confirmed_individual_item",
+      "weaponChoiceStatus": "legacy_weapon_reference_requires_remapping_before_case_approval",
       "methodAcceptanceOverride": "Always score one of 4 parent method categories; matching this submethod is optional and must not be required to win.",
       "themeEvidenceValidationStatus": "hypothesis_only_needs_timeline_and_forensic_author_approval",
       "caseAuthorThemeChecks": [
@@ -3285,9 +3311,17 @@
       "plainKoreanPresentation": true,
       "storyReviewScope": "item names and scene description revised to everyday Korean, causality still requires authored validation",
       "caseTruthStatus": "not_authored_culprit_and_conclusive_evidence_unknown",
-      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount."
+      "healthGuard": "Peanut food can only be connected to fatal allergy if victim has medically established allergy and forensic causation; do not provide exposure technique or amount.",
+      "weaponIdMeaning": "LEGACY_DO_NOT_RESOLVE_AGAINST_CURRENT_FINAL_WEAPON_CATALOG"
     }
   ],
   "weaponDesignUpdate": "2026-11-08_user_requested_genuinely_plausible_potentially_lethal_12_types",
-  "reviewStatus": "two_design_editorial_rounds_and_27_cross_ref_checks_done_case_truth_and_Unity_gameplay_validation_not_done"
+  "reviewStatus": "two_design_editorial_rounds_and_27_cross_ref_checks_done_case_truth_and_Unity_gameplay_validation_not_done",
+  "weaponCatalogCompatibility": {
+    "status": "BLOCKED_LEGACY_IDS",
+    "currentWeaponCatalog": "game/cases/weapon_method_catalog.v1.json",
+    "reason": "27 former design scenarios refer to retired W01-W12 names and ID semantics. Do not activate or represent as compatible without replacing weapon references and revalidating culprit, method, physical inventory, and evidence.",
+    "userFinalWeaponNamesDate": "2026-11-13",
+    "runtimeReady": false
+  }
 }
