@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.6.0",
+  "schemaVersion": "1.7.0",
   "createdAt": "2026-11-08",
   "sourceOfTruth": "WEAPON_METHOD_DESIGN.md",
   "implementationStatus": "design_only_unity_not_integrated",
@@ -21,14 +21,50 @@
     "methodVariantApproval": "under_exploration_not_final",
     "methodScoringAcceptParentOnly": true,
     "methodSubtypeRequiredInFinalAccusation": false,
-    "completeReselectionOfWeaponNamesAllowed": true
+    "completeReselectionOfWeaponNamesAllowed": true,
+    "finalWeaponTypesApproved": true,
+    "weaponTypeApprovalDate": "2026-11-13",
+    "roomItemAssignmentsApproved": false
   },
   "interpretationNote": "With 12 types and 18 room placements, each NPC gets 2 base-assigned types plus 1 shared imported type. One of the two base types is also exported into another room, so there are two globally repeated types in each NPC room. 'Two strictly exclusive types + one shared' is mathematically impossible with only 12 types.",
-  "weaponCatalogStatus": "twelve_plausibly_lethal_common_item_proposals_requires_case_specific_forensics_and_access_validation",
+  "weaponCatalogStatus": "user_final_approved_12_types_2026_11_13_room_placements_provisional_not_runtime",
   "methodCatalogStatus": "four_user_approved_categories_nine_subtypes_now_user_requested_for_scenario_design",
   "weapons": [
     {
       "id": "W01",
+      "name": "식칼",
+      "primaryMethodId": "M01",
+      "compatibleMethodIds": [
+        "M01"
+      ],
+      "baseOwner": "ROOM_NAZ",
+      "compatibleVariantIds": [
+        "M01_V1",
+        "M01_V2"
+      ],
+      "itemGroup": "날붙이",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "식사 준비용 칼은 작업/식사 관련 장소에 있을 수 있다. 개인실 보관 이유는 별도 설명",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "식사 준비용 칼은 작업/식사 관련 장소에 있을 수 있다. 개인실 보관 이유는 별도 설명",
+      "caseAuthorChecks": [
+        "날붙이 관련 상처와 해당 물건의 실제 사용 흔적을 입증",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W02",
       "name": "커터칼",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
@@ -45,49 +81,20 @@
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
-      "fictionalItemDesignNote": "익숙한 작은 날붙이. 실제 상처 형태와 흔적이 맞아야 사용 가능.",
+      "fictionalItemDesignNote": "포장 개봉·시설 점검용 작업도구",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "익숙한 작은 날붙이. 실제 상처 형태와 흔적이 맞아야 사용 가능.",
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "포장 개봉·시설 점검용 작업도구",
       "caseAuthorChecks": [
-        "흔적이 날붙이 감식과 부합할 때만 범행 도구 후보"
+        "당일 작업/반입 이유와 실제 사용의 물적 흔적 확인",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
       ],
       "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
       "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W02",
-      "name": "독약병",
-      "primaryMethodId": "M04",
-      "compatibleMethodIds": [
-        "M04"
-      ],
-      "baseOwner": "ROOM_MATTO",
-      "compatibleVariantIds": [
-        "M04_V1"
-      ],
-      "itemGroup": "독·약·음식",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "극중 독성 물질이 담긴 작은 병. 실제 독성 관련 검사 기록이 있을 때만 범행 도구로 인정하고, 구체 물질·용량·사용 절차는 설정하지 않는다.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "극중 독성 물질이 담긴 작은 병. 실제 독성 관련 검사 기록이 있을 때만 범행 도구로 인정하고, 구체 물질·용량·사용 절차는 설정하지 않는다.",
-      "caseAuthorChecks": [
-        "낙하물 충격형은 개인실 소장 도구의 사건실 이동·위치·반환을 확인할 것",
-        "안전 설비/가구 구조 미확정 상태에서 낙하 경로를 사실로 고정하지 말 것"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
     },
     {
       "id": "W03",
@@ -96,7 +103,7 @@
       "compatibleMethodIds": [
         "M01"
       ],
-      "baseOwner": "ROOM_JIRO",
+      "baseOwner": "ROOM_MARIHI",
       "compatibleVariantIds": [
         "M01_V1",
         "M01_V2"
@@ -107,271 +114,24 @@
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
-      "fictionalItemDesignNote": "가방이나 개인실에 있을 법한 흔한 도구. 상처와 개별 물건의 흔적이 맞아야 사용 가능.",
+      "fictionalItemDesignNote": "문서 정리·포장·전시 준비용 도구",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "가방이나 개인실에 있을 법한 흔한 도구. 상처와 개별 물건의 흔적이 맞아야 사용 가능.",
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "문서 정리·포장·전시 준비용 도구",
       "caseAuthorChecks": [
-        "사용 흔적은 감식으로만 확정; 소품 보유는 범행의 증거가 아님"
+        "같은 형태의 가위가 여러 방에 있어도 실물별 상태 구분",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
       ],
       "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
       "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
     },
     {
       "id": "W04",
-      "name": "벨트",
-      "primaryMethodId": "M03",
-      "compatibleMethodIds": [
-        "M03"
-      ],
-      "baseOwner": "ROOM_JIRO",
-      "compatibleVariantIds": [
-        "M03_V1"
-      ],
-      "itemGroup": "천·침구",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "개인 의복에 있는 평범한 소지품. 목 압박 소견이 독립적으로 입증된 경우에만 범행 도구 후보.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "개인 의복에 있는 평범한 소지품. 목 압박 소견이 독립적으로 입증된 경우에만 범행 도구 후보.",
-      "caseAuthorChecks": [
-        "목 압박·호흡 차단 사건별 물질 흔적을 별도 확인"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W05",
-      "name": "아령",
-      "primaryMethodId": "M02",
-      "compatibleMethodIds": [
-        "M02"
-      ],
-      "baseOwner": "ROOM_MARIHI",
-      "compatibleVariantIds": [
-        "M02_V1",
-        "M02_V2"
-      ],
-      "itemGroup": "무거운 물건",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "개인이 운동용으로 소지할 수 있는 무거운 도구. 해당 객실에 가져온 합리적인 사연과 사건 물리 구조가 없으면 사용 불가.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "개인이 운동용으로 소지할 수 있는 무거운 도구. 해당 객실에 가져온 합리적인 사연과 사건 물리 구조가 없으면 사용 불가.",
-      "caseAuthorChecks": [
-        "둔력 후보일 뿐 무게와 접촉 흔적이 검증되지 않으면 살해 도구로 쓰지 말 것",
-        "낙하물 충격형은 사건실 내 배치·시간표 근거 필요"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W06",
-      "name": "수면제",
-      "primaryMethodId": "M04",
-      "compatibleMethodIds": [
-        "M04"
-      ],
-      "baseOwner": "ROOM_MARIHI",
-      "methodCompatibilityReviewNeeded": false,
-      "compatibleVariantIds": [
-        "M04_V2"
-      ],
-      "weaponTypeReplacementRecommended": false,
-      "itemGroup": "독·약·음식",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "약물 관련 사건 후보. 해당 약물의 치명적 영향이 의학적 기록으로 입증된 경우에만 사용; 약 이름·양·사용 방법은 제공하지 않음.",
-      "everydayPlacementRationale": "약물 관련 사건 후보. 해당 약물의 치명적 영향이 의학적 기록으로 입증된 경우에만 사용; 약 이름·양·사용 방법은 제공하지 않음.",
-      "caseAuthorChecks": [
-        "액자 내용으로 특정 관계·직업·피해자 인연을 임의 확정하지 말 것",
-        "둔력 손상 가능성은 실제 감식 및 물건의 물리적 타당성 필요"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W07",
-      "name": "가방끈",
-      "primaryMethodId": "M03",
-      "compatibleMethodIds": [
-        "M03"
-      ],
-      "baseOwner": "ROOM_NAZ",
-      "methodCompatibilityReviewNeeded": false,
-      "compatibleVariantIds": [
-        "M03_V1"
-      ],
-      "itemGroup": "천·침구",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "평범한 가방 소품. 실제 목 압박 관련 흔적이 대조된 경우만 사용.",
-      "weaponTypeReplacementRecommended": false,
-      "everydayPlacementRationale": "평범한 가방 소품. 실제 목 압박 관련 흔적이 대조된 경우만 사용.",
-      "caseAuthorChecks": [
-        "객관적 섬유 흔적 없이 수법을 단정하지 말 것"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W08",
-      "name": "망치",
-      "primaryMethodId": "M02",
-      "compatibleMethodIds": [
-        "M02"
-      ],
-      "baseOwner": "ROOM_NAZ",
-      "compatibleVariantIds": [
-        "M02_V1",
-        "M02_V2"
-      ],
-      "itemGroup": "무거운 물건",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "눈에 익은 공구. 호텔·선실·대기실에 가져온 이유와 출입·이동 사연을 사건에서 설명해야 함.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "눈에 익은 공구. 호텔·선실·대기실에 가져온 이유와 출입·이동 사연을 사건에서 설명해야 함.",
-      "caseAuthorChecks": [
-        "실제 독성·약물 관련 감식 결과가 있는 경우에만 수법과 연계",
-        "의학 기록 없이는 특정 약·질환·용량을 새로 설정하지 말 것"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W09",
-      "name": "유리병",
-      "primaryMethodId": "M02",
-      "compatibleMethodIds": [
-        "M02"
-      ],
-      "baseOwner": "ROOM_BOKI",
-      "compatibleVariantIds": [
-        "M02_V1",
-        "M02_V2"
-      ],
-      "itemGroup": "무거운 물건",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "개인이 가진 유리 용기. 둔력 손상의 의학적·물리적 원인으로 성립할 때만 인정.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "개인이 가진 유리 용기. 둔력 손상의 의학적·물리적 원인으로 성립할 때만 인정.",
-      "caseAuthorChecks": [
-        "내용물·독성·알레르기 원인은 증거가 있는 사건에서만 정의",
-        "용기는 원인 물질 자체와 동일하지 않음을 구별"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W10",
-      "name": "땅콩 과자",
-      "primaryMethodId": "M04",
-      "compatibleMethodIds": [
-        "M04"
-      ],
-      "baseOwner": "ROOM_BOKI",
-      "compatibleVariantIds": [
-        "M04_V3"
-      ],
-      "itemGroup": "독·약·음식",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "특정 피해자에게 생명을 위협하는 알레르기가 있었다는 의학적 증거가 있는 가상 사건에 한해 사용. 구체적 유발 방법은 서술하지 않음.",
-      "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "특정 피해자에게 생명을 위협하는 알레르기가 있었다는 의학적 증거가 있는 가상 사건에 한해 사용. 구체적 유발 방법은 서술하지 않음.",
-      "caseAuthorChecks": [
-        "알레르기 사건에 쓰이는 경우 의료적 반응과 사전 알레르기 정보의 검증 필요",
-        "보키의 괴식 취향이 범인 여부의 단서가 되어서는 안 됨"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W11",
-      "name": "베개",
-      "primaryMethodId": "M03",
-      "compatibleMethodIds": [
-        "M03"
-      ],
-      "baseOwner": "ROOM_MOONIRE",
-      "methodCompatibilityReviewNeeded": false,
-      "weaponTypeReplacementRecommended": false,
-      "compatibleVariantIds": [
-        "M03_V2"
-      ],
-      "itemGroup": "천·침구",
-      "themes": [
-        "HOTEL",
-        "CRUISE",
-        "MUSIC_BROADCAST"
-      ],
-      "fictionalItemDesignNote": "세 테마 개인실에 자연스러운 침구/개인 쿠션. 목 압박이 아닌 호흡 차단 원인은 독립적인 감식으로 입증해야 함.",
-      "everydayPlacementRationale": "세 테마 개인실에 자연스러운 침구/개인 쿠션. 목 압박이 아닌 호흡 차단 원인은 독립적인 감식으로 입증해야 함.",
-      "caseAuthorChecks": [
-        "의학적 감식 없이 질식 여부를 추측할 수 없음",
-        "교살과 호흡 차단 증거 분류를 혼동하지 말 것"
-      ],
-      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
-      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
-    },
-    {
-      "id": "W12",
-      "name": "과일칼",
+      "name": "송곳",
       "primaryMethodId": "M01",
       "compatibleMethodIds": [
         "M01"
@@ -387,19 +147,281 @@
         "CRUISE",
         "MUSIC_BROADCAST"
       ],
-      "fictionalItemDesignNote": "일상적인 날붙이 도구. 각 테마 반입 규정과 상황에 맞을 때만 개인실 배치; 반드시 감식으로 사용 입증.",
+      "fictionalItemDesignNote": "종이·공구 작업 등에 쓰이는 뾰족한 도구",
       "weaponTypeReplacementRecommended": false,
-      "methodCompatibilityReviewNeeded": false,
-      "everydayPlacementRationale": "일상적인 날붙이 도구. 각 테마 반입 규정과 상황에 맞을 때만 개인실 배치; 반드시 감식으로 사용 입증.",
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "종이·공구 작업 등에 쓰이는 뾰족한 도구",
       "caseAuthorChecks": [
-        "실제 날붙이 감식 흔적 없는 경우 살해 도구 후보로 확정하지 말 것",
-        "세 테마 물건 반입 규정이 있으면 따르도록 사건 작성자 확인"
+        "실제 반입 경위와 상처 종류에 맞는지 검증",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
       ],
       "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
       "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
-      "displayNameLanguageRule": "Easy, commonly used Korean household word; no decorative adjectives or specialist term in user-facing name",
-      "usageCaveat": "Potential item only; no cause of death from ownership or appearance. Must pass authored case proof and physical/medical plausibility.",
-      "actualLethalityPolicy": "Potentially capable of causing fatal injury or fatal reaction in a medically and physically plausible fictional case; no default assumption that possession proves use."
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W05",
+      "name": "망치",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02"
+      ],
+      "baseOwner": "ROOM_MOONIRE",
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "itemGroup": "둔기",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "포장·간단한 수리/설치용 공구",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "포장·간단한 수리/설치용 공구",
+      "caseAuthorChecks": [
+        "무거운 물체의 종류만으로 상해 원인 단정 금지",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W06",
+      "name": "스패너",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02"
+      ],
+      "baseOwner": "ROOM_JIRO",
+      "methodCompatibilityReviewNeeded": true,
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "weaponTypeReplacementRecommended": false,
+      "itemGroup": "둔기",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "설비·배관 점검용 공구",
+      "everydayPlacementRationale": "설비·배관 점검용 공구",
+      "caseAuthorChecks": [
+        "수리 업무와 당일 소지 경위 및 객관 감식 필요",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W07",
+      "name": "쇠파이프",
+      "primaryMethodId": "M02",
+      "compatibleMethodIds": [
+        "M02"
+      ],
+      "baseOwner": "ROOM_JIRO",
+      "methodCompatibilityReviewNeeded": true,
+      "compatibleVariantIds": [
+        "M02_V1",
+        "M02_V2"
+      ],
+      "itemGroup": "둔기",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "보수 자재/금속 부재로 사용될 수 있으나 개인실에 있을 이유가 별도로 필요",
+      "weaponTypeReplacementRecommended": false,
+      "everydayPlacementRationale": "보수 자재/금속 부재로 사용될 수 있으나 개인실에 있을 이유가 별도로 필요",
+      "caseAuthorChecks": [
+        "개인실 실제 발견 경위 및 현장 물리적 증거 없이는 사건 도구로 사용 금지",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W08",
+      "name": "주사기",
+      "primaryMethodId": "M04",
+      "compatibleMethodIds": [
+        "M04"
+      ],
+      "baseOwner": "ROOM_NAZ",
+      "compatibleVariantIds": [
+        "M04_V1",
+        "M04_V2"
+      ],
+      "itemGroup": "독·약·물질",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "의료/응급처치용 비품으로 둘 수 있으나 구체적인 반입·보관 목적은 별도 검증",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "의료/응급처치용 비품으로 둘 수 있으나 구체적인 반입·보관 목적은 별도 검증",
+      "caseAuthorChecks": [
+        "내용물·실제 사용 여부·사망 인과에 대한 독립 감식. 특정 주입 방법은 작성하지 않음",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W09",
+      "name": "수상한 약병",
+      "primaryMethodId": "M04",
+      "compatibleMethodIds": [
+        "M04"
+      ],
+      "baseOwner": "ROOM_BOKI",
+      "compatibleVariantIds": [
+        "M04_V1",
+        "M04_V2"
+      ],
+      "itemGroup": "독·약·물질",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "라벨/내용물/소유 경위가 확인되지 않은 소형 용기. 이름은 의심을 뜻할 뿐 독성 확정이 아님",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "라벨/내용물/소유 경위가 확인되지 않은 소형 용기. 이름은 의심을 뜻할 뿐 독성 확정이 아님",
+      "caseAuthorChecks": [
+        "내용물 및 사망 인과 감식. 독약으로 확정하거나 사용법을 미리 단정하지 않음",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W10",
+      "name": "가죽 벨트",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03"
+      ],
+      "baseOwner": "ROOM_MATTO",
+      "compatibleVariantIds": [
+        "M03_V1"
+      ],
+      "itemGroup": "목 압박 관련 물건",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "의복이나 개인 여행용 소지품",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "의복이나 개인 여행용 소지품",
+      "caseAuthorChecks": [
+        "목 압박 관련 신체 소견과 해당 실물의 별도 물증 필요",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W11",
+      "name": "밧줄",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03"
+      ],
+      "baseOwner": "ROOM_BOKI",
+      "methodCompatibilityReviewNeeded": true,
+      "weaponTypeReplacementRecommended": false,
+      "compatibleVariantIds": [
+        "M03_V1"
+      ],
+      "itemGroup": "목 압박 관련 물건",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "물건 포장·시설·행사 준비용 끈",
+      "everydayPlacementRationale": "물건 포장·시설·행사 준비용 끈",
+      "caseAuthorChecks": [
+        "단순 길이/색 유사성만으로 사용 실물 단정 금지",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
+    },
+    {
+      "id": "W12",
+      "name": "전선",
+      "primaryMethodId": "M03",
+      "compatibleMethodIds": [
+        "M03"
+      ],
+      "baseOwner": "ROOM_MARIHI",
+      "compatibleVariantIds": [
+        "M03_V1"
+      ],
+      "itemGroup": "목 압박 관련 물건",
+      "themes": [
+        "HOTEL",
+        "CRUISE",
+        "MUSIC_BROADCAST"
+      ],
+      "fictionalItemDesignNote": "전시/촬영/전기장비에 필요한 케이블. 전기 감전 수법으로 분류하지 않음",
+      "weaponTypeReplacementRecommended": false,
+      "methodCompatibilityReviewNeeded": true,
+      "everydayPlacementRationale": "전시/촬영/전기장비에 필요한 케이블. 전기 감전 수법으로 분류하지 않음",
+      "caseAuthorChecks": [
+        "목 압박 관련 소견과 물적 상태를 대조. 감전이라는 별도 수법은 추가하지 않음",
+        "실제 사용자의 접근·시간표·물적 흔적을 원래 소유자의 성격과 별개로 증명",
+        "개별 테마/객실에 이 물건이 있었던 이유를 정식 사건팩에서 검증"
+      ],
+      "placementReviewPass1": "Object type can plausibly produce required injury/reaction if specific facts established",
+      "placementReviewPass2": "Private-room presence must be justified by evidence, not NPC personality; 3 themes supported only in authored feasible scenarios",
+      "displayNameLanguageRule": "사용자가 확정한 흉기명 유지",
+      "usageCaveat": "최종 확정은 흉기 종류명에 한정. 개별 범인·감식·이동·사망 인과는 승인된 사건별 증거가 있어야 함",
+      "actualLethalityPolicy": "물건 종류만으로 살상 가능성·사용 여부를 자동 확정하지 않고 사건별 의학/물적 증거로 검토"
     }
   ],
   "methods": [
@@ -510,126 +532,126 @@
     {
       "roomId": "ROOM_MATTO",
       "npcId": "MATTO",
-      "npcDisplayName": "마또",
+      "npcDisplayName": "마도은",
       "baseWeaponIds": [
-        "W01",
-        "W02"
+        "W02",
+        "W10"
       ],
-      "borrowedWeaponId": "W11",
-      "borrowedFromRoomId": "ROOM_MOONIRE",
+      "borrowedWeaponId": "W03",
+      "borrowedFromRoomId": "ROOM_MARIHI",
       "slots": [
         {
           "slot": "BASE_1",
-          "weaponId": "W01",
-          "instanceId": "ROOM_MATTO_W01"
-        },
-        {
-          "slot": "BASE_2",
           "weaponId": "W02",
           "instanceId": "ROOM_MATTO_W02"
         },
         {
+          "slot": "BASE_2",
+          "weaponId": "W10",
+          "instanceId": "ROOM_MATTO_W10"
+        },
+        {
           "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W11",
-          "instanceId": "ROOM_MATTO_W11",
-          "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+          "weaponId": "W03",
+          "instanceId": "ROOM_MATTO_W03",
+          "originalTypeOwnerRoomId": "ROOM_MARIHI"
         }
       ],
       "displayItemNames": [
         "커터칼",
-        "독약병",
-        "베개"
+        "가죽 벨트",
+        "가위"
       ],
       "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
     },
     {
       "roomId": "ROOM_JIRO",
       "npcId": "JJIRO",
-      "npcDisplayName": "찌로",
+      "npcDisplayName": "진소율",
+      "baseWeaponIds": [
+        "W06",
+        "W07"
+      ],
+      "borrowedWeaponId": "W05",
+      "borrowedFromRoomId": "ROOM_MOONIRE",
+      "slots": [
+        {
+          "slot": "BASE_1",
+          "weaponId": "W06",
+          "instanceId": "ROOM_JIRO_W06"
+        },
+        {
+          "slot": "BASE_2",
+          "weaponId": "W07",
+          "instanceId": "ROOM_JIRO_W07"
+        },
+        {
+          "slot": "SHARED_FROM_OTHER_NPC",
+          "weaponId": "W05",
+          "instanceId": "ROOM_JIRO_W05",
+          "originalTypeOwnerRoomId": "ROOM_MOONIRE"
+        }
+      ],
+      "displayItemNames": [
+        "스패너",
+        "쇠파이프",
+        "망치"
+      ],
+      "userConfirmedSlotCount": 3,
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
+    },
+    {
+      "roomId": "ROOM_MARIHI",
+      "npcId": "MARIHI",
+      "npcDisplayName": "마연희",
       "baseWeaponIds": [
         "W03",
-        "W04"
+        "W12"
       ],
-      "borrowedWeaponId": "W02",
+      "borrowedWeaponId": "W10",
       "borrowedFromRoomId": "ROOM_MATTO",
       "slots": [
         {
           "slot": "BASE_1",
           "weaponId": "W03",
-          "instanceId": "ROOM_JIRO_W03"
+          "instanceId": "ROOM_MARIHI_W03"
         },
         {
           "slot": "BASE_2",
-          "weaponId": "W04",
-          "instanceId": "ROOM_JIRO_W04"
+          "weaponId": "W12",
+          "instanceId": "ROOM_MARIHI_W12"
         },
         {
           "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W02",
-          "instanceId": "ROOM_JIRO_W02",
+          "weaponId": "W10",
+          "instanceId": "ROOM_MARIHI_W10",
           "originalTypeOwnerRoomId": "ROOM_MATTO"
         }
       ],
       "displayItemNames": [
         "가위",
-        "벨트",
-        "독약병"
+        "전선",
+        "가죽 벨트"
       ],
       "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
-    },
-    {
-      "roomId": "ROOM_MARIHI",
-      "npcId": "MARIHI",
-      "npcDisplayName": "마리히",
-      "baseWeaponIds": [
-        "W05",
-        "W06"
-      ],
-      "borrowedWeaponId": "W03",
-      "borrowedFromRoomId": "ROOM_JIRO",
-      "slots": [
-        {
-          "slot": "BASE_1",
-          "weaponId": "W05",
-          "instanceId": "ROOM_MARIHI_W05"
-        },
-        {
-          "slot": "BASE_2",
-          "weaponId": "W06",
-          "instanceId": "ROOM_MARIHI_W06"
-        },
-        {
-          "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W03",
-          "instanceId": "ROOM_MARIHI_W03",
-          "originalTypeOwnerRoomId": "ROOM_JIRO"
-        }
-      ],
-      "displayItemNames": [
-        "아령",
-        "수면제",
-        "가위"
-      ],
-      "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
     },
     {
       "roomId": "ROOM_NAZ",
       "npcId": "NAZ",
-      "npcDisplayName": "나즈",
+      "npcDisplayName": "나지수",
       "baseWeaponIds": [
-        "W07",
+        "W01",
         "W08"
       ],
-      "borrowedWeaponId": "W05",
-      "borrowedFromRoomId": "ROOM_MARIHI",
+      "borrowedWeaponId": "W06",
+      "borrowedFromRoomId": "ROOM_JIRO",
       "slots": [
         {
           "slot": "BASE_1",
-          "weaponId": "W07",
-          "instanceId": "ROOM_NAZ_W07"
+          "weaponId": "W01",
+          "instanceId": "ROOM_NAZ_W01"
         },
         {
           "slot": "BASE_2",
@@ -638,29 +660,29 @@
         },
         {
           "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W05",
-          "instanceId": "ROOM_NAZ_W05",
-          "originalTypeOwnerRoomId": "ROOM_MARIHI"
+          "weaponId": "W06",
+          "instanceId": "ROOM_NAZ_W06",
+          "originalTypeOwnerRoomId": "ROOM_JIRO"
         }
       ],
       "displayItemNames": [
-        "가방끈",
-        "망치",
-        "아령"
+        "식칼",
+        "주사기",
+        "스패너"
       ],
       "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
     },
     {
       "roomId": "ROOM_BOKI",
       "npcId": "BOKI",
-      "npcDisplayName": "보키",
+      "npcDisplayName": "김보희",
       "baseWeaponIds": [
         "W09",
-        "W10"
+        "W11"
       ],
-      "borrowedWeaponId": "W07",
-      "borrowedFromRoomId": "ROOM_NAZ",
+      "borrowedWeaponId": "W02",
+      "borrowedFromRoomId": "ROOM_MATTO",
       "slots": [
         {
           "slot": "BASE_1",
@@ -669,59 +691,59 @@
         },
         {
           "slot": "BASE_2",
-          "weaponId": "W10",
-          "instanceId": "ROOM_BOKI_W10"
+          "weaponId": "W11",
+          "instanceId": "ROOM_BOKI_W11"
         },
         {
           "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W07",
-          "instanceId": "ROOM_BOKI_W07",
-          "originalTypeOwnerRoomId": "ROOM_NAZ"
+          "weaponId": "W02",
+          "instanceId": "ROOM_BOKI_W02",
+          "originalTypeOwnerRoomId": "ROOM_MATTO"
         }
       ],
       "displayItemNames": [
-        "유리병",
-        "땅콩 과자",
-        "가방끈"
+        "수상한 약병",
+        "밧줄",
+        "커터칼"
       ],
       "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
     },
     {
       "roomId": "ROOM_MOONIRE",
       "npcId": "MOONIRE",
-      "npcDisplayName": "문이레",
+      "npcDisplayName": "문이현",
       "baseWeaponIds": [
-        "W11",
-        "W12"
+        "W04",
+        "W05"
       ],
-      "borrowedWeaponId": "W09",
+      "borrowedWeaponId": "W11",
       "borrowedFromRoomId": "ROOM_BOKI",
       "slots": [
         {
           "slot": "BASE_1",
-          "weaponId": "W11",
-          "instanceId": "ROOM_MOONIRE_W11"
+          "weaponId": "W04",
+          "instanceId": "ROOM_MOONIRE_W04"
         },
         {
           "slot": "BASE_2",
-          "weaponId": "W12",
-          "instanceId": "ROOM_MOONIRE_W12"
+          "weaponId": "W05",
+          "instanceId": "ROOM_MOONIRE_W05"
         },
         {
           "slot": "SHARED_FROM_OTHER_NPC",
-          "weaponId": "W09",
-          "instanceId": "ROOM_MOONIRE_W09",
+          "weaponId": "W11",
+          "instanceId": "ROOM_MOONIRE_W11",
           "originalTypeOwnerRoomId": "ROOM_BOKI"
         }
       ],
       "displayItemNames": [
-        "베개",
-        "과일칼",
-        "유리병"
+        "송곳",
+        "망치",
+        "밧줄"
       ],
       "userConfirmedSlotCount": 3,
-      "itemNamesStatus": "reselected_lethal_potential_design_candidate"
+      "itemNamesStatus": "weapon_types_user_final_room_distribution_provisional"
     }
   ],
   "weaponInstanceRules": {
@@ -729,7 +751,7 @@
     "instanceId": "Distinct physical copy in an NPC room, required to track traces and access",
     "copyPolicy": "Same weaponId in two rooms denotes distinct physical objects of the same type. Never treat one physical object as simultaneously present in two rooms.",
     "crimeScenePolicy": "Only non-weapon evidence such as marks, residue, records and traces in CRIME_SCENE/LOBBY; no physical weapon instance appears outside 6 NPC personal rooms during investigation.",
-    "timelinePolicy": "If a weapon copy was used at the crime scene, a valid case timeline must account for access, transport and return before investigation; otherwise the case is rejected.",
+    "timelinePolicy": "Same W ID in two rooms means distinct objects. Case-specific access, movement, and any return from crime scene must be proven; do not invent a return or imply two copies are one.",
     "evidencePolicy": "Finding a tool alone does not prove it was used, the method or the culprit. Forensic support + NPC knowledge/access + timeline + unique proof graph required."
   },
   "methodSelectionPolicy": {
@@ -773,7 +795,7 @@
       "status": "user_rejected"
     }
   ],
-  "methodCompatibilityStatus": "Conceptual type/variant mapping reverified. 9 variants covered by 12 tools; falling object branch gated by geometry and evidence.",
+  "methodCompatibilityStatus": "Four fixed parent method categories preserved. With the finalized 12 types, M03_V2 and M04_V3 have no approved weapon match and are not playable case variants; remaining variant mappings still require forensic/access review.",
   "deprecatedMethods": [
     {
       "id": "M05",
@@ -796,7 +818,9 @@
         "injury_pattern",
         "forensic_tool_match"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M01_V2",
@@ -807,7 +831,9 @@
         "cut_pattern",
         "forensic_tool_match"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M02_V1",
@@ -818,7 +844,9 @@
         "blunt_force_report",
         "object_mark_comparison"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M02_V2",
@@ -833,7 +861,9 @@
       "specialConstraints": [
         "used_object_must_be_from_one_of_six_npc_rooms",
         "no_unexplained_large_prop_or_new_room"
-      ]
+      ],
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M03_V1",
@@ -844,7 +874,9 @@
         "neck_compression_findings",
         "material_trace_comparison"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M03_V2",
@@ -858,7 +890,9 @@
       "approvalStatus": "proposed_variant",
       "specialConstraints": [
         "review_weapon_catalog_for_matching_item"
-      ]
+      ],
+      "weaponTypeSupportedByFinalCatalog": false,
+      "caseActivation": "blocked_until_new_user_approved_weapon_or_variant_revision"
     },
     {
       "id": "M04_V1",
@@ -869,7 +903,9 @@
         "toxicology_report",
         "container_trace"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M04_V2",
@@ -880,7 +916,9 @@
         "medication_toxicology_report",
         "medical_record_comparison"
       ],
-      "approvalStatus": "proposed_variant"
+      "approvalStatus": "proposed_variant",
+      "weaponTypeSupportedByFinalCatalog": true,
+      "caseActivation": "requires_independent_author_review_and_evidence"
     },
     {
       "id": "M04_V3",
@@ -895,7 +933,9 @@
       "specialConstraints": [
         "must_not_mislabel_allergy_as_poison_toxicology",
         "ensure_selected_weapon_id_or_item_is_coherent"
-      ]
+      ],
+      "weaponTypeSupportedByFinalCatalog": false,
+      "caseActivation": "blocked_until_new_user_approved_weapon_or_variant_revision"
     }
   ],
   "archivedFifthMethodAlternatives": [
@@ -973,7 +1013,7 @@
       ]
     }
   ],
-  "weaponSelectionGuidance": "All 12 item names are familiar and deliberately selected for credible potential fatal harm in the four approved categories, not merely decorative clues. Medical/physical plausibility, person-specific allergy for peanut snack, medicine toxicity and recoverability in the 6 NPC rooms must each be proved by authored case facts. No doses or operational methods.",
+  "weaponSelectionGuidance": "Final 12 types are approved by user. NPC room placements (6×3=18), individual culprit weapon choices, evidence, and scenario compatibility are still provisional. Older 27 scenario blueprints reference retired W ID meanings and must not be enabled until remapped.",
   "itemCoherenceContract": {
     "allThemesHaveSameNames": true,
     "perRoomThreeSlots": true,
@@ -985,10 +1025,32 @@
     "dialogueUsesCaseEvidenceOnlyWhenNPCGrantedKnowledge": true,
     "weaponReviewRoundsCompleted": 2,
     "userFacingSimpleItemNames": true,
-    "plausibilityWarning": "Falling-object subtype is disabled for playable generation until item weight, geometry and movement timeline are independently proved, particularly for hand-held personal props.",
+    "plausibilityWarning": "The 12 item names are user-approved, not their room placement or any concrete lethal method. Existing 27 legacy case blueprints are not compatible by weaponId until remapped.",
     "physicalCapabilityReview": "12 types reviewed for credible potential lethal mechanism only under validated case circumstances, not asserted as actual case outcome",
-    "healthRelatedRestrictions": "No specific toxic agents, drug amount, exposure technique or allergen delivery tactics. Allergy only if established victim medical history and findings.",
+    "healthRelatedRestrictions": "No substances, doses or poisoning/administration techniques defined. Syringe and suspicious vial are only potential evidence, requiring independently validated forensic findings.",
     "fallingObjectSafety": "M02_V2 blueprints not playable without physical room geometry, object plausibility and complete timeline sign-off.",
     "roomOwnerItemsAreNotClueOfGuilt": true
+  },
+  "weaponCatalogApproval": {
+    "status": "user_final_approved_weapon_types_only",
+    "approvedAt": "2026-11-13",
+    "sourceDocument": "game/cases/WEAPON_SHORTLIST_REALISTIC_12.v2.md",
+    "finalIds": [
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W09",
+      "W10",
+      "W11",
+      "W12"
+    ],
+    "roomAssignments": "provisional",
+    "scenarioBlueprintMapping": "legacy_pending_revalidation",
+    "runtimeIntegration": false
   }
 }
