@@ -42,6 +42,15 @@ namespace Mystery.Interrogation
     /// </summary>
     public static class AccusationVerdictRules
     {
+        // Final HOTEL rules: no legacy wrong-attempt limit or required-evidence gate.
+        public static string EvaluateFinalAxes(string suspect, string method, string weapon,
+            string actualCulprit, string actualMethod, string actualWeapon)
+        {
+            if(string.IsNullOrWhiteSpace(actualCulprit)||string.IsNullOrWhiteSpace(actualMethod)||string.IsNullOrWhiteSpace(actualWeapon))
+                throw new InvalidOperationException("Approved final truth is required.");
+            if(suspect!=actualCulprit)return "Misjudged";
+            return method==actualMethod&&weapon==actualWeapon?"Complete":"Partial";
+        }
         public static string ValidateVerdict(CaseFile file)
         {
             if (file == null || file.verdict == null)

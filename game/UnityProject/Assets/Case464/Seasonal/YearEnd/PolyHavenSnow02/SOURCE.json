@@ -1,0 +1,32 @@
+{
+  "asset": "https://polyhaven.com/a/snow_02",
+  "author": "Rob Tuytel",
+  "license": "CC0-1.0",
+  "licenseURL": "https://polyhaven.com/license",
+  "files": {
+    "diff": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/snow_02/snow_02_diff_2k.png",
+      "file": "game\\UnityProject\\Assets\\Case464\\Seasonal\\YearEnd\\PolyHavenSnow02\\snow_02_diff_2k.png",
+      "bytes": 5321286,
+      "sha256": "9abe413e1740fa91564ce8111eb9cf11ae52b8de2914b884dda39c162e598289"
+    },
+    "nor_gl": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/snow_02/snow_02_nor_gl_2k.png",
+      "file": "game\\UnityProject\\Assets\\Case464\\Seasonal\\YearEnd\\PolyHavenSnow02\\snow_02_nor_gl_2k.png",
+      "bytes": 8901048,
+      "sha256": "719e5acd81ee61cf19506a8e0069ea297ed00d2eb71a40101c4002cf35ac2e19"
+    },
+    "rough": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/snow_02/snow_02_rough_2k.png",
+      "file": "game\\UnityProject\\Assets\\Case464\\Seasonal\\YearEnd\\PolyHavenSnow02\\snow_02_rough_2k.png",
+      "bytes": 1656423,
+      "sha256": "0dcb2775b1220cee03dae5b92b57cc3e55bcece6a7e9fa0ac7a22b56dbbb6863"
+    },
+    "disp": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/snow_02/snow_02_disp_2k.png",
+      "file": "game\\UnityProject\\Assets\\Case464\\Seasonal\\YearEnd\\PolyHavenSnow02\\snow_02_disp_2k.png",
+      "bytes": 7218660,
+      "sha256": "f2b979bc78989333ebfffb2063ba9ca72edc3ffc929f6a6d94ba39d80eb0358a"
+    }
+  }
+}

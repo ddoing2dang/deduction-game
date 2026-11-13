@@ -1,0 +1,63 @@
+{
+  "status": "STOPPED_AFTER_TWO_UI_PREVIEW_FAILURES",
+  "utc": "2026-11-13T10:36:54.839Z",
+  "lastSuccessfulGitSha": "7714f73bf35b5e6e469e0a42cf2678fdbdbc4034",
+  "sourceScene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_YearEnd_EntrySnow_Work.unity",
+  "createdScene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Gameplay_Work.unity",
+  "compile": "Complete",
+  "domainReload": "Complete",
+  "playModeRun": false,
+  "functionalTestsRun": false,
+  "buildRun": false,
+  "committed": false,
+  "pushed": false,
+  "failures": [
+    {
+      "attempt": 1,
+      "operation": "authoring UI capture sequence Main -> Lobby",
+      "error": "HTTP 400 Bad Request from Unity Pipeline; Main preview saved, later preview interrupted"
+    },
+    {
+      "attempt": 2,
+      "operation": "isolated Lobby authoring preview",
+      "error": "System.InvalidOperationException: Sequence contains no matching element",
+      "stack": "RoseProgress.Room -> RoseMansionSession.RoomStatus -> RoseMansionView.LobbyScreen -> BuildAuthoringPreview -> RoseMansionCoreAuthoring.Capture"
+    }
+  ],
+  "confirmedProblem": "Lobby authoring preview reads a non-null progress object with no matching room progress row. This is not a player-created game state.",
+  "hypothesis": "Unity domain reload may have reconstructed an empty serializable private progress object; preview code must be isolated from live progress rather than treating non-null as initialized.",
+  "lastSuccessfulSteps": [
+    "source C# backups saved",
+    "NPC-free source scene backed up",
+    "new runtime data/flow/notebook/save/accusation/UI code compiled",
+    "new gameplay scene created and saved",
+    "legacy incompatible UI controllers disabled only in derived gameplay scene",
+    "protected world mesh/camera/light components unchanged during scene assembly",
+    "Main menu authoring render saved"
+  ],
+  "contentPending": {
+    "truthBranches": 6,
+    "investigationSlots": 42,
+    "greetings": 6,
+    "culpritGreetingOverrides": 6,
+    "culpritQ1Overrides": 6,
+    "reenactments": 6,
+    "endings": 18
+  },
+  "resumeNeeds": [
+    "Fix authoring preview State access to never read or mutate live investigation state",
+    "Distinguish initialized progress from a default deserialized object and restore PRNG state safely on domain reload",
+    "Retain all current scenes and source backups; no deletion or overwrite of original map",
+    "Then automatic refresh once, observe compile and domain reload completion, resume authoring UI captures",
+    "Functional progression and persistence remain unverified; do not run Play Mode/tests/build without separate authorization",
+    "Review source changes and scene dependencies before a narrowly scoped Git commit/push"
+  ],
+  "resumeRefreshCommand": "C:/Progra~1/BLENDE~1/BLENDE~1.0/5.0/python/bin/python.exe tools/unity/refresh_editor_assets.py --scripts-changed --scene Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Gameplay_Work.unity --no-hotel-checks",
+  "sourceBackups": "art/Development/RoseMansionCore/2026-11-13T10-18-50-705Z/SourceBackups",
+  "protectedSourceHashesMatch": {
+    "game/dialogue/npc_dialogue_catalog.v1.json": true,
+    "game/cases/weapon_method_catalog.v1.json": true,
+    "game/GAMEPLAY_FINAL_CURRENT.md": true,
+    "game/UnityProject/Assets/Case464/HotelMapCameraController.cs": true
+  }
+}

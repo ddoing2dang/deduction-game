@@ -10,6 +10,8 @@ namespace Mystery.Interrogation
     [Serializable]
     public sealed class CaseProgressSave
     {
+        // Optional final HOTEL flow. Legacy saves keep their original fields/format.
+        public Case464.RoseMansion.RoseProgress roseMansion;
         public int schemaVersion = 1;
         public string caseId;
         public int theme;

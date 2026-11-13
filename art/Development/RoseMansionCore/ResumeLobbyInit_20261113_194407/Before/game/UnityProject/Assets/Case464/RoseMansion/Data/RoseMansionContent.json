@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "contentRevision": "rose-core-pending-20261113",
+  "source": "game/GAMEPLAY_FINAL_CURRENT.md",
+  "contentApproved": false,
+  "methods": [
+    {
+      "id": "M01",
+      "name": "자상·절창",
+      "aliases": [
+        "자상",
+        "절창",
+        "날붙이 공격",
+        "칼에 의한 손상",
+        "찌름",
+        "베임"
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "둔력 손상",
+      "aliases": [
+        "타박상",
+        "둔력 손상",
+        "둔기 타격",
+        "둔기로 가격",
+        "충격"
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "질식사",
+      "aliases": [
+        "질식",
+        "질식사",
+        "교살",
+        "목 졸림",
+        "목 압박",
+        "호흡 차단"
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "독살·물질 반응",
+      "aliases": [
+        "독살",
+        "중독",
+        "독극물",
+        "약물 중독",
+        "급성 알레르기 반응",
+        "아나필락시스"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "id": "W01",
+      "name": "식칼",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M01"
+      ]
+    },
+    {
+      "id": "W02",
+      "name": "커터칼",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M01"
+      ]
+    },
+    {
+      "id": "W03",
+      "name": "가위",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M01"
+      ]
+    },
+    {
+      "id": "W04",
+      "name": "송곳",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M01"
+      ]
+    },
+    {
+      "id": "W05",
+      "name": "망치",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M02"
+      ]
+    },
+    {
+      "id": "W06",
+      "name": "스패너",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M02"
+      ]
+    },
+    {
+      "id": "W07",
+      "name": "쇠파이프",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M02"
+      ]
+    },
+    {
+      "id": "W08",
+      "name": "주사기",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M04"
+      ]
+    },
+    {
+      "id": "W09",
+      "name": "수상한 약병",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M04"
+      ]
+    },
+    {
+      "id": "W10",
+      "name": "가죽 벨트",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M03"
+      ]
+    },
+    {
+      "id": "W11",
+      "name": "밧줄",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M03"
+      ]
+    },
+    {
+      "id": "W12",
+      "name": "전선",
+      "aliases": [],
+      "compatibleMethodIds": [
+        "M03"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "LOBBY",
+      "number": "",
+      "npcId": "",
+      "name": "로비",
+      "floor": 1,
+      "slots": []
+    },
+    {
+      "id": "ROOM_MATTO",
+      "number": "101",
+      "npcId": "MATTO",
+      "name": "마도은",
+      "floor": 1,
+      "aliases": [
+        "MATTO"
+      ],
+      "greeting": {
+        "id": "ROOM_MATTO:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_MATTO:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MATTO:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MATTO:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MATTO:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MATTO:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MATTO:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "ROOM_JIRO",
+      "number": "102",
+      "npcId": "JJIRO",
+      "name": "진소율",
+      "floor": 1,
+      "aliases": [
+        "JJIRO"
+      ],
+      "greeting": {
+        "id": "ROOM_JIRO:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_JIRO:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_JIRO:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_JIRO:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_JIRO:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_JIRO:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_JIRO:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "ROOM_BOKI",
+      "number": "103",
+      "npcId": "BOKI",
+      "name": "김보희",
+      "floor": 1,
+      "aliases": [
+        "BOKI"
+      ],
+      "greeting": {
+        "id": "ROOM_BOKI:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_BOKI:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_BOKI:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_BOKI:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_BOKI:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_BOKI:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_BOKI:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "ROOM_MARIHI",
+      "number": "201",
+      "npcId": "MARIHI",
+      "name": "마연희",
+      "floor": 2,
+      "aliases": [
+        "MARIHI"
+      ],
+      "greeting": {
+        "id": "ROOM_MARIHI:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_MARIHI:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MARIHI:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MARIHI:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MARIHI:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MARIHI:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MARIHI:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "ROOM_NAZ",
+      "number": "202",
+      "npcId": "NAZ",
+      "name": "나지수",
+      "floor": 2,
+      "aliases": [
+        "NAZ"
+      ],
+      "greeting": {
+        "id": "ROOM_NAZ:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_NAZ:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_NAZ:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_NAZ:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_NAZ:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_NAZ:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_NAZ:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "ROOM_MOONIRE",
+      "number": "203",
+      "npcId": "MOONIRE",
+      "name": "문이현",
+      "floor": 2,
+      "aliases": [
+        "MOONIRE"
+      ],
+      "greeting": {
+        "id": "ROOM_MOONIRE:GREETING",
+        "key": "GREETING",
+        "kind": "Greeting",
+        "approved": false,
+        "body": ""
+      },
+      "slots": [
+        {
+          "id": "ROOM_MOONIRE:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MOONIRE:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MOONIRE:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MOONIRE:Q1",
+          "key": "Q1",
+          "label": "알리바이",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MOONIRE:Q2",
+          "key": "Q2",
+          "label": "피해자와의 관계",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "ROOM_MOONIRE:Q3",
+          "key": "Q3",
+          "label": "다른 사실과 연결되는 단서",
+          "kind": "Question",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    },
+    {
+      "id": "CRIME_SCENE",
+      "number": "204",
+      "npcId": "",
+      "name": "살인 현장",
+      "floor": 2,
+      "slots": [
+        {
+          "id": "CRIME_SCENE:M1",
+          "key": "M1",
+          "label": "돋보기 1",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "CRIME_SCENE:M2",
+          "key": "M2",
+          "label": "돋보기 2",
+          "kind": "Search",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "CRIME_SCENE:M3",
+          "key": "M3",
+          "label": "돋보기 3",
+          "kind": "Search",
+          "meaningful": false,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "CRIME_SCENE:V1",
+          "key": "V1",
+          "label": "사망 시각",
+          "kind": "Victim",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "CRIME_SCENE:V2",
+          "key": "V2",
+          "label": "시신 상태",
+          "kind": "Victim",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        },
+        {
+          "id": "CRIME_SCENE:V3",
+          "key": "V3",
+          "label": "피해자 소지품",
+          "kind": "Victim",
+          "meaningful": true,
+          "approved": false,
+          "evidenceId": "",
+          "body": "",
+          "sourceRevision": ""
+        }
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "culpritNpcId": "MATTO",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_MATTO:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    },
+    {
+      "culpritNpcId": "JJIRO",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_JIRO:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    },
+    {
+      "culpritNpcId": "BOKI",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_BOKI:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    },
+    {
+      "culpritNpcId": "MARIHI",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_MARIHI:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    },
+    {
+      "culpritNpcId": "NAZ",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_NAZ:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    },
+    {
+      "culpritNpcId": "MOONIRE",
+      "methodId": "",
+      "weaponId": "",
+      "truthApproved": false,
+      "consistencyApproved": false,
+      "dialogueOverride": {
+        "id": "",
+        "key": "GREETING",
+        "approved": false,
+        "body": ""
+      },
+      "q1Override": {
+        "id": "ROOM_MOONIRE:Q1",
+        "key": "Q1",
+        "approved": false,
+        "body": ""
+      },
+      "evidenceOverrides": [],
+      "accusedDialogueAsset": "",
+      "reenactmentAsset": "",
+      "endingAssetsApproved": false
+    }
+  ],
+  "specialEventRewards": [],
+  "emptySearchRewards": []
+}

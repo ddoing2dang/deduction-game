@@ -1,0 +1,205 @@
+{
+  "status": "INITIALIZATION_GUARD_FIXED_COMPILE_AND_REFERENCES_VERIFIED_GAMEPLAY_UNVERIFIED",
+  "utc": "2026-11-13T10:36:54.839Z",
+  "lastSuccessfulGitSha": "7714f73bf35b5e6e469e0a42cf2678fdbdbc4034",
+  "sourceScene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_YearEnd_EntrySnow_Work.unity",
+  "createdScene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Gameplay_Work.unity",
+  "compile": "Complete",
+  "domainReload": "Complete",
+  "playModeRun": false,
+  "functionalTestsRun": false,
+  "buildRun": false,
+  "failures": [
+    {
+      "attempt": 1,
+      "operation": "authoring UI capture sequence Main -> Lobby",
+      "error": "HTTP 400 Bad Request from Unity Pipeline; Main preview saved, later preview interrupted"
+    },
+    {
+      "attempt": 2,
+      "operation": "isolated Lobby authoring preview",
+      "error": "System.InvalidOperationException: Sequence contains no matching element",
+      "stack": "RoseProgress.Room -> RoseMansionSession.RoomStatus -> RoseMansionView.LobbyScreen -> BuildAuthoringPreview -> RoseMansionCoreAuthoring.Capture"
+    }
+  ],
+  "confirmedProblem": "An Editor-resident progress object was non-null, but had no runId and zero room progress rows. LobbyScreen treated non-null as initialized and RoomStatus called RoseProgress.Room.Single on the empty list.",
+  "hypothesis": "Removed as a blocking assumption: the empty Editor-resident state was directly observed. The exact Unity reload allocation mechanism was not tested.",
+  "lastSuccessfulSteps": [
+    "source C# backups saved",
+    "NPC-free source scene backed up",
+    "new runtime data/flow/notebook/save/accusation/UI code compiled",
+    "new gameplay scene created and saved",
+    "legacy incompatible UI controllers disabled only in derived gameplay scene",
+    "protected world mesh/camera/light components unchanged during scene assembly",
+    "Main menu authoring render saved"
+  ],
+  "contentPending": {
+    "truthBranches": 6,
+    "investigationSlots": 42,
+    "greetings": 6,
+    "culpritGreetingOverrides": 6,
+    "culpritQ1Overrides": 6,
+    "reenactments": 6,
+    "endings": 18
+  },
+  "resumeNeeds": [
+    "Fix authoring preview State access to never read or mutate live investigation state",
+    "Distinguish initialized progress from a default deserialized object and restore PRNG state safely on domain reload",
+    "Retain all current scenes and source backups; no deletion or overwrite of original map",
+    "Then automatic refresh once, observe compile and domain reload completion, resume authoring UI captures",
+    "Functional progression and persistence remain unverified; do not run Play Mode/tests/build without separate authorization",
+    "Review source changes and scene dependencies before a narrowly scoped Git commit/push"
+  ],
+  "resumeRefreshCommand": "C:/Progra~1/BLENDE~1/BLENDE~1.0/5.0/python/bin/python.exe tools/unity/refresh_editor_assets.py --scripts-changed --scene Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Gameplay_Work.unity --no-hotel-checks",
+  "sourceBackups": "art/Development/RoseMansionCore/2026-11-13T10-18-50-705Z/SourceBackups",
+  "protectedSourceHashesMatch": {
+    "game/dialogue/npc_dialogue_catalog.v1.json": true,
+    "game/cases/weapon_method_catalog.v1.json": true,
+    "game/GAMEPLAY_FINAL_CURRENT.md": true,
+    "game/UnityProject/Assets/Case464/HotelMapCameraController.cs": true
+  },
+  "previousStatus": "INITIALIZATION_GUARD_FIXED_COMPILE_AND_REFERENCES_VERIFIED_GAMEPLAY_UNVERIFIED",
+  "resumeUtc": "2026-11-13T10:52:00.382534+00:00",
+  "minimalFix": {
+    "files": [
+      "game/UnityProject/Assets/Case464/RoseMansion/Scripts/RoseMansionSession.cs",
+      "game/UnityProject/Assets/Case464/RoseMansion/Scripts/RoseMansionView.cs"
+    ],
+    "session": "Publish State only when a runId and seven distinct populated room progress rows exist; RoomStatus uses FirstOrDefault with an explicit unconnected status; CanVisit requires initialized state.",
+    "view": "Authoring preview State is always null and draws catalog-only rows, without querying live room progress.",
+    "rulesOrDesignChanged": false,
+    "missingRoomsCreated": false,
+    "fallbackRoomSelected": false
+  },
+  "referenceInspection": {
+    "scene": "Assets/Case464/Scenes/Hotel/Hotel_RoseBlack_Gameplay_Work.unity",
+    "saved": true,
+    "playing": false,
+    "compiling": false,
+    "updating": false,
+    "sessionCount": 1,
+    "uiHasPublishedRun": false,
+    "sessionRefs": [
+      {
+        "field": "content",
+        "connected": true,
+        "asset": "Assets/Case464/RoseMansion/Data/RoseMansionContent.json"
+      },
+      {
+        "field": "mapCamera",
+        "connected": true,
+        "asset": ""
+      },
+      {
+        "field": "presentation",
+        "connected": true,
+        "asset": ""
+      }
+    ],
+    "viewRefs": [
+      {
+        "field": "session",
+        "connected": true,
+        "asset": ""
+      },
+      {
+        "field": "mapCamera",
+        "connected": true,
+        "asset": ""
+      },
+      {
+        "field": "regularFont",
+        "connected": true,
+        "asset": "Assets/UI/Fonts/Pretendard-Regular SDF.asset"
+      },
+      {
+        "field": "headingFont",
+        "connected": true,
+        "asset": "Assets/UI/Fonts/MaruBuri-SemiBold SDF.asset"
+      }
+    ],
+    "presentationRefs": [
+      {
+        "field": "session",
+        "connected": true,
+        "asset": ""
+      },
+      {
+        "field": "director",
+        "connected": true,
+        "asset": ""
+      }
+    ],
+    "missingScripts": 0,
+    "rooms": [
+      {
+        "RoomId": "ROOM_JIRO",
+        "DisplayNumber": "102"
+      },
+      {
+        "RoomId": "ROOM_MATTO",
+        "DisplayNumber": "101"
+      },
+      {
+        "RoomId": "ROOM_MOONIRE",
+        "DisplayNumber": "203"
+      },
+      {
+        "RoomId": "ROOM_NAZ",
+        "DisplayNumber": "202"
+      },
+      {
+        "RoomId": "LOBBY",
+        "DisplayNumber": ""
+      },
+      {
+        "RoomId": "ROOM_MARIHI",
+        "DisplayNumber": "201"
+      },
+      {
+        "RoomId": "CRIME_SCENE",
+        "DisplayNumber": "204"
+      },
+      {
+        "RoomId": "ROOM_BOKI",
+        "DisplayNumber": "103"
+      }
+    ],
+    "npcs": 0,
+    "pendingSlots": 42,
+    "pendingBranches": 6,
+    "contentApproved": false,
+    "cameraAssigned": true,
+    "inspectionOnly": true,
+    "previewReexecuted": false,
+    "playModeRun": false,
+    "functionalTestsRun": false,
+    "buildRun": false,
+    "protectedChanged": [],
+    "changedCoreScripts": [
+      "game/UnityProject/Assets/Case464/RoseMansion/Scripts/RoseMansionSession.cs",
+      "game/UnityProject/Assets/Case464/RoseMansion/Scripts/RoseMansionView.cs"
+    ],
+    "sceneBytesMatchPreFixBackup": false,
+    "sceneBackup": "Assets/Case464/Scenes/Hotel/Backups/Hotel_RoseBlack_BeforeLobbyInitFix_20261113_194407.unity"
+  },
+  "previewReexecuted": false,
+  "newPreviewErrorAttempts": 0,
+  "backups": "art/Development/RoseMansionCore/ResumeLobbyInit_20261113_194407",
+  "sourceAndAssetsPreserved": true,
+  "remaining": [
+    "42 approved investigation texts/evidence links",
+    "6 approved culprit/method/weapon truth branches and consistency checks",
+    "approved greeting/Q1 swaps",
+    "opening/travel/accused-dialogue/reenactment assets",
+    "runtime progression/persistence/button behavior unverified; no Play Mode or functional test was requested"
+  ],
+  "unrelatedSceneAutoLayout": {
+    "changedBlocks": 1,
+    "types": [
+      "PrefabInstance:"
+    ],
+    "policy": "Stage the pre-fix backup scene blob to exclude unrelated hidden DialoguePanel RectTransform layout recalculation. Keep the current Editor-saved file and all backups; no source scene rewrite."
+  },
+  "publication": "Scoped snapshot prepared for publication. The actual commit/push result is recorded separately in the delivery receipt and final response; consult Git history for this snapshot."
+}
