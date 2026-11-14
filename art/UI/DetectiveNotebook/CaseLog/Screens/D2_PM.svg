@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941" role="img" aria-label="탐정 수첩 사건 기록 D2_PM">
+ <defs>
+<linearGradient id="wood" x1="0" x2="1"><stop stop-color="#24140f"/><stop offset=".48" stop-color="#422a1f"/><stop offset="1" stop-color="#24150e"/></linearGradient>
+<linearGradient id="leather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28130e"/><stop offset=".42" stop-color="#583024"/><stop offset="1" stop-color="#2c1611"/></linearGradient>
+<linearGradient id="paper" x1=".05" y1="0" x2=".85" y2="1"><stop stop-color="#f5ead9"/><stop offset=".5" stop-color="#fff2dc"/><stop offset="1" stop-color="#e2c5a5"/></linearGradient>
+<linearGradient id="photo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#281a18"/><stop offset=".6" stop-color="#78513a"/><stop offset="1" stop-color="#2a2420"/></linearGradient>
+<linearGradient id="selected" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#611a28"/><stop offset=".48" stop-color="#8a3040"/><stop offset="1" stop-color="#4a1420"/></linearGradient>
+<radialGradient id="lamplight" cx=".65" cy=".42" r=".62"><stop stop-color="#e7b775" stop-opacity=".8"/><stop offset="1" stop-color="#f9d6a8" stop-opacity="0"/></radialGradient>
+<pattern id="grain" width="49" height="49" patternUnits="userSpaceOnUse"><path d="M2 8l11-4m15 18l7-3m-20 16l4-6M41 44l3-3" stroke="#a98763" stroke-width=".7" opacity=".15"/><circle cx="34" cy="11" r=".7" fill="#b49875" opacity=".28"/></pattern>
+<pattern id="lines" width="20" height="34" patternUnits="userSpaceOnUse"><path d="M0 33.5H150" stroke="#b9a084" stroke-width=".6" opacity=".65"/></pattern>
+<filter id="shadow" x="-.15" y="-.15" width="1.3" height="1.3"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#180d08" flood-opacity=".42"/></filter>
+<filter id="soft" x="-.2" y="-.2" width="1.4" height="1.4"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#55321c" flood-opacity=".24"/></filter>
+</defs>
+ <rect x="0" y="0" width="1672" height="941" rx="0" fill="url(#wood)" stroke="none" stroke-width="1" />
+ <line x1="0" y1="0" x2="1672" y2="0" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="46" x2="1672" y2="46" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="92" x2="1672" y2="92" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="138" x2="1672" y2="138" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="184" x2="1672" y2="184" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="230" x2="1672" y2="230" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="276" x2="1672" y2="276" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="322" x2="1672" y2="322" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="368" x2="1672" y2="368" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="414" x2="1672" y2="414" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="460" x2="1672" y2="460" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="506" x2="1672" y2="506" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="552" x2="1672" y2="552" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="598" x2="1672" y2="598" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="644" x2="1672" y2="644" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="690" x2="1672" y2="690" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="736" x2="1672" y2="736" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="782" x2="1672" y2="782" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="828" x2="1672" y2="828" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="874" x2="1672" y2="874" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="920" x2="1672" y2="920" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="966" x2="1672" y2="966" stroke="#6b4030" stroke-width="2"/><line x1="0" y1="1012" x2="1672" y2="1012" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="1058" x2="1672" y2="1058" stroke="#6b4030" stroke-width="1"/><line x1="0" y1="1104" x2="1672" y2="1104" stroke="#6b4030" stroke-width="2"/>
+ <rect x="105" y="13" width="1534" height="914" rx="28" fill="url(#leather)" stroke="#b47b47" stroke-width="6" filter="url(#shadow)"/>
+ <rect x="141" y="31" width="700" height="864" rx="18" fill="url(#paper)" stroke="#8d5b3a" stroke-width="3" />
+ <rect x="827" y="31" width="712" height="864" rx="18" fill="url(#paper)" stroke="#8d5b3a" stroke-width="3" />
+ <rect x="141" y="31" width="700" height="864" rx="18" fill="url(#grain)" stroke="none" stroke-width="1" />
+ <rect x="827" y="31" width="712" height="864" rx="18" fill="url(#grain)" stroke="none" stroke-width="1" />
+ <rect x="813" y="28" width="22" height="870" rx="0" fill="#8b5f46" stroke="none" stroke-width="1" />
+ <line x1="819" y1="30" x2="819" y2="900" stroke="#a17d61" stroke-width="2"/>
+ <g filter="url(#soft)"><rect x="20" y="140" width="145" height="111" rx="13" fill="url(#paper)" stroke="#9b6d50" stroke-width="3" />
+<text x="90" y="183" fill="#60432e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="31" font-weight="700" text-anchor="middle">⚔</text>
+<text x="92" y="224" fill="#4d3328" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="21" font-weight="700" text-anchor="middle">흉기</text></g><g filter="url(#soft)"><rect x="20" y="284" width="145" height="111" rx="13" fill="url(#paper)" stroke="#9b6d50" stroke-width="3" />
+<text x="90" y="327" fill="#60432e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="31" font-weight="700" text-anchor="middle">⌖</text>
+<text x="92" y="368" fill="#4d3328" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="21" font-weight="700" text-anchor="middle">장소 단서</text></g><g filter="url(#soft)"><rect x="20" y="428" width="145" height="111" rx="13" fill="url(#paper)" stroke="#9b6d50" stroke-width="3" />
+<text x="90" y="471" fill="#60432e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="31" font-weight="700" text-anchor="middle">●</text>
+<text x="92" y="512" fill="#4d3328" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="21" font-weight="700" text-anchor="middle">인물·진술</text></g><g filter="url(#soft)"><rect x="20" y="572" width="145" height="111" rx="13" fill="url(#selected)" stroke="#e2bd7d" stroke-width="3" />
+<text x="90" y="615" fill="#fbe5b5" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="31" font-weight="700" text-anchor="middle">▤</text>
+<text x="92" y="656" fill="#fff0dc" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="21" font-weight="700" text-anchor="middle">사건 기록</text></g>
+ <text x="208" y="110" fill="#46261e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="44" font-weight="700" >수첩</text><text x="340" y="108" fill="#46261e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="35" font-weight="700" >사건 기록</text>
+ <line x1="208" y1="130" x2="795" y2="130" stroke="#986c53" stroke-width="1.5"/><text x="211" y="151" fill="#866953" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="14" font-weight="400" >5일 · 오전/오후 10개 조사 기록</text>
+ <g><rect x="210" y="170" width="586" height="60" rx="7" fill="#f7e5cf" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="177" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="207" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">01</text>
+  <text x="290" y="209" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >1일차 · 오전</text>
+  <text x="700" y="207" fill="#855f3f" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >기록</text>
+  <text x="771" y="207" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="238" width="586" height="60" rx="7" fill="#f7e5cf" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="245" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="275" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">01</text>
+  <text x="290" y="277" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >1일차 · 오후</text>
+  <text x="700" y="275" fill="#855f3f" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >기록</text>
+  <text x="771" y="275" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="306" width="586" height="60" rx="7" fill="#f7e5cf" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="313" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="343" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">02</text>
+  <text x="290" y="345" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >2일차 · 오전</text>
+  <text x="700" y="343" fill="#855f3f" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >기록</text>
+  <text x="771" y="343" fill="#493327" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="374" width="586" height="60" rx="7" fill="url(#selected)" stroke="#e0ba7c" stroke-width="2.8" />
+  <rect x="220" y="381" width="48" height="45" rx="7" fill="#a65b5b" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="411" fill="#fff2d4" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">02</text>
+  <text x="290" y="413" fill="#fff4e0" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="700" >2일차 · 오후</text>
+  <text x="700" y="411" fill="#f6d1ae" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >선택</text>
+  <text x="771" y="411" fill="#fff4e0" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="442" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="449" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="479" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">03</text>
+  <text x="290" y="481" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >3일차 · 오전</text>
+  <text x="700" y="479" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="479" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="510" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="517" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="547" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">03</text>
+  <text x="290" y="549" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >3일차 · 오후</text>
+  <text x="700" y="547" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="547" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="578" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="585" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="615" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">04</text>
+  <text x="290" y="617" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >4일차 · 오전</text>
+  <text x="700" y="615" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="615" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="646" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="653" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="683" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">04</text>
+  <text x="290" y="685" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >4일차 · 오후</text>
+  <text x="700" y="683" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="683" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="714" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="721" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="751" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">05</text>
+  <text x="290" y="753" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >5일차 · 오전</text>
+  <text x="700" y="751" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="751" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g><g><rect x="210" y="782" width="586" height="60" rx="7" fill="#e6d6c4" stroke="#bc997b" stroke-width="1.5" />
+  <rect x="220" y="789" width="48" height="45" rx="7" fill="#ecd4b6" stroke="#c5a079" stroke-width="1" />
+  <text x="244" y="819" fill="#5b3928" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" text-anchor="middle">05</text>
+  <text x="290" y="821" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="23" font-weight="500" >5일차 · 오후</text>
+  <text x="700" y="819" fill="#91806e" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >미진행</text>
+  <text x="771" y="819" fill="#786858" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="29" font-weight="700" text-anchor="middle">›</text>
+  </g>
+ <text x="863" y="106" fill="#512b26" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="39" font-weight="700" >2일차 · 오후</text><rect x="1370" y="69" width="143" height="42" rx="8" fill="#ecd7c0" stroke="#ad765b" stroke-width="1.5" /><text x="1441" y="98" fill="#7d5546" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="18" font-weight="600" text-anchor="middle">UI 예시</text><line x1="860" y1="123" x2="1514" y2="123" stroke="#916344" stroke-width="1"/><g>
+    <rect x="862" y="145" width="300" height="165" rx="3" fill="url(#photo)" stroke="#6f492b" stroke-width="3" />
+    <rect x="875" y="155" width="274" height="145" rx="1" fill="#4f3c31" stroke="none" stroke-width="1" />
+    <rect x="1054" y="163" width="75" height="79.2" rx="3" fill="#b9b9a1" stroke="#a77a4e" stroke-width="5" />
+    <rect x="1063" y="166" width="60" height="72.6" rx="1" fill="#39495b" stroke="none" stroke-width="1" />
+    <line x1="1093" y1="168" x2="1093" y2="234.10000000000002" stroke="#c39c63" stroke-width="2"/>
+    <line x1="1063" y1="191.2" x2="1123" y2="191.2" stroke="#c39c63" stroke-width="2"/>
+    <path d="M880 265.45 L1027 244 L1090 268.75 L976 288.55Z" fill="#b08f69" stroke="#d0ab7c" stroke-width="2"/>
+    <rect x="884" y="247.3" width="120" height="19.8" rx="6" fill="#d1bca0" stroke="none" stroke-width="1" />
+    <rect x="879" y="253.9" width="21.000000000000004" height="33" rx="1" fill="#32231f" stroke="none" stroke-width="1" />
+    <rect x="1018" y="260.5" width="24" height="26.400000000000002" rx="1" fill="#35231c" stroke="none" stroke-width="1" />
+    <rect x="916" y="215.95" width="39" height="21.45" rx="3" fill="#634833" stroke="none" stroke-width="1" />
+    <path d="M937 222.55l-7-13h14Z" fill="#f8cd83" stroke="#a87638" stroke-width="1"/>
+    <rect x="863" y="146" width="298" height="163" rx="3" fill="url(#lamplight)" stroke="none" stroke-width="1" />
+    <path d="M874 149l29 0l-29 25Z" fill="#efe2c8" opacity=".6"/>
+    <path d="M1152 306l-31 0l31-26Z" fill="#e4d1ae" opacity=".65"/>
+  </g><rect x="1185" y="145" width="324" height="165" rx="10" fill="#f4e4cf" stroke="#b99a79" stroke-width="1.4" />
+ <text x="1210" y="185" fill="#62412f" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="22" font-weight="700" >방문한 객실</text>
+ <line x1="1210" y1="196" x2="1485" y2="196" stroke="#c1a17f" stroke-width="1"/>
+ <text x="1344" y="261" fill="#4e3025" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="25" font-weight="700" text-anchor="middle">이번 턴 방문 객실</text><rect x="860" y="328" width="650" height="124" rx="10" fill="#f9ead6" stroke="#ba9878" stroke-width="1.5" />
+ <text x="884" y="366" fill="#4b2e25" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="25" font-weight="700" >그날의 조사 정리</text>
+ <line x1="885" y1="376" x2="1485" y2="376" stroke="#c5a58a" stroke-width="1"/>
+ <text x="890" y="405" fill="#604637" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="19" font-weight="500" >이번 조사에서 실제 확인한 정황이 요약됩니다.</text>
+ <text x="890" y="435" fill="#604637" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="19" font-weight="500" >대화로 얻은 진술의 핵심 내용이 표시됩니다.</text><rect x="860" y="469" width="650" height="96" rx="10" fill="#f7e6d0" stroke="#c4a184" stroke-width="1.5" />
+ <text x="885" y="506" fill="#4d3027" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="24" font-weight="700" >확인한 단서 및 진술</text>
+ <rect x="887" y="521" width="279" height="34" rx="6" fill="#f3ddbf" stroke="#cba27c" stroke-width="1" />
+ <rect x="1178" y="521" width="299" height="34" rx="6" fill="#f3ddbf" stroke="#cba27c" stroke-width="1" />
+ <text x="901" y="544" fill="#55382c" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >획득한 단서의 이름</text>
+ <text x="1192" y="544" fill="#55382c" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="16" font-weight="500" >실제로 확인한 진술</text><rect x="860" y="583" width="650" height="258" rx="9" fill="#eddbc0" stroke="#9e7150" stroke-width="2" />
+ <rect x="879" y="601" width="612" height="217" rx="6" fill="url(#paper)" stroke="#c6a589" stroke-width="1" />
+ <rect x="880" y="601" width="612" height="217" rx="6" fill="url(#lines)" stroke="none" stroke-width="1" />
+ <text x="902" y="645" fill="#4a2d25" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="25" font-weight="700" >기록된 추리 메모</text>
+ <rect x="1294" y="606" width="189" height="48" rx="24" fill="url(#selected)" stroke="#dbb982" stroke-width="1.6" />
+ <text x="1387" y="638" fill="#fff5e2" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="18" font-weight="700" text-anchor="middle">추리 메모 선택  ›</text><text x="940" y="702" fill="#88735f" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="20" font-weight="500" >아직 저장된 추리 메모가 없습니다.</text>
+ <text x="926" y="748" fill="#8b7765" font-family="'Noto Serif CJK KR','NanumSquare',serif" font-size="17" font-weight="400" >버튼을 눌러 확인한 기록에 맞는 질문을 선택하세요.</text>
+ <path d="M157 71V45H181M1510 45h12v27M155 853v24h22M1509 872h18v-22" stroke="#af8460" stroke-width="3" fill="none"/>
+ </svg>

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "UI_ONLY_NO_UNITY_INTEGRATION",
+  "days": 5,
+  "slotsPerDay": 2,
+  "timeNames": [
+    "오전",
+    "오후"
+  ],
+  "maxTurns": 10,
+  "strictInvariants": {
+    "oneRoomPerTurn": true,
+    "weaponOwnerNotCulpritProof": true,
+    "notebookNoAnswerReveal": true,
+    "questionListOnlyOnButtonClick": true,
+    "uncollectedRecordsHidden": true,
+    "doNotAssumeActualClockTime": true
+  },
+  "dynamicFields": [
+    "slotId",
+    "roomId",
+    "isVisited",
+    "acquiredEvidenceIds",
+    "acquiredStatementIds",
+    "summaryFacts",
+    "selectedQuestionId",
+    "savedQuestionNote",
+    "linkedEvidenceIds"
+  ],
+  "model": {
+    "slotId": "D1_AM",
+    "roomId": null,
+    "acquiredEvidenceIds": [],
+    "acquiredStatementIds": [],
+    "savedQuestionNote": null,
+    "linkedEvidenceIds": []
+  },
+  "notePolicy": "Only user-selected question from available questions; attach citations to actual known evidence and testimony, distinguish verified facts from hypotheses. No hallucinated or automatic culprit/method/weapon conclusions.",
+  "noteChoiceRules": {
+    "openFromButton": true,
+    "choiceCountRecommended": "2-4 if grounded; 0 if no meaningful question",
+    "maxSelectionsPerTurn": 1,
+    "allowedEvidenceOnly": true,
+    "persistForCurrentRun": true,
+    "resetOnNewGame": true
+  },
+  "slots": [
+    {
+      "slotId": "D1_AM",
+      "day": 1,
+      "period": "오전",
+      "screen": "Screens/D1_AM.svg"
+    },
+    {
+      "slotId": "D1_PM",
+      "day": 1,
+      "period": "오후",
+      "screen": "Screens/D1_PM.svg"
+    },
+    {
+      "slotId": "D2_AM",
+      "day": 2,
+      "period": "오전",
+      "screen": "Screens/D2_AM.svg"
+    },
+    {
+      "slotId": "D2_PM",
+      "day": 2,
+      "period": "오후",
+      "screen": "Screens/D2_PM.svg"
+    },
+    {
+      "slotId": "D3_AM",
+      "day": 3,
+      "period": "오전",
+      "screen": "Screens/D3_AM.svg"
+    },
+    {
+      "slotId": "D3_PM",
+      "day": 3,
+      "period": "오후",
+      "screen": "Screens/D3_PM.svg"
+    },
+    {
+      "slotId": "D4_AM",
+      "day": 4,
+      "period": "오전",
+      "screen": "Screens/D4_AM.svg"
+    },
+    {
+      "slotId": "D4_PM",
+      "day": 4,
+      "period": "오후",
+      "screen": "Screens/D4_PM.svg"
+    },
+    {
+      "slotId": "D5_AM",
+      "day": 5,
+      "period": "오전",
+      "screen": "Screens/D5_AM.svg"
+    },
+    {
+      "slotId": "D5_PM",
+      "day": 5,
+      "period": "오후",
+      "screen": "Screens/D5_PM.svg"
+    }
+  ]
+}
