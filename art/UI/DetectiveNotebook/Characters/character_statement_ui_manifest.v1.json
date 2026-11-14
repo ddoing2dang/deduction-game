@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "savedAt": "2026-11-14",
+  "project": "사건파일 No.464",
+  "ui": "DetectiveNotebook/Characters",
+  "scope": "Six left-select/right-detail notebook mockups",
+  "status": "UI_DESIGN_RECORDED_PNG_FILES_NOT_IN_GITHUB",
+  "screenFormat": {
+    "type": "PNG",
+    "width": 1672,
+    "height": 941,
+    "transparency": false
+  },
+  "sourceArchiveName": "탐정_수첩_인물진술_선택상세_6종.zip",
+  "previewFile": "탐정_수첩_인물진술_6종_미리보기.jpg",
+  "sourceArchiveSha256": "f990b6f867a96a0ef860be0bb79d35cee7e97fe93dffdefdcb3a54edb6ccd827",
+  "previewSha256": "67605d62ae4d481b98aabeb2124b7bd39531422b1c1d2e59d24e167ec53fdab9",
+  "approvedStaticData": [
+    "npcId",
+    "officialName",
+    "roomNumber"
+  ],
+  "runtimeFields": [
+    "selectedNpcId",
+    "officialPortrait",
+    "alibiAnswer",
+    "relationshipToVictim",
+    "suspectHint",
+    "seenOrUnknown",
+    "playerMemo"
+  ],
+  "unknownState": "?/미획득",
+  "visualDirection": "personal detective notebook, neutral parchment/leather/burgundy; no rose decorations",
+  "portraits": "silhouette placeholders only; must use approved actual portraits separately",
+  "notes": "Do not treat images as approved alibi/personality/job/age/case evidence; no Unity tests or builds.",
+  "items": [
+    {
+      "id": "MATTO",
+      "name": "마도은",
+      "room": "101호",
+      "expectedPath": "Screens/01_101호_마도은_인물진술_UI.png",
+      "fileSha256": "d13f32c1311a2cf90e09c5b4b90f9ea70b443e0ffd6e393aa635a81b591dc558",
+      "fileBytes": 990299,
+      "inGitHub": false
+    },
+    {
+      "id": "JJIRO",
+      "name": "진소율",
+      "room": "102호",
+      "expectedPath": "Screens/02_102호_진소율_인물진술_UI.png",
+      "fileSha256": "434e906b537ea4e15c86c3719c5639786f2364bc6d7b1bd689019be1c5eb08d8",
+      "fileBytes": 992806,
+      "inGitHub": false
+    },
+    {
+      "id": "BOKI",
+      "name": "김보희",
+      "room": "103호",
+      "expectedPath": "Screens/03_103호_김보희_인물진술_UI.png",
+      "fileSha256": "b40f6a9e0ecdc1e66365bc9bc71ae74a217cb8b2c0f5ebf358e55e38e49b251f",
+      "fileBytes": 992058,
+      "inGitHub": false
+    },
+    {
+      "id": "MARIHI",
+      "name": "마연희",
+      "room": "201호",
+      "expectedPath": "Screens/04_201호_마연희_인물진술_UI.png",
+      "fileSha256": "f36aad2dfe3d8cbac4b9c329c3a1dbc4fe1a0e6c63fddeed41a574bff2d84c23",
+      "fileBytes": 992230,
+      "inGitHub": false
+    },
+    {
+      "id": "NAZ",
+      "name": "나지수",
+      "room": "202호",
+      "expectedPath": "Screens/05_202호_나지수_인물진술_UI.png",
+      "fileSha256": "346f58c9e98e2a65d9248da4a088786c75974bdb96e90cf94a6c56db78163ed6",
+      "fileBytes": 991337,
+      "inGitHub": false
+    },
+    {
+      "id": "MOONIRE",
+      "name": "문이현",
+      "room": "203호",
+      "expectedPath": "Screens/06_203호_문이현_인물진술_UI.png",
+      "fileSha256": "4a7168a2a4e72b80ef87d5ccba1e70f6e060ab2fd415e7e432d4caa0e373368b",
+      "fileBytes": 993227,
+      "inGitHub": false
+    }
+  ]
+}
