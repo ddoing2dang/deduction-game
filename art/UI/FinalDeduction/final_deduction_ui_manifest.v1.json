@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-11-14",
+  "status": "UI_ASSETS_SAVED_NOT_INTEGRATED",
+  "purpose": "Player selects one NPC portrait first, then on separate full-screen UI chooses method and weapon, then final confirmation yes/no; yes transitions to ending.",
+  "themeIndependent": true,
+  "noRoseMotifs": true,
+  "noLeftNavigation": true,
+  "backButton": true,
+  "retainedSelectionOnly": true,
+  "confirmedDesign": {
+    "mainImageOriginal": "최종_추리_진소율의_결론.png",
+    "mainImageSha256": "5cd5c122a4913aaf86e7893a8b75bf831ed4acc47c817b509e91689dc43256b0",
+    "confirmImageOriginal": "최종_추리_확인_창.png",
+    "confirmImageSha256": "6d871f80277fc2cdcd1e98c44abd07605cec30250c9152b894f04f34ec64a071",
+    "originalImageSize": [
+      1672,
+      941
+    ]
+  },
+  "sourcePngUploadStatus": "SOURCE_PNG_NOT_UPLOADED_TO_GITHUB_BINARY_UPLOAD_UNAVAILABLE",
+  "uiSvgFiles": [
+    "Screens/01_ChooseSuspect.svg",
+    "Screens/02_ChooseMethodWeapon.svg",
+    "Overlays/03_FinalConfirmation.svg"
+  ],
+  "portraitRule": "The SVG screen uses placeholder silhouettes; actual official 6 portraits must be loaded via mappings below. Never replace them with invented character portraits.",
+  "portraits": [
+    {
+      "id": "MATTO",
+      "room": "101",
+      "name": "마도은",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/MATTO.png"
+    },
+    {
+      "id": "JJIRO",
+      "room": "102",
+      "name": "진소율",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/JJIRO.png"
+    },
+    {
+      "id": "BOKI",
+      "room": "103",
+      "name": "김보희",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/BOKI.png"
+    },
+    {
+      "id": "MARIHI",
+      "room": "201",
+      "name": "마연희",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/MARIHI.png"
+    },
+    {
+      "id": "NAZ",
+      "room": "202",
+      "name": "나지수",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/NAZ.png"
+    },
+    {
+      "id": "MOONIRE",
+      "room": "203",
+      "name": "문이현",
+      "portrait": "game/UnityProject/Assets/UI/Art/NPCPortraits/RoseMansion/MOONIRE.png"
+    }
+  ],
+  "methods": [
+    {
+      "id": "M02",
+      "name": "타격"
+    },
+    {
+      "id": "M01",
+      "name": "예리한 상처"
+    },
+    {
+      "id": "M03",
+      "name": "질식"
+    },
+    {
+      "id": "M04",
+      "name": "약물"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "W01",
+      "name": "식칼"
+    },
+    {
+      "id": "W02",
+      "name": "커터칼"
+    },
+    {
+      "id": "W03",
+      "name": "가위"
+    },
+    {
+      "id": "W04",
+      "name": "송곳"
+    },
+    {
+      "id": "W05",
+      "name": "망치"
+    },
+    {
+      "id": "W06",
+      "name": "스패너"
+    },
+    {
+      "id": "W07",
+      "name": "쇠파이프"
+    },
+    {
+      "id": "W08",
+      "name": "주사기"
+    },
+    {
+      "id": "W09",
+      "name": "수상한 약병"
+    },
+    {
+      "id": "W10",
+      "name": "가죽 벨트"
+    },
+    {
+      "id": "W11",
+      "name": "밧줄"
+    },
+    {
+      "id": "W12",
+      "name": "전선"
+    }
+  ],
+  "states": {
+    "chooseSuspect": {
+      "selectedNpcId": null,
+      "confirmEnabledWhen": [
+        "selectedNpcId"
+      ]
+    },
+    "chooseMethodWeapon": {
+      "selectedNpcId": "JJIRO",
+      "selectedMethodId": null,
+      "selectedWeaponId": null,
+      "confirmEnabledWhen": [
+        "selectedNpcId",
+        "selectedMethodId",
+        "selectedWeaponId"
+      ],
+      "backAction": "return to six portraits retaining choices if desired"
+    },
+    "confirmModal": {
+      "showOnlyAfter": "범인 확정 button",
+      "yesAction": "submit and go to ending",
+      "noAction": "close modal and return to selection without changing selections"
+    }
+  },
+  "guidance": {
+    "dynamicExamplesNotStoryTruth": true,
+    "neverRevealCorrectAnswerBeforeEnding": true,
+    "dialogShouldOnlySummarizeUserSelection": true,
+    "submissionImmutableAfterYes": true,
+    "doNotAddUnrequestedScoreSystem": true,
+    "noTestingNoBuild": true
+  }
+}

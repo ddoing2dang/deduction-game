@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-label="최종 추리 UI"><title>최종 추리 UI</title>
+<defs>
+<linearGradient id="parch" x1="0" x2=".8" y1="0" y2="1"><stop stop-color="#f8ead8"/><stop offset=".45" stop-color="#f2dfc7"/><stop offset="1" stop-color="#ddbea6"/></linearGradient>
+<linearGradient id="mar" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#64142a"/><stop offset=".58" stop-color="#8b253b"/><stop offset="1" stop-color="#4a1021"/></linearGradient>
+<linearGradient id="card" x1="0" x2="1"><stop stop-color="#fff1db"/><stop offset="1" stop-color="#e8d0b8"/></linearGradient>
+<radialGradient id="softlight"><stop stop-color="#e6c29e" stop-opacity=".65"/><stop offset="1" stop-color="#f8e7d1" stop-opacity="0"/></radialGradient>
+<pattern id="fibers" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M1 7l5 2m10 20l7-5m2-20l2 7" stroke="#995b41" stroke-width=".55" opacity=".16"/><circle cx="36" cy="31" r=".5" fill="#8a5d43" opacity=".3"/></pattern>
+<filter id="drop" x="-.15" y="-.15" width="1.3" height="1.3"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#341c14" flood-opacity=".4"/></filter>
+</defs>
+<rect x="0" y="0" width="1672" height="941" rx="0" fill="#301c17" stroke="none" stroke-width="0" />
+<rect x="13" y="10" width="1646" height="919" rx="24" fill="url(#parch)" stroke="#6d3c2b" stroke-width="9" />
+<rect x="13" y="10" width="1646" height="919" rx="24" fill="url(#fibers)" stroke="none" stroke-width="0" />
+<path d="M52 50H1575 M49 891H1575" stroke="#9b644e" stroke-width="1.8"/>
+<path d="M26 65Q26 26 67 26h36M1603 26h-29M26 879v-36M1644 879v-33" fill="none" stroke="#bc876a" stroke-width="3"/>
+<text x="836" y="93" fill="#5d172b" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="750" font-size="56" text-anchor="middle">최종 추리</text><line x1="350" y1="87" x2="637" y2="87" stroke="#7e4851" stroke-width="2"/><line x1="1030" y1="87" x2="1324" y2="87" stroke="#7e4851" stroke-width="2"/>
+<text x="836" y="143" fill="#5b3229" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="500" font-size="26" text-anchor="middle">살해 수법과 흉기를 선택해야 합니다.</text><text x="836" y="170" fill="#734335" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="500" font-size="23" text-anchor="middle">용의자 1명을 선택하세요.</text><g><rect x="250" y="203" width="330" height="268" rx="8" fill="url(#card)" stroke="#b58b6c" stroke-width="2" />
+<rect x="258" y="211" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(415 312)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="258" y="429" width="314" height="34" rx="3" fill="#f8ead7" stroke="none" stroke-width="0" />
+<text x="415" y="454" fill="#493027" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="600" font-size="21" text-anchor="middle">101호 마도은</text>
+
+</g><g><rect x="645" y="203" width="330" height="268" rx="8" fill="url(#mar)" stroke="#b59165" stroke-width="4" filter='url(#drop)'/>
+<rect x="653" y="211" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(810 312)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="653" y="429" width="314" height="34" rx="3" fill="#6c1c2a" stroke="none" stroke-width="0" />
+<text x="810" y="454" fill="#fff3da" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="700" font-size="21" text-anchor="middle">102호 진소율</text>
+<rect x="923" y="210" width="42" height="35" rx="5" fill="#8b293c" stroke="#d2ad77" stroke-width="1" /><text x="944" y="236" fill="#fff0ce" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="700" font-size="23" text-anchor="middle">✓</text>
+</g><g><rect x="1040" y="203" width="330" height="268" rx="8" fill="url(#card)" stroke="#b58b6c" stroke-width="2" />
+<rect x="1048" y="211" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(1205 312)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="1048" y="429" width="314" height="34" rx="3" fill="#f8ead7" stroke="none" stroke-width="0" />
+<text x="1205" y="454" fill="#493027" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="600" font-size="21" text-anchor="middle">103호 김보희</text>
+
+</g><g><rect x="250" y="491" width="330" height="268" rx="8" fill="url(#card)" stroke="#b58b6c" stroke-width="2" />
+<rect x="258" y="499" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(415 600)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="258" y="717" width="314" height="34" rx="3" fill="#f8ead7" stroke="none" stroke-width="0" />
+<text x="415" y="742" fill="#493027" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="600" font-size="21" text-anchor="middle">201호 마연희</text>
+
+</g><g><rect x="645" y="491" width="330" height="268" rx="8" fill="url(#card)" stroke="#b58b6c" stroke-width="2" />
+<rect x="653" y="499" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(810 600)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="653" y="717" width="314" height="34" rx="3" fill="#f8ead7" stroke="none" stroke-width="0" />
+<text x="810" y="742" fill="#493027" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="600" font-size="21" text-anchor="middle">202호 나지수</text>
+
+</g><g><rect x="1040" y="491" width="330" height="268" rx="8" fill="url(#card)" stroke="#b58b6c" stroke-width="2" />
+<rect x="1048" y="499" width="314" height="219" rx="4" fill="#a78d79" stroke="#765340" stroke-width="1" />
+<g transform="translate(1205 600)"><circle r="28" cy="-15" fill="#76503f"/><path d="M-61 79c2-72 24-78 61-78 37 0 59 6 61 78Z" fill="#654034"/><path d="M-14 10L0 24 14 10" fill="#b9927c"/></g>
+<rect x="1048" y="717" width="314" height="34" rx="3" fill="#f8ead7" stroke="none" stroke-width="0" />
+<text x="1205" y="742" fill="#493027" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="600" font-size="21" text-anchor="middle">203호 문이현</text>
+
+</g><text x="836" y="807" fill="#734335" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="500" font-size="23" text-anchor="middle">선택한 인물로 추리를 진행할 수 있습니다.</text><rect x="540" y="832" width="590" height="70" rx="10" fill="url(#mar)" stroke="#d4aa75" stroke-width="3" filter='url(#drop)'/>
+<text x="835" y="875" fill="#fff3e0" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="700" font-size="33" text-anchor="middle">선택한 인물로 추리 진행  ›</text><text x="1107" y="858" fill="#f3d5a0" font-family="'Noto Serif KR','Nanum Myeongjo','NanumGothic','Malgun Gothic',serif" font-weight="700" font-size="20" text-anchor="middle">✓</text></svg>
