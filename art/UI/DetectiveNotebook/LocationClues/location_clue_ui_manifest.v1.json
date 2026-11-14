@@ -1,0 +1,171 @@
+{
+  "version": "1.0.0",
+  "kind": "detective-notebook-location-clue-ui-asset-index",
+  "themeIndependent": true,
+  "createdDate": "2026-11-14",
+  "approval": "UI_VISUAL_EXAMPLE_ONLY_CASE_TRUTH_NOT_APPROVED",
+  "sourceArchiveName": "탐정_수첩_장소단서_14종_좌측선택_우측상세.zip",
+  "sourceFilesStatus": "PNG_SOURCE_FILES_NOT_UPLOADED_TO_GITHUB",
+  "singleScreenSize": {
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "alpha": false
+  },
+  "uiContract": {
+    "left": "seven room rows with clue A/B buttons and unknown placeholders",
+    "right": "selected clue image, source room, class, descriptive text and notes",
+    "unknownState": "? / 미획득",
+    "selectedState": "burgundy highlight",
+    "dynamicPerRun": [
+      "clue identity",
+      "found status",
+      "text",
+      "discovery provenance"
+    ],
+    "separateWeaponTab": true,
+    "noRoseTheme": true
+  },
+  "assets": [
+    {
+      "index": 1,
+      "room": "101",
+      "slot": "A",
+      "exampleTitle": "찢어진 메모",
+      "exampleCategory": "문서 흔적",
+      "expectedPngFile": "01_101호_단서_A_찢어진 메모.png",
+      "sha256Prefix20": "614a42ee3c112e657285",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 2,
+      "room": "101",
+      "slot": "B",
+      "exampleTitle": "혈흔 자국",
+      "exampleCategory": "표면 흔적",
+      "expectedPngFile": "02_101호_단서_B_혈흔 자국.png",
+      "sha256Prefix20": "9f7745d33e9738de71b7",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 3,
+      "room": "102",
+      "slot": "A",
+      "exampleTitle": "향수 병",
+      "exampleCategory": "소지품",
+      "expectedPngFile": "03_102호_단서_A_향수 병.png",
+      "sha256Prefix20": "d5cb084c83548d2ddcbc",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 4,
+      "room": "102",
+      "slot": "B",
+      "exampleTitle": "깨진 유리 조각",
+      "exampleCategory": "파손 흔적",
+      "expectedPngFile": "04_102호_단서_B_깨진 유리 조각.png",
+      "sha256Prefix20": "d5a14310c681089446d1",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 5,
+      "room": "103",
+      "slot": "A",
+      "exampleTitle": "약품 병",
+      "exampleCategory": "소지품",
+      "expectedPngFile": "05_103호_단서_A_약품 병.png",
+      "sha256Prefix20": "e1566908f241a9a76a89",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 6,
+      "room": "103",
+      "slot": "B",
+      "exampleTitle": "신발자국",
+      "exampleCategory": "이동 흔적",
+      "expectedPngFile": "06_103호_단서_B_신발자국.png",
+      "sha256Prefix20": "a637144e6d1f7b286b1e",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 7,
+      "room": "201",
+      "slot": "A",
+      "exampleTitle": "밧줄 조각",
+      "exampleCategory": "섬유 흔적",
+      "expectedPngFile": "07_201호_단서_A_밧줄 조각.png",
+      "sha256Prefix20": "550afa818b5e39a12a87",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 8,
+      "room": "201",
+      "slot": "B",
+      "exampleTitle": "옷감 조각",
+      "exampleCategory": "섬유 흔적",
+      "expectedPngFile": "08_201호_단서_B_옷감 조각.png",
+      "sha256Prefix20": "ec50c684ebb9c03ed7b7",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 9,
+      "room": "202",
+      "slot": "A",
+      "exampleTitle": "그을린 문서",
+      "exampleCategory": "문서 흔적",
+      "expectedPngFile": "09_202호_단서_A_그을린 문서.png",
+      "sha256Prefix20": "a0f3831f17e1bb62577e",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 10,
+      "room": "202",
+      "slot": "B",
+      "exampleTitle": "떨어진 단추",
+      "exampleCategory": "소지품",
+      "expectedPngFile": "10_202호_단서_B_떨어진 단추.png",
+      "sha256Prefix20": "145e1c4b9ec8b05861f7",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 11,
+      "room": "203",
+      "slot": "A",
+      "exampleTitle": "머리카락",
+      "exampleCategory": "미세 흔적",
+      "expectedPngFile": "11_203호_단서_A_머리카락.png",
+      "sha256Prefix20": "00b069fbd4aa321c5ea0",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 12,
+      "room": "203",
+      "slot": "B",
+      "exampleTitle": "수상한 도구",
+      "exampleCategory": "작업 도구",
+      "expectedPngFile": "12_203호_단서_B_수상한 도구.png",
+      "sha256Prefix20": "e919f6a6c760a9ce9f4a",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 13,
+      "room": "204",
+      "slot": "A",
+      "exampleTitle": "얼룩진 손수건",
+      "exampleCategory": "섬유 흔적",
+      "expectedPngFile": "13_204호_단서_A_얼룩진 손수건.png",
+      "sha256Prefix20": "195e7bad58127c20178a",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    },
+    {
+      "index": 14,
+      "room": "204",
+      "slot": "B",
+      "exampleTitle": "열쇠",
+      "exampleCategory": "소지품",
+      "expectedPngFile": "14_204호_단서_B_열쇠.png",
+      "sha256Prefix20": "513b2955caa4f15be694",
+      "status": "UI_EXAMPLE_NOT_APPROVED_CASE_TRUTH"
+    }
+  ]
+}
